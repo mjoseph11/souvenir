@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SGMOC Golden Jubilee Souvenir 1975–2025</title>
+<style>
+  /* ── Variables ── */
+  :root {
+    --maroon:  #6B0000;
+    --maroon2: #8B0000;
+    --gold:    #C9A227;
+    --gold2:   #F0C040;
+    --cream:   #FDF8EE;
+    --dark:    #1a1a1a;
+    --page-w:  8.5in;
+    --page-h:  11in;
+  }
+
+  /* ── Reset & base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #d0d0d0;
+    color: var(--dark);
+  }
+
+  /* ── Page wrapper ── */
+  .page {
+    width: var(--page-w);
+    min-height: var(--page-h);
+    background: var(--cream);
+    margin: 0.5in auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    page-break-after: always;
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { background: white; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      page-break-after: always;
+    }
+    @page { size: letter; margin: 0; }
+  }
+
+  /* ══════════════════════════════════════
+     COVER PAGE
+  ══════════════════════════════════════ */
+  .cover {
+    background: var(--maroon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .cover-top-band {
+    width: 100%;
+    height: 0.35in;
+    background: var(--gold);
+  }
+  .cover-bottom-band {
+    width: 100%;
+    height: 0.35in;
+    background: var(--gold);
+  }
+
+  .cover-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4in 0.6in;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Ornamental border inside cover */
+  .cover-border {
+    position: absolute;
+    inset: 0.15in;
+    border: 2px solid var(--gold);
+    pointer-events: none;
+  }
+  .cover-border::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border: 1px solid rgba(201,162,39,0.45);
+  }
+
+  /* Corner ornaments */
+  .corner {
+    position: absolute;
+    width: 0.5in;
+    height: 0.5in;
+    border-color: var(--gold2);
+    border-style: solid;
+  }
+  .corner-tl { top: 0.22in; left: 0.22in; border-width: 3px 0 0 3px; }
+  .corner-tr { top: 0.22in; right: 0.22in; border-width: 3px 3px 0 0; }
+  .corner-bl { bottom: 0.22in; left: 0.22in; border-width: 0 0 3px 3px; }
+  .corner-br { bottom: 0.22in; right: 0.22in; border-width: 0 3px 3px 0; }
+
+  .cover-diocese {
+    color: var(--gold2);
+    font-size: 11pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.15in;
+  }
+
+  .cover-logo {
+    width: 2in;
+    height: 2in;
+    object-fit: contain;
+    margin-bottom: 0.2in;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  }
+
+  /* Fallback cross SVG shown when logo doesn't load */
+  .cover-logo-placeholder {
+    width: 1.6in;
+    height: 1.6in;
+    margin-bottom: 0.2in;
+  }
+
+  .cover-church-name {
+    color: white;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 0.06in;
+  }
+
+  .cover-abbr {
+    color: var(--gold);
+    font-size: 13pt;
+    letter-spacing: 4px;
+    margin-bottom: 0.25in;
+  }
+
+  .cover-divider {
+    width: 3in;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin-bottom: 0.25in;
+  }
+
+  .cover-jubilee-label {
+    color: var(--gold2);
+    font-size: 13pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.08in;
+  }
+
+  .cover-jubilee-title {
+    font-size: 42pt;
+    font-weight: bold;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 0.06in;
+  }
+
+  .cover-jubilee-sub {
+    color: white;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    margin-bottom: 0.25in;
+  }
+
+  .cover-years {
+    font-size: 26pt;
+    color: var(--gold2);
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 0.25in;
+  }
+
+  .cover-verse {
+    color: rgba(255,255,255,0.75);
+    font-style: italic;
+    font-size: 10pt;
+    text-align: center;
+    max-width: 5in;
+    line-height: 1.6;
+    margin-bottom: 0.15in;
+  }
+
+  .cover-location {
+    color: var(--gold);
+    font-size: 10pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════════════════════
+     INNER PAGE LAYOUT
+  ══════════════════════════════════════ */
+  .inner-page {
+    padding: 0;
+  }
+
+  .page-header {
+    background: var(--maroon);
+    color: var(--gold);
+    padding: 0.18in 0.4in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-header .logo-small {
+    width: 0.55in;
+    height: 0.55in;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+  .page-header-title {
+    text-align: center;
+    flex: 1;
+  }
+  .page-header-title h1 {
+    font-size: 13pt;
+    letter-spacing: 1px;
+    color: var(--gold2);
+  }
+  .page-header-title p {
+    font-size: 8pt;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 2px;
+  }
+
+  .page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: var(--maroon);
+    color: var(--gold);
+    padding: 0.1in 0.4in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 8pt;
+  }
+
+  .page-content {
+    padding: 0.3in 0.5in 0.4in;
+  }
+
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    margin-bottom: 0.25in;
+  }
+  .section-heading h2 {
+    font-size: 20pt;
+    color: var(--maroon);
+    letter-spacing: 1px;
+  }
+  .section-heading .gold-rule {
+    width: 2in;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 0.08in auto;
+  }
+  .section-heading p {
+    font-size: 9pt;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════════════════════
+     MESSAGE PAGE
+  ══════════════════════════════════════ */
+  .message-box {
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 0.3in;
+    margin-bottom: 0.2in;
+    position: relative;
+    background: white;
+  }
+  .message-box::before {
+    content: '\201C';
+    font-size: 72pt;
+    color: rgba(201,162,39,0.15);
+    position: absolute;
+    top: -0.1in;
+    left: 0.1in;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+  .message-from {
+    display: flex;
+    align-items: center;
+    gap: 0.2in;
+    margin-bottom: 0.15in;
+  }
+  .message-photo {
+    width: 0.9in;
+    height: 0.9in;
+    border-radius: 50%;
+    background: #e8d5b7;
+    border: 3px solid var(--gold);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--maroon);
+    font-size: 8pt;
+    text-align: center;
+  }
+  .message-sender h3 {
+    color: var(--maroon);
+    font-size: 12pt;
+  }
+  .message-sender p {
+    font-size: 9pt;
+    color: #666;
+  }
+  .message-body {
+    font-size: 10pt;
+    line-height: 1.75;
+    color: #333;
+  }
+  .message-sign {
+    margin-top: 0.15in;
+    text-align: right;
+    font-style: italic;
+    color: var(--maroon);
+    font-size: 10pt;
+  }
+
+  /* ══════════════════════════════════════
+     HISTORY PAGE
+  ══════════════════════════════════════ */
+  .history-text {
+    font-size: 10.5pt;
+    line-height: 1.8;
+    color: #2a2a2a;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 0.35in;
+    column-rule: 1px solid rgba(201,162,39,0.3);
+  }
+
+  .milestone-box {
+    background: var(--maroon);
+    color: white;
+    border-radius: 4px;
+    padding: 0.12in 0.18in;
+    margin-bottom: 0.08in;
+    display: flex;
+    gap: 0.12in;
+    align-items: baseline;
+  }
+  .milestone-year {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 11pt;
+    min-width: 0.55in;
+  }
+  .milestone-text {
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  /* ══════════════════════════════════════
+     EXECUTIVE COMMITTEE
+  ══════════════════════════════════════ */
+  .committee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2in;
+  }
+  .committee-card {
+    text-align: center;
+    border: 1px solid rgba(201,162,39,0.4);
+    border-radius: 4px;
+    padding: 0.15in 0.1in;
+    background: white;
+  }
+  .committee-photo {
+    width: 0.85in;
+    height: 0.85in;
+    border-radius: 50%;
+    background: #e8d5b7;
+    border: 2px solid var(--gold);
+    margin: 0 auto 0.08in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: #888;
+  }
+  .committee-card h4 {
+    font-size: 9pt;
+    color: var(--maroon);
+    margin-bottom: 2px;
+  }
+  .committee-card p {
+    font-size: 7.5pt;
+    color: #666;
+  }
+
+  /* ══════════════════════════════════════
+     MINISTRY CARDS
+  ══════════════════════════════════════ */
+  .ministry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2in;
+  }
+  .ministry-card {
+    border-left: 4px solid var(--gold);
+    background: white;
+    padding: 0.15in;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .ministry-card h3 {
+    color: var(--maroon);
+    font-size: 11pt;
+    margin-bottom: 0.06in;
+  }
+  .ministry-card p {
+    font-size: 9pt;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  /* ══════════════════════════════════════
+     AD PAGE
+  ══════════════════════════════════════ */
+  .ad-full {
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    min-height: 3in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin-bottom: 0.2in;
+    padding: 0.3in;
+    text-align: center;
+    color: #aaa;
+    font-size: 11pt;
+  }
+  .ad-label {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 0.1in;
+  }
+
+  .ad-half-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2in;
+  }
+  .ad-half {
+    border: 1px dashed var(--gold);
+    border-radius: 4px;
+    min-height: 1.8in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 0.15in;
+    text-align: center;
+    color: #aaa;
+    font-size: 9pt;
+  }
+
+  /* ══════════════════════════════════════
+     FAMILY GREETING
+  ══════════════════════════════════════ */
+  .family-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2in;
+  }
+  .family-card {
+    background: white;
+    border: 1px solid rgba(201,162,39,0.35);
+    border-top: 3px solid var(--maroon);
+    border-radius: 4px;
+    padding: 0.15in;
+    text-align: center;
+  }
+  .family-card h4 {
+    color: var(--maroon);
+    font-size: 11pt;
+    margin-bottom: 4px;
+  }
+  .family-card p {
+    font-size: 9pt;
+    color: #555;
+    line-height: 1.5;
+  }
+  .family-card .greeting {
+    font-style: italic;
+    color: var(--gold);
+    font-size: 9pt;
+    margin-top: 0.08in;
+  }
+
+  /* ══════════════════════════════════════
+     BACK COVER
+  ══════════════════════════════════════ */
+  .back-cover {
+    background: var(--maroon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5in;
+    text-align: center;
+    gap: 0.2in;
+  }
+  .back-cover .bc-logo {
+    width: 1.2in;
+    height: 1.2in;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+  }
+  .back-cover h2 {
+    color: white;
+    font-size: 16pt;
+    letter-spacing: 1px;
+  }
+  .back-cover .bc-address {
+    color: rgba(255,255,255,0.8);
+    font-size: 10pt;
+    line-height: 1.8;
+  }
+  .back-cover .bc-divider {
+    width: 2in;
+    height: 1px;
+    background: var(--gold);
+  }
+  .back-cover .bc-service {
+    color: var(--gold2);
+    font-size: 10pt;
+    line-height: 1.8;
+  }
+  .back-cover .bc-web {
+    color: var(--gold);
+    font-size: 10pt;
+    letter-spacing: 1px;
+  }
+  .back-cover .bc-copyright {
+    color: rgba(255,255,255,0.4);
+    font-size: 8pt;
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     PAGE 1 — COVER
+════════════════════════════════════════ -->
+<div class="page cover">
+  <div class="cover-top-band"></div>
+  <div class="cover-inner">
+    <div class="cover-border"></div>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <p class="cover-diocese">Northeast American Diocese &bull; Malankara Orthodox Church</p>
+
+    <!-- Logo 3 (local file) -->
+    <img class="cover-logo"
+         src="logo.jpg"
+         alt="SGMOC Logo"
+         onerror="this.style.display='none'; document.getElementById('cross-fallback').style.display='block';">
+
+    <!-- Fallback cross if logo doesn't load -->
+    <svg id="cross-fallback" class="cover-logo-placeholder" style="display:none"
+         viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="58" stroke="#C9A227" stroke-width="2"/>
+      <circle cx="60" cy="60" r="52" stroke="rgba(201,162,39,0.4)" stroke-width="1"/>
+      <!-- Orthodox cross -->
+      <rect x="54" y="18" width="12" height="84" fill="#C9A227"/>
+      <rect x="28" y="38" width="64" height="12" fill="#C9A227"/>
+      <rect x="38" y="72" width="44" height="8" fill="#C9A227" transform="rotate(-15 60 76)"/>
+      <!-- Halo -->
+      <circle cx="60" cy="38" r="14" stroke="#C9A227" stroke-width="1.5" fill="none"/>
+    </svg>
+
+    <h1 class="cover-church-name">St. Gregorios Malankara<br>Orthodox Church</h1>
+    <p class="cover-abbr">S G M O C</p>
+
+    <div class="cover-divider"></div>
+
+    <p class="cover-jubilee-label">Celebrating</p>
+    <h2 class="cover-jubilee-title">Golden<br>Jubilee</h2>
+    <p class="cover-jubilee-sub">50 Years of God&rsquo;s Faithfulness</p>
+
+    <p class="cover-years">1975 &mdash; 2025</p>
+
+    <p class="cover-verse">&ldquo;For the Lord is good and his love endures forever;<br>
+    his faithfulness continues through all generations.&rdquo;<br>
+    <em>&mdash; Psalm 100:5</em></p>
+
+    <p class="cover-location">Bensalem, Pennsylvania</p>
+  </div>
+  <div class="cover-bottom-band"></div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 2 — MESSAGES (Metropolitan & Vicar)
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Messages</h1>
+      <p>SGMOC Golden Jubilee &bull; 1975–2025</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="section-heading">
+      <h2>Blessings &amp; Messages</h2>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="message-box">
+      <div class="message-from">
+        <div class="message-photo">Photo</div>
+        <div class="message-sender">
+          <h3>His Eminence [Metropolitan Name]</h3>
+          <p>Metropolitan, Northeast American Diocese<br>Malankara Orthodox Church</p>
+        </div>
+      </div>
+      <p class="message-body">
+        Beloved in Christ, I extend my heartfelt felicitations and Episcopal blessings to the
+        faithful of St. Gregorios Malankara Orthodox Church, Bensalem, as you celebrate the
+        Golden Jubilee — fifty years of worship, witness, and service in the Lord.
+        <br><br>
+        [Message text to be inserted here. The Metropolitan's full message will appear in this space.]
+      </p>
+      <p class="message-sign">In Christ's Service,<br><strong>[Metropolitan Name]</strong></p>
+    </div>
+
+    <div class="message-box">
+      <div class="message-from">
+        <div class="message-photo">Photo</div>
+        <div class="message-sender">
+          <h3>Rev. Fr. Shibu Venad Mathai</h3>
+          <p>Vicar, St. Gregorios Malankara Orthodox Church<br>Bensalem, Pennsylvania</p>
+        </div>
+      </div>
+      <p class="message-body">
+        Dear beloved parishioners and friends, it is with profound gratitude and joy that I
+        write to you as we mark fifty years of the presence of this holy parish in Bensalem.
+        From humble beginnings, God has blessed us with growth in faith, fellowship, and service.
+        <br><br>
+        [Vicar's full message text to be inserted here. This section should reflect on the
+        journey of the parish and gratitude for God's grace over five decades.]
+      </p>
+      <p class="message-sign">In His Service,<br><strong>Rev. Fr. Shibu Venad Mathai</strong></p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>Golden Jubilee 1975–2025</span>
+    <span>2</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 3 — HISTORY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>History</h1>
+      <p>SGMOC Golden Jubilee &bull; 1975–2025</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="section-heading">
+      <h2>Our Story</h2>
+      <div class="gold-rule"></div>
+      <p>Five Decades of Faith &bull; Fellowship &bull; Service</p>
+    </div>
+
+    <p class="history-text">
+      St. Gregorios Malankara Orthodox Church, Bensalem, Pennsylvania stands as one of the
+      earliest parishes established by the Malankara Orthodox Church in the American Diaspora.
+      The parish was founded in 1975 by a small but faithful community of Malayali Orthodox
+      Christians who had recently emigrated to the Philadelphia area, driven by their deep
+      desire to continue the ancient liturgical traditions of the Malankara Orthodox Syrian
+      Church of India.
+      <br><br>
+      The early years were marked by humble gatherings in homes and borrowed halls. The founders,
+      guided by a strong sense of faith and the blessings of the Diocese, laid the spiritual
+      and organizational foundations that would carry the church through the decades.
+      <br><br>
+      The consecration of the church building was a landmark moment in the parish's history,
+      providing a permanent spiritual home for the growing congregation. The sanctuary was
+      dedicated in the name of St. Gregorios of Parumala — the first Indian saint of the
+      Orthodox Church — whose intercessory prayers have guided the parish through the years.
+      <br><br>
+      Under the pastoral guidance of successive vicars, the parish grew in membership and
+      ministry. Sunday School, youth ministries, women's organizations, and charitable services
+      were established to serve both the community and those beyond the church walls.
+      <br><br>
+      Today, SGMOC is a vibrant congregation that proudly carries forward the apostolic
+      tradition of the Malankara Orthodox Church — offering the ancient Holy Qurbana in the
+      West Syriac rite, nurturing the faith of its families, and reaching out with love to
+      all in need.
+      <br><br>
+      As we celebrate fifty years of God's faithfulness, we remember with gratitude all the
+      clergy, lay leaders, and faithful members who have served, sacrificed, and prayed to
+      build this beloved parish. To God be the glory.
+    </p>
+
+    <br>
+    <div class="section-heading" style="margin-top:0.15in;">
+      <h2 style="font-size:15pt;">Milestones</h2>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="milestone-box">
+      <span class="milestone-year">1975</span>
+      <span class="milestone-text">Parish founded — first liturgy celebrated in Bensalem, PA</span>
+    </div>
+    <div class="milestone-box">
+      <span class="milestone-year">197X</span>
+      <span class="milestone-text">Parish formally registered under the Northeast American Diocese</span>
+    </div>
+    <div class="milestone-box">
+      <span class="milestone-year">198X</span>
+      <span class="milestone-text">First church building acquired / dedicated</span>
+    </div>
+    <div class="milestone-box">
+      <span class="milestone-year">199X</span>
+      <span class="milestone-text">Sunday School established; youth league MGOCSM formed</span>
+    </div>
+    <div class="milestone-box">
+      <span class="milestone-year">200X</span>
+      <span class="milestone-text">Marth Mariam Samajam and women's ministries constituted</span>
+    </div>
+    <div class="milestone-box">
+      <span class="milestone-year">201X</span>
+      <span class="milestone-text">Church renovation / expansion project completed</span>
+    </div>
+    <div class="milestone-box">
+      <span class="milestone-year">2025</span>
+      <span class="milestone-text">Golden Jubilee — 50 years of worship, witness &amp; community</span>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>Golden Jubilee 1975–2025</span>
+    <span>3</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 4 — EXECUTIVE COMMITTEE
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Executive Committee</h1>
+      <p>SGMOC Golden Jubilee &bull; 1975–2025</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="section-heading">
+      <h2>Leadership 2025</h2>
+      <div class="gold-rule"></div>
+      <p>Serving the Parish with Dedication</p>
+    </div>
+
+    <!-- Vicar row -->
+    <div style="text-align:center; margin-bottom:0.2in; padding:0.15in; background:white; border:1px solid rgba(201,162,39,0.4); border-radius:4px;">
+      <div class="committee-photo" style="width:1in;height:1in;margin:0 auto 0.1in;">Photo</div>
+      <h3 style="color:var(--maroon); font-size:13pt;">Rev. Fr. Shibu Venad Mathai</h3>
+      <p style="color:#666; font-size:9pt; letter-spacing:1px;">VICAR</p>
+    </div>
+
+    <div class="committee-grid">
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>President</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Vice President</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Secretary</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Joint Secretary</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Treasurer</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Joint Treasurer</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Committee Member</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Committee Member</p>
+      </div>
+      <div class="committee-card">
+        <div class="committee-photo">Photo</div>
+        <h4>[Name]</h4>
+        <p>Committee Member</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>Golden Jubilee 1975–2025</span>
+    <span>4</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 5 — MINISTRIES
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Ministries</h1>
+      <p>SGMOC Golden Jubilee &bull; 1975–2025</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="section-heading">
+      <h2>Our Ministries</h2>
+      <div class="gold-rule"></div>
+      <p>Serving God &bull; Serving Community</p>
+    </div>
+
+    <div class="ministry-grid">
+      <div class="ministry-card">
+        <h3>Sunday School</h3>
+        <p>Nurturing the next generation in the Orthodox faith through scripture, liturgy,
+        and the rich traditions of the Malankara Church. Our Sunday School has been the
+        spiritual foundation for hundreds of children over five decades.</p>
+      </div>
+      <div class="ministry-card">
+        <h3>MGOCSM — Youth League</h3>
+        <p>Malankara Orthodox Christian Student Movement brings together the youth of the
+        parish for prayer, fellowship, service, and retreats. A vibrant community of young
+        Orthodox Christians growing in faith and leadership.</p>
+      </div>
+      <div class="ministry-card">
+        <h3>STG — Serve Transform Grow</h3>
+        <p>A dynamic ministry focused on community outreach, spiritual transformation, and
+        growing disciples. STG organizes service projects, Bible study, and programs that
+        equip members to live out their faith.</p>
+      </div>
+      <div class="ministry-card">
+        <h3>GROW — Women's Ministry</h3>
+        <p>Empowering women of faith through prayer, study, and service. GROW brings women
+        together to deepen their relationship with God and with one another, reflecting
+        the grace and strength of Orthodox Christian womanhood.</p>
+      </div>
+      <div class="ministry-card">
+        <h3>Marth Mariam Samajam</h3>
+        <p>The Mary Martha Society — a treasured women's organization of the Malankara
+        Orthodox Church dedicated to prayer, charitable service, and the spiritual
+        formation of its members in the tradition of the Church Mothers.</p>
+      </div>
+      <div class="ministry-card">
+        <h3>Good Samaritan</h3>
+        <p>Our charitable ministry reaching out beyond the parish walls — supporting
+        the poor, the sick, and those in need. Inspired by the parable of the Good
+        Samaritan, this ministry is the compassionate heart of our congregation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>Golden Jubilee 1975–2025</span>
+    <span>5</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 6 — ADVERTISEMENT (Full Page)
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Golden Jubilee Patrons</h1>
+      <p>SGMOC Golden Jubilee &bull; 1975–2025</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="ad-full">
+      <p class="ad-label">Platinum Sponsor</p>
+      <p style="font-size:28pt; color:#ddd;">[Business / Family Name]</p>
+      <p style="margin-top:0.1in; font-size:10pt; color:#bbb;">
+        Your message, logo, or greeting here<br>
+        Contact: souvenirads@sgmoc.org
+      </p>
+    </div>
+    <div class="ad-half-grid">
+      <div class="ad-half">
+        <p class="ad-label">Gold Sponsor</p>
+        <p>[Family / Business Name]</p>
+        <p style="font-size:8pt; margin-top:6px;">Half-page advertisement</p>
+      </div>
+      <div class="ad-half">
+        <p class="ad-label">Gold Sponsor</p>
+        <p>[Family / Business Name]</p>
+        <p style="font-size:8pt; margin-top:6px;">Half-page advertisement</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>Golden Jubilee 1975–2025</span>
+    <span>6</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 7 — FAMILY GREETINGS
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Family Greetings</h1>
+      <p>SGMOC Golden Jubilee &bull; 1975–2025</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="section-heading">
+      <h2>Greetings from Our Families</h2>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="family-grid">
+      <div class="family-card">
+        <h4>[Family Name] Family</h4>
+        <p>Wishing SGMOC God's richest blessings on this Golden Jubilee.<br>
+        May the Lord continue to strengthen this parish for generations to come.</p>
+        <p class="greeting">"To God be the Glory!"</p>
+      </div>
+      <div class="family-card">
+        <h4>[Family Name] Family</h4>
+        <p>Congratulations on 50 wonderful years. We are grateful to be part of this
+        faith community and pray for its continued growth.</p>
+        <p class="greeting">"Blessed Golden Jubilee"</p>
+      </div>
+      <div class="family-card">
+        <h4>[Family Name] Family</h4>
+        <p>Our deepest congratulations to SGMOC. This church has been our spiritual
+        home and family. May it flourish for fifty more years.</p>
+        <p class="greeting">"In gratitude and love"</p>
+      </div>
+      <div class="family-card">
+        <h4>[Family Name] Family</h4>
+        <p>Praising God for fifty years of faithfulness at SGMOC. We stand in awe
+        of what He has done through this beloved parish.</p>
+        <p class="greeting">"Soli Deo Gloria"</p>
+      </div>
+      <div class="family-card">
+        <h4>[Family Name] Family</h4>
+        <p>[Insert family greeting message here. Space for up to three short lines
+        of congratulatory message.]</p>
+        <p class="greeting">"[Custom greeting]"</p>
+      </div>
+      <div class="family-card">
+        <h4>[Family Name] Family</h4>
+        <p>[Insert family greeting message here. Space for up to three short lines
+        of congratulatory message.]</p>
+        <p class="greeting">"[Custom greeting]"</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>Golden Jubilee 1975–2025</span>
+    <span>7</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 8 — BACK COVER
+════════════════════════════════════════ -->
+<div class="page back-cover">
+  <!-- Logo -->
+  <img class="bc-logo"
+       src="logo.jpg"
+       alt="SGMOC Logo"
+       onerror="this.style.opacity='0'">
+
+  <h2>St. Gregorios Malankara Orthodox Church</h2>
+  <div class="bc-divider"></div>
+
+  <p class="bc-address">
+    [Church Address]<br>
+    Bensalem, Pennsylvania<br>
+    United States
+  </p>
+
+  <div class="bc-divider"></div>
+
+  <p class="bc-service">
+    <strong style="color:var(--gold);">Sunday Services</strong><br>
+    Matins &bull; 8:30 AM<br>
+    Holy Qurbana &bull; 9:00 AM<br>
+    Sunday School &bull; After Qurbana
+  </p>
+
+  <p class="bc-web">www.sgmoc.org</p>
+
+  <div class="bc-divider"></div>
+
+  <p style="color:var(--gold2); font-size:14pt; font-style:italic;">
+    "His faithfulness continues through all generations."
+  </p>
+  <p style="color:rgba(255,255,255,0.5); font-size:9pt;">— Psalm 100:5</p>
+
+  <div class="bc-divider"></div>
+  <p class="bc-copyright">Golden Jubilee Souvenir &bull; SGMOC 1975–2025 &bull; All Rights Reserved</p>
+</div>
+
+</body>
+</html>
