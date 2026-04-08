@@ -399,11 +399,4 @@ function updateSouvenirFeedbackForm() {
   Logger.log('Share this link: ' + formUrl);
   Logger.log('Edit form here: ' + editUrl);
 
-  Browser.msgBox(
-    'Form Updated!',
-    'Your existing feedback form has been rebuilt with the latest questions.\n\n' +
-    'Share link:\n' + formUrl + '\n\n' +
-    'Edit link:\n' + editUrl,
-    Browser.Buttons.OK
-  );
 }
