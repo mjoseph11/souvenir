@@ -1,12 +1,39 @@
 /**
- * SGMOC Golden Jubilee Souvenir — Feedback Form Creator (v2)
+ * SGMOC Golden Jubilee Souvenir — Feedback Form Updater (v2)
+ * Edits the EXISTING form in place (clears all items, rebuilds with new content).
  * Updated to reflect current 15-page souvenir structure and
  * incorporate feedback from Manoj and other early reviewers.
- * Run this once in Google Apps Script (script.google.com)
+ *
+ * Run updateSouvenirFeedbackForm() in Google Apps Script (script.google.com)
  */
-function createSouvenirFeedbackForm() {
+var FORM_ID = '16b7Bv-fb2OqMXXPcCeoxa35940_c0lQNVbxPE7J1cos';
 
-  var form = FormApp.create('SGMOC Golden Jubilee Souvenir — Feedback Form');
+function updateSouvenirFeedbackForm() {
+
+  var form = FormApp.openById(FORM_ID);
+
+  // Clear all existing items so we can rebuild cleanly
+  var items = form.getItems();
+  for (var i = items.length - 1; i >= 0; i--) {
+    form.deleteItem(items[i]);
+  }
+
+  form.setTitle('SGMOC Golden Jubilee Souvenir — Feedback Form');
+  form.setDescription(
+    'Thank you for reviewing the SGMOC Golden Jubilee Souvenir draft.\n' +
+    'Please share your feedback, corrections, and suggestions below.\n\n' +
+    'Preview the souvenir at: https://mjoseph11.github.io/souvenir/\n\n' +
+    'The souvenir covers 50 years of St. Gregorios Malankara Orthodox Church, Bensalem PA (1976–2026).'
+  );
+  form.setConfirmationMessage(
+    'Thank you for your feedback! We will review your suggestions and update the souvenir accordingly.\n' +
+    'May God bless you.'
+  );
+
+  // Keep existing settings
+  form.setCollectEmail(true);
+  form.setLimitOneResponsePerUser(false);
+  form.setShowLinkToRespondAgain(true);
 
   form.setDescription(
     'Thank you for reviewing the SGMOC Golden Jubilee Souvenir draft.\n' +
@@ -368,13 +395,13 @@ function createSouvenirFeedbackForm() {
   var formUrl = form.getPublishedUrl();
   var editUrl = form.getEditUrl();
 
-  Logger.log('Form created successfully!');
+  Logger.log('Form updated successfully!');
   Logger.log('Share this link: ' + formUrl);
   Logger.log('Edit form here: ' + editUrl);
 
   Browser.msgBox(
-    'Form Created!',
-    'Your feedback form is ready.\n\n' +
+    'Form Updated!',
+    'Your existing feedback form has been rebuilt with the latest questions.\n\n' +
     'Share link:\n' + formUrl + '\n\n' +
     'Edit link:\n' + editUrl,
     Browser.Buttons.OK
