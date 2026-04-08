@@ -221,6 +221,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: url('images/official-logo.png');
+    background-repeat: no-repeat;
+    background-position: right 0.2in center;
+    background-size: 0.55in 0.55in;
   }
   .page-header .logo-small {
     width: 0.55in;
@@ -585,34 +589,16 @@
 
     <p class="cover-diocese">Northeast American Diocese &bull; Malankara Orthodox Church</p>
 
-    <!-- Logo 3 (local file) -->
-    <img class="cover-logo"
-         src="images/logo.jpg"
-         alt="SGMOC Logo"
-         onerror="this.style.display='none'; document.getElementById('cross-fallback').style.display='block';">
-
-    <!-- Fallback cross if logo doesn't load -->
-    <svg id="cross-fallback" class="cover-logo-placeholder" style="display:none"
-         viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="60" cy="60" r="58" stroke="#C9A227" stroke-width="2"/>
-      <circle cx="60" cy="60" r="52" stroke="rgba(201,162,39,0.4)" stroke-width="1"/>
-      <!-- Orthodox cross -->
-      <rect x="54" y="18" width="12" height="84" fill="#C9A227"/>
-      <rect x="28" y="38" width="64" height="12" fill="#C9A227"/>
-      <rect x="38" y="72" width="44" height="8" fill="#C9A227" transform="rotate(-15 60 76)"/>
-      <!-- Halo -->
-      <circle cx="60" cy="38" r="14" stroke="#C9A227" stroke-width="1.5" fill="none"/>
-    </svg>
-
-    <h1 class="cover-church-name">St. Gregorios Malankara<br>Orthodox Church</h1>
+    <!-- Golden Jubilee Logo -->
+    <img src="images/jubilee-logo.png"
+         alt="SGMOC Golden Jubilee Logo"
+         style="width:3.2in;height:3.2in;object-fit:contain;margin-bottom:0.15in;drop-shadow:0 4px 16px rgba(0,0,0,0.5);">
 
     <div class="cover-divider"></div>
 
     <p class="cover-jubilee-label">Celebrating</p>
     <h2 class="cover-jubilee-title">Golden<br>Jubilee</h2>
     <p class="cover-jubilee-sub">50 Years of God&rsquo;s Faithfulness</p>
-
-    <p class="cover-years">1976 &mdash; 2026</p>
 
     <p class="cover-verse">&ldquo;For the Lord is good and his love endures forever;<br>
     his faithfulness continues through all generations.&rdquo;<br>
@@ -1762,8 +1748,7 @@
      PAGE 8 — BACK COVER
 ════════════════════════════════════════ -->
 <div class="page back-cover">
-  <img src="images/st-gregorios.webp" alt="St. Geevarghese Gregorios of Parumala" style="width:1.8in;height:1.8in;object-fit:cover;object-position:top;border-radius:50%;border:3px solid var(--gold);">
-  <p style="color:var(--gold2);font-size:8pt;letter-spacing:1px;margin-top:-0.1in;">St. Geevarghese Gregorios of Parumala</p>
+  <img src="images/jubilee-logo.png" alt="SGMOC Golden Jubilee" style="width:2.2in;height:2.2in;object-fit:contain;">
 
   <h2>St. Gregorios Malankara Orthodox Church</h2>
   <div class="bc-divider"></div>
