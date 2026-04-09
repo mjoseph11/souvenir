@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logo Comparison — Maroon Ver1 vs Ver2</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1a1a1a;
+      font-family: Georgia, serif;
+      display: flex;
+      gap: 0;
+    }
+    .panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #6B0000;
+      padding: 1in 0.5in;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .panel + .panel {
+      border-left: 4px solid #1a1a1a;
+    }
+    .panel img {
+      width: 3.2in;
+      height: 3.2in;
+      object-fit: contain;
+    }
+    .label {
+      color: #C9A227;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 0.4in;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .sublabel {
+      color: #e8d5a3;
+      font-size: 0.85rem;
+      margin-top: 0.1in;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <img src="images/Logos/JubileeLogo1_Maroon_ver1.png" alt="Maroon Ver1">
+    <div class="label">Ver 1</div>
+    <div class="sublabel">JubileeLogo1_Maroon_ver1.png</div>
+  </div>
+  <div class="panel">
+    <img src="images/Logos/JubileeLogo1_Maroon_ver2.png" alt="Maroon Ver2">
+    <div class="label">Ver 2 (current)</div>
+    <div class="sublabel">JubileeLogo1_Maroon_ver2.png</div>
+  </div>
+</body>
+</html>
