@@ -19,18 +19,23 @@ Bensalem, PA. It is a single HTML file (`index.html`) designed to be printed as 
 ├── .nojekyll                   # Skips Jekyll — keeps Pages deployment fast
 ├── .gitignore                  # Excludes .claude/ folder
 ├── images/
-│   ├── jubilee-logo.png        # Golden Jubilee logo (transparent bg) — used on cover + back cover
-│   ├── official-logo.png       # SGMOC official seal (transparent) — used in all page headers
-│   ├── jubilee-logo-gold.png   # Gold variant (available, not currently used)
+│   ├── jubilee-logo.png        # Original jubilee logo (superseded — no longer used in index.html)
+│   ├── official-logo.png       # Original SGMOC seal (superseded — no longer used in index.html)
+│   ├── jubilee-logo-gold.png   # Gold jubilee logo variant (available, not currently used)
 │   ├── catholicos.jpg          # H.H. Baselios Marthoma Mathews III
 │   ├── metropolitan.jpg        # His Grace Zachariah Mar Nicholovos
 │   ├── vicar.jpg               # Rev. Fr. Shibu Venad Mathai
 │   ├── mathai-cor-episcopa.jpg # V. Rev. K. Mathai Cor Episcopa (In Memoriam)
 │   ├── st-gregorios.webp       # St. Geevarghese Gregorios of Parumala
-│   ├── logo.jpg                # Original Logo 3 from contest (superseded by jubilee-logo.png)
+│   ├── logo.jpg                # Original Logo 3 from contest (superseded)
 │   ├── church-header.png       # SGMOC website header banner (unused, kept for reference)
 │   ├── committee/              # Executive committee member photos (18 files)
-│   └── Logos/                  # Original high-res logos from Google Drive (source files)
+│   └── Logos/                  # High-res transparent logos from Google Drive
+│       ├── JubileeLogo1_Maroon_ver1.png   # ✅ ACTIVE — cover + back cover
+│       ├── JubileeLogo1_Maroon_ver2.png   # Alt maroon version (lighter, available for comparison)
+│       ├── SGMOC_Official_logo_Gold.png   # ✅ ACTIVE — all page headers (CSS background-image)
+│       └── ...                            # Other variants (blue, white, etc.)
+├── compare.html                # Logo comparison page — ver1 vs ver2 side by side (dev tool)
 └── scripts/
     ├── rebuild-committee.js    # Node script: rebuilds committee page HTML
     ├── rebuild-ministries.js   # Node script: rebuilds all ministry pages HTML
@@ -102,7 +107,7 @@ Bensalem, PA. It is a single HTML file (`index.html`) designed to be printed as 
 
 ---
 
-## Open Issues (as of last session)
+## Open Issues (as of 2026-04-10)
 
 | # | Title | Blocker |
 |---|-------|---------|
@@ -114,6 +119,9 @@ Bensalem, PA. It is a single HTML file (`index.html`) designed to be printed as 
 | #16 | MMS — verify all names | Need confirmation |
 | #17 | Good Samaritan — Coordinator name | Need name |
 | #18 | In Memoriam + History — verify accuracy | Needs someone who knew V. Rev. K. Mathai |
+| #19 | Jubilee logo — finalize ver1 vs ver2 | Manoj to decide; ver1 currently live, ver2 available |
+
+**Recently closed:** #20 (gold transparent header seal — done)
 
 ---
 
@@ -137,7 +145,7 @@ When in doubt, leave open with a comment explaining what remains.
 - **Page size:** US Letter (8.5 × 11 in)
 - **Font:** Georgia (serif)
 - **To export PDF:** Open `index.html` in Chrome → Ctrl+P → Save as PDF → Margins: None, Background graphics: ON
-- **Page headers:** Official SGMOC seal appears via CSS background-image on all inner page headers
+- **Page headers:** Gold transparent SGMOC seal (`images/Logos/SGMOC_Official_logo_Gold.png`) via CSS `background-image` on all inner page headers
 - **In Memoriam page:** Uses dark (`#2a2a2a`) header/footer to distinguish from regular pages
 
 ---
