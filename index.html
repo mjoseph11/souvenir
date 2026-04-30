@@ -346,6 +346,38 @@
     color: var(--maroon);
     font-size: 10pt;
   }
+  .draft-badge {
+    position: absolute;
+    top: -0.12in;
+    right: 0.2in;
+    background: var(--maroon);
+    color: var(--gold);
+    font-size: 8pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 3px 10px;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    text-transform: uppercase;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .draft-banner {
+    background: var(--maroon);
+    color: var(--gold);
+    font-size: 9pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.1in auto 0.15in;
+    display: inline-block;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 
   /* ══════════════════════════════════════
      HISTORY PAGE
@@ -631,6 +663,7 @@
     </div>
 
     <div class="message-box">
+      <div class="draft-badge">Draft &mdash; awaiting final text</div>
       <div class="message-from">
         <img src="images/catholicos.jpg" style="width:0.9in;height:0.9in;border-radius:50%;object-fit:cover;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
@@ -683,6 +716,7 @@
     </div>
 
     <div class="message-box">
+      <div class="draft-badge">Draft &mdash; awaiting final text</div>
       <div class="message-from">
         <img src="images/metropolitan.jpg" style="width:0.9in;height:0.9in;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
@@ -734,6 +768,7 @@
     </div>
 
     <div class="message-box">
+      <div class="draft-badge">Draft &mdash; awaiting final text</div>
       <div class="message-from">
         <img src="images/vicar.jpg" style="width:0.9in;height:0.9in;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
@@ -812,15 +847,18 @@
           Mathai Achen felt the call to ministry from a young age — beginning to preach at just
           eight years old.
           <br><br>
-          He was ordained to the holy priesthood on <strong>April 29, 1975</strong>, and married
-          Mariamma Abraham the same year on April 14. The following year, he moved from New York
-          to Philadelphia to answer a greater calling — planting the first Malankara Orthodox
-          parish in the region.
+          He was ordained a deacon in <strong>1974</strong> by H.G. Dr. Mathews Mar Athanasios
+          (then Catholicate-designate) at <strong>St. Mary's Orthodox Church, Lakkoor, Kerala</strong>.
+          On <strong>April 14, 1975</strong>, his marriage to Mariamma Abraham was solemnized by
+          Athanasios Thirumeni; two weeks later, on <strong>April 28, 1975</strong>, the same
+          Thirumeni elevated him to the holy priesthood in Kerala. The following year, he moved
+          from New York to Philadelphia to plant the first Malankara Orthodox parish in the region.
           <br><br>
-          In <strong>1976</strong>, he established what began as <em>St. Thomas Orthodox Church</em>,
-          celebrating the first liturgy at St. Savior Cathedral Chapel, 38th and Chestnut Streets,
-          Philadelphia. In <strong>1984</strong>, the parish was renamed
-          <em>St. Gregorios Malankara Orthodox Church</em>.
+          In <strong>1976</strong>, he established what began as <em>St. Thomas Indian Orthodox Church</em>,
+          celebrating the first liturgy at the Church of the Savior Cathedral chapel, 38th and
+          Chestnut Streets, Philadelphia. In <strong>1984</strong>, the parish was reorganized as
+          <em>St. Gregorios Malankara Orthodox Church</em>. In <strong>1996</strong>, H.G. Mathews
+          Mar Barnabas Metropolitan elevated him to <strong>Corepiscopos</strong> in Philadelphia.
           <br><br>
           Over <strong>35 years</strong> of faithful service, he guided the parish through its
           growth, relocation, and the consecration of its permanent home at
@@ -832,7 +870,16 @@
         <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.1in;">Roles &amp; Education</h3>
         <div style="background:white;border:1px solid rgba(201,162,39,0.3);border-radius:4px;padding:0.1in;margin-bottom:0.12in;">
           <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,162,39,0.2);font-size:8.5pt;">
+            <span style="color:#444;">Ordained Deacon</span><span style="color:var(--maroon);font-weight:bold;">1974</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,162,39,0.2);font-size:8.5pt;">
+            <span style="color:#444;">Ordained to Priesthood</span><span style="color:var(--maroon);font-weight:bold;">1975</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,162,39,0.2);font-size:8.5pt;">
             <span style="color:#444;">Founding Vicar, SGMOC</span><span style="color:var(--maroon);font-weight:bold;">1976–2011</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,162,39,0.2);font-size:8.5pt;">
+            <span style="color:#444;">Elevated to Corepiscopos</span><span style="color:var(--maroon);font-weight:bold;">1996</span>
           </div>
           <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,162,39,0.2);font-size:8.5pt;">
             <span style="color:#444;">Diocesan Council Member</span><span style="color:var(--maroon);">NE American Diocese</span>
@@ -877,7 +924,105 @@
 
 
 <!-- ════════════════════════════════════════
-     PAGE 3 — HISTORY
+     PAGE 6 — THE BEGINNINGS (BY REV. FR. DR. PAUL VARKI)
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>The Beginnings</h1>
+      <p>In the Words of Rev. Fr. Dr. Paul Varki &bull; Co-Founder</p>
+    </div>
+  </div>
+
+  <div class="page-content" style="padding-top:0.18in;">
+
+    <!-- Author block: portrait + attribution -->
+    <div style="display:flex;gap:0.2in;align-items:center;margin-bottom:0.18in;">
+      <img src="images/paul-varki.jpg"
+           alt="Rev. Fr. Dr. Paul Varki"
+           style="width:1.1in;height:1.4in;object-fit:cover;object-position:top;border:2px solid var(--gold);border-radius:4px;flex-shrink:0;">
+      <div>
+        <h2 style="color:var(--maroon);font-size:14pt;line-height:1.2;margin-bottom:0.04in;">Rev. Fr. Dr. Paul Varki</h2>
+        <p style="color:var(--gold);font-size:9pt;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.06in;">Co-Founder &bull; St. Gregorios Malankara Orthodox Church</p>
+        <p style="font-size:9pt;line-height:1.55;color:#555;font-style:italic;">
+          A first-person account of the parish's earliest days, written by the deacon
+          who hosted Philadelphia's pioneering ecumenical Orthodox worship and petitioned
+          the Catholicos for the first parish kalpana.
+        </p>
+      </div>
+    </div>
+
+    <!-- Article body — two columns -->
+    <div style="columns:2;column-gap:0.32in;font-size:9pt;line-height:1.7;color:#333;text-align:justify;">
+      <p style="margin:0 0 0.1in 0;">
+        In the summer of <strong>1965</strong>, some of us who were working and studying
+        in Philadelphia and surrounding areas got together and planned a worship service
+        of different denominations, including the Malankara Orthodox Church. Fr. Dr. K. M.
+        Simon and Fr. A. T. Abraham were early celebrants of the Orthodox Holy Qurbana,
+        and I was the deacon who assisted and hosted those priests. In addition, the late
+        H. G. Mar Makarios (then Fr. K. C. Thomas), the late H. G. Mar Theodosious (then
+        Fr. P. T. Punnoose, who was my dear friend from my old seminary days), the late
+        Rev. Fr. John Mathews, Very Rev. Fr. Cherian Neelankal, and Very Rev. Fr.
+        Yohannan Sankarathil were some of the other priests who conducted the Holy
+        Qurbana in the beginning.
+      </p>
+      <p style="margin:0 0 0.1in 0;">
+        The Orthodox Qurbana was conducted once a month at <strong>Asbury Church</strong>,
+        which was given to us rent-free. In those days we had Marthoma, Catholic, CSI, and
+        other denominational members who attended the services. These services were opened
+        to all. Thus, in Philadelphia &mdash; the City of Brotherly Love &mdash; the vineyard
+        which St. Thomas, our founding father and disciple of Jesus, started in Odessa, was
+        born.
+      </p>
+      <p style="margin:0 0 0.1in 0;">
+        After each Sunday service we got together in someone's residence for lunch and
+        fellowship. This went on for <strong>eleven years</strong>. After awhile, some
+        groups separated and started their own worship service in the seventies. I
+        contacted <strong>Bishop Ogylby of the Episcopal Church</strong>, who [gave us his]
+        Cathedral and chapel rent-free for Qurbana [at] 38th and Chestnut Streets. We also
+        started our own service and Qurbana, which Rev. Fr. K. Mathai (now V. Rev. Fr. K.
+        Mathai) kindly conducted. The first Diocesan Bishop, H. G. Mar Makarios &mdash;
+        founder of the American Diocese &mdash; appointed him as Vicar in <strong>1979</strong>.
+      </p>
+      <p style="margin:0 0 0.1in 0;">
+        Before Mathai Achen came to Philadelphia as Vicar, I sent an application to the
+        Catholicos H. H. Baselios Marthoma Mathews I (who was not only my teacher at M. D.
+        Seminary, but my benefactor), and His Holiness sent me a kalpana authorizing a
+        parish in Philadelphia. It was on the basis of that kalpana of authorization that
+        Mathai Achen was appointed Vicar by H. G. Mar Makarios, and the kalpana was read
+        by Very Rev. Fr. K. Mathai in the church. After H. G. Mar Makarios came and
+        inaugurated the American Diocese, the <em>St. Thomas Orthodox Church</em>
+        &mdash; the first Orthodox church in Philadelphia &mdash; came into being. This is
+        now St. Gregorios.
+      </p>
+      <p style="margin:0;">
+        The beginnings still go through the currents of our souls &mdash; the earliest
+        settlers in Philadelphia. May the patron Saint, Mar Gregorios, whose memory we
+        cherish, bless this elegant church in Bensalem, PA, which is the outcome of the
+        dedicated and courageous people of our beloved church.
+      </p>
+    </div>
+
+    <!-- Footer note -->
+    <div style="margin-top:0.18in;padding-top:0.1in;border-top:1px solid var(--gold);text-align:center;">
+      <p style="font-size:8pt;color:#888;font-style:italic;">
+        Reprinted from a previous SGMOC souvenir publication. Bracketed text indicates
+        words obscured by the original page binding.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>6</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 7 — HISTORY
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   <div class="page-header">
@@ -916,20 +1061,25 @@
       <div>
         <h3 style="color:var(--maroon);font-size:12pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.1in;">Our Story</h3>
         <p style="font-size:9pt;line-height:1.75;color:#333;text-align:justify;">
-          St. Gregorios Malankara Orthodox Church stands as one of the earliest parishes of
-          the Malankara Orthodox Church in the American Diaspora. Founded in <strong>1976</strong>
-          by V. Rev. Kaleeckal Mathai Cor Episcopos, the first Holy Qurbana was celebrated at
-          St. Savior Cathedral Chapel, Philadelphia. The parish was originally named
-          <em>St. Thomas Orthodox Church</em>.
+          Our community traces its origins to <strong>1962</strong>, when Fr. K. M. Simon celebrated
+          the first Malayalam service in Dr. T. V. Philip's apartment on Pine Street, Philadelphia.
+          After fourteen years of ecumenical Sunday worship, the parish was officially founded in
+          <strong>October 1976</strong> by V. Rev. Kaleeckal Mathai Cor Episcopos &mdash; first as
+          <em>St. Thomas Indian Orthodox Church</em>, with the Holy Qurbana celebrated at the
+          Church of the Savior Cathedral chapel, 38th &amp; Chestnut Streets.
         </p>
         <p style="font-size:9pt;line-height:1.75;color:#333;text-align:justify;margin-top:0.08in;">
-          In <strong>1984</strong>, the parish was renamed <em>St. Gregorios Malankara
-          Orthodox Church</em> — in honor of St. Geevarghese Gregorios of Parumala,
-          the first Indian saint of the Orthodox Church.
+          In <strong>1984</strong>, following parish reorganization, our community was reconstituted
+          as <em>St. Gregorios Malankara Orthodox Church</em> &mdash; in honor of St. Geevarghese
+          Gregorios of Parumala, the first Indian saint of the Orthodox Church. Fr. K. Mathai
+          continued as Vicar.
         </p>
         <p style="font-size:9pt;line-height:1.75;color:#333;text-align:justify;margin-top:0.08in;">
-          In <strong>1995</strong>, the parish moved to Torresdale Avenue, Philadelphia. On <strong>Christmas Day 2008</strong>,
-          it relocated to 4136 Hulmeville Road, Bensalem — consecrated <strong>May 22–23, 2009</strong>.
+          A 1994 attempt to build on Verree Road was prevented by zoning. In <strong>1995</strong>
+          the parish purchased its first permanent home at 7721 Torresdale Avenue, Philadelphia.
+          Land at <strong>4136 Hulmeville Road, Bensalem</strong> was acquired in <strong>2005</strong>
+          (with adjacent property added in 2006); the new church was first occupied on
+          <strong>Christmas Day 2008</strong> and consecrated <strong>May 22&ndash;23, 2009</strong>.
         </p>
         <p style="font-size:9pt;line-height:1.75;color:#333;text-align:justify;margin-top:0.08in;">
           In <strong>2011</strong>, our parish hosted the historic Metropolitan Enthronement of His Grace Zachariah Mar Nicholovos,
@@ -963,29 +1113,42 @@
 
         <div class="tl">
           <div class="tl-dot"></div>
+          <span class="tl-year">1962</span>
+          <span class="tl-text">First Malayalam service at Dr. T. V. Philip's home, Philadelphia</span>
+        </div>
+        <div class="tl">
+          <div class="tl-dot"></div>
           <span class="tl-year">1976</span>
-          <span class="tl-text">Founded as <em>St. Thomas Orthodox Church</em> at St. Savior Cathedral Chapel, Philadelphia</span>
+          <span class="tl-text">Founded as <em>St. Thomas Indian Orthodox Church</em> at Church of the Savior Cathedral, 38th &amp; Chestnut</span>
           <img src="images/st-gregorios.webp" class="tl-img" alt="St. Gregorios icon">
         </div>
         <div class="tl">
           <div class="tl-dot"></div>
           <span class="tl-year">1984</span>
-          <span class="tl-text">Renamed <em>St. Gregorios Malankara Orthodox Church</em></span>
+          <span class="tl-text">Reconstituted as <em>St. Gregorios Malankara Orthodox Church</em></span>
+        </div>
+        <div class="tl">
+          <div class="tl-dot"></div>
+          <span class="tl-year">1994</span>
+          <span class="tl-text">Verree Road property purchased; zoning prevented build</span>
         </div>
         <div class="tl">
           <div class="tl-dot"></div>
           <span class="tl-year">1995</span>
-          <span class="tl-text">Moved to own building — 7721 Torresdale Ave, Philadelphia</span>
+          <span class="tl-text">Moved to own building &mdash; 7721 Torresdale Ave, Philadelphia</span>
+          <img src="images/history/torresdale-1995.jpg" class="tl-img" alt="Torresdale Avenue church">
         </div>
         <div class="tl">
           <div class="tl-dot"></div>
           <span class="tl-year">2007</span>
           <span class="tl-text">Groundbreaking ceremony (4136 Hulmeville Rd, Bensalem)</span>
+          <img src="images/history/groundbreaking-2007.jpg" class="tl-img" alt="Groundbreaking ceremony">
         </div>
         <div class="tl">
           <div class="tl-dot"></div>
           <span class="tl-year">2008</span>
           <span class="tl-text">Foundation stone laid; relocated Christmas Day</span>
+          <img src="images/history/christmas-2008.jpg" class="tl-img" alt="Christmas Day 2008 — completed church">
         </div>
         <div class="tl">
           <div class="tl-dot"></div>
@@ -1039,14 +1202,176 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>6</span>
+    <span>7</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 7 — COMMUNITY OUTREACH & PARTNERSHIPS
+     PAGE 8 — OUR SANCTUARY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Our Sanctuary</h1>
+      <p>4136 Hulmeville Road, Bensalem &bull; Consecrated 2009</p>
+    </div>
+  </div>
+
+  <div class="page-content" style="padding-top:0.18in;">
+
+    <!-- Hero photo: full sanctuary view -->
+    <img src="images/sanctuary/sanctuary-hero.jpg"
+         alt="The sanctuary of St. Gregorios Malankara Orthodox Church"
+         style="width:100%;height:4.2in;object-fit:cover;object-position:center;border:2px solid var(--gold);border-radius:4px;display:block;">
+    <p style="font-size:8pt;color:#888;font-style:italic;text-align:center;margin-top:0.06in;">
+      The sanctuary at 4136 Hulmeville Road, photographed in the days surrounding consecration, 2009
+    </p>
+
+    <!-- Three smaller photos -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.18in;margin-top:0.18in;">
+      <div>
+        <img src="images/sanctuary/entrance.jpg"
+             alt="Sanctuary entrance with stained glass and saint icons"
+             style="width:100%;height:2.1in;object-fit:cover;object-position:center;border:2px solid var(--gold);border-radius:4px;display:block;">
+        <p style="font-size:8pt;color:#666;text-align:center;margin-top:0.05in;font-style:italic;">Entrance &mdash; flanked by St. George and St. Thomas</p>
+      </div>
+      <div>
+        <img src="images/sanctuary/altar-candle.jpg"
+             alt="Brass candleholder on the altar"
+             style="width:100%;height:2.1in;object-fit:cover;object-position:center;border:2px solid var(--gold);border-radius:4px;display:block;">
+        <p style="font-size:8pt;color:#666;text-align:center;margin-top:0.05in;font-style:italic;">A brass candle on the altar</p>
+      </div>
+      <div>
+        <img src="images/sanctuary/st-mary-icon.jpg"
+             alt="Icon of St. Mary and the Christ Child"
+             style="width:100%;height:2.1in;object-fit:cover;object-position:center;border:2px solid var(--gold);border-radius:4px;display:block;">
+        <p style="font-size:8pt;color:#666;text-align:center;margin-top:0.05in;font-style:italic;">Icon of St. Mary &amp; the Christ Child</p>
+      </div>
+    </div>
+
+    <!-- Closing blessing -->
+    <div style="margin-top:0.18in;background:var(--maroon);border-radius:4px;padding:0.12in;text-align:center;">
+      <p style="color:var(--gold2);font-size:11pt;font-style:italic;letter-spacing:0.5px;">
+        &ldquo;Lord, I have loved the habitation of Thy house, and the place where Thine honor dwelleth.&rdquo;
+      </p>
+      <p style="color:rgba(255,255,255,0.6);font-size:8pt;margin-top:4px;">&mdash; Psalm 26:8</p>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>8</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 9 — CHARTER FAMILIES (1976–1980)
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Charter Families</h1>
+      <p>Those Who Built the Foundation &bull; 1976&ndash;1980</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="section-heading">
+      <h2>Our Founding Members</h2>
+      <div class="gold-rule"></div>
+      <p>The faithful who answered the first call</p>
+    </div>
+
+    <p style="font-size:10pt;line-height:1.7;color:#333;text-align:center;max-width:6in;margin:0 auto 0.18in;">
+      In the earliest years of our parish, a small circle of families gathered around
+      <strong>V. Rev. K. Mathai Cor Episcopos</strong> to plant the first Malankara Orthodox
+      community in greater Philadelphia. We honor the charter members who joined between
+      <strong>1976 and 1980</strong>&mdash;those whose faith laid the foundation on which
+      five decades of parish life have been built.
+    </p>
+
+    <div style="columns:2;column-gap:0.3in;font-size:9.5pt;line-height:1.55;color:#333;">
+
+      <div style="break-inside:avoid;margin-bottom:0.12in;">
+        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1976</h3>
+        <ul style="list-style:none;padding-left:0;margin:0;">
+          <li style="padding:2px 0;">Mariamma Mathai Kochamma <em style="color:#777;">&mdash; w/o Late V. Rev. K. Mathai Corepiscopa</em></li>
+          <li style="padding:2px 0;">Mariamma Varki Kochamma <em style="color:#777;">&mdash; w/o Late Fr. Paul Varki</em></li>
+          <li style="padding:2px 0;">Aleyamma Mani Kochamma <em style="color:#777;">&mdash; w/o Late Dn. Markose Mani</em></li>
+          <li style="padding:2px 0;">Late Saramma Mathai <em style="color:#777;">(Punoose Mathai, Jayamole)</em></li>
+          <li style="padding:2px 0;">Annamma Kurian <em style="color:#777;">&mdash; w/o Late Kurien Mathew</em></li>
+          <li style="padding:2px 0;">Susy Thomas <em style="color:#777;">&mdash; w/o Late V. C. Thomas</em></li>
+          <li style="padding:2px 0;">Korah T. Mani &amp; Sobha</li>
+          <li style="padding:2px 0;">Dr. Koshy Poovathoor &amp; Baby</li>
+          <li style="padding:2px 0;">Paul C. Mathai &amp; Joan</li>
+          <li style="padding:2px 0;">Raju M. Varghese &amp; Alice</li>
+          <li style="padding:2px 0;">V. S. Mathew &amp; Rachel <em style="color:#777;">(Uncle came 1977)</em></li>
+          <li style="padding:2px 0;">T. V. Philip <em style="color:#777;">(Georgee &amp; Neena)</em></li>
+          <li style="padding:2px 0;">Thomas Ninan / K. T. Ninan &amp; Saramma</li>
+          <li style="padding:2px 0;">Mathai Mammen</li>
+          <li style="padding:2px 0;">Dr. Thomas Mammen</li>
+          <li style="padding:2px 0;">Geevarughese Mathai <em style="color:#777;">(Uncle came 1977)</em></li>
+        </ul>
+      </div>
+
+      <div style="break-inside:avoid;margin-bottom:0.12in;">
+        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1977</h3>
+        <ul style="list-style:none;padding-left:0;margin:0;">
+          <li style="padding:2px 0;">Abraham O. Abraham</li>
+        </ul>
+      </div>
+
+      <div style="break-inside:avoid;margin-bottom:0.12in;">
+        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1978</h3>
+        <ul style="list-style:none;padding-left:0;margin:0;">
+          <li style="padding:2px 0;">Thomas Paul &amp; Elyamma</li>
+          <li style="padding:2px 0;">Joseph Abraham <em style="color:#777;">(Aunty came 1974, CSI)</em></li>
+          <li style="padding:2px 0;">Kuruvilla Kurian &amp; Susy</li>
+          <li style="padding:2px 0;">Ninan Parel &amp; Mariamma <em style="color:#777;">(Aunty came earlier)</em></li>
+          <li style="padding:2px 0;">Santhosh Ninan</li>
+        </ul>
+      </div>
+
+      <div style="break-inside:avoid;margin-bottom:0.12in;">
+        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1979&ndash;1980</h3>
+        <ul style="list-style:none;padding-left:0;margin:0;">
+          <li style="padding:2px 0;">George M. Mathew <em style="color:#777;">(1979)</em></li>
+          <li style="padding:2px 0;">Chandy Varghese, Collegeville <em style="color:#777;">(Aunty 1979, Uncle 1980)</em></li>
+        </ul>
+      </div>
+
+      <div style="break-inside:avoid;margin-bottom:0.12in;">
+        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">Children of the Founding Clergy</h3>
+        <ul style="list-style:none;padding-left:0;margin:0;">
+          <li style="padding:2px 0;">Paul C. Varki &amp; Elizabeth <em style="color:#777;">(Varki Achen's children)</em></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div style="margin-top:0.18in;background:var(--maroon);border-radius:4px;padding:0.13in;text-align:center;">
+      <p style="color:var(--gold2);font-size:11pt;font-style:italic;letter-spacing:1px;">
+        "Other foundation can no man lay than that is laid, which is Jesus Christ."
+      </p>
+      <p style="color:rgba(255,255,255,0.6);font-size:8pt;margin-top:4px;">&mdash; 1 Corinthians 3:11</p>
+    </div>
+
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>9</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 10 — COMMUNITY OUTREACH & PARTNERSHIPS
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   <div class="page-header">
@@ -1098,14 +1423,14 @@
 
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>7</span>
+    <span>10</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 8 — EXECUTIVE COMMITTEE
+     PAGE 11 — EXECUTIVE COMMITTEE
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   <div class="page-header">
@@ -1239,14 +1564,14 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>7</span>
+    <span>11</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 7 — SUNDAY SCHOOL
+     PAGE 12 — SUNDAY SCHOOL
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   
@@ -1300,10 +1625,12 @@
         </div>
       </div>
       <div>
-        
-        <div style="width:100%;height:1.4in;background:#f5ede0;border:1px dashed var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:9pt;margin:0.1in 0;">Class Photo / Group Photo</div>
-        
-        <div style="width:100%;height:1.4in;background:#f5ede0;border:1px dashed var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:9pt;margin:0.1in 0;">Activity / Event Photo</div>
+        <img src="images/sunday-school/group-lineup.jpg"
+             alt="Sunday School students lined up for performance"
+             style="width:100%;height:1.4in;object-fit:cover;object-position:center 25%;border:2px solid var(--gold);border-radius:4px;margin:0.1in 0;">
+        <img src="images/sunday-school/ovbs-2004.jpg"
+             alt="Mathai Achen with children at OVBS"
+             style="width:100%;height:1.4in;object-fit:cover;object-position:center 30%;border:2px solid var(--gold);border-radius:4px;margin:0.1in 0;">
       </div>
     </div>
     <div style="margin-top:0.15in;">
@@ -1321,17 +1648,17 @@
       </div>
     </div>
   </div>
-  
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>12</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 8 — MGOCSM / YOUTH LEAGUE
+     PAGE 13 — MGOCSM / YOUTH LEAGUE
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   
@@ -1411,17 +1738,17 @@
       </div>
     </div>
   </div>
-  
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>13</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 9 — LOGOS MINISTRY
+     PAGE 14 — LOGOS MINISTRY
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   
@@ -1486,17 +1813,17 @@
       </div>
     </div>
   </div>
-  
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>14</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 10 — GROW
+     PAGE 15 — GROW
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   
@@ -1572,17 +1899,17 @@
       </div>
     </div>
   </div>
-  
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>15</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 11 — MARTH MARIAM SAMAJAM
+     PAGE 16 — MARTH MARIAM SAMAJAM
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   
@@ -1663,17 +1990,17 @@
       </div>
     </div>
   </div>
-  
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>16</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 12 — GOOD SAMARITAN
+     PAGE 17 — GOOD SAMARITAN
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   
@@ -1760,17 +2087,17 @@
       </div>
     </div>
   </div>
-  
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>17</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 8 — ST. JOSEPH'S FORUM (MEN'S FORUM)
+     PAGE 18 — ST. JOSEPH'S FORUM (MEN'S FORUM)
 ════════════════════════════════════════ -->
 <div class="page inner-page">
 
@@ -1859,7 +2186,7 @@
 
 
 <!-- ════════════════════════════════════════
-     PAGE 15 — PLATINUM SPONSOR ADVERTISEMENT
+     PAGE 19 — PLATINUM SPONSOR ADVERTISEMENT
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   <div class="page-header">
@@ -1886,14 +2213,14 @@
 
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
+    <span>19</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
 <!-- ════════════════════════════════════════
-     PAGE 16 — GOLD SPONSOR ADVERTISEMENTS
+     PAGE 20 — GOLD SPONSOR ADVERTISEMENTS
 ════════════════════════════════════════ -->
 <div class="page inner-page">
   <div class="page-header">
@@ -1938,222 +2265,300 @@
 
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
-    <span>Golden Jubilee 1976–2026</span>
-  </div>
-</div>
-
-
-<!-- ════════════════════════════════════════
-     PAGE 17 — FAMILY GREETINGS
-════════════════════════════════════════ -->
-<div class="page inner-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Family Greetings</h1>
-      <p>SGMOC Golden Jubilee &bull; 1976–2026</p>
-    </div>
-  </div>
-
-  <div class="page-content">
-    <div class="section-heading">
-      <h2>Greetings from Our Families</h2>
-      <div class="gold-rule"></div>
-    </div>
-
-    <div class="family-grid">
-      <div class="family-card">
-        <h4>[Family Name] Family</h4>
-        <p>Wishing SGMOC God's richest blessings on this Golden Jubilee.<br>
-        May the Lord continue to strengthen this parish for generations to come.</p>
-        <p class="greeting">"To God be the Glory!"</p>
-      </div>
-      <div class="family-card">
-        <h4>[Family Name] Family</h4>
-        <p>Congratulations on 50 wonderful years. We are grateful to be part of this
-        faith community and pray for its continued growth.</p>
-        <p class="greeting">"Blessed Golden Jubilee"</p>
-      </div>
-      <div class="family-card">
-        <h4>[Family Name] Family</h4>
-        <p>Our deepest congratulations to SGMOC. This church has been our spiritual
-        home and family. May it flourish for fifty more years.</p>
-        <p class="greeting">"In gratitude and love"</p>
-      </div>
-      <div class="family-card">
-        <h4>[Family Name] Family</h4>
-        <p>Praising God for fifty years of faithfulness at SGMOC. We stand in awe
-        of what He has done through this beloved parish.</p>
-        <p class="greeting">"Soli Deo Gloria"</p>
-      </div>
-      <div class="family-card">
-        <h4>[Family Name] Family</h4>
-        <p>[Insert family greeting message here. Space for up to three short lines
-        of congratulatory message.]</p>
-        <p class="greeting">"[Custom greeting]"</p>
-      </div>
-      <div class="family-card">
-        <h4>[Family Name] Family</h4>
-        <p>[Insert family greeting message here. Space for up to three short lines
-        of congratulatory message.]</p>
-        <p class="greeting">"[Custom greeting]"</p>
-      </div>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
-    <span>Golden Jubilee 1976–2026</span>
-  </div>
-</div>
-
-
-<!-- ════════════════════════════════════════
-     SAMPLE FAMILY-SPONSORED PAGES (Format Examples)
-════════════════════════════════════════ -->
-
-<!-- SAMPLE 1: Family Photo Page -->
-<div class="page inner-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>The Abraham Family</h1>
-    </div>
-  </div>
-  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor</div>
-  <div class="page-content" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.2in;">
-    <div style="width:100%;max-width:5in;height:3.5in;background:#f5ede0;border:2px solid var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:12pt;font-weight:bold;">
-      Family Photo
-    </div>
-    <div style="text-align:center;margin-top:0.2in;">
-      <p style="font-size:11pt;font-weight:bold;color:var(--maroon);margin-bottom:0.1in;">Celebrating 25 Years of Faith and Fellowship</p>
-      <p style="font-size:9pt;color:#666;line-height:1.6;">
-        With gratitude for the blessings of SGMOC's spiritual community,<br>
-        we give glory to God on this Golden Jubilee.
-      </p>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>18</span>
-    <span>Golden Jubilee 1976–2026</span>
-  </div>
-</div>
-
-
-<!-- SAMPLE 2: Family History Page (150–200 words) -->
-<div class="page inner-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>The Joseph Family</h1>
-    </div>
-  </div>
-  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Our Journey with SGMOC</div>
-  <div class="page-content">
-    <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.25in;margin-bottom:0.15in;">
-      <p style="font-size:10pt;line-height:1.8;color:#333;">
-        The Joseph family joined St. Gregorios Malankara Orthodox Church in 1998, during our early years
-        at the Torresdale Avenue location. What began as a search for an Orthodox faith community became
-        our spiritual home and extended family.
-      </p>
-      <p style="font-size:10pt;line-height:1.8;color:#333;margin-top:0.1in;">
-        Over the past 28 years, we have witnessed the church's growth from a small congregation to a vibrant
-        parish family. Our children were baptized, educated, and nurtured in the Sunday School. We have
-        participated in worship, served in various ministries, and celebrated countless milestones together.
-      </p>
-      <p style="font-size:10pt;line-height:1.8;color:#333;margin-top:0.1in;">
-        As SGMOC celebrates its Golden Jubilee, we give thanks for the faithful leadership of our vicars,
-        the dedication of our clergy and lay leaders, and the love of this church community. May God's
-        blessings continue to guide SGMOC for generations to come.
-      </p>
-    </div>
-    <p style="font-size:9pt;color:#888;font-style:italic;text-align:right;">— The Joseph Family</p>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>19</span>
-    <span>Golden Jubilee 1976–2026</span>
-  </div>
-</div>
-
-
-<!-- SAMPLE 3: Article/Poem Page -->
-<div class="page inner-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Fifty Years of Grace</h1>
-    </div>
-  </div>
-  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">A Reflection on Our Jubilee</div>
-  <div class="page-content">
-    <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.25in;">
-      <p style="font-size:10pt;line-height:2;color:#333;text-align:center;font-style:italic;margin-bottom:0.15in;">
-        Fifty years of worship, praise, and prayer,<br>
-        Fifty years of God's unfailing care.<br>
-        From humble beginnings to blessings untold,<br>
-        SGMOC's story in faith takes hold.
-      </p>
-      <p style="font-size:10pt;line-height:2;color:#333;text-align:center;font-style:italic;margin-bottom:0.15in;">
-        Through seasons of growth and times of test,<br>
-        The Lord has guided us through each quest.<br>
-        With grateful hearts we celebrate today,<br>
-        And trust His faithfulness will light our way.
-      </p>
-      <p style="font-size:10pt;line-height:2;color:#333;text-align:center;font-style:italic;margin-bottom:0.15in;">
-        May we continue to serve with love so true,<br>
-        Building God's kingdom in all that we do.<br>
-        Golden Jubilee, a crown of grace,<br>
-        Fifty more years in this holy place.
-      </p>
-      <p style="font-size:9pt;color:#888;font-style:italic;text-align:right;margin-top:0.15in;">— A Parishioner</p>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
     <span>20</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
 
 
-<!-- SAMPLE 4: Messages & Best Wishes Page -->
+<!-- ════════════════════════════════════════
+     PAGE 21 — MEMBER PAGE: MATHEWKUTTY KURIAN FAMILY
+════════════════════════════════════════ -->
 <div class="page inner-page">
   <div class="page-header">
     <div class="page-header-title">
-      <h1>Golden Jubilee Wishes</h1>
+      <h1>The Mathewkutty Kurian Family</h1>
     </div>
   </div>
-  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Messages from Our Families</div>
+  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor &bull; Members since 1989</div>
+
   <div class="page-content">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.2in;font-size:9.5pt;line-height:1.6;">
-      <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.12in;">
-        <p style="font-weight:bold;color:var(--maroon);margin-bottom:0.05in;">The Mathew Family</p>
-        <p style="color:#333;font-size:9pt;">
-          "Congratulations SGMOC on 50 glorious years! May the Lord bless this parish abundantly and guide it into the next generation."
-        </p>
+    <div style="display:flex;gap:0.25in;align-items:flex-start;">
+      <div style="flex:2;">
+        <img src="images/members/mathewkutty-kurian/photo2.jpg"
+             alt="The Mathewkutty Kurian Family"
+             style="width:100%;height:auto;border:2px solid var(--gold);border-radius:4px;display:block;">
+        <p style="font-size:8pt;color:#888;font-style:italic;text-align:center;margin-top:0.06in;">Three generations &bull; Photographed 2026</p>
       </div>
-      <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.12in;">
-        <p style="font-weight:bold;color:var(--maroon);margin-bottom:0.05in;">The Thomas Family</p>
-        <p style="color:#333;font-size:9pt;">
-          "Grateful for the spiritual growth our family has experienced at SGMOC. Wishing all blessings on this special milestone!"
-        </p>
-      </div>
-      <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.12in;">
-        <p style="font-weight:bold;color:var(--maroon);margin-bottom:0.05in;">The Varghese Family</p>
-        <p style="color:#333;font-size:9pt;">
-          "Praise God for the faithful witness of SGMOC. We celebrate this Golden Jubilee with thanksgiving and hope."
-        </p>
-      </div>
-      <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.12in;">
-        <p style="font-weight:bold;color:var(--maroon);margin-bottom:0.05in;">The George Family</p>
-        <p style="color:#333;font-size:9pt;">
-          "To God be the glory for 50 years of faithfulness! We look forward to many more years of ministry together."
-        </p>
+      <div style="flex:1;display:flex;flex-direction:column;gap:0.15in;">
+        <img src="images/members/mathewkutty-kurian/photo1.jpg"
+             alt="Nuclear family portrait"
+             style="width:100%;height:auto;border:2px solid var(--gold);border-radius:4px;display:block;">
       </div>
     </div>
+
+    <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.22in;margin-top:0.2in;">
+      <p style="font-size:10.5pt;line-height:1.85;color:#333;">
+        The Mathew family has been members of this church since <strong>1989</strong>. Our journey
+        with the church has been profoundly meaningful, deeply rooted in the teachings of the
+        Orthodox faith. The church community has enriched our lives through its love, guidance,
+        and shared values, fostering a stronger connection with God and one another. We are
+        deeply grateful for the blessings and sense of belonging we have found within this
+        community.
+      </p>
+      <p style="font-size:10pt;color:var(--maroon);font-style:italic;text-align:right;margin-top:0.12in;">
+        &mdash; The Mathewkutty Kurian Family
+      </p>
+    </div>
+
+    <div style="margin-top:0.18in;text-align:center;">
+      <p style="color:var(--gold);font-size:9pt;letter-spacing:2px;text-transform:uppercase;">Celebrating SGMOC's Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
+
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
     <span>21</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 22 — MEMBER PAGE: REV. FR. ALEXANDER KURIEN FAMILY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>The Kurien Family</h1>
+    </div>
+  </div>
+  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor &bull; Washington D.C.</div>
+
+  <div class="page-content">
+    <div style="text-align:center;margin-bottom:0.15in;">
+      <p style="color:var(--maroon);font-size:13pt;font-weight:bold;line-height:1.4;margin-bottom:0.05in;">Best Wishes &amp; Congratulations</p>
+      <p style="color:#555;font-size:9.5pt;line-height:1.5;">
+        Rev. Fr. Shibu Venad Mathai (Vicar) &amp; the Members of<br>
+        St. Gregorios Malankara Orthodox Church, Bensalem, PA<br>
+        <em style="color:var(--gold);">On Your Golden Jubilee Celebrations</em>
+      </p>
+    </div>
+
+    <div style="display:flex;gap:0.25in;align-items:center;">
+      <img src="images/members/fr-alexander-kurien/family-pic.jpg"
+           alt="The Kurien Family"
+           style="flex:1;width:auto;max-width:4.2in;height:auto;border:2px solid var(--gold);border-radius:4px;display:block;">
+      <img src="images/members/fr-alexander-kurien/cross.jpg"
+           alt="Cross of Life"
+           style="width:1.4in;height:1.4in;object-fit:contain;flex-shrink:0;">
+    </div>
+
+    <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.18in;margin-top:0.15in;">
+      <p style="font-size:10.5pt;line-height:1.7;color:#333;font-style:italic;text-align:center;">
+        &ldquo;As we celebrate fifty years, may your enduring vision continue to ignite the
+        faith of the next generation and walk in spiritual light.&rdquo;
+      </p>
+      <p style="font-size:9.5pt;color:var(--maroon);text-align:center;margin-top:0.1in;font-weight:bold;">
+        Rev. Fr. Alexander James Kurien &amp; Ajitha<br>
+        <span style="font-weight:normal;color:#444;">Alyssa &amp; Andrew &bull; Natasha &bull; Elijah</span><br>
+        <span style="font-weight:normal;color:#888;font-size:8.5pt;font-style:italic;">Washington D.C., USA</span>
+      </p>
+    </div>
+
+    <p style="font-size:9pt;line-height:1.65;color:#444;margin-top:0.12in;text-align:center;font-style:italic;">
+      &ldquo;Let us, as a united community, pray that the praise of the exaltation and
+      glorification of the Lord's cross be unceasingly on our lips and on the lips of our
+      children: &lsquo;Cross of Life, which became a salvation for us; by which all of us praise
+      You, &hellip; Give us the Sign of Victory; by this, keep us for all life,&rsquo; now and forever.
+      Amen.&rdquo;
+    </p>
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>22</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 23 — MEMORIAL: P. K. ABRAHAM & ANNAMMA (MANI ABRAHAM FAMILY)
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header" style="background:#2a2a2a;">
+    <div class="page-header-title">
+      <h1 style="color:var(--gold2);">In Loving Memory</h1>
+    </div>
+  </div>
+  <div style="background:#2a2a2a;text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor</div>
+
+  <div class="page-content" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+
+    <div style="text-align:center;margin-bottom:0.2in;">
+      <h2 style="color:var(--maroon);font-size:20pt;line-height:1.2;margin-bottom:0.05in;">P. K. Abraham &amp; Annamma</h2>
+      <p style="color:var(--gold);font-size:10pt;letter-spacing:1px;text-transform:uppercase;">of Pattasseril, Puthupally</p>
+      <div style="width:3in;height:1px;background:linear-gradient(to right,transparent,var(--gold) 20%,var(--gold) 80%,transparent);margin:0.1in auto;"></div>
+    </div>
+
+    <img src="images/members/mani-p-abraham/photo.jpeg"
+         alt="P. K. Abraham and Annamma"
+         style="max-width:4.2in;max-height:4.2in;width:auto;height:auto;object-fit:contain;border:3px solid var(--gold);border-radius:4px;">
+
+    <p style="font-size:13pt;line-height:1.5;color:#333;font-style:italic;text-align:center;margin-top:0.22in;">
+      Remembering the Love and Sacrifices they made
+    </p>
+
+    <div style="margin-top:0.2in;text-align:center;">
+      <p style="color:var(--maroon);font-size:11pt;font-weight:bold;letter-spacing:0.5px;">
+        Korah, Mani and Dr. George Abraham and families
+      </p>
+      <p style="color:#555;font-size:10pt;margin-top:0.06in;font-style:italic;">
+        Grandchildren and Great Grandchildren
+      </p>
+    </div>
+
+    <div style="margin-top:0.2in;background:var(--maroon);border-radius:4px;padding:0.1in 0.2in;text-align:center;">
+      <p style="color:var(--gold2);font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;">May Their Memory Be Eternal</p>
+    </div>
+  </div>
+
+  <div class="page-footer" style="background:#2a2a2a;">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>23</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 24 — MEMBER PAGE: THOMAS PAUL FAMILY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>The Thomas Paul Family</h1>
+    </div>
+  </div>
+  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor &bull; Members since 1978</div>
+
+  <div class="page-content" style="display:flex;flex-direction:column;align-items:center;">
+    <img src="images/members/thomas-paul/photo.jpeg"
+         alt="The Thomas Paul Family"
+         style="max-width:5.5in;width:100%;height:auto;border:2px solid var(--gold);border-radius:4px;display:block;">
+
+    <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.22in 0.3in;margin-top:0.2in;width:100%;max-width:6in;">
+      <p style="font-size:14pt;font-weight:bold;color:var(--maroon);text-align:center;margin-bottom:0.12in;">
+        Best Compliments from Thomas Paul and Family
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;font-size:10.5pt;line-height:1.85;color:#333;text-align:center;">
+        <li>Members of SGMOC since <strong>1978</strong></li>
+        <li>Board of Trustee Member &mdash; <strong>1994&ndash;1996</strong></li>
+        <li>Secretary &mdash; <strong>1995&ndash;1996</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>24</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 25 — MEMBER PAGE: LIJO CHANDY FAMILY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>The Lijo Chandy Family</h1>
+    </div>
+  </div>
+  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor</div>
+
+  <div class="page-content" style="display:flex;flex-direction:column;gap:0.18in;">
+    <img src="images/members/lijo-chandy/photo1.jpeg"
+         alt="The Lijo Chandy Family"
+         style="width:100%;max-height:4.4in;object-fit:cover;object-position:center;border:2px solid var(--gold);border-radius:4px;display:block;">
+
+    <div style="display:flex;gap:0.18in;">
+      <img src="images/members/lijo-chandy/photo2.jpeg"
+           alt="Family"
+           style="flex:1;width:50%;height:2.6in;object-fit:cover;object-position:center top;border:2px solid var(--gold);border-radius:4px;display:block;">
+      <img src="images/members/lijo-chandy/photo3.jpeg"
+           alt="Family"
+           style="flex:1;width:50%;height:2.6in;object-fit:cover;object-position:center;border:2px solid var(--gold);border-radius:4px;display:block;">
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>25</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 26 — MEMBER PAGE: DR. ASHOK JOSEPH FAMILY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>The Joseph Family</h1>
+    </div>
+  </div>
+  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor &bull; Church Jubilee</div>
+
+  <div class="page-content" style="display:flex;flex-direction:column;align-items:center;">
+    <img src="images/members/ashok-joseph/photo.jpg"
+         alt="The Joseph Family"
+         style="max-width:4.5in;width:auto;max-height:5in;height:auto;border:2px solid var(--gold);border-radius:4px;display:block;">
+
+    <div style="background:white;border:1px solid var(--gold);border-radius:4px;padding:0.22in 0.3in;margin-top:0.2in;width:100%;max-width:6in;">
+      <p style="font-size:10.5pt;line-height:1.85;color:#333;text-align:center;">
+        On this joyful jubilee occasion, we thank God for the years of faith, service and
+        community our church has built. May the good Lord continue to bless our mission,
+        strengthen our congregation and guide us into a future filled with hope and love.
+      </p>
+      <p style="font-size:11pt;color:var(--maroon);text-align:center;margin-top:0.15in;font-weight:bold;letter-spacing:0.5px;">
+        Dr. Ashok Joseph &bull; Susan Joseph<br>
+        Abraham Joseph &bull; Jacob Joseph
+      </p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>26</span>
+    <span>Golden Jubilee 1976–2026</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     PAGE 27 — MEMBER PAGE: DUSTIN PAUL FAMILY
+════════════════════════════════════════ -->
+<div class="page inner-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>The Dustin Paul Family</h1>
+    </div>
+  </div>
+  <div style="background:var(--maroon);text-align:center;padding:4px;color:var(--gold);font-size:8pt;letter-spacing:2px;text-transform:uppercase;">Golden Jubilee Family Sponsor</div>
+
+  <div class="page-content" style="display:flex;align-items:center;justify-content:center;">
+    <img src="images/members/dustin-paul/photo.jpeg"
+         alt="The Dustin Paul Family"
+         style="max-width:5in;max-height:7in;width:auto;height:auto;object-fit:contain;border:3px solid var(--gold);border-radius:4px;display:block;">
+  </div>
+
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>27</span>
     <span>Golden Jubilee 1976–2026</span>
   </div>
 </div>
