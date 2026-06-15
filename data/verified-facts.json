@@ -1,0 +1,21 @@
+{
+  "_comment": "Source of truth for content that has been VERIFIED by a named person/issue. The check script (scripts/check-verified.js, run in CI) fails the build if any 'expected' string is missing from index.html, or any 'forbidden' (previously-corrected) string reappears. Add an entry whenever someone confirms a name/fact so it can never be silently reverted again. See issue history for context.",
+  "facts": [
+    {
+      "id": "mmvs-treasurer",
+      "label": "MMVS Treasurer",
+      "expected": "Sunitha Zacharia",
+      "forbidden": ["Mercy Varkey"],
+      "source": "GitHub issue #16 — confirmed by MolseyThomas 2026-04-13",
+      "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation."
+    },
+    {
+      "id": "mmvs-central-committee",
+      "label": "MMVS Central Committee Member",
+      "expected": "Beena Koshy",
+      "forbidden": ["Annamma Samuel"],
+      "source": "GitHub issue #16 — confirmed by MolseyThomas 2026-04-13",
+      "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation."
+    }
+  ]
+}

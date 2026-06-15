@@ -1,0 +1,21 @@
+name: Verify content
+
+# Guards against silent regression of verified facts (e.g. ministry leadership
+# confirmed via issues). Fails the build if index.html drops or reverts any
+# entry in data/verified-facts.json.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify-facts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check verified facts
+        run: node scripts/check-verified.js

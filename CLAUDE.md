@@ -85,8 +85,8 @@ Bensalem, PA. It is a single HTML file (`index.html`) designed to be printed as 
 | Soumia Varghese | Ministry Leader, GROW | p11 |
 | Reny Biju | Secretary, MMS | p12 |
 | Christeena Poovathoor | Joint Secretary, MMS | p12 |
-| Mercy Varkey | Treasurer, MMS | p12 |
-| Annamma Samuel | Central Committee Member, MMS | p12 |
+| Sunitha Zacharia | Treasurer, MMS | p12 |
+| Beena Koshy | Central Committee Member, MMS | p12 |
 
 ---
 
