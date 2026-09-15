@@ -1,0 +1,94 @@
+{
+  "_comment": "Page order for the souvenir, following Manoj's 'SGMOC Content Outline.docx' (Drive 1pRHU_HaNkMb-gZDuq5EzBOSb1pZnUMlm, sent 2026-09-14). Item kinds: file (hand-built page in src/pages), placeholder (planned page not yet written), generated (page built from blocks), member (one entry from data/members.json placed here), members (all remaining families A–Z, with sponsor ads spread through), index. 'toc' adds the item to the Index contents. Manoj said revisions are coming after the September 2026 vicar change.",
+  "sections": [
+    {
+      "name": "Front",
+      "items": [
+        { "file": "src/pages/cover.html", "label": "COVER" },
+        { "file": "src/pages/message-catholicos.html", "label": "MESSAGE: CATHOLICOS", "toc": "Message — H.H. Baselios Marthoma Mathews III" },
+        { "file": "src/pages/message-metropolitan.html", "label": "MESSAGE: METROPOLITAN", "toc": "Message — H.G. Zachariah Mar Nicholovos" },
+        { "file": "src/pages/message-vicar.html", "label": "MESSAGE: VICAR", "toc": "Message — Rev. Fr. Shibu Venad Mathai" },
+        { "placeholder": { "title": "Message", "heading": "From the Trustee — Mr. Thomas Ninan", "note": "Message text and photo to be collected. Name as listed in the Content Outline; confirm current Trustee." }, "toc": "Message — Trustee" },
+        { "placeholder": { "title": "Message", "heading": "From the Secretary — Mr. Mathew Ninan", "note": "Message text and photo to be collected. Name as listed in the Content Outline; confirm current Secretary." }, "toc": "Message — Secretary" },
+        { "placeholder": { "title": "Message", "heading": "From the Mayor of Bensalem Township", "note": "Hon. Joseph DiGirolamo — message to be requested." }, "toc": "Message — Mayor of Bensalem Township" },
+        { "placeholder": { "title": "Message", "heading": "From the Governor of Pennsylvania", "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received." }, "toc": "Message — Governor of Pennsylvania" },
+        { "file": "src/pages/executive-committee.html", "label": "LEADERSHIP TEAM", "toc": "Leadership Team" },
+        { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. Eby Paulose", "note": "Appointed Vicar of SGMOC effective September 28, 2026. Photo and biography to be collected." }, "toc": "Clergy — Rev. Fr. Eby Paulose" },
+        { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. Alexander Kurian", "note": "Photo and biography to be collected." }, "toc": "Clergy — Rev. Fr. Alexander Kurian" },
+        { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. K. P. Varghese", "note": "Photo and biography to be collected. Celebrated the 50th anniversary of his priesthood on November 16, 2025." }, "toc": "Clergy — Rev. Fr. K. P. Varghese" },
+        { "file": "src/pages/past-clergy-mathai-cor-episcopa.html", "label": "PAST CLERGY: V. REV. K. MATHAI COR EPISCOPOS", "toc": "Past Clergy — V. Rev. K. Mathai Cor Episcopos" },
+        { "file": "src/pages/past-clergy-paul-varki-beginnings.html", "label": "PAST CLERGY: REV. FR. DR. PAUL VARKI — THE BEGINNINGS", "toc": "Past Clergy — Rev. Fr. Dr. Paul Varki" },
+        { "member": "paul-varki-memorial" },
+        { "member": "markose-mani-memorial", "toc": "Past Clergy — Dn. Markose Mani" }
+      ]
+    },
+    {
+      "name": "History",
+      "items": [
+        { "placeholder": { "title": "History", "heading": "The Orthodox Church in India", "pages": "1–2 pages", "note": "Origins of the Malankara Orthodox Syrian Church." }, "toc": "The Orthodox Church in India" },
+        { "placeholder": { "title": "History", "heading": "The Orthodox Church in Philadelphia", "pages": "1–2 pages", "note": "From the ecumenical Malayalee congregation of the late 1960s to the first Orthodox parish in 1976." }, "toc": "The Orthodox Church in Philadelphia" },
+        { "file": "src/pages/history-parish.html", "label": "OUR PARISH: HISTORY", "toc": "Our Parish — History & Milestones" },
+        { "file": "src/pages/charter-families.html", "label": "OUR PARISH: CHARTER FAMILIES", "toc": "Our Parish — Charter Families 1976–1980" },
+        { "file": "src/pages/our-sanctuary.html", "label": "OUR PARISH: OUR SANCTUARY", "toc": "Our Parish — Our Sanctuary" },
+        { "placeholder": { "title": "Our Parish", "heading": "Significant Events & Pictures", "pages": "Our Parish section: 8–10 pages in total", "note": "Milestone photographs and significant events (cemetery purchase, monument, ministry center, consecration 2009, and more)." }, "toc": "Our Parish — Significant Events" }
+      ]
+    },
+    {
+      "name": "Ministries",
+      "items": [
+        { "file": "src/pages/ministry-sunday-school.html", "label": "MINISTRY: SUNDAY SCHOOL", "toc": "Sunday School" },
+        { "placeholder": { "title": "Sunday School", "heading": "Sunday School — Through the Years", "pages": "Sunday School section: 6–10 pages in total", "note": "History (first Headmaster: Mr. Korah T. Mani), classes and teachers, OVBS, competitions and photographs." } },
+        { "file": "src/pages/ministry-mmvs.html", "label": "MINISTRY: MMVS", "toc": "Marth Mariam Vanitha Samajam" },
+        { "placeholder": { "title": "Marth Mariam Vanitha Samajam", "heading": "MMVS — History & Activities", "pages": "MMVS section: 5–7 pages in total", "note": "History, past office bearers, activities and photographs." } },
+        { "file": "src/pages/ministry-st-josephs-forum.html", "label": "MINISTRY: ST. JOSEPH'S FORUM", "toc": "St. Joseph's Forum" },
+        {
+          "label": "MINISTRY: ST. JOSEPH'S FORUM (2 of 2)",
+          "generated": {
+            "title": "St. Joseph's Forum",
+            "band": "Friendship • Fellowship • Faith",
+            "blocks": [
+              { "type": "heading", "text": "Brothers in Christ, Serving Our Parish" },
+              { "type": "text", "size": "sm", "text": "Originally established in 2024 as the SGMOC Men's Forum, the organization was formally renamed to honor St. Joseph — a timeless pillar of quiet strength, humility, and obedience. Throughout 2025 and 2026, our members have actively immersed themselves in the sacramental life and service of the church, providing volunteer support for the Jubilee Celebrations, the annual Church Picnic, Parish Day, the Volleyball Tournament, the Harvest Festival, the Parish Perunnal, and Christmas programs." },
+              { "type": "text", "size": "sm", "center": true, "title": "Executive Committee 2024–2026", "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Shibu V. Mathai (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese" },
+              { "type": "text", "size": "xs", "cols": true, "title": "Activities & Spiritual Growth", "text": "Sunday meetings and seminars. Monthly meetings follow the Holy Qurbana and fellowship lunch. Sessions have included a Family Communication Series (Rev. Fr. Shibu V. Mathai and Mrs. Ceena Mathew), Cyber Security Awareness (Reji Ninan, Sumod Abraham, Saji Thomas), an Introduction to Artificial Intelligence (Sumod Abraham, James Varghese, Alisha Maret), and Finance, Investment and Retirement Planning (Biju Mani, Reji Ninan, Saji Thomas, Joseph Abraham).\n\nHonoring our members. On November 16, 2025, the Forum celebrated Rev. Fr. K. P. Varghese on the 50th anniversary of his Holy Priesthood. On December 21, 2025, we celebrated the 90th birthday of our most senior member, Mr. Kuruvilla Kallelil. On March 22, 2026, the Forum honored Mr. Varkey Vattakkattu and Mrs. Mercy Varkey upon their relocation to Dallas, Texas.\n\nCare and Share Ministry. Coordinated by John Kappil and Paul Maret, this ministry arranges home visits to parish members unable to attend services due to illness or age.\n\nFellowship and recreation. Annual urban hiking trips to New York City in 2025 and 2026 (coordinated by Biju Chacko and Mathew Joseph), a summer social gathering of over 30 members on August 23, 2025 (Nithin Ipe and Shiju Poovathoor), and performances at the Ecumenical and SGMOC Christmas programs.", "sign": "Submitted by Paul Maret, SJ Forum Lead (2024–2026)" }
+            ]
+          }
+        },
+        { "file": "src/pages/ministry-good-samaritan.html", "label": "MINISTRY: GOOD SAMARITAN MISSION", "toc": "Good Samaritan Mission" },
+        { "placeholder": { "title": "Good Samaritan Mission", "heading": "Good Samaritan Mission — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo, visits and activities." } },
+        { "file": "src/pages/ministry-mgocsm.html", "label": "MINISTRY: MGOCSM", "toc": "MGOCSM / Youth League" },
+        { "placeholder": { "title": "MGOCSM / Youth League", "heading": "MGOCSM — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo, retreats and activities." } },
+        { "file": "src/pages/ministry-logos.html", "label": "MINISTRY: LOGOS", "toc": "Logos Ministry" },
+        { "placeholder": { "title": "Logos Ministry", "heading": "Logos — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo and activities." } },
+        { "file": "src/pages/ministry-grow.html", "label": "MINISTRY: GROW", "toc": "GROW" },
+        { "placeholder": { "title": "GROW", "heading": "GROW — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo and activities." } },
+        { "placeholder": { "title": "Choir", "heading": "Our Choir", "pages": "1 picture or collage page", "note": "Choir photographs to be collected." }, "toc": "Choir" },
+        { "placeholder": { "title": "Acolytes", "heading": "Our Acolytes", "pages": "1 picture or collage page", "note": "Acolyte photographs to be collected." }, "toc": "Acolytes" }
+      ]
+    },
+    {
+      "name": "Church Activities",
+      "items": [
+        { "file": "src/pages/community-outreach.html", "label": "MISSION & CHARITY: COMMUNITY OUTREACH", "toc": "Mission & Charity" },
+        { "placeholder": { "title": "Mission & Charity", "heading": "Mission & Charity — continued", "pages": "Mission & Charity section: 10–15 pages in total", "note": "Mission Board community activities and charity work, with photographs." } },
+        { "placeholder": { "title": "Church Activities", "heading": "B3T, Unity 5K, Harvest Festival & Spikefest", "pages": "10–15 pages", "note": "Photographs and short write-ups for each event." }, "toc": "B3T, 5K, Harvest Festival & Spikefest" },
+        { "placeholder": { "title": "Golden Jubilee Celebrations", "heading": "Golden Jubilee Celebrations — June 13, 2026", "pages": "2–4 pages", "note": "Pages dedicated to the June 13 jubilee event. Placement within the book still to be decided." }, "toc": "Golden Jubilee Celebrations" }
+      ]
+    },
+    {
+      "name": "Members & Memorials",
+      "items": [
+        { "members": true, "toc": "Families & Memorials (A–Z)" }
+      ]
+    },
+    {
+      "name": "Closing",
+      "items": [
+        { "index": true },
+        { "placeholder": { "title": "Acknowledgements", "heading": "Acknowledgements & Souvenir Team", "note": "Editorial board: Manoj Chacko, Suchin Thompson, Molsey Thomas, Shiju Poovathoor, Jinu John, Mathew Joseph. Full list and thanks to be finalized." }, "toc": "Acknowledgements & Souvenir Team" },
+        { "placeholder": { "title": "Our Church Family", "heading": "Church Family Group Photo", "note": "Whole-parish group photograph (taken at the picnic) to be placed here." }, "toc": "Church Family Group Photo" },
+        { "file": "src/pages/back-cover.html", "label": "BACK COVER" }
+      ]
+    }
+  ]
+}

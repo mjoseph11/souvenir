@@ -1,0 +1,176 @@
+
+  /* ══════════════════════════════════════
+     GENERATED PAGES (scripts/build.js)
+     Member, memorial, placeholder, sponsor and index pages share a fixed
+     content box between header and footer, so photos shrink to fit.
+  ══════════════════════════════════════ */
+  .m-page { height: var(--page-h); }
+  .m-band {
+    background: var(--maroon);
+    text-align: center;
+    padding: 4px;
+    color: var(--gold);
+    font-size: 8pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .m-badge {
+    position: absolute;
+    top: 0.08in;
+    left: 0.12in;
+    font-size: 6.5pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold2);
+    border: 1px solid rgba(240,192,64,0.6);
+    border-radius: 2px;
+    padding: 1px 5px;
+  }
+  .m-content {
+    position: absolute;
+    top: 0.95in;
+    bottom: 0.5in;
+    left: 0.5in;
+    right: 0.5in;
+    display: flex;
+    flex-direction: column;
+    gap: 0.16in;
+    padding-top: 0.12in;
+  }
+  .m-page.has-band .m-content { top: 1.15in; }
+  /* Text-only pages (e.g. a memorial without photos) sit in the middle of the page. */
+  .m-content:not(:has(.m-photos, .m-side, .m-half, .m-index)) { justify-content: center; }
+
+  /* Photos */
+  .m-photos {
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    gap: 0.15in;
+    align-items: stretch;
+  }
+  .m-photos.stack { flex-direction: column; }
+  .m-photos.hero { flex-direction: column; }
+  .m-hero { flex: 3 1 0; min-height: 0; display: flex; }
+  .m-row { flex: 2 1 0; min-height: 0; display: flex; gap: 0.15in; }
+  .m-fig {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .m-fig img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    background: white;
+  }
+  .m-photos.plain .m-fig img { border: none; border-radius: 0; box-shadow: 0 1px 6px rgba(0,0,0,0.15); }
+  .m-fig figcaption {
+    font-size: 8pt;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.04in;
+    flex: none;
+  }
+
+  .m-side { flex: 1 1 0; min-height: 0; display: flex; gap: 0.25in; align-items: center; }
+  .m-side .m-photos { flex: 1 1 0; height: 100%; }
+  .m-side .m-text { flex: 1 1 0; }
+  .m-side .m-text p { font-size: 12pt; line-height: 1.8; color: var(--maroon); }
+
+  /* Text */
+  .m-heading { text-align: center; color: var(--maroon); font-size: 15pt; line-height: 1.25; flex: none; }
+  .m-subheading { text-align: center; color: var(--gold); font-size: 9pt; letter-spacing: 2px; text-transform: uppercase; margin-top: -0.1in; flex: none; }
+  .m-text {
+    flex: none;
+    background: white;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 0.16in 0.25in;
+  }
+  .m-text.bare { background: none; border: none; padding: 0 0.1in; }
+  .m-text p { font-size: 10.5pt; line-height: 1.7; color: #333; text-align: justify; }
+  .m-text p + p { margin-top: 0.08in; }
+  .m-text.center p { text-align: center; }
+  .m-text.italic p { font-style: italic; }
+  .m-text.cols { column-count: 2; column-gap: 0.3in; column-rule: 1px solid rgba(201,162,39,0.3); }
+  .m-text.size-sm p { font-size: 9.5pt; line-height: 1.55; }
+  .m-text.size-xs p { font-size: 8.8pt; line-height: 1.45; }
+  .m-text.size-lg p { font-size: 12pt; line-height: 1.7; }
+  .m-text-title { font-size: 13pt !important; font-weight: bold; color: var(--maroon) !important; text-align: center !important; margin-bottom: 0.08in; font-style: normal !important; column-span: all; }
+  .m-sign { text-align: right !important; font-style: italic; color: var(--maroon) !important; font-size: 10pt !important; margin-top: 0.1in; }
+  .m-list { list-style: none; font-size: 10.5pt; line-height: 1.8; color: #333; text-align: center; }
+  .m-names { text-align: center; color: var(--maroon); font-weight: bold; font-size: 11.5pt; line-height: 1.5; flex: none; }
+  .m-verse { text-align: center; font-style: italic; color: #555; font-size: 9.5pt; line-height: 1.5; flex: none; }
+  .m-verse span { font-style: normal; color: var(--gold); font-size: 8.5pt; }
+  .m-closing { text-align: center; color: var(--gold); font-size: 9pt; letter-spacing: 2px; text-transform: uppercase; flex: none; }
+  .m-rule { width: 3in; height: 1px; margin: 0.06in auto 0; background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent); }
+
+  /* Memorials */
+  .m-memorial-head { text-align: center; flex: none; }
+  .m-eyebrow { color: var(--gold); font-size: 9pt; letter-spacing: 2px; text-transform: uppercase; }
+  .m-memorial-head h2 { color: var(--maroon); font-size: 19pt; line-height: 1.2; margin-top: 0.03in; }
+  .m-dates { color: #555; font-size: 10pt; letter-spacing: 1px; margin-top: 0.03in; }
+  .m-eternal {
+    flex: none;
+    align-self: center;
+    background: var(--maroon);
+    color: var(--gold2);
+    border-radius: 4px;
+    padding: 0.08in 0.25in;
+    font-size: 9pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .m-half {
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.12in;
+  }
+  .m-half.dark {
+    background: #f1ebe0;
+    border: 1px solid rgba(42,42,42,0.25);
+    border-radius: 4px;
+    padding: 0.14in;
+  }
+  .m-half + .m-half { border-top: 1px solid rgba(201,162,39,0.5); padding-top: 0.14in; }
+  .m-half.dark + .m-half, .m-half + .m-half.dark { border-top: none; padding-top: 0.14in; }
+
+  /* Placeholders */
+  .m-placeholder {
+    margin: auto 0;
+    border: 2px dashed rgba(201,162,39,0.7);
+    border-radius: 6px;
+    padding: 0.5in;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+  }
+  .m-placeholder h2 { color: var(--maroon); font-size: 20pt; margin: 0.08in 0 0.12in; }
+  .m-placeholder .m-plan { color: var(--gold); font-size: 10pt; letter-spacing: 1px; margin-bottom: 0.15in; }
+  .m-placeholder p { color: #666; font-size: 10.5pt; line-height: 1.7; }
+
+  /* Index */
+  .m-index { column-count: 2; column-gap: 0.4in; column-fill: auto; height: 100%; }
+  .m-index p { font-size: 9pt; line-height: 1.22; break-inside: avoid; }
+  .m-index-heading { color: var(--maroon); font-size: 12pt !important; font-weight: bold; margin: 0.06in 0 0.04in; border-bottom: 1px solid var(--gold); }
+  .m-index-section { color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; font-size: 8pt !important; margin-top: 0.06in; }
+  .m-index-row { display: flex; gap: 0.08in; color: #333; }
+  .m-index-row span:first-child { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .m-index-row span:first-child::after { content: ' ......................................................................'; color: #bbb; }
+  .m-index-row span:last-child { flex: none; color: var(--maroon); }
+
+  @media print {
+    .m-page { height: var(--page-h); }
+  }

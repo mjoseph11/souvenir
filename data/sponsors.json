@@ -1,0 +1,15 @@
+{
+  "_comment": "Sponsor advertisements, spread evenly through the member section by scripts/build.js.",
+  "ads": [
+    {
+      "id": "alma-digital-vision",
+      "name": "Alma Digital Vision",
+      "src": "images/members/sponsorship/alma.jpg"
+    },
+    {
+      "id": "molly-mathew",
+      "name": "Molly Mathew — Conquer Your Future",
+      "src": "images/members/sponsorship/WhatsApp-Image-2026-07-21-at-9-40-57-PM.jpg"
+    }
+  ]
+}

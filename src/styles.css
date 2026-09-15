@@ -1,0 +1,598 @@
+  /* ── Variables ── */
+  :root {
+    --maroon:  #6B0000;
+    --maroon2: #8B0000;
+    --gold:    #C9A227;
+    --gold2:   #F0C040;
+    --cream:   #FDF8EE;
+    --dark:    #1a1a1a;
+    --page-w:  8.5in;
+    --page-h:  11in;
+  }
+
+  /* ── Reset & base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #d0d0d0;
+    color: var(--dark);
+  }
+
+  /* ── Page wrapper ── */
+  .page {
+    width: var(--page-w);
+    min-height: var(--page-h);
+    background: var(--cream);
+    margin: 0.5in auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    page-break-after: always;
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { background: white; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      page-break-after: always;
+    }
+    @page { size: letter; margin: 0; }
+  }
+
+  /* ══════════════════════════════════════
+     COVER PAGE
+  ══════════════════════════════════════ */
+  .cover {
+    background: var(--maroon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .cover-top-band {
+    width: 100%;
+    height: 0.35in;
+    background: var(--gold);
+  }
+  .cover-bottom-band {
+    width: 100%;
+    height: 0.35in;
+    background: var(--gold);
+  }
+
+  .cover-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4in 0.6in;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Ornamental border inside cover */
+  .cover-border {
+    position: absolute;
+    inset: 0.15in;
+    border: 2px solid var(--gold);
+    pointer-events: none;
+  }
+  .cover-border::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border: 1px solid rgba(201,162,39,0.45);
+  }
+
+  /* Corner ornaments */
+  .corner {
+    position: absolute;
+    width: 0.5in;
+    height: 0.5in;
+    border-color: var(--gold2);
+    border-style: solid;
+  }
+  .corner-tl { top: 0.22in; left: 0.22in; border-width: 3px 0 0 3px; }
+  .corner-tr { top: 0.22in; right: 0.22in; border-width: 3px 3px 0 0; }
+  .corner-bl { bottom: 0.22in; left: 0.22in; border-width: 0 0 3px 3px; }
+  .corner-br { bottom: 0.22in; right: 0.22in; border-width: 0 3px 3px 0; }
+
+  .cover-diocese {
+    color: var(--gold2);
+    font-size: 11pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.15in;
+  }
+
+  .cover-logo {
+    width: 2in;
+    height: 2in;
+    object-fit: contain;
+    margin-bottom: 0.2in;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  }
+
+  /* Fallback cross SVG shown when logo doesn't load */
+  .cover-logo-placeholder {
+    width: 1.6in;
+    height: 1.6in;
+    margin-bottom: 0.2in;
+  }
+
+  .cover-church-name {
+    color: white;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 0.06in;
+  }
+
+  .cover-abbr {
+    color: var(--gold);
+    font-size: 13pt;
+    letter-spacing: 4px;
+    margin-bottom: 0.25in;
+  }
+
+  .cover-divider {
+    width: 3in;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin-bottom: 0.25in;
+  }
+
+  .cover-jubilee-label {
+    color: var(--gold2);
+    font-size: 13pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.08in;
+  }
+
+  .cover-jubilee-title {
+    font-size: 42pt;
+    font-weight: bold;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 0.06in;
+  }
+
+  .cover-jubilee-sub {
+    color: white;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    margin-bottom: 0.25in;
+  }
+
+  .cover-years {
+    font-size: 26pt;
+    color: var(--gold2);
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 0.25in;
+  }
+
+  .cover-verse {
+    color: rgba(255,255,255,0.75);
+    font-style: italic;
+    font-size: 10pt;
+    text-align: center;
+    max-width: 5in;
+    line-height: 1.6;
+    margin-bottom: 0.15in;
+  }
+
+  .cover-location {
+    color: var(--gold);
+    font-size: 10pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════════════════════
+     INNER PAGE LAYOUT
+  ══════════════════════════════════════ */
+  .inner-page {
+    padding: 0;
+  }
+
+  .page-header {
+    background: var(--maroon);
+    color: var(--gold);
+    padding: 0.18in 0.4in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('images/Logos/SGMOC_Official_logo_Gold.png');
+    background-repeat: no-repeat;
+    background-position: right 0.2in center;
+    background-size: 0.55in 0.55in;
+  }
+  .page-header .logo-small {
+    width: 0.55in;
+    height: 0.55in;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+  .page-header-title {
+    text-align: center;
+    flex: 1;
+  }
+  .page-header-title h1 {
+    font-size: 18pt;
+    letter-spacing: 2px;
+    color: var(--gold2);
+  }
+  .page-header-title p {
+    display: none;
+  }
+
+  .page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: var(--maroon);
+    color: var(--gold);
+    padding: 0.1in 0.4in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 8pt;
+  }
+
+  .page-content {
+    padding: 0.3in 0.5in 0.4in;
+  }
+
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    margin-bottom: 0.25in;
+  }
+  .section-heading h2 {
+    font-size: 20pt;
+    color: var(--maroon);
+    letter-spacing: 1px;
+  }
+  .section-heading .gold-rule {
+    width: 2in;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 0.08in auto;
+  }
+  .section-heading p {
+    font-size: 9pt;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════════════════════
+     MESSAGE PAGE
+  ══════════════════════════════════════ */
+  .message-box {
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 0.3in;
+    margin-bottom: 0.2in;
+    position: relative;
+    background: white;
+  }
+  .message-box::before {
+    content: '\201C';
+    font-size: 72pt;
+    color: rgba(201,162,39,0.15);
+    position: absolute;
+    top: -0.1in;
+    left: 0.1in;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+  .message-from {
+    display: flex;
+    align-items: center;
+    gap: 0.2in;
+    margin-bottom: 0.15in;
+  }
+  .message-photo {
+    width: 0.9in;
+    height: 0.9in;
+    border-radius: 50%;
+    background: #e8d5b7;
+    border: 3px solid var(--gold);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--maroon);
+    font-size: 8pt;
+    text-align: center;
+  }
+  .message-sender h3 {
+    color: var(--maroon);
+    font-size: 12pt;
+  }
+  .message-sender p {
+    font-size: 9pt;
+    color: #666;
+  }
+  .message-body {
+    font-size: 10pt;
+    line-height: 1.75;
+    color: #333;
+  }
+  .message-sign {
+    margin-top: 0.15in;
+    text-align: right;
+    font-style: italic;
+    color: var(--maroon);
+    font-size: 10pt;
+  }
+  .draft-badge {
+    position: absolute;
+    top: -0.12in;
+    right: 0.2in;
+    background: var(--maroon);
+    color: var(--gold);
+    font-size: 8pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 3px 10px;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    text-transform: uppercase;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .draft-banner {
+    background: var(--maroon);
+    color: var(--gold);
+    font-size: 9pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.1in auto 0.15in;
+    display: inline-block;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ══════════════════════════════════════
+     HISTORY PAGE
+  ══════════════════════════════════════ */
+  .history-text {
+    font-size: 10.5pt;
+    line-height: 1.8;
+    color: #2a2a2a;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 0.35in;
+    column-rule: 1px solid rgba(201,162,39,0.3);
+  }
+
+  .milestone-box {
+    background: var(--maroon);
+    color: white;
+    border-radius: 4px;
+    padding: 0.12in 0.18in;
+    margin-bottom: 0.08in;
+    display: flex;
+    gap: 0.12in;
+    align-items: baseline;
+  }
+  .milestone-year {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 11pt;
+    min-width: 0.55in;
+  }
+  .milestone-text {
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  /* ══════════════════════════════════════
+     EXECUTIVE COMMITTEE
+  ══════════════════════════════════════ */
+  .committee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2in;
+  }
+  .committee-card {
+    text-align: center;
+    border: 1px solid rgba(201,162,39,0.4);
+    border-radius: 4px;
+    padding: 0.15in 0.1in;
+    background: white;
+  }
+  .committee-photo {
+    width: 0.85in;
+    height: 0.85in;
+    border-radius: 50%;
+    background: #e8d5b7;
+    border: 2px solid var(--gold);
+    margin: 0 auto 0.08in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: #888;
+  }
+  .committee-card h4 {
+    font-size: 9pt;
+    color: var(--maroon);
+    margin-bottom: 2px;
+  }
+  .committee-card p {
+    font-size: 7.5pt;
+    color: #666;
+  }
+
+  /* ══════════════════════════════════════
+     MINISTRY CARDS
+  ══════════════════════════════════════ */
+  .ministry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2in;
+  }
+  .ministry-card {
+    border-left: 4px solid var(--gold);
+    background: white;
+    padding: 0.15in;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .ministry-card h3 {
+    color: var(--maroon);
+    font-size: 11pt;
+    margin-bottom: 0.06in;
+  }
+  .ministry-card p {
+    font-size: 9pt;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  /* ══════════════════════════════════════
+     AD PAGE
+  ══════════════════════════════════════ */
+  .ad-full {
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    min-height: 3in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin-bottom: 0.2in;
+    padding: 0.3in;
+    text-align: center;
+    color: #aaa;
+    font-size: 11pt;
+  }
+  .ad-label {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 0.1in;
+  }
+
+  .ad-half-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2in;
+  }
+  .ad-half {
+    border: 1px dashed var(--gold);
+    border-radius: 4px;
+    min-height: 1.8in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 0.15in;
+    text-align: center;
+    color: #aaa;
+    font-size: 9pt;
+  }
+
+  /* ══════════════════════════════════════
+     FAMILY GREETING
+  ══════════════════════════════════════ */
+  .family-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2in;
+  }
+  .family-card {
+    background: white;
+    border: 1px solid rgba(201,162,39,0.35);
+    border-top: 3px solid var(--maroon);
+    border-radius: 4px;
+    padding: 0.15in;
+    text-align: center;
+  }
+  .family-card h4 {
+    color: var(--maroon);
+    font-size: 11pt;
+    margin-bottom: 4px;
+  }
+  .family-card p {
+    font-size: 9pt;
+    color: #555;
+    line-height: 1.5;
+  }
+  .family-card .greeting {
+    font-style: italic;
+    color: var(--gold);
+    font-size: 9pt;
+    margin-top: 0.08in;
+  }
+
+  /* ══════════════════════════════════════
+     BACK COVER
+  ══════════════════════════════════════ */
+  .back-cover {
+    background: var(--maroon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5in;
+    text-align: center;
+    gap: 0.2in;
+  }
+  .back-cover .bc-logo {
+    width: 1.2in;
+    height: 1.2in;
+    object-fit: contain;
+    opacity: 0.9;
+  }
+  .back-cover h2 {
+    color: white;
+    font-size: 16pt;
+    letter-spacing: 1px;
+  }
+  .back-cover .bc-address {
+    color: rgba(255,255,255,0.8);
+    font-size: 10pt;
+    line-height: 1.8;
+  }
+  .back-cover .bc-divider {
+    width: 2in;
+    height: 1px;
+    background: var(--gold);
+  }
+  .back-cover .bc-service {
+    color: var(--gold2);
+    font-size: 10pt;
+    line-height: 1.8;
+  }
+  .back-cover .bc-web {
+    color: var(--gold);
+    font-size: 10pt;
+    letter-spacing: 1px;
+  }
+  .back-cover .bc-copyright {
+    color: rgba(255,255,255,0.4);
+    font-size: 8pt;
+  }

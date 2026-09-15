@@ -6,14 +6,16 @@
       "label": "MMVS Treasurer",
       "expected": "Sunitha Zacharia",
       "forbidden": ["Mercy Varkey"],
+      "scope": "MINISTRY: MMVS",
       "source": "GitHub issue #16 — confirmed by MolseyThomas 2026-04-13",
-      "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation."
+      "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation. Scoped to the MMVS page (2026-09-14) because Mrs. Mercy Varkey is correctly named elsewhere, in the St. Joseph's Forum report."
     },
     {
       "id": "mmvs-central-committee",
       "label": "MMVS Central Committee Member",
       "expected": "Beena Koshy",
       "forbidden": ["Annamma Samuel"],
+      "scope": "MINISTRY: MMVS",
       "source": "GitHub issue #16 — confirmed by MolseyThomas 2026-04-13",
       "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation."
     }
