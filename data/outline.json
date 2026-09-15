@@ -8,6 +8,37 @@
         { "file": "src/pages/message-catholicos.html", "label": "MESSAGE: CATHOLICOS", "toc": "Message — H.H. Baselios Marthoma Mathews III" },
         { "file": "src/pages/message-metropolitan.html", "label": "MESSAGE: METROPOLITAN", "toc": "Message — H.G. Zachariah Mar Nicholovos" },
         { "file": "src/pages/message-vicar.html", "label": "MESSAGE: VICAR", "toc": "Message — Rev. Fr. Shibu Venad Mathai" },
+        {
+          "label": "TRIBUTE: FR. SHIBU — CHOSEN TO SHEPHERD",
+          "toc": "Tribute — Rev. Fr. Shibu Venad Mathai, Metropolitan-elect",
+          "generated": {
+            "title": "Chosen to Shepherd",
+            "band": "Draft • Titles and dates to be confirmed with the Diocese before print",
+            "blocks": [
+              { "type": "heading", "text": "Rev. Fr. Shibu Venad Mathai" },
+              { "type": "subheading", "text": "Vicar of SGMOC 2011–2026 • Metropolitan-elect" },
+              { "type": "photos", "photos": [{ "src": "images/vicar.jpg", "alt": "Rev. Fr. Shibu Venad Mathai" }] },
+              { "type": "text", "center": true, "text": "On August 27, 2026, the Malankara Syrian Christian Association elected our beloved Vicar, Rev. Fr. Shibu Venad Mathai, as one of four new Metropolitans of the Malankara Orthodox Syrian Church. For the parish he has shepherded for fifteen years, it is a moment of profound joy and gratitude to God — and of bittersweet farewell." },
+              { "type": "list", "title": "The Road to the Episcopate", "items": ["Elected Metropolitan — August 27, 2026", "Relieved as Vicar of SGMOC — September 27, 2026", "Ordination as Remban — October 27, 2026 • Parumala", "Ordination as Metropolitan — February 4, 2027 • Mount Horeb Ashram, Sasthamkotta"] },
+              { "type": "text", "bare": true, "center": true, "italic": true, "size": "lg", "text": "Axios! Axios! Axios!" }
+            ]
+          }
+        },
+        {
+          "label": "TRIBUTE: FR. SHIBU — FIFTEEN YEARS AS OUR VICAR",
+          "generated": {
+            "title": "Fifteen Years as Our Vicar",
+            "band": "Draft • 2011–2026",
+            "blocks": [
+              { "type": "list", "title": "Milestones Under His Leadership", "items": ["June 2011 — Appointed Vicar of St. Gregorios Malankara Orthodox Church", "2011 — Parish hosts the Metropolitan Enthronement of H.G. Zachariah Mar Nicholovos", "2016 — Good Samaritan Mission established", "August 27, 2016 — Ministry & Mission Center dedicated", "2016, 2017 & 2019 — Bensalem Unity 5K organized by the parish", "Since 2018 — Parish hosts annual Unity Week prayer fellowship", "September 23, 2018 — Cemetery monument to our Patron Saint dedicated at Rosedale", "2024 — Men's Forum founded, later renamed St. Joseph's Forum", "June 13, 2026 — Golden Jubilee celebrations"] },
+              { "type": "text", "size": "sm", "title": "In the Words of Our Families", "text": "“When we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness.” — The Betcy Allen Family\n\n“Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation.” — The Milton Family\n\n“The parish has witnessed tremendous growth in membership and spirituality under his leadership.” — Korah T. Mani\n\n“Rev. Fr. Shibu Venad Mathai … is an asset to St. Gregorios Malankara Orthodox Church.” — Dr. Poovathoor Koshy and family" },
+              { "type": "text", "bare": true, "center": true, "italic": true, "size": "sm", "text": "More milestones and reflections from parishioners to be added." }
+            ]
+          }
+        },
+        { "placeholder": { "title": "A Farewell Message", "heading": "From Rev. Fr. Shibu Venad Mathai", "note": "A farewell message to the parish after fifteen years as Vicar (2011–2026), to be requested from Achen." } },
+        { "placeholder": { "title": "Fifteen Years in Pictures", "heading": "Shibu Achen with Our Parish", "note": "Photographs from his years at SGMOC, the August 27, 2026 announcement and the parish felicitation. A high-resolution portrait is also needed — the current photo (170×241 px) is too small to print." } },
+        { "placeholder": { "title": "Message", "heading": "From Rev. Fr. Eby Paulose, Vicar", "note": "Appointed Vicar of SGMOC effective September 28, 2026. Welcome message and photo to be requested." }, "toc": "Message — Rev. Fr. Eby Paulose, Vicar" },
         { "placeholder": { "title": "Message", "heading": "From the Trustee — Mr. Thomas Ninan", "note": "Message text and photo to be collected. Name as listed in the Content Outline; confirm current Trustee." }, "toc": "Message — Trustee" },
         { "placeholder": { "title": "Message", "heading": "From the Secretary — Mr. Mathew Ninan", "note": "Message text and photo to be collected. Name as listed in the Content Outline; confirm current Secretary." }, "toc": "Message — Secretary" },
         { "placeholder": { "title": "Message", "heading": "From the Mayor of Bensalem Township", "note": "Hon. Joseph DiGirolamo — message to be requested." }, "toc": "Message — Mayor of Bensalem Township" },
