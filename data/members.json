@@ -54,12 +54,19 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/a-o-abraham/PXL-20220429-195230145-MP.jpg"
+                  "src": "images/members/a-o-abraham/dock-family-cropped.jpg"
                 },
                 {
-                  "src": "images/members/a-o-abraham/WhatsApp-Image-2026-09-03-at-3-39-34-AM.jpg"
+                  "src": "images/members/a-o-abraham/studio-portrait-cropped.jpg"
                 }
-              ]
+              ],
+              "arrange": "stack"
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Unless the Lord builds the house, the builders labor in vain.",
+              "ref": "Psalm 127:1"
             },
             {
               "type": "closing"
@@ -220,6 +227,12 @@
               ]
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "Unless the Lord builds the house, the builders labor in vain.",
+              "ref": "Psalm 127:1"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -270,6 +283,12 @@
               ]
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "As for me and my house, we will serve the Lord.",
+              "ref": "Joshua 24:15"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -290,6 +309,12 @@
                   "src": "images/members/dr-joe-johnv-s-john-and-family/WhatsApp-Image-2026-08-01-at-5-58-21-PM.jpg"
                 }
               ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "The Lord has done great things for us, and we are filled with joy.",
+              "ref": "Psalm 126:3"
             },
             {
               "type": "closing"
@@ -315,6 +340,12 @@
               ]
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "Every good and perfect gift is from above.",
+              "ref": "James 1:17"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -335,6 +366,12 @@
                   "src": "images/members/george-varghese/DSC08895-2-Joel-G.jpg"
                 }
               ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Children are a heritage from the Lord.",
+              "ref": "Psalm 127:3"
             },
             {
               "type": "closing"
@@ -360,6 +397,12 @@
                   "src": "images/members/jacob-george/IMG-3268-jaymole-GEORGE.jpg"
                 }
               ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Give thanks to the Lord, for he is good; his love endures forever.",
+              "ref": "Psalm 107:1"
             },
             {
               "type": "closing"
@@ -458,7 +501,14 @@
                 {
                   "src": "images/members/manoj-samuel/WhatsApp-Image-2026-09-08-at-7-18-45-PM.jpg"
                 }
-              ]
+              ],
+              "fill": true
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Let all that you do be done in love.",
+              "ref": "1 Corinthians 16:14"
             },
             {
               "type": "closing"
@@ -533,6 +583,12 @@
               ]
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "Love one another deeply, from the heart.",
+              "ref": "1 Peter 1:22"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -575,6 +631,12 @@
                   "src": "images/members/prince-mathew/WhatsApp-Image-2026-08-31-at-8-49-09-PM.jpg"
                 }
               ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Unless the Lord builds the house, the builders labor in vain.",
+              "ref": "Psalm 127:1"
             },
             {
               "type": "closing"
@@ -696,6 +758,12 @@
               ]
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "As for me and my house, we will serve the Lord.",
+              "ref": "Joshua 24:15"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -746,6 +814,12 @@
               ]
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "The Lord has done great things for us, and we are filled with joy.",
+              "ref": "Psalm 126:3"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -766,6 +840,12 @@
                   "src": "images/members/thomas-joseph/WhatsApp-Image-2026-06-17-at-8-19-15-PM.jpg"
                 }
               ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Every good and perfect gift is from above.",
+              "ref": "James 1:17"
             },
             {
               "type": "closing"
@@ -832,6 +912,12 @@
                   "src": "images/members/zach-zacharia/Zacharia-Family-Zach-Zacharia.jpg"
                 }
               ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Children are a heritage from the Lord.",
+              "ref": "Psalm 127:3"
             },
             {
               "type": "closing"
@@ -1001,8 +1087,9 @@
             },
             {
               "type": "text",
+              "cols": true,
+              "bare": true,
               "text": "Our journey with this church began in 2007 when we first walked through the doors as college students. Back then, it was just a place to worship, but it quickly became the foundation for our entire future. This is where we grew, dreamed, and eventually decided to build a life and family together.\n\nOver the last nearly two decades, the people here have truly become our family. The friends we made in those early years have grown into a lifelong, supportive community.\n\nOur family has since been blessed with two wonderful children. Sharing our faith with them has been the greatest joy of our journey. Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation. Today, they look forward to attending Sunday school each week, learning the same values that have anchored us for so long. We are profoundly grateful for this church home, which has shaped our past, blesses our present, and continues to guide our future.",
-              "size": "sm",
               "sign": "The Milton Family (Marcus, Meryl, Nithya and Basil)"
             }
           ]
@@ -1017,19 +1104,12 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/betcy-allen/WhatsApp-Image-2026-08-31-at-6-46-33-PM.jpg"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "When we moved to New Jersey in 2020, the world looked very different. The pandemic had brought life to a standstill, and being new to the area, we were searching not only for a church but also for a community where our family could feel at home.\n\nDuring that time, a priest from the West Coast told us about St. Gregorios Malankara Orthodox Church, Bensalem. Since we were also thinking about having our little one baptized, he encouraged us to reach out to the church. That recommendation turned out to be the beginning of a beautiful journey for our family.\n\nWhen we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness. When he learned that we had moved from Mumbai, he immediately began introducing us to other Hindi-speaking families in the parish. It was a simple gesture, but for a family that was new to the area, it meant so much. The Managing Committee and the entire church community welcomed us so wholeheartedly that, from the very beginning, we felt that we belonged.\n\nIn October 2020, during a time when gatherings were still very limited, we had the blessing of baptizing our little one at St. Gregorios. With only a small number of parish members and a few of our extended family present, the baptism was held under the guidance of Rev. Fr. Shibu Venad Mathai and Very Rev. K. Mathai Cor Episcopos. Though it was a small gathering, it remains one of the most meaningful memories of our family's journey with the church.\n\nFrom that day forward, St. Gregorios has become much more than the church we attend on Sundays—it has become our extended family. Our children were welcomed into Sunday School, and we were given opportunities to become involved in different ministries, cultural programs, and church activities. Through these experiences, we have met so many wonderful people, built beautiful friendships, and created memories that we will always cherish.\n\nOver the years, going to church on Sunday has naturally become an important part of our family's life. Our children look forward to Sunday School every week and, most importantly, have formed friendships that we hope will last a lifetime. As parents, it brings us great joy to see them growing up surrounded by faith, friendship, tradition, and a community that cares for them.\n\nLooking back at how our journey began in the uncertain days of 2020, we are deeply grateful that God led us to St. Gregorios Malankara Orthodox Church, Bensalem. The warmth with which we were welcomed continues to be something we treasure. Our parish has played a vital role in shaping our family's life, strengthening our faith, and giving us a true sense of belonging.\n\nWhat began as a search for a church became the blessing of finding a church family and a home away from home.",
+              "type": "article",
+              "photo": {
+                "src": "images/members/betcy-allen/WhatsApp-Image-2026-08-31-at-6-46-33-PM.jpg"
+              },
               "title": "A journey that began with a baptism and grew into a beautiful sense of faith, friendship, and belonging",
-              "cols": true,
-              "size": "xs"
+              "text": "When we moved to New Jersey in 2020, the world looked very different. The pandemic had brought life to a standstill, and being new to the area, we were searching not only for a church but also for a community where our family could feel at home.\n\nDuring that time, a priest from the West Coast told us about St. Gregorios Malankara Orthodox Church, Bensalem. Since we were also thinking about having our little one baptized, he encouraged us to reach out to the church. That recommendation turned out to be the beginning of a beautiful journey for our family.\n\nWhen we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness. When he learned that we had moved from Mumbai, he immediately began introducing us to other Hindi-speaking families in the parish. It was a simple gesture, but for a family that was new to the area, it meant so much. The Managing Committee and the entire church community welcomed us so wholeheartedly that, from the very beginning, we felt that we belonged.\n\nIn October 2020, during a time when gatherings were still very limited, we had the blessing of baptizing our little one at St. Gregorios. With only a small number of parish members and a few of our extended family present, the baptism was held under the guidance of Rev. Fr. Shibu Venad Mathai and Very Rev. K. Mathai Cor Episcopos. Though it was a small gathering, it remains one of the most meaningful memories of our family's journey with the church.\n\nFrom that day forward, St. Gregorios has become much more than the church we attend on Sundays—it has become our extended family. Our children were welcomed into Sunday School, and we were given opportunities to become involved in different ministries, cultural programs, and church activities. Through these experiences, we have met so many wonderful people, built beautiful friendships, and created memories that we will always cherish.\n\nOver the years, going to church on Sunday has naturally become an important part of our family's life. Our children look forward to Sunday School every week and, most importantly, have formed friendships that we hope will last a lifetime. As parents, it brings us great joy to see them growing up surrounded by faith, friendship, tradition, and a community that cares for them.\n\nLooking back at how our journey began in the uncertain days of 2020, we are deeply grateful that God led us to St. Gregorios Malankara Orthodox Church, Bensalem. The warmth with which we were welcomed continues to be something we treasure. Our parish has played a vital role in shaping our family's life, strengthening our faith, and giving us a true sense of belonging.\n\nWhat began as a search for a church became the blessing of finding a church family and a home away from home."
             }
           ]
         }
@@ -1122,6 +1202,8 @@
             },
             {
               "type": "text",
+              "cols": true,
+              "bare": true,
               "text": "Our family started attending services in the 1990s, when the church was located at 38th and Chestnut Street in Philadelphia. When the church moved to Torresdale Avenue, we continued to attend services faithfully. Our daughter Nina participated in Sunday School competitions and won prizes. She got 1st prize in the Bible Quiz competition during that time. Now, our journey continues with SGMOC in Bensalem.",
               "title": "Best Compliments"
             },
@@ -1193,10 +1275,10 @@
             },
             {
               "type": "text",
-              "text": "When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.\n\nIn a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.\n\nSunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.\n\nNow, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.\n\nOur children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.\n\nAs we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.\n\nOur prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory.",
-              "title": "A Faith We Received, A Faith We Pass On",
               "cols": true,
-              "size": "xs"
+              "bare": true,
+              "text": "When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.\n\nIn a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.\n\nSunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.\n\nNow, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.\n\nOur children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.\n\nAs we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.\n\nOur prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory.",
+              "title": "A Faith We Received, A Faith We Pass On"
             },
             {
               "type": "verse",
@@ -1215,19 +1297,12 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/korah-mani/WhatsApp-Image-2026-08-04-at-9-42-53-PM.jpg"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "It is with immense gratitude that we, Shobha and I, thank God for providing us the opportunity to be part of this Malankara Orthodox Church from its inception as the first parish in Philadelphia in 1976. We thank our parents for nurturing us with the zeal and love for the Orthodox Churches we were members of, from our childhood. When we immigrated to this nation of opportunities in the early 70's, we started attending the Ecumenical congregation in Philadelphia, established during the latter part of the 1960s by a good number of Malayalee Christians belonging to different denominations living in the Philadelphia metropolitan region.\n\n1976 was a historical year for the Orthodox Church with the arrival of Rev. Fr. K. Mathai to the US and later to Philadelphia with Mariamma Kochamma and their twin girls. With his initiative, and in response to the demand from most of our Orthodox members, the first Orthodox parish with the name St. Thomas Orthodox Church of India, Philadelphia (STOCI) was established in the city of Philadelphia on the 10th of October 1976. We worshipped in the chapel of the Philadelphia Episcopal Church on 38th and Chestnut Streets. I was one of the members of the first Board of Trustees of the parish. We were also blessed with the birth of our daughter Namita in September 1976.\n\n1984 was another important and memorable year for us. We welcomed the arrival of our twin boys Matthew and Michael. It was also the year that St. Gregorios Malankara Orthodox Church (SGMOC) was formed after the dissolution of STOCI by His Grace Dr. Thomas Mar Makarios, Metropolitan of the American diocese. The majority of the members of the dissolved STOCI parish joined and formed the new SGMOC parish with Mathai Achen as its vicar. The parish bought a small church building on Torresdale Avenue in Philadelphia in 1995.\n\nDuring the next ten years, the parish membership increased in number, and grew in prominence as one of the most vibrant parishes of the American Diocese. The need for a larger place of worship and space for other spiritual activities and amenities resulted in finding the property on Hulmeville Road in Bensalem, just outside of Philadelphia in 2005. The new SGMOC building was consecrated in May 2009. After Mathai Achen's retirement, Rev. Fr. Shibu Mathai was appointed as the vicar of SGMOC in 2011. The parish has witnessed tremendous growth in membership and spirituality under his leadership.\n\nOn a personal note, I was blessed to have had the opportunity to serve the parish as an acolyte as well as a Sunday School teacher, and also as a member in the parish administration for several years.",
+              "type": "article",
+              "photo": {
+                "src": "images/members/korah-mani/WhatsApp-Image-2026-08-04-at-9-42-53-PM.jpg"
+              },
               "title": "Golden Jubilee Notes",
-              "cols": true,
-              "size": "xs",
+              "text": "It is with immense gratitude that we, Shobha and I, thank God for providing us the opportunity to be part of this Malankara Orthodox Church from its inception as the first parish in Philadelphia in 1976. We thank our parents for nurturing us with the zeal and love for the Orthodox Churches we were members of, from our childhood. When we immigrated to this nation of opportunities in the early 70's, we started attending the Ecumenical congregation in Philadelphia, established during the latter part of the 1960s by a good number of Malayalee Christians belonging to different denominations living in the Philadelphia metropolitan region.\n\n1976 was a historical year for the Orthodox Church with the arrival of Rev. Fr. K. Mathai to the US and later to Philadelphia with Mariamma Kochamma and their twin girls. With his initiative, and in response to the demand from most of our Orthodox members, the first Orthodox parish with the name St. Thomas Orthodox Church of India, Philadelphia (STOCI) was established in the city of Philadelphia on the 10th of October 1976. We worshipped in the chapel of the Philadelphia Episcopal Church on 38th and Chestnut Streets. I was one of the members of the first Board of Trustees of the parish. We were also blessed with the birth of our daughter Namita in September 1976.\n\n1984 was another important and memorable year for us. We welcomed the arrival of our twin boys Matthew and Michael. It was also the year that St. Gregorios Malankara Orthodox Church (SGMOC) was formed after the dissolution of STOCI by His Grace Dr. Thomas Mar Makarios, Metropolitan of the American diocese. The majority of the members of the dissolved STOCI parish joined and formed the new SGMOC parish with Mathai Achen as its vicar. The parish bought a small church building on Torresdale Avenue in Philadelphia in 1995.\n\nDuring the next ten years, the parish membership increased in number, and grew in prominence as one of the most vibrant parishes of the American Diocese. The need for a larger place of worship and space for other spiritual activities and amenities resulted in finding the property on Hulmeville Road in Bensalem, just outside of Philadelphia in 2005. The new SGMOC building was consecrated in May 2009. After Mathai Achen's retirement, Rev. Fr. Shibu Mathai was appointed as the vicar of SGMOC in 2011. The parish has witnessed tremendous growth in membership and spirituality under his leadership.\n\nOn a personal note, I was blessed to have had the opportunity to serve the parish as an acolyte as well as a Sunday School teacher, and also as a member in the parish administration for several years.",
               "sign": "Korah T. Mani"
             }
           ]
@@ -1280,10 +1355,10 @@
             },
             {
               "type": "text",
+              "cols": true,
+              "bare": true,
               "text": "Through changing seasons, new buildings, joyful celebrations, and tear-stained prayers, we have walked together, grown together, and carried one another. We are grateful for the generations of love, culture, and community that shaped us — for the friendships that became family, for the memories created in every building, hallway, and sanctuary, and for the grace that met us in both laughter and loss over the years.\n\nMay the story God is writing in us continue to bring Him honor, and may the legacy of this church family keep shining from one generation to the next!",
               "title": "Fifty years of God's faithfulness — woven into our church family",
-              "center": true,
-              "size": "sm",
               "sign": "Kuruvilla P. Kurian and family"
             }
           ]
@@ -1308,6 +1383,12 @@
             {
               "type": "names",
               "text": "Best wishes from Mathew Varghese (Wilson) and Family"
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Give thanks to the Lord, for he is good; his love endures forever.",
+              "ref": "Psalm 107:1"
             },
             {
               "type": "closing"
@@ -1377,6 +1458,12 @@
               "text": "Best wishes from Ninan Parel and Family"
             },
             {
+              "type": "verse",
+              "big": true,
+              "text": "Let all that you do be done in love.",
+              "ref": "1 Corinthians 16:14"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -1401,6 +1488,12 @@
             {
               "type": "names",
               "text": "Saji • Mini • Alina • Alan"
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Love one another deeply, from the heart.",
+              "ref": "1 Peter 1:22"
             },
             {
               "type": "closing"
@@ -1456,8 +1549,9 @@
             },
             {
               "type": "text",
-              "text": "Our family moved to Philadelphia from India in 1990. At that time, our family consisted of my wife, Rachel, our daughter Marina, and myself, Varughese. That same year, we joined SGMOC, which was worshipping at the Church of the Savior on 38th and Chestnut Streets. Mathai Achen and the church family welcomed us wholeheartedly and made us feel at home.\n\nI have served as an Acolyte since 1968, having been ordained by the late Thoma Mar Dionysius of Niranam. After joining SGMOC, I continued this ministry and have been blessed with many opportunities to serve the Church, including multiple terms on the Board of Directors, Church Treasurer, Diocesan Assembly Member, and currently as a Malankara Association Member.\n\nOur two younger daughters, Marilyn and Rosilyn, were both baptized at the Chestnut Street church and all three were actively involved in church life through the choir, Youth League, Sunday School, and other activities. My wife, Rachel, has also been a dedicated member of MMVS.\n\nWe are deeply grateful to God for the many blessings and opportunities He has given our family to worship, serve, and grow within this church community. As we celebrate 50 years of the Church's presence in Philadelphia, we give thanks for God's guidance and for the intercession of St. Mary, St. Thomas, and St. Gregorios. We pray for continued blessings upon our Church and its members for generations to come.",
-              "size": "sm"
+              "cols": true,
+              "bare": true,
+              "text": "Our family moved to Philadelphia from India in 1990. At that time, our family consisted of my wife, Rachel, our daughter Marina, and myself, Varughese. That same year, we joined SGMOC, which was worshipping at the Church of the Savior on 38th and Chestnut Streets. Mathai Achen and the church family welcomed us wholeheartedly and made us feel at home.\n\nI have served as an Acolyte since 1968, having been ordained by the late Thoma Mar Dionysius of Niranam. After joining SGMOC, I continued this ministry and have been blessed with many opportunities to serve the Church, including multiple terms on the Board of Directors, Church Treasurer, Diocesan Assembly Member, and currently as a Malankara Association Member.\n\nOur two younger daughters, Marilyn and Rosilyn, were both baptized at the Chestnut Street church and all three were actively involved in church life through the choir, Youth League, Sunday School, and other activities. My wife, Rachel, has also been a dedicated member of MMVS.\n\nWe are deeply grateful to God for the many blessings and opportunities He has given our family to worship, serve, and grow within this church community. As we celebrate 50 years of the Church's presence in Philadelphia, we give thanks for God's guidance and for the intercession of St. Mary, St. Thomas, and St. Gregorios. We pray for continued blessings upon our Church and its members for generations to come."
             }
           ]
         }
@@ -1765,8 +1859,9 @@
             },
             {
               "type": "text",
-              "text": "Baboo George was a devoted member of the Orthodox Church in Philadelphia, where he faithfully worshiped and actively participated in the life of the parish beginning in the 1980s. His longstanding commitment to the church reflected his faith and dedication to serving both his congregation and the wider community. His family has continued this legacy by remaining active members of the church and faithfully serving the parish through the years.",
-              "size": "sm"
+              "cols": true,
+              "bare": true,
+              "text": "Baboo George was a devoted member of the Orthodox Church in Philadelphia, where he faithfully worshiped and actively participated in the life of the parish beginning in the 1980s. His longstanding commitment to the church reflected his faith and dedication to serving both his congregation and the wider community. His family has continued this legacy by remaining active members of the church and faithfully serving the parish through the years."
             },
             {
               "type": "names",
@@ -1894,9 +1989,10 @@
             },
             {
               "type": "text",
+              "cols": true,
+              "bare": true,
               "text": "My wife Mariam and I have been members of SGMOC since its very inception. We came to Delaware in 1975 for our respective Residency trainings. We joined the Malayalam services soon after we arrived — at first interdenominational — followed by a fellowship lunch at someone's home for which everyone contributed a dollar. The first Orthodox services started after the arrival of Rev. Fr. K. Mathai at the Chapel of what now is the Philadelphia Episcopal Cathedral at 38th and Chestnut Streets.\n\nWe were both born into Orthodox families, she in Secunderabad, I in Malaysia, and have attended Orthodox services all our lives. I attended the M. D. Seminary Higher Secondary School in Kottayam, then the location of the Orthodox Seminary. I was an Acolyte while at the Union Christian College, Alwaye. Rev. Fr. K. K. Mathews, who went on to be Barnabas Thirumeni, was our vicar while I studied at the Christian Medical College in Vellore.\n\nWe both are very proud of SGMOC for its dynamism, spirituality, community outreach and care for the members under the leadership of Rev. Fr. Shibu V. Mathai.",
               "title": "A Statement of Faith",
-              "size": "sm",
               "sign": "Thomas K. Mammen MD, FACS"
             }
           ]
@@ -1955,9 +2051,10 @@
             },
             {
               "type": "text",
+              "cols": true,
+              "bare": true,
               "text": "As America is celebrating its 250th year anniversary of independence this year, we, who are among the first generation of Indian immigrants, are celebrating our church's Golden Jubilee, our 50th anniversary. We started our Malankara Orthodox Church congregation in 1976, with our Late Very Rev. K. Mathai Cor Episcopa. Our initial church services were conducted in a chapel of the Episcopal Church at 38th and Chestnut Street, Philadelphia.\n\nMy wife, Rachel (Rosamma), joined the congregation in 1976, and I joined later, in 1977. As we recollect our memories we are lucky to have a new church building in Bensalem Township today. But our first generation suffered a lot at the beginning. Every Sunday, Mathai Achen used to celebrate Holy Qurbana after blessing a small table as our Altar. After the service, we had to pack everything to take back home. This was a very difficult situation because we did not have a permanent place of worship.\n\nAlso, we remember on cold Sunday mornings, some of us wanted to prepare some coffee for the congregation. We all pitched in, and we were able to buy the items to make coffee in the basement of the chapel. It was a very small kitchen and the lady in charge of the kitchen, and the custodian of the Church, along with the Vicar of the Episcopal Church Rev. Fr. Hadvick, were very kind and helpful to us to use the kitchen and the Church facilities. Some of the people that I fondly remember from that time are the late Mr. M. P. Paulose, and Mrs. Rachel Thomas Parrel, who is now in California.",
-              "title": "Memories of Our Early Years",
-              "size": "sm"
+              "title": "Memories of Our Early Years"
             }
           ]
         },
@@ -1966,8 +2063,9 @@
             {
               "type": "text",
               "text": "Our small group enjoyed arranging the annual picnics, tours to the Bush Garden, and Washington, D.C. Even though we were not financially secure, we had a desire to look for a place of our own. We visited many properties, but we didn't have enough support from some members of the parish. Those properties have become beautiful churches of other denominations now.\n\nWe purchased a property on Verree Road in the Northeast, but we could not get the required zoning, even though we had already laid a cornerstone to build the church. We then got a small property with a meeting hall in Torresdale Ave, Philadelphia where we had our regular services and other spiritual activities, until we built our current church in Bensalem.\n\nThere are so many memories that I can't mention at this time. As one of the earlier families, we worked hard for the church. I served on the parish managing committee as a Treasurer, and also as a Board of Trustee member for many years. My wife has also served the MMVS for many years. I am happy to have seen this church grow over the years and continue to grow for the new generation.\n\nNow we are thankful to God Almighty for having a larger building facility and a very active and thriving parish in Bensalem. This was only possible through the hard work of a few people in our church. At this time, we can't forget our former Bishops H.G. Dr. Thomas Mar Makarios and H.G. Mathews Mar Barnabas. We are also thankful to the late Very Rev. K. Mathai Cor Episcopa, who worked very hard for our parish till the time he decided to retire and serve the poor and needy parishes in Kerala, India.\n\nMay the prayers of our Patron Saint, Mar Gregorios, and St. Mary, the mother of God, continue to bless us. Again, I am thankful to the Golden Jubilee Committee for allowing some of our old memories to be published.",
-              "size": "sm",
-              "sign": "V. S. Mathew"
+              "size": "lg",
+              "sign": "V. S. Mathew",
+              "bare": true
             },
             {
               "type": "closing"

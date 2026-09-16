@@ -81,11 +81,25 @@ const BLOCKS = {
     const figs = (b.photos || []).map((p) => figure(p, ctx.alt));
     const grow = b.grow ? ` style="flex-grow:${Number(b.grow)}"` : '';
     const plain = b.plain ? ' plain' : '';
+    // "fill": crop the photo to cover its box instead of letterboxing it.
+    // Only where cropping loses nobody — see the note in members.css.
+    const fill = b.fill ? ' fill' : '';
     if (figs.length >= 3 && b.arrange !== 'row') {
-      return `<div class="m-photos hero${plain}"${grow}><div class="m-hero">${figs[0]}</div><div class="m-row">${figs.slice(1).join('')}</div></div>`;
+      return `<div class="m-photos hero${plain}${fill}"${grow}><div class="m-hero">${figs[0]}</div><div class="m-row">${figs.slice(1).join('')}</div></div>`;
     }
     const stack = b.arrange === 'stack' ? ' stack' : '';
-    return `<div class="m-photos${stack}${plain}"${grow}>${figs.join('')}</div>`;
+    return `<div class="m-photos${stack}${plain}${fill}"${grow}>${figs.join('')}</div>`;
+  },
+  // Photo at the top left with the writing flowing below it and down the
+  // right column. Manoj: "picture on the top left, writing maybe starts
+  // below and whole right side … Like inline".
+  article(b, ctx) {
+    const cls = ['m-article', b.span && 'span-title'].filter(Boolean).join(' ');
+    const fig = b.photo ? figure(b.photo, ctx.alt) : '';
+    const title = b.title ? `<h2 class="m-article-title">${esc(b.title)}</h2>` : '';
+    const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
+    const sign = b.sign ? `<p class="m-sign">&mdash; ${esc(b.sign)}</p>` : '';
+    return `<div class="${cls}">${b.span ? title + fig : fig + title}${body}${sign}</div>`;
   },
   text(b) {
     const cls = ['m-text', b.cols && 'cols', b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bare && 'bare']
@@ -107,7 +121,7 @@ const BLOCKS = {
   },
   names: (b) => `<p class="m-names">${lines(b.text).map(esc).join('<br>')}</p>`,
   verse: (b) =>
-    `<p class="m-verse">&ldquo;${esc(b.text)}&rdquo;${b.ref ? `<br><span>&mdash; ${esc(b.ref)}</span>` : ''}</p>`,
+    `<p class="m-verse${b.big ? ' big' : ''}">&ldquo;${esc(b.text)}&rdquo;${b.ref ? `<br><span>&mdash; ${esc(b.ref)}</span>` : ''}</p>`,
   memorial: (b) =>
     `<div class="m-memorial-head">${b.eyebrow === false ? '' : `<p class="m-eyebrow">${esc(b.eyebrow || 'In Loving Memory')}</p>`}<h2>${esc(b.name)}</h2>${
       b.dates ? `<p class="m-dates">${esc(b.dates)}</p>` : ''
@@ -140,6 +154,8 @@ function memberPages(m) {
       dark: pg.dark,
       body: renderBlocks(pg.blocks, { id: m.id, alt: m.title }),
       badge: m.approved ? null : 'Proof copy',
+      // Corner ornament on member pages; set "ornate": false on a family to skip it.
+      cls: m.ornate === false ? undefined : 'ornate',
     });
     const part = m.pages.length > 1 ? ` (${i + 1} of ${m.pages.length})` : '';
     return { html, label: `MEMBER PAGE: ${m.name}${part}`, member: i === 0 ? m : null };

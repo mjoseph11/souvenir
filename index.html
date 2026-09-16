@@ -777,6 +777,117 @@
   .m-index-row span:first-child::after { content: ' ......................................................................'; color: #bbb; }
   .m-index-row span:last-child { flex: none; color: var(--maroon); }
 
+  /* ══════════════════════════════════════
+     LAYOUT RULES FROM MANOJ (15 Sept)
+     "texture in terms of cropping and maximizing" — fill the page with the
+     photos, crop where nobody is lost, verse where space is left over, and
+     set photo-with-writing pages inline.
+  ══════════════════════════════════════ */
+
+  /* Corner sprays, aged-paper edge and a divider above the closing line —
+     matching the density of Manoj's own mock-up (16 Sept). The sprays run to
+     the page edges, not the content margins, and sit behind .m-content. */
+  /* Manoj's own background artwork (WhatsApp, 16 Sept): aged paper, gold and
+     green leaf corners, the SGMOC building and a dove. Full bleed — the
+     maroon header and footer paint over it. Replaces the drawn SVG. */
+  /* Every inner page gets it, generated and hand-built alike: the messages,
+     clergy, history, ministries, placeholders, the index and the seven April
+     member pages. The cover and back cover carry .cover / .back-cover rather
+     than .inner-page, so they stay maroon.
+     The page must form its own stacking context, or a negative-index child
+     paints behind the page's cream fill instead of on top of it. */
+  .page.inner-page { isolation: isolate; }
+  .page.inner-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('images/backgrounds/page-leaves-plain.jpg') no-repeat center / cover;
+    opacity: 0.75;
+    pointer-events: none;
+    /* Negative, so the artwork sits above the page's cream fill but below
+       every piece of content — including the maroon header, which a
+       positioned z-index:0 layer would otherwise paint straight over. */
+    z-index: -1;
+  }
+  /* The quiet leaf version is the default, because it is safe behind anything.
+     The fuller artwork — church, dove, light rays — goes only on member pages
+     that are photographs with no body text, where nothing competes with it.
+     Keying the other way round meant hand-built pages like Sunday School got
+     the church behind a dense layout. */
+  .m-page.ornate:has(.m-photos):not(:has(.m-text, .m-article, .m-list))::before {
+    background-image: url('images/backgrounds/page-dove-church.jpg');
+    opacity: 1;
+  }
+  .m-page.ornate .m-content { z-index: 1; }
+  /* Gold rule with a centred diamond, above "Celebrating SGMOC's…". */
+  .m-closing::before {
+    content: '';
+    display: block;
+    width: 2.8in;
+    height: 11px;
+    margin: 0 auto 0.09in;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M6 0.6 L11.4 6 L6 11.4 L0.6 6 Z' fill='none' stroke='%23C9A227' stroke-width='1.3'/%3E%3Cpath d='M6 3.4 L8.6 6 L6 8.6 L3.4 6 Z' fill='%23C9A227'/%3E%3C/svg%3E") center / 11px 11px no-repeat,
+      linear-gradient(to right, transparent, rgba(201,162,39,0.75) 22%, rgba(201,162,39,0.75) 78%, transparent) center / 100% 1px no-repeat;
+  }
+
+  /* Crop to fill: the photo covers its whole box instead of letterboxing.
+     Only for photos where cropping cuts nobody off. */
+  .m-photos.fill .m-fig { align-self: stretch; }
+  .m-photos.fill .m-fig img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+  }
+
+  /* Inline page: photo at the top left, writing starting below it and
+     running down the whole right side (his Betcy Allen example). */
+  .m-article {
+    flex: 1 1 0;
+    min-height: 0;
+    column-count: 2;
+    column-gap: 0.3in;
+    column-rule: 1px solid rgba(201,162,39,0.3);
+  }
+  .m-article .m-fig {
+    float: left;
+    width: 100%;
+    margin: 0 0 0.14in;
+    display: block;
+  }
+  .m-article .m-fig img {
+    width: 100%;
+    height: auto;
+    max-height: 3.5in;
+    object-fit: cover;
+  }
+  .m-article .m-article-title {
+    color: var(--maroon);
+    font-size: 13pt;
+    line-height: 1.3;
+    margin-bottom: 0.1in;
+    text-align: left;
+  }
+  .m-article.span-title .m-article-title {
+    column-span: all;
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 0.14in;
+  }
+  .m-article p {
+    font-size: 10pt;
+    line-height: 1.66;
+    color: #333;
+    text-align: justify;
+  }
+  .m-article p + p { margin-top: 0.07in; }
+
+  /* "maybe can use bigger verse" */
+  .m-verse { font-size: 10.5pt; }
+  .m-verse.big { font-size: 13pt; line-height: 1.6; padding: 0.06in 0.3in; }
+  .m-verse.big span { font-size: 10pt; }
+
   @media print {
     .m-page { height: var(--page-h); }
   }
@@ -1617,7 +1728,7 @@
 <!-- ════════════════════════════════════════
      PAGE 20 — MEMBER PAGE: Rev. Fr. Dr. Paul Varki
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">Rev. Fr. Dr. Paul Varki</h1>
@@ -1640,7 +1751,7 @@
 <!-- ════════════════════════════════════════
      PAGE 21 — MEMBER PAGE: Deacon Markose Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -3023,7 +3134,7 @@
 <!-- ════════════════════════════════════════
      PAGE 48 — MEMBER PAGE: A. O. Abraham
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The A. O. Abraham Family</h1>
@@ -3032,7 +3143,8 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/a-o-abraham/PXL-20220429-195230145-MP.jpg" alt="The A. O. Abraham Family"></figure><figure class="m-fig"><img src="images/members/a-o-abraham/WhatsApp-Image-2026-09-03-at-3-39-34-AM.jpg" alt="The A. O. Abraham Family"></figure></div>
+    <div class="m-photos stack"><figure class="m-fig"><img src="images/members/a-o-abraham/dock-family-cropped.jpg" alt="The A. O. Abraham Family"></figure><figure class="m-fig"><img src="images/members/a-o-abraham/studio-portrait-cropped.jpg" alt="The A. O. Abraham Family"></figure></div>
+    <p class="m-verse big">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3044,7 +3156,7 @@
 <!-- ════════════════════════════════════════
      PAGE 49 — MEMBER PAGE: Ajay Peter
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ajay Peter Family</h1>
@@ -3065,7 +3177,7 @@
 <!-- ════════════════════════════════════════
      PAGE 50 — MEMBER PAGE: Ajeesh Cherian
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ajeesh Cherian Family</h1>
@@ -3086,7 +3198,7 @@
 <!-- ════════════════════════════════════════
      PAGE 51 — MEMBER PAGE: Alexander Thankachen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Alexander Thankachen Family</h1>
@@ -3107,7 +3219,7 @@
 <!-- ════════════════════════════════════════
      PAGE 52 — MEMBER PAGE: Kurien P. Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>In Loving Memory</h1>
@@ -3127,7 +3239,7 @@
 <!-- ════════════════════════════════════════
      PAGE 53 — MEMBER PAGE: Arun Philip
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Arun Philip Family</h1>
@@ -3148,7 +3260,7 @@
 <!-- ════════════════════════════════════════
      PAGE 54 — MEMBER PAGE: Arun Raju
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Arun Raju Family</h1>
@@ -3169,7 +3281,7 @@
 <!-- ════════════════════════════════════════
      PAGE 55 — MEMBER PAGE: Ashley Mountney
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ashley Mountney Family</h1>
@@ -3227,7 +3339,7 @@
 <!-- ════════════════════════════════════════
      PAGE 57 — MEMBER PAGE: Baboo George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Baboo George Family</h1>
@@ -3237,7 +3349,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/baboo-george/IMG-20260817-WA0002.jpg" alt="The Baboo George Family"></figure></div>
-    <div class="m-text size-sm"><p>Baboo George was a devoted member of the Orthodox Church in Philadelphia, where he faithfully worshiped and actively participated in the life of the parish beginning in the 1980s. His longstanding commitment to the church reflected his faith and dedication to serving both his congregation and the wider community. His family has continued this legacy by remaining active members of the church and faithfully serving the parish through the years.</p></div>
+    <div class="m-text cols bare"><p>Baboo George was a devoted member of the Orthodox Church in Philadelphia, where he faithfully worshiped and actively participated in the life of the parish beginning in the 1980s. His longstanding commitment to the church reflected his faith and dedication to serving both his congregation and the wider community. His family has continued this legacy by remaining active members of the church and faithfully serving the parish through the years.</p></div>
     <p class="m-names">Best wishes from Baboo George &amp; Family</p>
   </div>
   <div class="page-footer">
@@ -3249,7 +3361,7 @@
 <!-- ════════════════════════════════════════
      PAGE 58 — MEMBER PAGE: Babu Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Babu Varghese Family</h1>
@@ -3259,6 +3371,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/babu-varghese/IMG-20260519-WA0008-Manoj-Chacko.jpg" alt="The Babu Varghese Family"></figure></div>
+    <p class="m-verse big">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3270,7 +3383,7 @@
 <!-- ════════════════════════════════════════
      PAGE 59 — MEMBER PAGE: Basil Milton
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Milton Family</h1>
@@ -3280,7 +3393,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/basil-milton/8b478dc8-2376-4fda-b90c-ee8dc5318722-Basil-Milton.jpg" alt="The Milton Family"></figure></div>
-    <div class="m-text size-sm"><p>Our journey with this church began in 2007 when we first walked through the doors as college students. Back then, it was just a place to worship, but it quickly became the foundation for our entire future. This is where we grew, dreamed, and eventually decided to build a life and family together.</p><p>Over the last nearly two decades, the people here have truly become our family. The friends we made in those early years have grown into a lifelong, supportive community.</p><p>Our family has since been blessed with two wonderful children. Sharing our faith with them has been the greatest joy of our journey. Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation. Today, they look forward to attending Sunday school each week, learning the same values that have anchored us for so long. We are profoundly grateful for this church home, which has shaped our past, blesses our present, and continues to guide our future.</p><p class="m-sign">&mdash; The Milton Family (Marcus, Meryl, Nithya and Basil)</p></div>
+    <div class="m-text cols bare"><p>Our journey with this church began in 2007 when we first walked through the doors as college students. Back then, it was just a place to worship, but it quickly became the foundation for our entire future. This is where we grew, dreamed, and eventually decided to build a life and family together.</p><p>Over the last nearly two decades, the people here have truly become our family. The friends we made in those early years have grown into a lifelong, supportive community.</p><p>Our family has since been blessed with two wonderful children. Sharing our faith with them has been the greatest joy of our journey. Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation. Today, they look forward to attending Sunday school each week, learning the same values that have anchored us for so long. We are profoundly grateful for this church home, which has shaped our past, blesses our present, and continues to guide our future.</p><p class="m-sign">&mdash; The Milton Family (Marcus, Meryl, Nithya and Basil)</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3291,7 +3404,7 @@
 <!-- ════════════════════════════════════════
      PAGE 60 — MEMBER PAGE: Betcy Allen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Betcy Allen Family</h1>
@@ -3300,8 +3413,7 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/betcy-allen/WhatsApp-Image-2026-08-31-at-6-46-33-PM.jpg" alt="The Betcy Allen Family"></figure></div>
-    <div class="m-text cols size-xs"><p class="m-text-title">A journey that began with a baptism and grew into a beautiful sense of faith, friendship, and belonging</p><p>When we moved to New Jersey in 2020, the world looked very different. The pandemic had brought life to a standstill, and being new to the area, we were searching not only for a church but also for a community where our family could feel at home.</p><p>During that time, a priest from the West Coast told us about St. Gregorios Malankara Orthodox Church, Bensalem. Since we were also thinking about having our little one baptized, he encouraged us to reach out to the church. That recommendation turned out to be the beginning of a beautiful journey for our family.</p><p>When we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness. When he learned that we had moved from Mumbai, he immediately began introducing us to other Hindi-speaking families in the parish. It was a simple gesture, but for a family that was new to the area, it meant so much. The Managing Committee and the entire church community welcomed us so wholeheartedly that, from the very beginning, we felt that we belonged.</p><p>In October 2020, during a time when gatherings were still very limited, we had the blessing of baptizing our little one at St. Gregorios. With only a small number of parish members and a few of our extended family present, the baptism was held under the guidance of Rev. Fr. Shibu Venad Mathai and Very Rev. K. Mathai Cor Episcopos. Though it was a small gathering, it remains one of the most meaningful memories of our family's journey with the church.</p><p>From that day forward, St. Gregorios has become much more than the church we attend on Sundays—it has become our extended family. Our children were welcomed into Sunday School, and we were given opportunities to become involved in different ministries, cultural programs, and church activities. Through these experiences, we have met so many wonderful people, built beautiful friendships, and created memories that we will always cherish.</p><p>Over the years, going to church on Sunday has naturally become an important part of our family's life. Our children look forward to Sunday School every week and, most importantly, have formed friendships that we hope will last a lifetime. As parents, it brings us great joy to see them growing up surrounded by faith, friendship, tradition, and a community that cares for them.</p><p>Looking back at how our journey began in the uncertain days of 2020, we are deeply grateful that God led us to St. Gregorios Malankara Orthodox Church, Bensalem. The warmth with which we were welcomed continues to be something we treasure. Our parish has played a vital role in shaping our family's life, strengthening our faith, and giving us a true sense of belonging.</p><p>What began as a search for a church became the blessing of finding a church family and a home away from home.</p></div>
+    <div class="m-article"><figure class="m-fig"><img src="images/members/betcy-allen/WhatsApp-Image-2026-08-31-at-6-46-33-PM.jpg" alt="The Betcy Allen Family"></figure><h2 class="m-article-title">A journey that began with a baptism and grew into a beautiful sense of faith, friendship, and belonging</h2><p>When we moved to New Jersey in 2020, the world looked very different. The pandemic had brought life to a standstill, and being new to the area, we were searching not only for a church but also for a community where our family could feel at home.</p><p>During that time, a priest from the West Coast told us about St. Gregorios Malankara Orthodox Church, Bensalem. Since we were also thinking about having our little one baptized, he encouraged us to reach out to the church. That recommendation turned out to be the beginning of a beautiful journey for our family.</p><p>When we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness. When he learned that we had moved from Mumbai, he immediately began introducing us to other Hindi-speaking families in the parish. It was a simple gesture, but for a family that was new to the area, it meant so much. The Managing Committee and the entire church community welcomed us so wholeheartedly that, from the very beginning, we felt that we belonged.</p><p>In October 2020, during a time when gatherings were still very limited, we had the blessing of baptizing our little one at St. Gregorios. With only a small number of parish members and a few of our extended family present, the baptism was held under the guidance of Rev. Fr. Shibu Venad Mathai and Very Rev. K. Mathai Cor Episcopos. Though it was a small gathering, it remains one of the most meaningful memories of our family's journey with the church.</p><p>From that day forward, St. Gregorios has become much more than the church we attend on Sundays—it has become our extended family. Our children were welcomed into Sunday School, and we were given opportunities to become involved in different ministries, cultural programs, and church activities. Through these experiences, we have met so many wonderful people, built beautiful friendships, and created memories that we will always cherish.</p><p>Over the years, going to church on Sunday has naturally become an important part of our family's life. Our children look forward to Sunday School every week and, most importantly, have formed friendships that we hope will last a lifetime. As parents, it brings us great joy to see them growing up surrounded by faith, friendship, tradition, and a community that cares for them.</p><p>Looking back at how our journey began in the uncertain days of 2020, we are deeply grateful that God led us to St. Gregorios Malankara Orthodox Church, Bensalem. The warmth with which we were welcomed continues to be something we treasure. Our parish has played a vital role in shaping our family's life, strengthening our faith, and giving us a true sense of belonging.</p><p>What began as a search for a church became the blessing of finding a church family and a home away from home.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3312,7 +3424,7 @@
 <!-- ════════════════════════════════════════
      PAGE 61 — MEMBER PAGE: Biju Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Biju Chacko Family</h1>
@@ -3333,7 +3445,7 @@
 <!-- ════════════════════════════════════════
      PAGE 62 — MEMBER PAGE: Biju Ittyachen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ittyachen Family</h1>
@@ -3353,7 +3465,7 @@
 <!-- ════════════════════════════════════════
      PAGE 63 — MEMBER PAGE: Biju Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Biju Mani Family</h1>
@@ -3363,6 +3475,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/biju-mani/887-0800.jpg" alt="The Biju Mani Family"></figure></div>
+    <p class="m-verse big">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3374,7 +3487,7 @@
 <!-- ════════════════════════════════════════
      PAGE 64 — MEMBER PAGE: Blossom Joy
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Blossom Joy Family</h1>
@@ -3395,7 +3508,7 @@
 <!-- ════════════════════════════════════════
      PAGE 65 — MEMBER PAGE: Cherian T. George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Cherian T. George Family</h1>
@@ -3415,7 +3528,7 @@
 <!-- ════════════════════════════════════════
      PAGE 66 — MEMBER PAGE: Dr. Joe John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Dr. Joe John, V. S. John &amp; Family</h1>
@@ -3425,6 +3538,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/dr-joe-johnv-s-john-and-family/WhatsApp-Image-2026-08-01-at-5-58-21-PM.jpg" alt="Dr. Joe John, V. S. John &amp; Family"></figure></div>
+    <p class="m-verse big">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3461,7 +3575,7 @@
 <!-- ════════════════════════════════════════
      PAGE 68 — MEMBER PAGE: Ejo John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ejo John Family</h1>
@@ -3545,7 +3659,7 @@
 <!-- ════════════════════════════════════════
      PAGE 70 — MEMBER PAGE: George M. Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George M. Mathew Family</h1>
@@ -3565,7 +3679,7 @@
 <!-- ════════════════════════════════════════
      PAGE 71 — MEMBER PAGE: George Mathew (Biju)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George Mathew Family</h1>
@@ -3575,6 +3689,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/george-mathew-biju/IMG-20260906-WA0000.jpg" alt="The George Mathew Family"></figure></div>
+    <p class="m-verse big">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3586,7 +3701,7 @@
 <!-- ════════════════════════════════════════
      PAGE 72 — MEMBER PAGE: George Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George Varghese Family</h1>
@@ -3596,6 +3711,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/george-varghese/DSC08895-2-Joel-G.jpg" alt="The George Varghese Family"></figure></div>
+    <p class="m-verse big">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3607,7 +3723,7 @@
 <!-- ════════════════════════════════════════
      PAGE 73 — MEMBER PAGE: Jacob Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jacob Chacko Family</h1>
@@ -3617,7 +3733,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/jacob-chacko/JacobChackoFamily-Nina-Jacob.jpg" alt="The Jacob Chacko Family"></figure></div>
-    <div class="m-text"><p class="m-text-title">Best Compliments</p><p>Our family started attending services in the 1990s, when the church was located at 38th and Chestnut Street in Philadelphia. When the church moved to Torresdale Avenue, we continued to attend services faithfully. Our daughter Nina participated in Sunday School competitions and won prizes. She got 1st prize in the Bible Quiz competition during that time. Now, our journey continues with SGMOC in Bensalem.</p></div>
+    <div class="m-text cols bare"><p class="m-text-title">Best Compliments</p><p>Our family started attending services in the 1990s, when the church was located at 38th and Chestnut Street in Philadelphia. When the church moved to Torresdale Avenue, we continued to attend services faithfully. Our daughter Nina participated in Sunday School competitions and won prizes. She got 1st prize in the Bible Quiz competition during that time. Now, our journey continues with SGMOC in Bensalem.</p></div>
     <p class="m-names">Jacob Chacko • Jessy Chacko • Nina Jacob • Prince Jacob</p>
   </div>
   <div class="page-footer">
@@ -3647,7 +3763,7 @@
 <!-- ════════════════════════════════════════
      PAGE 75 — MEMBER PAGE: Jacob George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jacob George Family</h1>
@@ -3657,6 +3773,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/jacob-george/IMG-1916-jaymole-GEORGE.jpg" alt="The Jacob George Family"></figure><figure class="m-fig"><img src="images/members/jacob-george/IMG-3268-jaymole-GEORGE.jpg" alt="The Jacob George Family"></figure></div>
+    <p class="m-verse big">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3668,7 +3785,7 @@
 <!-- ════════════════════════════════════════
      PAGE 76 — MEMBER PAGE: Jinu John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jinu John Family</h1>
@@ -3678,7 +3795,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/jinu-john/Family-Jinu-John.jpg" alt="The Jinu John Family"></figure></div>
-    <div class="m-text cols size-xs"><p class="m-text-title">A Faith We Received, A Faith We Pass On</p><p>When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.</p><p>In a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.</p><p>Sunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.</p><p>Now, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.</p><p>Our children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.</p><p>As we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.</p><p>Our prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory.</p></div>
+    <div class="m-text cols bare"><p class="m-text-title">A Faith We Received, A Faith We Pass On</p><p>When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.</p><p>In a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.</p><p>Sunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.</p><p>Now, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.</p><p>Our children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.</p><p>As we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.</p><p>Our prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory.</p></div>
     <p class="m-verse">&ldquo;So these words I command you today shall be in your heart and in your soul. You shall teach them to your sons, and shall talk of them when you sit in your house, when you walk by the way, when you lie down, and when you rise up.&rdquo;<br><span>&mdash; Deuteronomy 6:6–7</span></p>
   </div>
   <div class="page-footer">
@@ -3690,7 +3807,7 @@
 <!-- ════════════════════════════════════════
      PAGE 77 — MEMBER PAGE: John Kappil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -3713,7 +3830,7 @@
 <!-- ════════════════════════════════════════
      PAGE 78 — MEMBER PAGE: John Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The John Varghese Family</h1>
@@ -3734,7 +3851,7 @@
 <!-- ════════════════════════════════════════
      PAGE 79 — MEMBER PAGE: Joseph Abraham (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Abraham Family</h1>
@@ -3755,7 +3872,7 @@
 <!-- ════════════════════════════════════════
      PAGE 80 — MEMBER PAGE: Joseph Abraham (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Abraham Family</h1>
@@ -3776,7 +3893,7 @@
 <!-- ════════════════════════════════════════
      PAGE 81 — MEMBER PAGE: Jessu Joys
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joys Family</h1>
@@ -3803,7 +3920,7 @@
 <!-- ════════════════════════════════════════
      PAGE 82 — MEMBER PAGE: Kuruvilla (Saji) Kallelil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Kallelil Family</h1>
@@ -3824,7 +3941,7 @@
 <!-- ════════════════════════════════════════
      PAGE 83 — MEMBER PAGE: Korah Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Korah Mani Family</h1>
@@ -3833,8 +3950,7 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/korah-mani/WhatsApp-Image-2026-08-04-at-9-42-53-PM.jpg" alt="The Korah Mani Family"></figure></div>
-    <div class="m-text cols size-xs"><p class="m-text-title">Golden Jubilee Notes</p><p>It is with immense gratitude that we, Shobha and I, thank God for providing us the opportunity to be part of this Malankara Orthodox Church from its inception as the first parish in Philadelphia in 1976. We thank our parents for nurturing us with the zeal and love for the Orthodox Churches we were members of, from our childhood. When we immigrated to this nation of opportunities in the early 70's, we started attending the Ecumenical congregation in Philadelphia, established during the latter part of the 1960s by a good number of Malayalee Christians belonging to different denominations living in the Philadelphia metropolitan region.</p><p>1976 was a historical year for the Orthodox Church with the arrival of Rev. Fr. K. Mathai to the US and later to Philadelphia with Mariamma Kochamma and their twin girls. With his initiative, and in response to the demand from most of our Orthodox members, the first Orthodox parish with the name St. Thomas Orthodox Church of India, Philadelphia (STOCI) was established in the city of Philadelphia on the 10th of October 1976. We worshipped in the chapel of the Philadelphia Episcopal Church on 38th and Chestnut Streets. I was one of the members of the first Board of Trustees of the parish. We were also blessed with the birth of our daughter Namita in September 1976.</p><p>1984 was another important and memorable year for us. We welcomed the arrival of our twin boys Matthew and Michael. It was also the year that St. Gregorios Malankara Orthodox Church (SGMOC) was formed after the dissolution of STOCI by His Grace Dr. Thomas Mar Makarios, Metropolitan of the American diocese. The majority of the members of the dissolved STOCI parish joined and formed the new SGMOC parish with Mathai Achen as its vicar. The parish bought a small church building on Torresdale Avenue in Philadelphia in 1995.</p><p>During the next ten years, the parish membership increased in number, and grew in prominence as one of the most vibrant parishes of the American Diocese. The need for a larger place of worship and space for other spiritual activities and amenities resulted in finding the property on Hulmeville Road in Bensalem, just outside of Philadelphia in 2005. The new SGMOC building was consecrated in May 2009. After Mathai Achen's retirement, Rev. Fr. Shibu Mathai was appointed as the vicar of SGMOC in 2011. The parish has witnessed tremendous growth in membership and spirituality under his leadership.</p><p>On a personal note, I was blessed to have had the opportunity to serve the parish as an acolyte as well as a Sunday School teacher, and also as a member in the parish administration for several years.</p><p class="m-sign">&mdash; Korah T. Mani</p></div>
+    <div class="m-article"><figure class="m-fig"><img src="images/members/korah-mani/WhatsApp-Image-2026-08-04-at-9-42-53-PM.jpg" alt="The Korah Mani Family"></figure><h2 class="m-article-title">Golden Jubilee Notes</h2><p>It is with immense gratitude that we, Shobha and I, thank God for providing us the opportunity to be part of this Malankara Orthodox Church from its inception as the first parish in Philadelphia in 1976. We thank our parents for nurturing us with the zeal and love for the Orthodox Churches we were members of, from our childhood. When we immigrated to this nation of opportunities in the early 70's, we started attending the Ecumenical congregation in Philadelphia, established during the latter part of the 1960s by a good number of Malayalee Christians belonging to different denominations living in the Philadelphia metropolitan region.</p><p>1976 was a historical year for the Orthodox Church with the arrival of Rev. Fr. K. Mathai to the US and later to Philadelphia with Mariamma Kochamma and their twin girls. With his initiative, and in response to the demand from most of our Orthodox members, the first Orthodox parish with the name St. Thomas Orthodox Church of India, Philadelphia (STOCI) was established in the city of Philadelphia on the 10th of October 1976. We worshipped in the chapel of the Philadelphia Episcopal Church on 38th and Chestnut Streets. I was one of the members of the first Board of Trustees of the parish. We were also blessed with the birth of our daughter Namita in September 1976.</p><p>1984 was another important and memorable year for us. We welcomed the arrival of our twin boys Matthew and Michael. It was also the year that St. Gregorios Malankara Orthodox Church (SGMOC) was formed after the dissolution of STOCI by His Grace Dr. Thomas Mar Makarios, Metropolitan of the American diocese. The majority of the members of the dissolved STOCI parish joined and formed the new SGMOC parish with Mathai Achen as its vicar. The parish bought a small church building on Torresdale Avenue in Philadelphia in 1995.</p><p>During the next ten years, the parish membership increased in number, and grew in prominence as one of the most vibrant parishes of the American Diocese. The need for a larger place of worship and space for other spiritual activities and amenities resulted in finding the property on Hulmeville Road in Bensalem, just outside of Philadelphia in 2005. The new SGMOC building was consecrated in May 2009. After Mathai Achen's retirement, Rev. Fr. Shibu Mathai was appointed as the vicar of SGMOC in 2011. The parish has witnessed tremendous growth in membership and spirituality under his leadership.</p><p>On a personal note, I was blessed to have had the opportunity to serve the parish as an acolyte as well as a Sunday School teacher, and also as a member in the parish administration for several years.</p><p class="m-sign">&mdash; Korah T. Mani</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3845,7 +3961,7 @@
 <!-- ════════════════════════════════════════
      PAGE 84 — MEMBER PAGE: Kuruvilla P. Kurian
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Kuruvilla P. Kurian Family</h1>
@@ -3855,7 +3971,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/kuruvilla-p-kurian/85a5627e-9a99-4927-a28c-fe3be7cee144-Kuruvilla-Kurian.jpg" alt="The Kuruvilla P. Kurian Family"></figure></div>
-    <div class="m-text size-sm center"><p class="m-text-title">Fifty years of God's faithfulness — woven into our church family</p><p>Through changing seasons, new buildings, joyful celebrations, and tear-stained prayers, we have walked together, grown together, and carried one another. We are grateful for the generations of love, culture, and community that shaped us — for the friendships that became family, for the memories created in every building, hallway, and sanctuary, and for the grace that met us in both laughter and loss over the years.</p><p>May the story God is writing in us continue to bring Him honor, and may the legacy of this church family keep shining from one generation to the next!</p><p class="m-sign">&mdash; Kuruvilla P. Kurian and family</p></div>
+    <div class="m-text cols bare"><p class="m-text-title">Fifty years of God's faithfulness — woven into our church family</p><p>Through changing seasons, new buildings, joyful celebrations, and tear-stained prayers, we have walked together, grown together, and carried one another. We are grateful for the generations of love, culture, and community that shaped us — for the friendships that became family, for the memories created in every building, hallway, and sanctuary, and for the grace that met us in both laughter and loss over the years.</p><p>May the story God is writing in us continue to bring Him honor, and may the legacy of this church family keep shining from one generation to the next!</p><p class="m-sign">&mdash; Kuruvilla P. Kurian and family</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3949,7 +4065,7 @@
 <!-- ════════════════════════════════════════
      PAGE 87 — MEMBER PAGE: Manoj Samuel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Manoj Samuel Family</h1>
@@ -3958,7 +4074,8 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/manoj-samuel/WhatsApp-Image-2026-09-08-at-7-18-45-PM.jpg" alt="The Manoj Samuel Family"></figure></div>
+    <div class="m-photos fill"><figure class="m-fig"><img src="images/members/manoj-samuel/WhatsApp-Image-2026-09-08-at-7-18-45-PM.jpg" alt="The Manoj Samuel Family"></figure></div>
+    <p class="m-verse big">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -3970,7 +4087,7 @@
 <!-- ════════════════════════════════════════
      PAGE 88 — MEMBER PAGE: Mathew Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Joseph Family</h1>
@@ -3991,7 +4108,7 @@
 <!-- ════════════════════════════════════════
      PAGE 89 — MEMBER PAGE: Mathew Ninan
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Ninan Family</h1>
@@ -4012,7 +4129,7 @@
 <!-- ════════════════════════════════════════
      PAGE 90 — MEMBER PAGE: Mathew Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Thomas Family</h1>
@@ -4033,7 +4150,7 @@
 <!-- ════════════════════════════════════════
      PAGE 91 — MEMBER PAGE: Mathew Varghese (Wilson)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Varghese Family</h1>
@@ -4044,6 +4161,7 @@
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/mathew-varghese/IMG-20260820-170346.jpg" alt="The Mathew Varghese Family"></figure></div>
     <p class="m-names">Best wishes from Mathew Varghese (Wilson) and Family</p>
+    <p class="m-verse big">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4108,7 +4226,7 @@
 <!-- ════════════════════════════════════════
      PAGE 93 — MEMBER PAGE: Matt & Shainey Jacob (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Matt &amp; Shainey Jacob</h1>
@@ -4128,7 +4246,7 @@
 <!-- ════════════════════════════════════════
      PAGE 94 — MEMBER PAGE: Matt & Shainey Jacob (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Matt &amp; Shainey Jacob</h1>
@@ -4149,7 +4267,7 @@
 <!-- ════════════════════════════════════════
      PAGE 95 — MEMBER PAGE: Ninan Parel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ninan Parel Family</h1>
@@ -4160,6 +4278,7 @@
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/ninan-parel/IMG-20260820-170355.jpg" alt="The Ninan Parel Family"></figure></div>
     <p class="m-names">Best wishes from Ninan Parel and Family</p>
+    <p class="m-verse big">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4171,7 +4290,7 @@
 <!-- ════════════════════════════════════════
      PAGE 96 — MEMBER PAGE: P. V. Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The P. V. Thomas Family</h1>
@@ -4193,7 +4312,7 @@
 <!-- ════════════════════════════════════════
      PAGE 97 — MEMBER PAGE: Paul J. Maret
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Paul J. Maret Family</h1>
@@ -4203,6 +4322,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/paul-j-maret/3b64732b-f7d2-4903-b89b-33c18f8741a9-Paul-Maret.jpg" alt="The Paul J. Maret Family"></figure></div>
+    <p class="m-verse big">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4214,7 +4334,7 @@
 <!-- ════════════════════════════════════════
      PAGE 98 — MEMBER PAGE: Philipose George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Philipose George Family</h1>
@@ -4235,7 +4355,7 @@
 <!-- ════════════════════════════════════════
      PAGE 99 — MEMBER PAGE: Dr. Poovathoor Koshy
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Poovathoor Koshy Family</h1>
@@ -4256,7 +4376,7 @@
 <!-- ════════════════════════════════════════
      PAGE 100 — MEMBER PAGE: Prince Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Prince Mathew Family</h1>
@@ -4266,6 +4386,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/prince-mathew/WhatsApp-Image-2026-08-31-at-8-49-09-PM.jpg" alt="The Prince Mathew Family"></figure></div>
+    <p class="m-verse big">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4295,7 +4416,7 @@
 <!-- ════════════════════════════════════════
      PAGE 102 — MEMBER PAGE: Rajan Eappen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Rajan Eappen Family</h1>
@@ -4316,7 +4437,7 @@
 <!-- ════════════════════════════════════════
      PAGE 103 — MEMBER PAGE: Rajan Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Rajan Mathew Family</h1>
@@ -4337,7 +4458,7 @@
 <!-- ════════════════════════════════════════
      PAGE 104 — MEMBER PAGE: Raju Sankarathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Raju Sankarathil Family</h1>
@@ -4358,7 +4479,7 @@
 <!-- ════════════════════════════════════════
      PAGE 105 — MEMBER PAGE: Saji George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Saji George Family</h1>
@@ -4369,6 +4490,7 @@
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/saji-george/1000110258.jpg" alt="The Saji George Family"></figure></div>
     <p class="m-names">Saji • Mini • Alina • Alan</p>
+    <p class="m-verse big">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4380,7 +4502,7 @@
 <!-- ════════════════════════════════════════
      PAGE 106 — MEMBER PAGE: Samuel Daniel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Samuel Daniel Family</h1>
@@ -4401,7 +4523,7 @@
 <!-- ════════════════════════════════════════
      PAGE 107 — MEMBER PAGE: Sarath Moses
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sarath Moses Family</h1>
@@ -4422,7 +4544,7 @@
 <!-- ════════════════════════════════════════
      PAGE 108 — MEMBER PAGE: Shiju Poovathoor
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Shiju Poovathoor Family</h1>
@@ -4432,6 +4554,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/shiju-poovathoor/14c92871-4cb2-4b8f-9256-267f72fcd377-Shiju-Philip-Poovathoor.jpg" alt="The Shiju Poovathoor Family"></figure><figure class="m-fig"><img src="images/members/shiju-poovathoor/235C3F4C-5E8F-4191-A88E-569D170F1969-Shiju-Philip-Poovathoor.jpg" alt="The Shiju Poovathoor Family"></figure></div>
+    <p class="m-verse big">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4443,7 +4566,7 @@
 <!-- ════════════════════════════════════════
      PAGE 109 — MEMBER PAGE: Suchin Thompson
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Suchin Thompson Family</h1>
@@ -4464,7 +4587,7 @@
 <!-- ════════════════════════════════════════
      PAGE 110 — MEMBER PAGE: Sujith Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sujith Varghese Family</h1>
@@ -4474,6 +4597,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/sujith-varghese/WhatsApp-Image-2026-08-31-at-9-07-31-PM.jpg" alt="The Sujith Varghese Family"></figure></div>
+    <p class="m-verse big">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4485,7 +4609,7 @@
 <!-- ════════════════════════════════════════
      PAGE 111 — MEMBER PAGE: Thankamoni John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -4510,7 +4634,7 @@
 <!-- ════════════════════════════════════════
      PAGE 112 — MEMBER PAGE: Thomas Cheriyan
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Cheriyan Family</h1>
@@ -4530,7 +4654,7 @@
 <!-- ════════════════════════════════════════
      PAGE 113 — MEMBER PAGE: Thomas Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Joseph Family</h1>
@@ -4540,6 +4664,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/thomas-joseph/WhatsApp-Image-2026-06-17-at-8-19-15-PM.jpg" alt="The Thomas Joseph Family"></figure></div>
+    <p class="m-verse big">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4551,7 +4676,7 @@
 <!-- ════════════════════════════════════════
      PAGE 114 — MEMBER PAGE: Thomas Mammen (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Mammen Family</h1>
@@ -4561,7 +4686,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/thomas-mammen-2-pages/Thomas-and-Mariam-Mammen-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure></div>
-    <div class="m-text size-sm"><p class="m-text-title">A Statement of Faith</p><p>My wife Mariam and I have been members of SGMOC since its very inception. We came to Delaware in 1975 for our respective Residency trainings. We joined the Malayalam services soon after we arrived — at first interdenominational — followed by a fellowship lunch at someone's home for which everyone contributed a dollar. The first Orthodox services started after the arrival of Rev. Fr. K. Mathai at the Chapel of what now is the Philadelphia Episcopal Cathedral at 38th and Chestnut Streets.</p><p>We were both born into Orthodox families, she in Secunderabad, I in Malaysia, and have attended Orthodox services all our lives. I attended the M. D. Seminary Higher Secondary School in Kottayam, then the location of the Orthodox Seminary. I was an Acolyte while at the Union Christian College, Alwaye. Rev. Fr. K. K. Mathews, who went on to be Barnabas Thirumeni, was our vicar while I studied at the Christian Medical College in Vellore.</p><p>We both are very proud of SGMOC for its dynamism, spirituality, community outreach and care for the members under the leadership of Rev. Fr. Shibu V. Mathai.</p><p class="m-sign">&mdash; Thomas K. Mammen MD, FACS</p></div>
+    <div class="m-text cols bare"><p class="m-text-title">A Statement of Faith</p><p>My wife Mariam and I have been members of SGMOC since its very inception. We came to Delaware in 1975 for our respective Residency trainings. We joined the Malayalam services soon after we arrived — at first interdenominational — followed by a fellowship lunch at someone's home for which everyone contributed a dollar. The first Orthodox services started after the arrival of Rev. Fr. K. Mathai at the Chapel of what now is the Philadelphia Episcopal Cathedral at 38th and Chestnut Streets.</p><p>We were both born into Orthodox families, she in Secunderabad, I in Malaysia, and have attended Orthodox services all our lives. I attended the M. D. Seminary Higher Secondary School in Kottayam, then the location of the Orthodox Seminary. I was an Acolyte while at the Union Christian College, Alwaye. Rev. Fr. K. K. Mathews, who went on to be Barnabas Thirumeni, was our vicar while I studied at the Christian Medical College in Vellore.</p><p>We both are very proud of SGMOC for its dynamism, spirituality, community outreach and care for the members under the leadership of Rev. Fr. Shibu V. Mathai.</p><p class="m-sign">&mdash; Thomas K. Mammen MD, FACS</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4572,7 +4697,7 @@
 <!-- ════════════════════════════════════════
      PAGE 115 — MEMBER PAGE: Thomas Mammen (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Mammen Family</h1>
@@ -4630,7 +4755,7 @@
 <!-- ════════════════════════════════════════
      PAGE 117 — MEMBER PAGE: V. C. Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -4653,7 +4778,7 @@
 <!-- ════════════════════════════════════════
      PAGE 118 — MEMBER PAGE: V. S. Mathew (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The V. S. Mathew Family</h1>
@@ -4663,7 +4788,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/vs-mathews/WhatsApp-Image-2026-08-09-at-12-55-14-PM.jpg" alt="The V. S. Mathew Family"></figure></div>
-    <div class="m-text size-sm"><p class="m-text-title">Memories of Our Early Years</p><p>As America is celebrating its 250th year anniversary of independence this year, we, who are among the first generation of Indian immigrants, are celebrating our church's Golden Jubilee, our 50th anniversary. We started our Malankara Orthodox Church congregation in 1976, with our Late Very Rev. K. Mathai Cor Episcopa. Our initial church services were conducted in a chapel of the Episcopal Church at 38th and Chestnut Street, Philadelphia.</p><p>My wife, Rachel (Rosamma), joined the congregation in 1976, and I joined later, in 1977. As we recollect our memories we are lucky to have a new church building in Bensalem Township today. But our first generation suffered a lot at the beginning. Every Sunday, Mathai Achen used to celebrate Holy Qurbana after blessing a small table as our Altar. After the service, we had to pack everything to take back home. This was a very difficult situation because we did not have a permanent place of worship.</p><p>Also, we remember on cold Sunday mornings, some of us wanted to prepare some coffee for the congregation. We all pitched in, and we were able to buy the items to make coffee in the basement of the chapel. It was a very small kitchen and the lady in charge of the kitchen, and the custodian of the Church, along with the Vicar of the Episcopal Church Rev. Fr. Hadvick, were very kind and helpful to us to use the kitchen and the Church facilities. Some of the people that I fondly remember from that time are the late Mr. M. P. Paulose, and Mrs. Rachel Thomas Parrel, who is now in California.</p></div>
+    <div class="m-text cols bare"><p class="m-text-title">Memories of Our Early Years</p><p>As America is celebrating its 250th year anniversary of independence this year, we, who are among the first generation of Indian immigrants, are celebrating our church's Golden Jubilee, our 50th anniversary. We started our Malankara Orthodox Church congregation in 1976, with our Late Very Rev. K. Mathai Cor Episcopa. Our initial church services were conducted in a chapel of the Episcopal Church at 38th and Chestnut Street, Philadelphia.</p><p>My wife, Rachel (Rosamma), joined the congregation in 1976, and I joined later, in 1977. As we recollect our memories we are lucky to have a new church building in Bensalem Township today. But our first generation suffered a lot at the beginning. Every Sunday, Mathai Achen used to celebrate Holy Qurbana after blessing a small table as our Altar. After the service, we had to pack everything to take back home. This was a very difficult situation because we did not have a permanent place of worship.</p><p>Also, we remember on cold Sunday mornings, some of us wanted to prepare some coffee for the congregation. We all pitched in, and we were able to buy the items to make coffee in the basement of the chapel. It was a very small kitchen and the lady in charge of the kitchen, and the custodian of the Church, along with the Vicar of the Episcopal Church Rev. Fr. Hadvick, were very kind and helpful to us to use the kitchen and the Church facilities. Some of the people that I fondly remember from that time are the late Mr. M. P. Paulose, and Mrs. Rachel Thomas Parrel, who is now in California.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4674,7 +4799,7 @@
 <!-- ════════════════════════════════════════
      PAGE 119 — MEMBER PAGE: V. S. Mathew (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The V. S. Mathew Family</h1>
@@ -4683,7 +4808,7 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-text size-sm"><p>Our small group enjoyed arranging the annual picnics, tours to the Bush Garden, and Washington, D.C. Even though we were not financially secure, we had a desire to look for a place of our own. We visited many properties, but we didn't have enough support from some members of the parish. Those properties have become beautiful churches of other denominations now.</p><p>We purchased a property on Verree Road in the Northeast, but we could not get the required zoning, even though we had already laid a cornerstone to build the church. We then got a small property with a meeting hall in Torresdale Ave, Philadelphia where we had our regular services and other spiritual activities, until we built our current church in Bensalem.</p><p>There are so many memories that I can't mention at this time. As one of the earlier families, we worked hard for the church. I served on the parish managing committee as a Treasurer, and also as a Board of Trustee member for many years. My wife has also served the MMVS for many years. I am happy to have seen this church grow over the years and continue to grow for the new generation.</p><p>Now we are thankful to God Almighty for having a larger building facility and a very active and thriving parish in Bensalem. This was only possible through the hard work of a few people in our church. At this time, we can't forget our former Bishops H.G. Dr. Thomas Mar Makarios and H.G. Mathews Mar Barnabas. We are also thankful to the late Very Rev. K. Mathai Cor Episcopa, who worked very hard for our parish till the time he decided to retire and serve the poor and needy parishes in Kerala, India.</p><p>May the prayers of our Patron Saint, Mar Gregorios, and St. Mary, the mother of God, continue to bless us. Again, I am thankful to the Golden Jubilee Committee for allowing some of our old memories to be published.</p><p class="m-sign">&mdash; V. S. Mathew</p></div>
+    <div class="m-text size-lg bare"><p>Our small group enjoyed arranging the annual picnics, tours to the Bush Garden, and Washington, D.C. Even though we were not financially secure, we had a desire to look for a place of our own. We visited many properties, but we didn't have enough support from some members of the parish. Those properties have become beautiful churches of other denominations now.</p><p>We purchased a property on Verree Road in the Northeast, but we could not get the required zoning, even though we had already laid a cornerstone to build the church. We then got a small property with a meeting hall in Torresdale Ave, Philadelphia where we had our regular services and other spiritual activities, until we built our current church in Bensalem.</p><p>There are so many memories that I can't mention at this time. As one of the earlier families, we worked hard for the church. I served on the parish managing committee as a Treasurer, and also as a Board of Trustee member for many years. My wife has also served the MMVS for many years. I am happy to have seen this church grow over the years and continue to grow for the new generation.</p><p>Now we are thankful to God Almighty for having a larger building facility and a very active and thriving parish in Bensalem. This was only possible through the hard work of a few people in our church. At this time, we can't forget our former Bishops H.G. Dr. Thomas Mar Makarios and H.G. Mathews Mar Barnabas. We are also thankful to the late Very Rev. K. Mathai Cor Episcopa, who worked very hard for our parish till the time he decided to retire and serve the poor and needy parishes in Kerala, India.</p><p>May the prayers of our Patron Saint, Mar Gregorios, and St. Mary, the mother of God, continue to bless us. Again, I am thankful to the Golden Jubilee Committee for allowing some of our old memories to be published.</p><p class="m-sign">&mdash; V. S. Mathew</p></div>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -4695,7 +4820,7 @@
 <!-- ════════════════════════════════════════
      PAGE 120 — MEMBER PAGE: Varkey Vattakkattu
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varkey Vattakkattu Family</h1>
@@ -4716,7 +4841,7 @@
 <!-- ════════════════════════════════════════
      PAGE 121 — MEMBER PAGE: Varughese Koithottu
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese Koithottu Family</h1>
@@ -4737,7 +4862,7 @@
 <!-- ════════════════════════════════════════
      PAGE 122 — MEMBER PAGE: Varughese P. Issac
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese P. Issac Family</h1>
@@ -4747,7 +4872,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/varughese-p-issac/57081.jpg" alt="The Varughese P. Issac Family"></figure></div>
-    <div class="m-text size-sm"><p>Our family moved to Philadelphia from India in 1990. At that time, our family consisted of my wife, Rachel, our daughter Marina, and myself, Varughese. That same year, we joined SGMOC, which was worshipping at the Church of the Savior on 38th and Chestnut Streets. Mathai Achen and the church family welcomed us wholeheartedly and made us feel at home.</p><p>I have served as an Acolyte since 1968, having been ordained by the late Thoma Mar Dionysius of Niranam. After joining SGMOC, I continued this ministry and have been blessed with many opportunities to serve the Church, including multiple terms on the Board of Directors, Church Treasurer, Diocesan Assembly Member, and currently as a Malankara Association Member.</p><p>Our two younger daughters, Marilyn and Rosilyn, were both baptized at the Chestnut Street church and all three were actively involved in church life through the choir, Youth League, Sunday School, and other activities. My wife, Rachel, has also been a dedicated member of MMVS.</p><p>We are deeply grateful to God for the many blessings and opportunities He has given our family to worship, serve, and grow within this church community. As we celebrate 50 years of the Church's presence in Philadelphia, we give thanks for God's guidance and for the intercession of St. Mary, St. Thomas, and St. Gregorios. We pray for continued blessings upon our Church and its members for generations to come.</p></div>
+    <div class="m-text cols bare"><p>Our family moved to Philadelphia from India in 1990. At that time, our family consisted of my wife, Rachel, our daughter Marina, and myself, Varughese. That same year, we joined SGMOC, which was worshipping at the Church of the Savior on 38th and Chestnut Streets. Mathai Achen and the church family welcomed us wholeheartedly and made us feel at home.</p><p>I have served as an Acolyte since 1968, having been ordained by the late Thoma Mar Dionysius of Niranam. After joining SGMOC, I continued this ministry and have been blessed with many opportunities to serve the Church, including multiple terms on the Board of Directors, Church Treasurer, Diocesan Assembly Member, and currently as a Malankara Association Member.</p><p>Our two younger daughters, Marilyn and Rosilyn, were both baptized at the Chestnut Street church and all three were actively involved in church life through the choir, Youth League, Sunday School, and other activities. My wife, Rachel, has also been a dedicated member of MMVS.</p><p>We are deeply grateful to God for the many blessings and opportunities He has given our family to worship, serve, and grow within this church community. As we celebrate 50 years of the Church's presence in Philadelphia, we give thanks for God's guidance and for the intercession of St. Mary, St. Thomas, and St. Gregorios. We pray for continued blessings upon our Church and its members for generations to come.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4758,7 +4883,7 @@
 <!-- ════════════════════════════════════════
      PAGE 123 — MEMBER PAGE: James Varughese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese Family</h1>
@@ -4780,7 +4905,7 @@
 <!-- ════════════════════════════════════════
      PAGE 124 — MEMBER PAGE: Vinesh Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Family</h1>
@@ -4800,7 +4925,7 @@
 <!-- ════════════════════════════════════════
      PAGE 125 — MEMBER PAGE: Vinit Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Leading Our Path</h1>
@@ -4820,7 +4945,7 @@
 <!-- ════════════════════════════════════════
      PAGE 126 — MEMBER PAGE: Yohannan Sankarathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sankarathil Family</h1>
@@ -4847,7 +4972,7 @@
 <!-- ════════════════════════════════════════
      PAGE 127 — MEMBER PAGE: Zach Zacharia
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page has-band ornate">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Zach Zacharia Family</h1>
@@ -4857,6 +4982,7 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/zach-zacharia/Zacharia-Family-Zach-Zacharia.jpg" alt="The Zach Zacharia Family"></figure></div>
+    <p class="m-verse big">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
