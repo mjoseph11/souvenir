@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+  html{color-scheme:light dark}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Golden Jubilee Page Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root{
+    --ground:#FAF6EE;
+    --surface:#FFFDF8;
+    --surface-2:#F3ECDE;
+    --ink:#241B16;
+    --ink-soft:#6E6357;
+    --rule:#E0D5C1;
+    --rule-strong:#C9BAA0;
+    --accent:#6B0000;
+    --accent-ink:#6B0000;
+    --gold:#C9A227;
+    --gold-ink:#8A6D0F;
+    --sev-high:#7A1010;
+    --sev-mid:#B08415;
+    --sev-low:#9A9081;
+    --shadow:0 1px 2px rgba(36,27,22,.06), 0 8px 24px rgba(36,27,22,.07);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#16110E;
+      --surface:#1E1714;
+      --surface-2:#271E19;
+      --ink:#F0E7DA;
+      --ink-soft:#A79A8A;
+      --rule:#392C25;
+      --rule-strong:#544136;
+      --accent:#D59A9A;
+      --accent-ink:#E2ADAD;
+      --gold:#D9B84A;
+      --gold-ink:#D9B84A;
+      --sev-high:#E08A8A;
+      --sev-mid:#D9B84A;
+      --sev-low:#7E7365;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#16110E;
+    --surface:#1E1714;
+    --surface-2:#271E19;
+    --ink:#F0E7DA;
+    --ink-soft:#A79A8A;
+    --rule:#392C25;
+    --rule-strong:#544136;
+    --accent:#D59A9A;
+    --accent-ink:#E2ADAD;
+    --gold:#D9B84A;
+    --gold-ink:#D9B84A;
+    --sev-high:#E08A8A;
+    --sev-mid:#D9B84A;
+    --sev-low:#7E7365;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+  }
+
+  body{
+    background:var(--ground);
+    color:var(--ink);
+    font-family:"Spectral",Georgia,"Times New Roman",serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:52rem;margin:0 auto;padding-inline:20px;padding-block:0 4rem;}
+
+  /* ---- masthead ---- */
+  .masthead{
+    background:var(--accent);
+    color:#F7EFE2;
+    margin-inline:-20px;
+    padding:2.6rem 20px 2.2rem;
+    border-bottom:3px solid var(--gold);
+  }
+  .masthead .inner{max-width:52rem;margin:0 auto;}
+  .eyebrow{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+    color:#E8C877;margin:0 0 .9rem;
+  }
+  h1{
+    font-family:"Marcellus",Georgia,serif;
+    font-weight:400;font-size:clamp(2.1rem,6vw,3.1rem);
+    line-height:1.08;margin:0;text-wrap:balance;letter-spacing:.005em;
+  }
+  .standfirst{
+    margin:1rem 0 0;max-width:34rem;color:#EFE0C9;font-size:1.02rem;
+  }
+  .status{
+    display:inline-flex;align-items:center;gap:.55rem;margin-top:1.4rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;
+    text-transform:uppercase;color:#F7EFE2;
+    border:1px solid rgba(247,239,226,.38);border-radius:2px;padding:.4rem .7rem;
+  }
+  .status::before{content:"";width:6px;height:6px;border-radius:50%;background:#E8C877;}
+
+  /* ---- shared ---- */
+  section{margin-top:3.4rem;}
+  h2{
+    font-family:"Marcellus",Georgia,serif;font-weight:400;
+    font-size:1.72rem;line-height:1.2;margin:0 0 .3rem;text-wrap:balance;
+    color:var(--accent-ink);
+  }
+  h3{
+    font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.12rem;
+    margin:0 0 .35rem;color:var(--ink);
+  }
+  p{margin:0 0 1rem;}
+  .lede{color:var(--ink-soft);}
+  .decision-no{
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--gold-ink);display:block;margin-bottom:.55rem;
+  }
+  .sec-head{border-top:1px solid var(--rule-strong);padding-top:1.4rem;}
+
+  blockquote{
+    margin:2.2rem 0 0;padding:1.3rem 1.4rem;background:var(--surface);
+    border-left:3px solid var(--gold);border-radius:2px;box-shadow:var(--shadow);
+    font-style:italic;color:var(--ink);
+  }
+  blockquote p:last-child{margin:0;}
+  blockquote cite{
+    display:block;margin-top:.8rem;font-style:normal;
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink-soft);
+  }
+
+  .options{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));margin:1.6rem 0;}
+  .option{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:1.1rem 1.15rem;display:flex;flex-direction:column;gap:.4rem;
+  }
+  .option.pick{border-color:var(--gold);box-shadow:var(--shadow);}
+  .option p{margin:0;font-size:.95rem;color:var(--ink-soft);}
+  .tag{
+    align-self:flex-start;font-family:"IBM Plex Mono",monospace;font-size:.64rem;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);
+  }
+
+  .rec{
+    margin:1.6rem 0;padding:1.15rem 1.3rem;background:var(--surface-2);
+    border-radius:3px;border:1px solid var(--rule);
+  }
+  .rec .label{
+    font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent-ink);display:block;margin-bottom:.4rem;
+  }
+  .rec p{margin:0;}
+
+  figure{margin:1.8rem 0 0;}
+  figure img{
+    width:100%;max-width:100%;display:block;border:1px solid var(--rule);
+    border-radius:3px;background:var(--surface);
+  }
+  figcaption{
+    margin-top:.6rem;font-size:.85rem;color:var(--ink-soft);
+    font-family:"IBM Plex Mono",monospace;letter-spacing:.02em;
+  }
+
+  ul.findings{margin:0 0 1rem;padding-left:1.1rem;}
+  ul.findings li{margin-bottom:.5rem;}
+
+  /* ---- white-space table ---- */
+  .groups{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));margin:1.5rem 0 2rem;}
+  .group{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:.9rem 1rem;}
+  .group .n{font-family:"IBM Plex Mono",monospace;font-size:1.5rem;color:var(--accent-ink);display:block;line-height:1;}
+  .group .k{font-size:.9rem;display:block;margin:.35rem 0 .2rem;}
+  .group .f{font-size:.82rem;color:var(--ink-soft);}
+
+  .tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface);}
+  table{border-collapse:collapse;width:100%;min-width:30rem;font-size:.92rem;}
+  thead th{
+    text-align:left;font-family:"IBM Plex Mono",monospace;font-weight:600;
+    font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);
+    padding:.75rem .9rem;border-bottom:1px solid var(--rule-strong);white-space:nowrap;
+  }
+  tbody td{padding:.5rem .9rem;border-bottom:1px solid var(--rule);vertical-align:middle;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.pg{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;color:var(--ink-soft);white-space:nowrap;}
+  td.pct{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;}
+  td.bar{width:7rem;}
+  .meter{height:7px;border-radius:1px;background:var(--surface-2);overflow:hidden;min-width:5rem;}
+  .meter span{display:block;height:100%;}
+  .s-high span{background:var(--sev-high);}
+  .s-mid span{background:var(--sev-mid);}
+  .s-low span{background:var(--sev-low);}
+  .chip{
+    font-family:"IBM Plex Mono",monospace;font-size:.64rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--ink-soft);white-space:nowrap;
+  }
+
+  /* ---- agenda ---- */
+  .agenda{counter-reset:item;list-style:none;margin:1.4rem 0 0;padding:0;}
+  .agenda li{
+    counter-increment:item;position:relative;padding:.85rem 0 .85rem 2.6rem;
+    border-bottom:1px solid var(--rule);
+  }
+  .agenda li:last-child{border-bottom:none;}
+  .agenda li::before{
+    content:counter(item,decimal-leading-zero);position:absolute;left:0;top:.95rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--gold-ink);letter-spacing:.06em;
+  }
+  .agenda strong{font-weight:600;}
+  .agenda .note{display:block;color:var(--ink-soft);font-size:.92rem;}
+
+  footer{
+    margin-top:3.4rem;padding-top:1.3rem;border-top:1px solid var(--rule-strong);
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;
+    color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;
+  }
+  a{color:var(--accent-ink);}
+
+  @media print{
+    body{background:#fff;color:#000;}
+    .masthead{background:#fff;color:#000;border-bottom:2px solid #C9A227;}
+    .masthead .eyebrow,.standfirst{color:#444;}
+    .status{display:none;}
+  }
+</style>
+
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <p class="eyebrow">Editorial Board · 15 September 2026</p>
+    <h1>Golden Jubilee Page Review</h1>
+    <p class="standfirst">Three decisions to settle on tonight's call, answering Manoj's notes on white space, formatting and duplicate photos in the 126-page build.</p>
+    <span class="status">Nothing here is live — the site is unchanged</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <blockquote>
+    <p>"Overall looks good, few updates in general is some pages has too much white space, or formatted differently colorwise. Some pictures need to be removed since duplicate and some replaced. I think its ok to crop to fit the page and when no choice we can maybe add a nice filler verse. Maybe adding a nice texture to the page might also make it fuller, let's discuss tomorrow Evening?"</p>
+    <cite>Manoj Chacko · WhatsApp · 14 Sept, 11:57 PM</cite>
+  </blockquote>
+
+  <section>
+    <div class="sec-head">
+      <span class="decision-no">Decision 1 of 3</span>
+      <h2>A texture for every page</h2>
+    </div>
+    <p class="lede">Four sample pages — a family photo page, a text-heavy page, a memorial and a ministry page — rendered plain and in three treatments. Whichever we choose is one stylesheet change that applies to all 126 pages at once.</p>
+
+    <div class="options">
+      <div class="option">
+        <span class="tag">Option A</span>
+        <h3>Parchment</h3>
+        <p>Warm aged-paper tone with slightly darker edges. The most noticeable of the three, and it does make pages feel fuller.</p>
+      </div>
+      <div class="option">
+        <span class="tag">Option B</span>
+        <h3>Linen</h3>
+        <p>A very fine weave. Subtle on screen, and likely to disappear altogether in print.</p>
+      </div>
+      <div class="option pick">
+        <span class="tag">Option C · recommended</span>
+        <h3>Gold frame &amp; seal</h3>
+        <p>A thin double gold border with a faint SGMOC seal watermark behind the content. It frames the empty space, so a sparse page reads as deliberate rather than unfinished.</p>
+      </div>
+    </div>
+
+    <div class="rec">
+      <span class="label">Recommendation</span>
+      <p>Gold frame and seal, possibly over a lighter parchment tone — it addresses the white space without needing new content on every page.</p>
+    </div>
+
+    <figure>
+      <img src="images/review/textures.jpg" alt="Four sample souvenir pages shown plain and with parchment, linen, and gold frame and seal treatments">
+      <figcaption>Fig. 1 — Four sample pages, each shown plain and in the three textures.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="decision-no">Decision 2 of 3</span>
+      <h2>Crop to fill, or add a verse</h2>
+    </div>
+    <p class="lede">Manoj is fine with cropping photos to fit. Tested on four photo-only family pages, it depends entirely on how many people are in the frame.</p>
+
+    <ul class="findings">
+      <li><strong>Cropping works for small groups.</strong> The Manoj Samuel page fills properly with nobody cut off.</li>
+      <li><strong>Cropping hurts large groups.</strong> People at the edges are lost in the Babu Varghese and Zach Zacharia photos, and A. O. Abraham's framed portraits lose their frames.</li>
+      <li><strong>A verse helps but doesn't solve it.</strong> It fills some of the band, but the photo still sits small on the page.</li>
+    </ul>
+
+    <div class="rec">
+      <span class="label">Proposed rule</span>
+      <p>Crop only when it cuts off no one — in practice, groups of three to five. Otherwise keep the whole photo, set it as large as the page allows, and add a filler verse. Cropping is automatic but faces aren't always centred, so each cropped page still needs a look before it's final.</p>
+    </div>
+
+    <figure>
+      <img src="images/review/crop.jpg" alt="Four photo-only family pages shown as they are now, cropped to fill, and with a filler verse">
+      <figcaption>Fig. 2 — Four photo-only pages, each shown as-is, cropped to fill, and uncropped with a verse.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="decision-no">Decision 3 of 3</span>
+      <h2>The seven April pages</h2>
+    </div>
+    <p class="lede">This is most likely what "formatted differently colorwise" refers to. Seven family pages were built in April, before the current templates existed, and each carries its own inline styling.</p>
+    <p>Ashok Joseph · Dustin Paul · Fr. Alexander Kurian · Lijo Chandy · Mathewkutty Kurian · Mani P. Abraham · Thomas Paul</p>
+    <p>Rebuilding them on the new templates would bring them in line with the other 72 families. Separately, the designed pages that families submitted in their own colours — Vinesh and Vinit Mathew's blue pages, Annamma Kurien's pastel memorial — are a second question: keep them as submitted, or restyle them too?</p>
+
+    <div class="rec">
+      <span class="label">Also worth raising</span>
+      <p>Those same seven pages are marked <code>approved</code> in the build, so they don't show the "Proof copy" tag — but as far as we know those families never proofread them. Clearing the flag would put them back in the proofing queue with everyone else.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="decision-no">Supporting data</span>
+      <h2>Where the white space is</h2>
+    </div>
+    <p class="lede">Every page was rendered and measured; these are the 38 where at least 30% of the content area is empty page colour. "To be completed" placeholder pages are excluded. Only the first group is a design problem — the rest are waiting on content.</p>
+
+    <div class="groups">
+      <div class="group"><span class="n">19</span><span class="k">Family pages</span><span class="f">Fix by cropping or a verse</span></div>
+      <div class="group"><span class="n">8</span><span class="k">Ministry pages</span><span class="f">Empty photo boxes, TBD leaders</span></div>
+      <div class="group"><span class="n">5</span><span class="k">Messages &amp; tributes</span><span class="f">Draft text is short</span></div>
+      <div class="group"><span class="n">6</span><span class="k">Memorial &amp; history</span><span class="f">Little content submitted</span></div>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Page</th><th>Empty</th><th class="bar"></th><th>Title</th><th>Kind</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="pg">p117</td><td class="pct">83%</td><td class="bar"><div class="meter s-high"><span style="width:83%"></span></div></td><td>In Loving Memory (V. C. Thomas)</td><td class="chip">Memorial</td></tr>
+          <tr><td class="pg">p25</td><td class="pct">55%</td><td class="bar"><div class="meter s-high"><span style="width:55%"></span></div></td><td>Charter Families</td><td class="chip">History</td></tr>
+          <tr><td class="pg">p72</td><td class="pct">53%</td><td class="bar"><div class="meter s-high"><span style="width:53%"></span></div></td><td>The George Varghese Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p86</td><td class="pct">51%</td><td class="bar"><div class="meter s-high"><span style="width:51%"></span></div></td><td>In Loving Memory (P. K. Abraham)</td><td class="chip">Memorial</td></tr>
+          <tr><td class="pg">p38</td><td class="pct">50%</td><td class="bar"><div class="meter s-high"><span style="width:50%"></span></div></td><td>Logos Ministry</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p44</td><td class="pct">49%</td><td class="bar"><div class="meter s-mid"><span style="width:49%"></span></div></td><td>Community Outreach</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p3</td><td class="pct">47%</td><td class="bar"><div class="meter s-mid"><span style="width:47%"></span></div></td><td>Message</td><td class="chip">Message</td></tr>
+          <tr><td class="pg">p4</td><td class="pct">47%</td><td class="bar"><div class="meter s-mid"><span style="width:47%"></span></div></td><td>Message</td><td class="chip">Message</td></tr>
+          <tr><td class="pg">p19</td><td class="pct">46%</td><td class="bar"><div class="meter s-mid"><span style="width:46%"></span></div></td><td>The Beginnings</td><td class="chip">History</td></tr>
+          <tr><td class="pg">p48</td><td class="pct">46%</td><td class="bar"><div class="meter s-mid"><span style="width:46%"></span></div></td><td>The A. O. Abraham Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p75</td><td class="pct">46%</td><td class="bar"><div class="meter s-mid"><span style="width:46%"></span></div></td><td>The Jacob George Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p99</td><td class="pct">46%</td><td class="bar"><div class="meter s-mid"><span style="width:46%"></span></div></td><td>The Poovathoor Koshy Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p108</td><td class="pct">46%</td><td class="bar"><div class="meter s-mid"><span style="width:46%"></span></div></td><td>The Shiju Poovathoor Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p119</td><td class="pct">46%</td><td class="bar"><div class="meter s-mid"><span style="width:46%"></span></div></td><td>The V. S. Mathew Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p2</td><td class="pct">45%</td><td class="bar"><div class="meter s-mid"><span style="width:45%"></span></div></td><td>Message</td><td class="chip">Message</td></tr>
+          <tr><td class="pg">p28</td><td class="pct">45%</td><td class="bar"><div class="meter s-mid"><span style="width:45%"></span></div></td><td>Sunday School</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p63</td><td class="pct">45%</td><td class="bar"><div class="meter s-mid"><span style="width:45%"></span></div></td><td>The Biju Mani Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p66</td><td class="pct">45%</td><td class="bar"><div class="meter s-mid"><span style="width:45%"></span></div></td><td>Dr. Joe John, V. S. John &amp; Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p97</td><td class="pct">45%</td><td class="bar"><div class="meter s-mid"><span style="width:45%"></span></div></td><td>The Paul J. Maret Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p113</td><td class="pct">45%</td><td class="bar"><div class="meter s-mid"><span style="width:45%"></span></div></td><td>The Thomas Joseph Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p87</td><td class="pct">44%</td><td class="bar"><div class="meter s-mid"><span style="width:44%"></span></div></td><td>The Manoj Samuel Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p36</td><td class="pct">43%</td><td class="bar"><div class="meter s-mid"><span style="width:43%"></span></div></td><td>MGOCSM / Youth League</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p40</td><td class="pct">43%</td><td class="bar"><div class="meter s-mid"><span style="width:43%"></span></div></td><td>GROW</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p91</td><td class="pct">43%</td><td class="bar"><div class="meter s-mid"><span style="width:43%"></span></div></td><td>The Mathew Varghese Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p95</td><td class="pct">43%</td><td class="bar"><div class="meter s-mid"><span style="width:43%"></span></div></td><td>The Ninan Parel Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p105</td><td class="pct">41%</td><td class="bar"><div class="meter s-mid"><span style="width:41%"></span></div></td><td>The Saji George Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p6</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>Fifteen Years as Our Vicar</td><td class="chip">Tribute</td></tr>
+          <tr><td class="pg">p30</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>Marth Mariam Vanitha Samajam</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p58</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>The Babu Varghese Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p71</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>The George Mathew Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p100</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>The Prince Mathew Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p110</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>The Sujith Varghese Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p127</td><td class="pct">38%</td><td class="bar"><div class="meter s-low"><span style="width:38%"></span></div></td><td>The Zach Zacharia Family</td><td class="chip">Family</td></tr>
+          <tr><td class="pg">p32</td><td class="pct">37%</td><td class="bar"><div class="meter s-low"><span style="width:37%"></span></div></td><td>St. Joseph's Forum</td><td class="chip">Ministry</td></tr>
+          <tr><td class="pg">p21</td><td class="pct">35%</td><td class="bar"><div class="meter s-low"><span style="width:35%"></span></div></td><td>In Loving Memory</td><td class="chip">Memorial</td></tr>
+          <tr><td class="pg">p24</td><td class="pct">33%</td><td class="bar"><div class="meter s-low"><span style="width:33%"></span></div></td><td>History</td><td class="chip">History</td></tr>
+          <tr><td class="pg">p5</td><td class="pct">33%</td><td class="bar"><div class="meter s-low"><span style="width:33%"></span></div></td><td>Chosen to Shepherd</td><td class="chip">Tribute</td></tr>
+          <tr><td class="pg">p34</td><td class="pct">32%</td><td class="bar"><div class="meter s-low"><span style="width:32%"></span></div></td><td>Good Samaritan Mission</td><td class="chip">Ministry</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <figure>
+      <img src="images/review/whitespace.jpg" alt="Contact sheet of the souvenir pages flagged for excessive white space">
+      <figcaption>Fig. 3 — Contact sheet of the flagged pages.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="decision-no">For the call</span>
+      <h2>What we need from Manoj</h2>
+    </div>
+    <ol class="agenda">
+      <li><strong>Which texture?</strong><span class="note">Gold frame and seal is the recommendation; it applies to all pages in one change.</span></li>
+      <li><strong>Is the crop rule acceptable?</strong><span class="note">Crop only when nobody is cut off; otherwise a large photo plus a verse.</span></li>
+      <li><strong>Rebuild the seven April pages?</strong><span class="note">And do the family-designed colour pages stay as submitted?</span></li>
+      <li><strong>Which duplicate photos come out?</strong><span class="note">Likely the Joseph Abraham altar pair and the Philipose George / Varughese Koithottu pairs. He is reorganising the folders, and revised pictures have come in.</span></li>
+      <li><strong>Three questions still open from our message</strong><span class="note">Thankamoni John's late uncle's name; the two names on the V. C. Thomas page read from handwriting; a high-resolution photo of Shibu Achen.</span></li>
+      <li><strong>The testimony page</strong><span class="note">Whether it joins Fr. Shibu's tribute section, and where it sits.</span></li>
+    </ol>
+  </section>
+
+  <footer>
+    <span>St. Gregorios Malankara Orthodox Church · Bensalem, PA</span>
+    <span>126-page build · 75 families</span>
+    <span>Measured 15 Sept 2026</span>
+  </footer>
+</div>
+
+</body>
+</html>
