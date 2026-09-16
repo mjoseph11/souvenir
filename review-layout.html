@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+  html{color-scheme:light dark}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Jubilee Page Layouts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root{
+    --ground:#FAF6EE; --surface:#FFFDF8; --surface-2:#F3ECDE;
+    --ink:#241B16; --ink-soft:#6E6357; --rule:#E0D5C1; --rule-strong:#C9BAA0;
+    --accent:#6B0000; --accent-ink:#6B0000; --gold:#C9A227; --gold-ink:#8A6D0F;
+    --ok:#3F6B3A; --hold:#9A6B12;
+    --shadow:0 1px 2px rgba(36,27,22,.06), 0 8px 24px rgba(36,27,22,.07);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#16110E; --surface:#1E1714; --surface-2:#271E19;
+      --ink:#F0E7DA; --ink-soft:#A79A8A; --rule:#392C25; --rule-strong:#544136;
+      --accent:#D59A9A; --accent-ink:#E2ADAD; --gold:#D9B84A; --gold-ink:#D9B84A;
+      --ok:#8FBE86; --hold:#D9B84A;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#16110E; --surface:#1E1714; --surface-2:#271E19;
+    --ink:#F0E7DA; --ink-soft:#A79A8A; --rule:#392C25; --rule-strong:#544136;
+    --accent:#D59A9A; --accent-ink:#E2ADAD; --gold:#D9B84A; --gold-ink:#D9B84A;
+    --ok:#8FBE86; --hold:#D9B84A;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+  }
+
+  body{background:var(--ground);color:var(--ink);
+    font-family:"Spectral",Georgia,"Times New Roman",serif;font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:60rem;margin:0 auto;padding-inline:20px;padding-block:0 4rem;}
+
+  .masthead{background:var(--accent);color:#F7EFE2;margin-inline:-20px;
+    padding:2.6rem 20px 2.2rem;border-bottom:3px solid var(--gold);}
+  .masthead .inner{max-width:60rem;margin:0 auto;}
+  .eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;
+    letter-spacing:.16em;text-transform:uppercase;color:#E8C877;margin:0 0 .9rem;}
+  h1{font-family:"Marcellus",Georgia,serif;font-weight:400;
+    font-size:clamp(2.1rem,6vw,3.1rem);line-height:1.08;margin:0;text-wrap:balance;}
+  .standfirst{margin:1rem 0 0;max-width:36rem;color:#EFE0C9;font-size:1.02rem;}
+  .status{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.4rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;
+    text-transform:uppercase;color:#F7EFE2;border:1px solid rgba(247,239,226,.38);
+    border-radius:2px;padding:.4rem .7rem;}
+  .status::before{content:"";width:6px;height:6px;border-radius:50%;background:#E8C877;}
+
+  section{margin-top:3.2rem;}
+  .sec-head{border-top:1px solid var(--rule-strong);padding-top:1.4rem;}
+  h2{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.72rem;
+    line-height:1.2;margin:0 0 .3rem;color:var(--accent-ink);text-wrap:balance;}
+  h3{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.1rem;margin:0;}
+  p{margin:0 0 1rem;}
+  .lede{color:var(--ink-soft);}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--gold-ink);display:block;margin-bottom:.55rem;}
+
+  blockquote{margin:0 0 1.4rem;padding:1rem 1.2rem;background:var(--surface);
+    border-left:3px solid var(--gold);border-radius:2px;font-style:italic;box-shadow:var(--shadow);}
+  blockquote p{margin:0;}
+  blockquote cite{display:block;margin-top:.6rem;font-style:normal;
+    font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink-soft);}
+
+  .rules{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin:1.6rem 0 0;}
+  .rule-card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1.1rem 1.15rem;}
+  .rule-card .n{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--gold-ink);display:block;margin-bottom:.4rem;}
+  .rule-card p{margin:.4rem 0 0;font-size:.95rem;color:var(--ink-soft);}
+  .rule-card .count{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--accent-ink);
+    display:block;margin-top:.6rem;}
+
+  figure{margin:2.2rem 0 0;}
+  figure img{width:100%;max-width:100%;display:block;border:1px solid var(--rule);
+    border-radius:3px;background:var(--surface);}
+  figcaption{margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem .9rem;align-items:baseline;}
+  figcaption .pg{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink-soft);}
+  figcaption .what{font-size:.95rem;color:var(--ink);flex:1 1 18rem;}
+  .flag{font-family:"IBM Plex Mono",monospace;font-size:.64rem;letter-spacing:.12em;
+    text-transform:uppercase;border:1px solid currentColor;border-radius:2px;padding:.1rem .4rem;}
+  .flag.ok{color:var(--ok);}
+  .flag.hold{color:var(--hold);}
+
+  ol.asks{counter-reset:item;list-style:none;margin:1.4rem 0 0;padding:0;}
+  ol.asks li{counter-increment:item;position:relative;padding:.85rem 0 .85rem 2.6rem;
+    border-bottom:1px solid var(--rule);}
+  ol.asks li:last-child{border-bottom:none;}
+  ol.asks li::before{content:counter(item,decimal-leading-zero);position:absolute;left:0;top:.95rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--gold-ink);}
+  ol.asks .note{display:block;color:var(--ink-soft);font-size:.92rem;}
+
+  footer{margin-top:3.2rem;padding-top:1.3rem;border-top:1px solid var(--rule-strong);
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;
+    color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;}
+</style>
+
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <p class="eyebrow">Golden Jubilee Souvenir · 15 September 2026</p>
+    <h1>Jubilee Page Layouts</h1>
+    <p class="standfirst">Manoj's notes built into the page templates, shown as before and after on eight pages. 27 pages changed.</p>
+    <span class="status">Built locally — the live site is unchanged</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section style="margin-top:2.4rem;">
+    <blockquote>
+      <p>"I can identify a texture in terms of cropping and maximizing, what meant was for example this is feel like there is space on top and bottom for both images landscape top and bottom might use up most space… When there is extra space on bottom maybe can use filler verses… we try picture on the top left writing maybe starts below and whole right side. Like inline"</p>
+      <cite>Manoj Chacko · WhatsApp · 15 Sept, 10:06–10:15 PM</cite>
+    </blockquote>
+    <p class="lede">So "texture" meant filling the page, not a background material. Three rules came out of it, and they are now part of the build rather than one-off edits — any new family page gets them automatically.</p>
+
+    <div class="rules">
+      <div class="rule-card">
+        <span class="n">Rule 1</span>
+        <h3>Filler verse</h3>
+        <p>Where a photo leaves a band at the bottom, a verse fills it, set larger than before. Eight verses rotate so neighbouring pages don't repeat.</p>
+        <span class="count">17 pages</span>
+      </div>
+      <div class="rule-card">
+        <span class="n">Rule 2</span>
+        <h3>Crop to fill</h3>
+        <p>The photo covers its whole box instead of letterboxing — but only where cropping cuts nobody off. Automatic centre-cropping fails on large groups, so it is opt-in per page.</p>
+        <span class="count">1 page so far</span>
+      </div>
+      <div class="rule-card">
+        <span class="n">Rule 3</span>
+        <h3>Inline</h3>
+        <p>Photo at the top left, writing starting below it and running down the whole right side, exactly as in the page he sent.</p>
+        <span class="count">10 pages</span>
+      </div>
+      <div class="rule-card">
+        <span class="n">Also</span>
+        <h3>Corner ornament</h3>
+        <p>A leaf motif drawn to match the one on his mock-ups, on every family page. His came from outside our build, so this is an equivalent, not his file.</p>
+        <span class="count">80 pages</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="kicker">Before and after</span>
+      <h2>What the rules do to real pages</h2>
+    </div>
+    <p class="lede">Left is the page as it stands today; right is the same page rebuilt. Page numbers are unchanged.</p>
+
+    <figure>
+      <img src="images/review/compare/babu-varghese.png" alt="The Babu Varghese Family page, before and after: the photo fills more of the page and a verse sits below it">
+      <figcaption>
+        <span class="pg">Page 58 · Babu Varghese</span>
+        <span class="what">The page he signed off on. Photo takes more of the page, verse set larger.</span>
+        <span class="flag ok">Settled</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/manoj-samuel.png" alt="The Manoj Samuel Family page, before and after: the photo is cropped to fill the page">
+      <figcaption>
+        <span class="pg">Page 87 · Manoj Samuel</span>
+        <span class="what">Crop to fill, and the only page it is switched on for — three people, nobody lost.</span>
+        <span class="flag ok">Settled</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/george-varghese.png" alt="The George Varghese Family page, before and after: photo kept whole with a verse added below">
+      <figcaption>
+        <span class="pg">Page 72 · George Varghese</span>
+        <span class="what">A large group, so the photo stays whole and a verse fills the space instead.</span>
+        <span class="flag ok">Settled</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/a-o-abraham.png" alt="The A. O. Abraham Family page, before and after: both photos enlarged with a verse below">
+      <figcaption>
+        <span class="pg">Page 48 · A. O. Abraham</span>
+        <span class="what">His own mock-up cropped these two. Automatic cropping threw away the portrait frames and led with a band of wall, so they stay whole for now.</span>
+        <span class="flag hold">Needs a hand-picked crop</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/jacob-george.png" alt="The Jacob George Family page, before and after: both photos enlarged with a verse below">
+      <figcaption>
+        <span class="pg">Page 75 · Jacob George</span>
+        <span class="what">The page he named. Automatic cropping deleted the baby from the left photo and halved a woman at the edge of the right one.</span>
+        <span class="flag hold">Needs a hand-picked crop</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/betcy-allen.png" alt="The Betcy Allen Family page, before and after: photo top left with text flowing beside and below it">
+      <figcaption>
+        <span class="pg">Page 60 · Betcy Allen</span>
+        <span class="what">Inline — the example he sent, rebuilt from our own content.</span>
+        <span class="flag ok">Settled</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/korah-mani.png" alt="The Korah Mani Family page, before and after: photo top left with the full narrative flowing around it">
+      <figcaption>
+        <span class="pg">Page 83 · Korah Mani</span>
+        <span class="what">Inline — and it answers the question uncle asked on 5 August. All 445 words now fit at the normal 10pt, instead of squeezed into small type.</span>
+        <span class="flag ok">Settled</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/review/compare/v-s-mathew.png" alt="The V. S. Mathew Family page, before and after: photo top left with text flowing beside and below it">
+      <figcaption>
+        <span class="pg">Page 118 · V. S. Mathew</span>
+        <span class="what">Inline. One of the pages measured emptiest before.</span>
+        <span class="flag ok">Settled</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="kicker">Still needs a person</span>
+      <h2>What I could not decide automatically</h2>
+    </div>
+    <ol class="asks">
+      <li><strong>Two crops need choosing by hand</strong><span class="note">A. O. Abraham and Jacob George. Cropping there is a judgment about which faces may leave the frame — tell me the crop and it takes a minute, or Manoj can send his cropped files.</span></li>
+      <li><strong>Is the ornament right?</strong><span class="note">Mine is drawn to match his; if he sends the file he used, I will swap it in and every page changes at once.</span></li>
+      <li><strong>Duplicate photos</strong><span class="note">Still waiting on his list, and on the revised pictures he mentioned.</span></li>
+      <li><strong>The seven April pages</strong><span class="note">Unanswered from last night: rebuild them on the new templates, and do the family-designed colour pages stay as submitted?</span></li>
+    </ol>
+  </section>
+
+  <footer>
+    <span>St. Gregorios Malankara Orthodox Church · Bensalem, PA</span>
+    <span>132 pages · 76 families</span>
+    <span>Layout and verified-facts checks passing</span>
+  </footer>
+</div>
+
+</body>
+</html>
