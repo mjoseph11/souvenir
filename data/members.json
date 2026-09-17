@@ -2101,6 +2101,250 @@
           ]
         }
       ]
+    },
+    {
+      "id": "thomas-o-abraham",
+      "name": "Thomas O. Abraham",
+      "title": "The Thomas O. Abraham Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/thomas-o-abraham/photo-1.jpg"
+                },
+                {
+                  "src": "images/members/thomas-o-abraham/photo-4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/thomas-o-abraham/photo-2.jpg"
+                },
+                {
+                  "src": "images/members/thomas-o-abraham/photo-3.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thomas-m-george",
+      "name": "Thomas M. George",
+      "title": "The Thomas M. George Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/thomas-m-george/photo-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Give thanks to the Lord, for he is good; his love endures forever.",
+              "ref": "Psalm 107:1"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathew-kallelil",
+      "name": "Mathew Kallelil (Biji)",
+      "sort": "Kallelil Mathew",
+      "title": "The Mathew Kallelil Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathew-kallelil/photo-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "The Lord has done great things for us, and we are filled with joy.",
+              "ref": "Psalm 126:3"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathew-kandathil",
+      "name": "Mathew Kandathil",
+      "sort": "Kandathil Mathew",
+      "title": "The Mathew Kandathil Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathew-kandathil/photo-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Let all that you do be done in love.",
+              "ref": "1 Corinthians 16:14"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punnoose-mathai",
+      "name": "Punnoose Mathai",
+      "title": "The Punnoose Mathai Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/punnoose-mathai/photo-1.jpg"
+                },
+                {
+                  "src": "images/members/punnoose-mathai/photo-4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/punnoose-mathai/photo-2.jpg"
+                },
+                {
+                  "src": "images/members/punnoose-mathai/photo-3.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "john-chacko",
+      "name": "John Chacko",
+      "title": "The John Chacko Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "arrange": "stack",
+              "photos": [
+                {
+                  "src": "images/members/john-chacko/photo-1.jpg"
+                },
+                {
+                  "src": "images/members/john-chacko/photo-2.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ipe-maret",
+      "name": "Ipe Maret",
+      "title": "The Ipe Maret Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/ipe-maret/photo-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Children are a heritage from the Lord.",
+              "ref": "Psalm 127:3"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathew-mathew",
+      "name": "Dr. Mathew Mathew",
+      "sort": "Mathew Mathew",
+      "title": "The Dr. Mathew Mathew Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathew-mathew/photo-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "size": "lg",
+              "text": "Blessed beyond measure to be part of this congregation for 35+ years. God Bless St. Gregorios Malankara Orthodox Church.",
+              "sign": "The Mathew Family"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
