@@ -54,10 +54,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/a-o-abraham/dock-family-cropped.jpg"
+                  "src": "images/members/a-o-abraham/dock-family-enhanced.jpg"
                 },
                 {
-                  "src": "images/members/a-o-abraham/studio-portrait-cropped.jpg"
+                  "src": "images/members/a-o-abraham/studio-portrait-enhanced.jpg"
                 }
               ],
               "arrange": "stack"
@@ -693,7 +693,8 @@
             }
           ]
         }
-      ]
+      ],
+      "mainPhoto": 2
     },
     {
       "id": "raju-sankarathil",

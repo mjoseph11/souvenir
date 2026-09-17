@@ -30,7 +30,9 @@ if (!chrome) {
   process.exit(2);
 }
 
-const url = pathToFileURL(path.join(root, 'index.html')).href + '#layout-check';
+// Optional file argument, e.g. preview-style.html (defaults to the souvenir).
+const target = process.argv[2] || 'index.html';
+const url = pathToFileURL(path.join(root, target)).href + '#layout-check';
 const dom = execFileSync(
   chrome,
   ['--headless=new', '--disable-gpu', '--allow-file-access-from-files', '--window-size=1100,1400',

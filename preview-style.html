@@ -900,8 +900,68 @@
   @media print {
     .m-page { height: var(--page-h); }
   }
-</style>
 
+  /* ══════════════════════════════════════
+     MANOJ'S PAGE STYLE — preview only (STYLE=manoj node scripts/build.js)
+     Main photo faded into the page, tilted prints, script phrases, and his
+     17 Sept backgrounds: the plain leaves everywhere, the faint church and
+     dove behind photo pages.
+  ══════════════════════════════════════ */
+
+  .page.inner-page::before { background-image: url('images/backgrounds/page-leaves-clean.jpg'); }
+  .page.inner-page.styled-page::before {
+    background-image: url('images/backgrounds/page-dove-church-faint.jpg');
+    opacity: 1;
+  }
+
+  .s-stage { position: absolute; inset: 0; }
+  .s-stage figure { position: absolute; margin: 0; }
+  .s-stage img { display: block; width: 100%; height: 100%; object-fit: fill; }
+
+  /* The main photo fades into the page over its outer edge. */
+  .s-main img {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+            mask-composite: intersect;
+  }
+
+  /* The other photos are prints: white edge, thin gold line, a shadow. */
+  .s-print {
+    background: #fff;
+    padding: 0.05in;
+    border: 1.5px solid #C9A227;
+    box-shadow: 0 4px 14px rgba(60, 35, 10, 0.35);
+    box-sizing: content-box;
+  }
+
+  .s-words { position: absolute; text-align: center; color: #5b3a12; }
+  .s-script { display: block; font-family: 'Great Vibes', 'Brush Script MT', cursive; color: #7a4a14; line-height: 1.1; }
+  .s-caps { display: block; font-size: 10pt; letter-spacing: 1.5px; text-transform: uppercase; line-height: 1.6; }
+  .s-script + .s-caps { margin-top: 0.06in; }
+  .s-rule { display: block; width: 1in; height: 1px; margin: 0.12in auto 0; background: linear-gradient(to right, transparent, #C9A227, transparent); }
+
+  .s-names { position: absolute; left: 0.5in; right: 0.5in; bottom: 1.3in; }
+  .s-verse { position: absolute; left: 0.6in; right: 0.6in; bottom: 0.42in; margin: 0; }
+  .s-close { position: absolute; left: 1in; right: 1in; bottom: 0; margin: 0; }
+
+  /* Photos on the other family pages lose their borders and fade in too. */
+  .m-page:not(.designed-page):not(.m-ad) .m-fig img {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+            mask-composite: intersect;
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
 <body>
 
@@ -3144,7 +3204,7 @@
 <!-- ════════════════════════════════════════
      PAGE 48 — MEMBER PAGE: A. O. Abraham
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The A. O. Abraham Family</h1>
@@ -3153,9 +3213,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos stack"><figure class="m-fig"><img src="images/members/a-o-abraham/dock-family-enhanced.jpg" alt="The A. O. Abraham Family"></figure><figure class="m-fig"><img src="images/members/a-o-abraham/studio-portrait-enhanced.jpg" alt="The A. O. Abraham Family"></figure></div>
-    <p class="m-verse big">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.95in;top:0.23in;width:5.59in;height:4.50in"><img src="images/members/a-o-abraham/dock-family-enhanced.jpg" alt="The A. O. Abraham Family"></figure>
+      <figure class="s-print" style="left:1.70in;top:4.43in;width:4.10in;height:3.38in;transform:rotate(-3.5deg)"><img src="images/members/a-o-abraham/studio-portrait-enhanced.jpg" alt="The A. O. Abraham Family"></figure>
+      <div class="s-words" style="left:0.00in;top:5.11in;width:1.60in"><span class="s-script" style="font-size:26pt">Gratitude</span><span class="s-caps">For God's</span><span class="s-caps">faithfulness</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.90in;top:5.11in;width:1.60in"><span class="s-script" style="font-size:26pt">Serve</span><span class="s-caps">The Lord</span><span class="s-caps">with gladness</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3166,7 +3231,7 @@
 <!-- ════════════════════════════════════════
      PAGE 49 — MEMBER PAGE: Ajay Peter
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ajay Peter Family</h1>
@@ -3175,8 +3240,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/ajay-peter/WhatsApp-Image-2026-09-06-at-9-20-15-AM.jpg" alt="The Ajay Peter Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.33in;width:4.50in;height:5.39in"><img src="images/members/ajay-peter/WhatsApp-Image-2026-09-06-at-9-20-15-AM.jpg" alt="The Ajay Peter Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.52in;width:1.38in"><span class="s-script" style="font-size:26pt">Rooted</span><span class="s-caps">In love</span><span class="s-caps">growing in faith</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.52in;width:1.38in"><span class="s-script" style="font-size:26pt">Community</span><span class="s-caps">One church</span><span class="s-caps">one family</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3187,7 +3257,7 @@
 <!-- ════════════════════════════════════════
      PAGE 50 — MEMBER PAGE: Ajeesh Cherian
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ajeesh Cherian Family</h1>
@@ -3196,8 +3266,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/ajeesh-cherian/WhatsApp-Image-2026-09-06-at-9-54-15-AM.jpg" alt="The Ajeesh Cherian Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:0.31in;width:4.50in;height:7.43in"><img src="images/members/ajeesh-cherian/WhatsApp-Image-2026-09-06-at-9-54-15-AM.jpg" alt="The Ajeesh Cherian Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.95in;width:1.38in"><span class="s-script" style="font-size:26pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps">that prays together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:1.95in;width:1.38in"><span class="s-script" style="font-size:26pt">Generations</span><span class="s-caps">Of faith</span><span class="s-caps">handed down in love</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3208,7 +3283,7 @@
 <!-- ════════════════════════════════════════
      PAGE 51 — MEMBER PAGE: Alexander Thankachen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Alexander Thankachen Family</h1>
@@ -3217,8 +3292,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/alexander-thankachen/20240610-193806-3.jpg" alt="The Alexander Thankachen Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.20in;top:0.10in;width:7.11in;height:6.15in"><img src="images/members/alexander-thankachen/20240610-193806-3.jpg" alt="The Alexander Thankachen Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.50in;width:3.20in"><span class="s-script" style="font-size:30pt">Grateful</span><span class="s-caps">For the past</span><span class="s-caps">for the present</span><span class="s-caps">for the future</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.50in;width:3.20in"><span class="s-script" style="font-size:30pt">Blessed</span><span class="s-caps">Fifty years</span><span class="s-caps">in His house</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3249,7 +3329,7 @@
 <!-- ════════════════════════════════════════
      PAGE 53 — MEMBER PAGE: Arun Philip
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Arun Philip Family</h1>
@@ -3258,8 +3338,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/arun-philip/WhatsApp-Image-2026-08-31-at-9-08-59-PM.jpg" alt="The Arun Philip Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.02in;width:4.50in;height:6.00in"><img src="images/members/arun-philip/WhatsApp-Image-2026-08-31-at-9-08-59-PM.jpg" alt="The Arun Philip Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Pilgrims</span><span class="s-caps">On the way</span><span class="s-caps">together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Community</span><span class="s-caps">One church</span><span class="s-caps">one family</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3270,7 +3355,7 @@
 <!-- ════════════════════════════════════════
      PAGE 54 — MEMBER PAGE: Arun Raju
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Arun Raju Family</h1>
@@ -3279,8 +3364,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos stack"><figure class="m-fig"><img src="images/members/arun-raju/Pic-1-Aswathi-John.jpg" alt="The Arun Raju Family"></figure><figure class="m-fig"><img src="images/members/arun-raju/Picture-2-Aswathi-John.jpg" alt="The Arun Raju Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.66in;top:0.80in;width:6.17in;height:4.50in"><img src="images/members/arun-raju/Pic-1-Aswathi-John.jpg" alt="The Arun Raju Family"></figure>
+      <figure class="s-print" style="left:1.70in;top:5.00in;width:4.10in;height:2.25in;transform:rotate(-3.5deg)"><img src="images/members/arun-raju/Picture-2-Aswathi-John.jpg" alt="The Arun Raju Family"></figure>
+      <div class="s-words" style="left:0.00in;top:5.45in;width:1.60in"><span class="s-script" style="font-size:26pt">Grace</span><span class="s-caps">Sufficient</span><span class="s-caps">for every day</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.90in;top:5.45in;width:1.60in"><span class="s-script" style="font-size:26pt">Family</span><span class="s-caps">A circle of strength</span><span class="s-caps">a lifetime of blessings</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3291,7 +3382,7 @@
 <!-- ════════════════════════════════════════
      PAGE 55 — MEMBER PAGE: Ashley Mountney
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ashley Mountney Family</h1>
@@ -3300,8 +3391,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/ashley-mountney/WhatsApp-Image-2026-06-23-at-9-50-51-AM.jpg" alt="The Ashley Mountney Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:0.65in;width:4.50in;height:6.76in"><img src="images/members/ashley-mountney/WhatsApp-Image-2026-06-23-at-9-50-51-AM.jpg" alt="The Ashley Mountney Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.13in;width:1.38in"><span class="s-script" style="font-size:26pt">Faith</span><span class="s-caps">Family blessings</span><span class="s-caps">through every season</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.13in;width:1.38in"><span class="s-script" style="font-size:26pt">Home</span><span class="s-caps">Where faith begins</span><span class="s-caps">and love never ends</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3371,7 +3467,7 @@
 <!-- ════════════════════════════════════════
      PAGE 58 — MEMBER PAGE: Babu Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Babu Varghese Family</h1>
@@ -3380,9 +3476,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/babu-varghese/IMG-20260519-WA0008-Manoj-Chacko.jpg" alt="The Babu Varghese Family"></figure></div>
-    <p class="m-verse big">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.36in;width:7.50in;height:5.63in"><img src="images/members/babu-varghese/IMG-20260519-WA0008-Manoj-Chacko.jpg" alt="The Babu Varghese Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Faith</span><span class="s-caps">Family blessings</span><span class="s-caps">through every season</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Praise</span><span class="s-caps">His name</span><span class="s-caps">for all He has done</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3434,7 +3534,7 @@
 <!-- ════════════════════════════════════════
      PAGE 61 — MEMBER PAGE: Biju Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Biju Chacko Family</h1>
@@ -3443,8 +3543,15 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/biju-chacko/6b9ef389-ec15-41d8-9bd9-90fad011a8eb-Jeni-Chacko.jpg" alt="The Biju Chacko Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/biju-chacko/220658aa-78a4-4905-9bb8-fe8b44c99567-Jeni-Chacko.jpg" alt="The Biju Chacko Family"></figure><figure class="m-fig"><img src="images/members/biju-chacko/9220dae3-81a8-4d75-bfb9-f37d4ef52512-Jeni-Chacko.jpg" alt="The Biju Chacko Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:0.86in;width:4.50in;height:4.86in"><img src="images/members/biju-chacko/6b9ef389-ec15-41d8-9bd9-90fad011a8eb-Jeni-Chacko.jpg" alt="The Biju Chacko Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.93in;width:1.38in"><span class="s-script" style="font-size:26pt">Light</span><span class="s-caps">A lamp to our feet</span><span class="s-caps">a light to our path</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:1.93in;width:1.38in"><span class="s-script" style="font-size:26pt">Worship</span><span class="s-caps">Together</span><span class="s-caps">in one Spirit</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:0.10in;top:5.42in;width:2.86in;height:1.77in;transform:rotate(-3.5deg)"><img src="images/members/biju-chacko/220658aa-78a4-4905-9bb8-fe8b44c99567-Jeni-Chacko.jpg" alt="The Biju Chacko Family"></figure>
+      <figure class="s-print" style="left:3.31in;top:5.42in;width:4.09in;height:1.77in;transform:rotate(3deg)"><img src="images/members/biju-chacko/9220dae3-81a8-4d75-bfb9-f37d4ef52512-Jeni-Chacko.jpg" alt="The Biju Chacko Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3475,7 +3582,7 @@
 <!-- ════════════════════════════════════════
      PAGE 63 — MEMBER PAGE: Biju Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Biju Mani Family</h1>
@@ -3484,9 +3591,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/biju-mani/887-0800.jpg" alt="The Biju Mani Family"></figure></div>
-    <p class="m-verse big">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.67in;width:7.50in;height:5.00in"><img src="images/members/biju-mani/887-0800.jpg" alt="The Biju Mani Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.92in;width:3.20in"><span class="s-script" style="font-size:30pt">Rooted</span><span class="s-caps">In love</span><span class="s-caps">growing in faith</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.92in;width:3.20in"><span class="s-script" style="font-size:30pt">Faithful</span><span class="s-caps">Yesterday</span><span class="s-caps">today and forever</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3538,7 +3649,7 @@
 <!-- ════════════════════════════════════════
      PAGE 66 — MEMBER PAGE: Dr. Joe John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Dr. Joe John, V. S. John &amp; Family</h1>
@@ -3547,9 +3658,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/dr-joe-johnv-s-john-and-family/WhatsApp-Image-2026-08-01-at-5-58-21-PM.jpg" alt="Dr. Joe John, V. S. John &amp; Family"></figure></div>
-    <p class="m-verse big">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.67in;width:7.50in;height:5.01in"><img src="images/members/dr-joe-johnv-s-john-and-family/WhatsApp-Image-2026-08-01-at-5-58-21-PM.jpg" alt="Dr. Joe John, V. S. John &amp; Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.93in;width:3.20in"><span class="s-script" style="font-size:30pt">Family</span><span class="s-caps">Rooted in faith</span><span class="s-caps">blessed together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.93in;width:3.20in"><span class="s-script" style="font-size:30pt">Grateful</span><span class="s-caps">For the past</span><span class="s-caps">for the present</span><span class="s-caps">for the future</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3689,7 +3804,7 @@
 <!-- ════════════════════════════════════════
      PAGE 71 — MEMBER PAGE: George Mathew (Biju)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George Mathew Family</h1>
@@ -3698,9 +3813,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/george-mathew-biju/IMG-20260906-WA0000.jpg" alt="The George Mathew Family"></figure></div>
-    <p class="m-verse big">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.36in;width:7.50in;height:5.63in"><img src="images/members/george-mathew-biju/IMG-20260906-WA0000.jpg" alt="The George Mathew Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Serve</span><span class="s-caps">The Lord</span><span class="s-caps">with gladness</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Pilgrims</span><span class="s-caps">On the way</span><span class="s-caps">together</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3711,7 +3830,7 @@
 <!-- ════════════════════════════════════════
      PAGE 72 — MEMBER PAGE: George Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George Varghese Family</h1>
@@ -3720,9 +3839,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/george-varghese/DSC08895-2-Joel-G.jpg" alt="The George Varghese Family"></figure></div>
-    <p class="m-verse big">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:1.07in;width:7.50in;height:4.22in"><img src="images/members/george-varghese/DSC08895-2-Joel-G.jpg" alt="The George Varghese Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.53in;width:3.20in"><span class="s-script" style="font-size:30pt">Family</span><span class="s-caps">Rooted in faith</span><span class="s-caps">blessed together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.53in;width:3.20in"><span class="s-script" style="font-size:30pt">Serve</span><span class="s-caps">The Lord</span><span class="s-caps">with gladness</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3733,7 +3856,7 @@
 <!-- ════════════════════════════════════════
      PAGE 73 — MEMBER PAGE: Ipe Maret
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ipe Maret Family</h1>
@@ -3742,9 +3865,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/ipe-maret/photo-1.jpg" alt="The Ipe Maret Family"></figure></div>
-    <p class="m-verse big">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.75in;width:4.50in;height:4.55in"><img src="images/members/ipe-maret/photo-1.jpg" alt="The Ipe Maret Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.75in;width:1.38in"><span class="s-script" style="font-size:26pt">Blessings</span><span class="s-caps">Counted</span><span class="s-caps">one by one</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.75in;width:1.38in"><span class="s-script" style="font-size:26pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps">that prays together</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3777,7 +3904,7 @@
 <!-- ════════════════════════════════════════
      PAGE 75 — MEMBER PAGE: Jacob George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jacob George Family</h1>
@@ -3786,9 +3913,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/jacob-george/IMG-1916-jaymole-GEORGE.jpg" alt="The Jacob George Family"></figure><figure class="m-fig"><img src="images/members/jacob-george/IMG-3268-jaymole-GEORGE.jpg" alt="The Jacob George Family"></figure></div>
-    <p class="m-verse big">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:0.36in;width:4.50in;height:4.22in"><img src="images/members/jacob-george/IMG-1916-jaymole-GEORGE.jpg" alt="The Jacob George Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.29in;width:1.38in"><span class="s-script" style="font-size:26pt">Unity</span><span class="s-caps">Bound together</span><span class="s-caps">in His love</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:1.29in;width:1.38in"><span class="s-script" style="font-size:26pt">Abide</span><span class="s-caps">In His love</span><span class="s-caps">and bear fruit</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:2.48in;top:4.29in;width:2.55in;height:3.40in;transform:rotate(-3.5deg)"><img src="images/members/jacob-george/IMG-3268-jaymole-GEORGE.jpg" alt="The Jacob George Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3839,7 +3971,7 @@
 <!-- ════════════════════════════════════════
      PAGE 78 — MEMBER PAGE: John Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The John Chacko Family</h1>
@@ -3848,8 +3980,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos stack"><figure class="m-fig"><img src="images/members/john-chacko/photo-1.jpg" alt="The John Chacko Family"></figure><figure class="m-fig"><img src="images/members/john-chacko/photo-2.jpg" alt="The John Chacko Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.46in;width:7.50in;height:4.36in"><img src="images/members/john-chacko/photo-1.jpg" alt="The John Chacko Family"></figure>
+      <figure class="s-print" style="left:1.70in;top:4.52in;width:4.10in;height:3.07in;transform:rotate(-3.5deg)"><img src="images/members/john-chacko/photo-2.jpg" alt="The John Chacko Family"></figure>
+      <div class="s-words" style="left:0.00in;top:5.13in;width:1.60in"><span class="s-script" style="font-size:26pt">Generations</span><span class="s-caps">Of faith</span><span class="s-caps">handed down in love</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.90in;top:5.13in;width:1.60in"><span class="s-script" style="font-size:26pt">Thankful</span><span class="s-caps">For every</span><span class="s-caps">Sunday together</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3883,7 +4021,7 @@
 <!-- ════════════════════════════════════════
      PAGE 80 — MEMBER PAGE: John Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The John Varghese Family</h1>
@@ -3892,8 +4030,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/john-varghese/a73fe3c8-dc08-4956-bed2-15ac800baa59-Jeni-Chacko.jpg" alt="The John Varghese Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/john-varghese/baf05e5f-f476-428c-a973-0d97f9de1204-Jeni-Chacko.jpg" alt="The John Varghese Family"></figure><figure class="m-fig"><img src="images/members/john-varghese/ea9cac94-afd3-469e-8a89-3fb85078dbd9-Jeni-Chacko.jpg" alt="The John Varghese Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.96in;width:7.50in;height:3.17in"><img src="images/members/john-varghese/a73fe3c8-dc08-4956-bed2-15ac800baa59-Jeni-Chacko.jpg" alt="The John Varghese Family"></figure>
+      <figure class="s-print" style="left:0.10in;top:3.83in;width:3.92in;height:3.27in;transform:rotate(-3.5deg)"><img src="images/members/john-varghese/baf05e5f-f476-428c-a973-0d97f9de1204-Jeni-Chacko.jpg" alt="The John Varghese Family"></figure>
+      <figure class="s-print" style="left:4.37in;top:3.83in;width:3.03in;height:3.27in;transform:rotate(3deg)"><img src="images/members/john-varghese/ea9cac94-afd3-469e-8a89-3fb85078dbd9-Jeni-Chacko.jpg" alt="The John Varghese Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3904,7 +4047,7 @@
 <!-- ════════════════════════════════════════
      PAGE 81 — MEMBER PAGE: Joseph Abraham (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Abraham Family</h1>
@@ -3913,8 +4056,15 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/joseph-abraham-2-pages/WhatsApp-Image-2026-08-08-at-7-02-57-PM.jpg" alt="The Joseph Abraham Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/joseph-abraham-2-pages/FullSizeRender.jpg" alt="The Joseph Abraham Family"></figure><figure class="m-fig"><img src="images/members/joseph-abraham-2-pages/IMG-5720.jpg" alt="The Joseph Abraham Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.84in;top:0.13in;width:3.82in;height:5.10in"><img src="images/members/joseph-abraham-2-pages/WhatsApp-Image-2026-08-08-at-7-02-57-PM.jpg" alt="The Joseph Abraham Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.25in;width:1.72in"><span class="s-script" style="font-size:32pt">Grateful</span><span class="s-caps">For the past</span><span class="s-caps">for the present</span><span class="s-caps">for the future</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.78in;top:1.25in;width:1.72in"><span class="s-script" style="font-size:32pt">Serve</span><span class="s-caps">The Lord</span><span class="s-caps">with gladness</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:1.56in;top:4.92in;width:2.25in;height:3.00in;transform:rotate(-3.5deg)"><img src="images/members/joseph-abraham-2-pages/FullSizeRender.jpg" alt="The Joseph Abraham Family"></figure>
+      <figure class="s-print" style="left:4.15in;top:4.92in;width:1.79in;height:3.00in;transform:rotate(3deg)"><img src="images/members/joseph-abraham-2-pages/IMG-5720.jpg" alt="The Joseph Abraham Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3925,7 +4075,7 @@
 <!-- ════════════════════════════════════════
      PAGE 82 — MEMBER PAGE: Joseph Abraham (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Abraham Family</h1>
@@ -3934,8 +4084,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/joseph-abraham-2-pages/20260510-111703-Jiji-Koshy.jpg" alt="The Joseph Abraham Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/joseph-abraham-2-pages/20260510-111613-Jiji-Koshy.jpg" alt="The Joseph Abraham Family"></figure><figure class="m-fig"><img src="images/members/joseph-abraham-2-pages/4f5cfbbd-28ae-4828-9a3d-67fcc3016d3b-Copy.jpg" alt="The Joseph Abraham Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.36in;width:7.50in;height:4.22in"><img src="images/members/joseph-abraham-2-pages/20260510-111703-Jiji-Koshy.jpg" alt="The Joseph Abraham Family"></figure>
+      <figure class="s-print" style="left:1.41in;top:4.29in;width:1.91in;height:3.40in;transform:rotate(-3.5deg)"><img src="images/members/joseph-abraham-2-pages/20260510-111613-Jiji-Koshy.jpg" alt="The Joseph Abraham Family"></figure>
+      <figure class="s-print" style="left:3.67in;top:4.29in;width:2.42in;height:3.40in;transform:rotate(3deg)"><img src="images/members/joseph-abraham-2-pages/4f5cfbbd-28ae-4828-9a3d-67fcc3016d3b-Copy.jpg" alt="The Joseph Abraham Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3973,7 +4128,7 @@
 <!-- ════════════════════════════════════════
      PAGE 84 — MEMBER PAGE: Mathew Kallelil (Biji)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Kallelil Family</h1>
@@ -3982,9 +4137,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/mathew-kallelil/photo-1.jpg" alt="The Mathew Kallelil Family"></figure></div>
-    <p class="m-verse big">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.02in;width:4.50in;height:6.00in"><img src="images/members/mathew-kallelil/photo-1.jpg" alt="The Mathew Kallelil Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Hope</span><span class="s-caps">An anchor</span><span class="s-caps">for the soul</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Family</span><span class="s-caps">A circle of strength</span><span class="s-caps">a lifetime of blessings</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4016,7 +4175,7 @@
 <!-- ════════════════════════════════════════
      PAGE 86 — MEMBER PAGE: Mathew Kandathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Kandathil Family</h1>
@@ -4025,9 +4184,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/mathew-kandathil/photo-1.jpg" alt="The Mathew Kandathil Family"></figure></div>
-    <p class="m-verse big">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.02in;width:4.50in;height:6.00in"><img src="images/members/mathew-kandathil/photo-1.jpg" alt="The Mathew Kandathil Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps">that prays together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Together</span><span class="s-caps">We are</span><span class="s-caps">truly blessed</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4162,7 +4325,7 @@
 <!-- ════════════════════════════════════════
      PAGE 91 — MEMBER PAGE: Manoj Samuel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Manoj Samuel Family</h1>
@@ -4171,9 +4334,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos fill"><figure class="m-fig"><img src="images/members/manoj-samuel/WhatsApp-Image-2026-09-08-at-7-18-45-PM.jpg" alt="The Manoj Samuel Family"></figure></div>
-    <p class="m-verse big">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.63in;width:7.50in;height:5.08in"><img src="images/members/manoj-samuel/WhatsApp-Image-2026-09-08-at-7-18-45-PM.jpg" alt="The Manoj Samuel Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.97in;width:3.20in"><span class="s-script" style="font-size:30pt">Family</span><span class="s-caps">Rooted in faith</span><span class="s-caps">blessed together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.97in;width:3.20in"><span class="s-script" style="font-size:30pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps">that prays together</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4184,7 +4351,7 @@
 <!-- ════════════════════════════════════════
      PAGE 92 — MEMBER PAGE: Mathew Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Joseph Family</h1>
@@ -4193,8 +4360,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/mathew-joseph/mathew-joseph-family.jpg" alt="The Mathew Joseph Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.02in;width:4.50in;height:6.00in"><img src="images/members/mathew-joseph/mathew-joseph-family.jpg" alt="The Mathew Joseph Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Love</span><span class="s-caps">Bears all things</span><span class="s-caps">hopes all things</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Community</span><span class="s-caps">One church</span><span class="s-caps">one family</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4227,7 +4399,7 @@
 <!-- ════════════════════════════════════════
      PAGE 94 — MEMBER PAGE: Mathew Ninan
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Ninan Family</h1>
@@ -4236,8 +4408,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg" alt="The Mathew Ninan Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-1-22-08-PM.jpg" alt="The Mathew Ninan Family"></figure><figure class="m-fig"><img src="images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-1-23-20-PM.jpg" alt="The Mathew Ninan Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.75in;top:0.22in;width:6.00in;height:4.50in"><img src="images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg" alt="The Mathew Ninan Family"></figure>
+      <figure class="s-print" style="left:1.03in;top:4.42in;width:2.55in;height:3.40in;transform:rotate(-3.5deg)"><img src="images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-1-22-08-PM.jpg" alt="The Mathew Ninan Family"></figure>
+      <figure class="s-print" style="left:3.93in;top:4.42in;width:2.55in;height:3.40in;transform:rotate(3deg)"><img src="images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-1-23-20-PM.jpg" alt="The Mathew Ninan Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4248,7 +4425,7 @@
 <!-- ════════════════════════════════════════
      PAGE 95 — MEMBER PAGE: Mathew Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Thomas Family</h1>
@@ -4257,8 +4434,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/mathew-thomas/IMG-20260812-WA0002-2-John-Rider.jpg" alt="The Mathew Thomas Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:0.21in;width:4.50in;height:7.63in"><img src="images/members/mathew-thomas/IMG-20260812-WA0002-2-John-Rider.jpg" alt="The Mathew Thomas Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.89in;width:1.38in"><span class="s-script" style="font-size:26pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps">that prays together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:1.89in;width:1.38in"><span class="s-script" style="font-size:26pt">Worship</span><span class="s-caps">Together</span><span class="s-caps">in one Spirit</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4269,7 +4451,7 @@
 <!-- ════════════════════════════════════════
      PAGE 96 — MEMBER PAGE: Mathew Varghese (Wilson)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Varghese Family</h1>
@@ -4278,10 +4460,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/mathew-varghese/IMG-20260820-170346.jpg" alt="The Mathew Varghese Family"></figure></div>
-    <p class="m-names">Best wishes from Mathew Varghese (Wilson) and Family</p>
-    <p class="m-verse big">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.42in;width:7.50in;height:5.00in"><img src="images/members/mathew-varghese/IMG-20260820-170346.jpg" alt="The Mathew Varghese Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.67in;width:3.20in"><span class="s-script" style="font-size:30pt">Faithful</span><span class="s-caps">Yesterday</span><span class="s-caps">today and forever</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.67in;width:3.20in"><span class="s-script" style="font-size:30pt">Light</span><span class="s-caps">A lamp to our feet</span><span class="s-caps">a light to our path</span><i class="s-rule"></i></div>
+      <p class="m-names s-names">Best wishes from Mathew Varghese (Wilson) and Family</p>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4365,7 +4551,7 @@
 <!-- ════════════════════════════════════════
      PAGE 99 — MEMBER PAGE: Matt & Shainey Jacob (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Matt &amp; Shainey Jacob</h1>
@@ -4374,8 +4560,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos stack"><figure class="m-fig"><img src="images/members/matt-jacob-2-pages/Page-2-WhatsApp-Image-2026-07-19-at-10-54-43-PM.jpg" alt="Matt &amp; Shainey Jacob"></figure><figure class="m-fig"><img src="images/members/matt-jacob-2-pages/Page-2-WhatsApp-Image-2026-07-19-at-10-54-43-PM-1.jpg" alt="Matt &amp; Shainey Jacob"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.83in;top:0.13in;width:3.85in;height:5.10in"><img src="images/members/matt-jacob-2-pages/Page-2-WhatsApp-Image-2026-07-19-at-10-54-43-PM.jpg" alt="Matt &amp; Shainey Jacob"></figure>
+      <div class="s-words" style="left:0.00in;top:1.25in;width:1.71in"><span class="s-script" style="font-size:32pt">Family</span><span class="s-caps">Faith</span><span class="s-caps">love</span><span class="s-caps">together always</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.79in;top:1.25in;width:1.71in"><span class="s-script" style="font-size:32pt">Praise</span><span class="s-caps">His name</span><span class="s-caps">for all He has done</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:1.50in;top:4.92in;width:4.50in;height:3.00in;transform:rotate(-3.5deg)"><img src="images/members/matt-jacob-2-pages/Page-2-WhatsApp-Image-2026-07-19-at-10-54-43-PM-1.jpg" alt="Matt &amp; Shainey Jacob"></figure>
+      <p class="m-verse big s-verse">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4386,7 +4578,7 @@
 <!-- ════════════════════════════════════════
      PAGE 100 — MEMBER PAGE: Ninan Parel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ninan Parel Family</h1>
@@ -4395,10 +4587,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/ninan-parel/IMG-20260820-170355.jpg" alt="The Ninan Parel Family"></figure></div>
-    <p class="m-names">Best wishes from Ninan Parel and Family</p>
-    <p class="m-verse big">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.42in;width:7.50in;height:5.00in"><img src="images/members/ninan-parel/IMG-20260820-170355.jpg" alt="The Ninan Parel Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.67in;width:3.20in"><span class="s-script" style="font-size:30pt">Worship</span><span class="s-caps">Together</span><span class="s-caps">in one Spirit</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.67in;width:3.20in"><span class="s-script" style="font-size:30pt">Trust</span><span class="s-caps">In the Lord</span><span class="s-caps">with all your heart</span><i class="s-rule"></i></div>
+      <p class="m-names s-names">Best wishes from Ninan Parel and Family</p>
+      <p class="m-verse big s-verse">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4431,7 +4627,7 @@
 <!-- ════════════════════════════════════════
      PAGE 102 — MEMBER PAGE: Paul J. Maret
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Paul J. Maret Family</h1>
@@ -4440,9 +4636,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/paul-j-maret/3b64732b-f7d2-4903-b89b-33c18f8741a9-Paul-Maret.jpg" alt="The Paul J. Maret Family"></figure></div>
-    <p class="m-verse big">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.67in;width:7.50in;height:5.00in"><img src="images/members/paul-j-maret/3b64732b-f7d2-4903-b89b-33c18f8741a9-Paul-Maret.jpg" alt="The Paul J. Maret Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.93in;width:3.20in"><span class="s-script" style="font-size:30pt">Home</span><span class="s-caps">Where faith begins</span><span class="s-caps">and love never ends</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.93in;width:3.20in"><span class="s-script" style="font-size:30pt">Celebrate</span><span class="s-caps">Fifty years</span><span class="s-caps">of God's goodness</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4453,7 +4653,7 @@
 <!-- ════════════════════════════════════════
      PAGE 103 — MEMBER PAGE: Philipose George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Philipose George Family</h1>
@@ -4462,8 +4662,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/philipose-george/20260510-112803-Jiji-Koshy.jpg" alt="The Philipose George Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.54in;top:0.10in;width:4.42in;height:7.85in"><img src="images/members/philipose-george/20260510-112803-Jiji-Koshy.jpg" alt="The Philipose George Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.83in;width:1.42in"><span class="s-script" style="font-size:26pt">Home</span><span class="s-caps">Where faith begins</span><span class="s-caps">and love never ends</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.08in;top:1.83in;width:1.42in"><span class="s-script" style="font-size:26pt">Gratitude</span><span class="s-caps">For God's</span><span class="s-caps">faithfulness</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4495,7 +4700,7 @@
 <!-- ════════════════════════════════════════
      PAGE 105 — MEMBER PAGE: Prince Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Prince Mathew Family</h1>
@@ -4504,9 +4709,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/prince-mathew/WhatsApp-Image-2026-08-31-at-8-49-09-PM.jpg" alt="The Prince Mathew Family"></figure></div>
-    <p class="m-verse big">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.36in;width:7.50in;height:5.62in"><img src="images/members/prince-mathew/WhatsApp-Image-2026-08-31-at-8-49-09-PM.jpg" alt="The Prince Mathew Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Love</span><span class="s-caps">Never fails</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Hope</span><span class="s-caps">An anchor</span><span class="s-caps">for the soul</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4517,7 +4726,7 @@
 <!-- ════════════════════════════════════════
      PAGE 106 — MEMBER PAGE: Punnoose Mathai
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Punnoose Mathai Family</h1>
@@ -4526,9 +4735,16 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/punnoose-mathai/photo-1.jpg" alt="The Punnoose Mathai Family"></figure><figure class="m-fig"><img src="images/members/punnoose-mathai/photo-4.jpg" alt="The Punnoose Mathai Family"></figure></div>
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/punnoose-mathai/photo-2.jpg" alt="The Punnoose Mathai Family"></figure><figure class="m-fig"><img src="images/members/punnoose-mathai/photo-3.jpg" alt="The Punnoose Mathai Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:2.05in;top:0.78in;width:3.40in;height:5.10in"><img src="images/members/punnoose-mathai/photo-1.jpg" alt="The Punnoose Mathai Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.90in;width:1.93in"><span class="s-script" style="font-size:32pt">Blessings</span><span class="s-caps">Counted</span><span class="s-caps">one by one</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.57in;top:1.90in;width:1.93in"><span class="s-script" style="font-size:32pt">Legacy</span><span class="s-caps">Of love</span><span class="s-caps">and prayer</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:0.10in;top:5.58in;width:1.53in;height:1.69in;transform:rotate(-3.5deg)"><img src="images/members/punnoose-mathai/photo-4.jpg" alt="The Punnoose Mathai Family"></figure>
+      <figure class="s-print" style="left:1.98in;top:5.58in;width:2.54in;height:1.69in;transform:rotate(3deg)"><img src="images/members/punnoose-mathai/photo-2.jpg" alt="The Punnoose Mathai Family"></figure>
+      <figure class="s-print" style="left:4.86in;top:5.58in;width:2.54in;height:1.69in;transform:rotate(-2.5deg)"><img src="images/members/punnoose-mathai/photo-3.jpg" alt="The Punnoose Mathai Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4557,7 +4773,7 @@
 <!-- ════════════════════════════════════════
      PAGE 108 — MEMBER PAGE: Rajan Eappen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Rajan Eappen Family</h1>
@@ -4566,8 +4782,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/rajan-eappen/60e081de-864b-44e1-99d9-ff9b2afb583e-RAJAN-EAPPEN.jpg" alt="The Rajan Eappen Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.54in;top:0.10in;width:4.42in;height:7.85in"><img src="images/members/rajan-eappen/60e081de-864b-44e1-99d9-ff9b2afb583e-RAJAN-EAPPEN.jpg" alt="The Rajan Eappen Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.83in;width:1.42in"><span class="s-script" style="font-size:26pt">Peace</span><span class="s-caps">That passes</span><span class="s-caps">all understanding</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.08in;top:1.83in;width:1.42in"><span class="s-script" style="font-size:26pt">Celebrate</span><span class="s-caps">Fifty years</span><span class="s-caps">of God's goodness</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Unless the Lord builds the house, the builders labor in vain.&rdquo;<br><span>&mdash; Psalm 127:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4578,7 +4799,7 @@
 <!-- ════════════════════════════════════════
      PAGE 109 — MEMBER PAGE: Rajan Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Rajan Mathew Family</h1>
@@ -4587,8 +4808,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/rajan-mathew/IMG-20260607-WA0001-Molly-Mathew.jpg" alt="The Rajan Mathew Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/rajan-mathew/IMG-20260529-WA0025-Molly-Mathew.jpg" alt="The Rajan Mathew Family"></figure><figure class="m-fig"><img src="images/members/rajan-mathew/IMG-20260606-WA0018-Molly-Mathew.jpg" alt="The Rajan Mathew Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.75in;top:0.22in;width:6.00in;height:4.50in"><img src="images/members/rajan-mathew/IMG-20260606-WA0018-Molly-Mathew.jpg" alt="The Rajan Mathew Family"></figure>
+      <figure class="s-print" style="left:0.54in;top:4.42in;width:4.53in;height:3.40in;transform:rotate(-3.5deg)"><img src="images/members/rajan-mathew/IMG-20260607-WA0001-Molly-Mathew.jpg" alt="The Rajan Mathew Family"></figure>
+      <figure class="s-print" style="left:5.43in;top:4.42in;width:1.53in;height:3.40in;transform:rotate(3deg)"><img src="images/members/rajan-mathew/IMG-20260529-WA0025-Molly-Mathew.jpg" alt="The Rajan Mathew Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4599,7 +4825,7 @@
 <!-- ════════════════════════════════════════
      PAGE 110 — MEMBER PAGE: Raju Sankarathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Raju Sankarathil Family</h1>
@@ -4608,8 +4834,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/raju-sankarathil/WhatsApp-Image-2026-09-07-at-7-43-05-PM.jpg" alt="The Raju Sankarathil Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.02in;width:4.50in;height:6.00in"><img src="images/members/raju-sankarathil/WhatsApp-Image-2026-09-07-at-7-43-05-PM.jpg" alt="The Raju Sankarathil Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Worship</span><span class="s-caps">Together</span><span class="s-caps">in one Spirit</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Faithful</span><span class="s-caps">Yesterday</span><span class="s-caps">today and forever</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Let all that you do be done in love.&rdquo;<br><span>&mdash; 1 Corinthians 16:14</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4620,7 +4851,7 @@
 <!-- ════════════════════════════════════════
      PAGE 111 — MEMBER PAGE: Saji George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Saji George Family</h1>
@@ -4629,10 +4860,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/saji-george/1000110258.jpg" alt="The Saji George Family"></figure></div>
-    <p class="m-names">Saji • Mini • Alina • Alan</p>
-    <p class="m-verse big">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.32in;width:7.50in;height:5.20in"><img src="images/members/saji-george/1000110258.jpg" alt="The Saji George Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.78in;width:3.20in"><span class="s-script" style="font-size:30pt">Generations</span><span class="s-caps">Of faith</span><span class="s-caps">handed down in love</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.78in;width:3.20in"><span class="s-script" style="font-size:30pt">Home</span><span class="s-caps">Where faith begins</span><span class="s-caps">and love never ends</span><i class="s-rule"></i></div>
+      <p class="m-names s-names">Saji • Mini • Alina • Alan</p>
+      <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4664,7 +4899,7 @@
 <!-- ════════════════════════════════════════
      PAGE 113 — MEMBER PAGE: Sarath Moses
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sarath Moses Family</h1>
@@ -4673,8 +4908,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/sarath-moses/WhatsApp-Image-2026-05-31-at-11-20-28-AM.jpg" alt="The Sarath Moses Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.23in;width:4.50in;height:5.59in"><img src="images/members/sarath-moses/WhatsApp-Image-2026-05-31-at-11-20-28-AM.jpg" alt="The Sarath Moses Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.46in;width:1.38in"><span class="s-script" style="font-size:26pt">Serve</span><span class="s-caps">The Lord</span><span class="s-caps">with gladness</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.46in;width:1.38in"><span class="s-script" style="font-size:26pt">Journey</span><span class="s-caps">Walking in faith</span><span class="s-caps">side by side</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4685,7 +4925,7 @@
 <!-- ════════════════════════════════════════
      PAGE 114 — MEMBER PAGE: Shiju Poovathoor
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Shiju Poovathoor Family</h1>
@@ -4694,9 +4934,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/shiju-poovathoor/14c92871-4cb2-4b8f-9256-267f72fcd377-Shiju-Philip-Poovathoor.jpg" alt="The Shiju Poovathoor Family"></figure><figure class="m-fig"><img src="images/members/shiju-poovathoor/235C3F4C-5E8F-4191-A88E-569D170F1969-Shiju-Philip-Poovathoor.jpg" alt="The Shiju Poovathoor Family"></figure></div>
-    <p class="m-verse big">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.84in;top:0.13in;width:3.82in;height:5.10in"><img src="images/members/shiju-poovathoor/14c92871-4cb2-4b8f-9256-267f72fcd377-Shiju-Philip-Poovathoor.jpg" alt="The Shiju Poovathoor Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.25in;width:1.72in"><span class="s-script" style="font-size:32pt">Family</span><span class="s-caps">Rooted in faith</span><span class="s-caps">blessed together</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.78in;top:1.25in;width:1.72in"><span class="s-script" style="font-size:32pt">Gratitude</span><span class="s-caps">For God's</span><span class="s-caps">faithfulness</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:1.75in;top:4.92in;width:4.00in;height:3.00in;transform:rotate(-3.5deg)"><img src="images/members/shiju-poovathoor/235C3F4C-5E8F-4191-A88E-569D170F1969-Shiju-Philip-Poovathoor.jpg" alt="The Shiju Poovathoor Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4707,7 +4952,7 @@
 <!-- ════════════════════════════════════════
      PAGE 115 — MEMBER PAGE: Suchin Thompson
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Suchin Thompson Family</h1>
@@ -4716,8 +4961,15 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/suchin-thompson/Main.jpg" alt="The Suchin Thompson Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/suchin-thompson/Side-1.jpg" alt="The Suchin Thompson Family"></figure><figure class="m-fig"><img src="images/members/suchin-thompson/Side-2.jpg" alt="The Suchin Thompson Family"></figure></div></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.86in;top:0.13in;width:3.78in;height:5.10in"><img src="images/members/suchin-thompson/Main.jpg" alt="The Suchin Thompson Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.25in;width:1.74in"><span class="s-script" style="font-size:32pt">Together</span><span class="s-caps">We are</span><span class="s-caps">truly blessed</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.76in;top:1.25in;width:1.74in"><span class="s-script" style="font-size:32pt">Gratitude</span><span class="s-caps">For God's</span><span class="s-caps">faithfulness</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:0.45in;top:4.92in;width:2.26in;height:3.00in;transform:rotate(-3.5deg)"><img src="images/members/suchin-thompson/Side-1.jpg" alt="The Suchin Thompson Family"></figure>
+      <figure class="s-print" style="left:3.05in;top:4.92in;width:4.00in;height:3.00in;transform:rotate(3deg)"><img src="images/members/suchin-thompson/Side-2.jpg" alt="The Suchin Thompson Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4728,7 +4980,7 @@
 <!-- ════════════════════════════════════════
      PAGE 116 — MEMBER PAGE: Sujith Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sujith Varghese Family</h1>
@@ -4737,9 +4989,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/sujith-varghese/WhatsApp-Image-2026-08-31-at-9-07-31-PM.jpg" alt="The Sujith Varghese Family"></figure></div>
-    <p class="m-verse big">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.36in;width:7.50in;height:5.63in"><img src="images/members/sujith-varghese/WhatsApp-Image-2026-08-31-at-9-07-31-PM.jpg" alt="The Sujith Varghese Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Abide</span><span class="s-caps">In His love</span><span class="s-caps">and bear fruit</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Family</span><span class="s-caps">Faith</span><span class="s-caps">love</span><span class="s-caps">together always</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4795,7 +5051,7 @@
 <!-- ════════════════════════════════════════
      PAGE 119 — MEMBER PAGE: Thomas Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Joseph Family</h1>
@@ -4804,9 +5060,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/thomas-joseph/WhatsApp-Image-2026-06-17-at-8-19-15-PM.jpg" alt="The Thomas Joseph Family"></figure></div>
-    <p class="m-verse big">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.68in;width:7.50in;height:5.00in"><img src="images/members/thomas-joseph/WhatsApp-Image-2026-06-17-at-8-19-15-PM.jpg" alt="The Thomas Joseph Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.92in;width:3.20in"><span class="s-script" style="font-size:30pt">Blessed</span><span class="s-caps">Fifty years</span><span class="s-caps">in His house</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.92in;width:3.20in"><span class="s-script" style="font-size:30pt">Peace</span><span class="s-caps">That passes</span><span class="s-caps">all understanding</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4817,7 +5077,7 @@
 <!-- ════════════════════════════════════════
      PAGE 120 — MEMBER PAGE: Thomas M. George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas M. George Family</h1>
@@ -4826,9 +5086,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/thomas-m-george/photo-1.jpg" alt="The Thomas M. George Family"></figure></div>
-    <p class="m-verse big">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.67in;width:7.50in;height:5.00in"><img src="images/members/thomas-m-george/photo-1.jpg" alt="The Thomas M. George Family"></figure>
+      <div class="s-words" style="left:0.35in;top:5.92in;width:3.20in"><span class="s-script" style="font-size:30pt">Faithful</span><span class="s-caps">Yesterday</span><span class="s-caps">today and forever</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:5.92in;width:3.20in"><span class="s-script" style="font-size:30pt">Joy</span><span class="s-caps">In His presence</span><span class="s-caps">is fullness of joy</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4860,7 +5124,7 @@
 <!-- ════════════════════════════════════════
      PAGE 122 — MEMBER PAGE: Thomas Mammen (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Mammen Family</h1>
@@ -4869,9 +5133,14 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Pending review</div>
   <div class="m-content">
-    <div class="m-photos" style="flex-grow:1.2"><figure class="m-fig"><img src="images/members/thomas-mammen-2-pages/Family-1-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure><figure class="m-fig"><img src="images/members/thomas-mammen-2-pages/Family-2-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure></div>
-    <div class="m-photos" style="flex-grow:1"><figure class="m-fig"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-K-E-Mammen-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"><figcaption>Mr. &amp; Mrs. K. E. Mammen</figcaption></figure><figure class="m-fig"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-P-C-Chacko-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"><figcaption>Mr. &amp; Mrs. P. C. Chacko</figcaption></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.74in;top:1.08in;width:6.02in;height:4.50in"><img src="images/members/thomas-mammen-2-pages/Family-1-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure>
+      <figure class="s-print" style="left:0.10in;top:5.28in;width:1.89in;height:1.70in;transform:rotate(-3.5deg)"><img src="images/members/thomas-mammen-2-pages/Family-2-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure>
+      <figure class="s-print" style="left:2.34in;top:5.28in;width:2.59in;height:1.70in;transform:rotate(3deg)"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-K-E-Mammen-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure>
+      <figure class="s-print" style="left:5.29in;top:5.28in;width:2.11in;height:1.70in;transform:rotate(-2.5deg)"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-P-C-Chacko-Thomas-Mammen.jpg" alt="The Thomas Mammen Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -4882,7 +5151,7 @@
 <!-- ════════════════════════════════════════
      PAGE 123 — MEMBER PAGE: Thomas O. Abraham
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas O. Abraham Family</h1>
@@ -4891,9 +5160,16 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/thomas-o-abraham/photo-1.jpg" alt="The Thomas O. Abraham Family"></figure><figure class="m-fig"><img src="images/members/thomas-o-abraham/photo-4.jpg" alt="The Thomas O. Abraham Family"></figure></div>
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/thomas-o-abraham/photo-2.jpg" alt="The Thomas O. Abraham Family"></figure><figure class="m-fig"><img src="images/members/thomas-o-abraham/photo-3.jpg" alt="The Thomas O. Abraham Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.84in;top:0.66in;width:3.82in;height:5.10in"><img src="images/members/thomas-o-abraham/photo-1.jpg" alt="The Thomas O. Abraham Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.78in;width:1.72in"><span class="s-script" style="font-size:32pt">Trust</span><span class="s-caps">In the Lord</span><span class="s-caps">with all your heart</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:5.78in;top:1.78in;width:1.72in"><span class="s-script" style="font-size:32pt">Generations</span><span class="s-caps">Of faith</span><span class="s-caps">handed down in love</span><i class="s-rule"></i></div>
+      <figure class="s-print" style="left:0.10in;top:5.46in;width:1.45in;height:1.93in;transform:rotate(-3.5deg)"><img src="images/members/thomas-o-abraham/photo-4.jpg" alt="The Thomas O. Abraham Family"></figure>
+      <figure class="s-print" style="left:1.90in;top:5.46in;width:2.58in;height:1.93in;transform:rotate(3deg)"><img src="images/members/thomas-o-abraham/photo-2.jpg" alt="The Thomas O. Abraham Family"></figure>
+      <figure class="s-print" style="left:4.82in;top:5.46in;width:2.58in;height:1.93in;transform:rotate(-2.5deg)"><img src="images/members/thomas-o-abraham/photo-3.jpg" alt="The Thomas O. Abraham Family"></figure>
+      <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -5005,7 +5281,7 @@
 <!-- ════════════════════════════════════════
      PAGE 128 — MEMBER PAGE: Varkey Vattakkattu
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varkey Vattakkattu Family</h1>
@@ -5014,8 +5290,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/vattakkattu-varkey/IMG-20260520-213539-Manoj-Chacko.jpg" alt="The Varkey Vattakkattu Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:1.02in;width:4.50in;height:6.00in"><img src="images/members/vattakkattu-varkey/IMG-20260520-213539-Manoj-Chacko.jpg" alt="The Varkey Vattakkattu Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Grace</span><span class="s-caps">Sufficient</span><span class="s-caps">for every day</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.34in;width:1.38in"><span class="s-script" style="font-size:26pt">Joy</span><span class="s-caps">In His presence</span><span class="s-caps">is fullness of joy</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -5026,7 +5307,7 @@
 <!-- ════════════════════════════════════════
      PAGE 129 — MEMBER PAGE: Varughese Koithottu
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese Koithottu Family</h1>
@@ -5035,8 +5316,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/varughese-koithottu/20260510-111345-Jiji-Koshy.jpg" alt="The Varughese Koithottu Family"></figure></div>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.54in;top:0.10in;width:4.42in;height:7.85in"><img src="images/members/varughese-koithottu/20260510-111345-Jiji-Koshy.jpg" alt="The Varughese Koithottu Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.83in;width:1.42in"><span class="s-script" style="font-size:26pt">Heritage</span><span class="s-caps">Of faith</span><span class="s-caps">from Malankara</span><span class="s-caps">to Bensalem</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.08in;top:1.83in;width:1.42in"><span class="s-script" style="font-size:26pt">Love</span><span class="s-caps">Bears all things</span><span class="s-caps">hopes all things</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -5157,7 +5443,7 @@
 <!-- ════════════════════════════════════════
      PAGE 135 — MEMBER PAGE: Zach Zacharia
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate styled-page">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Zach Zacharia Family</h1>
@@ -5166,9 +5452,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/zach-zacharia/Zacharia-Family-Zach-Zacharia.jpg" alt="The Zach Zacharia Family"></figure></div>
-    <p class="m-verse big">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    <div class="s-stage">
+      <figure class="s-main" style="left:0.00in;top:0.36in;width:7.50in;height:5.63in"><img src="images/members/zach-zacharia/Zacharia-Family-Zach-Zacharia.jpg" alt="The Zach Zacharia Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Gratitude</span><span class="s-caps">For God's</span><span class="s-caps">faithfulness</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.24in;width:3.20in"><span class="s-script" style="font-size:30pt">Family</span><span class="s-caps">Faith</span><span class="s-caps">love</span><span class="s-caps">together always</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>

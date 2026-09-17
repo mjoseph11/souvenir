@@ -1,0 +1,60 @@
+
+  /* ══════════════════════════════════════
+     MANOJ'S PAGE STYLE — preview only (STYLE=manoj node scripts/build.js)
+     Main photo faded into the page, tilted prints, script phrases, and his
+     17 Sept backgrounds: the plain leaves everywhere, the faint church and
+     dove behind photo pages.
+  ══════════════════════════════════════ */
+
+  .page.inner-page::before { background-image: url('images/backgrounds/page-leaves-clean.jpg'); }
+  .page.inner-page.styled-page::before {
+    background-image: url('images/backgrounds/page-dove-church-faint.jpg');
+    opacity: 1;
+  }
+
+  .s-stage { position: absolute; inset: 0; }
+  .s-stage figure { position: absolute; margin: 0; }
+  .s-stage img { display: block; width: 100%; height: 100%; object-fit: fill; }
+
+  /* The main photo fades into the page over its outer edge. */
+  .s-main img {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+            mask-composite: intersect;
+  }
+
+  /* The other photos are prints: white edge, thin gold line, a shadow. */
+  .s-print {
+    background: #fff;
+    padding: 0.05in;
+    border: 1.5px solid #C9A227;
+    box-shadow: 0 4px 14px rgba(60, 35, 10, 0.35);
+    box-sizing: content-box;
+  }
+
+  .s-words { position: absolute; text-align: center; color: #5b3a12; }
+  .s-script { display: block; font-family: 'Great Vibes', 'Brush Script MT', cursive; color: #7a4a14; line-height: 1.1; }
+  .s-caps { display: block; font-size: 10pt; letter-spacing: 1.5px; text-transform: uppercase; line-height: 1.6; }
+  .s-script + .s-caps { margin-top: 0.06in; }
+  .s-rule { display: block; width: 1in; height: 1px; margin: 0.12in auto 0; background: linear-gradient(to right, transparent, #C9A227, transparent); }
+
+  .s-names { position: absolute; left: 0.5in; right: 0.5in; bottom: 1.3in; }
+  .s-verse { position: absolute; left: 0.6in; right: 0.6in; bottom: 0.42in; margin: 0; }
+  .s-close { position: absolute; left: 1in; right: 1in; bottom: 0; margin: 0; }
+
+  /* Photos on the other family pages lose their borders and fade in too. */
+  .m-page:not(.designed-page):not(.m-ad) .m-fig img {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+            mask-composite: intersect;
+  }

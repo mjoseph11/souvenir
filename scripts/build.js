@@ -142,21 +142,161 @@ function renderBlocks(blocks, ctx) {
     .join('\n');
 }
 
+/* ── Manoj's page style (STYLE=manoj) ──
+   Photo-only family pages: main photo faded into the page, the rest as tilted
+   prints, short phrases in script beside them, a verse at the foot. Photos are
+   never cropped: every box is sized to its photo's own shape. */
+
+const STYLE = process.env.STYLE === 'manoj';
+const PHRASES = STYLE ? readJSON('data/phrases.json').phrases.filter((p) => p.use !== false) : [];
+const VERSES = [
+  ['As for me and my house, we will serve the Lord.', 'Joshua 24:15'],
+  ['Unless the Lord builds the house, the builders labor in vain.', 'Psalm 127:1'],
+  ['The Lord has done great things for us, and we are filled with joy.', 'Psalm 126:3'],
+  ['Give thanks to the Lord, for he is good; his love endures forever.', 'Psalm 107:1'],
+  ['Children are a heritage from the Lord.', 'Psalm 127:3'],
+  ['Every good and perfect gift is from above.', 'James 1:17'],
+  ['Let all that you do be done in love.', '1 Corinthians 16:14'],
+  ['Love one another deeply, from the heart.', '1 Peter 1:22'],
+];
+
+const hash = (s) => {
+  let h = 2166136261;
+  for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  return h >>> 0;
+};
+
+// Width / height as displayed, honouring JPEG EXIF orientation.
+const aspectCache = new Map();
+function photoAspect(src) {
+  if (aspectCache.has(src)) return aspectCache.get(src);
+  const b = fs.readFileSync(path.join(root, src));
+  let w = 1, h = 1, turn = false;
+  if (b[0] === 0x89) { w = b.readUInt32BE(16); h = b.readUInt32BE(20); }
+  else {
+    for (let i = 2; i < b.length - 9;) {
+      if (b[i] !== 0xff) { i++; continue; }
+      const mk = b[i + 1], len = b.readUInt16BE(i + 2);
+      if (mk === 0xe1 && b.toString('ascii', i + 4, i + 8) === 'Exif') {
+        const t = i + 10, le = b.toString('ascii', t, t + 2) === 'II';
+        const u16 = (o) => (le ? b.readUInt16LE(o) : b.readUInt16BE(o));
+        const u32 = (o) => (le ? b.readUInt32LE(o) : b.readUInt32BE(o));
+        const ifd = t + u32(t + 4);
+        for (let k = 0; k < u16(ifd); k++) {
+          const e = ifd + 2 + k * 12;
+          if (u16(e) === 0x0112) turn = u16(e + 8) >= 5;
+        }
+      }
+      if (mk >= 0xc0 && mk <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(mk)) { h = b.readUInt16BE(i + 5); w = b.readUInt16BE(i + 7); break; }
+      i += 2 + len;
+    }
+  }
+  const a = turn ? h / w : w / h;
+  aspectCache.set(src, a);
+  return a;
+}
+
+const inch = (n) => `${n.toFixed(2)}in`;
+
+function styledBody(m, pg) {
+  const W = 7.5, H = 9.35;
+  const photos = pg.blocks.filter((b) => b.type === 'photos').flatMap((b) => b.photos).map((p) => (typeof p === 'string' ? { src: p } : p));
+  const mainAt = Math.min(m.mainPhoto || 0, photos.length - 1);
+  const main = photos[mainAt];
+  const sides = photos.filter((_, i) => i !== mainAt).slice(0, 3);
+  const names = pg.blocks.find((b) => b.type === 'names');
+  const given = pg.blocks.find((b) => b.type === 'verse');
+  const [vText, vRef] = given ? [given.text, given.ref] : VERSES[hash(m.id) % VERSES.length];
+
+  const h = hash(m.id);
+  const p1 = PHRASES[h % PHRASES.length];
+  // second phrase: a different one, and never the same script word as the first
+  let j = (h + 1 + (h >>> 8) % (PHRASES.length - 1)) % PHRASES.length;
+  while (PHRASES[j].script === p1.script) j = (j + 1) % PHRASES.length;
+  const p2 = PHRASES[j];
+  const words = (p, x, y, w, size = 30) =>
+    `<div class="s-words" style="left:${inch(x)};top:${inch(y)};width:${inch(w)}"><span class="s-script" style="font-size:${size}pt">${esc(p.script)}</span>${p.lines.map((l) => `<span class="s-caps">${esc(l)}</span>`).join('')}<i class="s-rule"></i></div>`;
+  const img = (p, cls, x, y, w, hgt, rot) =>
+    `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}"></figure>`;
+
+  const foot = 1.3 + (names ? 0.5 : 0);           // verse + closing (+ names) at the bottom
+  const avail = H - foot;
+  const a = photoAspect(main.src);
+  const out = [];
+  let wm, hm, beside;
+
+  if (a <= 1.1) {                                  // portrait or square main: phrases beside it
+    const maxH = sides.length ? 5.1 : avail - 0.2;
+    wm = Math.min(4.5, maxH * a); hm = wm / a; beside = true;
+  } else {                                          // wide main: full width, phrases elsewhere
+    const maxH = sides.length ? 4.5 : avail - 1.9;
+    wm = Math.min(W, maxH * a); hm = wm / a; beside = false;
+  }
+
+  // side prints: one row, all the same height, never wider than the room given
+  let rowW = W - 0.2, sideTop = 0, sideH = 0, row = [];
+  const phrasesFlankRow = !beside && sides.length === 1;
+  if (phrasesFlankRow) rowW = 4.1;
+  if (sides.length) {
+    const as = sides.map((p) => photoAspect(p.src));
+    const gap = 0.35;
+    const maxH = avail - hm + 0.3 - 0.25;
+    sideH = Math.min(maxH, 3.4, (rowW - gap * (as.length - 1)) / as.reduce((s, x) => s + x, 0));
+    const widths = as.map((x) => sideH * x);
+    const total = widths.reduce((s, x) => s + x, 0) + gap * (as.length - 1);
+    let x = (W - total) / 2;
+    row = widths.map((w) => { const r = { x, w }; x += w + gap; return r; });
+  }
+
+  const used = hm + (sides.length ? sideH - 0.3 : beside ? 0 : 1.7);
+  const top = Math.max(0.05, (avail - used) / 2);
+
+  out.push(img(main, 's-main', (W - wm) / 2, top, wm, hm));
+  const side = (W - wm) / 2 - 0.12;
+  if (beside) {
+    out.push(words(p1, 0, top + hm * 0.22, side, side < 1.5 ? 26 : 32));
+    out.push(words(p2, W - side, top + hm * 0.22, side, side < 1.5 ? 26 : 32));
+  }
+  if (sides.length) {
+    sideTop = top + hm - 0.3;
+    const rots = [-3.5, 3, -2.5];
+    sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop, row[i].w, sideH, rots[i])));
+    if (phrasesFlankRow) {
+      out.push(words(p1, 0, sideTop + sideH * 0.2, 1.6, 26));
+      out.push(words(p2, W - 1.6, sideTop + sideH * 0.2, 1.6, 26));
+    }
+  } else if (!beside) {
+    out.push(words(p1, 0.35, top + hm + 0.25, 3.2));
+    out.push(words(p2, W - 3.55, top + hm + 0.25, 3.2));
+  }
+  if (names) out.push(`<p class="m-names s-names">${lines(names.text).map(esc).join('<br>')}</p>`);
+  out.push(`<p class="m-verse big s-verse">&ldquo;${esc(vText)}&rdquo;<br><span>&mdash; ${esc(vRef)}</span></p>`);
+  out.push(`<p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>`);
+  return `    <div class="s-stage">\n      ${out.join('\n      ')}\n    </div>`;
+}
+
+const PHOTO_ONLY = ['photos', 'verse', 'closing', 'names'];
+// A page that is only a photo block, with no verse, names or closing line, is a
+// design the family made themselves (a card, a memorial, a poster). Those stay as sent.
+const isDesigned = (pg) => pg.blocks.length > 0 && pg.blocks.every((b) => b.type === 'photos');
+const isStyled = (pg) => STYLE && !isDesigned(pg) && pg.blocks.some((b) => b.type === 'photos') && pg.blocks.every((b) => PHOTO_ONLY.includes(b.type));
+
 /* ── Page kinds ── */
 
 function memberPages(m) {
   if (m.partial) return [{ html: read(m.partial), label: `MEMBER PAGE: ${m.name}`, member: m }];
   return m.pages.map((pg, i) => {
     const band = [m.band ?? 'Golden Jubilee Family Sponsor', pg.band].filter(Boolean).map(esc).join(' &bull; ');
+    const styled = isStyled(pg);
     const html = shell({
       title: pg.title || m.title,
       band,
       dark: pg.dark,
-      body: renderBlocks(pg.blocks, { id: m.id, alt: m.title }),
+      body: styled ? styledBody(m, pg) : renderBlocks(pg.blocks, { id: m.id, alt: m.title }),
       // "pending": text still being reviewed by Writing/Editing — flagged louder than a proof copy.
       badge: m.pending ? 'Pending review' : m.approved ? null : 'Proof copy',
       // Corner ornament on member pages; set "ornate": false on a family to skip it.
-      cls: m.ornate === false ? undefined : 'ornate',
+      cls: [m.ornate === false ? '' : 'ornate', styled ? 'styled-page' : '', isDesigned(pg) ? 'designed-page' : ''].filter(Boolean).join(' ') || undefined,
     });
     const part = m.pages.length > 1 ? ` (${i + 1} of ${m.pages.length})` : '';
     return { html, label: `MEMBER PAGE: ${m.name}${part}`, member: i === 0 ? m : null };
@@ -312,7 +452,8 @@ const html = `<!DOCTYPE html>
 <title>SGMOC Golden Jubilee Souvenir 1976–2026</title>
 <!-- Generated by scripts/build.js — edit src/ and data/, not this file. -->
 <style>
-${read('src/styles.css')}${read('src/members.css')}</style>
+${read('src/styles.css')}${read('src/members.css')}${STYLE ? read('src/style-manoj.css') : ''}</style>
+${STYLE ? '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">' : ''}
 </head>
 <body>
 
@@ -321,6 +462,8 @@ ${bodyHtml}${layoutCheck}
 </html>
 `;
 
-fs.writeFileSync(path.join(root, 'index.html'), html);
+// STYLE=manoj writes a preview of Manoj's page style; the souvenir itself is index.html.
+const outFile = STYLE ? 'preview-style.html' : 'index.html';
+fs.writeFileSync(path.join(root, outFile), html);
 const memberPageCount = pages.filter((p) => p.label.startsWith('MEMBER PAGE')).length;
-console.log(`✓ index.html: ${pages.length} pages (${members.length} families on ${memberPageCount} pages, ${ads.length} ads, ${indexPageCount} index page(s))`);
+console.log(`✓ ${outFile}: ${pages.length} pages (${members.length} families on ${memberPageCount} pages, ${ads.length} ads, ${indexPageCount} index page(s))`);
