@@ -153,7 +153,8 @@ function memberPages(m) {
       band,
       dark: pg.dark,
       body: renderBlocks(pg.blocks, { id: m.id, alt: m.title }),
-      badge: m.approved ? null : 'Proof copy',
+      // "pending": text still being reviewed by Writing/Editing — flagged louder than a proof copy.
+      badge: m.pending ? 'Pending review' : m.approved ? null : 'Proof copy',
       // Corner ornament on member pages; set "ornate": false on a family to skip it.
       cls: m.ornate === false ? undefined : 'ornate',
     });

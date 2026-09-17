@@ -1869,7 +1869,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pending": true
     },
     {
       "id": "blossom-joy",
@@ -1895,7 +1896,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pending": true
     },
     {
       "id": "v-c-thomas",
@@ -1930,7 +1932,8 @@
       ],
       "band": "Golden Jubilee Memorial Tribute",
       "indexName": "V. C. Thomas (In Loving Memory)",
-      "sort": "Thomas, V. C."
+      "sort": "Thomas, V. C.",
+      "pending": true
     },
     {
       "id": "p-v-thomas",
@@ -1970,7 +1973,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pending": true
     },
     {
       "id": "thomas-mammen",
@@ -2032,7 +2036,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pending": true
     },
     {
       "id": "v-s-mathew",
@@ -2072,7 +2077,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pending": true
     },
     {
       "id": "mathew-joseph",
