@@ -883,6 +883,15 @@
   }
   .m-article p + p { margin-top: 0.07in; }
 
+  /* Verse and closing line get a soft parchment glow, so they stay readable
+     where they cross the church drawing at the foot of the background. */
+  .m-verse, .m-closing {
+    background: radial-gradient(ellipse 55% 80% at 50% 50%, rgba(252,245,228,.95) 45%, rgba(252,245,228,0) 100%);
+    padding-block: 0.06in;
+  }
+  .m-verse { color: #3d2a14; }
+  .m-verse span, .m-closing { color: #8a6212; }
+
   /* "maybe can use bigger verse" */
   .m-verse { font-size: 10.5pt; }
   .m-verse.big { font-size: 13pt; line-height: 1.6; padding: 0.06in 0.3in; }
