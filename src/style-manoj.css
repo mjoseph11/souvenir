@@ -30,11 +30,11 @@
 
   /* The main photo fades into the page over its outer edge. */
   .s-main img {
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%),
-                        linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 4%, #000 96%, transparent 100%);
     -webkit-mask-composite: source-in;
-            mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%),
-                        linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 4%, #000 96%, transparent 100%);
             mask-composite: intersect;
   }
 
@@ -57,17 +57,19 @@
   .s-verse { position: absolute; left: 0.6in; right: 0.6in; bottom: 0.42in; margin: 0; }
   .s-close { position: absolute; left: 1in; right: 1in; bottom: 0; margin: 0; }
 
-  /* Photos on the other family pages lose their borders and fade in too. */
+  /* Photos on the other family pages lose their borders and fade in too.
+     3%, not 7%: at 7% the blend was eating people standing at photo edges
+     on about a hundred photos across the book. */
   .m-page:not(.designed-page):not(.m-ad) .m-fig img {
     border: none;
     border-radius: 0;
     box-shadow: none;
     background: transparent;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%),
-                        linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 3%, #000 97%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
     -webkit-mask-composite: source-in;
-            mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%),
-                        linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 3%, #000 97%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
             mask-composite: intersect;
   }
 
