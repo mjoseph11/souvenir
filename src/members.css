@@ -251,11 +251,21 @@
     display: block;
   }
   .m-article .m-fig img {
-    width: 100%;
+    /* Never crop: the whole photo, sized to fit. object-fit:cover here used to
+       cut heads off the top of portrait photos. */
+    display: block;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    max-height: 3.5in;
-    object-fit: cover;
+    max-height: 4.6in;
+    object-fit: contain;
+    margin: 0 auto;
   }
+  .m-article.wide-photo { column-count: 1; }
+  .m-article.wide-photo .m-fig { width: 4.2in; margin: 0 0.3in 0.1in 0; }
+  .m-article.wide-photo .m-fig img { max-height: 6.4in; }
+  .m-article.wide-photo p { font-size: 11pt; line-height: 1.75; }
+
   .m-article .m-article-title {
     color: var(--maroon);
     font-size: 13pt;

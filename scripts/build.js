@@ -94,7 +94,10 @@ const BLOCKS = {
   // right column. Manoj: "picture on the top left, writing maybe starts
   // below and whole right side … Like inline".
   article(b, ctx) {
-    const cls = ['m-article', b.span && 'span-title'].filter(Boolean).join(' ');
+    // Short pieces: one column, with a big photo on the left and the writing
+    // beside it. Two narrow columns would leave the lower half of the page bare.
+    const short = String(b.text ?? '').length < 1300 && ctx.soloArticle;
+    const cls = ['m-article', b.span && 'span-title', short && 'wide-photo'].filter(Boolean).join(' ');
     const fig = b.photo ? figure(b.photo, ctx.alt) : '';
     const title = b.title ? `<h2 class="m-article-title">${esc(b.title)}</h2>` : '';
     const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
@@ -300,7 +303,10 @@ function memberPages(m) {
       title: pg.title || m.title,
       band,
       dark: pg.dark,
-      body: styled ? styledBody(m, pg) : renderBlocks(pg.blocks, { id: m.id, alt: m.title }),
+      body: styled ? styledBody(m, pg)
+        : renderBlocks(pg.blocks, { id: m.id, alt: m.title,
+            // the big-photo inline layout only fits when nothing else shares the page
+            soloArticle: !pg.blocks.some((x) => x.type === 'photos') }),
       // "pending": text still being reviewed by Writing/Editing — flagged louder than a proof copy.
       badge: m.pending ? 'Pending review' : m.approved ? null : 'Proof copy',
       // Corner ornament on member pages; set "ornate": false on a family to skip it.
