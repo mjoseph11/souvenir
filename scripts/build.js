@@ -210,6 +210,9 @@ function styledBody(m, pg) {
   const given = pg.blocks.find((b) => b.type === 'verse');
   const [vText, vRef] = given ? [given.text, given.ref] : VERSES[hash(m.id) % VERSES.length];
 
+  // "phrases": false on a family — no script words beside the photo, and the
+  // photo takes the room they would have used.
+  const noWords = m.phrases === false;
   const h = hash(m.id);
   const p1 = PHRASES[h % PHRASES.length];
   // second phrase: a different one, and never the same script word as the first
@@ -227,7 +230,10 @@ function styledBody(m, pg) {
   const out = [];
   let wm, hm, beside;
 
-  if (a <= 1.1) {                                  // portrait or square main: phrases beside it
+  if (noWords) {                                   // no phrases: fill the width
+    const maxH = sides.length ? 5.6 : avail - 0.15;
+    wm = Math.min(W, maxH * a); hm = wm / a; beside = false;
+  } else if (a <= 1.1) {                           // portrait or square main: phrases beside it
     const maxH = sides.length ? 5.1 : avail - 0.2;
     wm = Math.min(4.5, maxH * a); hm = wm / a; beside = true;
   } else {                                          // wide main: full width, phrases elsewhere
@@ -250,12 +256,12 @@ function styledBody(m, pg) {
     row = widths.map((w) => { const r = { x, w }; x += w + gap; return r; });
   }
 
-  const used = hm + (sides.length ? sideH - 0.3 : beside ? 0 : 1.7);
+  const used = hm + (sides.length ? sideH - 0.3 : beside || noWords ? 0 : 1.7);
   const top = Math.max(0.05, (avail - used) / 2);
 
   out.push(img(main, 's-main', (W - wm) / 2, top, wm, hm));
   const side = (W - wm) / 2 - 0.12;
-  if (beside) {
+  if (beside && !noWords) {
     out.push(words(p1, 0, top + hm * 0.22, side, side < 1.5 ? 26 : 32));
     out.push(words(p2, W - side, top + hm * 0.22, side, side < 1.5 ? 26 : 32));
   }
@@ -263,11 +269,11 @@ function styledBody(m, pg) {
     sideTop = top + hm - 0.3;
     const rots = [-3.5, 3, -2.5];
     sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop, row[i].w, sideH, rots[i])));
-    if (phrasesFlankRow) {
+    if (phrasesFlankRow && !noWords) {
       out.push(words(p1, 0, sideTop + sideH * 0.2, 1.6, 26));
       out.push(words(p2, W - 1.6, sideTop + sideH * 0.2, 1.6, 26));
     }
-  } else if (!beside) {
+  } else if (!beside && !noWords) {
     out.push(words(p1, 0.35, top + hm + 0.25, 3.2));
     out.push(words(p2, W - 3.55, top + hm + 0.25, 3.2));
   }
