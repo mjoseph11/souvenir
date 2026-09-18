@@ -415,7 +415,8 @@
           ]
         }
       ],
-      "sort": "Varghese Babu "
+      "sort": "Varghese Babu ",
+      "fade": "narrow"
     },
     {
       "id": "biju-chacko",
@@ -622,7 +623,8 @@
           ]
         }
       ],
-      "sort": "Varghese John "
+      "sort": "Varghese John ",
+      "fade": "narrow"
     },
     {
       "id": "joseph-abraham",
@@ -742,7 +744,8 @@
           ]
         }
       ],
-      "sort": "Thomas Mathew "
+      "sort": "Thomas Mathew ",
+      "fade": "narrow"
     },
     {
       "id": "paul-j-maret",
@@ -823,7 +826,8 @@
           ]
         }
       ],
-      "sort": "Mathew Prince "
+      "sort": "Mathew Prince ",
+      "fade": "narrow"
     },
     {
       "id": "rajan-eappen",
@@ -859,13 +863,13 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/rajan-mathew/IMG-20260607-WA0001-Molly-Mathew.jpg"
+                  "src": "images/members/rajan-mathew/IMG-20260607-WA0001-Molly-Mathew-adj.jpg"
                 },
                 {
-                  "src": "images/members/rajan-mathew/IMG-20260529-WA0025-Molly-Mathew.jpg"
+                  "src": "images/members/rajan-mathew/IMG-20260529-WA0025-Molly-Mathew-adj.jpg"
                 },
                 {
-                  "src": "images/members/rajan-mathew/IMG-20260606-WA0018-Molly-Mathew.jpg"
+                  "src": "images/members/rajan-mathew/IMG-20260606-WA0018-Molly-Mathew-adj.jpg"
                 }
               ]
             },
@@ -899,7 +903,8 @@
           ]
         }
       ],
-      "sort": "Sankarathil Raju "
+      "sort": "Sankarathil Raju ",
+      "fade": "narrow"
     },
     {
       "id": "sarath-moses",
@@ -954,7 +959,8 @@
           ]
         }
       ],
-      "sort": "Poovathoor Shiju "
+      "sort": "Poovathoor Shiju ",
+      "fade": "narrow"
     },
     {
       "id": "suchin-thompson",
@@ -1012,7 +1018,8 @@
           ]
         }
       ],
-      "sort": "Varghese Sujith "
+      "sort": "Varghese Sujith ",
+      "fade": "narrow"
     },
     {
       "id": "thomas-joseph",
@@ -1077,7 +1084,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/vattakkattu-varkey/IMG-20260520-213539-Manoj-Chacko.jpg"
+                  "src": "images/members/vattakkattu-varkey/photo-adj.jpg"
                 }
               ]
             },
@@ -1087,7 +1094,8 @@
           ]
         }
       ],
-      "sort": "Vattakkattu Varkey "
+      "sort": "Vattakkattu Varkey ",
+      "phrases": false
     },
     {
       "id": "zach-zacharia",
@@ -1310,7 +1318,8 @@
           ]
         }
       ],
-      "sort": "Milton Basil "
+      "sort": "Milton Basil ",
+      "fade": false
     },
     {
       "id": "betcy-allen",
@@ -1621,7 +1630,8 @@
           ]
         }
       ],
-      "sort": "Varghese Mathew "
+      "sort": "Varghese Mathew ",
+      "fade": "narrow"
     },
     {
       "id": "matt-jacob",
@@ -1954,13 +1964,13 @@
                   "type": "photos",
                   "photos": [
                     {
-                      "src": "images/members/yohannan-sankarathil/InLovingMemory.jpg"
+                      "src": "images/members/yohannan-sankarathil/InLovingMemory-adj.jpg"
                     },
                     {
-                      "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26.jpg"
+                      "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26-adj.jpg"
                     },
                     {
-                      "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26-1.jpg"
+                      "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26-1-adj.jpg"
                     }
                   ],
                   "arrange": "row"
@@ -1976,7 +1986,7 @@
                   "type": "photos",
                   "photos": [
                     {
-                      "src": "images/members/yohannan-sankarathil/FamilyPic.jpg"
+                      "src": "images/members/yohannan-sankarathil/FamilyPic-adj.jpg"
                     }
                   ]
                 },
@@ -2180,9 +2190,6 @@
               "photos": [
                 {
                   "src": "images/members/pv-thomas-sophie-aunty/d4b3776e-9882-4a45-aebe-0a9baa5448d2.jpg"
-                },
-                {
-                  "src": "images/members/pv-thomas-sophie-aunty/PV-Thomas-Sophie-Aunty.jpg"
                 }
               ],
               "arrange": "stack"
@@ -2314,7 +2321,8 @@
         }
       ],
       "pending": true,
-      "sort": "Mathew V. S. "
+      "sort": "Mathew V. S. ",
+      "fade": "narrow"
     },
     {
       "id": "mathew-joseph",
