@@ -304,7 +304,10 @@ function memberPages(m) {
       // "pending": text still being reviewed by Writing/Editing — flagged louder than a proof copy.
       badge: m.pending ? 'Pending review' : m.approved ? null : 'Proof copy',
       // Corner ornament on member pages; set "ornate": false on a family to skip it.
-      cls: [m.ornate === false ? '' : 'ornate', styled ? 'styled-page' : '', isDesigned(pg) ? 'designed-page' : ''].filter(Boolean).join(' ') || undefined,
+      // "fade": "narrow" | false — for photos with someone right at the edge,
+      // where the usual blend would eat them.
+      cls: [m.ornate === false ? '' : 'ornate', styled ? 'styled-page' : '', isDesigned(pg) ? 'designed-page' : '',
+            m.fade === 'narrow' ? 'fade-narrow' : m.fade === false ? 'fade-none' : ''].filter(Boolean).join(' ') || undefined,
     });
     const part = m.pages.length > 1 ? ` (${i + 1} of ${m.pages.length})` : '';
     return { html, label: `MEMBER PAGE: ${m.name}${part}`, member: i === 0 ? m : null };

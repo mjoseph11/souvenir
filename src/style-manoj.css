@@ -105,3 +105,15 @@
     height: var(--page-h); overflow: hidden;
   }
   .page.back-pilgrimage img { height: 100%; width: auto; max-width: 100%; display: block; }
+
+  /* Photos with someone standing at the very edge: fade less, or not at all. */
+  .m-page.fade-narrow:not(.designed-page):not(.m-ad) .m-fig img, .fade-narrow .s-main img {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 3%, #000 97%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 3%, #000 97%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
+  }
+  .m-page.fade-none:not(.designed-page):not(.m-ad) .m-fig img, .fade-none .s-main img {
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
