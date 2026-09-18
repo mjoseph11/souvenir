@@ -147,7 +147,9 @@ function renderBlocks(blocks, ctx) {
    prints, short phrases in script beside them, a verse at the foot. Photos are
    never cropped: every box is sized to its photo's own shape. */
 
-const STYLE = process.env.STYLE === 'manoj';
+// The page style is the souvenir's own style now (Manoj approved it, 18 Sept).
+// STYLE=off builds the earlier look.
+const STYLE = process.env.STYLE !== 'off';
 const PHRASES = STYLE ? readJSON('data/phrases.json').phrases.filter((p) => p.use !== false) : [];
 const VERSES = [
   ['As for me and my house, we will serve the Lord.', 'Joshua 24:15'],
@@ -467,8 +469,9 @@ ${bodyHtml}${layoutCheck}
 </html>
 `;
 
-// STYLE=manoj writes a preview of Manoj's page style; the souvenir itself is index.html.
-const outFile = STYLE ? 'preview-style.html' : 'index.html';
+const outFile = 'index.html';
 fs.writeFileSync(path.join(root, outFile), html);
+// preview-style.html is the link Manoj and the board already have; keep it working.
+if (STYLE) fs.writeFileSync(path.join(root, 'preview-style.html'), html);
 const memberPageCount = pages.filter((p) => p.label.startsWith('MEMBER PAGE')).length;
 console.log(`✓ ${outFile}: ${pages.length} pages (${members.length} families on ${memberPageCount} pages, ${ads.length} ads, ${indexPageCount} index page(s))`);
