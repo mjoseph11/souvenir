@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 955" preserveAspectRatio="none">
+  <!-- Corner sprigs for Golden Jubilee member pages.
+       Drawn to match the leaf motif Manoj used on his A. O. Abraham and
+       Betcy Allen mock-ups (WhatsApp, 15 Sept). Sized to the .m-content box
+       (7.5in x 9.55in), so the viewBox units are hundredths of an inch. -->
+  <defs>
+    <g id="sprig">
+      <path d="M4 4C58 22 104 54 140 100" fill="none" stroke="#C9A227" stroke-width="1.5" stroke-linecap="round" opacity=".38"/>
+      <path d="M22 12C44 34 52 60 50 86" fill="none" stroke="#9C8A3E" stroke-width="1.1" stroke-linecap="round" opacity=".26"/>
+      <path d="M56 30C86 40 108 34 128 20" fill="none" stroke="#9C8A3E" stroke-width="1.1" stroke-linecap="round" opacity=".26"/>
+      <g fill="#C9A227" opacity=".22">
+        <ellipse cx="30" cy="9" rx="17" ry="6.6" transform="rotate(-16 30 9)"/>
+        <ellipse cx="17" cy="27" rx="15" ry="6" transform="rotate(58 17 27)"/>
+        <ellipse cx="60" cy="27" rx="18" ry="7" transform="rotate(-10 60 27)"/>
+        <ellipse cx="45" cy="55" rx="16" ry="6.2" transform="rotate(66 45 55)"/>
+        <ellipse cx="92" cy="47" rx="17" ry="6.6" transform="rotate(-4 92 47)"/>
+        <ellipse cx="52" cy="84" rx="14" ry="5.6" transform="rotate(74 52 84)"/>
+        <ellipse cx="121" cy="70" rx="15" ry="6" transform="rotate(14 121 70)"/>
+        <ellipse cx="133" cy="24" rx="13" ry="5.2" transform="rotate(-28 133 24)"/>
+        <ellipse cx="141" cy="104" rx="12" ry="4.8" transform="rotate(34 141 104)"/>
+      </g>
+      <g fill="#8C7A34" opacity=".2">
+        <ellipse cx="74" cy="12" rx="11" ry="4.4" transform="rotate(-34 74 12)"/>
+        <ellipse cx="28" cy="62" rx="11" ry="4.4" transform="rotate(70 28 62)"/>
+        <ellipse cx="108" cy="92" rx="10" ry="4" transform="rotate(22 108 92)"/>
+      </g>
+      <g fill="#C9A227" opacity=".3">
+        <circle cx="101" cy="24" r="2.6"/>
+        <circle cx="36" cy="44" r="2.2"/>
+        <circle cx="126" cy="52" r="2.2"/>
+      </g>
+    </g>
+  </defs>
+  <use href="#sprig" x="0" y="0"/>
+  <use href="#sprig" transform="translate(750,0) scale(-1,1)"/>
+  <use href="#sprig" transform="translate(0,955) scale(1,-1)"/>
+  <use href="#sprig" transform="translate(750,955) scale(-1,-1)"/>
+</svg>

@@ -45,7 +45,7 @@
         { "placeholder": { "title": "Message", "heading": "From the Governor of Pennsylvania", "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received." }, "toc": "Message — Governor of Pennsylvania" },
         { "file": "src/pages/executive-committee.html", "label": "LEADERSHIP TEAM", "toc": "Leadership Team" },
         { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. Eby Paulose", "note": "Appointed Vicar of SGMOC effective September 28, 2026. Photo and biography to be collected." }, "toc": "Clergy — Rev. Fr. Eby Paulose" },
-        { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. Alexander Kurian", "note": "Photo and biography to be collected." }, "toc": "Clergy — Rev. Fr. Alexander Kurian" },
+        { "member": "fr-alexander-kurien", "toc": "Clergy — Rev. Fr. Alexander Kurian" },
         { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. K. P. Varghese", "note": "Photo and biography to be collected. Celebrated the 50th anniversary of his priesthood on November 16, 2025." }, "toc": "Clergy — Rev. Fr. K. P. Varghese" },
         { "file": "src/pages/past-clergy-mathai-cor-episcopa.html", "label": "PAST CLERGY: V. REV. K. MATHAI COR EPISCOPOS", "toc": "Past Clergy — V. Rev. K. Mathai Cor Episcopos" },
         { "file": "src/pages/past-clergy-paul-varki-beginnings.html", "label": "PAST CLERGY: REV. FR. DR. PAUL VARKI — THE BEGINNINGS", "toc": "Past Clergy — Rev. Fr. Dr. Paul Varki" },

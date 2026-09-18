@@ -4,44 +4,209 @@
     {
       "id": "ashok-joseph",
       "name": "Ashok Joseph",
-      "partial": "src/pages/members/ashok-joseph.html",
-      "approved": true
+      "approved": true,
+      "sort": "Joseph Ashok ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/ashok-joseph/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "text": "On this joyful jubilee occasion, we thank God for the years of faith, service and community our church has built. May the good Lord continue to bless our mission, strengthen our congregation and guide us into a future filled with hope and love."
+            },
+            {
+              "type": "names",
+              "text": "Dr. Ashok Joseph • Susan Joseph\nAbraham Joseph • Jacob Joseph"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "dustin-paul",
       "name": "Dustin Paul",
-      "partial": "src/pages/members/dustin-paul.html",
-      "approved": true
+      "approved": true,
+      "sort": "Paul Dustin ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/dustin-paul/photo.jpeg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Every good and perfect gift is from above.",
+              "ref": "James 1:17"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "fr-alexander-kurien",
       "name": "Fr. Alexander Kurien",
       "partial": "src/pages/members/fr-alexander-kurien.html",
-      "approved": true
+      "approved": true,
+      "sort": "Kurien Fr. Alexander ",
+      "placement": "outline"
     },
     {
       "id": "lijo-chandy",
       "name": "Lijo Chandy",
-      "partial": "src/pages/members/lijo-chandy.html",
-      "approved": true
+      "approved": true,
+      "sort": "Chandy Lijo ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/lijo-chandy/photo1.jpeg"
+                }
+              ]
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/lijo-chandy/photo2.jpeg"
+                },
+                {
+                  "src": "images/members/lijo-chandy/photo3.jpeg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mani-p-abraham",
       "name": "Mani P. Abraham",
-      "partial": "src/pages/members/mani-p-abraham.html",
-      "approved": true
+      "approved": true,
+      "sort": "Abraham Mani P. ",
+      "pages": [
+        {
+          "dark": true,
+          "blocks": [
+            {
+              "type": "memorial",
+              "name": "P. K. Abraham & Annamma",
+              "dates": "of Pattasseril, Puthupally"
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mani-p-abraham/photo.jpeg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "size": "lg",
+              "text": "Remembering the Love and Sacrifices they made"
+            },
+            {
+              "type": "names",
+              "text": "Korah, Mani and Dr. George Abraham and families\nGrandchildren and Great Grandchildren"
+            },
+            {
+              "type": "eternal"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mathewkutty-kurian",
       "name": "Mathewkutty Kurian",
-      "partial": "src/pages/members/mathewkutty-kurian.html",
-      "approved": true
+      "approved": true,
+      "sort": "Kurian Mathewkutty ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathewkutty-kurian/photo2.jpg"
+                },
+                {
+                  "src": "images/members/mathewkutty-kurian/photo1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "text": "The Mathew family has been members of this church since 1989. Our journey with the church has been profoundly meaningful, deeply rooted in the teachings of the Orthodox faith. The church community has enriched our lives through its love, guidance, and shared values, fostering a stronger connection with God and one another. We are deeply grateful for the blessings and sense of belonging we have found within this community.",
+              "sign": "The Mathewkutty Kurian Family"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "thomas-paul",
       "name": "Thomas Paul",
-      "partial": "src/pages/members/thomas-paul.html",
-      "approved": true
+      "approved": true,
+      "sort": "Paul Thomas ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/thomas-paul/photo.jpeg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "title": "Best Compliments from Thomas Paul and Family",
+              "text": "Members of SGMOC since 1978\n\nBoard of Trustee Member — 1994–1996\n\nSecretary — 1995–1996"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "a-o-abraham",
@@ -73,7 +238,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Abraham A. O. "
     },
     {
       "id": "ajay-peter",
@@ -95,7 +261,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Peter Ajay "
     },
     {
       "id": "ajeesh-cherian",
@@ -117,7 +284,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Cherian Ajeesh "
     },
     {
       "id": "alexander-thankachen",
@@ -139,7 +307,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Thankachen Alexander "
     },
     {
       "id": "arun-philip",
@@ -161,7 +330,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Philip Arun "
     },
     {
       "id": "arun-raju",
@@ -187,7 +357,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Raju Arun "
     },
     {
       "id": "ashley-mountney",
@@ -209,7 +380,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mountney Ashley "
     },
     {
       "id": "babu-varghese",
@@ -237,7 +409,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Varghese Babu "
     },
     {
       "id": "biju-chacko",
@@ -265,7 +438,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Chacko Biju "
     },
     {
       "id": "biju-mani",
@@ -293,7 +467,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mani Biju "
     },
     {
       "id": "dr-joe-john",
@@ -322,7 +497,8 @@
           ]
         }
       ],
-      "indexName": "Dr. Joe John & V. S. John"
+      "indexName": "Dr. Joe John & V. S. John",
+      "sort": "John Dr. Joe "
     },
     {
       "id": "george-mathew-biju",
@@ -350,7 +526,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mathew George "
     },
     {
       "id": "george-varghese",
@@ -378,7 +555,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Varghese George "
     },
     {
       "id": "jacob-george",
@@ -391,10 +569,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/jacob-george/IMG-1916-jaymole-GEORGE.jpg"
+                  "src": "images/members/jacob-george/IMG-3268-jaymole-GEORGE.jpg"
                 },
                 {
-                  "src": "images/members/jacob-george/IMG-3268-jaymole-GEORGE.jpg"
+                  "src": "images/members/jacob-george/IMG-1916-jaymole-GEORGE.jpg"
                 }
               ]
             },
@@ -409,7 +587,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "George Jacob "
     },
     {
       "id": "john-varghese",
@@ -437,7 +616,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Varghese John "
     },
     {
       "id": "joseph-abraham",
@@ -451,12 +631,6 @@
               "photos": [
                 {
                   "src": "images/members/joseph-abraham-2-pages/WhatsApp-Image-2026-08-08-at-7-02-57-PM.jpg"
-                },
-                {
-                  "src": "images/members/joseph-abraham-2-pages/FullSizeRender.jpg"
-                },
-                {
-                  "src": "images/members/joseph-abraham-2-pages/IMG-5720.jpg"
                 }
               ]
             },
@@ -471,10 +645,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/joseph-abraham-2-pages/20260510-111703-Jiji-Koshy.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/FullSizeRender.jpg"
                 },
                 {
-                  "src": "images/members/joseph-abraham-2-pages/20260510-111613-Jiji-Koshy.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/IMG-5720.jpg"
                 },
                 {
                   "src": "images/members/joseph-abraham-2-pages/4f5cfbbd-28ae-4828-9a3d-67fcc3016d3b-Copy.jpg"
@@ -486,7 +660,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Abraham Joseph "
     },
     {
       "id": "manoj-samuel",
@@ -515,7 +690,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Samuel Manoj "
     },
     {
       "id": "mathew-ninan",
@@ -529,12 +705,6 @@
               "photos": [
                 {
                   "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg"
-                },
-                {
-                  "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-1-22-08-PM.jpg"
-                },
-                {
-                  "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-1-23-20-PM.jpg"
                 }
               ]
             },
@@ -543,7 +713,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Ninan Mathew "
     },
     {
       "id": "mathew-thomas",
@@ -565,7 +736,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Thomas Mathew "
     },
     {
       "id": "paul-j-maret",
@@ -593,7 +765,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Maret Paul J. "
     },
     {
       "id": "philipose-george",
@@ -615,7 +788,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "George Philipose "
     },
     {
       "id": "prince-mathew",
@@ -643,7 +817,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mathew Prince "
     },
     {
       "id": "rajan-eappen",
@@ -665,7 +840,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Eappen Rajan "
     },
     {
       "id": "rajan-mathew",
@@ -694,7 +870,8 @@
           ]
         }
       ],
-      "mainPhoto": 2
+      "mainPhoto": 2,
+      "sort": "Mathew Rajan "
     },
     {
       "id": "raju-sankarathil",
@@ -716,7 +893,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Sankarathil Raju "
     },
     {
       "id": "sarath-moses",
@@ -738,7 +916,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Moses Sarath "
     },
     {
       "id": "shiju-poovathoor",
@@ -769,7 +948,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Poovathoor Shiju "
     },
     {
       "id": "suchin-thompson",
@@ -797,7 +977,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Thompson Suchin "
     },
     {
       "id": "sujith-varghese",
@@ -825,7 +1006,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Varghese Sujith "
     },
     {
       "id": "thomas-joseph",
@@ -853,7 +1035,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Joseph Thomas "
     },
     {
       "id": "varughese-koithottu",
@@ -875,7 +1058,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Koithottu Varughese "
     },
     {
       "id": "varkey-vattakkattu",
@@ -897,7 +1081,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Vattakkattu Varkey "
     },
     {
       "id": "zach-zacharia",
@@ -925,7 +1110,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Zacharia Zach "
     },
     {
       "id": "kurien-p-mathew",
@@ -948,7 +1134,7 @@
       ],
       "band": "Golden Jubilee Memorial Tribute",
       "indexName": "Kurien P. Mathew (In Loving Memory)",
-      "sort": "Annamma Kurien"
+      "sort": "Mathew Kurien P. "
     },
     {
       "id": "biju-ittyachen",
@@ -961,14 +1147,31 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/biju-ittyachen/church-anniversary-sponsor-page-Biju-Ittyachen-p1.jpg"
+                  "src": "images/members/biju-ittyachen/family.jpg"
                 }
-              ],
-              "plain": true
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "Praising God for 50 years of His faithfulness upon St. Gregorios Orthodox Church, Bensalem. May His grace and glory endure here forever.",
+              "sign": "With love, Biju, Renju, Luke & Jonah Ittyachen"
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Jesus Christ is the same yesterday and today and forever.",
+              "ref": "Hebrews 13:8"
+            },
+            {
+              "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "sort": "Ittyachen Biju "
     },
     {
       "id": "cherian-t-george",
@@ -981,14 +1184,15 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/cherian-t-george/Member-Page-Submission-CHERIAN-GEORGE-p1.jpg"
+                  "src": "images/members/cherian-t-george/blend.jpg"
                 }
               ],
               "plain": true
             }
           ]
         }
-      ]
+      ],
+      "sort": "George Cherian T. "
     },
     {
       "id": "george-m-mathew",
@@ -1001,14 +1205,15 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/george-m-mathew/Family-Picture-p1.jpg"
+                  "src": "images/members/george-m-mathew/blend.jpg"
                 }
               ],
               "plain": true
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mathew George M. "
     },
     {
       "id": "thomas-cheriyan",
@@ -1028,7 +1233,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Cheriyan Thomas "
     },
     {
       "id": "vinesh-mathew",
@@ -1048,7 +1254,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mathew Vinesh "
     },
     {
       "id": "vinit-mathew",
@@ -1069,7 +1276,8 @@
           ]
         }
       ],
-      "indexName": "Vinit Mathew — \"Leading Our Path\" by Noah Mathew"
+      "indexName": "Vinit Mathew — \"Leading Our Path\" by Noah Mathew",
+      "sort": "Mathew Vinit "
     },
     {
       "id": "basil-milton",
@@ -1079,23 +1287,20 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/basil-milton/8b478dc8-2376-4fda-b90c-ee8dc5318722-Basil-Milton.jpg"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "cols": true,
-              "bare": true,
+              "type": "article",
+              "photo": {
+                "src": "images/members/basil-milton/8b478dc8-2376-4fda-b90c-ee8dc5318722-Basil-Milton.jpg"
+              },
               "text": "Our journey with this church began in 2007 when we first walked through the doors as college students. Back then, it was just a place to worship, but it quickly became the foundation for our entire future. This is where we grew, dreamed, and eventually decided to build a life and family together.\n\nOver the last nearly two decades, the people here have truly become our family. The friends we made in those early years have grown into a lifelong, supportive community.\n\nOur family has since been blessed with two wonderful children. Sharing our faith with them has been the greatest joy of our journey. Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation. Today, they look forward to attending Sunday school each week, learning the same values that have anchored us for so long. We are profoundly grateful for this church home, which has shaped our past, blesses our present, and continues to guide our future.",
               "sign": "The Milton Family (Marcus, Meryl, Nithya and Basil)"
+            },
+            {
+              "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "sort": "Milton Basil "
     },
     {
       "id": "betcy-allen",
@@ -1114,7 +1319,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Allen Betcy "
     },
     {
       "id": "poovathoor-koshy",
@@ -1138,12 +1344,14 @@
               "type": "text",
               "text": "We are members of St. Gregorios Malankara Orthodox Church at Bensalem, originally St. Thomas Indian Orthodox Church of Philadelphia since 1976 under the leadership of Late Very Rev. Fr. K. Mathai Cor-Episcopa.\n\nOur children Ajay and Anju grew up in this church. They were part of the first Youth League and its publication 'REFLECTIONS'. Ajay also served as an altar boy. Mathai Achen's support and guidance helped them to grow up to be the responsible professionals they are now.\n\nNow we are very happy to continue as the members of this church under the guidance and leadership of Rev. Fr. Shibu Venad Mathai who is an asset to St. Gregorios Malankara Orthodox Church.",
               "title": "With the best compliments from Dr. Poovathoor Koshy and family",
-              "size": "sm"
+              "size": "sm",
+              "bare": true,
+              "center": true
             }
           ]
         }
       ],
-      "sort": "Poovathoor Koshy"
+      "sort": "Koshy Dr. Poovathoor "
     },
     {
       "id": "ejo-john",
@@ -1184,7 +1392,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "John Ejo "
     },
     {
       "id": "jacob-chacko",
@@ -1214,7 +1423,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Chacko Jacob "
     },
     {
       "id": "james-varughese",
@@ -1257,7 +1467,7 @@
           ]
         }
       ],
-      "sort": "Varughese, James"
+      "sort": "Varughese James "
     },
     {
       "id": "jinu-john",
@@ -1267,28 +1477,24 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/jinu-john/Family-Jinu-John.jpg"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "cols": true,
-              "bare": true,
-              "text": "When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.\n\nIn a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.\n\nSunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.\n\nNow, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.\n\nOur children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.\n\nAs we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.\n\nOur prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory.",
-              "title": "A Faith We Received, A Faith We Pass On"
+              "type": "article",
+              "photo": {
+                "src": "images/members/jinu-john/Family-Jinu-John.jpg"
+              },
+              "text": "When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.\n\nIn a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.\n\nSunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.\n\nNow, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.\n\nOur children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.\n\nAs we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.\n\nOur prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory."
             },
             {
               "type": "verse",
               "text": "So these words I command you today shall be in your heart and in your soul. You shall teach them to your sons, and shall talk of them when you sit in your house, when you walk by the way, when you lie down, and when you rise up.",
               "ref": "Deuteronomy 6:6–7"
+            },
+            {
+              "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "sort": "John Jinu "
     },
     {
       "id": "korah-mani",
@@ -1308,7 +1514,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mani Korah "
     },
     {
       "id": "kallelil",
@@ -1321,10 +1528,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/kuruvilla-saji-kallelil/Kallelil-Family-Glory-Kallelil.jpg"
+                  "src": "images/members/kuruvilla-saji-kallelil/Ammachi-Souvenir-Glory-Kallelil.jpg"
                 },
                 {
-                  "src": "images/members/kuruvilla-saji-kallelil/Ammachi-Souvenir-Glory-Kallelil.jpg"
+                  "src": "images/members/kuruvilla-saji-kallelil/Kallelil-Family-Glory-Kallelil.jpg"
                 }
               ],
               "arrange": "stack"
@@ -1332,12 +1539,14 @@
             {
               "type": "text",
               "text": "Our children, Seryna and Mathew, were baptized here. They have been attending SGMOC since they were born. Mathew was an active student at the SGMOC's Sunday school, till he graduated. He, along with his team, won Bible competitions in a row for three times at the Diocesan level. He is now serving as an altar boy. We are thankful for the help and services this church provides to morally educate our children.",
-              "size": "sm"
+              "size": "sm",
+              "bare": true,
+              "center": true
             }
           ]
         }
       ],
-      "sort": "Kallelil, Kuruvilla"
+      "sort": "Kallelil Kuruvilla (Saji) "
     },
     {
       "id": "kuruvilla-p-kurian",
@@ -1364,7 +1573,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Kurian Kuruvilla P. "
     },
     {
       "id": "mathew-varghese",
@@ -1397,7 +1607,7 @@
           ]
         }
       ],
-      "sort": "Mathew Varghese"
+      "sort": "Varghese Mathew "
     },
     {
       "id": "matt-jacob",
@@ -1437,7 +1647,7 @@
           ]
         }
       ],
-      "sort": "Matt Jacob"
+      "sort": "Jacob Matt & Shainey "
     },
     {
       "id": "ninan-parel",
@@ -1469,7 +1679,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Parel Ninan "
     },
     {
       "id": "saji-george",
@@ -1501,7 +1712,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "George Saji "
     },
     {
       "id": "samuel-daniel",
@@ -1515,9 +1727,6 @@
               "photos": [
                 {
                   "src": "images/members/samuel-daniel/JSP08835.jpg"
-                },
-                {
-                  "src": "images/members/samuel-daniel/WhatsApp-Image-2026-08-09-at-12-22-07-PM.jpg"
                 }
               ],
               "arrange": "stack"
@@ -1527,11 +1736,14 @@
               "text": "Dear all, I am filled with gratitude as we celebrate a significant milestone in our church's history. I want to thank my brother, V. Rev. K. Mathai Corepiscopa, who graciously sponsored my journey to America in 1988, leading me and my family to become members of this parish. Through God's grace, we have been blessed with two wonderful children, Cyril and Merrill.\n\nAs we mark this jubilee, let us join together in prayer: Heavenly Father, we thank you for walking alongside us for the past 50 years. Bless our church, its congregation, and its future endeavors. May the next 50 years be illuminated not by material wealth, but by your divine grace. In Jesus' name, Amen.\n\nLet us continue to persevere in our faith, keeping our eyes fixed on Jesus, as inspired by Hebrews 12:1–2.",
               "title": "Gratitude for the Golden Jubilee Celebration of our Church",
               "size": "sm",
-              "sign": "Warm regards, Samuel Daniel and family"
+              "sign": "Warm regards, Samuel Daniel and family",
+              "bare": true,
+              "center": true
             }
           ]
         }
-      ]
+      ],
+      "sort": "Daniel Samuel "
     },
     {
       "id": "varughese-p-issac",
@@ -1556,7 +1768,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Issac Varughese P. "
     },
     {
       "id": "jessu-joys",
@@ -1608,7 +1821,7 @@
           ]
         }
       ],
-      "sort": "Joys, Jessu"
+      "sort": "Joys Jessu "
     },
     {
       "id": "john-kappil",
@@ -1642,7 +1855,8 @@
         }
       ],
       "band": "Golden Jubilee Memorial Tribute",
-      "indexName": "John Kappil — in memory of Kunjuvarughese & Annamma Kappil"
+      "indexName": "John Kappil — in memory of Kunjuvarughese & Annamma Kappil",
+      "sort": "Kappil John "
     },
     {
       "id": "thankamoni-john",
@@ -1705,7 +1919,8 @@
           ]
         }
       ],
-      "band": "Golden Jubilee Memorial Tribute"
+      "band": "Golden Jubilee Memorial Tribute",
+      "sort": "John Thankamoni "
     },
     {
       "id": "yohannan-sankarathil",
@@ -1759,7 +1974,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Sankarathil Yohannan "
     },
     {
       "id": "paul-varki-memorial",
@@ -1804,7 +2020,7 @@
       "band": "Golden Jubilee Memorial Tribute",
       "placement": "outline",
       "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
-      "sort": "Varki, Mariamma"
+      "sort": "Varki Rev. Fr. Dr. Paul "
     },
     {
       "id": "markose-mani-memorial",
@@ -1841,7 +2057,7 @@
       "band": "Golden Jubilee Memorial Tribute",
       "placement": "outline",
       "indexName": "Deacon Markose Mani (Cherian Mani & family)",
-      "sort": "Mani, Cherian"
+      "sort": "Mani Deacon Markose "
     },
     {
       "id": "baboo-george",
@@ -1871,7 +2087,8 @@
           ]
         }
       ],
-      "pending": true
+      "pending": true,
+      "sort": "George Baboo "
     },
     {
       "id": "blossom-joy",
@@ -1898,7 +2115,8 @@
           ]
         }
       ],
-      "pending": true
+      "pending": true,
+      "sort": "Joy Blossom "
     },
     {
       "id": "v-c-thomas",
@@ -1933,7 +2151,7 @@
       ],
       "band": "Golden Jubilee Memorial Tribute",
       "indexName": "V. C. Thomas (In Loving Memory)",
-      "sort": "Thomas, V. C.",
+      "sort": "Thomas V. C. ",
       "pending": true
     },
     {
@@ -1975,7 +2193,8 @@
           ]
         }
       ],
-      "pending": true
+      "pending": true,
+      "sort": "Thomas P. V. "
     },
     {
       "id": "thomas-mammen",
@@ -2038,7 +2257,8 @@
           ]
         }
       ],
-      "pending": true
+      "pending": true,
+      "sort": "Mammen Thomas "
     },
     {
       "id": "v-s-mathew",
@@ -2079,7 +2299,8 @@
           ]
         }
       ],
-      "pending": true
+      "pending": true,
+      "sort": "Mathew V. S. "
     },
     {
       "id": "mathew-joseph",
@@ -2101,7 +2322,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Joseph Mathew "
     },
     {
       "id": "thomas-o-abraham",
@@ -2137,7 +2359,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Abraham Thomas O. "
     },
     {
       "id": "thomas-m-george",
@@ -2165,12 +2388,13 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "George Thomas M. "
     },
     {
       "id": "mathew-kallelil",
       "name": "Mathew Kallelil (Biji)",
-      "sort": "Kallelil Mathew",
+      "sort": "Kallelil Mathew ",
       "title": "The Mathew Kallelil Family",
       "pages": [
         {
@@ -2199,7 +2423,7 @@
     {
       "id": "mathew-kandathil",
       "name": "Mathew Kandathil",
-      "sort": "Kandathil Mathew",
+      "sort": "Kandathil Mathew ",
       "title": "The Mathew Kandathil Family",
       "pages": [
         {
@@ -2259,7 +2483,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Mathai Punnoose "
     },
     {
       "id": "john-chacko",
@@ -2285,7 +2510,8 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Chacko John "
     },
     {
       "id": "ipe-maret",
@@ -2313,12 +2539,13 @@
             }
           ]
         }
-      ]
+      ],
+      "sort": "Maret Ipe "
     },
     {
       "id": "mathew-mathew",
       "name": "Dr. Mathew Mathew",
-      "sort": "Mathew Mathew",
+      "sort": "Mathew Dr. Mathew ",
       "title": "The Dr. Mathew Mathew Family",
       "pages": [
         {

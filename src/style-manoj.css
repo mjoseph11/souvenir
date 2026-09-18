@@ -6,11 +6,23 @@
      dove behind photo pages.
   ══════════════════════════════════════ */
 
-  .page.inner-page::before { background-image: url('images/backgrounds/page-leaves-clean.jpg'); }
+  /* Leaves lightened after the 17 Sept feedback ("the leaves are too bright"),
+     and the church left off every page until Shiju's variations arrive —
+     Manoj: "there should not be anything on top of church, maybe we will just
+     remove the church picture". */
+  .page.inner-page::before { background-image: url('images/backgrounds/page-leaves-light.jpg'); }
   .page.inner-page.styled-page::before {
-    background-image: url('images/backgrounds/page-dove-church-faint.jpg');
+    background-image: url('images/backgrounds/page-leaves-light.jpg');
     opacity: 1;
   }
+
+  /* Sponsor ads: image as large as the page allows, touching the header and
+     footer, on a plain page in the same tone — no leaves behind it. */
+  .m-page.m-ad::before { background: var(--cream); }
+  .m-ad .m-content { top: 0.95in; bottom: 0.5in; left: 0; right: 0; padding: 0; gap: 0; }
+  .m-ad .m-photos { flex: 1 1 auto; }
+  .m-ad .m-fig { height: 100%; }
+  .m-ad .m-fig img { height: 100%; width: auto; max-width: 100%; object-fit: contain; box-shadow: none; }
 
   .s-stage { position: absolute; inset: 0; }
   .s-stage figure { position: absolute; margin: 0; }
@@ -58,3 +70,18 @@
                         linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
             mask-composite: intersect;
   }
+
+  /* Pages the families designed themselves: no frame, and the white paper they
+     were made on multiplies away into the page (Manoj, 18 Sept: "remove white
+     background and blend in"). */
+  .designed-page .m-fig img {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    mix-blend-mode: multiply;
+  }
+  /* The content layer normally sits in its own stacking context (z-index: 1),
+     which would trap the blend. Let it reach the page background instead. */
+  .designed-page .m-content { top: 0.95in; bottom: 0.5in; padding: 0; z-index: auto; }
+  .designed-page.has-band .m-content { top: 1.15in; }
