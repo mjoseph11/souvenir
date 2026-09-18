@@ -88,7 +88,7 @@
 
   /* Front cover: Manoj's PILGRIMAGE design, whole, on its own cream. */
   .page.cover-pilgrimage {
-    background: #FCF6E8;
+    background: #F7EFE0;   /* the cover's own paper, so no seam shows at its edge */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +100,7 @@
 
   /* Back cover: Manoj's design (zip corrected to 19020). */
   .page.back-pilgrimage {
-    background: #FCF6E8;
+    background: #F6EDDE;   /* matched to the back cover's paper */
     display: flex; align-items: center; justify-content: center; padding: 0;
     height: var(--page-h); overflow: hidden;
   }
