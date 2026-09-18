@@ -1210,10 +1210,15 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/george-m-mathew/blend.jpg"
+                  "src": "images/members/george-m-mathew/photo1.jpg"
+                },
+                {
+                  "src": "images/members/george-m-mathew/photo2.jpg"
                 }
-              ],
-              "plain": true
+              ]
+            },
+            {
+              "type": "closing"
             }
           ]
         }
