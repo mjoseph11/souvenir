@@ -415,8 +415,7 @@
           ]
         }
       ],
-      "sort": "Varghese Babu ",
-      "fade": "narrow"
+      "sort": "Varghese Babu "
     },
     {
       "id": "biju-chacko",
@@ -623,8 +622,7 @@
           ]
         }
       ],
-      "sort": "Varghese John ",
-      "fade": "narrow"
+      "sort": "Varghese John "
     },
     {
       "id": "joseph-abraham",
@@ -744,8 +742,7 @@
           ]
         }
       ],
-      "sort": "Thomas Mathew ",
-      "fade": "narrow"
+      "sort": "Thomas Mathew "
     },
     {
       "id": "paul-j-maret",
@@ -826,8 +823,7 @@
           ]
         }
       ],
-      "sort": "Mathew Prince ",
-      "fade": "narrow"
+      "sort": "Mathew Prince "
     },
     {
       "id": "rajan-eappen",
@@ -903,8 +899,7 @@
           ]
         }
       ],
-      "sort": "Sankarathil Raju ",
-      "fade": "narrow"
+      "sort": "Sankarathil Raju "
     },
     {
       "id": "sarath-moses",
@@ -959,8 +954,7 @@
           ]
         }
       ],
-      "sort": "Poovathoor Shiju ",
-      "fade": "narrow"
+      "sort": "Poovathoor Shiju "
     },
     {
       "id": "suchin-thompson",
@@ -1018,8 +1012,7 @@
           ]
         }
       ],
-      "sort": "Varghese Sujith ",
-      "fade": "narrow"
+      "sort": "Varghese Sujith "
     },
     {
       "id": "thomas-joseph",
@@ -1318,8 +1311,7 @@
           ]
         }
       ],
-      "sort": "Milton Basil ",
-      "fade": false
+      "sort": "Milton Basil "
     },
     {
       "id": "betcy-allen",
@@ -1339,8 +1331,7 @@
           ]
         }
       ],
-      "sort": "Allen Betcy ",
-      "fade": "narrow"
+      "sort": "Allen Betcy "
     },
     {
       "id": "poovathoor-koshy",
@@ -1568,8 +1559,7 @@
           ]
         }
       ],
-      "sort": "Kallelil Kuruvilla (Saji) ",
-      "fade": "narrow"
+      "sort": "Kallelil Kuruvilla (Saji) "
     },
     {
       "id": "kuruvilla-p-kurian",
@@ -1597,8 +1587,7 @@
           ]
         }
       ],
-      "sort": "Kurian Kuruvilla P. ",
-      "fade": "narrow"
+      "sort": "Kurian Kuruvilla P. "
     },
     {
       "id": "mathew-varghese",
@@ -1631,8 +1620,7 @@
           ]
         }
       ],
-      "sort": "Varghese Mathew ",
-      "fade": "narrow"
+      "sort": "Varghese Mathew "
     },
     {
       "id": "matt-jacob",
@@ -2322,8 +2310,7 @@
         }
       ],
       "pending": true,
-      "sort": "Mathew V. S. ",
-      "fade": "narrow"
+      "sort": "Mathew V. S. "
     },
     {
       "id": "mathew-joseph",
@@ -2596,8 +2583,7 @@
             }
           ]
         }
-      ],
-      "fade": "narrow"
+      ]
     }
   ]
 }
