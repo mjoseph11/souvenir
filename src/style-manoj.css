@@ -98,24 +98,10 @@
   }
   .page.cover-pilgrimage img { height: 100%; width: auto; max-width: 100%; display: block; }
 
-  /* Back cover: the same cream and gold, with the church's details. */
+  /* Back cover: Manoj's design (zip corrected to 19020). */
   .page.back-pilgrimage {
-    background: #FCF6E8 url('images/backgrounds/page-leaves-light.jpg') no-repeat center / cover;
-    display: flex; align-items: center; justify-content: center; padding: 0; position: relative;
+    background: #FCF6E8;
+    display: flex; align-items: center; justify-content: center; padding: 0;
+    height: var(--page-h); overflow: hidden;
   }
-  .back-pilgrimage .bp-frame {
-    position: absolute; inset: 0.3in; border: 2px solid #C9A227; border-radius: 2px; pointer-events: none;
-  }
-  .back-pilgrimage .bp-frame::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgba(201,162,39,0.55); }
-  .back-pilgrimage .bp-inner { text-align: center; padding: 0 1in; color: var(--maroon); }
-  .back-pilgrimage .bp-logo { width: 2.1in; height: auto; margin-bottom: 0.3in; }
-  .back-pilgrimage h2 { font-size: 17pt; line-height: 1.35; color: var(--maroon); }
-  .back-pilgrimage .bp-diocese { font-size: 10.5pt; letter-spacing: 2px; text-transform: uppercase; color: #8a6212; margin-top: 0.08in; }
-  .back-pilgrimage .bp-rule { width: 2.6in; height: 1px; margin: 0.28in auto; background: linear-gradient(to right, transparent, #C9A227, transparent); }
-  .back-pilgrimage .bp-address { font-size: 12pt; line-height: 1.7; color: #4a3a2a; }
-  .back-pilgrimage .bp-services { font-size: 11pt; line-height: 1.7; color: #4a3a2a; margin-top: 0.18in; }
-  .back-pilgrimage .bp-web { font-size: 12pt; letter-spacing: 2px; color: #8a6212; }
-  .back-pilgrimage .bp-ribbon { margin-top: 0.5in; display: flex; justify-content: center; gap: 0.3in; }
-  .back-pilgrimage .bp-ribbon span { font-size: 9pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--maroon); }
-  .back-pilgrimage .bp-ribbon span + span { border-left: 1px solid rgba(201,162,39,0.8); padding-left: 0.3in; }
-  .back-pilgrimage .bp-years { margin-top: 0.22in; font-size: 14pt; letter-spacing: 4px; color: #8a6212; }
+  .page.back-pilgrimage img { height: 100%; width: auto; max-width: 100%; display: block; }
