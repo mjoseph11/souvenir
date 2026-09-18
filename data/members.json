@@ -32,7 +32,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "The Joseph Family"
     },
     {
       "id": "dustin-paul",
@@ -61,7 +62,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "The Dustin Paul Family"
     },
     {
       "id": "fr-alexander-kurien",
@@ -103,7 +105,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "The Lijo Chandy Family"
     },
     {
       "id": "mani-p-abraham",
@@ -144,7 +147,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "In Loving Memory"
     },
     {
       "id": "mathewkutty-kurian",
@@ -159,15 +163,14 @@
               "photos": [
                 {
                   "src": "images/members/mathewkutty-kurian/photo2.jpg"
-                },
-                {
-                  "src": "images/members/mathewkutty-kurian/photo1.jpg"
                 }
               ]
             },
             {
-              "type": "text",
-              "bare": true,
+              "type": "article",
+              "photo": {
+                "src": "images/members/mathewkutty-kurian/photo1.jpg"
+              },
               "text": "The Mathew family has been members of this church since 1989. Our journey with the church has been profoundly meaningful, deeply rooted in the teachings of the Orthodox faith. The church community has enriched our lives through its love, guidance, and shared values, fostering a stronger connection with God and one another. We are deeply grateful for the blessings and sense of belonging we have found within this community.",
               "sign": "The Mathewkutty Kurian Family"
             },
@@ -176,7 +179,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "The Mathewkutty Kurian Family"
     },
     {
       "id": "thomas-paul",
@@ -206,7 +210,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "The Thomas Paul Family"
     },
     {
       "id": "a-o-abraham",
@@ -1338,7 +1343,8 @@
                 {
                   "src": "images/members/dr-poovathoor-koshy/WhatsApp-Image-2026-08-01-at-5-57-36-PM.jpg"
                 }
-              ]
+              ],
+              "arrange": "stack"
             },
             {
               "type": "text",
@@ -1346,7 +1352,8 @@
               "title": "With the best compliments from Dr. Poovathoor Koshy and family",
               "size": "sm",
               "bare": true,
-              "center": true
+              "center": false,
+              "cols": true
             }
           ]
         }
@@ -1575,7 +1582,8 @@
           ]
         }
       ],
-      "sort": "Kurian Kuruvilla P. "
+      "sort": "Kurian Kuruvilla P. ",
+      "fade": "narrow"
     },
     {
       "id": "mathew-varghese",
@@ -2574,7 +2582,8 @@
             }
           ]
         }
-      ]
+      ],
+      "fade": "narrow"
     }
   ]
 }
