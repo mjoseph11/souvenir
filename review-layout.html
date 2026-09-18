@@ -3,22 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>
-  html{color-scheme:light dark}
-  body{margin:0}
-  img{max-width:100%}
-  [hidden]{display:none!important}
-</style>
-<title>Jubilee Page Layouts</title>
+<title>Souvenir Status</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&family=Great+Vibes&display=swap">
 <style>
+  html{color-scheme:light dark}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+
   :root{
     --ground:#FAF6EE; --surface:#FFFDF8; --surface-2:#F3ECDE;
     --ink:#241B16; --ink-soft:#6E6357; --rule:#E0D5C1; --rule-strong:#C9BAA0;
     --accent:#6B0000; --accent-ink:#6B0000; --gold:#C9A227; --gold-ink:#8A6D0F;
-    --ok:#3F6B3A; --hold:#9A6B12;
+    --ok:#3F6B3A; --hold:#9A6B12; --wait:#7A4A14;
     --shadow:0 1px 2px rgba(36,27,22,.06), 0 8px 24px rgba(36,27,22,.07);
   }
   @media (prefers-color-scheme: dark){
@@ -26,7 +24,7 @@
       --ground:#16110E; --surface:#1E1714; --surface-2:#271E19;
       --ink:#F0E7DA; --ink-soft:#A79A8A; --rule:#392C25; --rule-strong:#544136;
       --accent:#D59A9A; --accent-ink:#E2ADAD; --gold:#D9B84A; --gold-ink:#D9B84A;
-      --ok:#8FBE86; --hold:#D9B84A;
+      --ok:#8FBE86; --hold:#D9B84A; --wait:#D9B84A;
       --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
     }
   }
@@ -34,434 +32,264 @@
     --ground:#16110E; --surface:#1E1714; --surface-2:#271E19;
     --ink:#F0E7DA; --ink-soft:#A79A8A; --rule:#392C25; --rule-strong:#544136;
     --accent:#D59A9A; --accent-ink:#E2ADAD; --gold:#D9B84A; --gold-ink:#D9B84A;
-    --ok:#8FBE86; --hold:#D9B84A;
+    --ok:#8FBE86; --hold:#D9B84A; --wait:#D9B84A;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
   }
 
-  body{background:var(--ground);color:var(--ink);
+  body{margin:0;background:var(--ground);color:var(--ink);
     font-family:"Spectral",Georgia,"Times New Roman",serif;font-size:17px;line-height:1.65;
     -webkit-font-smoothing:antialiased;}
-  .wrap{max-width:60rem;margin:0 auto;padding-inline:20px;padding-block:0 4rem;}
+  .wrap{max-width:58rem;margin:0 auto;padding-inline:20px;padding-block:0 4rem;}
 
-  .masthead{background:var(--accent);color:#F7EFE2;margin-inline:-20px;
-    padding:2.6rem 20px 2.2rem;border-bottom:3px solid var(--gold);}
-  .masthead .inner{max-width:60rem;margin:0 auto;}
+  .masthead{background:var(--accent);color:#F7EFE2;padding:2.6rem 20px 2.2rem;
+    border-bottom:3px solid var(--gold);}
+  .masthead .inner{max-width:58rem;margin:0 auto;}
   .eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;
     letter-spacing:.16em;text-transform:uppercase;color:#E8C877;margin:0 0 .9rem;}
   h1{font-family:"Marcellus",Georgia,serif;font-weight:400;
     font-size:clamp(2.1rem,6vw,3.1rem);line-height:1.08;margin:0;text-wrap:balance;}
   .standfirst{margin:1rem 0 0;max-width:36rem;color:#EFE0C9;font-size:1.02rem;}
-  .status{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.4rem;
-    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;
-    text-transform:uppercase;color:#F7EFE2;border:1px solid rgba(247,239,226,.38);
-    border-radius:2px;padding:.4rem .7rem;}
-  .status::before{content:"";width:6px;height:6px;border-radius:50%;background:#E8C877;}
+  .links{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;}
+  .links a{color:#F7EFE2;font-family:"IBM Plex Mono",monospace;font-size:.76rem;
+    letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(247,239,226,.38);
+    border-radius:2px;padding:.45rem .8rem;text-decoration:none;}
+  .links a:hover{background:rgba(247,239,226,.12);}
 
   section{margin-top:3.2rem;}
   .sec-head{border-top:1px solid var(--rule-strong);padding-top:1.4rem;}
   h2{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.72rem;
     line-height:1.2;margin:0 0 .3rem;color:var(--accent-ink);text-wrap:balance;}
-  h3{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.1rem;margin:0;}
+  h3{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.08rem;margin:0;}
   p{margin:0 0 1rem;}
   .lede{color:var(--ink-soft);}
   .kicker{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.18em;
     text-transform:uppercase;color:var(--gold-ink);display:block;margin-bottom:.55rem;}
 
-  blockquote{margin:0 0 1.4rem;padding:1rem 1.2rem;background:var(--surface);
-    border-left:3px solid var(--gold);border-radius:2px;font-style:italic;box-shadow:var(--shadow);}
-  blockquote p{margin:0;}
-  blockquote cite{display:block;margin-top:.6rem;font-style:normal;
-    font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.08em;
-    text-transform:uppercase;color:var(--ink-soft);}
+  .tiles{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));margin:1.5rem 0 0;}
+  .tile{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1rem 1.1rem;}
+  .tile .n{font-family:"IBM Plex Mono",monospace;font-size:1.5rem;color:var(--accent-ink);display:block;line-height:1;}
+  .tile .k{display:block;margin:.4rem 0 .15rem;font-size:.95rem;}
+  .tile .f{font-size:.85rem;color:var(--ink-soft);}
 
-  .rules{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin:1.6rem 0 0;}
-  .rule-card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1.1rem 1.15rem;}
-  .rule-card .n{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--gold-ink);display:block;margin-bottom:.4rem;}
-  .rule-card p{margin:.4rem 0 0;font-size:.95rem;color:var(--ink-soft);}
-  .rule-card .count{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--accent-ink);
-    display:block;margin-top:.6rem;}
+  ul.done{list-style:none;margin:1.3rem 0 0;padding:0;}
+  ul.done li{position:relative;padding:.6rem 0 .6rem 1.9rem;border-bottom:1px solid var(--rule);}
+  ul.done li:last-child{border-bottom:none;}
+  ul.done li::before{content:"✓";position:absolute;left:0;top:.6rem;color:var(--ok);font-size:1rem;}
+  ul.done .note{display:block;color:var(--ink-soft);font-size:.92rem;}
 
-  figure{margin:2.2rem 0 0;}
-  figure img{width:100%;max-width:100%;display:block;border:1px solid var(--rule);
-    border-radius:3px;background:var(--surface);}
-  figcaption{margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem .9rem;align-items:baseline;}
+  ol.items{list-style:none;counter-reset:item;margin:1.3rem 0 0;padding:0;}
+  ol.items li{counter-increment:item;position:relative;padding:.75rem 0 .75rem 2.7rem;
+    border-bottom:1px solid var(--rule);}
+  ol.items li:last-child{border-bottom:none;}
+  ol.items li::before{content:counter(item);position:absolute;left:0;top:.8rem;width:1.7rem;
+    text-align:right;font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--gold-ink);}
+  ol.items .note{display:block;color:var(--ink-soft);font-size:.92rem;}
+  ol.items[start-8]{}
+
+  .flag{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.12em;
+    text-transform:uppercase;border:1px solid currentColor;border-radius:2px;padding:.08rem .38rem;
+    white-space:nowrap;margin-left:.4rem;}
+  .flag.ok{color:var(--ok);} .flag.hold{color:var(--hold);} .flag.wait{color:var(--wait);}
+
+  .tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface);margin-top:1.3rem;}
+  table{border-collapse:collapse;width:100%;min-width:28rem;font-size:.94rem;}
+  thead th{text-align:left;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.66rem;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);padding:.7rem .9rem;
+    border-bottom:1px solid var(--rule-strong);white-space:nowrap;}
+  tbody td{padding:.55rem .9rem;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;color:var(--accent-ink);white-space:nowrap;}
+
+  figure{margin:2rem 0 0;}
+  figure img{width:100%;display:block;border:1px solid var(--rule);border-radius:3px;background:var(--surface);}
+  figcaption{margin-top:.65rem;display:flex;flex-wrap:wrap;gap:.35rem .9rem;align-items:baseline;}
   figcaption .pg{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;
     text-transform:uppercase;color:var(--ink-soft);}
-  figcaption .what{font-size:.95rem;color:var(--ink);flex:1 1 18rem;}
-  .flag{font-family:"IBM Plex Mono",monospace;font-size:.64rem;letter-spacing:.12em;
-    text-transform:uppercase;border:1px solid currentColor;border-radius:2px;padding:.1rem .4rem;}
-  .flag.ok{color:var(--ok);}
-  .flag.hold{color:var(--hold);}
+  figcaption .what{font-size:.94rem;color:var(--ink);flex:1 1 18rem;}
 
-  ol.asks{counter-reset:item;list-style:none;margin:1.4rem 0 0;padding:0;}
-  ol.asks li{counter-increment:item;position:relative;padding:.85rem 0 .85rem 2.6rem;
-    border-bottom:1px solid var(--rule);}
-  ol.asks li:last-child{border-bottom:none;}
-  ol.asks li::before{content:counter(item,decimal-leading-zero);position:absolute;left:0;top:.95rem;
-    font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--gold-ink);}
-  ol.asks .note{display:block;color:var(--ink-soft);font-size:.92rem;}
-
-  ol.phrases{columns:2 16rem;column-gap:2rem;margin:1rem 0 0;padding-left:1.4rem;}
+  ol.phrases{columns:2 15rem;column-gap:2rem;margin:1rem 0 0;padding-left:1.4rem;}
   ol.phrases li{break-inside:avoid;margin:0 0 .35rem;}
-  .ph-script{font-family:'Great Vibes',cursive;font-size:1.5rem;color:var(--accent-ink);}
-  .ph-lines{font-size:.9rem;color:var(--ink-soft);}
+  .ph-script{font-family:'Great Vibes',cursive;font-size:1.45rem;color:var(--accent-ink);}
+  .ph-lines{font-size:.88rem;color:var(--ink-soft);}
+
   footer{margin-top:3.2rem;padding-top:1.3rem;border-top:1px solid var(--rule-strong);
     font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;
     color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;}
 </style>
-
 </head>
 <body>
+
 <header class="masthead">
   <div class="inner">
-    <p class="eyebrow">Golden Jubilee Souvenir · 15 September 2026</p>
-    <h1>Jubilee Page Layouts</h1>
-    <p class="standfirst">Manoj's notes built into the page templates, shown as before and after on eight pages. His own background artwork now runs on every page except the front and back covers.</p>
-    <span class="status">Live on the souvenir site</span>
+    <p class="eyebrow">Golden Jubilee Souvenir · status, 18 September 2026</p>
+    <h1>Where the souvenir stands</h1>
+    <p class="standfirst">139 pages, 84 families. Manoj's page style, his cover and back cover are all in the book. What is left is content nobody has written yet, decisions waiting on Manoj, and proofreading.</p>
+    <div class="links">
+      <a href="https://mjoseph11.github.io/souvenir/">Open the souvenir</a>
+      <a href="preview-style.html">Preview copy</a>
+    </div>
   </div>
 </header>
 
 <div class="wrap">
 
   <section style="margin-top:2.4rem;">
-    <blockquote>
-      <p>"I can identify a texture in terms of cropping and maximizing, what meant was for example this is feel like there is space on top and bottom for both images landscape top and bottom might use up most space… When there is extra space on bottom maybe can use filler verses… we try picture on the top left writing maybe starts below and whole right side. Like inline"</p>
-      <cite>Manoj Chacko · WhatsApp · 15 Sept, 10:06–10:15 PM</cite>
-    </blockquote>
-    <p class="lede">So "texture" meant filling the page, not a background material. Three rules came out of it, and they are now part of the build rather than one-off edits — any new family page gets them automatically.</p>
-
-    <div class="rules">
-      <div class="rule-card">
-        <span class="n">Rule 1</span>
-        <h3>Filler verse</h3>
-        <p>Where a photo leaves a band at the bottom, a verse fills it, set larger than before. Eight verses rotate so neighbouring pages don't repeat.</p>
-        <span class="count">17 pages</span>
-      </div>
-      <div class="rule-card">
-        <span class="n">Rule 2</span>
-        <h3>Crop to fill</h3>
-        <p>The photo covers its whole box instead of letterboxing — but only where cropping cuts nobody off. Automatic centre-cropping fails on large groups, so it is opt-in per page.</p>
-        <span class="count">1 page so far</span>
-      </div>
-      <div class="rule-card">
-        <span class="n">Rule 3</span>
-        <h3>Inline</h3>
-        <p>Photo at the top left, writing starting below it and running down the whole right side, exactly as in the page he sent. It needs about 2,200 words&rsquo; worth of characters to fill both columns.</p>
-        <span class="count">2 pages</span>
-      </div>
-      <div class="rule-card">
-        <span class="n">Rule 4</span>
-        <h3>Photo takes the slack</h3>
-        <p>Where there is less writing than that, inline leaves the bottom third empty and pins the photo to one column. Instead the photo runs the full width and grows into whatever height the writing does not use, with the text in two bare columns below it.</p>
-        <span class="count">9 pages</span>
-      </div>
-      <div class="rule-card">
-        <span class="n">Also</span>
-        <h3>His own background</h3>
-        <p>On 16 September he sent the artwork itself — aged paper, gold and green leaf corners, the SGMOC building, a dove. It replaces the ornament I had drawn. It now runs on every page but the cover and back cover, with his plainer leaf version behind the text-heavy ones, and a gold rule with a centred diamond above each closing line.</p>
-        <span class="count">All pages but the covers</span>
-      </div>
+    <div class="tiles">
+      <div class="tile"><span class="n">25</span><span class="k">Pages unwritten</span><span class="f">Messages, clergy, history, ministries, activities, closing</span></div>
+      <div class="tile"><span class="n">73</span><span class="k">Pages unproofed</span><span class="f">No family has checked their own page yet</span></div>
+      <div class="tile"><span class="n">7</span><span class="k">Waiting on Manoj</span><span class="f">Covers, photos, header colour, phrases, three questions</span></div>
+      <div class="tile"><span class="n">2</span><span class="k">Sponsor ads</span><span class="f">The outline plans 8 to 10</span></div>
     </div>
   </section>
 
   <section>
     <div class="sec-head">
-      <span class="kicker">Before and after</span>
-      <h2>What the rules do to real pages</h2>
+      <span class="kicker">Done and published</span>
+      <h2>In the souvenir now</h2>
     </div>
-    <p class="lede">Left is the page as it stands today; right is the same page rebuilt. Page numbers are unchanged.</p>
+    <ul class="done">
+      <li><strong>Manoj's page style, on all 47 photo family pages</strong><span class="note">Main photo faded into the page, the others as tilted prints, a phrase each side, a verse at the foot. No photo is cropped.</span></li>
+      <li><strong>His PILGRIMAGE cover and his back cover</strong><span class="note">The back cover's zip was 19006; corrected to 19020 in the artwork, rebuilt from digits already in his design.</span></li>
+      <li><strong>His backgrounds, lightened</strong><span class="note">"The leaves are too bright" — mixed 55% toward the page cream, and the church left off until Shiju's versions arrive.</span></li>
+      <li><strong>Photo edges blended into the page</strong><span class="note">Gold borders gone. Family-designed pages keep their own look, with the white paper blended away.</span></li>
+      <li><strong>Every page from his 18 September list</strong><span class="note">Last-name order, Fr. Alexander Kurien with the clergy, the six April pages rebuilt, Biju Ittyachen rebuilt from its parts, Basil Milton and Jinu John inline, Joseph Abraham split over two pages, and the rest.</span></li>
+      <li><strong>8 new families</strong><span class="note">Ipe Maret, John Chacko, Mathew Kallelil, Mathew Kandathil, Dr. Mathew Mathew, Punnoose Mathai, Thomas M. George, Thomas O. Abraham.</span></li>
+      <li><strong>A. O. Abraham's photos, enhanced by Manoj</strong><span class="note">Checked against the originals: same people, sharper, nobody cut off.</span></li>
+      <li><strong>Verses readable over the background</strong><span class="note">A soft glow behind every verse and closing line.</span></li>
+    </ul>
+  </section>
 
-    <figure>
-      <img src="images/review/compare/babu-varghese.png?v=4" alt="The Babu Varghese Family page, before and after: the photo fills more of the page and a verse sits below it">
-      <figcaption>
-        <span class="pg">Page 58 · Babu Varghese</span>
-        <span class="what">The page he signed off on. Photo takes more of the page, verse set larger.</span>
-        <span class="flag ok">Settled</span>
-      </figcaption>
-    </figure>
+  <section>
+    <div class="sec-head">
+      <span class="kicker">Nobody has written these</span>
+      <h2>25 empty pages</h2>
+    </div>
+    <p class="lede">These are placeholder pages in the book today. The ministry ones need their ministry leads, so they are the ones to chase first.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Pages</th><th>What</th><th>Who</th></tr></thead>
+        <tbody>
+          <tr><td class="n">5</td><td>Messages — Catholicos, Metropolitan, Trustee, Secretary, Mayor / Governor</td><td>Fr. Shibu collects the hierarchs'</td></tr>
+          <tr><td class="n">2</td><td>Clergy — Fr. Eby Paulose, Fr. K. P. Varghese</td><td>—</td></tr>
+          <tr><td class="n">2</td><td>History — Orthodox Church in India, Orthodox Church in Philadelphia</td><td>Manoj &amp; Shiju</td></tr>
+          <tr><td class="n">8</td><td>Ministries — Sunday School 2nd page, MMVS, MGOCSM, Logos, GROW, Good Samaritan, Choir, Acolytes</td><td>Ministry leads</td></tr>
+          <tr><td class="n">3</td><td>Church activities — Mission &amp; Charity, B3T / 5K / Harvest / Spikefest, Jubilee Celebrations</td><td>—</td></tr>
+          <tr><td class="n">2</td><td>Fr. Shibu — farewell message, fifteen years in pictures</td><td>—</td></tr>
+          <tr><td class="n">2</td><td>Closing — acknowledgements and souvenir team, church family group photo</td><td>Souvenir team</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-    <figure>
-      <img src="images/review/compare/manoj-samuel.png?v=4" alt="The Manoj Samuel Family page, before and after: the photo is cropped to fill the page">
-      <figcaption>
-        <span class="pg">Page 87 · Manoj Samuel</span>
-        <span class="what">Crop to fill, and the only page it is switched on for — three people, nobody lost.</span>
-        <span class="flag ok">Settled</span>
-      </figcaption>
-    </figure>
+  <section>
+    <div class="sec-head">
+      <span class="kicker">Waiting on Manoj</span>
+      <h2>Seven things to answer</h2>
+    </div>
+    <ol class="items">
+      <li><strong>Full-resolution covers</strong><span class="note">Both are 1066 × 1600, about 125 dpi at page size. Print wants around 2550 × 3300. Correcting 19006 → 19020 in the source file would save redoing the patch.</span></li>
+      <li><strong>Jessu Joys</strong><span class="note">Which photo is the family and which is the memorial, so the halves can be arranged as asked.</span></li>
+      <li><strong>"Varghese family"</strong><span class="note">From his list — Babu, George, John, Mathew or Sujith?</span></li>
+      <li><strong>The Mathew family</strong><span class="note">He said he would clarify after speaking to them.</span></li>
+      <li><strong>Three sets of photos</strong><span class="note">Thomas O. Abraham, Yohannan Sankarathil, and Biju's photo for the Mathew Ninan memorial section.</span></li>
+      <li><strong>The header and footer colour</strong><span class="note">Nine options below, each on a real page. The book is on Classic Maroon until he picks.</span></li>
+      <li><strong>The phrases</strong><span class="note">36 below. Which to cut, and any to add.</span></li>
+    </ol>
+  </section>
 
+  <section>
+    <div class="sec-head">
+      <span class="kicker">Decision 1</span>
+      <h2>Nine header and footer colours</h2>
+    </div>
+    <p class="lede">His nine options, each on the same page, with colours sampled from his sheet. Light Ivory and Champagne use the maroon line seal; the gold one would disappear on them.</p>
     <figure>
-      <img src="images/review/compare/george-varghese.png?v=4" alt="The George Varghese Family page, before and after: photo kept whole with a verse added below">
+      <img src="images/review/compare/header-options.jpg?v=1" alt="Nine header and footer colour options shown on the Rajan Mathew page">
       <figcaption>
-        <span class="pg">Page 72 · George Varghese</span>
-        <span class="what">A large group, so the photo stays whole and a verse fills the space instead.</span>
-        <span class="flag ok">Settled</span>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/review/compare/a-o-abraham.png?v=4" alt="The A. O. Abraham Family page, before and after: both photos enlarged with a verse below">
-      <figcaption>
-        <span class="pg">Page 48 · A. O. Abraham</span>
-        <span class="what">Both submissions are photographs of framed prints, so the frame rail, mat and glare are now cropped away at source, and the two photos stack instead of sitting side by side — each about 4.4in tall rather than 3.1in wide, with nobody cut off. On his background. Still short of his own version, whose photos are portrait because he worked from the family's original files rather than our photographs of the frames.</span>
-        <span class="flag hold">Wants the original files</span>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/review/compare/jacob-george.png?v=4" alt="The Jacob George Family page, before and after: both photos enlarged with a verse below">
-      <figcaption>
-        <span class="pg">Page 75 · Jacob George</span>
-        <span class="what">The page he named. Automatic cropping deleted the baby from the left photo and halved a woman at the edge of the right one.</span>
-        <span class="flag hold">Needs a hand-picked crop</span>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/review/compare/betcy-allen.png?v=4" alt="The Betcy Allen Family page, before and after: photo top left with text flowing beside and below it">
-      <figcaption>
-        <span class="pg">Page 60 · Betcy Allen</span>
-        <span class="what">Inline — the example he sent, rebuilt from our own content.</span>
-        <span class="flag ok">Settled</span>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/review/compare/korah-mani.png?v=4" alt="The Korah Mani Family page, before and after: photo top left with the full narrative flowing around it">
-      <figcaption>
-        <span class="pg">Page 83 · Korah Mani</span>
-        <span class="what">Inline — and it answers the question uncle asked on 5 August. All 445 words now fit at the normal 10pt, instead of squeezed into small type.</span>
-        <span class="flag ok">Settled</span>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/review/compare/v-s-mathew.png?v=4" alt="The V. S. Mathew Family page, before and after: photo top left with text flowing beside and below it">
-      <figcaption>
-        <span class="pg">Page 118 · V. S. Mathew</span>
-        <span class="what">Photo across the full width, writing in two columns beneath it. Inline was tried here first and was wrong: 1,537 characters left the bottom third bare and held the photo to column width. Their second page, p119, was reset at the same time — larger type, no box, filling the page.</span>
-        <span class="flag ok">Redone</span>
+        <span class="pg">Page 109 · nine options</span>
+        <span class="what">On option 9 the footer text on the right fades into the gold end of the blend, so that would need a darker footer colour.</span>
       </figcaption>
     </figure>
   </section>
 
   <section>
     <div class="sec-head">
-      <span class="kicker">Asked 16 September, 9:54 PM</span>
-      <h2>Two header and footer colour schemes</h2>
+      <span class="kicker">Decision 2</span>
+      <h2>The phrases on the family pages</h2>
     </div>
-    <blockquote>
-      <p>"I want to see how this looks can you try two different versions for the header footer. 1. Empowering the present section as the background and text color as the color for the text. We can use maroon logo for the logo. 2. Pilgrimage text color as the background and one these lighter brown or gold color for text."</p>
-      <cite>Manoj Chacko · WhatsApp · 16 Sept, 9:54 PM</cite>
-    </blockquote>
-    <p class="lede">Both sets of colours are sampled from the PILGRIMAGE poster he sent: the champagne of the "Empowering the present" ribbon with its maroon lettering, and the burgundy of the PILGRIMAGE wordmark with the gold of its scrollwork. Only the bars change — nothing else on the page moves. <strong>Neither is applied to the souvenir</strong>; this page is the only place they exist.</p>
-
-    <div class="rules">
-      <div class="rule-card">
-        <span class="n">Variant 1</span>
-        <h3>Champagne bars</h3>
-        <p>Background #F0DCB8 with #74181C type, and the seal in maroon line art instead of gold — the gold seal is a sculpted relief, so tinting that one turns to mud at this size. It inverts today's scheme: light bars, dark type. Worth noticing that the champagne sits close in tone to the cream page, so the pages lose some of their framing.</p>
-        <span class="count">Not applied</span>
-      </div>
-      <div class="rule-card">
-        <span class="n">Variant 2</span>
-        <h3>Burgundy bars</h3>
-        <p>Background #701820 with #CC9C48 type, gold seal unchanged. The same light-on-dark arrangement as today, but his warmer burgundy rather than our #6B0000 and a deeper gold than #F0C040. That gold on that burgundy is about 3.9:1 — comfortable at the 18pt title, marginal on the 8pt footer line.</p>
-        <span class="count">Not applied</span>
-      </div>
-    </div>
-
-    <figure>
-      <img src="images/review/compare/headers-p48.png" alt="Header and footer bars of page 48 in the current scheme, variant 1 and variant 2">
-      <figcaption>
-        <span class="pg">Page 48 · a photo page</span>
-        <span class="what">Current, then both variants. Header bar, sponsor band and footer for each.</span>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/review/compare/headers-p83.png" alt="Header and footer bars of page 83 in the current scheme, variant 1 and variant 2">
-      <figcaption>
-        <span class="pg">Page 83 · a writing page</span>
-        <span class="what">The same three, against the plain leaf background rather than the church one.</span>
-      </figcaption>
-    </figure>
+    <p class="lede">Every photo family page carries two of these, never the same word twice on a page. Strike out any that should go and add your own; the rest spread across the book.</p>
+    <ol class="phrases">
+      <li><span class="ph-script">Together</span> <span class="ph-lines">We are · truly blessed</span></li>
+      <li><span class="ph-script">Faith</span> <span class="ph-lines">Family blessings · through every season</span></li>
+      <li><span class="ph-script">Family</span> <span class="ph-lines">Rooted in faith · blessed together</span></li>
+      <li><span class="ph-script">Grateful</span> <span class="ph-lines">For the past · for the present · for the future</span></li>
+      <li><span class="ph-script">Family</span> <span class="ph-lines">A circle of strength · a lifetime of blessings</span></li>
+      <li><span class="ph-script">Family</span> <span class="ph-lines">Faith · love · together always</span></li>
+      <li><span class="ph-script">Families</span> <span class="ph-lines">are blessings · from God</span></li>
+      <li><span class="ph-script">Blessed</span> <span class="ph-lines">Fifty years · in His house</span></li>
+      <li><span class="ph-script">Thankful</span> <span class="ph-lines">For every · Sunday together</span></li>
+      <li><span class="ph-script">Love</span> <span class="ph-lines">Bears all things · hopes all things</span></li>
+      <li><span class="ph-script">Hope</span> <span class="ph-lines">An anchor · for the soul</span></li>
+      <li><span class="ph-script">Joy</span> <span class="ph-lines">In His presence · is fullness of joy</span></li>
+      <li><span class="ph-script">Grace</span> <span class="ph-lines">Sufficient · for every day</span></li>
+      <li><span class="ph-script">Peace</span> <span class="ph-lines">That passes · all understanding</span></li>
+      <li><span class="ph-script">Generations</span> <span class="ph-lines">Of faith · handed down in love</span></li>
+      <li><span class="ph-script">Rooted</span> <span class="ph-lines">In love · growing in faith</span></li>
+      <li><span class="ph-script">Home</span> <span class="ph-lines">Where faith begins · and love never ends</span></li>
+      <li><span class="ph-script">Heritage</span> <span class="ph-lines">Of faith · from Malankara · to Bensalem</span></li>
+      <li><span class="ph-script">Worship</span> <span class="ph-lines">Together · in one Spirit</span></li>
+      <li><span class="ph-script">Community</span> <span class="ph-lines">One church · one family</span></li>
+      <li><span class="ph-script">Journey</span> <span class="ph-lines">Walking in faith · side by side</span></li>
+      <li><span class="ph-script">Gratitude</span> <span class="ph-lines">For God's · faithfulness</span></li>
+      <li><span class="ph-script">Unity</span> <span class="ph-lines">Bound together · in His love</span></li>
+      <li><span class="ph-script">Blessings</span> <span class="ph-lines">Counted · one by one</span></li>
+      <li><span class="ph-script">Serve</span> <span class="ph-lines">The Lord · with gladness</span></li>
+      <li><span class="ph-script">Praise</span> <span class="ph-lines">His name · for all He has done</span></li>
+      <li><span class="ph-script">Legacy</span> <span class="ph-lines">Of love · and prayer</span></li>
+      <li><span class="ph-script">Faithful</span> <span class="ph-lines">Yesterday · today and forever</span></li>
+      <li><span class="ph-script">Pilgrims</span> <span class="ph-lines">On the way · together</span></li>
+      <li><span class="ph-script">Love</span> <span class="ph-lines">Never fails</span></li>
+      <li><span class="ph-script">Prayer</span> <span class="ph-lines">The family · that prays together</span></li>
+      <li><span class="ph-script">Celebrate</span> <span class="ph-lines">Fifty years · of God's goodness</span></li>
+      <li><span class="ph-script">Trust</span> <span class="ph-lines">In the Lord · with all your heart</span></li>
+      <li><span class="ph-script">Light</span> <span class="ph-lines">A lamp to our feet · a light to our path</span></li>
+      <li><span class="ph-script">Abide</span> <span class="ph-lines">In His love · and bear fruit</span></li>
+      <li><span class="ph-script">Glory</span> <span class="ph-lines">To God · for all things</span></li>
+    </ol>
   </section>
 
   <section>
     <div class="sec-head">
-      <span class="kicker">Asked 17 September, 12:12 PM</span>
-      <h2>His page style on every family page</h2>
+      <span class="kicker">Proofreading</span>
+      <h2>Nobody has checked their own page</h2>
     </div>
-    <blockquote>
-      <p>"Suchins Photo looks like if we can use that to generate all member page it would be nice maybe we can come up with a bunch of quote separately selects the ones we like and feed it separately to randmly put on pages."</p>
-      <cite>Manoj Chacko · WhatsApp · 17 Sept, 12:12 PM</cite>
-    </blockquote>
-    <p class="lede">All 47 family pages made of photos are now built this way: the main photo faded into the page, the others as tilted prints, a phrase in script on each side, and a verse. No photo is cropped; each one sits in a frame the shape of the photo. Pages the families designed themselves, and pages with writing or memorials, keep their layout. The photos on them fade into the page too. Both of his new backgrounds are used: the plain leaves behind every page, and the faint church and dove behind the photo pages. <strong>This is a preview. The souvenir itself is unchanged.</strong></p>
-    <p><a href="preview-style.html">Open the whole book in the new style</a></p>
+    <ol class="items">
+      <li><strong>73 pages still say "Proof copy"</strong><span class="note">The tag comes off a page once the family has read it. How do we want to send them out — a PDF each, or the link with page numbers?</span></li>
+      <li><strong>8 pages say "Pending review"</strong><span class="note">V. S. Mathew, Baboo George, Blossom Joy, V. C. Thomas, P. V. Thomas, Thomas Mammen. Their text came from Writing/Editing and is still being reviewed.</span></li>
+      <li><strong>Thankamoni John's memorial</strong><span class="note">Still reads "[Name to be confirmed with the family]".</span></li>
+      <li><strong>Jacob George's photos</strong><span class="note">Cropping them automatically lost the baby and cut a woman at the edge, so they are whole. A hand-picked crop would fill the page better.</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="kicker">How the family pages work now</span>
+      <h2>The style, on real pages</h2>
+    </div>
     <figure>
       <img src="images/review/compare/styled-pages.jpg?v=1" alt="Twenty family pages in the new style">
       <figcaption>
-        <span class="pg">The first 20 of 47 pages</span>
-        <span class="what">Rajan Mathew now has uncle and auntie as the main photo, with the children's family below, as he asked. Every page always gets the same two phrases, and never the same word twice.</span>
-        <span class="flag hold">Waiting on Manoj</span>
+        <span class="pg">20 of the 47</span>
+        <span class="what">Every photo family page is built this way. Pages with writing keep their layout, and pages families designed themselves are left as they sent them.</span>
       </figcaption>
     </figure>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">For Manoj to choose from</span>
-      <h2>The phrases</h2>
-    </div>
-    <p class="lede">These are the 36 phrases the pages draw from. Strike out any that shouldn't be used and suggest new ones. The build spreads whatever is left across the pages.</p>
-    <ol class="phrases">
-        <li><span class="ph-script">Together</span> <span class="ph-lines">We are · truly blessed</span></li>
-        <li><span class="ph-script">Faith</span> <span class="ph-lines">Family blessings · through every season</span></li>
-        <li><span class="ph-script">Family</span> <span class="ph-lines">Rooted in faith · blessed together</span></li>
-        <li><span class="ph-script">Grateful</span> <span class="ph-lines">For the past · for the present · for the future</span></li>
-        <li><span class="ph-script">Family</span> <span class="ph-lines">A circle of strength · a lifetime of blessings</span></li>
-        <li><span class="ph-script">Family</span> <span class="ph-lines">Faith · love · together always</span></li>
-        <li><span class="ph-script">Families</span> <span class="ph-lines">are blessings · from God</span></li>
-        <li><span class="ph-script">Blessed</span> <span class="ph-lines">Fifty years · in His house</span></li>
-        <li><span class="ph-script">Thankful</span> <span class="ph-lines">For every · Sunday together</span></li>
-        <li><span class="ph-script">Love</span> <span class="ph-lines">Bears all things · hopes all things</span></li>
-        <li><span class="ph-script">Hope</span> <span class="ph-lines">An anchor · for the soul</span></li>
-        <li><span class="ph-script">Joy</span> <span class="ph-lines">In His presence · is fullness of joy</span></li>
-        <li><span class="ph-script">Grace</span> <span class="ph-lines">Sufficient · for every day</span></li>
-        <li><span class="ph-script">Peace</span> <span class="ph-lines">That passes · all understanding</span></li>
-        <li><span class="ph-script">Generations</span> <span class="ph-lines">Of faith · handed down in love</span></li>
-        <li><span class="ph-script">Rooted</span> <span class="ph-lines">In love · growing in faith</span></li>
-        <li><span class="ph-script">Home</span> <span class="ph-lines">Where faith begins · and love never ends</span></li>
-        <li><span class="ph-script">Heritage</span> <span class="ph-lines">Of faith · from Malankara · to Bensalem</span></li>
-        <li><span class="ph-script">Worship</span> <span class="ph-lines">Together · in one Spirit</span></li>
-        <li><span class="ph-script">Community</span> <span class="ph-lines">One church · one family</span></li>
-        <li><span class="ph-script">Journey</span> <span class="ph-lines">Walking in faith · side by side</span></li>
-        <li><span class="ph-script">Gratitude</span> <span class="ph-lines">For God&#x27;s · faithfulness</span></li>
-        <li><span class="ph-script">Unity</span> <span class="ph-lines">Bound together · in His love</span></li>
-        <li><span class="ph-script">Blessings</span> <span class="ph-lines">Counted · one by one</span></li>
-        <li><span class="ph-script">Serve</span> <span class="ph-lines">The Lord · with gladness</span></li>
-        <li><span class="ph-script">Praise</span> <span class="ph-lines">His name · for all He has done</span></li>
-        <li><span class="ph-script">Legacy</span> <span class="ph-lines">Of love · and prayer</span></li>
-        <li><span class="ph-script">Faithful</span> <span class="ph-lines">Yesterday · today and forever</span></li>
-        <li><span class="ph-script">Pilgrims</span> <span class="ph-lines">On the way · together</span></li>
-        <li><span class="ph-script">Love</span> <span class="ph-lines">Never fails</span></li>
-        <li><span class="ph-script">Prayer</span> <span class="ph-lines">The family · that prays together</span></li>
-        <li><span class="ph-script">Celebrate</span> <span class="ph-lines">Fifty years · of God&#x27;s goodness</span></li>
-        <li><span class="ph-script">Trust</span> <span class="ph-lines">In the Lord · with all your heart</span></li>
-        <li><span class="ph-script">Light</span> <span class="ph-lines">A lamp to our feet · a light to our path</span></li>
-        <li><span class="ph-script">Abide</span> <span class="ph-lines">In His love · and bear fruit</span></li>
-        <li><span class="ph-script">Glory</span> <span class="ph-lines">To God · for all things</span></li>
-    </ol>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">Sent 17 September, 12:17 PM</span>
-      <h2>His nine header and footer colours</h2>
-    </div>
-    <p class="lede">The nine options from his sheet, each put on the same real page (Rajan Mathew) with colours sampled from his image. Light Ivory and Champagne use the maroon line seal. The gold seal would disappear on them. <strong>Not applied to the souvenir.</strong></p>
-    <figure>
-      <img src="images/review/compare/header-options.jpg?v=1" alt="Nine header and footer colour options on the Rajan Mathew page">
-      <figcaption>
-        <span class="pg">Page 109 · nine options</span>
-        <span class="what">On option 9 the footer text on the right fades into the gold end of the blend. If he picks it, the footer text needs a darker colour on that side.</span>
-        <span class="flag hold">Waiting on Manoj</span>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">Sent 17 September, 12:13 PM</span>
-      <h2>A. O. Abraham, enhanced</h2>
-    </div>
-    <p class="lede">He cleaned up both photos with his enhancer app. Compared side by side with the originals: the same people, sharper and brighter, nobody cut off, and no faces changed. They are now in the souvenir on page 48.</p>
-    <figure>
-      <img src="images/review/compare/aoa-enhanced.jpg?v=1" alt="A. O. Abraham photos, original beside enhanced">
-      <figcaption>
-        <span class="pg">Page 48 · A. O. Abraham</span>
-        <span class="what">Left: our crop of the photographs of framed prints. Right: his enhanced versions.</span>
-        <span class="flag ok">In the souvenir</span>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">Asked 17 September, 6:54 AM</span>
-      <h2>Version 1 on full pages</h2>
-    </div>
-    <blockquote>
-      <p>"I think light version looks good but can we see it in whole page with body to see which flows better?"</p>
-      <cite>Manoj Chacko · WhatsApp · 17 Sept, 6:54 AM</cite>
-    </blockquote>
-    <p class="lede">The same three pages in the current colours and in version 1: a family photo page, a writing page, and a hand-built ministry page. Only the header, sponsor band and footer change. <strong>Not applied to the souvenir.</strong></p>
-    <figure>
-      <img src="images/review/compare/v1-fullpages.jpg" alt="Babu Varghese, Korah Mani and Sunday School pages, current colours beside version 1">
-      <figcaption>
-        <span class="pg">Pages 58, 87 and 28</span>
-        <span class="what">Left: current maroon. Right: version 1. With the light bars the pages feel softer and the leaf artwork carries more of the page, but the top and bottom edges of each page are less defined.</span>
-        <span class="flag hold">Waiting on Manoj</span>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">Asked 17 September, 6:54 AM</span>
-      <h2>Photo edges faded into the page</h2>
-    </div>
-    <blockquote>
-      <p>"All member pages when being generated ask to blend photo edges to the page which will remove the borders."</p>
-      <cite>Manoj Chacko · WhatsApp · 17 Sept, 6:54 AM</cite>
-    </blockquote>
-    <p class="lede">The gold border is removed and each photo fades into the background over its outer edge. It is one stylesheet change, so it can go on every family page at once. The photos themselves are not altered. <strong>Not applied to the souvenir.</strong></p>
-    <figure>
-      <img src="images/review/compare/fade-pages.jpg" alt="A. O. Abraham, Suchin Thompson, Babu Varghese and Ipe Maret pages with gold borders beside faded edges">
-      <figcaption>
-        <span class="pg">Pages 48, 115, 58 and 73</span>
-        <span class="what">Left: gold borders. Right: faded edges. It suits most pages. The one thing to watch is people standing right at the edge of a photo. On Ipe Maret the heads at the top and on Babu Varghese the man on the far left soften slightly. Those pages can keep a narrower fade.</span>
-        <span class="flag hold">Waiting on Manoj</span>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">Sent 16 September, 11:37 PM</span>
-      <h2>His page style, rebuilt from the original photos</h2>
-    </div>
-    <p class="lede">Manoj designed eight pages in a new style: the main photo faded into the background, smaller photos tilted and overlapping, short phrases in script on each side, and a verse. His images can't go into the book directly. At about 130 dpi they would print soft, the header and page number are part of the image, and the photos were redrawn by ChatGPT. Here is the Suchin Thompson page rebuilt the same way, using the family's own unaltered photos at full resolution.</p>
-    <figure>
-      <img src="images/review/compare/suchin-style.jpg" alt="Manoj's Suchin Thompson page beside the same layout rebuilt from the family's original photos">
-      <figcaption>
-        <span class="pg">Page 115 · Suchin Thompson</span>
-        <span class="what">Left: his design. Right: rebuilt from the originals. The script phrases are his wording, not the family's, so they need the family's approval. The verse and closing sit on a soft glow so they stay readable over the church drawing. Not applied to the souvenir yet.</span>
-        <span class="flag hold">Waiting on Manoj</span>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <span class="kicker">Still needs a person</span>
-      <h2>What I could not decide automatically</h2>
-    </div>
-    <ol class="asks">
-      <li><strong>Two crops need choosing by hand</strong><span class="note">A. O. Abraham and Jacob George. Cropping there is a judgment about which faces may leave the frame — tell me the crop and it takes a minute, or Manoj can send his cropped files.</span></li>
-      <li><strong>Which background, and where?</strong><span class="note">He sent eight variants — dove or cross, the SGMOC building or a domed church, and one plain leaf version. The dove-and-church one is on the photo pages and the plain leaf behind the writing; the ministry pages still take the church version, which is heavy behind a dense layout like Sunday School.</span></li>
-      <li><strong>Duplicate photos</strong><span class="note">Still waiting on his list, and on the revised pictures he mentioned.</span></li>
-      <li><strong>The seven April pages</strong><span class="note">Unanswered from last night: rebuild them on the new templates, and do the family-designed colour pages stay as submitted?</span></li>
-    </ol>
   </section>
 
   <footer>
     <span>St. Gregorios Malankara Orthodox Church · Bensalem, PA</span>
-    <span>132 pages · 76 families</span>
-    <span>Layout and verified-facts checks passing</span>
+    <span>139 pages · 84 families</span>
+    <span>Updated 18 September 2026</span>
   </footer>
 </div>
-
 </body>
 </html>
