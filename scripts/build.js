@@ -357,7 +357,12 @@ for (const section of outline.sections) {
   contents.push({ section: section.name });
   for (const item of section.items) {
     let added;
-    if (item.file) added = [{ html: read(item.file), label: item.label }];
+    if (item.file) {
+      // STYLE=manoj uses src/pages/<name>-styled.html where one exists (e.g. the cover).
+      const styledFile = item.file.replace(/\.html$/, '-styled.html');
+      const file = STYLE && fs.existsSync(path.join(root, styledFile)) ? styledFile : item.file;
+      added = [{ html: read(file), label: item.label }];
+    }
     else if (item.placeholder) added = [{ html: placeholderPage(item), label: `PLACEHOLDER: ${item.placeholder.title}` }];
     else if (item.generated) {
       const g = item.generated;
