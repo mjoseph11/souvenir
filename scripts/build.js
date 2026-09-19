@@ -233,9 +233,11 @@ function styledBody(m, pg) {
   const out = [];
   let wm, hm, beside;
 
+  // "photoScale": trim the main photo a little, e.g. to lift its print resolution
+  const pscale = Number(m.photoScale) > 0 ? Number(m.photoScale) : 1;
   if (noWords) {                                   // no phrases: fill the width
-    const maxH = sides.length ? 5.6 : avail - 0.15;
-    wm = Math.min(W, maxH * a); hm = wm / a; beside = false;
+    const maxH = (sides.length ? 5.6 : avail - 0.15) * pscale;
+    wm = Math.min(W * pscale, maxH * a); hm = wm / a; beside = false;
   } else if (a <= 1.1) {                           // portrait or square main: phrases beside it
     const maxH = sides.length ? 5.1 : avail - 0.2;
     wm = Math.min(4.5, maxH * a); hm = wm / a; beside = true;
