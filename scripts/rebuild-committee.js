@@ -20,7 +20,8 @@ const grid5 = (cards) => `<div style="display:grid;grid-template-columns:repeat(
 const execCards = [
   card('mathew-kurian.jpg',  'Mathew Kurian',   'Secretary'),
   card('santosh-ninan.png',  'Santosh Ninan',   'Joint Secretary'),
-  card('reji-ninan.png',     'Reji Ninan',      'Treasurer'),
+  // Photo file is still named reji-ninan.png; Reji is the same man as Thomas Ninan.
+  card('reji-ninan.png',     'Thomas Ninan',    'Treasurer'),
   card('manoj-chacko.jpeg',  'Manoj Chacko',    'Joint Treasurer'),
 ].join('');
 

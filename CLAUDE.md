@@ -116,7 +116,7 @@ Book structure (126 pages as of 2026-09-14): Front (messages, leadership, clergy
 |------|------|
 | Secretary | Mathew Kurian |
 | Joint Secretary | Santosh Ninan |
-| Treasurer | Reji Ninan |
+| Treasurer | Thomas Ninan (a.k.a. Reji Ninan; Trustee is the same office) |
 | Joint Treasurer | Manoj Chacko |
 
 **Board:** Jessy Mathai, Joseph Abraham, Lee K. George, Raju Varghese, Thomas Joseph, Yohannan Mathai
