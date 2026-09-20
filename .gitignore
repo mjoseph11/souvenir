@@ -1,2 +1,4 @@
 .claude/
 .drive-cache/
+# Generated proofs (scripts/member-pdfs.js) — hundreds of MB, rebuildable.
+build/
