@@ -639,7 +639,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/joseph-abraham-2-pages/pic-1.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/couple.jpg"
                 }
               ]
             },
@@ -654,13 +654,13 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/joseph-abraham-2-pages/pic-2.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/family-1.jpg"
                 },
                 {
-                  "src": "images/members/joseph-abraham-2-pages/pic-3.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/family-2.jpg"
                 },
                 {
-                  "src": "images/members/joseph-abraham-2-pages/pic-4.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/family-3.jpg"
                 }
               ]
             },
@@ -670,7 +670,8 @@
           ]
         }
       ],
-      "sort": "Abraham Joseph "
+      "sort": "Abraham Joseph ",
+      "layoutNote": "Manoj: page 1 is Joseph and auntie; page 2 is the family, older on top and younger below. family-1 to 3 run oldest children to youngest."
     },
     {
       "id": "manoj-samuel",
