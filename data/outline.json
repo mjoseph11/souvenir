@@ -93,7 +93,7 @@
         { "placeholder": { "title": "Logos Ministry", "heading": "Logos — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo and activities." } },
         { "file": "src/pages/ministry-grow.html", "label": "MINISTRY: GROW", "toc": "GROW" },
         { "placeholder": { "title": "GROW", "heading": "GROW — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo and activities." } },
-        { "placeholder": { "title": "Choir", "heading": "Our Choir", "pages": "1 picture or collage page", "note": "Choir photographs to be collected." }, "toc": "Choir" },
+        { "file": "src/pages/ministry-choir.html", "label": "MINISTRY: CHOIR", "toc": "Choir" },
         { "placeholder": { "title": "Acolytes", "heading": "Our Acolytes", "pages": "1 picture or collage page", "note": "Acolyte photographs to be collected." }, "toc": "Acolytes" }
       ]
     },
