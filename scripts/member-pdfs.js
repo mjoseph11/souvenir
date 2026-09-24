@@ -37,6 +37,9 @@ if (!chrome) {
 }
 
 const only = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).toLowerCase();
+// --pages=1,24,77 puts those book pages in one PDF instead, for a print sample.
+const pagesArg = (process.argv.find((a) => a.startsWith('--pages=')) || '').slice(8);
+const outArg = (process.argv.find((a) => a.startsWith('--out=')) || '').slice(6);
 
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 
@@ -84,6 +87,40 @@ const pages = marks.map((mk, i) => ({
   label: mk.label,
   html: html.slice(mk.end, i + 1 < marks.length ? marks[i + 1].start : html.length),
 }));
+
+/* ── --pages: an arbitrary selection, in one PDF ── */
+
+if (pagesArg) {
+  const want = pagesArg.split(',').map((s) => s.trim());
+  const picked = [];
+  for (const w of want) {
+    const p = pages.find((x) => x.label === 'BACK COVER'
+      ? w.toLowerCase() === 'back'
+      : x.label.startsWith(`PAGE ${w} —`));
+    if (!p) {
+      console.error(`No page "${w}" in index.html.`);
+      process.exit(2);
+    }
+    picked.push(p);
+  }
+
+  const out = path.resolve(root, outArg || 'build/sample.pdf');
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  const tmp = path.join(root, `.sample-${process.pid}.html`);
+  fs.writeFileSync(tmp, preamble + picked.map((p) => p.html).join('\n') + tail, 'utf8');
+  try {
+    execFileSync(chrome,
+      ['--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files',
+       '--virtual-time-budget=30000', '--no-pdf-header-footer', `--print-to-pdf=${out}`, tmp],
+      { stdio: 'pipe', timeout: 180000 });
+  } finally {
+    fs.rmSync(tmp, { force: true });
+  }
+  console.log(`${picked.length} pages -> ${path.relative(root, out)} ` +
+              `(${Math.round(fs.statSync(out).size / 1024)} KB)`);
+  for (const p of picked) console.log(`   ${p.label}`);
+  process.exit(0);
+}
 
 /* ── Group the member pages by family ── */
 
