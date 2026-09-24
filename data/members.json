@@ -349,16 +349,15 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/arun-raju/Pic-1-Aswathi-John.jpg"
+                  "src": "images/members/arun-raju/pic-1.jpg"
                 },
                 {
-                  "src": "images/members/arun-raju/Picture-2-Aswathi-John.jpg"
+                  "src": "images/members/arun-raju/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/arun-raju/pic-3.jpg"
                 }
-              ],
-              "arrange": "stack"
-            },
-            {
-              "type": "closing"
+              ]
             }
           ]
         }
@@ -1235,12 +1234,28 @@
           "blocks": [
             {
               "type": "photos",
+              "grow": 1,
               "photos": [
                 {
-                  "src": "images/members/thomas-cheriyan-manoj/Thomas-Cheriyan-Thomas-Cheriyan.jpg"
+                  "src": "images/members/thomas-cheriyan-manoj/pic-1.jpg"
                 }
-              ],
-              "plain": true
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Heartfelt congratulations to SGMOC on its Golden Jubilee, celebrating 50 blessed years of faithful service, spiritual growth, and God’s abundant grace.",
+              "center": true,
+              "bare": true,
+              "size": "lg"
+            },
+            {
+              "type": "photos",
+              "grow": 1,
+              "photos": [
+                {
+                  "src": "images/members/thomas-cheriyan-manoj/pic-2.jpg"
+                }
+              ]
             }
           ]
         }
