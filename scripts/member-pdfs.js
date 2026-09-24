@@ -21,6 +21,12 @@ const root = path.resolve(__dirname, '..');
 const outDir = path.join(root, 'build', 'member-pdfs');
 const workDir = path.join(root, 'build', '.member-pdf-work');
 
+// A throwaway profile per run. Without it Chrome serves images from its disk
+// cache, so a replaced file:// asset (a re-exported background, say) silently
+// prints at the old resolution.
+const profile = fs.mkdtempSync(path.join(require('os').tmpdir(), 'souvenir-pdf-'));
+process.on('exit', () => fs.rmSync(profile, { recursive: true, force: true }));
+
 const candidates = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -110,7 +116,7 @@ if (pagesArg) {
   fs.writeFileSync(tmp, preamble + picked.map((p) => p.html).join('\n') + tail, 'utf8');
   try {
     execFileSync(chrome,
-      ['--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files',
+      ['--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files', `--user-data-dir=${profile}`, '--disk-cache-size=1',
        '--virtual-time-budget=30000', '--no-pdf-header-footer', `--print-to-pdf=${out}`, tmp],
       { stdio: 'pipe', timeout: 180000 });
   } finally {
@@ -165,7 +171,7 @@ list.forEach((g, i) => {
   try {
     execFileSync(
       chrome,
-      ['--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files',
+      ['--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files', `--user-data-dir=${profile}`, '--disk-cache-size=1',
        '--virtual-time-budget=30000', '--no-pdf-header-footer',
        `--print-to-pdf=${pdf}`, tmp],
       { stdio: 'pipe', timeout: 120000 }
