@@ -2538,7 +2538,7 @@
           ]
         }
       ],
-      "sort": "Chacko John "
+      "sort": "Chacko John 1"
     },
     {
       "id": "ipe-maret",
@@ -2600,6 +2600,15 @@
           ]
         }
       ]
+    },
+    {
+      "id": "manoj-chacko",
+      "name": "Manoj Chacko",
+      "title": "The Manoj Chacko Family",
+      "partial": "src/pages/members/manoj-chacko.html",
+      "sort": "Chacko John 2",
+      "sortNote": "Manoj asked for the Chacko pages to run John, Manoj, James — not alphabetical — so these three carry explicit ordinals.",
+      "indexName": "Manoj Chacko"
     }
   ]
 }
