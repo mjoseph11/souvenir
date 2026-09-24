@@ -39,7 +39,7 @@
       "id": "dustin-paul",
       "name": "Dustin Paul",
       "approved": true,
-      "sort": "Paul Dustin ",
+      "sort": "Paul 2 Dustin",
       "pages": [
         {
           "blocks": [
@@ -186,15 +186,19 @@
       "id": "thomas-paul",
       "name": "Thomas Paul",
       "approved": true,
-      "sort": "Paul Thomas ",
+      "sort": "Paul 1 Thomas",
       "pages": [
         {
           "blocks": [
             {
               "type": "photos",
+              "arrange": "stack",
               "photos": [
                 {
-                  "src": "images/members/thomas-paul/photo.jpeg"
+                  "src": "images/members/thomas-paul/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/thomas-paul/pic-2.jpg"
                 }
               ]
             },
@@ -211,7 +215,8 @@
           ]
         }
       ],
-      "title": "The Thomas Paul Family"
+      "title": "The Thomas Paul Family",
+      "sortNote": "Manoj asked for Thomas Paul to come before Dustin Paul, so both Pauls carry explicit ordinals."
     },
     {
       "id": "a-o-abraham",
@@ -224,10 +229,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/a-o-abraham/dock-family-enhanced.jpg"
+                  "src": "images/members/abraham-o-abraham/pic-1.jpg"
                 },
                 {
-                  "src": "images/members/a-o-abraham/studio-portrait-enhanced.jpg"
+                  "src": "images/members/abraham-o-abraham/pic-2.jpg"
                 }
               ],
               "arrange": "stack"
@@ -634,7 +639,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/joseph-abraham-2-pages/WhatsApp-Image-2026-08-08-at-7-02-57-PM.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/pic-1.jpg"
                 }
               ]
             },
@@ -649,13 +654,13 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/joseph-abraham-2-pages/FullSizeRender.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/pic-2.jpg"
                 },
                 {
-                  "src": "images/members/joseph-abraham-2-pages/IMG-5720.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/pic-3.jpg"
                 },
                 {
-                  "src": "images/members/joseph-abraham-2-pages/4f5cfbbd-28ae-4828-9a3d-67fcc3016d3b-Copy.jpg"
+                  "src": "images/members/joseph-abraham-2-pages/pic-4.jpg"
                 }
               ]
             },
@@ -1152,7 +1157,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/biju-ittyachen/family.jpg"
+                  "src": "images/members/biju-ittyachen/pic-1.jpg"
                 }
               ]
             },
@@ -1210,10 +1215,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/george-m-mathew/photo1.jpg"
+                  "src": "images/members/george-m-mathew/pic-1.jpg"
                 },
                 {
-                  "src": "images/members/george-m-mathew/photo2.jpg"
+                  "src": "images/members/george-m-mathew/pic-2.jpg"
                 }
               ]
             },
@@ -1359,10 +1364,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/dr-poovathoor-koshy/WhatsApp-Image-2026-08-01-at-5-57-36-PM-1.jpg"
+                  "src": "images/members/dr-poovathoor-koshy/pic-1.jpg"
                 },
                 {
-                  "src": "images/members/dr-poovathoor-koshy/WhatsApp-Image-2026-08-01-at-5-57-36-PM.jpg"
+                  "src": "images/members/dr-poovathoor-koshy/pic-2.jpg"
                 }
               ],
               "arrange": "stack"
@@ -1648,7 +1653,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/matt-jacob-2-pages/Page-1-Golder-Jubilee-Matt-n-Shainey-Mat-J.jpg"
+                  "src": "images/members/matt-jacob-2-pages/pic-1.jpg"
                 }
               ],
               "plain": true
@@ -1661,10 +1666,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/matt-jacob-2-pages/Page-2-WhatsApp-Image-2026-07-19-at-10-54-43-PM.jpg"
+                  "src": "images/members/matt-jacob-2-pages/pic-2.jpg"
                 },
                 {
-                  "src": "images/members/matt-jacob-2-pages/Page-2-WhatsApp-Image-2026-07-19-at-10-54-43-PM-1.jpg"
+                  "src": "images/members/matt-jacob-2-pages/pic-3.jpg"
                 }
               ],
               "arrange": "stack"
@@ -1892,63 +1897,55 @@
       "title": "In Loving Memory",
       "pages": [
         {
-          "dark": true,
           "blocks": [
             {
-              "type": "memorial",
-              "name": "[Name to be confirmed with the family]"
+              "type": "photos",
+              "arrange": "row",
+              "grow": 1,
+              "photos": [
+                {
+                  "src": "images/members/thankamoni-john/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/thankamoni-john/pic-2.jpg"
+                }
+              ]
             },
             {
               "type": "photos",
+              "arrange": "row",
+              "grow": 1.35,
               "photos": [
                 {
-                  "src": "images/members/thankamoni-john/52486.jpg"
+                  "src": "images/members/thankamoni-john/pic-3.jpg"
                 },
                 {
-                  "src": "images/members/thankamoni-john/52487.jpg"
+                  "src": "images/members/thankamoni-john/center.jpg"
+                },
+                {
+                  "src": "images/members/thankamoni-john/pic-4.jpg"
                 }
-              ],
-              "arrange": "row",
-              "grow": 1
+              ]
             },
             {
               "type": "photos",
+              "arrange": "row",
+              "grow": 1,
               "photos": [
                 {
-                  "src": "images/members/thankamoni-john/WhatsApp-Image-2026-08-09-at-9-55-04-AM.jpg"
+                  "src": "images/members/thankamoni-john/pic-6.jpg"
                 },
                 {
-                  "src": "images/members/thankamoni-john/WhatsApp-Image-2026-08-09-at-9-55-34-AM.jpg"
+                  "src": "images/members/thankamoni-john/pic-5.jpg"
                 }
-              ],
-              "arrange": "row",
-              "grow": 1.6
-            },
-            {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/thankamoni-john/WhatsApp-Image-2026-08-09-at-9-54-30-AM-1.jpg"
-                },
-                {
-                  "src": "images/members/thankamoni-john/WhatsApp-Image-2026-08-09-at-9-54-30-AM.jpg"
-                }
-              ],
-              "arrange": "row",
-              "grow": 1
-            },
-            {
-              "type": "names",
-              "text": "Thankamoni John and Family"
-            },
-            {
-              "type": "eternal"
+              ]
             }
           ]
         }
       ],
-      "band": "Golden Jubilee Memorial Tribute",
-      "sort": "John Thankamoni "
+      "sort": "John Thankamoni ",
+      "layoutNote": "Photo grid, not the usual memorial format: Manoj — \"she requested it she wanted it in that format\". Order follows his Layout.png, which is the authority: the bottom row runs Pic 6 then Pic 5, not in number order.",
+      "band": "Golden Jubilee Memorial Tribute"
     },
     {
       "id": "yohannan-sankarathil",
@@ -2363,10 +2360,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/thomas-o-abraham/photo-1.jpg"
+                  "src": "images/members/thomas-o-abraham/pic-1.jpg"
                 },
                 {
-                  "src": "images/members/thomas-o-abraham/photo-4.jpg"
+                  "src": "images/members/thomas-o-abraham/pic-2.jpg"
                 }
               ]
             },
@@ -2374,10 +2371,10 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/thomas-o-abraham/photo-2.jpg"
+                  "src": "images/members/thomas-o-abraham/pic-3.jpg"
                 },
                 {
-                  "src": "images/members/thomas-o-abraham/photo-3.jpg"
+                  "src": "images/members/thomas-o-abraham/pic-4.jpg"
                 }
               ]
             },
