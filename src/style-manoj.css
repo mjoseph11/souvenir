@@ -108,3 +108,50 @@
     -webkit-mask-image: none;
             mask-image: none;
   }
+
+  /* ══════════════════════════════════════
+     PHOTO BORDERS (Manoj, 24 Sept)
+     "having a border is better than none, it adds a little more order to the
+     randomness." Two treatments, chosen by how many photos share the page:
+
+       frame — gold hairline, cream mat, gold outer line, from his Layout.png.
+               Costs about a quarter inch all round.
+       rule  — a plain gold border, cheaper in space.
+
+     His rules: one photo and two photos get the frame; three or more get the
+     rule, "so we get the real estate space"; and where prints overlap a main
+     photo, the main one takes the rule and the prints over it take the frame.
+     The page carries a photos-1/2/3 class so the count decides, not the block.
+  ══════════════════════════════════════ */
+
+  .m-page:not(.m-ad) .m-fig img,
+  .designed-page .m-fig img,
+  .s-main img, .s-print img {
+    mix-blend-mode: normal;
+    -webkit-mask-image: none;
+            mask-image: none;
+    background: #FCFAF3;
+  }
+
+  /* frame — pages of one or two photos, and any print laid over a main photo */
+  .m-page.photos-1:not(.m-ad) .m-fig img,
+  .m-page.photos-2:not(.m-ad) .m-fig img,
+  .m-page.photos-1 .s-main img,
+  .s-print img {
+    border: 1px solid rgba(201,162,39,0.9);
+    border-radius: 0;
+    box-shadow: 0 0 0 5px #FCFAF3, 0 0 0 6px rgba(201,162,39,0.9);
+  }
+
+  /* rule — three or more on the page, and the main photo of a styled page
+     once there are prints sitting over it */
+  .m-page.photos-3:not(.m-ad) .m-fig img,
+  .m-page.photos-2 .s-main img,
+  .m-page.photos-3 .s-main img {
+    border: 2px solid var(--gold);
+    border-radius: 3px;
+    box-shadow: none;
+  }
+
+  /* A framed photo needs room for its mat. */
+  .m-page.photos-1 .m-photos, .m-page.photos-2 .m-photos { gap: 0.20in; }

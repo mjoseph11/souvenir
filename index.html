@@ -1020,6 +1020,53 @@
     -webkit-mask-image: none;
             mask-image: none;
   }
+
+  /* ══════════════════════════════════════
+     PHOTO BORDERS (Manoj, 24 Sept)
+     "having a border is better than none, it adds a little more order to the
+     randomness." Two treatments, chosen by how many photos share the page:
+
+       frame — gold hairline, cream mat, gold outer line, from his Layout.png.
+               Costs about a quarter inch all round.
+       rule  — a plain gold border, cheaper in space.
+
+     His rules: one photo and two photos get the frame; three or more get the
+     rule, "so we get the real estate space"; and where prints overlap a main
+     photo, the main one takes the rule and the prints over it take the frame.
+     The page carries a photos-1/2/3 class so the count decides, not the block.
+  ══════════════════════════════════════ */
+
+  .m-page:not(.m-ad) .m-fig img,
+  .designed-page .m-fig img,
+  .s-main img, .s-print img {
+    mix-blend-mode: normal;
+    -webkit-mask-image: none;
+            mask-image: none;
+    background: #FCFAF3;
+  }
+
+  /* frame — pages of one or two photos, and any print laid over a main photo */
+  .m-page.photos-1:not(.m-ad) .m-fig img,
+  .m-page.photos-2:not(.m-ad) .m-fig img,
+  .m-page.photos-1 .s-main img,
+  .s-print img {
+    border: 1px solid rgba(201,162,39,0.9);
+    border-radius: 0;
+    box-shadow: 0 0 0 5px #FCFAF3, 0 0 0 6px rgba(201,162,39,0.9);
+  }
+
+  /* rule — three or more on the page, and the main photo of a styled page
+     once there are prints sitting over it */
+  .m-page.photos-3:not(.m-ad) .m-fig img,
+  .m-page.photos-2 .s-main img,
+  .m-page.photos-3 .s-main img {
+    border: 2px solid var(--gold);
+    border-radius: 3px;
+    box-shadow: none;
+  }
+
+  /* A framed photo needs room for its mat. */
+  .m-page.photos-1 .m-photos, .m-page.photos-2 .m-photos { gap: 0.20in; }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
@@ -1865,7 +1912,7 @@
 <!-- ════════════════════════════════════════
      PAGE 20 — MEMBER PAGE: Rev. Fr. Dr. Paul Varki
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-3">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">Rev. Fr. Dr. Paul Varki</h1>
@@ -1888,7 +1935,7 @@
 <!-- ════════════════════════════════════════
      PAGE 21 — MEMBER PAGE: Deacon Markose Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -3322,7 +3369,7 @@
 <!-- ════════════════════════════════════════
      PAGE 48 — MEMBER PAGE: A. O. Abraham
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The A. O. Abraham Family</h1>
@@ -3349,7 +3396,7 @@
 <!-- ════════════════════════════════════════
      PAGE 49 — MEMBER PAGE: Joseph Abraham (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Abraham Family</h1>
@@ -3375,7 +3422,7 @@
 <!-- ════════════════════════════════════════
      PAGE 50 — MEMBER PAGE: Joseph Abraham (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Abraham Family</h1>
@@ -3403,7 +3450,7 @@
 <!-- ════════════════════════════════════════
      PAGE 51 — MEMBER PAGE: Mani P. Abraham
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -3426,7 +3473,7 @@
 <!-- ════════════════════════════════════════
      PAGE 52 — MEMBER PAGE: Thomas O. Abraham
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas O. Abraham Family</h1>
@@ -3453,7 +3500,7 @@
 <!-- ════════════════════════════════════════
      PAGE 53 — MEMBER PAGE: Betcy Allen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Betcy Allen Family</h1>
@@ -3473,7 +3520,7 @@
 <!-- ════════════════════════════════════════
      PAGE 54 — MEMBER PAGE: Biju Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Biju Chacko Family</h1>
@@ -3501,7 +3548,7 @@
 <!-- ════════════════════════════════════════
      PAGE 55 — MEMBER PAGE: Jacob Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jacob Chacko Family</h1>
@@ -3523,7 +3570,7 @@
 <!-- ════════════════════════════════════════
      PAGE 56 — MEMBER PAGE: John Chacko
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The John Chacko Family</h1>
@@ -3620,7 +3667,7 @@
 <!-- ════════════════════════════════════════
      PAGE 58 — MEMBER PAGE: Lijo Chandy
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Lijo Chandy Family</h1>
@@ -3645,7 +3692,7 @@
 <!-- ════════════════════════════════════════
      PAGE 59 — MEMBER PAGE: Ajeesh Cherian
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ajeesh Cherian Family</h1>
@@ -3671,7 +3718,7 @@
 <!-- ════════════════════════════════════════
      PAGE 60 — MEMBER PAGE: Thomas Cheriyan
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Cheriyan Family</h1>
@@ -3693,7 +3740,7 @@
 <!-- ════════════════════════════════════════
      PAGE 61 — MEMBER PAGE: Samuel Daniel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Samuel Daniel Family</h1>
@@ -3714,7 +3761,7 @@
 <!-- ════════════════════════════════════════
      PAGE 62 — MEMBER PAGE: Rajan Eappen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Rajan Eappen Family</h1>
@@ -3740,7 +3787,7 @@
 <!-- ════════════════════════════════════════
      PAGE 63 — MEMBER PAGE: Baboo George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Baboo George Family</h1>
@@ -3762,7 +3809,7 @@
 <!-- ════════════════════════════════════════
      PAGE 64 — MEMBER PAGE: Cherian T. George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Cherian T. George Family</h1>
@@ -3782,7 +3829,7 @@
 <!-- ════════════════════════════════════════
      PAGE 65 — MEMBER PAGE: Jacob George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jacob George Family</h1>
@@ -3809,7 +3856,7 @@
 <!-- ════════════════════════════════════════
      PAGE 66 — MEMBER PAGE: Philipose George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Philipose George Family</h1>
@@ -3835,7 +3882,7 @@
 <!-- ════════════════════════════════════════
      PAGE 67 — MEMBER PAGE: Saji George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Saji George Family</h1>
@@ -3862,7 +3909,7 @@
 <!-- ════════════════════════════════════════
      PAGE 68 — MEMBER PAGE: Thomas M. George
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas M. George Family</h1>
@@ -3888,7 +3935,7 @@
 <!-- ════════════════════════════════════════
      PAGE 69 — MEMBER PAGE: Varughese P. Issac
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese P. Issac Family</h1>
@@ -3909,7 +3956,7 @@
 <!-- ════════════════════════════════════════
      PAGE 70 — MEMBER PAGE: Biju Ittyachen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ittyachen Family</h1>
@@ -3932,7 +3979,7 @@
 <!-- ════════════════════════════════════════
      PAGE 71 — MEMBER PAGE: Matt & Shainey Jacob (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Matt &amp; Shainey Jacob</h1>
@@ -3952,7 +3999,7 @@
 <!-- ════════════════════════════════════════
      PAGE 72 — MEMBER PAGE: Matt & Shainey Jacob (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Matt &amp; Shainey Jacob</h1>
@@ -3979,7 +4026,7 @@
 <!-- ════════════════════════════════════════
      PAGE 73 — MEMBER PAGE: Dr. Joe John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Dr. Joe John, V. S. John &amp; Family</h1>
@@ -4005,7 +4052,7 @@
 <!-- ════════════════════════════════════════
      PAGE 74 — MEMBER PAGE: Ejo John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ejo John Family</h1>
@@ -4027,7 +4074,7 @@
 <!-- ════════════════════════════════════════
      PAGE 75 — MEMBER PAGE: Jinu John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Jinu John Family</h1>
@@ -4049,7 +4096,7 @@
 <!-- ════════════════════════════════════════
      PAGE 76 — MEMBER PAGE: Thankamoni John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>In Loving Memory</h1>
@@ -4089,7 +4136,7 @@
 <!-- ════════════════════════════════════════
      PAGE 78 — MEMBER PAGE: Ashok Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joseph Family</h1>
@@ -4111,7 +4158,7 @@
 <!-- ════════════════════════════════════════
      PAGE 79 — MEMBER PAGE: Mathew Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Joseph Family</h1>
@@ -4135,7 +4182,7 @@
 <!-- ════════════════════════════════════════
      PAGE 80 — MEMBER PAGE: Thomas Joseph
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Joseph Family</h1>
@@ -4161,7 +4208,7 @@
 <!-- ════════════════════════════════════════
      PAGE 81 — MEMBER PAGE: Blossom Joy
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Blossom Joy Family</h1>
@@ -4182,7 +4229,7 @@
 <!-- ════════════════════════════════════════
      PAGE 82 — MEMBER PAGE: Jessu Joys
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Joys Family</h1>
@@ -4209,7 +4256,7 @@
 <!-- ════════════════════════════════════════
      PAGE 83 — MEMBER PAGE: Kuruvilla (Saji) Kallelil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Kallelil Family</h1>
@@ -4230,7 +4277,7 @@
 <!-- ════════════════════════════════════════
      PAGE 84 — MEMBER PAGE: Mathew Kallelil (Biji)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Kallelil Family</h1>
@@ -4256,7 +4303,7 @@
 <!-- ════════════════════════════════════════
      PAGE 85 — MEMBER PAGE: Mathew Kandathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Kandathil Family</h1>
@@ -4282,7 +4329,7 @@
 <!-- ════════════════════════════════════════
      PAGE 86 — MEMBER PAGE: John Kappil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -4305,7 +4352,7 @@
 <!-- ════════════════════════════════════════
      PAGE 87 — MEMBER PAGE: Varughese Koithottu
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese Koithottu Family</h1>
@@ -4331,7 +4378,7 @@
 <!-- ════════════════════════════════════════
      PAGE 88 — MEMBER PAGE: Dr. Poovathoor Koshy
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Poovathoor Koshy Family</h1>
@@ -4352,7 +4399,7 @@
 <!-- ════════════════════════════════════════
      PAGE 89 — MEMBER PAGE: Kuruvilla P. Kurian
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Kuruvilla P. Kurian Family</h1>
@@ -4373,7 +4420,7 @@
 <!-- ════════════════════════════════════════
      PAGE 90 — MEMBER PAGE: Mathewkutty Kurian
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathewkutty Kurian Family</h1>
@@ -4394,7 +4441,7 @@
 <!-- ════════════════════════════════════════
      PAGE 91 — MEMBER PAGE: Thomas Mammen (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Mammen Family</h1>
@@ -4415,7 +4462,7 @@
 <!-- ════════════════════════════════════════
      PAGE 92 — MEMBER PAGE: Thomas Mammen (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Mammen Family</h1>
@@ -4442,7 +4489,7 @@
 <!-- ════════════════════════════════════════
      PAGE 93 — MEMBER PAGE: Biju Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Biju Mani Family</h1>
@@ -4468,7 +4515,7 @@
 <!-- ════════════════════════════════════════
      PAGE 94 — MEMBER PAGE: Korah Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Korah Mani Family</h1>
@@ -4488,7 +4535,7 @@
 <!-- ════════════════════════════════════════
      PAGE 95 — MEMBER PAGE: Ipe Maret
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ipe Maret Family</h1>
@@ -4514,7 +4561,7 @@
 <!-- ════════════════════════════════════════
      PAGE 96 — MEMBER PAGE: Paul J. Maret
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Paul J. Maret Family</h1>
@@ -4540,7 +4587,7 @@
 <!-- ════════════════════════════════════════
      PAGE 97 — MEMBER PAGE: Punnoose Mathai
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Punnoose Mathai Family</h1>
@@ -4569,7 +4616,7 @@
 <!-- ════════════════════════════════════════
      PAGE 98 — MEMBER PAGE: Dr. Mathew Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Dr. Mathew Mathew Family</h1>
@@ -4591,7 +4638,7 @@
 <!-- ════════════════════════════════════════
      PAGE 99 — MEMBER PAGE: George Mathew (Biju)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George Mathew Family</h1>
@@ -4617,7 +4664,7 @@
 <!-- ════════════════════════════════════════
      PAGE 100 — MEMBER PAGE: George M. Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George M. Mathew Family</h1>
@@ -4644,7 +4691,7 @@
 <!-- ════════════════════════════════════════
      PAGE 101 — MEMBER PAGE: Kurien P. Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>In Loving Memory</h1>
@@ -4664,7 +4711,7 @@
 <!-- ════════════════════════════════════════
      PAGE 102 — MEMBER PAGE: Prince Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Prince Mathew Family</h1>
@@ -4690,7 +4737,7 @@
 <!-- ════════════════════════════════════════
      PAGE 103 — MEMBER PAGE: Rajan Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Rajan Mathew Family</h1>
@@ -4716,7 +4763,7 @@
 <!-- ════════════════════════════════════════
      PAGE 104 — MEMBER PAGE: V. S. Mathew (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The V. S. Mathew Family</h1>
@@ -4737,7 +4784,7 @@
 <!-- ════════════════════════════════════════
      PAGE 105 — MEMBER PAGE: V. S. Mathew (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The V. S. Mathew Family</h1>
@@ -4758,7 +4805,7 @@
 <!-- ════════════════════════════════════════
      PAGE 106 — MEMBER PAGE: Vinesh Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Family</h1>
@@ -4796,7 +4843,7 @@
 <!-- ════════════════════════════════════════
      PAGE 108 — MEMBER PAGE: Vinit Mathew
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Leading Our Path</h1>
@@ -4816,7 +4863,7 @@
 <!-- ════════════════════════════════════════
      PAGE 109 — MEMBER PAGE: Basil Milton
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Milton Family</h1>
@@ -4837,7 +4884,7 @@
 <!-- ════════════════════════════════════════
      PAGE 110 — MEMBER PAGE: Sarath Moses
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sarath Moses Family</h1>
@@ -4863,7 +4910,7 @@
 <!-- ════════════════════════════════════════
      PAGE 111 — MEMBER PAGE: Ashley Mountney
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ashley Mountney Family</h1>
@@ -4889,7 +4936,7 @@
 <!-- ════════════════════════════════════════
      PAGE 112 — MEMBER PAGE: Mathew Ninan
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Ninan Family</h1>
@@ -4915,7 +4962,7 @@
 <!-- ════════════════════════════════════════
      PAGE 113 — MEMBER PAGE: Ninan Parel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ninan Parel Family</h1>
@@ -4942,7 +4989,7 @@
 <!-- ════════════════════════════════════════
      PAGE 114 — MEMBER PAGE: Thomas Paul
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Thomas Paul Family</h1>
@@ -4963,7 +5010,7 @@
 <!-- ════════════════════════════════════════
      PAGE 115 — MEMBER PAGE: Dustin Paul
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Dustin Paul Family</h1>
@@ -4988,7 +5035,7 @@
 <!-- ════════════════════════════════════════
      PAGE 116 — MEMBER PAGE: Ajay Peter
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Ajay Peter Family</h1>
@@ -5014,7 +5061,7 @@
 <!-- ════════════════════════════════════════
      PAGE 117 — MEMBER PAGE: Arun Philip
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Arun Philip Family</h1>
@@ -5040,7 +5087,7 @@
 <!-- ════════════════════════════════════════
      PAGE 118 — MEMBER PAGE: Shiju Poovathoor
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Shiju Poovathoor Family</h1>
@@ -5067,7 +5114,7 @@
 <!-- ════════════════════════════════════════
      PAGE 119 — MEMBER PAGE: Arun Raju
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate designed-page">
+<div class="page inner-page m-page has-band ornate designed-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Arun Raju Family</h1>
@@ -5087,7 +5134,7 @@
 <!-- ════════════════════════════════════════
      PAGE 120 — MEMBER PAGE: Manoj Samuel
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Manoj Samuel Family</h1>
@@ -5113,7 +5160,7 @@
 <!-- ════════════════════════════════════════
      PAGE 121 — MEMBER PAGE: Raju Sankarathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Raju Sankarathil Family</h1>
@@ -5139,7 +5186,7 @@
 <!-- ════════════════════════════════════════
      PAGE 122 — MEMBER PAGE: Yohannan Sankarathil
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sankarathil Family</h1>
@@ -5166,7 +5213,7 @@
 <!-- ════════════════════════════════════════
      PAGE 123 — MEMBER PAGE: Alexander Thankachen
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Alexander Thankachen Family</h1>
@@ -5192,7 +5239,7 @@
 <!-- ════════════════════════════════════════
      PAGE 124 — MEMBER PAGE: Mathew Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Thomas Family</h1>
@@ -5218,7 +5265,7 @@
 <!-- ════════════════════════════════════════
      PAGE 125 — MEMBER PAGE: P. V. Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The P. V. Thomas Family</h1>
@@ -5240,7 +5287,7 @@
 <!-- ════════════════════════════════════════
      PAGE 126 — MEMBER PAGE: V. C. Thomas
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1 style="color:var(--gold2);">In Loving Memory</h1>
@@ -5263,7 +5310,7 @@
 <!-- ════════════════════════════════════════
      PAGE 127 — MEMBER PAGE: Suchin Thompson
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Suchin Thompson Family</h1>
@@ -5291,7 +5338,7 @@
 <!-- ════════════════════════════════════════
      PAGE 128 — MEMBER PAGE: Babu Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Babu Varghese Family</h1>
@@ -5317,7 +5364,7 @@
 <!-- ════════════════════════════════════════
      PAGE 129 — MEMBER PAGE: George Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The George Varghese Family</h1>
@@ -5343,7 +5390,7 @@
 <!-- ════════════════════════════════════════
      PAGE 130 — MEMBER PAGE: John Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The John Varghese Family</h1>
@@ -5369,7 +5416,7 @@
 <!-- ════════════════════════════════════════
      PAGE 131 — MEMBER PAGE: Mathew Varghese (Wilson)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Mathew Varghese Family</h1>
@@ -5396,7 +5443,7 @@
 <!-- ════════════════════════════════════════
      PAGE 132 — MEMBER PAGE: Sujith Varghese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Sujith Varghese Family</h1>
@@ -5422,7 +5469,7 @@
 <!-- ════════════════════════════════════════
      PAGE 133 — MEMBER PAGE: James Varughese
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate">
+<div class="page inner-page m-page has-band ornate photos-3">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varughese Family</h1>
@@ -5444,7 +5491,7 @@
 <!-- ════════════════════════════════════════
      PAGE 134 — MEMBER PAGE: Varkey Vattakkattu
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Varkey Vattakkattu Family</h1>
@@ -5468,7 +5515,7 @@
 <!-- ════════════════════════════════════════
      PAGE 135 — MEMBER PAGE: Zach Zacharia
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page">
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
     <div class="page-header-title">
       <h1>The Zach Zacharia Family</h1>

@@ -296,6 +296,11 @@ const isStyled = (pg) => STYLE && !isDesigned(pg) && pg.blocks.some((b) => b.typ
 
 /* ── Page kinds ── */
 
+// Photos on a page, across every block on it.
+const photoCount = (pg) =>
+  (pg.blocks || []).reduce((n, b) => n + (b.type === 'photos' ? (b.photos || []).length
+    : b.type === 'side' && b.photo ? 1 : 0), 0);
+
 function memberPages(m) {
   if (m.partial) return [{ html: read(m.partial), label: `MEMBER PAGE: ${m.name}`, member: m }];
   return m.pages.map((pg, i) => {
@@ -314,7 +319,11 @@ function memberPages(m) {
       // Corner ornament on member pages; set "ornate": false on a family to skip it.
       // "fade": "narrow" | false — for photos with someone right at the edge,
       // where the usual blend would eat them.
+      // How many photos land on this page decides which border they get
+      // (Manoj, 24 Sept): one or two get the mat, three or more the plain
+      // rule, "so we get the real estate space".
       cls: [m.ornate === false ? '' : 'ornate', styled ? 'styled-page' : '', isDesigned(pg) ? 'designed-page' : '',
+            `photos-${Math.min(photoCount(pg), 3)}`,
             m.fade === 'narrow' ? 'fade-narrow' : m.fade === false ? 'fade-none' : ''].filter(Boolean).join(' ') || undefined,
     });
     const part = m.pages.length > 1 ? ` (${i + 1} of ${m.pages.length})` : '';
