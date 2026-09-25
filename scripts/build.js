@@ -310,10 +310,17 @@ function memberPages(m) {
       title: pg.title || m.title,
       band,
       dark: pg.dark,
-      body: styled ? styledBody(m, pg)
+      // "seeAlso": another family in the book. Malayalee surnames do not carry
+      // down — a son's surname is his father's given name — so relatives sit
+      // far apart in an A–Z and nothing on the page says they are related.
+      // The page number is filled in once every page has one.
+      body: (styled ? styledBody(m, pg)
         : renderBlocks(pg.blocks, { id: m.id, alt: m.title,
             // the big-photo inline layout only fits when nothing else shares the page
-            soloArticle: !pg.blocks.some((x) => x.type === 'photos') }),
+            soloArticle: !pg.blocks.some((x) => x.type === 'photos') }))
+        + (i === 0 && m.seeAlso
+          ? `\n    <p class="m-seealso">See also ${esc(m.seeAlsoLabel || 'family')} &middot; page @@SEEALSO:${m.seeAlso}@@</p>`
+          : ''),
       // "pending": text still being reviewed by Writing/Editing — flagged louder than a proof copy.
       badge: m.pending ? 'Pending review' : m.approved ? null : 'Proof copy',
       // Corner ornament on member pages; set "ornate": false on a family to skip it.
@@ -437,11 +444,20 @@ function renderIndexPage(i) {
   return shell({ title: indexPageCount > 1 ? `Index (${i + 1} of ${indexPageCount})` : 'Index', body, cls: 'm-index-page' });
 }
 
+// Where each family starts, so a seeAlso can name a real page.
+const memberPageNo = new Map();
+for (const p of pages) if (p.member) memberPageNo.set(p.member.id, p.number);
+
 const bar = '═'.repeat(40);
 const bodyHtml = pages
   .map((p) => {
     let html = typeof p.index === 'number' ? renderIndexPage(p.index) : p.html;
     html = html.replace(FOOTER_NO, `$1${p.number}$2`);
+    html = html.replace(/@@SEEALSO:([a-z0-9-]+)@@/g, (_, id) => {
+      const n = memberPageNo.get(id);
+      if (!n) throw new Error(`seeAlso points at "${id}", which is not a family in the book`);
+      return n;
+    });
     const marker = p.label === 'BACK COVER' ? 'BACK COVER' : `PAGE ${p.number} — ${p.label}`;
     return `<!-- ${bar}\n     ${marker}\n${bar} -->\n${html}`;
   })

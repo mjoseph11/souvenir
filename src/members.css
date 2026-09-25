@@ -304,3 +304,22 @@
   @media print {
     .m-page { height: var(--page-h); }
   }
+
+  /* "See also" — Malayalee surnames do not pass down, so a father and son sit
+     far apart in the A–Z. One quiet line keeps the link visible. */
+  /* On a styled or family-designed page the content is an absolutely
+     positioned stage, so an ordinary flow child would sit behind it. */
+  .styled-page .m-seealso, .designed-page .m-seealso {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    margin: 0;
+    z-index: 3;
+  }
+  .m-seealso {
+    margin-top: 0.10in;
+    text-align: center;
+    font-size: 8.5pt;
+    font-style: italic;
+    color: #8A7A5C;
+    letter-spacing: 0.3px;
+  }

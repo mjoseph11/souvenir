@@ -1046,7 +1046,9 @@
           ]
         }
       ],
-      "sort": "Joseph Thomas "
+      "sort": "Joseph Thomas ",
+      "seeAlso": "ashanth-thomas",
+      "seeAlsoLabel": "the Ashanth Thomas family"
     },
     {
       "id": "varughese-koithottu",
@@ -2607,6 +2609,31 @@
       "sort": "Chacko John 2",
       "sortNote": "Manoj asked for the Chacko pages to run John, Manoj, James — not alphabetical — so these three carry explicit ordinals.",
       "indexName": "Manoj Chacko"
+    },
+    {
+      "id": "ashanth-thomas",
+      "name": "Ashanth Thomas",
+      "title": "The Ashanth Thomas Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/ashanth-thomas/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ],
+      "sort": "Thomas Ashanth ",
+      "seeAlso": "thomas-joseph",
+      "seeAlsoLabel": "the Thomas Joseph family"
     }
   ]
 }

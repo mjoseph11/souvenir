@@ -155,3 +155,8 @@
 
   /* A framed photo needs room for its mat. */
   .m-page.photos-1 .m-photos, .m-page.photos-2 .m-photos { gap: 0.20in; }
+
+  /* A "see also" takes the last line, so the verse and the closing line move
+     up to make room for it. */
+  .styled-page:has(.m-seealso) .s-verse { bottom: 0.60in; }
+  .styled-page:has(.m-seealso) .s-close { bottom: 0.20in; }
