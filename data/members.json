@@ -2634,6 +2634,102 @@
       "sort": "Thomas Ashanth ",
       "seeAlso": "thomas-joseph",
       "seeAlsoLabel": "the Thomas Joseph family"
+    },
+    {
+      "id": "raju-geevarghese",
+      "name": "Raju Geevarghese",
+      "title": "The Raju Geevarghese Family",
+      "sort": "Geevarghese Raju ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/raju-geevarghese/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/raju-geevarghese/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/raju-geevarghese/pic-3.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saji-thomas",
+      "name": "Saji Thomas",
+      "title": "The Saji Thomas Family",
+      "sort": "Thomas Saji ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/saji-thomas/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nibu-ipe-maret",
+      "name": "Nibu Ipe Maret",
+      "title": "The Nibu Ipe Maret Family",
+      "sort": "Maret Nibu ",
+      "seeAlso": "ipe-maret",
+      "seeAlsoLabel": "the Ipe Maret family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/nibu-ipe-maret/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jiji-koshy",
+      "name": "Jiji Koshy",
+      "title": "The Jiji Koshy Family",
+      "sort": "Koshy Jiji ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "article",
+              "text": "Jiji Koshy was born in the early 1960s and raised in Vazhoor, Kottayam, Kerala, as the youngest of eight children. His family was active in St. Peter’s Malankara Syrian Orthodox Church in Pulikkalkavala. After earning a degree in Business and Administration and working as a Logistics Manager in Kerala, Jiji immigrated to the United States in 1991, settling in New Jersey with his eldest brother, George.\n\nBeena Abraham was born in the late 1960s and raised in North Paravur, Ernakulam, the second of three children of Areekal Abraham Tharian and Vazhappilli Sucy Abraham. After earning a master’s degree in physics, Beena married Jiji in 1992. Jiji settled in Philadelphia with his brother Thomas, where he helped establish St. Mary’s Malankara Syrian Orthodox Church; Beena and their daughter Jane joined him in 1996.\n\nIn the summer of 2000, a season of change — a new job, a new home, their eldest starting kindergarten and a third child on the way — brought them to St. Gregorios, shortly before Joanne was born. Over the years both became active in the ministries, and their daughters in the Youth League and Sunday School. In 2023 Beena made parish history as the first woman to serve as Treasurer and Trustee.\n\nJiji grew up serving at the altar in his home parish, and after immigrating faced pressure from colleagues and family to join other denominations. He stayed with the faith handed down to him, and encourages those around him to do the same. Beena set out to be a physicist and found instead a profession in computers; leaving her family in Kerala, she built a new one here, and came to find in SGMOC a second home.\n\nJiji established and runs Alma Digital Vision, his photography and videography business, and Beena works as an Enterprise Systems Programmer with the City of Philadelphia. Their daughters have gone on to science research, engineering, literature and writing. Above all the family treasures the church community that has carried and enriched their lives.",
+              "photo": {
+                "src": "images/members/jiji-koshy/photo.jpg"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
