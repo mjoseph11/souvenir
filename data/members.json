@@ -711,20 +711,48 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
+              "type": "half",
+              "grow": 1.25,
+              "blocks": [
                 {
-                  "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg"
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "closing"
+              "type": "half",
+              "dark": true,
+              "grow": 1,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "Mr. Manoj Ninan",
+                  "dates": "1978 – 2025"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/mathew-ninan/manoj-ninan.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "eternal"
+                }
+              ]
             }
           ]
         }
       ],
-      "sort": "Ninan Mathew "
+      "sort": "Ninan Mathew ",
+      "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
+      "layoutNote": "Manoj: \"Manoj Ninans memorial same as joys one family top memorial section on bottom\". Name and dates are from the note.txt in the Drive folder."
     },
     {
       "id": "mathew-thomas",
@@ -1818,26 +1846,6 @@
               "type": "half",
               "blocks": [
                 {
-                  "type": "memorial",
-                  "name": "Joys K. George",
-                  "dates": "June 5, 1944 – May 29, 2022"
-                },
-                {
-                  "type": "photos",
-                  "photos": [
-                    {
-                      "src": "images/members/jessu-joys/Dad-Jess-Joy.jpg"
-                    }
-                  ]
-                }
-              ],
-              "dark": true,
-              "grow": 1
-            },
-            {
-              "type": "half",
-              "blocks": [
-                {
                   "type": "photos",
                   "photos": [
                     {
@@ -1853,6 +1861,26 @@
                 }
               ],
               "grow": 1.3
+            },
+            {
+              "type": "half",
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "Joys K. George",
+                  "dates": "June 5, 1944 – May 29, 2022"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/jessu-joys/Dad-Jess-Joy.jpg"
+                    }
+                  ]
+                }
+              ],
+              "dark": true,
+              "grow": 1
             }
           ]
         }
@@ -1961,6 +1989,23 @@
               "type": "half",
               "blocks": [
                 {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/yohannan-sankarathil/FamilyPic-adj.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "closing"
+                }
+              ],
+              "grow": 1.2
+            },
+            {
+              "type": "half",
+              "blocks": [
+                {
                   "type": "memorial",
                   "name": "Mathai Chacko & Rachel Mathai Sankarathil"
                 },
@@ -1982,23 +2027,6 @@
               ],
               "dark": true,
               "grow": 1
-            },
-            {
-              "type": "half",
-              "blocks": [
-                {
-                  "type": "photos",
-                  "photos": [
-                    {
-                      "src": "images/members/yohannan-sankarathil/FamilyPic-adj.jpg"
-                    }
-                  ]
-                },
-                {
-                  "type": "closing"
-                }
-              ],
-              "grow": 1.2
             }
           ]
         }
@@ -2730,6 +2758,49 @@
           ]
         }
       ]
+    },
+    {
+      "id": "paul-c-mathai",
+      "name": "Paul C Mathai",
+      "title": "The Paul C Mathai Family",
+      "sort": "Mathai Paul C ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "grow": 1,
+              "photos": [
+                {
+                  "src": "images/members/paul-c-mathai/pic-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Paul C Mathai, founding member of St. Gregorios Malankara Orthodox Church in Philadelphia, has been a member of the church since its inception, serving in numerous leadership roles including Treasurer, Secretary, Board of Trustee and Committee Member.\n\nHe, along with his wife Joan and their children Stephen and Kristine, has been an active supporter of the church’s mission and congregation. By the grace of God and the support of friends and family, the Paul C. Mathai Scholarship Fund was established fifteen years ago, to encourage the youth of our church to pursue higher education and to serve the greater Orthodox community.\n\nThe Paul C. Mathai family extends our congratulations to our church on this 50th Jubilee Anniversary year. May God continue to bless our church and all its members forever.",
+              "bare": true,
+              "center": true
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/paul-c-mathai/pic-2.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ],
+      "layoutNote": "Manoj: ignore the two screenshots, that is how the family sent it; Molsey rewrote the text. One picture and the text on the first page, the other picture on the second."
     }
   ]
 }
