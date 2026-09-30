@@ -47,7 +47,9 @@ const only = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
 const pagesArg = (process.argv.find((a) => a.startsWith('--pages=')) || '').slice(8);
 const outArg = (process.argv.find((a) => a.startsWith('--out=')) || '').slice(6);
 
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+// --from=index-print.html prints the bleed build instead of the Letter one.
+const fromArg = (process.argv.find((a) => a.startsWith('--from=')) || '').slice(7) || 'index.html';
+const html = fs.readFileSync(path.join(root, fromArg), 'utf8');
 
 // Everything before the first page marker is the head + <body> opening: reused as-is
 // so the proof inherits every style rule the book page had.
@@ -56,7 +58,7 @@ const MARKER = /<!-- ═{10,}\r?\n\s+(PAGE \d+ — [^\r\n]+|BACK COVER)\r?\n\s*�
 const marks = [];
 for (let m; (m = MARKER.exec(html)); ) marks.push({ label: m[1], start: m.index, end: MARKER.lastIndex });
 if (!marks.length) {
-  console.error('No PAGE markers found in index.html — run scripts/build.js first.');
+  console.error(`No PAGE markers found in ${fromArg} — run scripts/build.js first.`);
   process.exit(2);
 }
 

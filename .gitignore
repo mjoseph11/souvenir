@@ -2,3 +2,6 @@
 .drive-cache/
 # Generated proofs (scripts/member-pdfs.js) — hundreds of MB, rebuildable.
 build/
+
+# Print build (BLEED=1) — bleed pages are regenerated, not tracked
+index-print.html
