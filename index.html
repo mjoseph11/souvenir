@@ -1091,6 +1091,17 @@
      up to make room for it. */
   .styled-page:has(.m-seealso) .s-verse { bottom: 0.60in; }
   .styled-page:has(.m-seealso) .s-close { bottom: 0.20in; }
+
+  /* Every inner page on the leaves, including the photo-only ones.
+     members.css swaps the church-and-dove artwork in behind pages that are
+     photographs with nothing else on them. Manoj, 17 Sept: "there should not
+     be anything on top of church, maybe we will just remove the church
+     picture" — and on 2 Oct he flagged five of those pages as still showing
+     "the old one": Cherian T. George, Matt Jacob, Thankamoni John, Mathew
+     Ninan, Arun Raju. They were the dove-and-church pages, every one. */
+  .m-page.ornate:has(.m-photos):not(:has(.m-text, .m-article, .m-list))::before {
+    background-image: url('images/backgrounds/page-leaves-light.jpg');
+  }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
