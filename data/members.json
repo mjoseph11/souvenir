@@ -2596,7 +2596,7 @@
           ]
         }
       ],
-      "sort": "Maret Ipe "
+      "sort": "Maret Ipe 1"
     },
     {
       "id": "mathew-mathew",
@@ -2720,7 +2720,7 @@
       "id": "nibu-ipe-maret",
       "name": "Nibu Ipe Maret",
       "title": "The Nibu Ipe Maret Family",
-      "sort": "Maret Nibu ",
+      "sort": "Maret Ipe 2",
       "seeAlso": "ipe-maret",
       "seeAlsoLabel": "the Ipe Maret family",
       "pages": [
@@ -2802,6 +2802,130 @@
         }
       ],
       "layoutNote": "Manoj: ignore the two screenshots, that is how the family sent it; Molsey rewrote the text. One picture and the text on the first page, the other picture on the second."
+    },
+    {
+      "id": "ajo-maret",
+      "name": "Ajo Maret",
+      "title": "The Ajo Maret Family",
+      "sort": "Maret Ipe 4",
+      "sortNote": "Manoj: the Ipe Maret family runs Ipe, Nibu, Nithin, Ajo. Ordinal 3 is held for Nithin.",
+      "seeAlso": "ipe-maret",
+      "seeAlsoLabel": "the Ipe Maret family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/ajo-maret/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/ajo-maret/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/ajo-maret/pic-3.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alex-john",
+      "name": "Alex John",
+      "title": "The Alex John Family",
+      "sort": "John Alex ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/alex-john/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "binumon-yohannan",
+      "name": "Binumon Yohannan",
+      "title": "The Binumon Yohannan Family",
+      "sort": "Yohannan Binumon ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/binumon-yohannan/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lee-k-george",
+      "name": "Lee K. George",
+      "title": "The Lee K. George Family",
+      "sort": "George Lee K ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/lee-k-george/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naomi-samuel",
+      "name": "Naomi Samuel",
+      "title": "The Naomi Samuel Family",
+      "sort": "Samuel Naomi ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/naomi-samuel/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
