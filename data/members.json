@@ -1322,7 +1322,7 @@
     {
       "id": "vinit-mathew",
       "name": "Vinit Mathew",
-      "title": "Leading Our Path",
+      "title": "The Mathew Family",
       "pages": [
         {
           "blocks": [
@@ -1447,7 +1447,8 @@
               "center": true,
               "italic": true,
               "size": "sm",
-              "sign": "With love, Ejo John and Family"
+              "sign": "With love, Ejo John and Family",
+              "bare": true
             },
             {
               "type": "verse",
@@ -1493,7 +1494,7 @@
     {
       "id": "james-varughese",
       "name": "James Varughese",
-      "title": "The Varughese Family",
+      "title": "The James Varughese Family",
       "pages": [
         {
           "blocks": [
@@ -1838,7 +1839,7 @@
     {
       "id": "jessu-joys",
       "name": "Jessu Joys",
-      "title": "The Joys Family",
+      "title": "The Jessu Joys Family",
       "pages": [
         {
           "blocks": [
@@ -1857,7 +1858,8 @@
                   "type": "text",
                   "text": "Our family has been part of the SGMOC family since 1993, and the church has always held a special place in our hearts. As a family, we witnessed the dedication and hard work of so many founding members, including my dad. Everyone gave their time, energy, and love to help build not just a church, but a true community and family.\n\nAs we celebrate 50 years, it is amazing to see how much SGMOC has grown under the guidance of our beloved spiritual fathers, Mathai Achen and Shibu Achen. We feel truly grateful and blessed to have been part of this journey. Wishing our entire SGMOC family a happy and blessed 50th anniversary. So grateful to celebrate this special milestone together, and praying for many more wonderful years ahead.",
                   "size": "xs",
-                  "sign": "Love, Joys Family — Jessu, Teena, Leona, Liam & Sosamma Joys"
+                  "sign": "Love, Joys Family — Jessu, Teena, Leona, Liam & Sosamma Joys",
+                  "bare": true
                 }
               ],
               "grow": 1.3
@@ -1981,7 +1983,7 @@
     {
       "id": "yohannan-sankarathil",
       "name": "Yohannan Sankarathil",
-      "title": "The Sankarathil Family",
+      "title": "The Yohannan Sankarathil Family",
       "pages": [
         {
           "blocks": [
@@ -2233,7 +2235,8 @@
                 "George Thomas & Stephanie Thomas",
                 "Christen Philip & Julia Philip",
                 "Jordan Philip • Nicholas Philip • Grayson Thomas • Violet Thomas"
-              ]
+              ],
+              "bare": true
             },
             {
               "type": "text",

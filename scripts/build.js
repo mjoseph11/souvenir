@@ -115,7 +115,9 @@ const BLOCKS = {
   },
   list(b) {
     const title = b.title ? `<p class="m-text-title">${esc(b.title)}</p>` : '';
-    return `<div class="m-text center">${title}<ul class="m-list">${lines(b.items).map((i) => `<li>${esc(i)}</li>`).join('')}</ul></div>`;
+    // "bare": no white panel or gold rule round it, same switch the text block has.
+    const cls = ['m-text', 'center', b.bare && 'bare'].filter(Boolean).join(' ');
+    return `<div class="${cls}">${title}<ul class="m-list">${lines(b.items).map((i) => `<li>${esc(i)}</li>`).join('')}</ul></div>`;
   },
   side(b, ctx) {
     const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
