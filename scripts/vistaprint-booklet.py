@@ -17,8 +17,11 @@ download for your exact specs. Pass --spine to match it.
   python scripts/vistaprint-booklet.py --inner build/inner.pdf --out build/vp.pdf --spine 0.06
 """
 import argparse
+import io
 
 import fitz
+import numpy as np
+from PIL import Image
 
 TRIM_W, TRIM_H = 8.5, 11.0
 BLEED = 0.12
@@ -27,7 +30,7 @@ PT = 72
 ap = argparse.ArgumentParser()
 ap.add_argument("--inner", required=True, help="PDF of the inner pages, already at bleed size")
 ap.add_argument("--front", default="images/cover-pilgrimage.jpg")
-ap.add_argument("--back", default="images/back-cover-pilgrimage.jpg")
+ap.add_argument("--back", default="images/back-cover-jubilee.jpg")
 ap.add_argument("--out", required=True)
 ap.add_argument("--spine", type=float, default=0.06,
                 help="spine width in inches — take this from Vistaprint's template")
@@ -38,12 +41,28 @@ spread_w = (TRIM_W * 2 + a.spine + 2 * BLEED) * PT
 
 out = fitz.open()
 
+def with_bleed(path, spine_side):
+    """The cover laid exactly on its 8.5 x 11 trim box, centred, never stretched:
+    the bleed is the cover's own edge, mirrored outward, on the three sides
+    that are cut. The spine side gets none, so the cover meets the spine."""
+    im = Image.open(path).convert("RGB")
+    dpi = im.width / TRIM_W
+    b = round(BLEED * dpi)
+    left, right = (b, 0) if spine_side == "right" else (0, b)
+    arr = np.pad(np.asarray(im), ((b, b), (left, right), (0, 0)), mode="reflect")
+    buf = io.BytesIO()
+    Image.fromarray(arr).save(buf, "JPEG", quality=95, dpi=(dpi, dpi))
+    return buf.getvalue()
+
+
 # ── spread 1: outside cover ──
 s1 = out.new_page(width=spread_w, height=page_h)
-# back cover fills the left half plus the left and outer bleed
-s1.insert_image(fitz.Rect(0, 0, (TRIM_W + BLEED) * PT, page_h), filename=a.back)
-# front cover fills the right half plus the right bleed
-s1.insert_image(fitz.Rect((TRIM_W + a.spine + BLEED) * PT, 0, spread_w, page_h), filename=a.front)
+# back cover: its trim box is the left half, after the outer bleed
+s1.insert_image(fitz.Rect(0, 0, (TRIM_W + BLEED) * PT, page_h),
+                stream=with_bleed(a.back, "right"), keep_proportion=False)
+# front cover: its trim box starts after the spine
+s1.insert_image(fitz.Rect((TRIM_W + a.spine + BLEED) * PT, 0, spread_w, page_h),
+                stream=with_bleed(a.front, "left"), keep_proportion=False)
 # spine: carry the cover's cream across it so a misplaced fold shows no white
 s1.draw_rect(fitz.Rect((TRIM_W + BLEED) * PT, 0, (TRIM_W + a.spine + BLEED) * PT, page_h),
              color=None, fill=(0.992, 0.973, 0.933))

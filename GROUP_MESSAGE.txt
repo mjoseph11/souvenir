@@ -1,41 +1,23 @@
-SOUVENIR UPDATE - April 28, 2026
+*SGMOC Souvenir – updates since 7:30 AM, 4/28*
 
-CHANGES TODAY:
+• Total now *27 pages + back cover* (was 18 pages + 4 sample placeholders)
 
-- Moved Ministry Center (2016) & Cemetery Monument (2018) from MMVS to History timeline
-- Refocused MMVS page on organization details
-- Added Holy Relics (2009) milestone to History
-- Repositioned Community Outreach to Page 7
-- Added events to ministry pages: MMVS Couple Conference (2010), OVBS (2010), FOCUS Conference (2012)
+• Built *7 member-sponsor pages* from the Drive submissions: Mathewkutty Kurian, Rev. Fr. Alexander Kurien (DC), Mani Abraham (memorial for P.K. Abraham & Annamma), Thomas Paul, Lijo Chandy, Dr. Ashok Joseph, Dustin Paul
 
-PAGE STRUCTURE: 18 pages + back/front covers
+• New page: *"The Beginnings"* – Rev. Fr. Dr. Paul Varki's first-person account, reprinted from an earlier SGMOC souvenir
 
-COMPLETED PAGES:
-Page 5: In Memoriam
-Page 6: History (13 milestones with photos)
-Page 7: Community Outreach (B3T, Unity 5K, ecumenical events)
-Page 8: Executive Committee
-Page 9: Sunday School
-Page 10: Youth League (MGOCSM)
-Page 12: GROW
-Page 13: MMVS
-Page 14: Good Samaritan Mission
+• New page: *"Charter Families 1976–1980"* – all 25 founding-era members listed
 
-PAGES NEEDING CONTENT:
-Page 2: Catholicos message
-Page 3: Metropolitan message
-Page 4: Vicar message
-Page 11: Logos Ministry (VP/Sec/Treasurer names needed)
-Page 12: GROW (Sec/Treasurer names needed)
-Page 14: Good Samaritan (Coordinator name needed)
-Page 15: St. Joseph's Forum (history/details)
-Page 16: Sponsorship pages
-Page 17: Family Greetings
-Page 18: Family-sponsored pages
+• New page: *"Our Sanctuary"* – interior photos from the 2009 consecration
 
-DEADLINES:
-April 30: Family page submissions close ($250/page)
+• *In Memoriam (Mathai Achen)* updated with bishops + exact dates: deacon 1974 (H.G. Mathews Mar Athanasios at Lakkoor); priesthood April 28, 1975; corepiscopos 1996 (H.G. Mathews Mar Barnabas, Philadelphia)
 
-LIVE: https://mjoseph11.github.io/souvenir/
+• *History page* enriched: added 1962 origins, 1994 Verree Road, 2005 Hulmeville purchase, plus timeline thumbnails for 1995/2007/2008. Corrected founding venue and original parish name
 
-Please review and send feedback.
+• *Sunday School page* now has real photos (including Mathai Achen at OVBS '04)
+
+• Sample placeholder pages and Family Greetings page deleted; broken page numbering fixed
+
+• Clergy message pages (2–4) marked *DRAFT* – still awaiting final text from H.H., H.G., and Fr. Shibu
+
+Live preview: https://mjoseph11.github.io/souvenir/
