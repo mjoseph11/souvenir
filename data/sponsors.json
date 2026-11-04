@@ -1,5 +1,5 @@
 {
-  "_comment": "Sponsor advertisements, spread evenly through the member section by scripts/build.js.",
+  "_comment": "Sponsor advertisements, placed together at the end of the book by scripts/build.js (data/outline.json \"ads\" item; Manoj, 3 Nov 2026).",
   "ads": [
     {
       "id": "alma-digital-vision",

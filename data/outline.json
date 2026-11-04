@@ -1,5 +1,5 @@
 {
-  "_comment": "Page order for the souvenir, following Manoj's 'SGMOC Content Outline.docx' (Drive 1pRHU_HaNkMb-gZDuq5EzBOSb1pZnUMlm, sent 2026-09-14). Item kinds: file (hand-built page in src/pages), placeholder (planned page not yet written), generated (page built from blocks), member (one entry from data/members.json placed here), members (all remaining families A–Z, with sponsor ads spread through), index. 'toc' adds the item to the Index contents. Manoj said revisions are coming after the September 2026 vicar change.",
+  "_comment": "Page order for the souvenir, following Manoj's 'SGMOC Content Outline.docx' (Drive 1pRHU_HaNkMb-gZDuq5EzBOSb1pZnUMlm, sent 2026-09-14). Item kinds: file (hand-built page in src/pages), placeholder (planned page not yet written), generated (page built from blocks), member (one entry from data/members.json placed here), members (all remaining families A–Z), ads (every sponsor ad, at the end), index. 'toc' adds the item to the Index contents. Manoj said revisions are coming after the September 2026 vicar change.",
   "sections": [
     {
       "name": "Front",
@@ -118,6 +118,7 @@
         { "index": true },
         { "placeholder": { "title": "Acknowledgements", "heading": "Acknowledgements & Souvenir Team", "note": "Editorial board: Manoj Chacko, Suchin Thompson, Molsey Thomas, Shiju Poovathoor, Jinu John, Mathew Joseph. Full list and thanks to be finalized." }, "toc": "Acknowledgements & Souvenir Team" },
         { "placeholder": { "title": "Our Church Family", "heading": "Church Family Group Photo", "note": "Whole-parish group photograph (taken at the picnic) to be placed here." }, "toc": "Church Family Group Photo" },
+        { "ads": true, "toc": "Our Sponsors" },
         { "file": "src/pages/back-cover.html", "label": "BACK COVER" }
       ]
     }

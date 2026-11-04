@@ -82,11 +82,14 @@
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 12'%3E%3Cpath d='M20 0 L24 6 L20 12 L16 6 Z' fill='%23F0CD6E'/%3E%3Cpath d='M9 6 L11.5 4.4 L14 6 L11.5 7.6 Z M26 6 L28.5 4.4 L31 6 L28.5 7.6 Z' fill='%23E2B85A'/%3E%3C/svg%3E") center / 40px 12px no-repeat,
       linear-gradient(to right, transparent, #D9B055 20%, #D9B055 80%, transparent) center / 100% 1px no-repeat;
   }
-  /* the jubilee seal, small, at the right end of the band */
+  /* the jubilee seal, small, at the right end of the band, centred on the
+     band's height (Manoj, 3 Nov). The maroon runs 0–0.77in on the trimmed
+     page, so the top edge sits just inside the 0.2in safety line; a seal is
+     decoration, and a hair lost in trimming would not show. */
   .page-header::after {
     content: '';
     position: absolute;
-    top: calc(0.2in + var(--bleed-or-0));     /* clear of the printer's 0.2in safety line */
+    top: calc((0.77in - 0.54in) / 2 + var(--bleed-or-0));
     right: calc(0.2in + var(--bleed-or-0));
     width: 0.54in;
     height: 0.54in;
@@ -205,3 +208,72 @@
   .m-text.size-sm .m-text-title { font-size: 23pt !important; }
   .m-text.size-xs .m-text-title { font-size: 19pt !important; }
   .m-sign { font-family: var(--serif); font-size: 14pt !important; }
+
+  /* ── Memorial panels (Manoj, 3 Nov: "more natural looking", after his
+     sample of the Joys page) ──
+     A cream panel inside a thin gold double frame with scrolled corners,
+     the photo on the left and the name and dates beside it. A panel with
+     several photos keeps them in a row under the name. */
+  :root {
+    /* gold scrolled corners for memorial frames */
+    --corner-tl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cg transform='' fill='none' stroke='%23B8902F' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M3 41 V12 Q3 3 12 3 H41'/%3E%3Cpath d='M8 30 V15 Q8 8 15 8 H30'/%3E%3Cpath d='M8 15 Q15 15 15 8'/%3E%3Cpath d='M13 20 q4 -2 3 -6 q-1 -3 -4 -1'/%3E%3Cpath d='M20 13 q-2 4 -6 3 q-3 -1 -1 -4'/%3E%3C/g%3E%3Ccircle cx='4' cy='4' r='0' /%3E%3C/svg%3E");
+    --corner-tr: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cg transform='translate%2844 0%29 scale%28-1 1%29' fill='none' stroke='%23B8902F' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M3 41 V12 Q3 3 12 3 H41'/%3E%3Cpath d='M8 30 V15 Q8 8 15 8 H30'/%3E%3Cpath d='M8 15 Q15 15 15 8'/%3E%3Cpath d='M13 20 q4 -2 3 -6 q-1 -3 -4 -1'/%3E%3Cpath d='M20 13 q-2 4 -6 3 q-3 -1 -1 -4'/%3E%3C/g%3E%3Ccircle cx='4' cy='4' r='0' /%3E%3C/svg%3E");
+    --corner-bl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cg transform='translate%280 44%29 scale%281 -1%29' fill='none' stroke='%23B8902F' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M3 41 V12 Q3 3 12 3 H41'/%3E%3Cpath d='M8 30 V15 Q8 8 15 8 H30'/%3E%3Cpath d='M8 15 Q15 15 15 8'/%3E%3Cpath d='M13 20 q4 -2 3 -6 q-1 -3 -4 -1'/%3E%3Cpath d='M20 13 q-2 4 -6 3 q-3 -1 -1 -4'/%3E%3C/g%3E%3Ccircle cx='4' cy='4' r='0' /%3E%3C/svg%3E");
+    --corner-br: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cg transform='translate%2844 44%29 scale%28-1 -1%29' fill='none' stroke='%23B8902F' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M3 41 V12 Q3 3 12 3 H41'/%3E%3Cpath d='M8 30 V15 Q8 8 15 8 H30'/%3E%3Cpath d='M8 15 Q15 15 15 8'/%3E%3Cpath d='M13 20 q4 -2 3 -6 q-1 -3 -4 -1'/%3E%3Cpath d='M20 13 q-2 4 -6 3 q-3 -1 -1 -4'/%3E%3C/g%3E%3Ccircle cx='4' cy='4' r='0' /%3E%3C/svg%3E");
+  }
+  .m-half.dark:has(.m-memorial-head) {
+    background:
+      var(--corner-tl) left 5px top 5px / 0.42in 0.42in no-repeat,
+      var(--corner-tr) right 5px top 5px / 0.42in 0.42in no-repeat,
+      var(--corner-bl) left 5px bottom 5px / 0.42in 0.42in no-repeat,
+      var(--corner-br) right 5px bottom 5px / 0.42in 0.42in no-repeat,
+      rgba(253, 248, 236, 0.92);
+    border: 1px solid #C9A227;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 4px rgba(253, 248, 236, 0.92), inset 0 0 0 5px rgba(201, 162, 39, 0.55), 0 1px 8px rgba(90, 60, 10, 0.12);
+    padding: 0.3in 0.4in;
+  }
+  .m-half.dark:has(.m-memorial-head):not(:has(.m-fig + .m-fig)) {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas: "photo ." "photo head" "photo eternal" "photo .";
+    column-gap: 0.35in;
+    row-gap: 0.14in;
+  }
+  .m-half.dark:has(.m-memorial-head):not(:has(.m-fig + .m-fig)) .m-photos { grid-area: photo; min-height: 0; height: 100%; }
+  .m-half.dark:has(.m-memorial-head):not(:has(.m-fig + .m-fig)) .m-memorial-head { grid-area: head; }
+  .m-half.dark:has(.m-memorial-head):not(:has(.m-fig + .m-fig)) .m-eternal { grid-area: eternal; justify-self: center; }
+  .m-half.dark:has(.m-memorial-head) .m-fig img {
+    border: 1px solid rgba(201, 162, 39, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(60, 40, 10, 0.22);
+  }
+  .m-memorial-head .m-eyebrow { font-size: 11pt; letter-spacing: 4px; color: #B8902F; }
+  .m-memorial-head h2 { font-family: var(--serif); font-weight: 600; font-size: 30pt; line-height: 1.05; text-wrap: balance; margin-top: 0.08in; }
+  .m-memorial-head .m-dates { font-size: 14pt; letter-spacing: 0.5px; color: #4a4a4a; margin-top: 0.06in; }
+  .m-memorial-head .m-rule { width: 2.4in; margin-top: 0.1in; }
+  .m-eternal {
+    background: none;
+    color: #8a6212;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-size: 12pt;
+    padding: 0;
+  }
+
+  /* Full-page memorials get the same frame round the whole page content. */
+  .page.inner-page:has(.page-header[style*="2a2a2a"]) .m-content:has(.m-memorial-head) {
+    background:
+      var(--corner-tl) left 5px top 5px / 0.5in 0.5in no-repeat,
+      var(--corner-tr) right 5px top 5px / 0.5in 0.5in no-repeat,
+      var(--corner-bl) left 5px bottom 5px / 0.5in 0.5in no-repeat,
+      var(--corner-br) right 5px bottom 5px / 0.5in 0.5in no-repeat,
+      rgba(253, 248, 236, 0.9);
+    border: 1px solid #C9A227;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 4px rgba(253, 248, 236, 0.9), inset 0 0 0 5px rgba(201, 162, 39, 0.55), 0 1px 8px rgba(90, 60, 10, 0.12);
+    padding: 0.3in 0.4in;
+  }
+  .page.inner-page:has(.page-header[style*="2a2a2a"]) .m-memorial-head h2 { font-size: 26pt; }

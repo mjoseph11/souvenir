@@ -63,7 +63,7 @@
           ]
         }
       ],
-      "title": "The Dustin Paul Family"
+      "title": "Dustin Paul & Family"
     },
     {
       "id": "fr-alexander-kurien",
@@ -106,7 +106,7 @@
           ]
         }
       ],
-      "title": "The Lijo Chandy Family"
+      "title": "Lijo Chandy & Family"
     },
     {
       "id": "mani-p-abraham",
@@ -180,7 +180,7 @@
           ]
         }
       ],
-      "title": "The Mathewkutty Kurian Family"
+      "title": "Mathewkutty Kurian & Family"
     },
     {
       "id": "thomas-paul",
@@ -215,13 +215,13 @@
           ]
         }
       ],
-      "title": "The Thomas Paul Family",
+      "title": "Thomas Paul & Family",
       "sortNote": "Manoj asked for Thomas Paul to come before Dustin Paul, so both Pauls carry explicit ordinals."
     },
     {
       "id": "a-o-abraham",
       "name": "A. O. Abraham",
-      "title": "The A. O. Abraham Family",
+      "title": "A. O. Abraham & Family",
       "pages": [
         {
           "blocks": [
@@ -254,7 +254,7 @@
     {
       "id": "ajay-peter",
       "name": "Ajay Peter",
-      "title": "The Ajay Peter Family",
+      "title": "Ajay Peter & Family",
       "pages": [
         {
           "blocks": [
@@ -277,7 +277,7 @@
     {
       "id": "ajeesh-cherian",
       "name": "Ajeesh Cherian",
-      "title": "The Ajeesh Cherian Family",
+      "title": "Ajeesh Cherian & Family",
       "pages": [
         {
           "blocks": [
@@ -300,7 +300,7 @@
     {
       "id": "alexander-thankachen",
       "name": "Alexander Thankachen",
-      "title": "The Alexander Thankachen Family",
+      "title": "Alexander Thankachen & Family",
       "pages": [
         {
           "blocks": [
@@ -323,7 +323,7 @@
     {
       "id": "arun-philip",
       "name": "Arun Philip",
-      "title": "The Arun Philip Family",
+      "title": "Arun Philip & Family",
       "pages": [
         {
           "blocks": [
@@ -346,7 +346,7 @@
     {
       "id": "arun-raju",
       "name": "Arun Raju",
-      "title": "The Arun Raju Family",
+      "title": "Arun Raju & Family",
       "pages": [
         {
           "blocks": [
@@ -372,7 +372,7 @@
     {
       "id": "ashley-mountney",
       "name": "Ashley Mountney",
-      "title": "The Ashley Mountney Family",
+      "title": "Ashley Mountney & Family",
       "pages": [
         {
           "blocks": [
@@ -395,7 +395,7 @@
     {
       "id": "babu-varghese",
       "name": "Babu Varghese",
-      "title": "The Babu Varghese Family",
+      "title": "Babu Varghese & Family",
       "pages": [
         {
           "blocks": [
@@ -424,7 +424,7 @@
     {
       "id": "biju-chacko",
       "name": "Biju Chacko",
-      "title": "The Biju Chacko Family",
+      "title": "Biju Chacko & Family",
       "pages": [
         {
           "blocks": [
@@ -453,7 +453,7 @@
     {
       "id": "biju-mani",
       "name": "Biju Mani",
-      "title": "The Biju Mani Family",
+      "title": "Biju Mani & Family",
       "pages": [
         {
           "blocks": [
@@ -512,7 +512,7 @@
     {
       "id": "george-mathew-biju",
       "name": "George Mathew (Biju)",
-      "title": "The George Mathew Family",
+      "title": "George Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -541,7 +541,7 @@
     {
       "id": "george-varghese",
       "name": "George Varghese",
-      "title": "The George Varghese Family",
+      "title": "George Varghese & Family",
       "pages": [
         {
           "blocks": [
@@ -570,7 +570,7 @@
     {
       "id": "jacob-george",
       "name": "Jacob George",
-      "title": "The Jacob George Family",
+      "title": "Jacob George & Family",
       "pages": [
         {
           "blocks": [
@@ -602,7 +602,7 @@
     {
       "id": "john-varghese",
       "name": "John Varghese",
-      "title": "The John Varghese Family",
+      "title": "John Varghese & Family",
       "pages": [
         {
           "blocks": [
@@ -631,7 +631,7 @@
     {
       "id": "joseph-abraham",
       "name": "Joseph Abraham",
-      "title": "The Joseph Abraham Family",
+      "title": "Joseph Abraham & Family",
       "pages": [
         {
           "blocks": [
@@ -676,7 +676,7 @@
     {
       "id": "manoj-samuel",
       "name": "Manoj Samuel",
-      "title": "The Manoj Samuel Family",
+      "title": "Manoj Samuel & Family",
       "pages": [
         {
           "blocks": [
@@ -706,24 +706,10 @@
     {
       "id": "mathew-ninan",
       "name": "Mathew Ninan",
-      "title": "The Mathew Ninan Family",
+      "title": "Mathew Ninan & Family",
       "pages": [
         {
           "blocks": [
-            {
-              "type": "half",
-              "grow": 1.25,
-              "blocks": [
-                {
-                  "type": "photos",
-                  "photos": [
-                    {
-                      "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg"
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "type": "half",
               "dark": true,
@@ -746,18 +732,32 @@
                   "type": "eternal"
                 }
               ]
+            },
+            {
+              "type": "half",
+              "grow": 1.25,
+              "blocks": [
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/mathew-ninan/WhatsApp-Image-2026-06-03-at-2-25-21-PM.jpg"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       ],
       "sort": "Ninan Mathew ",
       "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
-      "layoutNote": "Manoj: \"Manoj Ninans memorial same as joys one family top memorial section on bottom\". Name and dates are from the note.txt in the Drive folder."
+      "layoutNote": "Manoj: \"Manoj Ninans memorial same as joys one family top memorial section on bottom\". Name and dates are from the note.txt in the Drive folder. 3 Nov: Manoj asked for the memorial photo on top."
     },
     {
       "id": "mathew-thomas",
       "name": "Mathew Thomas",
-      "title": "The Mathew Thomas Family",
+      "title": "Mathew Thomas & Family",
       "pages": [
         {
           "blocks": [
@@ -780,7 +780,7 @@
     {
       "id": "paul-j-maret",
       "name": "Paul J. Maret",
-      "title": "The Paul J. Maret Family",
+      "title": "Paul J. Maret & Family",
       "pages": [
         {
           "blocks": [
@@ -809,7 +809,7 @@
     {
       "id": "philipose-george",
       "name": "Philipose George",
-      "title": "The Philipose George Family",
+      "title": "Philipose George & Family",
       "pages": [
         {
           "blocks": [
@@ -832,7 +832,7 @@
     {
       "id": "prince-mathew",
       "name": "Prince Mathew",
-      "title": "The Prince Mathew Family",
+      "title": "Prince Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -861,7 +861,7 @@
     {
       "id": "rajan-eappen",
       "name": "Rajan Eappen",
-      "title": "The Rajan Eappen Family",
+      "title": "Rajan Eappen & Family",
       "pages": [
         {
           "blocks": [
@@ -884,7 +884,7 @@
     {
       "id": "rajan-mathew",
       "name": "Rajan Mathew",
-      "title": "The Rajan Mathew Family",
+      "title": "Rajan Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -914,7 +914,7 @@
     {
       "id": "raju-sankarathil",
       "name": "Raju Sankarathil",
-      "title": "The Raju Sankarathil Family",
+      "title": "Raju Sankarathil & Family",
       "pages": [
         {
           "blocks": [
@@ -937,7 +937,7 @@
     {
       "id": "sarath-moses",
       "name": "Sarath Moses",
-      "title": "The Sarath Moses Family",
+      "title": "Sarath Moses & Family",
       "pages": [
         {
           "blocks": [
@@ -960,7 +960,7 @@
     {
       "id": "shiju-poovathoor",
       "name": "Shiju Poovathoor",
-      "title": "The Shiju Poovathoor Family",
+      "title": "Shiju Poovathoor & Family",
       "pages": [
         {
           "blocks": [
@@ -992,7 +992,7 @@
     {
       "id": "suchin-thompson",
       "name": "Suchin Thompson",
-      "title": "The Suchin Thompson Family",
+      "title": "Suchin Thompson & Family",
       "pages": [
         {
           "blocks": [
@@ -1021,7 +1021,7 @@
     {
       "id": "sujith-varghese",
       "name": "Sujith Varghese",
-      "title": "The Sujith Varghese Family",
+      "title": "Sujith Varghese & Family",
       "pages": [
         {
           "blocks": [
@@ -1050,7 +1050,7 @@
     {
       "id": "thomas-joseph",
       "name": "Thomas Joseph",
-      "title": "The Thomas Joseph Family",
+      "title": "Thomas Joseph & Family",
       "pages": [
         {
           "blocks": [
@@ -1081,7 +1081,7 @@
     {
       "id": "varughese-koithottu",
       "name": "Varughese Koithottu",
-      "title": "The Varughese Koithottu Family",
+      "title": "Varughese Koithottu & Family",
       "pages": [
         {
           "blocks": [
@@ -1104,7 +1104,7 @@
     {
       "id": "varkey-vattakkattu",
       "name": "Varkey Vattakkattu",
-      "title": "The Varkey Vattakkattu Family",
+      "title": "Varkey Vattakkattu & Family",
       "pages": [
         {
           "blocks": [
@@ -1128,7 +1128,7 @@
     {
       "id": "zach-zacharia",
       "name": "Zach Zacharia",
-      "title": "The Zach Zacharia Family",
+      "title": "Zach Zacharia & Family",
       "pages": [
         {
           "blocks": [
@@ -1217,7 +1217,7 @@
     {
       "id": "cherian-t-george",
       "name": "Cherian T. George",
-      "title": "The Cherian T. George Family",
+      "title": "Cherian T. George & Family",
       "pages": [
         {
           "blocks": [
@@ -1238,7 +1238,7 @@
     {
       "id": "george-m-mathew",
       "name": "George M. Mathew",
-      "title": "The George M. Mathew Family",
+      "title": "George M. Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -1264,16 +1264,19 @@
     {
       "id": "thomas-cheriyan",
       "name": "Thomas Cheriyan",
-      "title": "The Thomas Cheriyan Family",
+      "title": "Thomas Cheriyan & Family",
       "pages": [
         {
           "blocks": [
             {
               "type": "photos",
-              "grow": 1,
+              "arrange": "stack",
               "photos": [
                 {
                   "src": "images/members/thomas-cheriyan-manoj/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/thomas-cheriyan-manoj/pic-2.jpg"
                 }
               ]
             },
@@ -1283,20 +1286,12 @@
               "center": true,
               "bare": true,
               "size": "lg"
-            },
-            {
-              "type": "photos",
-              "grow": 1,
-              "photos": [
-                {
-                  "src": "images/members/thomas-cheriyan-manoj/pic-2.jpg"
-                }
-              ]
             }
           ]
         }
       ],
-      "sort": "Cheriyan Thomas "
+      "sort": "Cheriyan Thomas ",
+      "layoutNote": "Manoj, 3 Nov: same format as John Chacko (two photos stacked). The family's message stays below them."
     },
     {
       "id": "vinesh-mathew",
@@ -1367,7 +1362,7 @@
     {
       "id": "betcy-allen",
       "name": "Betcy Allen",
-      "title": "The Betcy Allen Family",
+      "title": "Betcy Allen & Family",
       "pages": [
         {
           "blocks": [
@@ -1387,7 +1382,7 @@
     {
       "id": "poovathoor-koshy",
       "name": "Dr. Poovathoor Koshy",
-      "title": "The Poovathoor Koshy Family",
+      "title": "Poovathoor Koshy & Family",
       "pages": [
         {
           "blocks": [
@@ -1420,7 +1415,7 @@
     {
       "id": "ejo-john",
       "name": "Ejo John",
-      "title": "The Ejo John Family",
+      "title": "Ejo John & Family",
       "pages": [
         {
           "blocks": [
@@ -1463,7 +1458,7 @@
     {
       "id": "jacob-chacko",
       "name": "Jacob Chacko",
-      "title": "The Jacob Chacko Family",
+      "title": "Jacob Chacko & Family",
       "pages": [
         {
           "blocks": [
@@ -1494,7 +1489,7 @@
     {
       "id": "james-varughese",
       "name": "James Varughese",
-      "title": "The James Varughese Family",
+      "title": "James Varughese & Family",
       "pages": [
         {
           "blocks": [
@@ -1537,7 +1532,7 @@
     {
       "id": "jinu-john",
       "name": "Jinu John",
-      "title": "The Jinu John Family",
+      "title": "Jinu John & Family",
       "pages": [
         {
           "blocks": [
@@ -1564,7 +1559,7 @@
     {
       "id": "korah-mani",
       "name": "Korah Mani",
-      "title": "The Korah Mani Family",
+      "title": "Korah Mani & Family",
       "pages": [
         {
           "blocks": [
@@ -1616,7 +1611,7 @@
     {
       "id": "kuruvilla-p-kurian",
       "name": "Kuruvilla P. Kurian",
-      "title": "The Kuruvilla P. Kurian Family",
+      "title": "Kuruvilla P. Kurian & Family",
       "pages": [
         {
           "blocks": [
@@ -1644,7 +1639,7 @@
     {
       "id": "mathew-varghese",
       "name": "Mathew Varghese (Wilson)",
-      "title": "The Mathew Varghese Family",
+      "title": "Mathew Varghese & Family",
       "pages": [
         {
           "blocks": [
@@ -1717,7 +1712,7 @@
     {
       "id": "ninan-parel",
       "name": "Ninan Parel",
-      "title": "The Ninan Parel Family",
+      "title": "Ninan Parel & Family",
       "pages": [
         {
           "blocks": [
@@ -1750,7 +1745,7 @@
     {
       "id": "saji-george",
       "name": "Saji George",
-      "title": "The Saji George Family",
+      "title": "Saji George & Family",
       "pages": [
         {
           "blocks": [
@@ -1783,7 +1778,7 @@
     {
       "id": "samuel-daniel",
       "name": "Samuel Daniel",
-      "title": "The Samuel Daniel Family",
+      "title": "Samuel Daniel & Family",
       "pages": [
         {
           "blocks": [
@@ -1813,7 +1808,7 @@
     {
       "id": "varughese-p-issac",
       "name": "Varughese P. Issac",
-      "title": "The Varughese P. Issac Family",
+      "title": "Varughese P. Issac & Family",
       "pages": [
         {
           "blocks": [
@@ -1839,7 +1834,7 @@
     {
       "id": "jessu-joys",
       "name": "Jessu Joys",
-      "title": "The Jessu Joys Family",
+      "title": "Jessu Joys & Family",
       "pages": [
         {
           "blocks": [
@@ -1983,7 +1978,7 @@
     {
       "id": "yohannan-sankarathil",
       "name": "Yohannan Sankarathil",
-      "title": "The Yohannan Sankarathil Family",
+      "title": "Yohannan Sankarathil & Family",
       "pages": [
         {
           "blocks": [
@@ -2120,7 +2115,7 @@
     {
       "id": "baboo-george",
       "name": "Baboo George",
-      "title": "The Baboo George Family",
+      "title": "Baboo George & Family",
       "pages": [
         {
           "blocks": [
@@ -2151,7 +2146,7 @@
     {
       "id": "blossom-joy",
       "name": "Blossom Joy",
-      "title": "The Blossom Joy Family",
+      "title": "Blossom Joy & Family",
       "pages": [
         {
           "blocks": [
@@ -2215,7 +2210,7 @@
     {
       "id": "p-v-thomas",
       "name": "P. V. Thomas",
-      "title": "The P. V. Thomas Family",
+      "title": "P. V. Thomas & Family",
       "pages": [
         {
           "blocks": [
@@ -2255,7 +2250,7 @@
     {
       "id": "thomas-mammen",
       "name": "Thomas Mammen",
-      "title": "The Thomas Mammen Family",
+      "title": "Thomas Mammen & Family",
       "pages": [
         {
           "blocks": [
@@ -2319,7 +2314,7 @@
     {
       "id": "v-s-mathew",
       "name": "V. S. Mathew",
-      "title": "The V. S. Mathew Family",
+      "title": "V. S. Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -2361,7 +2356,7 @@
     {
       "id": "mathew-joseph",
       "name": "Mathew Joseph",
-      "title": "The Mathew Joseph Family",
+      "title": "Mathew Joseph & Family",
       "pages": [
         {
           "blocks": [
@@ -2387,7 +2382,7 @@
     {
       "id": "thomas-o-abraham",
       "name": "Thomas O. Abraham",
-      "title": "The Thomas O. Abraham Family",
+      "title": "Thomas O. Abraham & Family",
       "pages": [
         {
           "blocks": [
@@ -2424,7 +2419,7 @@
     {
       "id": "thomas-m-george",
       "name": "Thomas M. George",
-      "title": "The Thomas M. George Family",
+      "title": "Thomas M. George & Family",
       "pages": [
         {
           "blocks": [
@@ -2454,7 +2449,7 @@
       "id": "mathew-kallelil",
       "name": "Mathew Kallelil (Biji)",
       "sort": "Kallelil Mathew ",
-      "title": "The Mathew Kallelil Family",
+      "title": "Mathew Kallelil & Family",
       "pages": [
         {
           "blocks": [
@@ -2483,7 +2478,7 @@
       "id": "mathew-kandathil",
       "name": "Mathew Kandathil",
       "sort": "Kandathil Mathew ",
-      "title": "The Mathew Kandathil Family",
+      "title": "Mathew Kandathil & Family",
       "pages": [
         {
           "blocks": [
@@ -2511,7 +2506,7 @@
     {
       "id": "punnoose-mathai",
       "name": "Punnoose Mathai",
-      "title": "The Punnoose Mathai Family",
+      "title": "Punnoose Mathai & Family",
       "pages": [
         {
           "blocks": [
@@ -2548,7 +2543,7 @@
     {
       "id": "john-chacko",
       "name": "John Chacko",
-      "title": "The John Chacko Family",
+      "title": "John Chacko & Family",
       "pages": [
         {
           "blocks": [
@@ -2575,7 +2570,7 @@
     {
       "id": "ipe-maret",
       "name": "Ipe Maret",
-      "title": "The Ipe Maret Family",
+      "title": "Ipe Maret & Family",
       "pages": [
         {
           "blocks": [
@@ -2605,7 +2600,7 @@
       "id": "mathew-mathew",
       "name": "Dr. Mathew Mathew",
       "sort": "Mathew Dr. Mathew ",
-      "title": "The Dr. Mathew Mathew Family",
+      "title": "Dr. Mathew Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -2636,7 +2631,7 @@
     {
       "id": "manoj-chacko",
       "name": "Manoj Chacko",
-      "title": "The Manoj Chacko Family",
+      "title": "Manoj Chacko & Family",
       "partial": "src/pages/members/manoj-chacko.html",
       "sort": "Chacko John 2",
       "sortNote": "Manoj asked for the Chacko pages to run John, Manoj, James — not alphabetical — so these three carry explicit ordinals.",
@@ -2645,7 +2640,7 @@
     {
       "id": "ashanth-thomas",
       "name": "Ashanth Thomas",
-      "title": "The Ashanth Thomas Family",
+      "title": "Ashanth Thomas & Family",
       "pages": [
         {
           "blocks": [
@@ -2670,7 +2665,7 @@
     {
       "id": "raju-geevarghese",
       "name": "Raju Geevarghese",
-      "title": "The Raju Geevarghese Family",
+      "title": "Raju Geevarghese & Family",
       "sort": "Geevarghese Raju ",
       "pages": [
         {
@@ -2699,7 +2694,7 @@
     {
       "id": "saji-thomas",
       "name": "Saji Thomas",
-      "title": "The Saji Thomas Family",
+      "title": "Saji Thomas & Family",
       "sort": "Thomas Saji ",
       "pages": [
         {
@@ -2722,7 +2717,7 @@
     {
       "id": "nibu-ipe-maret",
       "name": "Nibu Ipe Maret",
-      "title": "The Nibu Ipe Maret Family",
+      "title": "Nibu Ipe Maret & Family",
       "sort": "Maret Ipe 2",
       "seeAlso": "ipe-maret",
       "seeAlsoLabel": "the Ipe Maret family",
@@ -2747,7 +2742,7 @@
     {
       "id": "jiji-koshy",
       "name": "Jiji Koshy",
-      "title": "The Jiji Koshy Family",
+      "title": "Jiji Koshy & Family",
       "sort": "Koshy Jiji ",
       "pages": [
         {
@@ -2766,7 +2761,7 @@
     {
       "id": "paul-c-mathai",
       "name": "Paul C Mathai",
-      "title": "The Paul C Mathai Family",
+      "title": "Paul C Mathai & Family",
       "sort": "Mathai Paul C ",
       "pages": [
         {
@@ -2809,7 +2804,7 @@
     {
       "id": "ajo-maret",
       "name": "Ajo Maret",
-      "title": "The Ajo Maret Family",
+      "title": "Ajo Maret & Family",
       "sort": "Maret Ipe 4",
       "sortNote": "Manoj: the Ipe Maret family runs Ipe, Nibu, Nithin, Ajo. Ordinal 3 is held for Nithin.",
       "seeAlso": "ipe-maret",
@@ -2841,7 +2836,7 @@
     {
       "id": "alex-john",
       "name": "Alex John",
-      "title": "The Alex John Family",
+      "title": "Alex John & Family",
       "sort": "John Alex ",
       "pages": [
         {
@@ -2864,7 +2859,7 @@
     {
       "id": "binumon-yohannan",
       "name": "Binumon Yohannan",
-      "title": "The Binumon Yohannan Family",
+      "title": "Binumon Yohannan & Family",
       "sort": "Yohannan Binumon ",
       "pages": [
         {
@@ -2887,7 +2882,7 @@
     {
       "id": "lee-k-george",
       "name": "Lee K. George",
-      "title": "The Lee K. George Family",
+      "title": "Lee K. George & Family",
       "sort": "George Lee K ",
       "pages": [
         {
@@ -2910,7 +2905,7 @@
     {
       "id": "naomi-samuel",
       "name": "Naomi Samuel",
-      "title": "The Naomi Samuel Family",
+      "title": "Naomi Samuel & Family",
       "sort": "Samuel Naomi ",
       "pages": [
         {

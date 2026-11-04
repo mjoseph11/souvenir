@@ -6,7 +6,7 @@
  *   src/pages/*.html                  hand-built pages (messages, history, ministries, …)
  *   data/outline.json                 section order, following Manoj's "SGMOC Content Outline"
  *   data/members.json                 member & memorial pages, rendered from the blocks below
- *   data/sponsors.json                sponsor ads, spread evenly through the member section
+ *   data/sponsors.json                sponsor ads, all together at the end of the book
  *
  * Page numbers, the PAGE comments and the Index pages are generated here.
  *
@@ -376,23 +376,10 @@ for (const m of members) {
   ids.add(m.id);
 }
 
-// Member pages with ads spread evenly between families (never inside a multi-page family).
+// Member pages, A–Z. Sponsor ads all go at the end of the book (Manoj, 3 Nov),
+// where data/outline.json puts its "ads" item.
 // Members with "placement": "outline" appear where data/outline.json names them (e.g. Past Clergy).
-function memberSection() {
-  const perMember = members.filter((m) => !m.placement).map(memberPages);
-  const total = perMember.reduce((n, p) => n + p.length, 0);
-  const gap = total / (ads.length + 1);
-  const out = [];
-  let count = 0;
-  let next = 0;
-  for (const pages of perMember) {
-    out.push(...pages);
-    count += pages.length;
-    while (next < ads.length && count >= gap * (next + 1)) out.push(adPage(ads[next++]));
-  }
-  while (next < ads.length) out.push(adPage(ads[next++]));
-  return out;
-}
+const memberSection = () => members.filter((m) => !m.placement).flatMap(memberPages);
 
 const pages = []; // { html, label, toc?, section?, member?, index? }
 const contents = []; // lines for the index: { section } | { title, pageRef }
@@ -417,6 +404,7 @@ for (const section of outline.sections) {
       if (!m) throw new Error(`outline names unknown member "${item.member}"`);
       added = memberPages(m);
     } else if (item.members) added = memberSection();
+    else if (item.ads) added = ads.map(adPage);
     else if (item.index) added = [{ index: true, label: 'INDEX' }];
     else throw new Error(`outline item not understood: ${JSON.stringify(item)}`);
     if (item.toc) contents.push({ title: item.toc, ref: added[0] });
