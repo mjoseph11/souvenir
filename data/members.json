@@ -1270,7 +1270,6 @@
           "blocks": [
             {
               "type": "photos",
-              "arrange": "stack",
               "photos": [
                 {
                   "src": "images/members/thomas-cheriyan-manoj/pic-1.jpg"
@@ -1281,17 +1280,17 @@
               ]
             },
             {
-              "type": "text",
-              "text": "Heartfelt congratulations to SGMOC on its Golden Jubilee, celebrating 50 blessed years of faithful service, spiritual growth, and God’s abundant grace.",
-              "center": true,
-              "bare": true,
-              "size": "lg"
+              "type": "names",
+              "text": "Heartfelt congratulations to SGMOC on its Golden Jubilee, celebrating 50 blessed years of faithful service, spiritual growth, and God’s abundant grace."
+            },
+            {
+              "type": "closing"
             }
           ]
         }
       ],
       "sort": "Cheriyan Thomas ",
-      "layoutNote": "Manoj, 3 Nov: same format as John Chacko (two photos stacked). The family's message stays below them."
+      "layoutNote": "Manoj, 5 Nov: John Chacko's page style - main photo straight, the second a tilted print. The family's message goes where the names line sits."
     },
     {
       "id": "vinesh-mathew",
@@ -2387,24 +2386,35 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
+              "type": "half",
+              "grow": 1.15,
+              "blocks": [
                 {
-                  "src": "images/members/thomas-o-abraham/pic-1.jpg"
-                },
-                {
-                  "src": "images/members/thomas-o-abraham/pic-2.jpg"
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/thomas-o-abraham/pic-2.jpg"
+                    },
+                    {
+                      "src": "images/members/thomas-o-abraham/pic-4.jpg"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "photos",
-              "photos": [
+              "type": "half",
+              "blocks": [
                 {
-                  "src": "images/members/thomas-o-abraham/pic-3.jpg"
-                },
-                {
-                  "src": "images/members/thomas-o-abraham/pic-4.jpg"
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/thomas-o-abraham/pic-1.jpg"
+                    },
+                    {
+                      "src": "images/members/thomas-o-abraham/pic-3.jpg"
+                    }
+                  ]
                 }
               ]
             },
@@ -2414,7 +2424,8 @@
           ]
         }
       ],
-      "sort": "Abraham Thomas O. "
+      "sort": "Abraham Thomas O. ",
+      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top."
     },
     {
       "id": "thomas-m-george",
