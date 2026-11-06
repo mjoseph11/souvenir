@@ -2067,12 +2067,32 @@
               "text": "May His Memory Be Eternal"
             }
           ]
+        },
+        {
+          "title": "Mariamma Varki & Family",
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mariamma-varki/wedding-1.jpg"
+                },
+                {
+                  "src": "images/members/mariamma-varki/wedding-2.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
         }
       ],
       "band": "Golden Jubilee Memorial Tribute",
       "placement": "outline",
       "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
-      "sort": "Varki Rev. Fr. Dr. Paul "
+      "sort": "Varki Rev. Fr. Dr. Paul ",
+      "layoutNote": "Design folder \"Mariamma Varki 2\" (1 Nov): two family wedding photos, added as a second page."
     },
     {
       "id": "markose-mani-memorial",
@@ -2406,6 +2426,11 @@
               "type": "half",
               "blocks": [
                 {
+                  "type": "verse",
+                  "text": "As for me and my house, we will serve the Lord.",
+                  "ref": "Joshua 24:15"
+                },
+                {
                   "type": "photos",
                   "photos": [
                     {
@@ -2425,7 +2450,7 @@
         }
       ],
       "sort": "Abraham Thomas O. ",
-      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top."
+      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms."
     },
     {
       "id": "thomas-m-george",
@@ -2928,6 +2953,871 @@
                   "src": "images/members/naomi-samuel/photo.jpg"
                 }
               ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv-philip",
+      "name": "Dr. T. V. Philip",
+      "title": "Dr. T. V. Philip & Family",
+      "sort": "Philip T V ",
+      "layoutNote": "Design folder \"Dr. T.V Philip\" (26 Oct): one Word file with the text and 6 photos, all small (at most 713 px). Left out the second graveside photo, a near-duplicate of the headstone one.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "article",
+              "title": "Message from the family of Dr. T. V. and Mary Philip",
+              "photo": {
+                "src": "images/members/tv-philip/pic-1.jpg"
+              },
+              "text": "The very first regular worship services in the Philadelphia area for the Malankara Orthodox Church (which at that time was still named the Syrian Orthodox Church of India) were held in an apartment at 49th & Pine in the early 1960s. This was the apartment where Dr TV Philip lived with his wife, Mary (Marykutty), and infant son, George, and eventually his younger brother, John. The priest, who Dr Philip invited regularly to Philadelphia from New York City, was Rev Fr. KM Simon (later, the Very Reverend Fr. KM Simon, Cor Episcopa.  By the way, Simon Achan baptized Georgie as the very first out of the hundreds of baptisms he eventually performed in the US, before his passing in 1996). These initial worship services were ecumenical; there were just a handful of Malayalis in the entire Philadelphia area at that time, and all of them attended the services. These services were also the beginning of a long line of different locations and congregations that eventually led to the founding of the St Thomas Orthodox Church in 1976 with Rev Fr. K Mathai Achan as its vicar, (later, Very Rev. K. Mathai Cor Episcopa).  Later, the parish became the St Gregorios Malankara Orthodox Church in Bensalem. In 1966, the family moved to Reading PA, where Neena (now married to Chris) was born. After the move to Reading, they had to drive about 1.5 hours each way to attend regular worship services in Philadelphia. Despite the distances, and the challenges with Johnny’s severe autism, they remained fully active in many church activities, including regular attendance at the Diocese Family Conference. Dr Philip was pleased to serve for 5 years as the official Auditor of the North American Diocese under His Grace Barnabas-Thirumeni in the early 2000s. As a very happy grandfather of Nathaniel and Isaac, Dr Philip lived 90 healthy and active years, passing away in June 2014, just weeks after celebrating his 90th birthday at the church. Marykutty was well loved by church members and passed away in June 2022 at age 88.  On September 13th 2026, Shibu Achan was kind enough to celebrate Johnny’s 63rd birthday and his Pioneer status at St Gregorios.",
+              "sign": "Georgie, Johnny, Neena & Chris, Nathaniel, Isaac"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/tv-philip/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/tv-philip/pic-3.jpg"
+                }
+              ]
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/tv-philip/pic-5.jpg"
+                },
+                {
+                  "src": "images/members/tv-philip/pic-4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "rule"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt-ninan",
+      "name": "K. T. Ninan",
+      "title": "K. T. Ninan & Saramma Ninan",
+      "sort": "Ninan K T ",
+      "layoutNote": "Design folder \"Thomas Ninan\" (3 Nov): KTNinan.pdf, a finished page the family designed (\"Founding members, First elected trustee\"). Kept as sent, rendered at 300 dpi.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "plain": true,
+              "photos": [
+                {
+                  "src": "images/members/kt-ninan/page.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eby-paulose",
+      "name": "Rev. Fr. Eby Paulose",
+      "title": "Rev. Fr. Eby Paulose & Family",
+      "sort": "Paulose Eby ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/eby-paulose/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cherian-koshy",
+      "name": "Cherian Koshy",
+      "title": "Cherian Koshy & Family",
+      "sort": "Koshy Cherian ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/cherian-koshy/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathews-thomas",
+      "name": "Mathews Thomas (Bijoy)",
+      "title": "Mathews Thomas (Bijoy) & Family",
+      "sort": "Thomas Mathews ",
+      "layoutNote": "Google Doc in the Design folder: the icon and two lines of text, no family photo.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathews-thomas/icon.jpg"
+                }
+              ]
+            },
+            {
+              "type": "names",
+              "text": "Best Wishes from\nMathews Thomas (Bijoy), Shoba, Susanna and Sammy\nSGMOC members since 2007"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shalom-mammen",
+      "name": "Shalom Mammen",
+      "title": "Shalom Mammen & Family",
+      "sort": "Mammen Shalom ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/shalom-mammen/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/shalom-mammen/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/shalom-mammen/pic-3.jpg"
+                },
+                {
+                  "src": "images/members/shalom-mammen/pic-4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jimmy-george",
+      "name": "Jimmy George",
+      "title": "Jimmy George & Family",
+      "sort": "George Jimmy ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/jimmy-george/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sumod-abraham",
+      "name": "Sumod Abraham",
+      "title": "Sumod Abraham & Family",
+      "sort": "Abraham Sumod ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/sumod-abraham/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "names",
+              "text": "Prayers and Best Wishes from the Abraham Family"
+            },
+            {
+              "type": "verse",
+              "text": "As for me and my house, we will serve the Lord.",
+              "ref": "Joshua 24:15"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thomas-chacko",
+      "name": "Thomas Chacko",
+      "title": "Thomas Chacko & Family",
+      "sort": "Chacko Thomas ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/thomas-chacko/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kurian-madathil",
+      "name": "Kurian Madathil",
+      "title": "Kurian Madathil & Family",
+      "sort": "Madathil Kurian ",
+      "seeAlso": "mathew-kurian",
+      "seeAlsoLabel": "the Mathew Madathil Kurian family",
+      "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
+      "layoutNote": "Design folder (31 Oct). The memorial text file is named \"After memorial photo\", so the text runs under his photo. Family on top, memorial below, as in the Joys sample. The two text files spell the home place differently: \"Kadampara, Mannar\" and \"Kadapra, Mannar\".",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "half",
+              "grow": 1.2,
+              "blocks": [
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/kurian-madathil/family.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "names",
+                  "text": "Kurian Madathil and Family\nManalel Madathil Family • Kadapra, Mannar"
+                }
+              ]
+            },
+            {
+              "type": "half",
+              "dark": true,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "eyebrow": "In Loving Memory of Our Beloved Brother",
+                  "name": "Very Rev. Christophorus Ramban",
+                  "dates": "St. Kuriakose Ashram, Mylapra"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/kurian-madathil/ramban.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "Lord, Have Mercy Upon Us and Help Us"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "size": "sm",
+              "text": "Home Parish: Mannar Martha Mariam Church, Kadampara, Mannar, Niranam, Kerala"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathew-kurian",
+      "name": "Mathew Madathil Kurian",
+      "title": "Mathew Madathil Kurian & Family",
+      "sort": "Kurian Mathew Madathil ",
+      "seeAlso": "kurian-madathil",
+      "seeAlsoLabel": "the Kurian Madathil family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathew-kurian/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/mathew-kurian/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/mathew-kurian/pic-3.jpg"
+                },
+                {
+                  "src": "images/members/mathew-kurian/pic-4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "text": "Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.\n\nAs we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.\n\nMay God continue to bless our parish and guide us in faith, love, and unity for generations to come.\n\nWith love, prayers, and best wishes from our family to yours!"
+            },
+            {
+              "type": "names",
+              "text": "Mathew Madathil Kurian • Sherin • Allison • Andrew"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abey-jacob",
+      "name": "Abey Jacob",
+      "title": "Abey Jacob & Family",
+      "sort": "Jacob Abey ",
+      "layoutNote": "Word file + PDF in the Design folder: verse at the top, the photo, then the dedication.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "verse",
+              "big": true,
+              "text": "Enter His gates with thanksgiving and His courts with praise; give thanks to Him and praise His name. For the LORD is good and His love endures forever; His faithfulness continues through all generations.",
+              "ref": "Psalm 100:4–5"
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/abey-jacob/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "center": true,
+              "title": "Dedication",
+              "text": "To the glory of God, in grateful celebration of fifty years of His enduring faithfulness and blessings, we dedicate this Golden Anniversary. May the spirit of worship, service, and devotion that has guided our church continue to illuminate its path for generations to come."
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kaleeckal-family",
+      "name": "Kaleeckal Family",
+      "title": "The Kaleeckal Family",
+      "sort": "Kaleeckal ",
+      "pending": true,
+      "layoutNote": "Design folder \"Rev. Fr. Kaleeckal Mathai Cor-Episcopa\" (26 Oct): one family photo, no text. The title is a guess; ask Manoj what the page should be called.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/kaleeckal-family/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joe-george",
+      "name": "Joe George",
+      "title": "Joe George & Family",
+      "sort": "George Joe ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/joe-george/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "names",
+              "text": "With gratitude and love,\nThe George Family"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vinu-varghese",
+      "name": "Vinu Varghese",
+      "title": "Vinu Varghese & Family",
+      "sort": "Varghese Vinu ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/vinu-varghese/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "title": "Congratulations to SGMOC on its Golden Jubilee!",
+              "text": "We are grateful for the dedication and sacrifices of those who laid the foundation for this spiritual community and for the generations who continue to carry forward its traditions and values.\n\nMay God continue to bless our church, strengthen our unity, and guide future generations in faith, love, and service."
+            },
+            {
+              "type": "names",
+              "text": "With love and prayers,\nThe Varghese Family"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vivin-varghese",
+      "name": "Vivin Varghese",
+      "title": "Vivin Varghese & Family",
+      "sort": "Varghese Vivin ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/vivin-varghese/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/vivin-varghese/pic-2.jpg"
+                }
+              ],
+              "arrange": "stack"
+            },
+            {
+              "type": "verse",
+              "text": "As for me and my house, we will serve the Lord.",
+              "ref": "Joshua 24:15"
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "text": "With grateful hearts, we thank God for His endless blessings and guidance. May His love and grace continue to strengthen our family and our church for generations to come."
+            },
+            {
+              "type": "names",
+              "text": "With love and prayers,\nThe Varghese Family"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nithin-maret",
+      "name": "Nithin Maret",
+      "title": "Nithin Maret & Family",
+      "sort": "Maret Ipe 3",
+      "sortNote": "Manoj: the Ipe Maret family runs Ipe, Nibu, Nithin, Ajo.",
+      "seeAlso": "ipe-maret",
+      "seeAlsoLabel": "the Ipe Maret family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/nithin-maret/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/nithin-maret/pic-2.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benson-panicker",
+      "name": "Benson Panicker",
+      "title": "Benson Panicker & Family",
+      "sort": "Panicker Benson ",
+      "layoutNote": "Their note: \"Photo with church background first then this verse then the next photo\".",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/benson-panicker/pic-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "text": "As for me and my house, we will serve the Lord.",
+              "ref": "Joshua 24:15"
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "May God bless our family with love, strengthen us in faith, guide our steps, and keep us united in His grace today and always."
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/benson-panicker/pic-2.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shijoy-k-mathew",
+      "name": "Shijoy K. Mathew",
+      "title": "Shijoy K. Mathew & Family",
+      "sort": "Mathew Shijoy K ",
+      "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
+      "layoutNote": "Design folder (12 Oct): a family photo, Daniel's photo and \"Daniel Memorial.txt\". The memorial is stated in their own text.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "half",
+              "grow": 1,
+              "blocks": [
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/shijoy-k-mathew/family.jpg"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "half",
+              "dark": true,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "Daniel Kulathoor Mathew"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/shijoy-k-mathew/daniel.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "Until We Meet Again"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "We think about you always, we talk about you still,\nYou have never been forgotten, and you never will.\nWe hold you close within our hearts,\nAnd there you will remain, until we meet again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raju-m-varghese",
+      "name": "Raju M. Varghese",
+      "title": "Raju M. Varghese & Family",
+      "sort": "Varghese Raju M ",
+      "layoutNote": "Design folder (12 Oct): one photo at the root; the \"others\" subfolder is left out, like old/.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/raju-m-varghese/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "richie-oommen",
+      "name": "Richie Oommen",
+      "title": "Richie Oommen & Family",
+      "sort": "Oommen Richie ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/richie-oommen/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jiji-philip",
+      "name": "Joseph (Jiji) Philip",
+      "title": "Joseph (Jiji) Philip & Family",
+      "sort": "Philip Joseph Jiji ",
+      "layoutNote": "The verse came as a screenshot of Proverbs 3:5–6.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/jiji-philip/pic-1.jpg"
+                },
+                {
+                  "src": "images/members/jiji-philip/pic-2.jpg"
+                }
+              ]
+            },
+            {
+              "type": "verse",
+              "text": "Trust in the LORD with all your heart, and do not rely on your own insight. In all your ways acknowledge him, and he will make straight your paths.",
+              "ref": "Proverbs 3:5–6"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "john-mathew",
+      "name": "John Mathew",
+      "title": "John Mathew & Family",
+      "sort": "Mathew John ",
+      "layoutNote": "Design folder \"John Mathew\" (1 Oct): \"Family's Journey at SGMOC.pdf\", a family photo and three icons. The text calls him \"Dr. Mathew\"; confirm the title with Manoj. Same family as the Ceena Mathew folder in Writing.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/john-mathew/family.jpg"
+                },
+                {
+                  "src": "images/members/john-mathew/icon-holy-family.jpg"
+                },
+                {
+                  "src": "images/members/john-mathew/icon-joseph.jpg"
+                },
+                {
+                  "src": "images/members/john-mathew/icon-benjamin.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Our Family's Journey at SGMOC",
+              "text": "Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.\n\nWe are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come."
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "May the intercessions of the Holy Theotokos, St. Joseph, Patriarch Joseph and Patriarch Benjamin be a refuge for us!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rajan-m-thomas",
+      "name": "Rajan M. Thomas",
+      "title": "Rajan M. Thomas & Family",
+      "sort": "Thomas Rajan M ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/rajan-m-thomas/photo.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "james-chacko",
+      "name": "James Chacko",
+      "title": "James Chacko & Family",
+      "sort": "Chacko John 3",
+      "sortNote": "Manoj asked for the Chacko pages to run John, Manoj, James.",
+      "layoutNote": "James Layout with malayalam text.png: the blessing photo across the top, two church groups and the girls below, the Malayalam line at the foot (James Text.docx).",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "half",
+              "grow": 1.1,
+              "blocks": [
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/james-chacko/pic-1.jpg"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "half",
+              "blocks": [
+                {
+                  "type": "photos",
+                  "arrange": "row",
+                  "photos": [
+                    {
+                      "src": "images/members/james-chacko/pic-2.jpg"
+                    },
+                    {
+                      "src": "images/members/james-chacko/pic-3.jpg"
+                    },
+                    {
+                      "src": "images/members/james-chacko/pic-4.jpg"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "size": "lg",
+              "text": "നന്ദിയോടെ സ്തുതി പാടിടും..."
             },
             {
               "type": "closing"
