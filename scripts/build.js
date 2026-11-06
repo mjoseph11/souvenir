@@ -100,7 +100,7 @@ const BLOCKS = {
     // Short pieces: one column, with a big photo on the left and the writing
     // beside it. Two narrow columns would leave the lower half of the page bare.
     const short = String(b.text ?? '').length < 1300 && ctx.soloArticle;
-    const cls = ['m-article', b.span && 'span-title', short && 'wide-photo'].filter(Boolean).join(' ');
+    const cls = ['m-article', b.span && 'span-title', short && 'wide-photo', b.size && `size-${b.size}`].filter(Boolean).join(' ');
     const fig = b.photo ? figure(b.photo, ctx.alt) : '';
     const title = b.title ? `<h2 class="m-article-title">${heading(b.title)}</h2>` : '';
     const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
@@ -475,6 +475,11 @@ if (location.hash === '#layout-check') addEventListener('load', function () {
       pc.querySelectorAll('*').forEach(function (e) { bottom = Math.max(bottom, e.getBoundingClientRect().bottom); });
       if (bottom > top + 1) issues.push('content runs under footer by ' + ((bottom - top) / IN).toFixed(2) + 'in');
     }
+    // Multi-column text that runs out of height spills into an extra column off
+    // to the right, which none of the height checks above can see.
+    pg.querySelectorAll('.m-article, .m-text.cols').forEach(function (el) {
+      if (el.scrollWidth > el.clientWidth + 2) issues.push('text spills into an extra column (' + el.className + ')');
+    });
     pg.querySelectorAll('img').forEach(function (im) { if (!im.naturalWidth) issues.push('broken image ' + im.getAttribute('src')); });
     pg.querySelectorAll('.m-fig img').forEach(function (im) {
       var h = im.getBoundingClientRect().height;
