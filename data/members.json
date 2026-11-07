@@ -38,7 +38,6 @@
     {
       "id": "dustin-paul",
       "name": "Dustin Paul",
-      "approved": true,
       "sort": "Paul 2 Dustin",
       "pages": [
         {
@@ -47,7 +46,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/dustin-paul/photo.jpeg"
+                  "src": "images/members/dustin-paul/photo-2026-11.jpg"
                 }
               ]
             },
@@ -75,9 +74,9 @@
     },
     {
       "id": "lijo-chandy",
-      "name": "Lijo Chandy",
+      "name": "Varghese Chandy",
       "approved": true,
-      "sort": "Chandy Lijo ",
+      "sort": "Chandy Varghese ",
       "pages": [
         {
           "blocks": [
@@ -85,7 +84,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/lijo-chandy/photo1.jpeg"
+                  "src": "images/members/lijo-chandy/photo3.jpeg"
                 }
               ]
             },
@@ -96,7 +95,7 @@
                   "src": "images/members/lijo-chandy/photo2.jpeg"
                 },
                 {
-                  "src": "images/members/lijo-chandy/photo3.jpeg"
+                  "src": "images/members/lijo-chandy/photo1.jpeg"
                 }
               ]
             },
@@ -106,7 +105,7 @@
           ]
         }
       ],
-      "title": "Lijo Chandy & Family"
+      "title": "Varghese Chandy & Family"
     },
     {
       "id": "mani-p-abraham",
@@ -276,8 +275,8 @@
     },
     {
       "id": "ajeesh-cherian",
-      "name": "Ajeesh Cherian",
-      "title": "Ajeesh Cherian & Family",
+      "name": "Ajeesh Koshy Cherian",
+      "title": "Ajeesh Koshy Cherian & Family",
       "pages": [
         {
           "blocks": [
@@ -288,6 +287,10 @@
                   "src": "images/members/ajeesh-cherian/WhatsApp-Image-2026-09-06-at-9-54-15-AM.jpg"
                 }
               ]
+            },
+            {
+              "type": "names",
+              "text": "Best compliments from\nAjeesh Koshy Cherian • Jincy Achamma Chacko\nRiya Koshy Cherian & Jacob Koshy Cherian"
             },
             {
               "type": "closing"
@@ -371,8 +374,8 @@
     },
     {
       "id": "ashley-mountney",
-      "name": "Ashley Mountney",
-      "title": "Ashley Mountney & Family",
+      "name": "Patrick Mountney",
+      "title": "Patrick Mountney & Family",
       "pages": [
         {
           "blocks": [
@@ -390,7 +393,7 @@
           ]
         }
       ],
-      "sort": "Mountney Ashley "
+      "sort": "Mountney Patrick "
     },
     {
       "id": "babu-varghese",
@@ -490,7 +493,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/dr-joe-johnv-s-john-and-family/WhatsApp-Image-2026-08-01-at-5-58-21-PM.jpg"
+                  "src": "images/members/dr-joe-johnv-s-john-and-family/photo-2026-11.jpg"
                 }
               ]
             },
@@ -1360,8 +1363,8 @@
     },
     {
       "id": "betcy-allen",
-      "name": "Betcy Allen",
-      "title": "Betcy Allen & Family",
+      "name": "Allen Kuruvilla",
+      "title": "Allen Kuruvilla & Family",
       "pages": [
         {
           "blocks": [
@@ -1377,7 +1380,7 @@
           ]
         }
       ],
-      "sort": "Allen Betcy "
+      "sort": "Kuruvilla Allen "
     },
     {
       "id": "poovathoor-koshy",
@@ -1495,7 +1498,7 @@
           "blocks": [
             {
               "type": "text",
-              "text": "As our parish celebrates its Golden Jubilee under the leadership of Rev. Fr. Shibu Venad Mathai, our family—James (Jimmy), Caroline, Andrew, and Timothy (Timmy) Varughese, together with our father, Gheevarughese Mathai (Babu)—reflects with profound gratitude on the journey that has bound us to this holy sanctuary. A pinnacle moment of this Golden Jubilee celebration was the laying on of hands of Andrew by the supreme head of the Church, H.H. Moran Mar Baselios Marthoma Mathews III, to enter the holy altar. Though our sister Jenny, her husband Sandeep, and their children Amelia and Luke relocated to Tennessee in March of this year, our spiritual roots in this parish community remain unshakeable.\n\nOver the years, God has granted our family the privilege of serving Him at the parish, regional, and diocesan levels. From serving as OVBS Coordinator, Diocese OVBS Committee Member, Sunday School Teacher and Registrar, Youth League Treasurer, MGOCSM Council Member, Parish Committee member, and member of both the Board of Directors and Mission Board, to contributing to St. Joseph's Forum, MMVS, STG, Christmas Carol, and Gregorian Harmony, as well as serving as Acolytes at the altar, each ministry has anchored our lives more deeply in the Church.\n\nWith loving hearts, we treasure the sacred memory of our dear mother, Annamma Gheevarughese (Kunjumol), and hold fond memories of our founding vicar, V. Rev. Fr. K. Mathai Cor-Episcopos. We also honor the revered Hierarchs who guided our path: L.L. H.G. Thomas Mar Makarios, who laid hands on Jimmy to enter the altar; L.L. H.G. Mathews Mar Barnabas, who tenderly shepherded the American Diocese during the early growth of the MGOCSM; and L.L. H.G. Zachariah Mar Theophilus, who blessed and solemnized our Holy Matrimony. May their memory be eternal.\n\nIn the midst of life's present struggles and uncertainties, holding fast to our Orthodox faith and the Holy Sacraments is not merely our tradition—it is our hope and strength. May the Almighty continue to shower His divine grace upon our parish for generations to come.",
+              "text": "As our parish celebrates its Golden Jubilee under the leadership of Rev. Fr. Shibu Venad Mathai, our family—James (Jimmy), Caroline, Andrew, and Timothy (Timmy) Varughese, together with our father, Gheevarughese Mathai (Babu)—reflects with profound gratitude on the journey that has bound us to this holy sanctuary. A pinnacle moment of this Golden Jubilee celebration was the laying on of hands of Andrew by the supreme head of the Church, H.H. Moran Mar Baselios Marthoma Mathews III, to enter the holy altar. Though our sister Jenny, her husband Sandeep, and their children Amelia and Luke relocated to Tennessee in March of this year, our spiritual roots in this parish community remain unshakeable.\n\nOver the years, God has granted our family the privilege of serving Him at the parish, regional, and diocesan levels. From serving as OVBS Coordinator, Diocese OVBS Committee Member, Sunday School Teacher and Registrar, Youth League Treasurer, MGOCSM Council Member, Parish Committee member, and member of both the Board of Directors and Mission Board, to contributing to St. Joseph's Forum, MMVS, STG, Christmas Carol, and Gregorian Harmony, as well as serving as Acolytes at the altar, each ministry has anchored our lives more deeply in the Church.\n\nWith loving hearts, we treasure the sacred memory of our dear mother and a founding member of the parish, Annamma Gheevarughese (Kunjumol), and hold fond memories of our founding vicar, V. Rev. Fr. K. Mathai Cor-Episcopos. We also honor the revered Hierarchs who guided our path: L.L. H.G. Thomas Mar Makarios, who laid hands on Jimmy to enter the altar; L.L. H.G. Mathews Mar Barnabas, who tenderly shepherded the American Diocese during the early growth of the MGOCSM; and L.L. H.G. Zachariah Mar Theophilus, who blessed and solemnized our Holy Matrimony. May their memory be eternal.\n\nIn the midst of life's present struggles and uncertainties, holding fast to our Orthodox faith and the Holy Sacraments is not merely our tradition—it is our hope and strength. May the Almighty continue to shower His divine grace upon our parish for generations to come.",
               "title": "Fifty Years of Grace: The Varughese Family's Journey of Faith and Service",
               "cols": true,
               "size": "xs"
@@ -1908,7 +1911,7 @@
             },
             {
               "type": "names",
-              "text": "John Kappil • Daya Kappil • Sarah Kappil • Alexander Kappil"
+              "text": "The Kappils"
             },
             {
               "type": "eternal"
@@ -1990,7 +1993,7 @@
                   "type": "photos",
                   "photos": [
                     {
-                      "src": "images/members/yohannan-sankarathil/FamilyPic-adj.jpg"
+                      "src": "images/members/yohannan-sankarathil/family-2026.jpg"
                     }
                   ]
                 },
@@ -2011,7 +2014,7 @@
                   "type": "photos",
                   "photos": [
                     {
-                      "src": "images/members/yohannan-sankarathil/InLovingMemory-adj.jpg"
+                      "src": "images/members/yohannan-sankarathil/parents-2026.jpg"
                     },
                     {
                       "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26-adj.jpg"
@@ -2047,16 +2050,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/mariamma-varki/05042026Scan-From-HP-MFP-1-p1.jpg"
-                },
-                {
-                  "src": "images/members/mariamma-varki/05042026Scan-From-HP-MFP-2-p1.jpg"
-                },
-                {
-                  "src": "images/members/mariamma-varki/05042026Scan-From-HP-MFP-3-p1.jpg"
-                },
-                {
-                  "src": "images/members/mariamma-varki/05042026Scan-From-HP-MFP-p1.jpg"
+                  "src": "images/members/mariamma-varki/upscaled-2.jpg"
                 }
               ]
             },
@@ -2067,6 +2061,35 @@
             {
               "type": "eternal",
               "text": "May His Memory Be Eternal"
+            }
+          ]
+        },
+        {
+          "title": "Mariamma Varki & Family",
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mariamma-varki/upscaled-3.jpg"
+                },
+                {
+                  "src": "images/members/mariamma-varki/upscaled-1.jpg"
+                },
+                {
+                  "src": "images/members/mariamma-varki/upscaled-4.jpg"
+                }
+              ],
+              "arrange": "row"
+            },
+            {
+              "type": "text",
+              "title": "A Tribute to Rev. Fr. Dr. Paul Varki",
+              "text": "Rev. Fr. Dr. Paul Varki (formerly Dn. Paul Varki) faithfully served the Malankara Orthodox Church throughout his life. As we celebrate our Golden Jubilee, we lovingly remember a man whose devotion, humility, and steadfast service shaped the earliest foundations of our community.\n\nOrdained as a deacon at age 18 by His Holiness Baselios Geevarghese II, he came to the United States in 1957 for higher studies. He pursued advanced academic work—including studies at Princeton University—and later earned a doctorate in Psychology. While serving as a Board-certified Psychologist for the Commonwealth of Pennsylvania, he quietly nurtured the spiritual life of Malayalee Orthodox Christians in the region.\n\nIn 1965, he helped organize monthly worship at Asbury Church, hosting clergy from multiple denominations. This ecumenical fellowship became a spiritual home for Orthodox, Marthoma, Catholic, CSI, and other Kerala Christians for eleven years.\n\nA turning point came in 1976, when he invited Rev. Fr. K. Mathai to lead Holy Week services. The overwhelming response led to the formation of the first Orthodox parish in Philadelphia. He later wrote to the Catholicos requesting authorization for a parish—resulting in the establishment of St. Thomas Orthodox Church of India (STOCI) on October 10, 1976.\n\nThe parish grew steadily, acquiring its first church building in Torresdale in 1984 and later building a new church in Bensalem, consecrated in 2009. As the new church neared completion, Paul Varki Achen reflected on the community’s journey with a joyful Malayalam poem:\n\nഅറുപത്തിനാലിൽ വിശ്വാസികൾ നട്ട മുന്തിരി വെസ്റ്റ് ഫിലിയിൽ\nസെൻറ്‌ തോമസ് ആയി വന്നെല്ലോ\nഅതിനെ നനച്ചു വളർത്തി നാം സെൻറ്‌ ഗ്രീഗോറിയോസ് ആയി\nടോറസ്ഡെയിലിൽ ശോഭിച്ചു\n[വീണ്ടും] ചേരുക നീ എൻ മാനസമേ\nബെൻസലേമിലെ നിലയത്തിൽ\nപരുമല മരുവും തിരുമേനി വന്നു വസിക്കുന്നീ നാളിൽ\nഇന്നീ ജനന പെരുന്നാളിൽ\nനാഥാ കരുണാ സാഗരമേ ഓർക്കണമേ നിൻ ജനതതിയെ\n\nRev. Fr. Dr. Paul Varki’s legacy is one of faithfulness, perseverance, and love. He helped build a community before there was a parish, welcomed clergy before there was a resident priest, and fostered unity long before there were church buildings. His memory remains a blessing to every Orthodox family in Greater Philadelphia.",
+              "cols": true,
+              "lines": true,
+              "size": "xs",
+              "sign": "Mariamma Varki"
             }
           ]
         },
@@ -2094,7 +2117,7 @@
       "placement": "outline",
       "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
       "sort": "Varki Rev. Fr. Dr. Paul ",
-      "layoutNote": "Design folder \"Mariamma Varki 2\" (1 Nov): two family wedding photos, added as a second page."
+      "layoutNote": "Manoj, 6 Nov: memorial page has only Achen's portrait; Mariamma Varki's page has Achen and Kochamma, the tribute, then the two standing photos; \"Mariamma Varki 2\" is her children's page. Photos are the upscaled copies in the Design folder (5 Oct)."
     },
     {
       "id": "markose-mani-memorial",
@@ -2738,8 +2761,8 @@
     },
     {
       "id": "nibu-ipe-maret",
-      "name": "Nibu Ipe Maret",
-      "title": "Nibu Ipe Maret & Family",
+      "name": "Nibu Maret",
+      "title": "Nibu Maret & Family",
       "sort": "Maret Ipe 2",
       "seeAlso": "ipe-maret",
       "seeAlsoLabel": "the Ipe Maret family",
@@ -2849,6 +2872,10 @@
               ]
             },
             {
+              "type": "names",
+              "text": "Ajo Maret • Rikku Maret\nZach Ajo Maret • Zoey Ajo Maret"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -2952,29 +2979,39 @@
       "name": "Dr. T. V. Philip",
       "title": "Dr. T. V. Philip & Family",
       "sort": "Philip T V ",
-      "layoutNote": "Design folder \"Dr. T.V Philip\" (26 Oct): one Word file with the text and 6 photos, all small (at most 713 px). Left out the second graveside photo, a near-duplicate of the headstone one. One page, as the family asked (Manoj, 6 Nov).",
+      "layoutNote": "Design folder \"Dr. T.V Philip\" (26 Oct): one Word file with the text and 6 photos, all small (at most 713 px). All six photos (the family asked for the second graveside one, 7 Nov). One page, as the family asked (Manoj, 6 Nov).",
       "pages": [
         {
           "blocks": [
             {
-              "type": "article",
+              "type": "text",
+              "cols": true,
+              "size": "xs",
               "title": "Message from the family of Dr. T. V. and Mary Philip",
-              "photo": {
-                "src": "images/members/tv-philip/pic-1.jpg"
-              },
               "text": "The very first regular worship services in the Philadelphia area for the Malankara Orthodox Church (which at that time was still named the Syrian Orthodox Church of India) were held in an apartment at 49th & Pine in the early 1960s. This was the apartment where Dr TV Philip lived with his wife, Mary (Marykutty), and infant son, George, and eventually his younger brother, John. The priest, who Dr Philip invited regularly to Philadelphia from New York City, was Rev Fr. KM Simon (later, the Very Reverend Fr. KM Simon, Cor Episcopa.  By the way, Simon Achan baptized Georgie as the very first out of the hundreds of baptisms he eventually performed in the US, before his passing in 1996). These initial worship services were ecumenical; there were just a handful of Malayalis in the entire Philadelphia area at that time, and all of them attended the services. These services were also the beginning of a long line of different locations and congregations that eventually led to the founding of the St Thomas Orthodox Church in 1976 with Rev Fr. K Mathai Achan as its vicar, (later, Very Rev. K. Mathai Cor Episcopa).  Later, the parish became the St Gregorios Malankara Orthodox Church in Bensalem. In 1966, the family moved to Reading PA, where Neena (now married to Chris) was born. After the move to Reading, they had to drive about 1.5 hours each way to attend regular worship services in Philadelphia. Despite the distances, and the challenges with Johnny’s severe autism, they remained fully active in many church activities, including regular attendance at the Diocese Family Conference. Dr Philip was pleased to serve for 5 years as the official Auditor of the North American Diocese under His Grace Barnabas-Thirumeni in the early 2000s. As a very happy grandfather of Nathaniel and Isaac, Dr Philip lived 90 healthy and active years, passing away in June 2014, just weeks after celebrating his 90th birthday at the church. Marykutty was well loved by church members and passed away in June 2022 at age 88.  On September 13th 2026, Shibu Achan was kind enough to celebrate Johnny’s 63rd birthday and his Pioneer status at St Gregorios.",
-              "sign": "Georgie, Johnny, Neena & Chris, Nathaniel, Isaac",
-              "size": "xs"
+              "sign": "Georgie, Johnny, Neena & Chris, Nathaniel, Isaac"
             },
             {
               "type": "photos",
               "arrange": "row",
               "photos": [
                 {
+                  "src": "images/members/tv-philip/pic-1.jpg"
+                },
+                {
                   "src": "images/members/tv-philip/pic-2.jpg"
                 },
                 {
                   "src": "images/members/tv-philip/pic-3.jpg"
+                }
+              ]
+            },
+            {
+              "type": "photos",
+              "arrange": "row",
+              "photos": [
+                {
+                  "src": "images/members/tv-philip/pic-6.jpg"
                 },
                 {
                   "src": "images/members/tv-philip/pic-5.jpg"
@@ -2982,8 +3019,7 @@
                 {
                   "src": "images/members/tv-philip/pic-4.jpg"
                 }
-              ],
-              "grow": 0.4
+              ]
             },
             {
               "type": "closing"
@@ -3192,6 +3228,10 @@
               ]
             },
             {
+              "type": "names",
+              "text": "Benu Paulose • Susannah Thomas • Rachel Thomas"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -3334,7 +3374,7 @@
               "type": "text",
               "center": true,
               "title": "Dedication",
-              "text": "To the glory of God, in grateful celebration of fifty years of His enduring faithfulness and blessings, we dedicate this Golden Anniversary. May the spirit of worship, service, and devotion that has guided our church continue to illuminate its path for generations to come."
+              "text": "To the glory of God, in grateful celebration of 50 years of His enduring faithfulness and blessings, we dedicate this Golden Anniversary. May the spirit of worship, service, and devotion that has guided our church continue to illuminate its path for generations to come."
             },
             {
               "type": "closing"
@@ -3502,8 +3542,8 @@
     },
     {
       "id": "benson-panicker",
-      "name": "Benson Panicker",
-      "title": "Benson Panicker & Family",
+      "name": "Benson Varghese Panicker",
+      "title": "Benson Varghese Panicker & Family",
       "sort": "Panicker Benson ",
       "layoutNote": "Their note: \"Photo with church background first then this verse then the next photo\".",
       "pages": [
@@ -3536,6 +3576,10 @@
                   "src": "images/members/benson-panicker/pic-2.jpg"
                 }
               ]
+            },
+            {
+              "type": "names",
+              "text": "Leena Benson Panicker • Bartholomew Benson Panicker • Luke Benson Panicker"
             },
             {
               "type": "closing"
@@ -3682,9 +3726,9 @@
     },
     {
       "id": "john-mathew",
-      "name": "John Mathew",
-      "title": "John Mathew & Family",
-      "sort": "Mathew John ",
+      "name": "Dr. Mathew John",
+      "title": "Dr. Mathew John & Family",
+      "sort": "John Mathew Dr. ",
       "layoutNote": "Design folder \"John Mathew\" (1 Oct): \"Family's Journey at SGMOC.pdf\", a family photo and three icons. The text calls him \"Dr. Mathew\"; confirm the title with Manoj. Same family as the Ceena Mathew folder in Writing.",
       "pages": [
         {

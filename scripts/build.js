@@ -112,7 +112,9 @@ const BLOCKS = {
       .filter(Boolean)
       .join(' ');
     const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
-    const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
+    // "lines": keep the line breaks inside each paragraph (poems, hymns).
+    const fmt = (p) => (b.lines ? lines(p).map(esc).join('<br>') : esc(p));
+    const body = paragraphs(b.text).map((p) => `<p>${fmt(p)}</p>`).join('');
     const sign = b.sign ? `<p class="m-sign">&mdash; ${esc(b.sign)}</p>` : '';
     return `<div class="${cls}">${title}${body}${sign}</div>`;
   },
@@ -236,7 +238,8 @@ function styledBody(m, pg) {
   const img = (p, cls, x, y, w, hgt, rot) =>
     `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}"></figure>`;
 
-  const foot = 1.3 + (names ? 0.5 : 0);           // verse + closing (+ names) at the bottom
+  // verse + closing at the bottom, plus room for each line of names
+  const foot = 1.3 + (names ? Math.max(0.5, 0.22 + 0.26 * lines(names.text).length) : 0);
   const avail = H - foot;
   const a = photoAspect(main.src);
   const out = [];
