@@ -12,6 +12,9 @@
 
   /* ── Reset & base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  /* Phones (iOS Safari especially) enlarge long paragraphs on pages wider than
+     the screen, which pushes text past the footer. Keep the printed sizes. */
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   body {
     font-family: 'Georgia', serif;
     background: #d0d0d0;
