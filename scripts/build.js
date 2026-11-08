@@ -127,6 +127,14 @@ const BLOCKS = {
   side(b, ctx) {
     const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
     const grow = b.grow ? ` style="flex-grow:${Number(b.grow)}"` : '';
+    // "plain": an ordinary block of writing beside the photos (not the short
+    // italic caption), with "photos" stacked down a narrow column of "width".
+    if (b.plain) {
+      const figs = (b.photos || [b.photo]).map((ph) => figure(ph, ctx.alt)).join('');
+      const w = b.width ? ` style="flex:0 0 ${esc(b.width)}"` : '';
+      const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
+      return `<div class="m-side plain"${grow}><div class="m-photos stack"${w}>${figs}</div><div class="m-text bare">${title}${body}</div></div>`;
+    }
     return `<div class="m-side"${grow}><div class="m-photos">${figure(b.photo, ctx.alt)}</div><div class="m-text center italic bare">${body}</div></div>`;
   },
   names: (b) => `<p class="m-names">${lines(b.text).map(esc).join('<br>')}</p>`,

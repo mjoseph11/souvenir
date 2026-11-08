@@ -469,6 +469,18 @@
               ]
             },
             {
+              "type": "rule"
+            },
+            {
+              "type": "photos",
+              "plain": true,
+              "photos": [
+                {
+                  "src": "images/members/biju-mani/parents-memorial.jpg"
+                }
+              ]
+            },
+            {
               "type": "verse",
               "big": true,
               "text": "As for me and my house, we will serve the Lord.",
@@ -791,7 +803,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/paul-j-maret/3b64732b-f7d2-4903-b89b-33c18f8741a9-Paul-Maret.jpg"
+                  "src": "images/members/paul-j-maret/photo-2026-11.jpg"
                 }
               ]
             },
@@ -1130,8 +1142,8 @@
     },
     {
       "id": "zach-zacharia",
-      "name": "Zach Zacharia",
-      "title": "Zach Zacharia & Family",
+      "name": "Dr. Zach Zacharia",
+      "title": "Dr. Zach Zacharia & Family",
       "pages": [
         {
           "blocks": [
@@ -1148,6 +1160,10 @@
               "big": true,
               "text": "Children are a heritage from the Lord.",
               "ref": "Psalm 127:3"
+            },
+            {
+              "type": "names",
+              "text": "Back row: Shalom, Mikhaila, Aaron, Sini, Joel, Keziah\nFront row: Naomi, Zach, Sunitha, Eden, Joachim"
             },
             {
               "type": "closing"
@@ -1519,7 +1535,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image7.jpg"
+                  "src": "images/members/james-varughese/jimmy-2026-11.jpg"
                 },
                 {
                   "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image3.jpg"
@@ -2015,15 +2031,8 @@
                   "photos": [
                     {
                       "src": "images/members/yohannan-sankarathil/parents-2026.jpg"
-                    },
-                    {
-                      "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26-adj.jpg"
-                    },
-                    {
-                      "src": "images/members/yohannan-sankarathil/PHOTO-2026-04-25-09-40-26-1-adj.jpg"
                     }
-                  ],
-                  "arrange": "row"
+                  ]
                 }
               ],
               "dark": true,
@@ -2968,11 +2977,28 @@
               ]
             },
             {
+              "type": "text",
+              "bare": true,
+              "text": "As a couple in our 50s who have raised our children and recently been blessed through Holy Matrimony, joining St. Gregorios Malankara Orthodox Church two years ago has marked a beautiful new chapter in our spiritual journey.\n\nAs we look at our family gathered together for our wedding in this photograph, taken within the walls of this church, we are filled with gratitude for the warm embrace and loving fellowship of this parish. It is truly a privilege to celebrate our family's joy alongside the historic Golden Jubilee of our church.\n\nThank you for welcoming us into fifty years of sacred heritage, steadfast faith, and apostolic witness. We look forward to many more years of fellowship as we continue to walk together in Christ."
+            },
+            {
+              "type": "verse",
+              "text": "The Lord has done great things for us, and we are filled with joy.",
+              "ref": "Psalm 126:3"
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "text": "We pray that Almighty God continues to bless St. Gregorios Church, preserving its rich apostolic heritage and guiding generations to come.\n\nMay the light of this altar continue to shine brightly, welcoming all into Christ's love for the next fifty years and beyond.",
+              "sign": "David & Naomi Palmer"
+            },
+            {
               "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "layoutNote": "Message from the Word file Naomi sent Suchin (7 Nov), signed David & Naomi Palmer."
     },
     {
       "id": "tv-philip",
@@ -3051,10 +3077,10 @@
       ]
     },
     {
-      "id": "eby-paulose",
-      "name": "Rev. Fr. Eby Paulose",
-      "title": "Rev. Fr. Eby Paulose & Family",
-      "sort": "Paulose Eby ",
+      "id": "john-parackal",
+      "name": "John Parackal",
+      "title": "John Parackal & Family",
+      "sort": "Parackal John ",
       "pages": [
         {
           "blocks": [
@@ -3062,7 +3088,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/eby-paulose/photo.jpg"
+                  "src": "images/members/john-parackal/photo.jpg"
                 }
               ]
             },
@@ -3071,7 +3097,8 @@
             }
           ]
         }
-      ]
+      ],
+      "layoutNote": "Design folder \"Rev. Fr. Eby Paulose\": Manoj, 7 Nov — the photo is for his in-laws, John Parackal and family. Achen will send his own photo."
     },
     {
       "id": "cherian-koshy",
@@ -3374,7 +3401,7 @@
               "type": "text",
               "center": true,
               "title": "Dedication",
-              "text": "To the glory of God, in grateful celebration of 50 years of His enduring faithfulness and blessings, we dedicate this Golden Anniversary. May the spirit of worship, service, and devotion that has guided our church continue to illuminate its path for generations to come."
+              "text": "To the glory of God, in grateful celebration of 50 years of His enduring faithfulness and blessings, we dedicate this Golden Anniversary. May the spirit of worship, service, and devotion that has guided our church continue to illuminate its path for generations to come."
             },
             {
               "type": "closing"
@@ -3729,7 +3756,7 @@
       "name": "Dr. Mathew John",
       "title": "Dr. Mathew John & Family",
       "sort": "John Mathew Dr. ",
-      "layoutNote": "Design folder \"John Mathew\" (1 Oct): \"Family's Journey at SGMOC.pdf\", a family photo and three icons. The text calls him \"Dr. Mathew\"; confirm the title with Manoj. Same family as the Ceena Mathew folder in Writing.",
+      "layoutNote": "Ceena's layout (sent via Suchin, 7 Nov): family photo on top, the three icons down the left beside the text.",
       "pages": [
         {
           "blocks": [
@@ -3738,7 +3765,14 @@
               "photos": [
                 {
                   "src": "images/members/john-mathew/family.jpg"
-                },
+                }
+              ]
+            },
+            {
+              "type": "side",
+              "plain": true,
+              "width": "1.7in",
+              "photos": [
                 {
                   "src": "images/members/john-mathew/icon-holy-family.jpg"
                 },
@@ -3748,12 +3782,10 @@
                 {
                   "src": "images/members/john-mathew/icon-benjamin.jpg"
                 }
-              ]
-            },
-            {
-              "type": "text",
+              ],
               "title": "Our Family's Journey at SGMOC",
-              "text": "Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.\n\nWe are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come."
+              "text": "Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.\n\nWe are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come.",
+              "grow": 2
             },
             {
               "type": "text",

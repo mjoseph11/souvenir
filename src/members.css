@@ -87,6 +87,9 @@
   .m-side .m-photos { flex: 1 1 0; height: 100%; }
   .m-side .m-text { flex: 1 1 0; }
   .m-side .m-text p { font-size: 12pt; line-height: 1.8; color: var(--maroon); }
+  .m-side.plain { align-items: stretch; }
+  .m-side.plain .m-text p { font-size: 10.5pt; line-height: 1.65; color: #333; text-align: justify; }
+  .m-side.plain .m-text p + p { margin-top: 0.1in; }
 
   /* Text */
   .m-heading { text-align: center; color: var(--maroon); font-size: 15pt; line-height: 1.25; flex: none; }
