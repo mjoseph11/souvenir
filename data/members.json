@@ -2726,31 +2726,53 @@
     {
       "id": "raju-geevarghese",
       "name": "Raju Geevarghese",
-      "title": "Raju Geevarghese & Family",
+      "title": "Raju Geevarghese & Sosamma Raju",
       "sort": "Geevarghese Raju ",
       "pages": [
         {
           "blocks": [
             {
+              "type": "subheading",
+              "text": "Valliyaparampil Family"
+            },
+            {
               "type": "photos",
               "photos": [
                 {
                   "src": "images/members/raju-geevarghese/pic-1.jpg"
-                },
-                {
-                  "src": "images/members/raju-geevarghese/pic-2.jpg"
-                },
-                {
-                  "src": "images/members/raju-geevarghese/pic-3.jpg"
                 }
               ]
             },
             {
-              "type": "closing"
+              "type": "names",
+              "text": "Daughter: Somea Samuel • Rinosh Samuel • Zoya Susanne Samuel • Zachary George Samuel\nSon: Romeo Vallias • Ria Ann Kurian • Lucks Vallias • Linneah Vallias\nSon: Sharoon Vallias • Jissa Mary Jose • Steven Vallias • Ameya Mariam Vallias"
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "lines": true,
+              "size": "xs",
+              "text": "Kizhavalloor, Konni, Pathanamthitta Dist.\nHome Parish: St. Peter’s Malankara Orthodox Church, Kizhavalloor (Thumpamon Diocese)\nMembers of SGMOC since 2002"
+            },
+            {
+              "type": "rule"
+            },
+            {
+              "type": "text",
+              "title": "അമേരിക്കൻ പരുമല",
+              "text": "രചന: രാജു ഗീവർഗീസ്\n\nപരുമല തിരുമേനി വാണരുളും\nപരിശുദ്ധമാം ഈ ബെൻസേലം പള്ളി\nപതിനായിരങ്ങൾക്ക് ആശ്വാസമാം\nപരിശുദ്ധാത്മാവിൻ പരിമളത്താൽ\n\nനിൻ തിരുനാമത്തിൽ സ്ഥാപിതമാം\nഅടിയാരുടെ ഈ കൊച്ചുപള്ളി\nഅൻപത് വർഷങ്ങൾ പിൻചെന്നിട്ടും\nഅൻപോടെ മുന്നോട്ട് വാണരുളും\n\nപതിനായിരങ്ങൾ നിൻ തിരുശേഷിപ്പിൻ\nമുമ്പിൽ കുമ്പിട്ടു നിന്നിടുമ്പോൾ\nനിൻ തിരുതേജസ്സിൽ ജ്വലിച്ചിടുവാൻ\nതന്നരുളീടണേ കൃപാവരങ്ങൾ\n\nഎന്നാളും എന്നാളും നിൻ പാദത്തിൽ\nമുട്ടുകുത്തി വണങ്ങാൻ കൃപ നൽകിടണേ\nനിൻ കൃപ ഞങ്ങളെ നയിച്ചിടട്ടെ\nസ്വർഗ്ഗലോകത്തിൽ ചേർന്നിടുവാൻ\n\nലോകത്തിലെങ്ങും പരിമളം ചൊരിയും\nപരുമല സിദ്ധന്റെ പരിപാവനതയിൽ\nബെൻസേലം പള്ളിയെ അനുഗ്രഹിച്ച്\nഅമേരിക്കൻ പരുമലയാക്കിടണേ!",
+              "lines": true,
+              "center": true,
+              "cols": true,
+              "bare": true,
+              "poem": true,
+              "size": "sm"
             }
           ]
         }
-      ]
+      ],
+      "layoutNote": "Manoj's layout \"Golden Jubilee Family Tribute Page.png\" (Drive folder Raju Geevarghese); poem from \"Raju Geevarghese Poem - Editorially Corrected.pdf\" (8 Nov). The other two photos were of the typed sheet."
     },
     {
       "id": "saji-thomas",

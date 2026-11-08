@@ -108,15 +108,18 @@ const BLOCKS = {
     return `<div class="${cls}">${b.span ? title + fig : fig + title}${body}${sign}</div>`;
   },
   text(b) {
-    const cls = ['m-text', b.cols && 'cols', b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bare && 'bare']
+    const cls = ['m-text', b.cols && 'cols', b.poem && 'poem', b.lang && `lang-${b.lang}`, b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bare && 'bare']
       .filter(Boolean)
       .join(' ');
     const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
     // "lines": keep the line breaks inside each paragraph (poems, hymns).
+    // "poem": also keeps each stanza whole and each line unwrapped.
     const fmt = (p) => (b.lines ? lines(p).map(esc).join('<br>') : esc(p));
     const body = paragraphs(b.text).map((p) => `<p>${fmt(p)}</p>`).join('');
     const sign = b.sign ? `<p class="m-sign">&mdash; ${esc(b.sign)}</p>` : '';
-    return `<div class="${cls}">${title}${body}${sign}</div>`;
+    // "lang": e.g. "ml" for Malayalam, which sets wider than English at the same size.
+    const lang = b.lang ? ` lang="${esc(b.lang)}"` : '';
+    return `<div class="${cls}"${lang}>${title}${body}${sign}</div>`;
   },
   list(b) {
     const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
