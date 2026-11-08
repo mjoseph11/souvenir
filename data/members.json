@@ -3,8 +3,7 @@
   "members": [
     {
       "id": "ashok-joseph",
-      "name": "Ashok Joseph",
-      "approved": true,
+      "name": "Dr. Ashok Joseph",
       "sort": "Joseph Ashok ",
       "pages": [
         {
@@ -33,11 +32,11 @@
           ]
         }
       ],
-      "title": "The Joseph Family"
+      "title": "Dr. Ashok Joseph & Family"
     },
     {
       "id": "dustin-paul",
-      "name": "Dustin Paul",
+      "name": "Dr. Dustin Paul",
       "sort": "Paul 2 Dustin",
       "pages": [
         {
@@ -62,7 +61,7 @@
           ]
         }
       ],
-      "title": "Dustin Paul & Family"
+      "title": "Dr. Dustin Paul & Family"
     },
     {
       "id": "fr-alexander-kurien",
@@ -496,8 +495,8 @@
     },
     {
       "id": "dr-joe-john",
-      "name": "Dr. Joe John",
-      "title": "Dr. Joe John, V. S. John & Family",
+      "name": "V. S. John",
+      "title": "V. S. John & Family",
       "pages": [
         {
           "blocks": [
@@ -521,8 +520,8 @@
           ]
         }
       ],
-      "indexName": "Dr. Joe John & V. S. John",
-      "sort": "John Dr. Joe "
+      "indexName": "V. S. John (Dr. Joe John)",
+      "sort": "John V. S. "
     },
     {
       "id": "george-mathew-biju",
@@ -1142,8 +1141,8 @@
     },
     {
       "id": "zach-zacharia",
-      "name": "Dr. Zach Zacharia",
-      "title": "Dr. Zach Zacharia & Family",
+      "name": "Dr. Zach & Sunitha Zacharia",
+      "title": "Dr. Zach & Sunitha Zacharia & Family",
       "pages": [
         {
           "blocks": [
@@ -1151,7 +1150,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/zach-zacharia/Zacharia-Family-Zach-Zacharia.jpg"
+                  "src": "images/members/zach-zacharia/family-2026-11.jpg"
                 }
               ]
             },
@@ -1401,7 +1400,7 @@
     {
       "id": "poovathoor-koshy",
       "name": "Dr. Poovathoor Koshy",
-      "title": "Poovathoor Koshy & Family",
+      "title": "Dr. Poovathoor Koshy & Mrs. Baby Koshy",
       "pages": [
         {
           "blocks": [
@@ -1410,17 +1409,24 @@
               "photos": [
                 {
                   "src": "images/members/dr-poovathoor-koshy/pic-1.jpg"
-                },
+                }
+              ]
+            },
+            {
+              "type": "names",
+              "text": "With the best compliments from\nDr. & Mrs. Poovathoor Koshy\nDr. Ajay & Nisha Koshy and family\nDrs. Sandeep & Anju Mammen & family"
+            },
+            {
+              "type": "photos",
+              "photos": [
                 {
                   "src": "images/members/dr-poovathoor-koshy/pic-2.jpg"
                 }
-              ],
-              "arrange": "stack"
+              ]
             },
             {
               "type": "text",
               "text": "We are members of St. Gregorios Malankara Orthodox Church at Bensalem, originally St. Thomas Indian Orthodox Church of Philadelphia since 1976 under the leadership of Late Very Rev. Fr. K. Mathai Cor-Episcopa.\n\nOur children Ajay and Anju grew up in this church. They were part of the first Youth League and its publication 'REFLECTIONS'. Ajay also served as an altar boy. Mathai Achen's support and guidance helped them to grow up to be the responsible professionals they are now.\n\nNow we are very happy to continue as the members of this church under the guidance and leadership of Rev. Fr. Shibu Venad Mathai who is an asset to St. Gregorios Malankara Orthodox Church.",
-              "title": "With the best compliments from Dr. Poovathoor Koshy and family",
               "size": "sm",
               "bare": true,
               "center": false,
@@ -1429,7 +1435,8 @@
           ]
         }
       ],
-      "sort": "Koshy Dr. Poovathoor "
+      "sort": "Koshy Dr. Poovathoor ",
+      "layoutNote": "Family, 7 Nov (via Manoj): title Dr. Poovathoor Koshy & Mrs. Baby Koshy; compliments under the family picture."
     },
     {
       "id": "ejo-john",
@@ -3698,9 +3705,9 @@
     },
     {
       "id": "richie-oommen",
-      "name": "Richie Oommen",
-      "title": "Richie Oommen & Family",
-      "sort": "Oommen Richie ",
+      "name": "Richi Oommen",
+      "title": "Richi Oommen & Family",
+      "sort": "Oommen Richi ",
       "pages": [
         {
           "blocks": [
