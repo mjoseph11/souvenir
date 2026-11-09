@@ -190,7 +190,7 @@
           "blocks": [
             {
               "type": "photos",
-              "arrange": "stack",
+              "arrange": "row",
               "photos": [
                 {
                   "src": "images/members/thomas-paul/pic-1.jpg"
@@ -198,7 +198,8 @@
                 {
                   "src": "images/members/thomas-paul/pic-2.jpg"
                 }
-              ]
+              ],
+              "grow": 2.2
             },
             {
               "type": "text",
@@ -1409,8 +1410,8 @@
     },
     {
       "id": "betcy-allen",
-      "name": "Allen Kuruvilla",
-      "title": "Allen Kuruvilla & Family",
+      "name": "Allen Kuruvila",
+      "title": "Allen Kuruvila & Family",
       "pages": [
         {
           "blocks": [
@@ -1426,7 +1427,7 @@
           ]
         }
       ],
-      "sort": "Kuruvilla Allen "
+      "sort": "Kuruvila Allen "
     },
     {
       "id": "poovathoor-koshy",
@@ -2075,7 +2076,10 @@
                 }
               ],
               "dark": true,
-              "grow": 1
+              "grow": 1,
+              "big": true,
+              "wide": true,
+              "smallName": true
             }
           ]
         }
@@ -2186,7 +2190,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/cherian-mani/IMG-7915-C-Mani.jpg"
+                  "src": "images/members/cherian-mani/deacon-and-wife.jpg"
                 }
               ]
             },
@@ -2205,6 +2209,39 @@
       "placement": "outline",
       "indexName": "Deacon Markose Mani (Cherian Mani & family)",
       "sort": "Mani Deacon Markose "
+    },
+    {
+      "id": "cherian-mani",
+      "name": "Cherian Mani",
+      "title": "Cherian Mani & Family",
+      "sort": "Mani Cherian ",
+      "layoutNote": "Design folder \"Cherian Mani\" (Manoj, 9 Nov): recent family photo as the main one, the couple, and two older family photos with Mani Shemachen.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/cherian-mani/family-2026.jpg"
+                },
+                {
+                  "src": "images/members/cherian-mani/couple-2026.jpg"
+                },
+                {
+                  "src": "images/members/cherian-mani/christmas-older.jpg"
+                },
+                {
+                  "src": "images/members/cherian-mani/family-older.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "baboo-george",

@@ -314,3 +314,10 @@
   .m-half.dark.big:has(.m-memorial-head), .m-half.dark.big:has(.m-memorial-head)[style] { aspect-ratio: 1.6; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); padding-right: 26%; }
   .m-half.dark.big:has(.m-memorial-head) .m-photos { align-self: center; height: auto; }
   .m-half.dark.big:has(.m-memorial-head) .m-fig img { height: 3.3in; width: auto; max-width: 100%; object-fit: cover; }
+  /* "wide": a landscape memorial photo takes most of the panel's width, uncropped. */
+  .m-half.dark.big.wide:has(.m-memorial-head), .m-half.dark.big.wide:has(.m-memorial-head)[style] { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); padding-right: 25%; }
+  .m-half.dark.big.wide:has(.m-memorial-head) .m-fig img { height: auto; width: 100%; max-height: 3.3in; object-fit: contain; }
+  /* "smallName": a long memorial name set smaller. */
+  .m-half.dark.small-name:has(.m-memorial-head) .m-memorial-head h2 { font-size: 15pt; line-height: 1.2; }
+  .m-half.dark.small-name:has(.m-memorial-head) .m-memorial-head .m-eyebrow { font-size: 8.5pt; letter-spacing: 1.5px; white-space: nowrap; }
+  .m-half.dark.big.wide.small-name:has(.m-memorial-head) { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); }

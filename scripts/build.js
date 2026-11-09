@@ -149,7 +149,7 @@ const BLOCKS = {
     }<div class="m-rule"></div></div>`,
   eternal: (b) => `<p class="m-eternal">${esc(b.text || 'May Their Memory Be Eternal')}</p>`,
   closing: () => `<p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>`,
-  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
+  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}${b.wide ? ' wide' : ''}${b.smallName ? ' small-name' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
   rule: () => `<div class="m-rule"></div>`,
 };
 
