@@ -148,12 +148,12 @@ const BLOCKS = {
   verse: (b) =>
     `<p class="m-verse${b.big ? ' big' : ''}">&ldquo;${esc(b.text)}&rdquo;${b.ref ? `<br><span>&mdash; ${esc(b.ref)}</span>` : ''}</p>`,
   memorial: (b) =>
-    `<div class="m-memorial-head">${b.eyebrow === false ? '' : `<p class="m-eyebrow">${esc(b.eyebrow || 'In Loving Memory')}</p>`}<h2>${esc(b.name)}</h2>${
+    `<div class="m-memorial-head">${b.eyebrow === false ? '' : `<p class="m-eyebrow">${esc(b.eyebrow || 'In Loving Memory')}</p>`}<h2>${lines(b.name).map(esc).join('<br>')}</h2>${
       b.dates ? `<p class="m-dates">${esc(b.dates)}</p>` : ''
     }<div class="m-rule"></div></div>`,
   eternal: (b) => `<p class="m-eternal">${esc(b.text || 'May Their Memory Be Eternal')}</p>`,
   closing: () => `<p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>`,
-  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}${b.wide ? ' wide' : ''}${b.smallName ? ' small-name' : ''}${b.lilies ? ' lilies' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
+  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}${b.wide ? ' wide' : ''}${b.smallName ? ' small-name' : ''}${b.oneLineName ? ' one-line-name' : ''}${b.lilies ? ' lilies' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
   rule: () => `<div class="m-rule"></div>`,
 };
 

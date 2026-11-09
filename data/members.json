@@ -2220,7 +2220,7 @@
       "name": "Cherian Mani",
       "title": "Cherian Mani & Family",
       "sort": "Mani Cherian ",
-      "layoutNote": "Design folder \"Cherian Mani\" (Manoj, 9 Nov): recent family photo as the main one, the couple, and two older family photos with Mani Shemachen. Manoj, 9 Nov 6pm: main photo is the one with everyone looking; the earlier main moved to a small print, 2004 doorway photo dropped.",
+      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 6:18pm: Leo and Rani (the primary members) as the main photo; Shemachen and Kochamma, the Christmas photo and his brother's family (Atlanta) as prints. Manoj is fixing the low-quality 2004 doorway photo.",
       "pages": [
         {
           "blocks": [
@@ -2228,16 +2228,16 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/cherian-mani/family-2026-looking.jpg"
-                },
-                {
-                  "src": "images/members/cherian-mani/family-2026.jpg"
-                },
-                {
                   "src": "images/members/cherian-mani/couple-2026.jpg"
                 },
                 {
+                  "src": "images/members/cherian-mani/deacon-and-wife.jpg"
+                },
+                {
                   "src": "images/members/cherian-mani/christmas-older.jpg"
+                },
+                {
+                  "src": "images/members/cherian-mani/family-2026-looking.jpg"
                 }
               ]
             },
@@ -4032,7 +4032,7 @@
               "blocks": [
                 {
                   "type": "memorial",
-                  "name": "Kuriakose Mathew (Aniyan)",
+                  "name": "Kuriakose Mathew\n(Aniyan)",
                   "dates": "March 27, 1950 – April 9, 2020"
                 },
                 {
@@ -4047,7 +4047,8 @@
                   "type": "eternal",
                   "text": "Memory Eternal"
                 }
-              ]
+              ],
+              "oneLineName": true
             }
           ]
         }

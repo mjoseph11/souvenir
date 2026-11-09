@@ -352,6 +352,8 @@
   .m-half.dark.lilies .cap-name { display: block; color: var(--maroon); font-weight: 600; font-size: 12.5pt; }
   .m-half.dark.lilies .cap-dates { display: block; color: #333; font-style: italic; font-size: 9.5pt; white-space: nowrap; }
   .m-half.dark.lilies.small-name .m-memorial-head h2 { font-size: 18pt; }
+  /* "oneLineName": each line of the name stays on one line (Manoj, Grace Kuriakose) */
+  .m-half.dark.one-line-name .m-memorial-head h2 { white-space: nowrap; font-size: 20pt; }
   .m-half.dark.lilies .m-eternal {
     align-self: center; color: var(--maroon); font-style: italic; font-size: 15pt; white-space: nowrap;
     padding: 0.04in 0.3in; margin: 0 1.2in;
