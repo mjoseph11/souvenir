@@ -722,6 +722,7 @@
   .m-text-title { font-size: 13pt !important; font-weight: bold; color: var(--maroon) !important; text-align: center !important; margin-bottom: 0.08in; font-style: normal !important; column-span: all; }
   /* "poem": stanzas never split between columns, lines never wrap (Malayalam needs the extra leading). */
   .m-content .m-text.lang-ml p { font-size: 10pt; line-height: 1.65; text-align: left; hyphens: none; }
+  .m-content .m-text.balance p { text-wrap: balance; }
   .m-content .m-text.poem p { font-size: 9.8pt; line-height: 1.7; white-space: nowrap; break-inside: avoid; margin: 0 0 0.12in; }
   .m-sign { text-align: right !important; font-style: italic; color: var(--maroon) !important; font-size: 10pt !important; margin-top: 0.1in; }
   .m-list { list-style: none; font-size: 10.5pt; line-height: 1.8; color: #333; text-align: center; }
@@ -986,6 +987,8 @@
     box-shadow: 0 4px 14px rgba(60, 35, 10, 0.35);
     box-sizing: content-box;
   }
+
+  .s-print .s-cap { position: absolute; left: -0.5in; right: -0.5in; top: calc(100% + 0.14in); text-align: center; color: var(--maroon); font-weight: bold; font-size: 11.5pt; }
 
   .s-words { position: absolute; text-align: center; color: #5b3a12; }
   .s-script { display: block; font-family: 'Great Vibes', 'Brush Script MT', cursive; color: #7a4a14; line-height: 1.1; }
@@ -1426,6 +1429,12 @@
     padding: 0.25in 0.35in 0.3in;
   }
   .m-half.dark:has(.m-fig + .m-fig) .m-photos { justify-content: space-evenly; gap: 0.2in; }
+  /* Names and dates under each photo in a several-photo memorial. */
+  .m-half.dark:has(.m-memorial-head) .m-fig figcaption { white-space: pre-line; font-style: normal; color: var(--maroon); font-size: 10.5pt; font-weight: 600; line-height: 1.35; margin-top: 0.08in; }
+  /* "big": a taller single-photo memorial panel, so the photo can be larger. */
+  .m-half.dark.big:has(.m-memorial-head), .m-half.dark.big:has(.m-memorial-head)[style] { aspect-ratio: 1.6; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); padding-right: 26%; }
+  .m-half.dark.big:has(.m-memorial-head) .m-photos { align-self: center; height: auto; }
+  .m-half.dark.big:has(.m-memorial-head) .m-fig img { height: 3.3in; width: auto; max-width: 100%; object-fit: cover; }
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap">
 </head>
@@ -2421,7 +2430,7 @@
   <div class="m-content">
     <div class="s-stage">
       <figure class="s-main" style="left:0.38in;top:0.56in;width:6.75in;height:4.50in"><img src="images/members/mariamma-varki/wedding-1.jpg" alt="Rev. Fr. Dr. Paul Varki"></figure>
-      <figure class="s-print" style="left:1.70in;top:4.76in;width:4.10in;height:2.73in;transform:rotate(-3.5deg)"><img src="images/members/mariamma-varki/wedding-2.jpg" alt="Rev. Fr. Dr. Paul Varki"></figure>
+      <figure class="s-print" style="left:1.70in;top:4.76in;width:4.10in;height:2.73in"><img src="images/members/mariamma-varki/wedding-2.jpg" alt="Rev. Fr. Dr. Paul Varki"><figcaption class="s-cap">Ted, Liz and Family</figcaption></figure>
       <div class="s-words" style="left:0.00in;top:5.30in;width:1.60in"><span class="s-script" style="font-size:26pt">Family</span><span class="s-caps">A circle of strength</span><span class="s-caps">a lifetime of blessings</span><i class="s-rule"></i></div>
       <div class="s-words" style="left:5.90in;top:5.30in;width:1.60in"><span class="s-script" style="font-size:26pt">Love</span><span class="s-caps">Bears all things</span><span class="s-caps">hopes all things</span><i class="s-rule"></i></div>
       <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
@@ -5282,8 +5291,8 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/mathew-kurian/pic-1.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/mathew-kurian/pic-2.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure><figure class="m-fig"><img src="images/members/mathew-kurian/pic-3.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure><figure class="m-fig"><img src="images/members/mathew-kurian/pic-4.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure></div></div>
-    <div class="m-text center bare"><p>Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.</p><p>As we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.</p><p>May God continue to bless our parish and guide us in faith, love, and unity for generations to come.</p><p>With love, prayers, and best wishes from our family to yours!</p></div>
-    <p class="m-names">Mathew Madathil Kurian • Sherin • Allison • Andrew</p>
+    <div class="m-text center bare balance"><p>Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.</p><p>As we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.</p><p>May God continue to bless our parish in faith, love, and unity for generations to come.</p><p>With love, prayers, and best wishes from our family to yours!</p></div>
+    <p class="m-names">Mathew • Sherin • Allison • Andrew</p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     <p class="m-seealso">See also the Kurian Madathil family &middot; page 112</p>
   </div>
@@ -5348,14 +5357,14 @@
   <div class="m-content">
     <section class="m-half" style="flex-grow:1.2">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/kurian-madathil/family.jpg" alt="Kurian Madathil &amp; Family"></figure></div>
-    <p class="m-names">Kurian Madathil and Family<br>Manalel Madathil Family • Kadapra, Mannar</p>
+    <p class="m-names">Kurian Madathil and Family<br>Manalel Madathil • Kadapra, Niranam<br>Members since 1987</p>
     </section>
     <section class="m-half dark">
     <div class="m-memorial-head"><p class="m-eyebrow">In Loving Memory of Our Beloved Brother</p><h2>Very Rev. Christophorus Ramban</h2><p class="m-dates">St. Kuriakose Ashram, Mylapra</p><div class="m-rule"></div></div>
     <div class="m-photos"><figure class="m-fig"><img src="images/members/kurian-madathil/ramban.jpg" alt="Kurian Madathil &amp; Family"></figure></div>
     <p class="m-eternal">Lord, Have Mercy Upon Us and Help Us</p>
     </section>
-    <div class="m-text size-sm center bare"><p>Home Parish: Mannar Martha Mariam Church, Kadampara, Mannar, Niranam, Kerala</p></div>
+    <div class="m-text size-sm center bare"><p>Home Parish: Mannar Martha Mariam Church, Kadapra, Mannar, Niranam, Kerala</p></div>
     <p class="m-seealso">See also the Mathew Madathil Kurian family &middot; page 109</p>
   </div>
   <div class="page-footer">
@@ -5429,8 +5438,8 @@
     <div class="s-stage">
       <figure class="s-main" style="left:0.74in;top:1.08in;width:6.02in;height:4.50in"><img src="images/members/thomas-mammen-2-pages/Family-1-Thomas-Mammen.jpg" alt="Thomas Mammen &amp; Family"></figure>
       <figure class="s-print" style="left:0.10in;top:5.28in;width:1.89in;height:1.70in;transform:rotate(-3.5deg)"><img src="images/members/thomas-mammen-2-pages/Family-2-Thomas-Mammen.jpg" alt="Thomas Mammen &amp; Family"></figure>
-      <figure class="s-print" style="left:2.34in;top:5.28in;width:2.59in;height:1.70in;transform:rotate(3deg)"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-K-E-Mammen-Thomas-Mammen.jpg" alt="Thomas Mammen &amp; Family"></figure>
-      <figure class="s-print" style="left:5.29in;top:5.28in;width:2.11in;height:1.70in;transform:rotate(-2.5deg)"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-P-C-Chacko-Thomas-Mammen.jpg" alt="Thomas Mammen &amp; Family"></figure>
+      <figure class="s-print" style="left:2.34in;top:5.28in;width:2.59in;height:1.70in;transform:rotate(3deg)"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-K-E-Mammen-Thomas-Mammen.jpg" alt="Thomas Mammen &amp; Family"><figcaption class="s-cap">Mr. &amp; Mrs. K. E. Mammen</figcaption></figure>
+      <figure class="s-print" style="left:5.29in;top:5.28in;width:2.11in;height:1.70in;transform:rotate(-2.5deg)"><img src="images/members/thomas-mammen-2-pages/Mr-and-Mrs-P-C-Chacko-Thomas-Mammen.jpg" alt="Thomas Mammen &amp; Family"><figcaption class="s-cap">Mr. &amp; Mrs. P. C. Chacko</figcaption></figure>
       <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
@@ -5444,20 +5453,27 @@
 <!-- ════════════════════════════════════════
      PAGE 116 — MEMBER PAGE: Biju Mani
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate photos-2">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Biju Mani &amp; Family</h1>
     </div>
   </div>
-  <div class="m-band">Golden Jubilee Family Sponsor</div>
+  <div class="m-band">Golden Jubilee Family Sponsor • Memorial Tribute</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
+    <section class="m-half" style="flex-grow:1.1">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/biju-mani/887-0800.jpg" alt="Biju Mani &amp; Family"></figure></div>
-    <div class="m-rule"></div>
-    <div class="m-photos plain"><figure class="m-fig"><img src="images/members/biju-mani/parents-memorial.jpg" alt="Biju Mani &amp; Family"></figure></div>
+    </section>
+    <section class="m-half dark">
+    <div class="m-memorial-head"><p class="m-eyebrow">In Loving Memory of</p><h2>Our Beloved Parents</h2><div class="m-rule"></div></div>
+    <div class="m-photos"><figure class="m-fig"><img src="images/members/biju-mani/kuruvila-mani.jpg" alt="Biju Mani &amp; Family"><figcaption>Kuruvila Mani
+Feb 16, 1941 – Dec 5, 1984</figcaption></figure><figure class="m-fig"><img src="images/members/biju-mani/ck-johny.jpg" alt="Biju Mani &amp; Family"><figcaption>C. K. Johny
+May 17, 1941 – Mar 25, 2015</figcaption></figure><figure class="m-fig"><img src="images/members/biju-mani/gracyamma-johny.jpg" alt="Biju Mani &amp; Family"><figcaption>Gracyamma Johny
+Mar 1, 1948 – May 4, 1998</figcaption></figure></div>
+    <p class="m-eternal">May Their Memory Be Eternal</p>
+    </section>
     <p class="m-verse big">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -5846,23 +5862,23 @@
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 132 — MEMBER PAGE: Shijoy K. Mathew
+     PAGE 132 — MEMBER PAGE: Shijoy Kulathoor Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
-      <h1>Shijoy K. Mathew &amp; Family</h1>
+      <h1>Shijoy Kulathoor Mathew &amp; Family</h1>
     </div>
   </div>
   <div class="m-band">Golden Jubilee Family Sponsor • Memorial Tribute</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <section class="m-half" style="flex-grow:1">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/shijoy-k-mathew/family.jpg" alt="Shijoy K. Mathew &amp; Family"></figure></div>
+    <div class="m-photos"><figure class="m-fig"><img src="images/members/shijoy-k-mathew/family-cropped.jpg" alt="Shijoy Kulathoor Mathew &amp; Family"></figure></div>
     </section>
-    <section class="m-half dark">
+    <section class="m-half dark big">
     <div class="m-memorial-head"><p class="m-eyebrow">In Loving Memory</p><h2>Daniel Kulathoor Mathew</h2><div class="m-rule"></div></div>
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/shijoy-k-mathew/daniel.jpg" alt="Shijoy K. Mathew &amp; Family"></figure></div>
+    <div class="m-photos"><figure class="m-fig"><img src="images/members/shijoy-k-mathew/daniel.jpg" alt="Shijoy Kulathoor Mathew &amp; Family"></figure></div>
     <p class="m-eternal">Until We Meet Again</p>
     </section>
     <div class="m-text center italic bare"><p>We think about you always, we talk about you still,
@@ -6119,11 +6135,11 @@ And there you will remain, until we meet again.</p></div>
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/benson-panicker/pic-1.jpg" alt="Benson Varghese Panicker &amp; Family"></figure></div>
+    <div class="m-photos" style="flex-grow:1"><figure class="m-fig"><img src="images/members/benson-panicker/pic-1.jpg" alt="Benson Varghese Panicker &amp; Family"></figure></div>
     <p class="m-verse">&ldquo;As for me and my house, we will serve the Lord.&rdquo;<br><span>&mdash; Joshua 24:15</span></p>
     <div class="m-text center italic bare"><p>May God bless our family with love, strengthen us in faith, guide our steps, and keep us united in His grace today and always.</p></div>
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/benson-panicker/pic-2.jpg" alt="Benson Varghese Panicker &amp; Family"></figure></div>
-    <p class="m-names">Leena Benson Panicker • Bartholomew Benson Panicker • Luke Benson Panicker</p>
+    <div class="m-photos" style="flex-grow:1"><figure class="m-fig"><img src="images/members/benson-panicker/pic-2-matched.jpg" alt="Benson Varghese Panicker &amp; Family"></figure></div>
+    <p class="m-names">Benson Varghese Panicker &amp; Family<br>Leena Benson Panicker • Bartholomew Benson Panicker • Luke Benson Panicker</p>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -6909,7 +6925,7 @@ And there you will remain, until we meet again.</p></div>
   <div class="m-content">
     <div class="m-text cols size-xs"><p class="m-text-title">Fifty Years of Grace: The Varughese Family’s Journey of Faith and Service</p><p>As our parish celebrates its Golden Jubilee under the leadership of Rev. Fr. Shibu Venad Mathai, our family—James (Jimmy), Caroline, Andrew, and Timothy (Timmy) Varughese, together with our father, Gheevarughese Mathai (Babu)—reflects with profound gratitude on the journey that has bound us to this holy sanctuary. A pinnacle moment of this Golden Jubilee celebration was the laying on of hands of Andrew by the supreme head of the Church, H.H. Moran Mar Baselios Marthoma Mathews III, to enter the holy altar. Though our sister Jenny, her husband Sandeep, and their children Amelia and Luke relocated to Tennessee in March of this year, our spiritual roots in this parish community remain unshakeable.</p><p>Over the years, God has granted our family the privilege of serving Him at the parish, regional, and diocesan levels. From serving as OVBS Coordinator, Diocese OVBS Committee Member, Sunday School Teacher and Registrar, Youth League Treasurer, MGOCSM Council Member, Parish Committee member, and member of both the Board of Directors and Mission Board, to contributing to St. Joseph's Forum, MMVS, STG, Christmas Carol, and Gregorian Harmony, as well as serving as Acolytes at the altar, each ministry has anchored our lives more deeply in the Church.</p><p>With loving hearts, we treasure the sacred memory of our dear mother and a founding member of the parish, Annamma Gheevarughese (Kunjumol), and hold fond memories of our founding vicar, V. Rev. Fr. K. Mathai Cor-Episcopos. We also honor the revered Hierarchs who guided our path: L.L. H.G. Thomas Mar Makarios, who laid hands on Jimmy to enter the altar; L.L. H.G. Mathews Mar Barnabas, who tenderly shepherded the American Diocese during the early growth of the MGOCSM; and L.L. H.G. Zachariah Mar Theophilus, who blessed and solemnized our Holy Matrimony. May their memory be eternal.</p><p>In the midst of life's present struggles and uncertainties, holding fast to our Orthodox faith and the Holy Sacraments is not merely our tradition—it is our hope and strength. May the Almighty continue to shower His divine grace upon our parish for generations to come.</p></div>
     <div class="m-photos"><figure class="m-fig"><img src="images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image2.jpg" alt="James Varughese &amp; Family"></figure><figure class="m-fig"><img src="images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image1.jpg" alt="James Varughese &amp; Family"></figure></div>
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/james-varughese/jimmy-2026-11.jpg" alt="James Varughese &amp; Family"></figure><figure class="m-fig"><img src="images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image3.jpg" alt="James Varughese &amp; Family"></figure></div>
+    <div class="m-photos" style="flex-grow:1.6"><figure class="m-fig"><img src="images/members/james-varughese/parents-2026-11.jpg" alt="James Varughese &amp; Family"></figure><figure class="m-fig"><img src="images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image3.jpg" alt="James Varughese &amp; Family"></figure></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -7145,7 +7161,7 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>Kurien P. Mathew (In Loving Memory)</span><span>129</span></p>
       <p class="m-index-row"><span>Prince Mathew</span><span>130</span></p>
       <p class="m-index-row"><span>Rajan Mathew</span><span>131</span></p>
-      <p class="m-index-row"><span>Shijoy K. Mathew</span><span>132</span></p>
+      <p class="m-index-row"><span>Shijoy Kulathoor Mathew</span><span>132</span></p>
       <p class="m-index-row"><span>V. S. Mathew</span><span>133</span></p>
       <p class="m-index-row"><span>Vinesh Mathew</span><span>134</span></p>
       <p class="m-index-row"><span>Vinit Mathew — &quot;Leading Our Path&quot; by Noah Mathew</span><span>135</span></p>

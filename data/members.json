@@ -460,22 +460,49 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
+              "type": "half",
+              "grow": 1.1,
+              "blocks": [
                 {
-                  "src": "images/members/biju-mani/887-0800.jpg"
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/biju-mani/887-0800.jpg"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "rule"
-            },
-            {
-              "type": "photos",
-              "plain": true,
-              "photos": [
+              "type": "half",
+              "dark": true,
+              "blocks": [
                 {
-                  "src": "images/members/biju-mani/parents-memorial.jpg"
+                  "type": "memorial",
+                  "eyebrow": "In Loving Memory of",
+                  "name": "Our Beloved Parents"
+                },
+                {
+                  "type": "photos",
+                  "arrange": "row",
+                  "photos": [
+                    {
+                      "src": "images/members/biju-mani/kuruvila-mani.jpg",
+                      "caption": "Kuruvila Mani\nFeb 16, 1941 – Dec 5, 1984"
+                    },
+                    {
+                      "src": "images/members/biju-mani/ck-johny.jpg",
+                      "caption": "C. K. Johny\nMay 17, 1941 – Mar 25, 2015"
+                    },
+                    {
+                      "src": "images/members/biju-mani/gracyamma-johny.jpg",
+                      "caption": "Gracyamma Johny\nMar 1, 1948 – May 4, 1998"
+                    }
+                  ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "May Their Memory Be Eternal"
                 }
               ]
             },
@@ -484,14 +511,12 @@
               "big": true,
               "text": "As for me and my house, we will serve the Lord.",
               "ref": "Joshua 24:15"
-            },
-            {
-              "type": "closing"
             }
           ]
         }
       ],
-      "sort": "Mani Biju "
+      "sort": "Mani Biju ",
+      "band": "Golden Jubilee Family Sponsor • Memorial Tribute"
     },
     {
       "id": "dr-joe-john",
@@ -1542,13 +1567,14 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/james-varughese/jimmy-2026-11.jpg"
+                  "src": "images/members/james-varughese/parents-2026-11.jpg"
                 },
                 {
                   "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image3.jpg"
                 }
               ],
-              "arrange": "row"
+              "arrange": "row",
+              "grow": 1.6
             }
           ]
         }
@@ -2119,7 +2145,9 @@
                   "src": "images/members/mariamma-varki/wedding-1.jpg"
                 },
                 {
-                  "src": "images/members/mariamma-varki/wedding-2.jpg"
+                  "src": "images/members/mariamma-varki/wedding-2.jpg",
+                  "straight": true,
+                  "caption": "Ted, Liz and Family"
                 }
               ]
             },
@@ -3320,7 +3348,7 @@
                 },
                 {
                   "type": "names",
-                  "text": "Kurian Madathil and Family\nManalel Madathil Family • Kadapra, Mannar"
+                  "text": "Kurian Madathil and Family\nManalel Madathil • Kadapra, Niranam\nMembers since 1987"
                 }
               ]
             },
@@ -3353,7 +3381,7 @@
               "bare": true,
               "center": true,
               "size": "sm",
-              "text": "Home Parish: Mannar Martha Mariam Church, Kadampara, Mannar, Niranam, Kerala"
+              "text": "Home Parish: Mannar Martha Mariam Church, Kadapra, Mannar, Niranam, Kerala"
             }
           ]
         }
@@ -3390,11 +3418,12 @@
               "type": "text",
               "bare": true,
               "center": true,
-              "text": "Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.\n\nAs we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.\n\nMay God continue to bless our parish and guide us in faith, love, and unity for generations to come.\n\nWith love, prayers, and best wishes from our family to yours!"
+              "text": "Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.\n\nAs we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.\n\nMay God continue to bless our parish in faith, love, and unity for generations to come.\n\nWith love, prayers, and best wishes from our family to yours!",
+              "balance": true
             },
             {
               "type": "names",
-              "text": "Mathew Madathil Kurian • Sherin • Allison • Andrew"
+              "text": "Mathew • Sherin • Allison • Andrew"
             },
             {
               "type": "closing"
@@ -3611,7 +3640,8 @@
                 {
                   "src": "images/members/benson-panicker/pic-1.jpg"
                 }
-              ]
+              ],
+              "grow": 1
             },
             {
               "type": "verse",
@@ -3629,13 +3659,14 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/benson-panicker/pic-2.jpg"
+                  "src": "images/members/benson-panicker/pic-2-matched.jpg"
                 }
-              ]
+              ],
+              "grow": 1
             },
             {
               "type": "names",
-              "text": "Leena Benson Panicker • Bartholomew Benson Panicker • Luke Benson Panicker"
+              "text": "Benson Varghese Panicker & Family\nLeena Benson Panicker • Bartholomew Benson Panicker • Luke Benson Panicker"
             },
             {
               "type": "closing"
@@ -3646,9 +3677,9 @@
     },
     {
       "id": "shijoy-k-mathew",
-      "name": "Shijoy K. Mathew",
-      "title": "Shijoy K. Mathew & Family",
-      "sort": "Mathew Shijoy K ",
+      "name": "Shijoy Kulathoor Mathew",
+      "title": "Shijoy Kulathoor Mathew & Family",
+      "sort": "Mathew Shijoy Kulathoor ",
       "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
       "layoutNote": "Design folder (12 Oct): a family photo, Daniel's photo and \"Daniel Memorial.txt\". The memorial is stated in their own text.",
       "pages": [
@@ -3662,7 +3693,7 @@
                   "type": "photos",
                   "photos": [
                     {
-                      "src": "images/members/shijoy-k-mathew/family.jpg"
+                      "src": "images/members/shijoy-k-mathew/family-cropped.jpg"
                     }
                   ]
                 }
@@ -3688,7 +3719,8 @@
                   "type": "eternal",
                   "text": "Until We Meet Again"
                 }
-              ]
+              ],
+              "big": true
             },
             {
               "type": "text",

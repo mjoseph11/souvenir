@@ -308,3 +308,9 @@
     padding: 0.25in 0.35in 0.3in;
   }
   .m-half.dark:has(.m-fig + .m-fig) .m-photos { justify-content: space-evenly; gap: 0.2in; }
+  /* Names and dates under each photo in a several-photo memorial. */
+  .m-half.dark:has(.m-memorial-head) .m-fig figcaption { white-space: pre-line; font-style: normal; color: var(--maroon); font-size: 10.5pt; font-weight: 600; line-height: 1.35; margin-top: 0.08in; }
+  /* "big": a taller single-photo memorial panel, so the photo can be larger. */
+  .m-half.dark.big:has(.m-memorial-head), .m-half.dark.big:has(.m-memorial-head)[style] { aspect-ratio: 1.6; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); padding-right: 26%; }
+  .m-half.dark.big:has(.m-memorial-head) .m-photos { align-self: center; height: auto; }
+  .m-half.dark.big:has(.m-memorial-head) .m-fig img { height: 3.3in; width: auto; max-width: 100%; object-fit: cover; }

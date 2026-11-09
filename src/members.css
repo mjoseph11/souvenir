@@ -113,6 +113,7 @@
   .m-text-title { font-size: 13pt !important; font-weight: bold; color: var(--maroon) !important; text-align: center !important; margin-bottom: 0.08in; font-style: normal !important; column-span: all; }
   /* "poem": stanzas never split between columns, lines never wrap (Malayalam needs the extra leading). */
   .m-content .m-text.lang-ml p { font-size: 10pt; line-height: 1.65; text-align: left; hyphens: none; }
+  .m-content .m-text.balance p { text-wrap: balance; }
   .m-content .m-text.poem p { font-size: 9.8pt; line-height: 1.7; white-space: nowrap; break-inside: avoid; margin: 0 0 0.12in; }
   .m-sign { text-align: right !important; font-style: italic; color: var(--maroon) !important; font-size: 10pt !important; margin-top: 0.1in; }
   .m-list { list-style: none; font-size: 10.5pt; line-height: 1.8; color: #333; text-align: center; }

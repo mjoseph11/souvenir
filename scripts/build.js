@@ -108,7 +108,7 @@ const BLOCKS = {
     return `<div class="${cls}">${b.span ? title + fig : fig + title}${body}${sign}</div>`;
   },
   text(b) {
-    const cls = ['m-text', b.cols && 'cols', b.poem && 'poem', b.lang && `lang-${b.lang}`, b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bare && 'bare']
+    const cls = ['m-text', b.cols && 'cols', b.poem && 'poem', b.lang && `lang-${b.lang}`, b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bare && 'bare', b.balance && 'balance']
       .filter(Boolean)
       .join(' ');
     const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
@@ -149,7 +149,7 @@ const BLOCKS = {
     }<div class="m-rule"></div></div>`,
   eternal: (b) => `<p class="m-eternal">${esc(b.text || 'May Their Memory Be Eternal')}</p>`,
   closing: () => `<p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>`,
-  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
+  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
   rule: () => `<div class="m-rule"></div>`,
 };
 
@@ -246,8 +246,9 @@ function styledBody(m, pg) {
   const p2 = PHRASES[j];
   const words = (p, x, y, w, size = 30) =>
     `<div class="s-words" style="left:${inch(x)};top:${inch(y)};width:${inch(w)}"><span class="s-script" style="font-size:${size}pt">${esc(p.script)}</span>${p.lines.map((l) => `<span class="s-caps">${esc(l)}</span>`).join('')}<i class="s-rule"></i></div>`;
+  // A photo's "caption" sits under it; "straight": true keeps a print untilted.
   const img = (p, cls, x, y, w, hgt, rot) =>
-    `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}"></figure>`;
+    `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}">${p.caption ? `<figcaption class="s-cap">${esc(p.caption)}</figcaption>` : ''}</figure>`;
 
   // verse + closing at the bottom, plus room for each line of names
   const foot = 1.3 + (names ? Math.max(0.5, 0.22 + 0.26 * lines(names.text).length) : 0);
@@ -276,7 +277,7 @@ function styledBody(m, pg) {
   if (sides.length) {
     const as = sides.map((p) => photoAspect(p.src));
     const gap = 0.35;
-    const maxH = avail - hm + 0.3 - 0.25;
+    const maxH = avail - hm + 0.3 - 0.25 - (sides.some((p) => p.caption) ? 0.35 : 0);
     sideH = Math.min(maxH, 3.4, (rowW - gap * (as.length - 1)) / as.reduce((s, x) => s + x, 0));
     const widths = as.map((x) => sideH * x);
     const total = widths.reduce((s, x) => s + x, 0) + gap * (as.length - 1);
@@ -296,7 +297,7 @@ function styledBody(m, pg) {
   if (sides.length) {
     sideTop = top + hm - 0.3;
     const rots = [-3.5, 3, -2.5];
-    sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop, row[i].w, sideH, rots[i])));
+    sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop, row[i].w, sideH, p.straight ? 0 : rots[i])));
     if (phrasesFlankRow && !noWords) {
       out.push(words(p1, 0, sideTop + sideH * 0.2, 1.6, 26));
       out.push(words(p2, W - 1.6, sideTop + sideH * 0.2, 1.6, 26));
