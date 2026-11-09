@@ -511,7 +511,8 @@
                   "type": "eternal",
                   "text": "May Their Memory Be Eternal"
                 }
-              ]
+              ],
+              "lilies": true
             },
             {
               "type": "verse",
@@ -2057,7 +2058,7 @@
                   "type": "closing"
                 }
               ],
-              "grow": 1.2
+              "grow": 1.7
             },
             {
               "type": "half",
@@ -2073,12 +2074,15 @@
                       "src": "images/members/yohannan-sankarathil/parents-2026.jpg"
                     }
                   ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "May Their Memory Be Eternal"
                 }
               ],
               "dark": true,
               "grow": 1,
-              "big": true,
-              "wide": true,
+              "lilies": true,
               "smallName": true
             }
           ]

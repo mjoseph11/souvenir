@@ -73,7 +73,11 @@ ${footer(dark)}
 function figure(p, alt) {
   const photo = typeof p === 'string' ? { src: p } : p;
   const style = photo.pos ? ` style="object-position:${esc(photo.pos)}"` : '';
-  const cap = photo.caption ? `<figcaption>${esc(photo.caption)}</figcaption>` : '';
+  // A two-line caption is a name over dates (memorial portraits).
+  const capLines = photo.caption ? lines(photo.caption) : [];
+  const cap = capLines.length > 1
+    ? `<figcaption><span class="cap-name">${esc(capLines[0])}</span><span class="cap-dates">${capLines.slice(1).map(esc).join('<br>')}</span></figcaption>`
+    : photo.caption ? `<figcaption>${esc(photo.caption)}</figcaption>` : '';
   return `<figure class="m-fig"><img src="${esc(photo.src)}" alt="${esc(photo.alt || alt)}"${style}>${cap}</figure>`;
 }
 
@@ -149,7 +153,7 @@ const BLOCKS = {
     }<div class="m-rule"></div></div>`,
   eternal: (b) => `<p class="m-eternal">${esc(b.text || 'May Their Memory Be Eternal')}</p>`,
   closing: () => `<p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>`,
-  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}${b.wide ? ' wide' : ''}${b.smallName ? ' small-name' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
+  half: (b, ctx) => `<section class="m-half${b.dark ? ' dark' : ''}${b.big ? ' big' : ''}${b.wide ? ' wide' : ''}${b.smallName ? ' small-name' : ''}${b.lilies ? ' lilies' : ''}"${b.grow ? ` style="flex-grow:${Number(b.grow)}"` : ''}>\n${renderBlocks(b.blocks, ctx)}\n    </section>`,
   rule: () => `<div class="m-rule"></div>`,
 };
 
