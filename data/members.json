@@ -1354,7 +1354,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/vinesh-mathew/Souvenir-Jubliee-MathewV-Vinit-Mathew-image1.jpg"
+                  "src": "images/members/vinesh-mathew/MathewV-2026-10.jpg"
                 }
               ],
               "plain": true
@@ -1362,7 +1362,8 @@
           ]
         }
       ],
-      "sort": "Mathew Vinesh "
+      "sort": "Mathew Vinesh ",
+      "layoutNote": "Design folder \"Vinesh Mathew\": \"Souvenir - Jubliee - MathewV.docx\" of 1 Oct (cream background)."
     },
     {
       "id": "vinit-mathew",
@@ -2219,13 +2220,16 @@
       "name": "Cherian Mani",
       "title": "Cherian Mani & Family",
       "sort": "Mani Cherian ",
-      "layoutNote": "Design folder \"Cherian Mani\" (Manoj, 9 Nov): recent family photo as the main one, the couple, and two older family photos with Mani Shemachen.",
+      "layoutNote": "Design folder \"Cherian Mani\" (Manoj, 9 Nov): recent family photo as the main one, the couple, and two older family photos with Mani Shemachen. Manoj, 9 Nov 6pm: main photo is the one with everyone looking; the earlier main moved to a small print, 2004 doorway photo dropped.",
       "pages": [
         {
           "blocks": [
             {
               "type": "photos",
               "photos": [
+                {
+                  "src": "images/members/cherian-mani/family-2026-looking.jpg"
+                },
                 {
                   "src": "images/members/cherian-mani/family-2026.jpg"
                 },
@@ -2234,9 +2238,6 @@
                 },
                 {
                   "src": "images/members/cherian-mani/christmas-older.jpg"
-                },
-                {
-                  "src": "images/members/cherian-mani/family-older.jpg"
                 }
               ]
             },
