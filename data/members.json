@@ -3694,7 +3694,7 @@
                   "type": "photos",
                   "photos": [
                     {
-                      "src": "images/members/shijoy-k-mathew/family-cropped.jpg"
+                      "src": "images/members/shijoy-k-mathew/family-2026-11.jpg"
                     }
                   ]
                 }
@@ -3862,8 +3862,8 @@
     },
     {
       "id": "rajan-m-thomas",
-      "name": "Rajan M. Thomas",
-      "title": "Rajan M. Thomas & Family",
+      "name": "Dr. Rajan M. Thomas",
+      "title": "Dr. Rajan M. Thomas & Family",
       "sort": "Thomas Rajan M ",
       "pages": [
         {
@@ -3872,16 +3872,28 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/rajan-m-thomas/photo.jpg"
+                  "src": "images/members/rajan-m-thomas/original-2026-11.jpg"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "We fondly remember our first Divine Liturgy at this church in Torresdale, where our love for this blessed church began.\n\nCongratulations and prayerful best wishes on the Golden Jubilee!"
+            },
+            {
+              "type": "names",
+              "text": "Rajan, Molsey, Christopher & Regina Thomas"
             },
             {
               "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "layoutNote": "Member Pages group, 9 Nov: original photo (the plain-background edit changed their faces), title and text as sent."
     },
     {
       "id": "james-chacko",
