@@ -255,7 +255,8 @@ function styledBody(m, pg) {
     `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}">${p.caption ? `<figcaption class="s-cap">${esc(p.caption)}</figcaption>` : ''}</figure>`;
 
   // verse + closing at the bottom, plus room for each line of names
-  const foot = 1.3 + (names ? Math.max(0.5, 0.22 + 0.26 * lines(names.text).length) : 0);
+  // "verseRoom": extra inches at the foot for a long verse
+  const foot = 1.3 + (Number(m.verseRoom) || 0) + (names ? Math.max(0.5, 0.22 + 0.26 * lines(names.text).length) : 0);
   const avail = H - foot;
   const a = photoAspect(main.src);
   const out = [];

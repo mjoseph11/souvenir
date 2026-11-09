@@ -3253,7 +3253,7 @@
     {
       "id": "shalom-mammen",
       "name": "Shalom Mammen",
-      "title": "Shalom Mammen & Family",
+      "title": "Shalom, Mikhaila & Eden Mammen",
       "sort": "Mammen Shalom ",
       "pages": [
         {
@@ -3276,11 +3276,18 @@
               ]
             },
             {
+              "type": "verse",
+              "text": "He has made everything beautiful in its time. He has also set eternity in the human heart; yet no one can fathom what God has done from beginning to end.",
+              "ref": "Ecclesiastes 3:11"
+            },
+            {
               "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "phrases": false,
+      "verseRoom": 0.3
     },
     {
       "id": "jimmy-george",
@@ -3993,6 +4000,58 @@
           ]
         }
       ]
+    },
+    {
+      "id": "grace-kuriakose",
+      "name": "Grace Kuriakose",
+      "title": "Kuriakose Family",
+      "sort": "Kuriakose Grace ",
+      "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "half",
+              "grow": 1.25,
+              "blocks": [
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/grace-kuriakose/family.jpg"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "half",
+              "dark": true,
+              "grow": 1,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "Kuriakose Mathew (Aniyan)",
+                  "dates": "March 27, 1950 – April 9, 2020"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/grace-kuriakose/kuriakose-mathew.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "Memory Eternal"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "layoutNote": "Design folder \"Grace Kuriakose\" (Mable's mom), 9 Nov: Message.txt gives the title, main picture and memorial text."
     }
   ]
 }
