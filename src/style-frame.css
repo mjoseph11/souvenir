@@ -359,6 +359,8 @@
   .m-half.dark.clear-lily:has(.m-memorial-head)[style] { padding-right: 34%; padding-left: 4%; column-gap: 0.22in; }
   .m-half.dark.clear-lily .m-memorial-head .m-eyebrow { font-size: 8.5pt; letter-spacing: 1.5px; }
   .m-half.dark.clear-lily .m-memorial-head .m-dates { font-size: 11pt; }
+  .m-half.dark.clear-lily .m-memorial-head h2 { font-size: 21pt; }
+  .m-half.dark.clear-lily .m-eternal { transform: translateX(-0.3in); }
   .m-half.dark.lilies .m-eternal {
     align-self: center; color: var(--maroon); font-style: italic; font-size: 15pt; white-space: nowrap;
     padding: 0.04in 0.3in; margin: 0 1.2in;
