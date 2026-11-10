@@ -612,7 +612,8 @@
           ]
         }
       ],
-      "sort": "Varghese George "
+      "sort": "Varghese George ",
+      "approved": true
     },
     {
       "id": "jacob-george",
@@ -1596,7 +1597,8 @@
         }
       ],
       "sort": "Varughese James ",
-      "layoutNote": "Jimmy, 9 Nov (tracker): parents and the family photo with his sister in the larger bottom row; event photos on top."
+      "layoutNote": "Jimmy, 9 Nov (tracker): parents and the family photo with his sister in the larger bottom row; event photos on top.",
+      "approved": true
     },
     {
       "id": "jinu-john",
@@ -2228,7 +2230,7 @@
       "name": "Cherian Mani",
       "title": "Cherian Mani & Family",
       "sort": "Mani Cherian ",
-      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 6:18pm: Leo and Rani (the primary members) as the main photo; Shemachen and Kochamma, the Christmas photo and his brother's family (Atlanta) as prints. Manoj is fixing the low-quality 2004 doorway photo.",
+      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 6:18pm: Leo and Rani (the primary members) as the main photo; Shemachen and Kochamma, the Christmas photo and his brother's family (Atlanta) as prints. Manoj is fixing the low-quality 2004 doorway photo. Late 9 Nov: Manoj's improved 2004 doorway photo in place of the brother's family.",
       "pages": [
         {
           "blocks": [
@@ -2245,7 +2247,7 @@
                   "src": "images/members/cherian-mani/christmas-older.jpg"
                 },
                 {
-                  "src": "images/members/cherian-mani/family-2026-looking.jpg"
+                  "src": "images/members/cherian-mani/family-older-enhanced.jpg"
                 }
               ]
             },
@@ -3790,7 +3792,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "raju-m-varghese",
@@ -4063,6 +4066,54 @@
         }
       ],
       "layoutNote": "Design folder \"Grace Kuriakose\" (Mable's mom), 9 Nov: Message.txt gives the title, main picture and memorial text."
+    },
+    {
+      "id": "gregory-varghese",
+      "name": "Dr. Gregory Varghese",
+      "title": "Dr. Gregory Varghese & Family",
+      "sort": "Varghese Gregory ",
+      "layoutNote": "Design folder \"Dr. Gregory Varghese\" (Manoj, 9 Nov): one photo, no text.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/gregory-varghese/family-2026-11.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathew-abraham",
+      "name": "Mathew Abraham",
+      "title": "Mathew Abraham & Family",
+      "sort": "Abraham Mathew ",
+      "layoutNote": "Design folder \"Mathew Abraham\" (Manoj, 9 Nov): Mathew and Sheeja's photo, sent earlier via Sumod; no text.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/mathew-abraham/family-2026-11.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
