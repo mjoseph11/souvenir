@@ -1574,7 +1574,7 @@
                   "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image2.jpg"
                 },
                 {
-                  "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image1.jpg"
+                  "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image3.jpg"
                 }
               ],
               "arrange": "row"
@@ -1586,7 +1586,7 @@
                   "src": "images/members/james-varughese/parents-2026-11.jpg"
                 },
                 {
-                  "src": "images/members/james-varughese/Golden-Jubilee-Souvenir-Article-and-Pict-image3.jpg"
+                  "src": "images/members/james-varughese/family-sister-cropped.jpg"
                 }
               ],
               "arrange": "row",
@@ -1595,7 +1595,8 @@
           ]
         }
       ],
-      "sort": "Varughese James "
+      "sort": "Varughese James ",
+      "layoutNote": "Jimmy, 9 Nov (tracker): parents and the family photo with his sister in the larger bottom row; event photos on top."
     },
     {
       "id": "jinu-john",
@@ -3405,7 +3406,7 @@
                 },
                 {
                   "type": "names",
-                  "text": "Kurian Madathil and Family\nManalel Madathil • Kadapra, Niranam\nMembers since 1987"
+                  "text": "Kurian Madathil and Family\nManalel Madathil • Kadapra-Mannar, Niranam\nMembers since 1987"
                 }
               ]
             },
@@ -3429,16 +3430,17 @@
                 },
                 {
                   "type": "eternal",
-                  "text": "Lord, Have Mercy Upon Us and Help Us"
+                  "text": "Lord, Have Mercy\nUpon Us and Help Us"
                 }
-              ]
+              ],
+              "clearLily": true
             },
             {
               "type": "text",
               "bare": true,
               "center": true,
               "size": "sm",
-              "text": "Home Parish: Mannar Martha Mariam Church, Kadapra, Mannar, Niranam, Kerala"
+              "text": "Home Parish: Mannar Martha Mariam Church, Kadapra-Mannar, Niranam, Kerala"
             }
           ]
         }
