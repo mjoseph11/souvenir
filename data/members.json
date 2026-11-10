@@ -2230,7 +2230,7 @@
       "name": "Cherian Mani",
       "title": "Cherian Mani & Family",
       "sort": "Mani Cherian ",
-      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 11:24pm: Shemachen and Kochamma as the main photo, all seven photos as a collage (two rows of prints).",
+      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 11:24pm: Shemachen and Kochamma as the main photo, all seven photos as a collage (two rows of prints). 10 Nov: main photo ~15% smaller.",
       "pages": [
         {
           "blocks": [
@@ -2266,7 +2266,8 @@
           ]
         }
       ],
-      "collage": true
+      "collage": true,
+      "photoScale": 0.85
     },
     {
       "id": "baboo-george",
@@ -4027,26 +4028,12 @@
     {
       "id": "grace-kuriakose",
       "name": "Grace Kuriakose",
-      "title": "Kuriakose Family",
+      "title": "The Kuriakose Family",
       "sort": "Kuriakose Grace ",
       "band": "Golden Jubilee Family Sponsor • Memorial Tribute",
       "pages": [
         {
           "blocks": [
-            {
-              "type": "half",
-              "grow": 1.25,
-              "blocks": [
-                {
-                  "type": "photos",
-                  "photos": [
-                    {
-                      "src": "images/members/grace-kuriakose/family.jpg"
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "type": "half",
               "dark": true,
@@ -4071,11 +4058,25 @@
                 }
               ],
               "oneLineName": true
+            },
+            {
+              "type": "half",
+              "grow": 1.25,
+              "blocks": [
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/grace-kuriakose/family.jpg"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       ],
-      "layoutNote": "Design folder \"Grace Kuriakose\" (Mable's mom), 9 Nov: Message.txt gives the title, main picture and memorial text."
+      "layoutNote": "Design folder \"Grace Kuriakose\" (Mable's mom), 9 Nov: Message.txt gives the title, main picture and memorial text. Manoj, 10 Nov: Dad memorial on top; header \"The Kuriakose Family\"."
     },
     {
       "id": "gregory-varghese",
