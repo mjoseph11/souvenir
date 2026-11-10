@@ -283,11 +283,15 @@ function styledBody(m, pg) {
     const as = sides.map((p) => photoAspect(p.src));
     const gap = 0.35;
     const maxH = avail - hm + 0.3 - 0.25 - (sides.some((p) => p.caption) ? 0.35 : 0);
-    sideH = Math.min(maxH, 3.4, (rowW - gap * (as.length - 1)) / as.reduce((s, x) => s + x, 0));
-    const widths = as.map((x) => sideH * x);
+    // "scale" on a print: that one taller than the rest (e.g. 1.25)
+    const sc = sides.map((p) => Number(p.scale) > 0 ? Number(p.scale) : 1);
+    const smax = Math.max(...sc);
+    sideH = Math.min(maxH / smax, 3.4 / smax, (rowW - gap * (as.length - 1)) / as.reduce((s, x, i) => s + x * sc[i], 0));
+    const widths = as.map((x, i) => sideH * sc[i] * x);
     const total = widths.reduce((s, x) => s + x, 0) + gap * (as.length - 1);
     let x = (W - total) / 2;
-    row = widths.map((w) => { const r = { x, w }; x += w + gap; return r; });
+    row = widths.map((w, i) => { const r = { x, w, h: sideH * sc[i], dy: (sideH * (smax - sc[i])) / 2 }; x += w + gap; return r; });
+    sideH *= smax;
   }
 
   const used = hm + (sides.length ? sideH - 0.3 : beside || noWords ? 0 : 1.7);
@@ -302,7 +306,7 @@ function styledBody(m, pg) {
   if (sides.length) {
     sideTop = top + hm - 0.3;
     const rots = [-3.5, 3, -2.5];
-    sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop, row[i].w, sideH, p.straight ? 0 : rots[i])));
+    sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop + row[i].dy, row[i].w, row[i].h, p.straight ? 0 : rots[i])));
     if (phrasesFlankRow && !noWords) {
       out.push(words(p1, 0, sideTop + sideH * 0.2, 1.6, 26));
       out.push(words(p2, W - 1.6, sideTop + sideH * 0.2, 1.6, 26));

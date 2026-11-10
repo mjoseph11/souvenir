@@ -1050,12 +1050,17 @@
                   "src": "images/members/suchin-thompson/Main.jpg"
                 },
                 {
-                  "src": "images/members/suchin-thompson/left-2026-11.jpg"
+                  "src": "images/members/suchin-thompson/left-2026-11.jpg",
+                  "scale": 1.25
                 },
                 {
                   "src": "images/members/suchin-thompson/right-2026-11.jpg"
                 }
               ]
+            },
+            {
+              "type": "names",
+              "text": "Tisa Suchin & Michelle Marianne Suchin"
             },
             {
               "type": "closing"
@@ -1064,8 +1069,8 @@
         }
       ],
       "sort": "Thompson Suchin ",
-      "photoScale": 0.86,
-      "layoutNote": "Suchin, 9 Nov: new left and right photos (\"L Side.jpg\", \"R Side.jpg\"); main photo trimmed so \"Together\" clears it."
+      "photoScale": 0.78,
+      "layoutNote": "Suchin, 9 Nov: new left and right photos (\"L Side.jpg\", \"R Side.jpg\"); main photo trimmed so \"Together\" clears it. 9 Nov 7:50pm: church photo bigger; 8:22pm: names line added."
     },
     {
       "id": "sujith-varghese",
