@@ -2230,7 +2230,7 @@
       "name": "Cherian Mani",
       "title": "Cherian Mani & Family",
       "sort": "Mani Cherian ",
-      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 6:18pm: Leo and Rani (the primary members) as the main photo; Shemachen and Kochamma, the Christmas photo and his brother's family (Atlanta) as prints. Manoj is fixing the low-quality 2004 doorway photo. Late 9 Nov: Manoj's improved 2004 doorway photo in place of the brother's family.",
+      "layoutNote": "Design folder \"Cherian Mani\". Manoj, 9 Nov 11:24pm: Shemachen and Kochamma as the main photo, all seven photos as a collage (two rows of prints).",
       "pages": [
         {
           "blocks": [
@@ -2238,16 +2238,25 @@
               "type": "photos",
               "photos": [
                 {
+                  "src": "images/members/cherian-mani/deacon-and-wife.jpg"
+                },
+                {
                   "src": "images/members/cherian-mani/couple-2026.jpg"
                 },
                 {
-                  "src": "images/members/cherian-mani/deacon-and-wife.jpg"
+                  "src": "images/members/cherian-mani/family-2026-looking.jpg"
+                },
+                {
+                  "src": "images/members/cherian-mani/family-2026.jpg"
                 },
                 {
                   "src": "images/members/cherian-mani/christmas-older.jpg"
                 },
                 {
                   "src": "images/members/cherian-mani/family-older-enhanced.jpg"
+                },
+                {
+                  "src": "images/members/cherian-mani/parents-2004-enhanced.jpg"
                 }
               ]
             },
@@ -2256,7 +2265,8 @@
             }
           ]
         }
-      ]
+      ],
+      "collage": true
     },
     {
       "id": "baboo-george",

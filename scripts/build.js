@@ -234,7 +234,11 @@ function styledBody(m, pg) {
   const photos = pg.blocks.filter((b) => b.type === 'photos').flatMap((b) => b.photos).map((p) => (typeof p === 'string' ? { src: p } : p));
   const mainAt = Math.min(m.mainPhoto || 0, photos.length - 1);
   const main = photos[mainAt];
-  const sides = photos.filter((_, i) => i !== mainAt).slice(0, 3);
+  // "collage": up to six prints in two rows under the main photo
+  const sides = photos.filter((_, i) => i !== mainAt).slice(0, m.collage ? 6 : 3);
+  const half = Math.ceil(sides.length / 2);
+  const rowsOf = sides.length > 3 ? [sides.slice(0, half), sides.slice(half)] : [sides];
+  const two = rowsOf.length > 1;
   const names = pg.blocks.find((b) => b.type === 'names');
   const given = pg.blocks.find((b) => b.type === 'verse');
   const [vText, vRef] = given ? [given.text, given.ref] : VERSES[hash(m.id) % VERSES.length];
@@ -265,33 +269,37 @@ function styledBody(m, pg) {
   // "photoScale": trim the main photo a little, e.g. to lift its print resolution
   const pscale = Number(m.photoScale) > 0 ? Number(m.photoScale) : 1;
   if (noWords) {                                   // no phrases: fill the width
-    const maxH = (sides.length ? 5.6 : avail - 0.15) * pscale;
+    const maxH = (sides.length ? (two ? 3.9 : 5.6) : avail - 0.15) * pscale;
     wm = Math.min(W * pscale, maxH * a); hm = wm / a; beside = false;
   } else if (a <= 1.1) {                           // portrait or square main: phrases beside it
-    const maxH = sides.length ? 5.1 : avail - 0.2;
+    const maxH = sides.length ? (two ? 3.9 : 5.1) : avail - 0.2;
     wm = Math.min(4.5, maxH * a) * pscale; hm = wm / a; beside = true;
   } else {                                          // wide main: full width, phrases elsewhere
-    const maxH = sides.length ? 4.5 : avail - 1.9;
+    const maxH = sides.length ? (two ? 3.9 : 4.5) : avail - 1.9;
     wm = Math.min(W, maxH * a); hm = wm / a; beside = false;
   }
 
   // side prints: one row, all the same height, never wider than the room given
-  let rowW = W - 0.2, sideTop = 0, sideH = 0, row = [];
+  let rowW = W - 0.2, sideTop = 0, sideH = 0, rows = [];
   const phrasesFlankRow = !beside && sides.length === 1;
   if (phrasesFlankRow) rowW = 4.1;
+  const rowGap = 0.25;
   if (sides.length) {
-    const as = sides.map((p) => photoAspect(p.src));
     const gap = 0.35;
-    const maxH = avail - hm + 0.3 - 0.25 - (sides.some((p) => p.caption) ? 0.35 : 0);
-    // "scale" on a print: that one taller than the rest (e.g. 1.25)
-    const sc = sides.map((p) => Number(p.scale) > 0 ? Number(p.scale) : 1);
-    const smax = Math.max(...sc);
-    sideH = Math.min(maxH / smax, 3.4 / smax, (rowW - gap * (as.length - 1)) / as.reduce((s, x, i) => s + x * sc[i], 0));
-    const widths = as.map((x, i) => sideH * sc[i] * x);
-    const total = widths.reduce((s, x) => s + x, 0) + gap * (as.length - 1);
-    let x = (W - total) / 2;
-    row = widths.map((w, i) => { const r = { x, w, h: sideH * sc[i], dy: (sideH * (smax - sc[i])) / 2 }; x += w + gap; return r; });
-    sideH *= smax;
+    const maxH = (avail - hm + 0.3 - 0.25 - (sides.some((p) => p.caption) ? 0.35 : 0) - rowGap * (rowsOf.length - 1)) / rowsOf.length;
+    rows = rowsOf.map((rs) => {
+      const as = rs.map((p) => photoAspect(p.src));
+      // "scale" on a print: that one taller than the rest (e.g. 1.25)
+      const sc = rs.map((p) => Number(p.scale) > 0 ? Number(p.scale) : 1);
+      const smax = Math.max(...sc);
+      const h = Math.min(maxH / smax, 3.4 / smax, (rowW - gap * (as.length - 1)) / as.reduce((s, x, i) => s + x * sc[i], 0));
+      const widths = as.map((x, i) => h * sc[i] * x);
+      const total = widths.reduce((s, x) => s + x, 0) + gap * (as.length - 1);
+      let x = (W - total) / 2;
+      const items = widths.map((w, i) => { const r = { p: rs[i], x, w, h: h * sc[i], dy: (h * (smax - sc[i])) / 2 }; x += w + gap; return r; });
+      return { items, H: h * smax };
+    });
+    sideH = rows.reduce((s, r) => s + r.H, 0) + rowGap * (rows.length - 1);
   }
 
   const used = hm + (sides.length ? sideH - 0.3 : beside || noWords ? 0 : 1.7);
@@ -305,8 +313,12 @@ function styledBody(m, pg) {
   }
   if (sides.length) {
     sideTop = top + hm - 0.3;
-    const rots = [-3.5, 3, -2.5];
-    sides.forEach((p, i) => out.push(img(p, 's-print', row[i].x, sideTop + row[i].dy, row[i].w, row[i].h, p.straight ? 0 : rots[i])));
+    const rots = [[-3.5, 3, -2.5], [2.5, -3, 3.5]];
+    let y = sideTop;
+    rows.forEach((r, k) => {
+      r.items.forEach((it, i) => out.push(img(it.p, 's-print', it.x, y + it.dy, it.w, it.h, it.p.straight ? 0 : rots[k][i])));
+      y += r.H + rowGap;
+    });
     if (phrasesFlankRow && !noWords) {
       out.push(words(p1, 0, sideTop + sideH * 0.2, 1.6, 26));
       out.push(words(p2, W - 1.6, sideTop + sideH * 0.2, 1.6, 26));
