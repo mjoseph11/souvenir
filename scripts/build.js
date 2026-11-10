@@ -269,7 +269,7 @@ function styledBody(m, pg) {
     wm = Math.min(W * pscale, maxH * a); hm = wm / a; beside = false;
   } else if (a <= 1.1) {                           // portrait or square main: phrases beside it
     const maxH = sides.length ? 5.1 : avail - 0.2;
-    wm = Math.min(4.5, maxH * a); hm = wm / a; beside = true;
+    wm = Math.min(4.5, maxH * a) * pscale; hm = wm / a; beside = true;
   } else {                                          // wide main: full width, phrases elsewhere
     const maxH = sides.length ? 4.5 : avail - 1.9;
     wm = Math.min(W, maxH * a); hm = wm / a; beside = false;

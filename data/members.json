@@ -1050,10 +1050,10 @@
                   "src": "images/members/suchin-thompson/Main.jpg"
                 },
                 {
-                  "src": "images/members/suchin-thompson/Side-1.jpg"
+                  "src": "images/members/suchin-thompson/left-2026-11.jpg"
                 },
                 {
-                  "src": "images/members/suchin-thompson/Side-2.jpg"
+                  "src": "images/members/suchin-thompson/right-2026-11.jpg"
                 }
               ]
             },
@@ -1063,7 +1063,9 @@
           ]
         }
       ],
-      "sort": "Thompson Suchin "
+      "sort": "Thompson Suchin ",
+      "photoScale": 0.86,
+      "layoutNote": "Suchin, 9 Nov: new left and right photos (\"L Side.jpg\", \"R Side.jpg\"); main photo trimmed so \"Together\" clears it."
     },
     {
       "id": "sujith-varghese",
