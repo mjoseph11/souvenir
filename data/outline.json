@@ -52,10 +52,8 @@
         { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. Eby Paulose", "note": "Appointed Vicar of SGMOC effective September 28, 2026. Photo and biography to be collected." }, "toc": "Clergy — Rev. Fr. Eby Paulose" },
         { "member": "fr-alexander-kurien", "toc": "Clergy — Rev. Fr. Alexander Kurian" },
         { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. K. P. Varghese", "note": "Photo and biography to be collected. Celebrated the 50th anniversary of his priesthood on November 16, 2025." }, "toc": "Clergy — Rev. Fr. K. P. Varghese" },
-        { "member": "mathai-memorial", "toc": "Past Clergy — V. Rev. K. Mathai Cor Episcopos" },
         { "file": "src/pages/past-clergy-paul-varki-beginnings.html", "label": "PAST CLERGY: REV. FR. DR. PAUL VARKI — THE BEGINNINGS", "toc": "Past Clergy — Rev. Fr. Dr. Paul Varki" },
-        { "member": "paul-varki-memorial" },
-        { "member": "markose-mani-memorial", "toc": "Past Clergy — Dn. Markose Mani" }
+        { "member": "paul-varki-memorial" }
       ]
     },
     {
@@ -67,6 +65,16 @@
         { "file": "src/pages/charter-families.html", "label": "OUR PARISH: CHARTER FAMILIES", "toc": "Our Parish — Charter Families 1976–1980" },
         { "file": "src/pages/our-sanctuary.html", "label": "OUR PARISH: OUR SANCTUARY", "toc": "Our Parish — Our Sanctuary" },
         { "placeholder": { "title": "Our Parish", "heading": "Significant Events & Pictures", "pages": "Our Parish section: 8–10 pages in total", "note": "Milestone photographs and significant events (cemetery purchase, monument, ministry center, consecration 2009, and more)." }, "toc": "Our Parish — Significant Events" }
+      ]
+    },
+    {
+      "name": "In Memoriam",
+      "_comment": "Manoj, 11 Nov: church memorials after the church pages, before the organizations, as two spreads (Mathai Achen | Varki Achen, Mani Shemachen | church members since 1976). Must start on a left (even) page.",
+      "items": [
+        { "member": "mathai-memorial", "toc": "In Memoriam — V. Rev. K. Mathai Cor Episcopos" },
+        { "member": "paul-varki-in-memoriam", "toc": "In Memoriam — Rev. Fr. Dr. Paul Varki" },
+        { "member": "markose-mani-memorial", "toc": "In Memoriam — Dn. Markose Mani" },
+        { "placeholder": { "title": "In Memoriam", "heading": "Church Members Remembered Since 1976", "note": "Members of our parish who have fallen asleep in the Lord since 1976. Being prepared by Santosh." }, "toc": "In Memoriam — Church Members Since 1976" }
       ]
     },
     {

@@ -1232,7 +1232,8 @@
       ],
       "band": "",
       "indexName": "Kurien P. Mathew (In Loving Memory)",
-      "sort": "Mathew Kurien P. "
+      "sort": "Mathew Vinesh 0",
+      "layoutNote": "11 Nov (Manoj): grouped with The Mathew Family: memorial, family photo (Vinesh), Noah's poem (Vinit)."
     },
     {
       "id": "biju-ittyachen",
@@ -1368,7 +1369,7 @@
           ]
         }
       ],
-      "sort": "Mathew Vinesh ",
+      "sort": "Mathew Vinesh 1",
       "layoutNote": "Design folder \"Vinesh Mathew\": \"Souvenir - Jubliee - MathewV.docx\" of 1 Oct (cream background)."
     },
     {
@@ -2118,9 +2119,9 @@
       ]
     },
     {
-      "id": "paul-varki-memorial",
-      "name": "Rev. Fr. Dr. Paul Varki",
-      "title": "Rev. Fr. Dr. Paul Varki",
+      "id": "paul-varki-in-memoriam",
+      "name": "In Memoriam - Rev. Fr. Dr. Paul Varki",
+      "title": "In Memoriam",
       "pages": [
         {
           "dark": true,
@@ -2133,7 +2134,19 @@
             "text": "Rev. Fr. Dr. Paul Varki was a pioneering spiritual leader whose dedication helped lay the foundation for Malankara Orthodox worship in the Philadelphia region. Beginning in 1965, he played an instrumental role in bringing Orthodox Christians together for worship, fostering an ecumenical fellowship that eventually contributed to the establishment of the parish in 1976.\n\nAfter obtaining his Master of Divinity degree from Princeton Theological Seminary, he pursued further studies in psychology, earning his doctorate. His academic accomplishments complemented his spiritual calling, reflecting his lifelong commitment to faith, education, and service.\n\nThrough his vision, leadership, and tireless efforts, Fr. Paul Varki helped nurture the early Orthodox community in Philadelphia. His contributions remain an important part of the history of St. Gregorios Malankara Orthodox Church and the spiritual heritage of generations who followed.",
             "family": "Mariamma Varki and Family"
           }
-        },
+        }
+      ],
+      "band": "",
+      "placement": "outline",
+      "indexName": "Rev. Fr. Dr. Paul Varki (In Memoriam)",
+      "sort": "Varki Rev. Fr. Dr. Paul 0",
+      "layoutNote": "Manoj, 11 Nov: church memorials are their own section before the organizations; this page split off the Paul Varki pages, which stay in Past Clergy."
+    },
+    {
+      "id": "paul-varki-memorial",
+      "name": "Rev. Fr. Dr. Paul Varki",
+      "title": "Rev. Fr. Dr. Paul Varki",
+      "pages": [
         {
           "title": "Mariamma Varki & Family",
           "blocks": [
