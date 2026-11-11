@@ -1610,13 +1610,7 @@
               "photo": {
                 "src": "images/members/jinu-john/Family-Jinu-John.jpg"
               },
-              "text": "When many of us came to the United States of America from Kerala, we brought with us more than our belongings and hopes for a better future. We carried with us many things — our dreams, our culture, our memories, and most importantly, the Orthodox faith we received from our parents and grandparents in Kerala.\n\nIn a new country, life came with its challenges. Yet, we thank God every day for giving us the opportunity to continue living in our Malankara Orthodox faith. Through SGMOC, we found more than a church—we found a spiritual home, a family that prays together, celebrates together, and supports one another in faith and love.\n\nSunday Holy Qurbana, our fasting, our feasts, our prayers, the singing of hymns, and the blessings of our priests have kept us close to our roots and closer to Christ. This parish has been a blessing in our journey in America.\n\nNow, as parents, we realize that the greatest gift we can give our children is this same faith. In our home, we try to teach them their daily prayers and the sign of the cross; bring them to Holy Qurbana and explain its meaning; read the Bible and share stories of the saints; observe fasting and the traditions of our Church according to our ability; encourage them to be part of Sunday School, youth programs, and parish activities; and, most importantly, show them how to love God and love others.\n\nOur children are growing up in a world very different from the one we knew in Kerala. They may not have the same experiences we had, but we can give them something that connects them to their roots and gives them strength for the future—our faith in Christ and the rich heritage of the Malankara Orthodox Church.\n\nAs we celebrate 50 years of SGMOC, we thank God for the vision, sacrifice, and faith of those who came before us. They built a spiritual home for us and for generations to come. May we be faithful in our turn to pass this heritage on, so that our children and generations to come may continue to shine His light.\n\nOur prayer for our children: May the Lord keep them in His love, help them grow in faith and wisdom, and use them for His glory.",
-              "size": "sm"
-            },
-            {
-              "type": "verse",
-              "text": "So these words I command you today shall be in your heart and in your soul. You shall teach them to your sons, and shall talk of them when you sit in your house, when you walk by the way, when you lie down, and when you rise up.",
-              "ref": "Deuteronomy 6:6–7"
+              "text": "When many of us came to the United States of America from Kerala, we brought with us more than dreams and hopes for a better future. We also brought our culture, traditions, memories, and most importantly, the Orthodox faith that was passed down to us by our parents and grandparents. It is the faith we grew up with, the faith that has guided us through different stages of our lives, and the faith we now hope to pass on to our children.\n\nStarting a life in a new country came with many changes and challenges. Through it all, we are grateful that we have been able to continue living and growing in our Malankara Orthodox faith. Through SGMOC, we found more than a church. We found a spiritual home and a community where we could pray together, celebrate together, and support one another. Over the years, this parish has become an important part of our life and our journey here in America.\n\nOne of the greatest blessings for us as parents is seeing our children grow up in this same faith. It brings us joy to see them attend Sunday School, participate in Holy Qurbana and church celebrations, and spend time with their church friends. Through these experiences, they are learning about God, our faith, and the traditions that have been part of our families for generations. At the same time, they are building friendships and creating memories that we hope they will carry with them throughout their lives.\n\nAs SGMOC celebrates 50 years, we are especially grateful for those who came before us. Their faith, hard work, and sacrifices gave families like ours a place to call our spiritual home. They passed this faith on to us, and now it is our turn to pass it on to our children. Our hope and prayer is that they will carry it with them wherever life takes them and, one day, pass it on to the generations that follow."
             },
             {
               "type": "closing"
@@ -1624,7 +1618,8 @@
           ]
         }
       ],
-      "sort": "John Jinu "
+      "sort": "John Jinu ",
+      "layoutNote": "10 Nov: rewritten text \"A Faith We Received.docx\" (older version moved to Old); verse dropped as in the new version."
     },
     {
       "id": "korah-mani",
@@ -2100,34 +2095,44 @@
       "sort": "Sankarathil Yohannan "
     },
     {
+      "id": "mathai-memorial",
+      "name": "V. Rev. Kaleeckal Mathai Cor Episcopos",
+      "title": "In Memoriam",
+      "band": "",
+      "placement": "outline",
+      "sort": "Mathai V. Rev. Kaleeckal Cor Episcopos ",
+      "indexName": "V. Rev. Kaleeckal Mathai Cor Episcopos",
+      "layoutNote": "Manoj, 10 Nov: \"Memorial Pages\" design (ChatGPT image) and photo \"Mathai Achen - Manoj Chacko.jpg\". Replaces the hand-built src/pages/past-clergy-mathai-cor-episcopa.html.",
+      "pages": [
+        {
+          "dark": true,
+          "inMemoriam": {
+            "photo": "images/members/mathai-memorial/portrait-fade.png",
+            "name": "V. Rev. Kaleeckal Mathai Cor Episcopos",
+            "dates": "July 3, 1942 – October 12, 2023",
+            "role": "Founding Vicar • St. Gregorios Malankara Orthodox Church",
+            "text": "A visionary spiritual leader and devoted shepherd, Very Rev. Kaleeckal Mathai Cor Episcopos played a foundational role in establishing and nurturing the Malankara Orthodox community in Philadelphia. From his early calling to the priesthood, he dedicated his life to the Church, guiding the congregation through its formative years, growth, and the establishment of a permanent home in Bensalem. His unwavering faith, humility, compassion, and tireless dedication continue to inspire all of us.\n\nOrdained as a deacon in **1974** and to the priesthood in **1975**, he served as the Founding Vicar of St. Gregorios Malankara Orthodox Church from **1976** to **2011**. In **1996**, he was elevated to Cor Episcopos and also served the Northeast American Diocese as a Diocesan Council Member and Clergy Secretary.",
+            "nameSize": "24pt"
+          }
+        }
+      ]
+    },
+    {
       "id": "paul-varki-memorial",
       "name": "Rev. Fr. Dr. Paul Varki",
       "title": "Rev. Fr. Dr. Paul Varki",
       "pages": [
         {
           "dark": true,
-          "blocks": [
-            {
-              "type": "memorial",
-              "name": "Rev. Fr. Dr. Paul Varki"
-            },
-            {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/mariamma-varki/upscaled-2.jpg"
-                }
-              ]
-            },
-            {
-              "type": "names",
-              "text": "Mariamma Varki and Family"
-            },
-            {
-              "type": "eternal",
-              "text": "May His Memory Be Eternal"
-            }
-          ]
+          "title": "In Memoriam",
+          "inMemoriam": {
+            "photo": "images/members/paul-varki-memorial/portrait-fade.png",
+            "name": "Rev. Fr. Dr. Paul Varki",
+            "dates": "February 7, 1931 – March 26, 2014",
+            "role": "Pioneer • Spiritual Leader • Faithful Servant",
+            "text": "Rev. Fr. Dr. Paul Varki was a pioneering spiritual leader whose dedication helped lay the foundation for Malankara Orthodox worship in the Philadelphia region. Beginning in 1965, he played an instrumental role in bringing Orthodox Christians together for worship, fostering an ecumenical fellowship that eventually contributed to the establishment of the parish in 1976.\n\nAfter obtaining his Master of Divinity degree from Princeton Theological Seminary, he pursued further studies in psychology, earning his doctorate. His academic accomplishments complemented his spiritual calling, reflecting his lifelong commitment to faith, education, and service.\n\nThrough his vision, leadership, and tireless efforts, Fr. Paul Varki helped nurture the early Orthodox community in Philadelphia. His contributions remain an important part of the history of St. Gregorios Malankara Orthodox Church and the spiritual heritage of generations who followed.",
+            "family": "Mariamma Varki and Family"
+          }
         },
         {
           "title": "Mariamma Varki & Family",
@@ -2184,44 +2189,30 @@
       "placement": "outline",
       "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
       "sort": "Varki Rev. Fr. Dr. Paul ",
-      "layoutNote": "Manoj, 6 Nov: memorial page has only Achen's portrait; Mariamma Varki's page has Achen and Kochamma, the tribute, then the two standing photos; \"Mariamma Varki 2\" is her children's page. Photos are the upscaled copies in the Design folder (5 Oct)."
+      "layoutNote": "Manoj, 6 Nov: memorial page has only Achen's portrait; Mariamma Varki's page has Achen and Kochamma, the tribute, then the two standing photos; \"Mariamma Varki 2\" is her children's page. Photos are the upscaled copies in the Design folder (5 Oct). 10 Nov: memorial page redone from Manoj's \"In Memoriam_ Rev. Fr. Dr. Paul Varki.png\" design."
     },
     {
       "id": "markose-mani-memorial",
       "name": "Deacon Markose Mani",
-      "title": "In Loving Memory",
+      "title": "In Memoriam",
       "pages": [
         {
           "dark": true,
-          "blocks": [
-            {
-              "type": "memorial",
-              "name": "Deacon Markose Mani",
-              "dates": "Deaconship: April 2001 – March 2011"
-            },
-            {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/cherian-mani/deacon-and-wife.jpg"
-                }
-              ]
-            },
-            {
-              "type": "names",
-              "text": "Cherian Mani and Family"
-            },
-            {
-              "type": "eternal",
-              "text": "May His Memory Be Eternal"
-            }
-          ]
+          "inMemoriam": {
+            "photo": "images/members/markose-mani-memorial/portrait-fade.png",
+            "name": "Dn. Markose Mani",
+            "dates": "August 17, 1934 – March 26, 2011",
+            "role": "Deacon • St. Gregorios Malankara Orthodox Church",
+            "text": "Dn. Markose Mani was a devoted servant of God and a faithful deacon of St. Gregorios Malankara Orthodox Church. With a humble heart and unwavering faith, he faithfully served the Church and its community for many years, supporting the growth of the parish through his dedication, love, and quiet leadership.\n\nKnown for his gentle spirit, kindness, and deep commitment to the Church, Dn. Markose played an important role in the spiritual and communal life of our parish. His faithful presence, service at the altar, and care for the parish family touched many lives and remain an inspiration to all of us.\n\nWe remember him with deep gratitude for his life of service and the lasting legacy he leaves in our hearts.",
+            "family": "Cherian Mani and Family"
+          }
         }
       ],
       "band": "",
       "placement": "outline",
       "indexName": "Deacon Markose Mani (Cherian Mani & family)",
-      "sort": "Mani Deacon Markose "
+      "sort": "Mani Deacon Markose ",
+      "layoutNote": "Manoj, 10 Nov: \"In Memoriam_ Dn. Markose Mani.png\" design; portrait \"IMG_7915 - C. Mani.jpeg\" (2002), cropped to drop the date stamp."
     },
     {
       "id": "cherian-mani",
@@ -3282,16 +3273,16 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/shalom-mammen/pic-1.jpg"
+                  "src": "images/members/shalom-mammen/new-10.jpg"
                 },
                 {
-                  "src": "images/members/shalom-mammen/pic-2.jpg"
+                  "src": "images/members/shalom-mammen/new-8.jpg"
                 },
                 {
-                  "src": "images/members/shalom-mammen/pic-3.jpg"
+                  "src": "images/members/shalom-mammen/new-7.jpg"
                 },
                 {
-                  "src": "images/members/shalom-mammen/pic-4.jpg"
+                  "src": "images/members/shalom-mammen/new-9.jpg"
                 }
               ]
             },
@@ -3307,7 +3298,8 @@
         }
       ],
       "phrases": false,
-      "verseRoom": 0.3
+      "verseRoom": 0.55,
+      "layoutNote": " 10 Nov: new photo set (Drive, older set moved to Old); hugging photo as main, per the family layout Manoj sent."
     },
     {
       "id": "jimmy-george",
@@ -4111,6 +4103,30 @@
               "photos": [
                 {
                   "src": "images/members/mathew-abraham/family-2026-11.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easo-thomas",
+      "name": "Easo Thomas",
+      "title": "Easo & Susamma Thomas",
+      "sort": "Thomas Easo ",
+      "layoutNote": "Design folder \"Easo Thomas\" (Manoj, 10 Nov): one photo and their names; no text, address left off.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/easo-thomas/couple-2026-11.jpg"
                 }
               ]
             },

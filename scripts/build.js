@@ -333,11 +333,33 @@ function styledBody(m, pg) {
   return `    <div class="s-stage">\n      ${out.join('\n      ')}\n    </div>`;
 }
 
+/* "inMemoriam": the clergy memorial design Manoj sent on 10 Nov (Mathai Achen,
+   Fr. Paul Varki, Dn. Markose Mani) — a large portrait fading into the page,
+   name, dates, a role line, a short biography and "May his blessed memory be
+   eternal." Fields: photo, pos (object-position), name, dates, role (" • "
+   separated), text (paragraphs; **word** is set bold), motto, family. */
+function inMemoriamBody(im, m) {
+  const bold = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  const orn = '<div class="im-orn"><span></span>&#10070;<span></span></div>';
+  const role = String(im.role || '').split(/\s*•\s*/).filter(Boolean).map(esc).join(' <i>&bull;</i> ');
+  return `    <div class="im-page">
+      <div class="im-photo"><img src="${esc(im.photo)}" alt="${esc(im.name)}"${im.pos ? ` style="object-position:${esc(im.pos)}"` : ''}></div>
+      <h2 class="im-name"${im.nameSize ? ` style="font-size:${esc(im.nameSize)}"` : ''}>${heading(im.name)}</h2>
+      ${im.dates ? `<p class="im-dates">${esc(im.dates)}</p>` : ''}
+      ${role ? `<p class="im-role">${role}</p>` : ''}
+      ${orn}
+      <div class="im-bio">${paragraphs(im.text).map((p) => `<p>${bold(p)}</p>`).join('')}</div>
+      ${orn}
+      <p class="im-motto">${esc(im.motto || 'May his blessed memory be eternal.')}</p>
+      ${im.family ? `<p class="im-family">${esc(im.family)}</p>` : ''}
+    </div>`;
+}
+
 const PHOTO_ONLY = ['photos', 'verse', 'closing', 'names'];
 // A page that is only a photo block, with no verse, names or closing line, is a
 // design the family made themselves (a card, a memorial, a poster). Those stay as sent.
-const isDesigned = (pg) => pg.blocks.length > 0 && pg.blocks.every((b) => b.type === 'photos');
-const isStyled = (pg) => STYLE && !isDesigned(pg) && pg.blocks.some((b) => b.type === 'photos') && pg.blocks.every((b) => PHOTO_ONLY.includes(b.type));
+const isDesigned = (pg) => (pg.blocks || []).length > 0 && pg.blocks.every((b) => b.type === 'photos');
+const isStyled = (pg) => STYLE && !pg.inMemoriam && !isDesigned(pg) && pg.blocks.some((b) => b.type === 'photos') && pg.blocks.every((b) => PHOTO_ONLY.includes(b.type));
 
 /* ── Page kinds ── */
 
@@ -359,7 +381,7 @@ function memberPages(m) {
       // down — a son's surname is his father's given name — so relatives sit
       // far apart in an A–Z and nothing on the page says they are related.
       // The page number is filled in once every page has one.
-      body: (styled ? styledBody(m, pg)
+      body: (pg.inMemoriam ? inMemoriamBody(pg.inMemoriam, m) : styled ? styledBody(m, pg)
         : renderBlocks(pg.blocks, { id: m.id, alt: m.title,
             // the big-photo inline layout only fits when nothing else shares the page
             soloArticle: !pg.blocks.some((x) => x.type === 'photos') }))
