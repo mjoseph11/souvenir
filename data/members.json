@@ -2107,7 +2107,7 @@
         {
           "dark": true,
           "inMemoriam": {
-            "photo": "images/members/mathai-memorial/portrait-fade.png",
+            "photo": "images/members/mathai-memorial/vestments.jpg",
             "name": "V. Rev. Kaleeckal Mathai Cor Episcopos",
             "dates": "July 3, 1942 – October 12, 2023",
             "role": "Founding Vicar • St. Gregorios Malankara Orthodox Church",
@@ -2126,7 +2126,7 @@
           "dark": true,
           "title": "In Memoriam",
           "inMemoriam": {
-            "photo": "images/members/paul-varki-memorial/portrait-fade.png",
+            "photo": "images/members/paul-varki-memorial/portrait-frame.jpg",
             "name": "Rev. Fr. Dr. Paul Varki",
             "dates": "February 7, 1931 – March 26, 2014",
             "role": "Pioneer • Spiritual Leader • Faithful Servant",
@@ -2199,7 +2199,7 @@
         {
           "dark": true,
           "inMemoriam": {
-            "photo": "images/members/markose-mani-memorial/portrait-fade.png",
+            "photo": "images/members/markose-mani-memorial/portrait-frame.jpg",
             "name": "Dn. Markose Mani",
             "dates": "August 17, 1934 – March 26, 2011",
             "role": "Deacon • St. Gregorios Malankara Orthodox Church",
@@ -3298,8 +3298,8 @@
         }
       ],
       "phrases": false,
-      "verseRoom": 0.55,
-      "layoutNote": " 10 Nov: new photo set (Drive, older set moved to Old); hugging photo as main, per the family layout Manoj sent."
+      "layoutNote": " 11 Nov: Mikhaila's staggered 2x2 layout (sent via Manoj), verse under the bottom-left photo.",
+      "layout": "stagger"
     },
     {
       "id": "jimmy-george",

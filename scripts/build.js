@@ -258,6 +258,26 @@ function styledBody(m, pg) {
   const img = (p, cls, x, y, w, hgt, rot) =>
     `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}">${p.caption ? `<figcaption class="s-cap">${esc(p.caption)}</figcaption>` : ''}</figure>`;
 
+  // "layout": "stagger" — four photos in a staggered 2 x 2 with the verse under
+  // the bottom-left one (Mikhaila Mammen's layout, 11 Nov). Slots are where her
+  // mock-up puts each photo: centre x, top, and the height it may take.
+  if (m.layout === 'stagger' && photos.length === 4) {
+    const slots = [[2.40, 0.45, 4.45, 3.13], [5.50, 0.94, 3.66, 2.57], [2.22, 5.05, 2.39, 3.79], [5.53, 4.81, 3.44, 2.41]];
+    const figs = photos.map((p, i) => {
+      const k = 0.88; // the stage is shorter than her mock-up once the band and closing line are in
+      const [cx, top, hMax, wMax] = [slots[i][0], slots[i][1] * k, slots[i][2] * k, slots[i][3]];
+      const asp = photoAspect(p.src);
+      let hh = hMax, ww = hh * asp;
+      if (ww > wMax) { ww = wMax; hh = ww / asp; }
+      return { p, x: cx - ww / 2, y: top, w: ww, h: hh };
+    });
+    const bl = figs[2];
+    const parts = figs.map((f) => img(f.p, 's-print', f.x, f.y, f.w, f.h, 0));
+    parts.push(`<p class="m-verse s-verse" style="left:${inch(bl.x - 0.2)};right:auto;width:${inch(bl.w + 0.4)};top:${inch(bl.y + bl.h + 0.3)};bottom:auto;font-size:12pt">&ldquo;${esc(vText)}&rdquo;<br><span>&mdash; ${esc(vRef)}</span></p>`);
+    parts.push(`<p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>`);
+    return `    <div class="s-stage">\n      ${parts.join('\n      ')}\n    </div>`;
+  }
+
   // verse + closing at the bottom, plus room for each line of names
   // "verseRoom": extra inches at the foot for a long verse
   const foot = 1.3 + (Number(m.verseRoom) || 0) + (names ? Math.max(0.5, 0.22 + 0.26 * lines(names.text).length) : 0);
@@ -405,6 +425,16 @@ function memberPages(m) {
   });
 }
 
+// Full-page artwork with no header or footer: "fit" cover (fill, cropping) or contain
+// (whole image, the rest of the page in "bg"). Used for the icons and His Holiness's kalpana.
+function fullPage(f) {
+  const pos = f.pos ? `;object-position:${esc(f.pos)}` : '';
+  return `<div class="page full-page"${f.bg ? ` style="background:${esc(f.bg)}"` : ''}>
+  <img src="${esc(f.src)}" alt="${esc(f.alt || '')}" style="object-fit:${esc(f.fit || 'cover')}${pos}">
+</div>
+`;
+}
+
 function placeholderPage(item) {
   const p = item.placeholder;
   const body = `    <div class="m-placeholder">
@@ -452,6 +482,7 @@ for (const section of outline.sections) {
       const file = STYLE && fs.existsSync(path.join(root, styledFile)) ? styledFile : item.file;
       added = [{ html: read(file), label: item.label }];
     }
+    else if (item.fullpage) added = [{ html: fullPage(item.fullpage), label: item.label }];
     else if (item.placeholder) added = [{ html: placeholderPage(item), label: `PLACEHOLDER: ${item.placeholder.title}` }];
     else if (item.generated) {
       const g = item.generated;

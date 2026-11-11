@@ -5,11 +5,12 @@
       "name": "Front",
       "items": [
         { "file": "src/pages/cover.html", "label": "COVER" },
-        {"label": "ICON: CHRIST THE TEACHER", "generated": {"title": "Christ the Teacher", "blocks": [{"type": "photos", "plain": true, "photos": [{"src": "images/icons/christ-the-teacher.jpg", "alt": "Christ the Teacher"}]}, {"type": "verse", "text": "I am the light of the world. He who follows Me shall not walk in darkness, but have the light of life.", "ref": "John 8:12"}]}},
-        {"label": "ICON: ST. MARY", "generated": {"title": "St. Mary, Mother of God", "blocks": [{"type": "photos", "plain": true, "photos": [{"src": "images/icons/st-mary.jpg", "alt": "St. Mary, Mother of God"}]}, {"type": "verse", "text": "My soul magnifies the Lord, and my spirit has rejoiced in God my Savior.", "ref": "Luke 1:46–47"}]}},
-        {"label": "ICON: ST. THOMAS", "generated": {"title": "St. Thomas, Apostle of India", "blocks": [{"type": "photos", "plain": true, "photos": [{"src": "images/icons/st-thomas.jpg", "alt": "St. Thomas, Apostle of India"}]}, {"type": "verse", "text": "My Lord and my God!", "ref": "John 20:28"}]}},
-        {"label": "ICON: ST. GREGORIOS OF PARUMALA", "generated": {"title": "St. Geevarghese Mar Gregorios of Parumala", "blocks": [{"type": "photos", "plain": true, "photos": [{"src": "images/icons/parumala-full.jpg", "alt": "St. Geevarghese Mar Gregorios of Parumala"}]}, {"type": "verse", "text": "The righteous shall flourish like a palm tree.", "ref": "Psalm 92:12"}]}},
-        { "file": "src/pages/message-catholicos.html", "label": "MESSAGE: CATHOLICOS", "toc": "Message — H.H. Baselios Marthoma Mathews III" },
+        {"label": "ICON: CHRIST THE TEACHER", "fullpage": {"src": "images/icons/christ-the-teacher-full.jpg", "alt": "Christ the Teacher", "fit": "cover"}},
+        {"label": "ICON: ST. MARY", "fullpage": {"src": "images/icons/st-mary.jpg", "alt": "St. Mary, Mother of God", "fit": "contain", "bg": "#b09c5a"}},
+        {"label": "ICON: ST. THOMAS", "fullpage": {"src": "images/icons/st-thomas.jpg", "alt": "St. Thomas, Apostle of India", "fit": "contain", "bg": "#5a1a0a"}},
+        {"label": "ICON: ST. GREGORIOS OF PARUMALA", "fullpage": {"src": "images/icons/parumala-full.jpg", "alt": "St. Geevarghese Mar Gregorios of Parumala", "fit": "contain", "bg": "#940903"}},
+        { "label": "MESSAGE: CATHOLICOS (KALPANA)", "fullpage": { "src": "images/catholicos-kalpana-2026.png", "alt": "Message from H.H. Baselios Marthoma Mathews III, November 9, 2026", "fit": "contain" }, "toc": "Message — H.H. Baselios Marthoma Mathews III" },
+        { "label": "MESSAGE: CATHOLICOS (PORTRAIT)", "fullpage": { "src": "images/catholicos-2026.jpg", "alt": "H.H. Baselios Marthoma Mathews III", "fit": "cover", "pos": "center 20%" } },
         { "file": "src/pages/message-metropolitan.html", "label": "MESSAGE: METROPOLITAN", "toc": "Message — H.G. Zachariah Mar Nicholovos" },
         { "file": "src/pages/message-vicar.html", "label": "MESSAGE: VICAR", "toc": "Message — Rev. Fr. Shibu Venad Mathai" },
         {
