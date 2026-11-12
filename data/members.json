@@ -206,7 +206,8 @@
               "bare": true,
               "center": true,
               "title": "Best Compliments from Thomas Paul and Family",
-              "text": "Members of SGMOC since 1978\n\nBoard of Trustee Member — 1994–1996\n\nSecretary — 1995–1996"
+              "text": "Members of SGMOC since 1978\n\nBoard of Trustee Member — 1994–1996\n\nSecretary — 1995–1996\n\nDiocesan Auditor — 1998–2002",
+              "bold": true
             },
             {
               "type": "text",
@@ -3905,7 +3906,8 @@
             "closing": "May the intercessions of the Holy Theotokos, St. Joseph, Patriarch Joseph and Patriarch Benjamin be a refuge for us!"
           }
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "rajan-m-thomas",

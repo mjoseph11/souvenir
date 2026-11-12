@@ -106,6 +106,7 @@
   .m-text p + p { margin-top: 0.08in; }
   .m-text.center p { text-align: center; }
   .m-text.italic p { font-style: italic; }
+  .m-text.bold p { font-weight: 700; }
   .m-text.cols { column-count: 2; column-gap: 0.3in; column-rule: 1px solid rgba(201,162,39,0.3); }
   .m-text.size-sm p { font-size: 9.5pt; line-height: 1.55; }
   .m-text.size-xs p { font-size: 8.8pt; line-height: 1.45; }

@@ -112,7 +112,7 @@ const BLOCKS = {
     return `<div class="${cls}">${b.span ? title + fig : fig + title}${body}${sign}</div>`;
   },
   text(b) {
-    const cls = ['m-text', b.cols && 'cols', b.poem && 'poem', b.lang && `lang-${b.lang}`, b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bare && 'bare', b.balance && 'balance']
+    const cls = ['m-text', b.cols && 'cols', b.poem && 'poem', b.lang && `lang-${b.lang}`, b.size && `size-${b.size}`, b.center && 'center', b.italic && 'italic', b.bold && 'bold', b.bare && 'bare', b.balance && 'balance']
       .filter(Boolean)
       .join(' ');
     const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
