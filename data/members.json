@@ -3891,45 +3891,19 @@
       "name": "Dr. Mathew John",
       "title": "Dr. Mathew John & Family",
       "sort": "John Mathew Dr. ",
-      "layoutNote": "Ceena's layout (sent via Suchin, 7 Nov): family photo on top, the three icons down the left beside the text.",
+      "layoutNote": "Ceena's layout (sent via Suchin, 7 Nov). 12 Nov: rebuilt exactly to her own mock-up (WhatsApp 11 Nov 7:10pm): full-width photo, icons the same size down the left, sans text, bold red closing line under the text.",
       "pages": [
         {
-          "blocks": [
-            {
-              "type": "photos",
-              "photos": [
-                {
-                  "src": "images/members/john-mathew/family.jpg"
-                }
-              ]
-            },
-            {
-              "type": "side",
-              "plain": true,
-              "width": "1.7in",
-              "photos": [
-                {
-                  "src": "images/members/john-mathew/icon-holy-family.jpg"
-                },
-                {
-                  "src": "images/members/john-mathew/icon-joseph.jpg"
-                },
-                {
-                  "src": "images/members/john-mathew/icon-benjamin.jpg"
-                }
-              ],
-              "title": "Our Family's Journey at SGMOC",
-              "text": "Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.\n\nWe are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come.",
-              "grow": 2
-            },
-            {
-              "type": "text",
-              "bare": true,
-              "center": true,
-              "italic": true,
-              "text": "May the intercessions of the Holy Theotokos, St. Joseph, Patriarch Joseph and Patriarch Benjamin be a refuge for us!"
-            }
-          ]
+          "mockup": {
+            "photo": "images/members/john-mathew/family.jpg",
+            "column": [
+              "images/members/john-mathew/icon-holy-family.jpg",
+              "images/members/john-mathew/icon-joseph.jpg",
+              "images/members/john-mathew/icon-benjamin.jpg"
+            ],
+            "text": "Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.\nWe are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come.",
+            "closing": "May the intercessions of the Holy Theotokos, St. Joseph, Patriarch Joseph and Patriarch Benjamin be a refuge for us!"
+          }
         }
       ]
     },

@@ -359,3 +359,13 @@
 /* Full-page artwork (icons, His Holiness's kalpana and portrait): no header or footer */
 .page.full-page { height: var(--page-h); padding: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #fff; }
 .page.full-page img { display: block; width: 100%; height: 100%; }
+
+/* "mockup" pages: the family's own layout, to the inch (Ceena Mathew, 12 Nov) */
+.mk-page { width: 6.5in; margin: 0 auto; height: 100%; display: flex; flex-direction: column; gap: 0.15in; }
+.mk-photo { display: block; width: 100%; height: auto; flex-shrink: 0; }
+.mk-row { display: flex; gap: 0.15in; min-height: 0; }
+.mk-col { display: flex; flex-direction: column; gap: 0.05in; }
+.mk-col img { display: block; width: 100%; height: auto; }
+.mk-text { flex: 1 1 0; padding-top: 0.08in; font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif; font-size: 12.2pt; line-height: 1.16; color: #111; }
+.mk-text p { margin: 0; }
+.mk-text .mk-close { margin-top: 0.15in; text-align: center; font-weight: 700; color: #e0252b; }

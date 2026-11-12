@@ -969,6 +969,16 @@
 .page.full-page { height: var(--page-h); padding: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #fff; }
 .page.full-page img { display: block; width: 100%; height: 100%; }
 
+/* "mockup" pages: the family's own layout, to the inch (Ceena Mathew, 12 Nov) */
+.mk-page { width: 6.5in; margin: 0 auto; height: 100%; display: flex; flex-direction: column; gap: 0.15in; }
+.mk-photo { display: block; width: 100%; height: auto; flex-shrink: 0; }
+.mk-row { display: flex; gap: 0.15in; min-height: 0; }
+.mk-col { display: flex; flex-direction: column; gap: 0.05in; }
+.mk-col img { display: block; width: 100%; height: auto; }
+.mk-text { flex: 1 1 0; padding-top: 0.08in; font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif; font-size: 12.2pt; line-height: 1.16; color: #111; }
+.mk-text p { margin: 0; }
+.mk-text .mk-close { margin-top: 0.15in; text-align: center; font-weight: 700; color: #e0252b; }
+
   /* ══════════════════════════════════════
      MANOJ'S PAGE STYLE — preview only (STYLE=manoj node scripts/build.js)
      Main photo faded into the page, tilted prints, script phrases, and his
@@ -1514,7 +1524,7 @@
       linear-gradient(to right, transparent, #C9A227, transparent) bottom / 100% 1px no-repeat;
   }
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap">
 </head>
 <body>
 
@@ -4802,7 +4812,7 @@
 <!-- ════════════════════════════════════════
      PAGE 94 — MEMBER PAGE: Dr. Mathew John
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate photos-1">
+<div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Dr. Mathew John &amp; Family</h1>
@@ -4811,9 +4821,13 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/john-mathew/family.jpg" alt="Dr. Mathew John &amp; Family"></figure></div>
-    <div class="m-side plain" style="flex-grow:2"><div class="m-photos stack" style="flex:0 0 1.7in"><figure class="m-fig"><img src="images/members/john-mathew/icon-holy-family.jpg" alt="Dr. Mathew John &amp; Family"></figure><figure class="m-fig"><img src="images/members/john-mathew/icon-joseph.jpg" alt="Dr. Mathew John &amp; Family"></figure><figure class="m-fig"><img src="images/members/john-mathew/icon-benjamin.jpg" alt="Dr. Mathew John &amp; Family"></figure></div><div class="m-text bare"><p class="m-text-title">Our Family’s Journey at SGMOC</p><p>Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.</p><p>We are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come.</p></div></div>
-    <div class="m-text center italic bare"><p>May the intercessions of the Holy Theotokos, St. Joseph, Patriarch Joseph and Patriarch Benjamin be a refuge for us!</p></div>
+    <div class="mk-page">
+      <img class="mk-photo" src="images/members/john-mathew/family.jpg" alt="Dr. Mathew John &amp; Family">
+      <div class="mk-row">
+        <div class="mk-col" style="flex:0 0 23.75%"><img src="images/members/john-mathew/icon-holy-family.jpg" alt="Dr. Mathew John &amp; Family"><img src="images/members/john-mathew/icon-joseph.jpg" alt="Dr. Mathew John &amp; Family"><img src="images/members/john-mathew/icon-benjamin.jpg" alt="Dr. Mathew John &amp; Family"></div>
+        <div class="mk-text"><p>Our journey with SGMOC began in 2023 with the appointment of Ceena Mathew as the Associate Minister of the parish. Shibu Achen and the church family warmly welcomed Dr. Mathew, Ceena, and Joseph in March 2023. Ceena’s parents, Rev. Fr. K. P. Varghese and Rosamma Varghese, joined SGMOC after moving from Baltimore to Pennsylvania in 2024. After Benjamin was born, he was blessed to be baptized at this church in May 2025. Mathew’s parents, Dr. M. I. John and Prof. Rajamma John, worshipped at SGMOC for a few months during their visit in 2025. Another special blessing was celebrating the 50th anniversary of Varghese Achen’s priesthood at SGMOC in November 2025.</p><p>We are thankful to the parish community for welcoming us and we are especially grateful to Shibu Achen for inviting us to serve alongside him in the ministries of the church and for giving us the opportunity to be part of this wonderful parish family. As we continue this journey together, we look forward to growing in Christ through the sacramental life of the Church, through service, and through the fellowship and love we share with one another. May the intercession of St. Gregorios of Parumala and the abundant grace of our Lord Jesus Christ continue to guide and bless SGMOC for generations to come.</p><p class="mk-close">May the intercessions of the Holy Theotokos, St. Joseph, Patriarch Joseph and Patriarch Benjamin be a refuge for us!</p></div>
+      </div>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
