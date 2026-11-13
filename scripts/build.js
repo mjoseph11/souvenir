@@ -265,7 +265,10 @@ function styledBody(m, pg) {
     const slots = [[2.40, 0.45, 4.45, 3.13], [5.50, 0.94, 3.66, 2.57], [2.22, 5.05, 2.39, 3.79], [5.53, 4.81, 3.44, 2.41]];
     const figs = photos.map((p, i) => {
       const k = 0.88; // the stage is shorter than her mock-up once the band and closing line are in
-      const [cx, top, hMax, wMax] = [slots[i][0], slots[i][1] * k, slots[i][2] * k, slots[i][3]];
+      // "staggerScale": grow the photos into the side margins (Manoj, 12 Nov), spreading
+      // the columns out from the middle and the bottom row down to keep the gaps.
+      const sc = Number(m.staggerScale) || 1, t0 = slots[0][1] * k, mid = 3.9;
+      const [cx, top, hMax, wMax] = [mid + (slots[i][0] - mid) * sc, t0 + (slots[i][1] * k - t0) * sc, slots[i][2] * k * sc, slots[i][3] * sc];
       const asp = photoAspect(p.src);
       let hh = hMax, ww = hh * asp;
       if (ww > wMax) { ww = wMax; hh = ww / asp; }

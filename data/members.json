@@ -3313,7 +3313,8 @@
       ],
       "phrases": false,
       "layoutNote": " 11 Nov: Mikhaila's staggered 2x2 layout (sent via Manoj), verse under the bottom-left photo.",
-      "layout": "stagger"
+      "layout": "stagger",
+      "staggerScale": 1.08
     },
     {
       "id": "jimmy-george",
