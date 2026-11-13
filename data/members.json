@@ -442,6 +442,7 @@
     },
     {
       "id": "biju-chacko",
+      "approved": true,
       "name": "Biju Chacko",
       "title": "Biju Chacko & Family",
       "pages": [
@@ -2023,6 +2024,7 @@
     },
     {
       "id": "thankamoni-john",
+      "approved": true,
       "name": "Thankamoni John",
       "title": "In Loving Memory",
       "pages": [
