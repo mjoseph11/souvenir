@@ -32,7 +32,8 @@
           ]
         }
       ],
-      "title": "Dr. Ashok Joseph & Family"
+      "title": "Dr. Ashok Joseph & Family",
+      "approved": true
     },
     {
       "id": "dustin-paul",
@@ -61,7 +62,8 @@
           ]
         }
       ],
-      "title": "Dr. Dustin Paul & Family"
+      "title": "Dr. Dustin Paul & Family",
+      "approved": true
     },
     {
       "id": "fr-alexander-kurien",
@@ -280,7 +282,8 @@
           ]
         }
       ],
-      "sort": "Peter Ajay "
+      "sort": "Peter Ajay ",
+      "approved": true
     },
     {
       "id": "ajeesh-cherian",
@@ -307,7 +310,8 @@
           ]
         }
       ],
-      "sort": "Cherian Ajeesh "
+      "sort": "Cherian Ajeesh ",
+      "approved": true
     },
     {
       "id": "alexander-thankachen",
@@ -330,7 +334,8 @@
           ]
         }
       ],
-      "sort": "Thankachen Alexander "
+      "sort": "Thankachen Alexander ",
+      "approved": true
     },
     {
       "id": "arun-philip",
@@ -379,7 +384,8 @@
           ]
         }
       ],
-      "sort": "Raju Arun "
+      "sort": "Raju Arun ",
+      "approved": true
     },
     {
       "id": "ashley-mountney",
@@ -402,7 +408,8 @@
           ]
         }
       ],
-      "sort": "Mountney Patrick "
+      "sort": "Mountney Patrick ",
+      "approved": true
     },
     {
       "id": "babu-varghese",
@@ -526,7 +533,8 @@
           ]
         }
       ],
-      "sort": "Mani Biju "
+      "sort": "Mani Biju ",
+      "approved": true
     },
     {
       "id": "dr-joe-john",
@@ -556,7 +564,8 @@
         }
       ],
       "indexName": "V. S. John (Dr. Joe John)",
-      "sort": "John V. S. "
+      "sort": "John V. S. ",
+      "approved": true
     },
     {
       "id": "george-mathew-biju",
@@ -585,7 +594,8 @@
           ]
         }
       ],
-      "sort": "Mathew George "
+      "sort": "Mathew George ",
+      "approved": true
     },
     {
       "id": "george-varghese",
@@ -676,7 +686,8 @@
           ]
         }
       ],
-      "sort": "Varghese John "
+      "sort": "Varghese John ",
+      "approved": true
     },
     {
       "id": "joseph-abraham",
@@ -721,7 +732,8 @@
         }
       ],
       "sort": "Abraham Joseph ",
-      "layoutNote": "Manoj: page 1 is Joseph and auntie; page 2 is the family, older on top and younger below. family-1 to 3 run oldest children to youngest."
+      "layoutNote": "Manoj: page 1 is Joseph and auntie; page 2 is the family, older on top and younger below. family-1 to 3 run oldest children to youngest.",
+      "approved": true
     },
     {
       "id": "manoj-samuel",
@@ -751,7 +763,8 @@
           ]
         }
       ],
-      "sort": "Samuel Manoj "
+      "sort": "Samuel Manoj ",
+      "approved": true
     },
     {
       "id": "mathew-ninan",
@@ -801,7 +814,8 @@
         }
       ],
       "sort": "Ninan Mathew ",
-      "layoutNote": "Manoj: \"Manoj Ninans memorial same as joys one family top memorial section on bottom\". Name and dates are from the note.txt in the Drive folder. 3 Nov: Manoj asked for the memorial photo on top."
+      "layoutNote": "Manoj: \"Manoj Ninans memorial same as joys one family top memorial section on bottom\". Name and dates are from the note.txt in the Drive folder. 3 Nov: Manoj asked for the memorial photo on top.",
+      "approved": true
     },
     {
       "id": "mathew-thomas",
@@ -853,7 +867,8 @@
           ]
         }
       ],
-      "sort": "Maret Paul J. "
+      "sort": "Maret Paul J. ",
+      "approved": true
     },
     {
       "id": "philipose-george",
@@ -905,7 +920,8 @@
           ]
         }
       ],
-      "sort": "Mathew Prince "
+      "sort": "Mathew Prince ",
+      "approved": true
     },
     {
       "id": "rajan-eappen",
@@ -1004,7 +1020,8 @@
           ]
         }
       ],
-      "sort": "Moses Sarath "
+      "sort": "Moses Sarath ",
+      "approved": true
     },
     {
       "id": "shiju-poovathoor",
@@ -1036,7 +1053,8 @@
           ]
         }
       ],
-      "sort": "Poovathoor Shiju "
+      "sort": "Poovathoor Shiju ",
+      "approved": true
     },
     {
       "id": "suchin-thompson",
@@ -1072,7 +1090,8 @@
       ],
       "sort": "Thompson Suchin ",
       "photoScale": 0.78,
-      "layoutNote": "Suchin, 9 Nov: new left and right photos (\"L Side.jpg\", \"R Side.jpg\"); main photo trimmed so \"Together\" clears it. 9 Nov 7:50pm: church photo bigger; 8:22pm: names line added."
+      "layoutNote": "Suchin, 9 Nov: new left and right photos (\"L Side.jpg\", \"R Side.jpg\"); main photo trimmed so \"Together\" clears it. 9 Nov 7:50pm: church photo bigger; 8:22pm: names line added.",
+      "approved": true
     },
     {
       "id": "sujith-varghese",
@@ -1101,7 +1120,8 @@
           ]
         }
       ],
-      "sort": "Varghese Sujith "
+      "sort": "Varghese Sujith ",
+      "approved": true
     },
     {
       "id": "thomas-joseph",
@@ -1155,7 +1175,8 @@
           ]
         }
       ],
-      "sort": "Koithottu Varughese "
+      "sort": "Koithottu Varughese ",
+      "approved": true
     },
     {
       "id": "varkey-vattakkattu",
@@ -1179,7 +1200,8 @@
         }
       ],
       "sort": "Vattakkattu Varkey ",
-      "phrases": false
+      "phrases": false,
+      "approved": true
     },
     {
       "id": "zach-zacharia",
@@ -1212,7 +1234,8 @@
           ]
         }
       ],
-      "sort": "Zacharia Zach "
+      "sort": "Zacharia Zach ",
+      "approved": true
     },
     {
       "id": "kurien-p-mathew",
@@ -1236,7 +1259,8 @@
       "band": "",
       "indexName": "Kurien P. Mathew (In Loving Memory)",
       "sort": "Mathew Vinesh 0",
-      "layoutNote": "11 Nov (Manoj): grouped with The Mathew Family: memorial, family photo (Vinesh), Noah's poem (Vinit)."
+      "layoutNote": "11 Nov (Manoj): grouped with The Mathew Family: memorial, family photo (Vinesh), Noah's poem (Vinit).",
+      "approved": true
     },
     {
       "id": "biju-ittyachen",
@@ -1351,7 +1375,8 @@
         }
       ],
       "sort": "Cheriyan Thomas ",
-      "layoutNote": "Manoj, 5 Nov: John Chacko's page style - main photo straight, the second a tilted print. The family's message goes where the names line sits."
+      "layoutNote": "Manoj, 5 Nov: John Chacko's page style - main photo straight, the second a tilted print. The family's message goes where the names line sits.",
+      "approved": true
     },
     {
       "id": "vinesh-mathew",
@@ -1395,7 +1420,8 @@
         }
       ],
       "indexName": "Vinit Mathew — \"Leading Our Path\" by Noah Mathew",
-      "sort": "Mathew Vinit "
+      "sort": "Mathew Vinit ",
+      "approved": true
     },
     {
       "id": "basil-milton",
@@ -1419,7 +1445,8 @@
           ]
         }
       ],
-      "sort": "Milton Basil "
+      "sort": "Milton Basil ",
+      "approved": true
     },
     {
       "id": "betcy-allen",
@@ -1440,7 +1467,8 @@
           ]
         }
       ],
-      "sort": "Kuruvila Allen "
+      "sort": "Kuruvila Allen ",
+      "approved": true
     },
     {
       "id": "poovathoor-koshy",
@@ -1705,7 +1733,8 @@
           ]
         }
       ],
-      "sort": "Kurian Kuruvilla P. "
+      "sort": "Kurian Kuruvilla P. ",
+      "approved": true
     },
     {
       "id": "mathew-varghese",
@@ -1953,7 +1982,8 @@
           ]
         }
       ],
-      "sort": "Joys Jessu "
+      "sort": "Joys Jessu ",
+      "approved": true
     },
     {
       "id": "john-kappil",
@@ -1988,7 +2018,8 @@
       ],
       "band": "",
       "indexName": "John Kappil — in memory of Kunjuvarughese & Annamma Kappil",
-      "sort": "Kappil John "
+      "sort": "Kappil John ",
+      "approved": true
     },
     {
       "id": "thankamoni-john",
@@ -2636,7 +2667,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "mathew-kandathil",
@@ -2824,7 +2856,8 @@
       ],
       "sort": "Thomas Ashanth ",
       "seeAlso": "thomas-joseph",
-      "seeAlsoLabel": "the Thomas Joseph family"
+      "seeAlsoLabel": "the Thomas Joseph family",
+      "approved": true
     },
     {
       "id": "raju-geevarghese",
@@ -2894,7 +2927,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "nibu-ipe-maret",
@@ -2919,7 +2953,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "jiji-koshy",
@@ -3021,7 +3056,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "alex-john",
@@ -3044,7 +3080,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "binumon-yohannan",
@@ -3067,7 +3104,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "lee-k-george",
@@ -3090,7 +3128,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "naomi-samuel",
@@ -3130,7 +3169,8 @@
           ]
         }
       ],
-      "layoutNote": "Message from the Word file Naomi sent Suchin (7 Nov), signed David & Naomi Palmer."
+      "layoutNote": "Message from the Word file Naomi sent Suchin (7 Nov), signed David & Naomi Palmer.",
+      "approved": true
     },
     {
       "id": "tv-philip",
@@ -3253,7 +3293,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "mathews-thomas",
@@ -3345,7 +3386,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "sumod-abraham",
@@ -3404,7 +3446,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "kurian-madathil",
@@ -3469,7 +3512,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "mathew-kurian",
@@ -3514,7 +3558,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "abey-jacob",
@@ -3550,7 +3595,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "kaleeckal-family",
@@ -3602,7 +3648,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "vinu-varghese",
@@ -3707,7 +3754,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "benson-panicker",
@@ -3757,7 +3805,8 @@
             }
           ]
         }
-      ]
+      ],
+      "approved": true
     },
     {
       "id": "shijoy-k-mathew",
