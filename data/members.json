@@ -170,7 +170,9 @@
                 "src": "images/members/mathewkutty-kurian/photo1.jpg"
               },
               "text": "The Mathew family has been members of this church since 1989. Our journey with the church has been profoundly meaningful, deeply rooted in the teachings of the Orthodox faith. The church community has enriched our lives through its love, guidance, and shared values, fostering a stronger connection with God and one another. We are deeply grateful for the blessings and sense of belonging we have found within this community.",
-              "sign": "The Mathewkutty Kurian Family"
+              "sign": "The Mathewkutty Kurian Family",
+              "size": "lg",
+              "photoMax": "4in"
             },
             {
               "type": "closing"
@@ -2932,7 +2934,11 @@
               "text": "Jiji Koshy was born in the early 1960s and raised in Vazhoor, Kottayam, Kerala, as the youngest of eight children. His family was active in St. Peter’s Malankara Syrian Orthodox Church in Pulikkalkavala. After earning a degree in Business and Administration and working as a Logistics Manager in Kerala, Jiji immigrated to the United States in 1991, settling in New Jersey with his eldest brother, George.\n\nBeena Abraham was born in the late 1960s and raised in North Paravur, Ernakulam, the second of three children of Areekal Abraham Tharian and Vazhappilli Sucy Abraham. After earning a master’s degree in physics, Beena married Jiji in 1992. Jiji settled in Philadelphia with his brother Thomas, where he helped establish St. Mary’s Malankara Syrian Orthodox Church; Beena and their daughter Jane joined him in 1996.\n\nIn the summer of 2000, a season of change — a new job, a new home, their eldest starting kindergarten and a third child on the way — brought them to St. Gregorios, shortly before Joanne was born. Over the years both became active in the ministries, and their daughters in the Youth League and Sunday School. In 2023 Beena made parish history as the first woman to serve as Treasurer and Trustee.\n\nJiji grew up serving at the altar in his home parish, and after immigrating faced pressure from colleagues and family to join other denominations. He stayed with the faith handed down to him, and encourages those around him to do the same. Beena set out to be a physicist and found instead a profession in computers; leaving her family in Kerala, she built a new one here, and came to find in SGMOC a second home.\n\nJiji established and runs Alma Digital Vision, his photography and videography business, and Beena works as an Enterprise Systems Programmer with the City of Philadelphia. Their daughters have gone on to science research, engineering, literature and writing. Above all the family treasures the church community that has carried and enriched their lives.",
               "photo": {
                 "src": "images/members/jiji-koshy/photo.jpg"
-              }
+              },
+              "size": "lg"
+            },
+            {
+              "type": "closing"
             }
           ]
         }

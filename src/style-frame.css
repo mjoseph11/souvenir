@@ -383,3 +383,9 @@
 
   /* Malayalam poems in Manjari, which sets small: a size up (Raju Geevarghese, 12 Nov). */
   .m-content .m-text.lang-ml.poem.center p { font-size: 12.5pt; line-height: 1.55; text-align: center; }
+
+  /* Article text gets the paper wash too (Mathewkutty Kurian, 12 Nov: letters on the leaves). */
+  .m-article p, .m-article .m-sign {
+    background: rgba(250, 241, 225, 0.82);
+    box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
+  }

@@ -105,7 +105,9 @@ const BLOCKS = {
     // beside it. Two narrow columns would leave the lower half of the page bare.
     const short = String(b.text ?? '').length < 1300 && ctx.soloArticle;
     const cls = ['m-article', b.span && 'span-title', short && 'wide-photo', b.size && `size-${b.size}`].filter(Boolean).join(' ');
-    const fig = b.photo ? figure(b.photo, ctx.alt) : '';
+    // "photoMax": cap the photo's height (e.g. "3.9in") when it would run into the closing line
+    let fig = b.photo ? figure(b.photo, ctx.alt) : '';
+    if (b.photoMax) fig = fig.replace('<img ', `<img style="max-height:${esc(b.photoMax)}" `);
     const title = b.title ? `<h2 class="m-article-title">${heading(b.title)}</h2>` : '';
     const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
     const sign = b.sign ? `<p class="m-sign">&mdash; ${esc(b.sign)}</p>` : '';
