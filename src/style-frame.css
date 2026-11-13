@@ -21,7 +21,7 @@
     /* The artwork carries 0.12in of bleed on every side. On a Letter page it
        is enlarged by that much so the trimmed part lands on the page. */
     --bg-over: calc(0.12in - var(--bleed-or-0));
-    --serif: 'EB Garamond', 'Noto Serif Malayalam', Garamond, Georgia, serif;
+    --serif: 'EB Garamond', 'Manjari', Garamond, Georgia, serif;
   }
 
   /* Garamond is smaller on the body than Georgia at the same size. The
@@ -380,3 +380,6 @@
     box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
   }
 
+
+  /* Malayalam poems in Manjari, which sets small: a size up (Raju Geevarghese, 12 Nov). */
+  .m-content .m-text.lang-ml.poem.center p { font-size: 12.5pt; line-height: 1.55; text-align: center; }

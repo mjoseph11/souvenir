@@ -2864,7 +2864,7 @@
               "cols": true,
               "bare": true,
               "poem": true,
-              "size": "sm"
+              "lang": "ml"
             }
           ]
         }
