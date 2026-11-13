@@ -298,6 +298,12 @@
   .m-article.size-sm p { font-size: 9.3pt; line-height: 1.55; }
   .m-article.size-sm .m-fig img { max-height: 3.6in; }
   .m-article.size-xs p { font-size: 8.8pt; line-height: 1.48; }
+  /* Shorter pieces that left the foot of the page bare (Milton, Jinu John, 12 Nov). */
+  .m-article.size-lg p { font-size: 11pt; line-height: 1.75; }
+  .m-article.size-lg .m-fig img { max-height: 5.6in; }
+  .m-article.wide-photo.size-lg p { font-size: 11.5pt; line-height: 1.8; }
+  .m-article.wide-photo.size-lg .m-fig { width: 4.4in; }
+  .m-article.wide-photo.size-lg .m-fig img { max-height: 6.8in; }
   .m-article.size-xs .m-fig img { max-height: 3in; }
 
   /* Verse and closing line get a soft parchment glow, so they stay readable

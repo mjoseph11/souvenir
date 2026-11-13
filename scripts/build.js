@@ -252,8 +252,11 @@ function styledBody(m, pg) {
   let j = (h + 1 + (h >>> 8) % (PHRASES.length - 1)) % PHRASES.length;
   while (PHRASES[j].script === p1.script) j = (j + 1) % PHRASES.length;
   const p2 = PHRASES[j];
-  const words = (p, x, y, w, size = 30) =>
-    `<div class="s-words" style="left:${inch(x)};top:${inch(y)};width:${inch(w)}"><span class="s-script" style="font-size:${size}pt">${esc(p.script)}</span>${p.lines.map((l) => `<span class="s-caps">${esc(l)}</span>`).join('')}<i class="s-rule"></i></div>`;
+  // the script word shrinks to fit its column ("Community" ran off the page, 12 Nov)
+  const words = (p, x, y, w, size = 30) => {
+    size = Math.min(size, Math.floor((w * 0.92) / (p.script.length * 0.0082)));
+    return `<div class="s-words" style="left:${inch(x)};top:${inch(y)};width:${inch(w)}"><span class="s-script" style="font-size:${size}pt">${esc(p.script)}</span>${p.lines.map((l) => `<span class="s-caps">${esc(l)}</span>`).join('')}<i class="s-rule"></i></div>`;
+  };
   // A photo's "caption" sits under it; "straight": true keeps a print untilted.
   const img = (p, cls, x, y, w, hgt, rot) =>
     `<figure class="${cls}" style="left:${inch(x)};top:${inch(y)};width:${inch(w)};height:${inch(hgt)}${rot ? `;transform:rotate(${rot}deg)` : ''}"><img src="${esc(p.src)}" alt="${esc(m.title)}">${p.caption ? `<figcaption class="s-cap">${esc(p.caption)}</figcaption>` : ''}</figure>`;
@@ -294,7 +297,10 @@ function styledBody(m, pg) {
   if (noWords) {                                   // no phrases: fill the width
     const maxH = (sides.length ? (two ? 3.9 : 5.6) : avail - 0.15) * pscale;
     wm = Math.min(W * pscale, maxH * a); hm = wm / a; beside = false;
-  } else if (a <= 1.1) {                           // portrait or square main: phrases beside it
+  } else if (a <= (sides.length ? 1.1 : 0.73)) {  // portrait main: phrases beside it
+    // Alone on the page, a photo wider than 0.73 is capped by the 4.5in width
+    // before it reaches the height, leaving ~2in bare (Milton/Ajay Peter, 12 Nov),
+    // so it goes to the next branch: bigger, with the phrases under it.
     const maxH = sides.length ? (two ? 3.9 : 5.1) : avail - 0.2;
     wm = Math.min(4.5, maxH * a) * pscale; hm = wm / a; beside = true;
   } else {                                          // wide main: full width, phrases elsewhere
@@ -305,7 +311,7 @@ function styledBody(m, pg) {
   // side prints: one row, all the same height, never wider than the room given
   let rowW = W - 0.2, sideTop = 0, sideH = 0, rows = [];
   const phrasesFlankRow = !beside && sides.length === 1;
-  if (phrasesFlankRow) rowW = 4.1;
+  if (phrasesFlankRow) rowW = 3.8; // 4.1 let a tilted print clip the words (12 Nov)
   const rowGap = 0.25;
   if (sides.length) {
     const gap = 0.35;
