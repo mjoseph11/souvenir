@@ -21,7 +21,7 @@
     /* The artwork carries 0.12in of bleed on every side. On a Letter page it
        is enlarged by that much so the trimmed part lands on the page. */
     --bg-over: calc(0.12in - var(--bleed-or-0));
-    --serif: 'EB Garamond', Garamond, Georgia, serif;
+    --serif: 'EB Garamond', 'Noto Serif Malayalam', Garamond, Georgia, serif;
   }
 
   /* Garamond is smaller on the body than Georgia at the same size. The
@@ -368,3 +368,15 @@
       linear-gradient(to right, transparent, #C9A227, transparent) top / 100% 1px no-repeat,
       linear-gradient(to right, transparent, #C9A227, transparent) bottom / 100% 1px no-repeat;
   }
+
+  /* Hand-built pages (ministries, history…): wider side margins and the same
+     soft paper wash the member text has, so writing never sits on the leaves
+     (Community Outreach, 12 Nov). */
+  .inner-page .page-content { padding-left: 0.56in; padding-right: 0.56in; }
+  .inner-page .page-content p,
+  .inner-page .page-content li,
+  .inner-page .page-content .section-heading {
+    background: rgba(250, 241, 225, 0.82);
+    box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
+  }
+
