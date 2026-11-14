@@ -396,7 +396,7 @@
 /* the rest of such a page scales up with it so the frame is filled top to bottom */
 .page.inner-page .m-content:has(.m-text.size-xl) { gap: 0.32in; }
 .page.inner-page .m-content:has(.m-text.size-xl) .m-memorial-head .m-eyebrow { font-size: 13.5pt; line-height: 1.6; }
-.page.inner-page .m-content:has(.m-text.size-xl) .m-memorial-head h2 { font-size: 40pt; white-space: nowrap; margin-top: 0.14in; }
+.page.inner-page .m-content:has(.m-text.size-xl) .m-memorial-head h2 { font-size: 44pt; margin-top: 0.14in; }
 .page.inner-page .m-content:has(.m-text.size-xl) .m-verse { font-size: 15pt; line-height: 1.5; }
 .page.inner-page .m-content:has(.m-text.size-xl) .m-verse span { font-size: 12pt; }
 .page.inner-page .m-content:has(.m-text.size-xl) .m-eternal { font-size: 20pt; }
