@@ -2378,12 +2378,12 @@
           "blocks": [
             {
               "type": "memorial",
-              "name": "Mr. V. C. Thomas",
-              "eyebrow": "In Loving Memory of Our Beloved\nHusband, Father & Appacha"
+              "name": "Late Mr. V. C. Thomas",
+              "eyebrow": "In Loving Memory of\nMy Beloved Husband"
             },
             {
               "type": "text",
-              "text": "Lovingly Remembered By\n\nHis Beloved Wife\nMrs. Susy Thomas\n\nHis Loving Children\nToby and Jamie Thomas, and Tessy Thomas\n\nHis Loving Grandchildren\nIsaac and Shelby Thomas",
+              "text": "Best wishes from\nMrs. Susy Thomas\nand\nOur Dear Dad\nToby and Jamie Thomas and Tessy Thomas\nand\nOur Dear Appacha\nIsaac and Shelby Thomas",
               "center": true,
               "size": "xl",
               "bare": true,
@@ -2393,10 +2393,6 @@
               "type": "verse",
               "text": "Rejoice always, pray continually, give thanks in all circumstances; for this is God's will for you in Christ Jesus.",
               "ref": "1 Thessalonians 5:16–18"
-            },
-            {
-              "type": "eternal",
-              "text": "May His Memory Be Eternal"
             }
           ]
         }
@@ -2405,7 +2401,7 @@
       "indexName": "V. C. Thomas (In Loving Memory)",
       "sort": "Thomas V. C. ",
       "pending": true,
-      "layoutNote": "14 Nov (Manoj): edited wording from his mock-up; the family's handwritten note (Writing/Editing, 'FOR SOVENIR.pdf') had been set as written."
+      "layoutNote": "14 Nov: set in Mrs. Susy Thomas's own wording and line layout from her handwritten note (Writing/Editing, 'FOR SOVENIR.pdf'), centred with no gaps, per the user; Manoj's reworded mock-up not used."
     },
     {
       "id": "p-v-thomas",
