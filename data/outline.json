@@ -49,7 +49,7 @@
         { "placeholder": { "title": "Message", "heading": "From the Mayor of Bensalem Township", "note": "Hon. Joseph DiGirolamo — message to be requested." }, "toc": "Message — Mayor of Bensalem Township" },
         { "placeholder": { "title": "Message", "heading": "From the Governor of Pennsylvania", "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received." }, "toc": "Message — Governor of Pennsylvania" },
         { "file": "src/pages/executive-committee.html", "label": "LEADERSHIP TEAM", "toc": "Leadership Team" },
-        { "placeholder": { "title": "Our Clergy", "heading": "Rev. Fr. Eby Paulose", "note": "Appointed Vicar of SGMOC effective September 28, 2026. Photo and biography to be collected." }, "toc": "Clergy — Rev. Fr. Eby Paulose" },
+        { "member": "fr-eby-paulose", "toc": "Clergy — Rev. Fr. Eby Paulose" },
         { "member": "fr-alexander-kurien", "toc": "Clergy — Rev. Fr. Alexander Kurian" },
         { "file": "src/pages/clergy-kp-varghese.html", "label": "CLERGY: REV. FR. K. P. VARGHESE", "toc": "Clergy — Rev. Fr. K. P. Varghese" },
         { "file": "src/pages/associate-minister-ceena-mathew.html", "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW", "toc": "Associate Minister — Mrs. Ceena Mathew" },

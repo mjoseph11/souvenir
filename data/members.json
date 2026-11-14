@@ -4185,6 +4185,82 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kurian-p-varghese",
+      "name": "Kurian P. Varghese",
+      "title": "Kurian P. Varghese & Family",
+      "sort": "Varghese Kurian P. ",
+      "layoutNote": "14 Nov (Molsey/Manoj, Design/Kurian P. Varghese): Becky's (Rebecca Kurian) testimony; St. Mary icon and DAISY Award photo on half the page, testimony on the other; family photo from her own layout.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "text",
+              "bare": true,
+              "title": "Inspired by St. Mary",
+              "text": "St. Mary, the Mother of God, serves as an inspiration in both my personal life and my nursing practice. Her compassion, humility, strength, and unwavering devotion remind me of the importance of caring for others with patience, kindness, and love. As a nurse, I strive to embody these qualities by treating every patient with dignity, recognizing that each person deserves to feel heard, valued, and cared for during some of the most vulnerable moments of their lives.\n\nSt. Mary's example reminds me that nursing is about more than providing medical care; it is about offering comfort, showing empathy, and being present for patients and their families when they need it most. Even in challenging moments, I hope to approach each interaction with the same selflessness and compassion that St. Mary demonstrated throughout her life.\n\nWinning the DAISY Award is especially meaningful because it represents the values I strive to bring to my work every day. Through St. Mary's example, I am reminded of the profound impact that small acts of kindness and genuine compassion can have on another person's life. I hope to continue growing as a nurse who makes every patient feel cared for, respected, and never alone.",
+              "sign": "Rebecca Kurian, BSN, RN • DAISY Award for Extraordinary Nurses"
+            },
+            {
+              "type": "photos",
+              "arrange": "row",
+              "photos": [
+                {
+                  "src": "images/members/kurian-p-varghese/daisy-award.jpg"
+                },
+                {
+                  "src": "images/members/kurian-p-varghese/st-mary-icon.jpg"
+                },
+                {
+                  "src": "images/members/kurian-p-varghese/family.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-eby-paulose",
+      "name": "Rev. Fr. Eby Paulose",
+      "title": "Our Clergy",
+      "band": "",
+      "placement": "outline",
+      "sort": "Paulose Rev. Fr. Eby ",
+      "indexName": "Rev. Fr. Eby Paulose",
+      "layoutNote": "14 Nov (Manoj): portrait (Writing/Vicar Message) and family photo (Design/Rev. Fr. Eby Paulose). Biography and message text still to come.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "heading",
+              "text": "Rev. Fr. Eby Paulose"
+            },
+            {
+              "type": "subheading",
+              "text": "Vicar • from September 28, 2026"
+            },
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/fr-eby-paulose/portrait.jpg"
+                },
+                {
+                  "src": "images/members/fr-eby-paulose/family.jpg"
+                }
+              ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
