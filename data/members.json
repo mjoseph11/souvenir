@@ -2404,8 +2404,8 @@
       "band": "Golden Jubilee Memorial Tribute",
       "indexName": "V. C. Thomas (In Loving Memory)",
       "sort": "Thomas V. C. ",
-      "pending": true,
-      "layoutNote": "14 Nov (Manoj): edited wording from his mock-up; the family's handwritten note (Writing/Editing, 'FOR SOVENIR.pdf') had been set as written."
+      "layoutNote": "14 Nov (Manoj): edited wording from his mock-up; the family's handwritten note (Writing/Editing, 'FOR SOVENIR.pdf') had been set as written. Approved by the family 14 Nov (via Manoj).",
+      "approved": true
     },
     {
       "id": "p-v-thomas",
