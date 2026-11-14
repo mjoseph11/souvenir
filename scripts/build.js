@@ -150,7 +150,7 @@ const BLOCKS = {
   verse: (b) =>
     `<p class="m-verse${b.big ? ' big' : ''}">&ldquo;${esc(b.text)}&rdquo;${b.ref ? `<br><span>&mdash; ${esc(b.ref)}</span>` : ''}</p>`,
   memorial: (b) =>
-    `<div class="m-memorial-head">${b.eyebrow === false ? '' : `<p class="m-eyebrow">${esc(b.eyebrow || 'In Loving Memory')}</p>`}<h2>${lines(b.name).map(esc).join('<br>')}</h2>${
+    `<div class="m-memorial-head">${b.eyebrow === false ? '' : `<p class="m-eyebrow">${lines(b.eyebrow || 'In Loving Memory').map(esc).join('<br>')}</p>`}<h2>${lines(b.name).map(esc).join('<br>')}</h2>${
       b.dates ? `<p class="m-dates">${esc(b.dates)}</p>` : ''
     }<div class="m-rule"></div></div>`,
   eternal: (b) => `<p class="m-eternal">${lines(b.text || 'May Their Memory Be Eternal').map(esc).join('<br>')}</p>`,

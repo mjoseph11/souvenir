@@ -389,3 +389,7 @@
     background: rgba(250, 241, 225, 0.82);
     box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
   }
+
+/* "xl": a short memorial list that has the whole page to itself (V. C. Thomas) */
+.m-content .m-text.size-xl p { font-size: 17pt; line-height: 1.4; }
+.m-content .m-text.size-xl p + p { margin-top: 0.9em; }
