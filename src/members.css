@@ -377,3 +377,7 @@
 .mk-text p { margin: 0; }
 .mk-text p + p { margin-top: 1.16em; }
 .mk-text .mk-close { margin-top: 0.15in; text-align: center; font-weight: 700; color: #e0252b; }
+
+/* Icons and portraits between the header and footer (fullpage with "title") */
+.page.framed-art .framed-img { position: absolute; left: 0; right: 0; top: 0.81in; bottom: 0.69in; width: 100%; height: calc(100% - 1.5in); display: block; z-index: 1; }
+.page.framed-art .m-content { position: static; padding: 0; }

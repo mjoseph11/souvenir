@@ -460,6 +460,12 @@ function memberPages(m) {
 // Full-page artwork with no header or footer: "fit" cover (fill, cropping) or contain
 // (whole image, the rest of the page in "bg"). Used for the icons and His Holiness's kalpana.
 function fullPage(f) {
+  // "title": keep the page header and footer and fill the space between them
+  // (8.5 x 9.5 in; Manoj sizes these at 2818 x 3060 px, i.e. 8.75 in with bleed).
+  if (f.title) {
+    const pos = f.pos ? `;object-position:${esc(f.pos)}` : '';
+    return shell({ title: f.title, cls: 'framed-art', body: `    <img class="framed-img" src="${esc(f.src)}" alt="${esc(f.alt || f.title)}" style="object-fit:${esc(f.fit || 'cover')}${pos}">` });
+  }
   const pos = f.pos ? `;object-position:${esc(f.pos)}` : '';
   return `<div class="page full-page"${f.bg ? ` style="background:${esc(f.bg)}"` : ''}>
   <img src="${esc(f.src)}" alt="${esc(f.alt || '')}" style="object-fit:${esc(f.fit || 'cover')}${pos}">

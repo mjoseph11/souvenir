@@ -5,12 +5,13 @@
       "name": "Front",
       "items": [
         { "file": "src/pages/cover.html", "label": "COVER" },
-        {"label": "ICON: CHRIST THE TEACHER", "fullpage": {"src": "images/icons/christ-the-teacher-full.jpg", "alt": "Christ the Teacher", "fit": "cover"}},
-        {"label": "ICON: ST. MARY", "fullpage": {"src": "images/icons/st-mary.jpg", "alt": "St. Mary, Mother of God", "fit": "contain", "bg": "#b09c5a"}},
+        {"label": "ICON: CHRIST THE TEACHER", "fullpage": {"src": "images/icons/christ-the-teacher-framed.jpg", "alt": "Christ the Teacher", "title": "Christ the Teacher"}},
+        {"label": "ICON: ST. MARY", "fullpage": {"src": "images/icons/st-mary-framed.jpg", "alt": "St. Mary, Mother of God", "title": "St. Mary, Mother of God"}},
         {"label": "ICON: ST. THOMAS", "fullpage": {"src": "images/icons/st-thomas.jpg", "alt": "St. Thomas, Apostle of India", "fit": "contain", "bg": "#5a1a0a"}},
-        {"label": "ICON: ST. GREGORIOS OF PARUMALA", "fullpage": {"src": "images/icons/parumala-full.jpg", "alt": "St. Geevarghese Mar Gregorios of Parumala", "fit": "contain", "bg": "#940903"}},
+        {"label": "ICON: ST. GREGORIOS OF PARUMALA", "fullpage": {"src": "images/icons/parumala-framed.jpg", "alt": "St. Geevarghese Mar Gregorios of Parumala", "title": "St. Gregorios of Parumala"}},
         { "label": "MESSAGE: CATHOLICOS (KALPANA)", "fullpage": { "src": "images/catholicos-kalpana-2026.png", "alt": "Message from H.H. Baselios Marthoma Mathews III, November 9, 2026", "fit": "contain" }, "toc": "Message — H.H. Baselios Marthoma Mathews III" },
-        { "label": "MESSAGE: CATHOLICOS (PORTRAIT)", "fullpage": { "src": "images/catholicos-2026.jpg", "alt": "H.H. Baselios Marthoma Mathews III", "fit": "cover", "pos": "center 20%" } },
+        { "label": "MESSAGE: CATHOLICOS (PORTRAIT)", "fullpage": { "src": "images/catholicos-2026-framed.jpg", "alt": "H.H. Baselios Marthoma Mathews III", "title": "H.H. Baselios Marthoma Mathews III" } },
+        { "label": "MESSAGE: METROPOLITAN (PORTRAIT)", "fullpage": { "src": "images/metropolitan-2026-framed.jpg", "alt": "H.G. Zachariah Mar Nicholovos", "title": "H.G. Zachariah Mar Nicholovos" } },
         { "file": "src/pages/message-metropolitan.html", "label": "MESSAGE: METROPOLITAN", "toc": "Message — H.G. Zachariah Mar Nicholovos" },
         { "file": "src/pages/message-vicar.html", "label": "MESSAGE: VICAR", "toc": "Message — Rev. Fr. Shibu Venad Mathai" },
         {

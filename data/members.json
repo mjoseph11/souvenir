@@ -3873,7 +3873,7 @@
       "name": "Raju M. Varghese",
       "title": "Raju M. Varghese & Family",
       "sort": "Varghese Raju M ",
-      "layoutNote": "Design folder (12 Oct): one photo at the root; the \"others\" subfolder is left out, like old/.",
+      "layoutNote": "14 Nov: write-up \"Raju M. Varghese Message.txt\" placed below the photo (Manoj). Design folder (12 Oct): one photo at the root; the \"others\" subfolder is left out, like old/.",
       "pages": [
         {
           "blocks": [
@@ -3884,6 +3884,11 @@
                   "src": "images/members/raju-m-varghese/photo.jpg"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "text": "Raju M. Varghese and Aleyamma (Alice) Raju immigrated to the United States in 1975 and settled in Philadelphia, Pennsylvania. They are blessed with three children and five grandchildren. Both were among the founding members of the first Malankara Orthodox Church in Philadelphia. Raju M. Varghese served as the Lay Trustee of the American Diocese and was a member of the Malankara Association Managing Committee for 22 years (1985–2007). He currently serves as a member of the Board of Directors of St. Gregorios Malankara Orthodox Church in Bensalem, Pennsylvania."
             },
             {
               "type": "closing"
@@ -4200,7 +4205,7 @@
               "bare": true,
               "title": "Inspired by St. Mary",
               "text": "St. Mary, the Mother of God, serves as an inspiration in both my personal life and my nursing practice. Her compassion, humility, strength, and unwavering devotion remind me of the importance of caring for others with patience, kindness, and love. As a nurse, I strive to embody these qualities by treating every patient with dignity, recognizing that each person deserves to feel heard, valued, and cared for during some of the most vulnerable moments of their lives.\n\nSt. Mary's example reminds me that nursing is about more than providing medical care; it is about offering comfort, showing empathy, and being present for patients and their families when they need it most. Even in challenging moments, I hope to approach each interaction with the same selflessness and compassion that St. Mary demonstrated throughout her life.\n\nWinning the DAISY Award is especially meaningful because it represents the values I strive to bring to my work every day. Through St. Mary's example, I am reminded of the profound impact that small acts of kindness and genuine compassion can have on another person's life. I hope to continue growing as a nurse who makes every patient feel cared for, respected, and never alone.",
-              "sign": "Rebecca Kurian, BSN, RN • DAISY Award for Extraordinary Nurses"
+              "sign": "Rebecca Kurian, BSN, RN • DAISY Award Recipient for Extraordinary Nurses"
             },
             {
               "type": "photos",
