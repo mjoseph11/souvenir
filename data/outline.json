@@ -12,7 +12,7 @@
         { "label": "MESSAGE: CATHOLICOS (KALPANA)", "fullpage": { "src": "images/catholicos-kalpana-2026.png", "alt": "Message from H.H. Baselios Marthoma Mathews III, November 9, 2026", "fit": "contain" }, "toc": "Message — H.H. Baselios Marthoma Mathews III" },
         { "label": "MESSAGE: CATHOLICOS (PORTRAIT)", "fullpage": { "src": "images/catholicos-2026-framed.jpg", "alt": "H.H. Baselios Marthoma Mathews III", "title": "H.H. Baselios Marthoma Mathews III" } },
         { "label": "MESSAGE: METROPOLITAN (PORTRAIT)", "fullpage": { "src": "images/metropolitan-2026-framed.jpg", "alt": "H.G. Zachariah Mar Nicholovos", "title": "H.G. Zachariah Mar Nicholovos" } },
-        { "file": "src/pages/message-metropolitan.html", "label": "MESSAGE: METROPOLITAN", "toc": "Message — H.G. Zachariah Mar Nicholovos" },
+        { "label": "MESSAGE: METROPOLITAN (KALPANA)", "fullpage": { "src": "images/metropolitan-kalpana-2026.png", "alt": "Message from H.G. Zachariah Mar Nicholovos, OL No. 51/2026, November 5, 2026", "fit": "contain" }, "toc": "Message — H.G. Zachariah Mar Nicholovos" },
         { "placeholder": { "title": "Message", "heading": "From Rev. Fr. Eby Paulose, Vicar", "note": "Appointed Vicar of SGMOC effective September 28, 2026. Welcome message and photo to be requested." }, "toc": "Message — Rev. Fr. Eby Paulose, Vicar" },
         { "file": "src/pages/message-vicar.html", "label": "MESSAGE: VICAR", "toc": "Message — Rev. Fr. Shibu Venad Mathai" },
         {
