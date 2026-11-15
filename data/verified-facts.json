@@ -30,8 +30,9 @@
     {
       "id": "trustee-name",
       "label": "Trustee message page",
-      "expected": "From the Trustee — Mr. Thomas Ninan",
-      "forbidden": ["Trustee — Mr. Reji Ninan"],
+      "expected": "Mr. Thomas Ninan",
+      "scope": "MESSAGE: TRUSTEE",
+      "forbidden": ["Reji Ninan"],
       "source": "Confirmed by Mathew Joseph 2026-09-20",
       "note": "Trustee and the committee Treasurer are one office, held by Thomas Ninan. He is also known as Reji Ninan, which is what the Leadership Team page used to print; see [committee-treasurer]."
     },
