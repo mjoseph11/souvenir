@@ -418,29 +418,24 @@
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
+              "type": "half",
+              "grow": 1.25,
+              "blocks": [
                 {
-                  "src": "images/members/babu-varghese/IMG-20260519-WA0008-Manoj-Chacko.jpg"
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/babu-varghese/IMG-20260519-WA0008-Manoj-Chacko.jpg"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "verse",
-              "big": true,
-              "text": "Unless the Lord builds the house, the builders labor in vain.",
-              "ref": "Psalm 127:1"
-            },
-            {
-              "type": "closing"
-            }
-          ]
-        },
-        {
-          "blocks": [
-            {
               "type": "half",
+              "dark": true,
               "grow": 1,
+              "smallName": true,
               "blocks": [
                 {
                   "type": "memorial",
@@ -448,43 +443,27 @@
                 },
                 {
                   "type": "photos",
+                  "arrange": "row",
                   "photos": [
                     {
                       "src": "images/members/babu-varghese/memorial-1.jpg"
-                    }
-                  ]
-                }
-              ],
-              "smallName": true
-            },
-            {
-              "type": "half",
-              "grow": 1,
-              "blocks": [
-                {
-                  "type": "memorial",
-                  "name": "[Names to come]"
-                },
-                {
-                  "type": "photos",
-                  "photos": [
+                    },
                     {
                       "src": "images/members/babu-varghese/memorial-2.jpg"
                     }
                   ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "May Their Memory Be Eternal"
                 }
-              ],
-              "smallName": true
-            },
-            {
-              "type": "eternal",
-              "text": "May Their Memory Be Eternal"
+              ]
             }
           ]
         }
       ],
       "sort": "Varghese Babu ",
-      "memorialNote": "15 Nov: Manoj added two memorial photos (couples) to Babu's Drive folder, 'it will be in memorial format'. Names and dates not given yet."
+      "memorialNote": "15 Nov: two memorial photos (couples) from Manoj; Babu's family want one page, memorial format at the bottom under the family photo (Manoj 4:47 PM). Names and dates not given yet; the Psalm 127:1 verse was dropped to make room."
     },
     {
       "id": "biju-chacko",
