@@ -381,3 +381,7 @@
 /* Icons and portraits between the header and footer (fullpage with "title") */
 .page.framed-art .framed-img { position: absolute; left: 0; right: 0; top: 0.81in; bottom: 0.69in; width: 100%; height: calc(100% - 1.5in); display: block; z-index: 1; }
 .page.framed-art .m-content { position: static; padding: 0; }
+
+/* Compact Malayalam (GSM on one page, 15 Nov) */
+.m-content .m-text.lang-ml.size-xs p { font-size: 8.7pt; line-height: 1.45; }
+.m-content .m-text.lang-ml.size-xs p + p { margin-top: 0.4em; }
