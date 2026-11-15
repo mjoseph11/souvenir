@@ -624,3 +624,4 @@
 .org-table td { padding: 4px 8px; border-bottom: 1px solid rgba(201,162,39,0.45); vertical-align: top; line-height: 1.35; }
 .org-table td:first-child { color: var(--maroon); font-weight: bold; white-space: nowrap; width: 1.1in; }
 .org-table .role { color: #777; font-size: 8.4pt; }
+.org-el { display: flow-root; }
