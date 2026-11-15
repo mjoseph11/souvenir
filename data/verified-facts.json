@@ -42,7 +42,7 @@
       "label": "Treasurer on the Leadership Team page",
       "expected": "Thomas Ninan",
       "forbidden": ["Reji Ninan"],
-      "scope": "LEADERSHIP TEAM",
+      "scope": "MANAGEMENT COMMITTEE & BOARD",
       "source": "Confirmed by Mathew Joseph 2026-09-20",
       "note": "Trustee and Treasurer are the same office and the name to print is Thomas Ninan, so this page matches the Trustee message page. Reji Ninan is the same man; the page carried that name until 2026-09-20 and his committee photo is still filed as reji-ninan.png. Scoped to this page because 'Reji Ninan' is left as submitted in the St. Joseph's Forum report."
     }

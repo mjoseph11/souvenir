@@ -1,21 +1,172 @@
 {
-  "_comment": "Page order for the souvenir, following Manoj's 'SGMOC Content Outline.docx' (Drive 1pRHU_HaNkMb-gZDuq5EzBOSb1pZnUMlm, sent 2026-09-14). Item kinds: file (hand-built page in src/pages), placeholder (planned page not yet written), generated (page built from blocks), member (one entry from data/members.json placed here), members (all remaining families A–Z), ads (every sponsor ad, at the end), index. 'toc' adds the item to the Index contents. Manoj said revisions are coming after the September 2026 vicar change.",
+  "_comment": "Page order for the souvenir, following Manoj's 'SGMOC Content Outline.docx' (Drive 1pRHU_HaNkMb-gZDuq5EzBOSb1pZnUMlm, sent 2026-09-14). Item kinds: file (hand-built page in src/pages), placeholder (planned page not yet written), generated (page built from blocks), member (one entry from data/members.json placed here), members (all remaining families A–Z), ads (every sponsor ad, at the end), index. 'toc' adds the item to the Index contents. Manoj said revisions are coming after the September 2026 vicar change. Reordered 15 Nov 2026 to the user's new order (front messages, clergy by name, tributes, history, pictures, memorials, past office bearers, organizations, members, ads, glossary, acknowledgements, picnic photo).",
   "sections": [
     {
       "name": "Front",
       "items": [
-        { "file": "src/pages/cover.html", "label": "COVER" },
-        {"label": "ICON: CHRIST THE TEACHER", "fullpage": {"src": "images/icons/christ-the-teacher-framed.jpg", "alt": "Christ the Teacher", "title": "Christ the Teacher"}},
-        {"label": "ICON: ST. MARY", "fullpage": {"src": "images/icons/st-mary-framed.jpg", "alt": "St. Mary, Mother of God", "title": "St. Mary, Mother of God"}},
-        {"label": "ICON: ST. THOMAS", "fullpage": {"src": "images/icons/st-thomas.jpg", "alt": "St. Thomas, Apostle of India", "fit": "contain", "bg": "#5a1a0a"}},
-        {"label": "ICON: ST. GREGORIOS OF PARUMALA", "fullpage": {"src": "images/icons/parumala-framed.jpg", "alt": "St. Geevarghese Mar Gregorios of Parumala", "title": "St. Gregorios of Parumala"}},
-        { "label": "MESSAGE: CATHOLICOS (KALPANA)", "fullpage": { "src": "images/catholicos-kalpana-2026.png", "alt": "Message from H.H. Baselios Marthoma Mathews III, November 9, 2026", "fit": "contain" }, "toc": "Message — H.H. Baselios Marthoma Mathews III" },
-        { "label": "MESSAGE: CATHOLICOS (PORTRAIT)", "fullpage": { "src": "images/catholicos-2026-framed.jpg", "alt": "H.H. Baselios Marthoma Mathews III", "title": "H.H. Baselios Marthoma Mathews III" } },
-        { "label": "MESSAGE: METROPOLITAN (PORTRAIT)", "fullpage": { "src": "images/metropolitan-2026-framed.jpg", "alt": "H.G. Zachariah Mar Nicholovos", "title": "H.G. Zachariah Mar Nicholovos" } },
-        { "label": "MESSAGE: METROPOLITAN (KALPANA)", "fullpage": { "src": "images/metropolitan-kalpana-2026.png", "alt": "Message from H.G. Zachariah Mar Nicholovos, OL No. 51/2026, November 5, 2026", "fit": "contain" }, "toc": "Message — H.G. Zachariah Mar Nicholovos" },
-        { "file": "src/pages/message-vicar-eby.html", "label": "MESSAGE: VICAR — REV. FR. EBY PAULOSE", "toc": "Message — Rev. Fr. Eby Paulose, Vicar" },
-        { "file": "src/pages/message-vicar-eby-2.html", "label": "MESSAGE: VICAR — REV. FR. EBY PAULOSE (2 of 2)" },
-        { "file": "src/pages/message-vicar.html", "label": "MESSAGE: VICAR", "toc": "Message — Rev. Fr. Shibu Venad Mathai" },
+        {
+          "file": "src/pages/cover.html",
+          "label": "COVER"
+        },
+        {
+          "label": "ICON: CHRIST THE TEACHER",
+          "fullpage": {
+            "src": "images/icons/christ-the-teacher-framed.jpg",
+            "alt": "Christ the Teacher",
+            "title": "Christ the Teacher"
+          }
+        },
+        {
+          "label": "ICON: ST. MARY",
+          "fullpage": {
+            "src": "images/icons/st-mary-framed.jpg",
+            "alt": "St. Mary, Mother of God",
+            "title": "St. Mary, Mother of God"
+          }
+        },
+        {
+          "label": "ICON: ST. THOMAS",
+          "fullpage": {
+            "src": "images/icons/st-thomas.jpg",
+            "alt": "St. Thomas, Apostle of India",
+            "fit": "contain",
+            "bg": "#5a1a0a"
+          }
+        },
+        {
+          "label": "ICON: ST. GREGORIOS OF PARUMALA",
+          "fullpage": {
+            "src": "images/icons/parumala-framed.jpg",
+            "alt": "St. Geevarghese Mar Gregorios of Parumala",
+            "title": "St. Gregorios of Parumala"
+          }
+        },
+        {
+          "label": "MESSAGE: CATHOLICOS (KALPANA)",
+          "fullpage": {
+            "src": "images/catholicos-kalpana-2026.png",
+            "alt": "Message from H.H. Baselios Marthoma Mathews III, November 9, 2026",
+            "fit": "contain"
+          },
+          "toc": "Message — H.H. Baselios Marthoma Mathews III"
+        },
+        {
+          "label": "MESSAGE: CATHOLICOS (PORTRAIT)",
+          "fullpage": {
+            "src": "images/catholicos-2026-framed.jpg",
+            "alt": "H.H. Baselios Marthoma Mathews III",
+            "title": "H.H. Baselios Marthoma Mathews III"
+          }
+        },
+        {
+          "label": "MESSAGE: METROPOLITAN (KALPANA)",
+          "fullpage": {
+            "src": "images/metropolitan-kalpana-2026.png",
+            "alt": "Message from H.G. Zachariah Mar Nicholovos, OL No. 51/2026, November 5, 2026",
+            "fit": "contain"
+          },
+          "toc": "Message — H.G. Zachariah Mar Nicholovos"
+        },
+        {
+          "label": "MESSAGE: METROPOLITAN (PORTRAIT)",
+          "fullpage": {
+            "src": "images/metropolitan-2026-framed.jpg",
+            "alt": "H.G. Zachariah Mar Nicholovos",
+            "title": "H.G. Zachariah Mar Nicholovos"
+          }
+        },
+        {
+          "file": "src/pages/message-vicar.html",
+          "label": "MESSAGE: GEEVARGHESE REMBAN",
+          "toc": "Message — Geevarghese Remban"
+        },
+        {
+          "file": "src/pages/message-vicar-eby.html",
+          "label": "MESSAGE: VICAR — REV. FR. EBY PAULOSE",
+          "toc": "Message — Rev. Fr. Eby Paulose, Vicar"
+        },
+        {
+          "file": "src/pages/message-trustee.html",
+          "label": "MESSAGE: TRUSTEE",
+          "toc": "Message — Mr. Thomas Ninan, Trustee"
+        },
+        {
+          "file": "src/pages/message-trustee-2.html",
+          "label": "MESSAGE: TRUSTEE (2 of 2)"
+        },
+        {
+          "file": "src/pages/message-secretary.html",
+          "label": "MESSAGE: SECRETARY",
+          "toc": "Message — Mr. Mathew Madathil Kurian, Secretary"
+        },
+        {
+          "file": "src/pages/message-secretary-2.html",
+          "label": "MESSAGE: SECRETARY (2 of 2)"
+        },
+        {
+          "file": "src/pages/executive-committee.html",
+          "label": "MANAGEMENT COMMITTEE & BOARD",
+          "toc": "Management Committee & Board"
+        },
+        {
+          "placeholder": {
+            "title": "Message",
+            "heading": "From the President of the United States",
+            "note": "Message from President Donald J. Trump, to be requested."
+          },
+          "toc": "Message — President of the United States"
+        },
+        {
+          "placeholder": {
+            "title": "Message",
+            "heading": "From the U.S. Senator",
+            "note": "Message from our U.S. Senator, to be requested."
+          },
+          "toc": "Message — U.S. Senator"
+        },
+        {
+          "placeholder": {
+            "title": "Message",
+            "heading": "From the U.S. House of Representatives",
+            "note": "Message from our Representative in Congress, to be requested."
+          },
+          "toc": "Message — U.S. House of Representatives"
+        },
+        {
+          "placeholder": {
+            "title": "Message",
+            "heading": "From the Governor of Pennsylvania",
+            "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received."
+          },
+          "toc": "Message — Governor of Pennsylvania"
+        },
+        {
+          "placeholder": {
+            "title": "Message",
+            "heading": "From the Mayor of Bensalem Township",
+            "note": "Hon. Joseph DiGirolamo — message to be requested."
+          },
+          "toc": "Message — Mayor of Bensalem Township"
+        },
+        {
+          "file": "src/pages/clergy-kp-varghese.html",
+          "label": "CLERGY: REV. FR. K. P. VARGHESE",
+          "toc": "Clergy — Rev. Fr. K. P. Varghese"
+        },
+        {
+          "file": "src/pages/clergy-alexander-kurien.html",
+          "label": "CLERGY: REV. FR. ALEXANDER KURIEN",
+          "toc": "Clergy — Rev. Fr. Alexander Kurien"
+        },
+        {
+          "file": "src/pages/clergy-alexander-kurien-2.html",
+          "label": "CLERGY: REV. FR. ALEXANDER KURIEN (2 of 2)"
+        },
+        {
+          "file": "src/pages/associate-minister-ceena-mathew.html",
+          "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW",
+          "toc": "Associate Minister — Mrs. Ceena Mathew"
+        },
         {
           "label": "TRIBUTE: FR. SHIBU — CHOSEN TO SHEPHERD",
           "toc": "Tribute — Rev. Fr. Shibu Venad Mathai, Metropolitan-elect",
@@ -23,12 +174,46 @@
             "title": "Chosen to Shepherd",
             "band": "Draft • Titles and dates to be confirmed with the Diocese before print",
             "blocks": [
-              { "type": "heading", "text": "Rev. Fr. Shibu Venad Mathai" },
-              { "type": "subheading", "text": "Vicar of SGMOC 2011–2026 • Metropolitan-elect" },
-              { "type": "photos", "photos": [{ "src": "images/vicar.jpg", "alt": "Rev. Fr. Shibu Venad Mathai" }] },
-              { "type": "text", "center": true, "text": "On August 27, 2026, the Malankara Syrian Christian Association elected our beloved Vicar, Rev. Fr. Shibu Venad Mathai, as one of four new Metropolitans of the Malankara Orthodox Syrian Church. For the parish he has shepherded for fifteen years, it is a moment of profound joy and gratitude to God — and of bittersweet farewell." },
-              { "type": "list", "title": "The Road to the Episcopate", "items": ["Elected Metropolitan — August 27, 2026", "Relieved as Vicar of SGMOC — September 27, 2026", "Ordination as Remban — October 27, 2026 • Parumala", "Ordination as Metropolitan — February 4, 2027 • Mount Horeb Ashram, Sasthamkotta"] },
-              { "type": "text", "bare": true, "center": true, "italic": true, "size": "lg", "text": "Axios! Axios! Axios!" }
+              {
+                "type": "heading",
+                "text": "Rev. Fr. Shibu Venad Mathai"
+              },
+              {
+                "type": "subheading",
+                "text": "Vicar of SGMOC 2011–2026 • Metropolitan-elect"
+              },
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/vicar.jpg",
+                    "alt": "Rev. Fr. Shibu Venad Mathai"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "center": true,
+                "text": "On August 27, 2026, the Malankara Syrian Christian Association elected our beloved Vicar, Rev. Fr. Shibu Venad Mathai, as one of four new Metropolitans of the Malankara Orthodox Syrian Church. For the parish he has shepherded for fifteen years, it is a moment of profound joy and gratitude to God — and of bittersweet farewell."
+              },
+              {
+                "type": "list",
+                "title": "The Road to the Episcopate",
+                "items": [
+                  "Elected Metropolitan — August 27, 2026",
+                  "Relieved as Vicar of SGMOC — September 27, 2026",
+                  "Ordination as Remban — October 27, 2026 • Parumala",
+                  "Ordination as Metropolitan — February 4, 2027 • Mount Horeb Ashram, Sasthamkotta"
+                ]
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "center": true,
+                "italic": true,
+                "size": "lg",
+                "text": "Axios! Axios! Axios!"
+              }
             ]
           }
         },
@@ -38,36 +223,99 @@
             "title": "Fifteen Years as Our Vicar",
             "band": "Draft • 2011–2026",
             "blocks": [
-              { "type": "list", "title": "Milestones Under His Leadership", "items": ["June 2011 — Appointed Vicar of St. Gregorios Malankara Orthodox Church", "2011 — Parish hosts the Metropolitan Enthronement of H.G. Zachariah Mar Nicholovos", "2016 — Good Samaritan Mission established", "August 27, 2016 — Ministry & Mission Center dedicated", "2016, 2017 & 2019 — Bensalem Unity 5K organized by the parish", "Since 2018 — Parish hosts annual Unity Week prayer fellowship", "September 23, 2018 — Cemetery monument to our Patron Saint dedicated at Rosedale", "2024 — Men's Forum founded, later renamed St. Joseph's Forum", "June 13, 2026 — Golden Jubilee celebrations"] },
-              { "type": "text", "size": "sm", "title": "In the Words of Our Families", "text": "“When we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness.” — The Betcy Allen Family\n\n“Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation.” — The Milton Family\n\n“The parish has witnessed tremendous growth in membership and spirituality under his leadership.” — Korah T. Mani\n\n“Rev. Fr. Shibu Venad Mathai … is an asset to St. Gregorios Malankara Orthodox Church.” — Dr. Poovathoor Koshy and family" },
-              { "type": "text", "bare": true, "center": true, "italic": true, "size": "sm", "text": "More milestones and reflections from parishioners to be added." }
+              {
+                "type": "list",
+                "title": "Milestones Under His Leadership",
+                "items": [
+                  "June 2011 — Appointed Vicar of St. Gregorios Malankara Orthodox Church",
+                  "2011 — Parish hosts the Metropolitan Enthronement of H.G. Zachariah Mar Nicholovos",
+                  "2016 — Good Samaritan Mission established",
+                  "August 27, 2016 — Ministry & Mission Center dedicated",
+                  "2016, 2017 & 2019 — Bensalem Unity 5K organized by the parish",
+                  "Since 2018 — Parish hosts annual Unity Week prayer fellowship",
+                  "September 23, 2018 — Cemetery monument to our Patron Saint dedicated at Rosedale",
+                  "2024 — Men's Forum founded, later renamed St. Joseph's Forum",
+                  "June 13, 2026 — Golden Jubilee celebrations"
+                ]
+              },
+              {
+                "type": "text",
+                "size": "sm",
+                "title": "In the Words of Our Families",
+                "text": "“When we first approached our Parish Vicar, Rev. Fr. Shibu Venad Mathai (Shibu Achen), he welcomed us with incredible warmth and kindness.” — The Betcy Allen Family\n\n“Both of our kids were baptized by Shibu Achen in this sanctuary, surrounded by the love of this congregation.” — The Milton Family\n\n“The parish has witnessed tremendous growth in membership and spirituality under his leadership.” — Korah T. Mani\n\n“Rev. Fr. Shibu Venad Mathai … is an asset to St. Gregorios Malankara Orthodox Church.” — Dr. Poovathoor Koshy and family"
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "center": true,
+                "italic": true,
+                "size": "sm",
+                "text": "More milestones and reflections from parishioners to be added."
+              }
             ]
           }
         },
-        { "placeholder": { "title": "A Farewell Message", "heading": "From Rev. Fr. Shibu Venad Mathai", "note": "A farewell message to the parish after fifteen years as Vicar (2011–2026), to be requested from Achen." } },
-        { "placeholder": { "title": "Fifteen Years in Pictures", "heading": "Shibu Achen with Our Parish", "note": "Photographs from his years at SGMOC, the August 27, 2026 announcement and the parish felicitation. A high-resolution portrait is also needed — the current photo (170×241 px) is too small to print." } },
-        { "file": "src/pages/message-trustee.html", "label": "MESSAGE: TRUSTEE", "toc": "Message — Mr. Thomas Ninan, Trustee" },
-        { "file": "src/pages/message-trustee-2.html", "label": "MESSAGE: TRUSTEE (2 of 2)" },
-        { "file": "src/pages/message-secretary.html", "label": "MESSAGE: SECRETARY", "toc": "Message — Mr. Mathew Madathil Kurian, Secretary" },
-        { "file": "src/pages/message-secretary-2.html", "label": "MESSAGE: SECRETARY (2 of 2)" },
-        { "placeholder": { "title": "Message", "heading": "From the Mayor of Bensalem Township", "note": "Hon. Joseph DiGirolamo — message to be requested." }, "toc": "Message — Mayor of Bensalem Township" },
-        { "placeholder": { "title": "Message", "heading": "From the Governor of Pennsylvania", "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received." }, "toc": "Message — Governor of Pennsylvania" },
-        { "file": "src/pages/executive-committee.html", "label": "LEADERSHIP TEAM", "toc": "Leadership Team" },
-        { "file": "src/pages/clergy-alexander-kurien.html", "label": "CLERGY: REV. FR. ALEXANDER KURIEN", "toc": "Clergy — Rev. Fr. Alexander Kurien" },
-        { "file": "src/pages/clergy-alexander-kurien-2.html", "label": "CLERGY: REV. FR. ALEXANDER KURIEN (2 of 2)" },
-        { "file": "src/pages/clergy-kp-varghese.html", "label": "CLERGY: REV. FR. K. P. VARGHESE", "toc": "Clergy — Rev. Fr. K. P. Varghese" },
-        { "file": "src/pages/associate-minister-ceena-mathew.html", "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW", "toc": "Associate Minister — Mrs. Ceena Mathew" }
+        {
+          "placeholder": {
+            "title": "A Farewell Message",
+            "heading": "From Rev. Fr. Shibu Venad Mathai",
+            "note": "A farewell message to the parish after fifteen years as Vicar (2011–2026), to be requested from Achen."
+          }
+        },
+        {
+          "placeholder": {
+            "title": "Fifteen Years in Pictures",
+            "heading": "Shibu Achen with Our Parish",
+            "note": "Photographs from his years at SGMOC, the August 27, 2026 announcement and the parish felicitation. A high-resolution portrait is also needed — the current photo (170×241 px) is too small to print."
+          }
+        }
       ]
     },
     {
       "name": "History",
       "items": [
-        { "placeholder": { "title": "History", "heading": "The Orthodox Church in India", "pages": "1–2 pages", "note": "Origins of the Malankara Orthodox Syrian Church." }, "toc": "The Orthodox Church in India" },
-        { "placeholder": { "title": "History", "heading": "The Orthodox Church in Philadelphia", "pages": "1–2 pages", "note": "From the ecumenical Malayalee congregation of the late 1960s to the first Orthodox parish in 1976." }, "toc": "The Orthodox Church in Philadelphia" },
-        { "file": "src/pages/history-parish.html", "label": "OUR PARISH: HISTORY", "toc": "Our Parish — History & Milestones" },
-        { "file": "src/pages/charter-families.html", "label": "OUR PARISH: CHARTER FAMILIES", "toc": "Our Parish — Charter Families 1976–1980" },
-        { "file": "src/pages/our-sanctuary.html", "label": "OUR PARISH: OUR SANCTUARY", "toc": "Our Parish — Our Sanctuary" },
-        { "placeholder": { "title": "Our Parish", "heading": "Significant Events & Pictures", "pages": "Our Parish section: 8–10 pages in total", "note": "Milestone photographs and significant events (cemetery purchase, monument, ministry center, consecration 2009, and more)." }, "toc": "Our Parish — Significant Events" }
+        {
+          "placeholder": {
+            "title": "History",
+            "heading": "The Orthodox Church in India",
+            "pages": "1–2 pages",
+            "note": "Origins of the Malankara Orthodox Syrian Church."
+          },
+          "toc": "The Orthodox Church in India"
+        },
+        {
+          "placeholder": {
+            "title": "History",
+            "heading": "The Orthodox Church in Philadelphia",
+            "pages": "1–2 pages",
+            "note": "From the ecumenical Malayalee congregation of the late 1960s to the first Orthodox parish in 1976."
+          },
+          "toc": "The Orthodox Church in Philadelphia"
+        },
+        {
+          "file": "src/pages/history-parish.html",
+          "label": "OUR PARISH: HISTORY",
+          "toc": "Our Parish — History & Milestones"
+        },
+        {
+          "file": "src/pages/charter-families.html",
+          "label": "OUR PARISH: CHARTER FAMILIES",
+          "toc": "Our Parish — Charter Families 1976–1980"
+        },
+        {
+          "file": "src/pages/our-sanctuary.html",
+          "label": "OUR PARISH: OUR SANCTUARY",
+          "toc": "Our Parish — Our Sanctuary"
+        },
+        {
+          "placeholder": {
+            "title": "Our Parish",
+            "heading": "Our Parish in Pictures",
+            "pages": "3–6 pages, ending with the Perunnal",
+            "note": "Milestone photographs and significant events (cemetery purchase, monument, ministry center, consecration 2009, and more)."
+          },
+          "toc": "Our Parish in Pictures"
+        }
       ]
     },
     {
@@ -75,85 +323,331 @@
       "startOn": "even",
       "_comment": "Manoj, 11 Nov: church memorials after the church pages, before the organizations, as two spreads (Mathai Achen | Varki Achen, Mani Shemachen | church members since 1976). Must start on a left (even) page.",
       "items": [
-        { "member": "mathai-memorial", "toc": "In Memoriam — V. Rev. K. Mathai Cor Episcopos" },
-        { "member": "paul-varki-in-memoriam", "toc": "In Memoriam — Rev. Fr. Dr. Paul Varki" },
-        { "member": "markose-mani-memorial", "toc": "In Memoriam — Dn. Markose Mani" },
-        { "placeholder": { "title": "In Memoriam", "heading": "Church Members Remembered Since 1976", "note": "Members of our parish who have fallen asleep in the Lord since 1976. Being prepared by Santosh." }, "toc": "In Memoriam — Church Members Since 1976" }
+        {
+          "member": "mathai-memorial",
+          "toc": "In Memoriam — V. Rev. K. Mathai Cor Episcopos"
+        },
+        {
+          "member": "paul-varki-in-memoriam",
+          "toc": "In Memoriam — Rev. Fr. Dr. Paul Varki"
+        },
+        {
+          "member": "markose-mani-memorial",
+          "toc": "In Memoriam — Dn. Markose Mani"
+        },
+        {
+          "placeholder": {
+            "title": "In Memoriam",
+            "heading": "Church Members Remembered Since 1976",
+            "note": "Members of our parish who have fallen asleep in the Lord since 1976. Being prepared by Santosh."
+          },
+          "toc": "In Memoriam — Church Members Since 1976"
+        }
+      ]
+    },
+    {
+      "name": "Past Trustees & Secretaries",
+      "items": [
+        {
+          "placeholder": {
+            "title": "Our Parish",
+            "heading": "Past Trustees & Secretaries",
+            "note": "Trustees and Secretaries of the parish since 1976, to be compiled."
+          },
+          "toc": "Past Trustees & Secretaries"
+        }
       ]
     },
     {
       "name": "Ministries",
       "items": [
-        { "file": "src/pages/ministry-sunday-school-01.html", "label": "MINISTRY: SUNDAY SCHOOL (1 of 14)", "toc": "Sunday School" },
-        { "file": "src/pages/ministry-sunday-school-02.html", "label": "MINISTRY: SUNDAY SCHOOL (2 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-03.html", "label": "MINISTRY: SUNDAY SCHOOL (3 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-04.html", "label": "MINISTRY: SUNDAY SCHOOL (4 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-05.html", "label": "MINISTRY: SUNDAY SCHOOL (5 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-06.html", "label": "MINISTRY: SUNDAY SCHOOL (6 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-07.html", "label": "MINISTRY: SUNDAY SCHOOL (7 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-08.html", "label": "MINISTRY: SUNDAY SCHOOL (8 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-09.html", "label": "MINISTRY: SUNDAY SCHOOL (9 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-10.html", "label": "MINISTRY: SUNDAY SCHOOL (10 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-11.html", "label": "MINISTRY: SUNDAY SCHOOL (11 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-12.html", "label": "MINISTRY: SUNDAY SCHOOL (12 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-13.html", "label": "MINISTRY: SUNDAY SCHOOL (13 of 14)" },
-        { "file": "src/pages/ministry-sunday-school-14.html", "label": "MINISTRY: SUNDAY SCHOOL (14 of 14)" },
-        { "file": "src/pages/ministry-mmvs.html", "label": "MINISTRY: MMVS", "toc": "Marth Mariam Vanitha Samajam" },
-        { "file": "src/pages/ministry-mmvs-story-01.html", "label": "MINISTRY: MMVS — OUR STORY (1 of 4)" },
-        { "file": "src/pages/ministry-mmvs-story-02.html", "label": "MINISTRY: MMVS — OUR STORY (2 of 4)" },
-        { "file": "src/pages/ministry-mmvs-story-03.html", "label": "MINISTRY: MMVS — OUR STORY (3 of 4)" },
-        { "file": "src/pages/ministry-mmvs-story-04.html", "label": "MINISTRY: MMVS — OUR STORY (4 of 4)" },
-        { "file": "src/pages/ministry-st-josephs-forum.html", "label": "MINISTRY: ST. JOSEPH'S FORUM", "toc": "St. Joseph's Forum" },
+        {
+          "file": "src/pages/ministry-sunday-school-01.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (1 of 14)",
+          "toc": "Sunday School"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-02.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (2 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-03.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (3 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-04.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (4 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-05.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (5 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-06.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (6 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-07.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (7 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-08.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (8 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-09.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (9 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-10.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (10 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-11.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (11 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-12.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (12 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-13.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (13 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-sunday-school-14.html",
+          "label": "MINISTRY: SUNDAY SCHOOL (14 of 14)"
+        },
+        {
+          "file": "src/pages/ministry-mmvs.html",
+          "label": "MINISTRY: MMVS",
+          "toc": "Marth Mariam Vanitha Samajam"
+        },
+        {
+          "file": "src/pages/ministry-mmvs-story-01.html",
+          "label": "MINISTRY: MMVS — OUR STORY (1 of 4)"
+        },
+        {
+          "file": "src/pages/ministry-mmvs-story-02.html",
+          "label": "MINISTRY: MMVS — OUR STORY (2 of 4)"
+        },
+        {
+          "file": "src/pages/ministry-mmvs-story-03.html",
+          "label": "MINISTRY: MMVS — OUR STORY (3 of 4)"
+        },
+        {
+          "file": "src/pages/ministry-mmvs-story-04.html",
+          "label": "MINISTRY: MMVS — OUR STORY (4 of 4)"
+        },
+        {
+          "file": "src/pages/ministry-st-josephs-forum.html",
+          "label": "MINISTRY: ST. JOSEPH'S FORUM",
+          "toc": "St. Joseph's Forum"
+        },
         {
           "label": "MINISTRY: ST. JOSEPH'S FORUM (2 of 2)",
           "generated": {
             "title": "St. Joseph's Forum",
             "band": "Friendship • Fellowship • Faith",
             "blocks": [
-              { "type": "heading", "text": "Brothers in Christ, Serving Our Parish" },
-              { "type": "text", "size": "sm", "text": "Originally established in 2024 as the SGMOC Men's Forum, the organization was formally renamed to honor St. Joseph — a timeless pillar of quiet strength, humility, and obedience. Throughout 2025 and 2026, our members have actively immersed themselves in the sacramental life and service of the church, providing volunteer support for the Jubilee Celebrations, the annual Church Picnic, Parish Day, the Volleyball Tournament, the Harvest Festival, the Parish Perunnal, and Christmas programs." },
-              { "type": "text", "size": "sm", "center": true, "title": "Executive Committee 2024–2026", "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Shibu V. Mathai (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese" },
-              { "type": "text", "size": "xs", "cols": true, "title": "Activities & Spiritual Growth", "text": "Sunday meetings and seminars. Monthly meetings follow the Holy Qurbana and fellowship lunch. Sessions have included a Family Communication Series (Rev. Fr. Shibu V. Mathai and Mrs. Ceena Mathew), Cyber Security Awareness (Reji Ninan, Sumod Abraham, Saji Thomas), an Introduction to Artificial Intelligence (Sumod Abraham, James Varghese, Alisha Maret), and Finance, Investment and Retirement Planning (Biju Mani, Reji Ninan, Saji Thomas, Joseph Abraham).\n\nHonoring our members. On November 16, 2025, the Forum celebrated Rev. Fr. K. P. Varghese on the 50th anniversary of his Holy Priesthood. On December 21, 2025, we celebrated the 90th birthday of our most senior member, Mr. Kuruvilla Kallelil. On March 22, 2026, the Forum honored Mr. Varkey Vattakkattu and Mrs. Mercy Varkey upon their relocation to Dallas, Texas.\n\nCare and Share Ministry. Coordinated by John Kappil and Paul Maret, this ministry arranges home visits to parish members unable to attend services due to illness or age.\n\nFellowship and recreation. Annual urban hiking trips to New York City in 2025 and 2026 (coordinated by Biju Chacko and Mathew Joseph), a summer social gathering of over 30 members on August 23, 2025 (Nithin Ipe and Shiju Poovathoor), and performances at the Ecumenical and SGMOC Christmas programs.", "sign": "Submitted by Paul Maret, SJ Forum Lead (2024–2026)" }
+              {
+                "type": "heading",
+                "text": "Brothers in Christ, Serving Our Parish"
+              },
+              {
+                "type": "text",
+                "size": "sm",
+                "text": "Originally established in 2024 as the SGMOC Men's Forum, the organization was formally renamed to honor St. Joseph — a timeless pillar of quiet strength, humility, and obedience. Throughout 2025 and 2026, our members have actively immersed themselves in the sacramental life and service of the church, providing volunteer support for the Jubilee Celebrations, the annual Church Picnic, Parish Day, the Volleyball Tournament, the Harvest Festival, the Parish Perunnal, and Christmas programs."
+              },
+              {
+                "type": "text",
+                "size": "sm",
+                "center": true,
+                "title": "Executive Committee 2024–2026",
+                "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Shibu V. Mathai (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese"
+              },
+              {
+                "type": "text",
+                "size": "xs",
+                "cols": true,
+                "title": "Activities & Spiritual Growth",
+                "text": "Sunday meetings and seminars. Monthly meetings follow the Holy Qurbana and fellowship lunch. Sessions have included a Family Communication Series (Rev. Fr. Shibu V. Mathai and Mrs. Ceena Mathew), Cyber Security Awareness (Reji Ninan, Sumod Abraham, Saji Thomas), an Introduction to Artificial Intelligence (Sumod Abraham, James Varghese, Alisha Maret), and Finance, Investment and Retirement Planning (Biju Mani, Reji Ninan, Saji Thomas, Joseph Abraham).\n\nHonoring our members. On November 16, 2025, the Forum celebrated Rev. Fr. K. P. Varghese on the 50th anniversary of his Holy Priesthood. On December 21, 2025, we celebrated the 90th birthday of our most senior member, Mr. Kuruvilla Kallelil. On March 22, 2026, the Forum honored Mr. Varkey Vattakkattu and Mrs. Mercy Varkey upon their relocation to Dallas, Texas.\n\nCare and Share Ministry. Coordinated by John Kappil and Paul Maret, this ministry arranges home visits to parish members unable to attend services due to illness or age.\n\nFellowship and recreation. Annual urban hiking trips to New York City in 2025 and 2026 (coordinated by Biju Chacko and Mathew Joseph), a summer social gathering of over 30 members on August 23, 2025 (Nithin Ipe and Shiju Poovathoor), and performances at the Ecumenical and SGMOC Christmas programs.",
+                "sign": "Submitted by Paul Maret, SJ Forum Lead (2024–2026)"
+              }
             ]
           }
         },
-        { "file": "src/pages/ministry-good-samaritan.html", "label": "MINISTRY: GOOD SAMARITAN MISSION", "toc": "Good Samaritan Mission" },
-        {"label": "MINISTRY: GOOD SAMARITAN MISSION (2 of 4)", "generated": {"title": "Good Samaritan Mission", "blocks": [{"type": "heading", "text": "ദൈവ നാമത്തിനു മഹത്വം"}, {"type": "text", "cols": true, "lang": "ml", "bare": true, "text": "കഴിഞ്ഞ പത്തു വർഷമായി നമ്മുടെ ഇടവകയിൽ പ്രവർത്തിച്ചു വരുന്ന ഒരു ആത്മീക പ്രസ്ഥാനം ആണ് Good Samaritan Mission. എല്ലാ വ്യാഴാഴ്ചകളിലും രാവിലെ പത്തു മണിമുതൽ ഞങ്ങൾ പ്രാർത്ഥനകൂട്ടമായി കൂടിവരുന്നു. ചില പ്രത്യേക സാഹചര്യങ്ങളിൽ മാത്രമേ ഈ കൂട്ടായ്മക്ക് മുടക്കം ഉണ്ടായിട്ടുള്ളൂ. ഈ കൂട്ടയ്മയിൽ വേദ പുസ്തകത്തിൽ നിന്നും പുതിയ നിയമവും പഴയ നിയമവും എല്ലാവരും വായിക്കുകയും, വചനം പഠിക്കുകയും ചെയ്യും. ഞങ്ങൾ വേദപുസ്തകം മുഴുവനും ഒരു പ്രാവശ്യം വായിച്ചു കഴിഞ്ഞു. ഇനിയും തുടർന്നു കൊണ്ടിരിക്കുന്നു. സാഹചര്യം അനുസരിച്ചുള്ള വിവരണങ്ങളും പൊരുളുകളും ഷിബു അച്ചനും സീനാ മാത്യു വും വിസിറ്റ് ചെയ്യുന്ന തിരുമേനിമാരും അച്ചന്മാരും വിശദീകരിച്ചു തരും.\n\nനമ്മുടെ അറിവിലും അല്ലാതെയുമുള്ള അനേകരുടെ വിവിധങ്ങളായ ആവശ്യങ്ങൾക്കുവേണ്ടി പ്രാർത്ഥിക്കുന്നത് വളരെ അനുഗ്രഹമാണ്.\n\nഈ കൂട്ടായ്മയിൽ കൂടി പല വിധത്തിലുള്ള സഹായങ്ങൾ പലർക്കും നാട്ടിൽ ചെയ്യുവാൻ ദൈവം സഹായിച്ചു. ഈ സഹായങ്ങൾ തുടർന്നു കൊണ്ടു പോകുവാൻ ദൈവം അനുവദിക്കട്ടെ എന്ന് പ്രാർത്ഥിക്കുന്നു.\n\nഷിബു അച്ചൻ്റെ അനുവാദത്തോടുകൂടി ഞങ്ങൾ പലപ്പോഴും ഞങ്ങളുടെ അനുഭവ സാക്ഷ്യങ്ങൾ പങ്കുവെച്ചിട്ടുണ്ട്. \"ജീവിതം നമ്മളെ എന്തൊക്കെ പഠിപ്പിച്ചു; നമ്മൾ എന്തെല്ലാം പഠിച്ചു\"എന്നുള്ള ഒരു വിഷയം അച്ചൻ ഞങ്ങൾക്ക് തന്നു. എല്ലാവർക്കും ഓരോ ആഴ്ച്ച ഇതിനെക്കുറിച്ചു അവതരിപ്പിക്കാൻ അവസരം അനുവദിച്ചു. പലരും ഈ വിഷയം അവതരിപ്പിച്ചപ്പോൾ പുതിയ അറിവുകളും അനുഭവങ്ങളും വളരെ ലഭിക്കുവാൻ സാധിച്ചു.\n\nഒരു സാധാരണ കർഷക കുടുംബത്തിൽ അഞ്ചു മക്കളിൽ രണ്ടാമനായ എനിക്കുണ്ടായ അനുഭവങ്ങൾ പറയുവാൻ സാധിച്ചു. രാവിലെ അഞ്ചു മണിക്ക് പ്രാർത്ഥിക്കാൻ താമസിച്ചു പോയാൽ തണുത്ത വെള്ളം തലയിൽ ഒഴിക്കുക എന്ന ശിക്ഷ ലഭിച്ചിട്ടുണ്ട്. അന്ന് പിതാവിനോട് ദേഷ്യം മനസ്സിൽ തോന്നിയത് വളരെ തെറ്റാണെന്നു ഇപ്പോൾ തോന്നുന്നു.\n\nപ്രാർത്ഥന: എപ്പോഴും പ്രാര്ഥനയോടു കൂടി തുടക്കം കുറിക്കണം എന്നുള്ള ഉപദേശം പിതാവിൽ നിന്നും പഠിച്ചു."}]}},
-        {"label": "MINISTRY: GOOD SAMARITAN MISSION (3 of 4)", "generated": {"title": "Good Samaritan Mission", "blocks": [{"type": "text", "cols": true, "lang": "ml", "bare": true, "text": "അച്ചടക്കം: ഞാൻ പഠിച്ച സ്കൂളിൽ അര മണിക്കൂർ വേദ പഠനം ക്രിസ്ത്യൻ കുട്ടികൾക്ക് നിർബന്ധമായിരുന്നു. അഞ്ചു മിനിറ്റ് എല്ലാ കുട്ടികളും പിൻ-ഡ്രോപ്പ് സൈലെൻസിൽ ആയിരിക്കണം എന്നുള്ളത് തെറ്റിയാൽ ശിക്ഷ വളരെ കഠിനമായിരുന്നു.\n\nഅനുസരണം: സ്കൂൾ പ്രധാന റോഡിൽ നിന്നും വളരെ ഉയരത്തിൽ ആയിരുന്നു, പരുപരുത്ത കാട്ടു കല്ലു കൊണ്ട് നിർമ്മിച്ച വഴിയിൽകൂടി ഓടി ഇറങ്ങരുത് എന്നുള്ള പിതാവിൻ്റെ കർശന ഉപദേശത്തെ അനുസരിക്കാതെ എപ്പോഴും ഓടി ഇറങ്ങുമായിരുന്നു. കാൽ തെറ്റി ഒരു പ്രാവശ്യം മുകളിൽ നിന്നും ശയന പ്രദക്ഷിണം നടത്തി പ്രധാന റോഡിൽ വന്നു വീണപ്പോൾ ശരീരത്തിൻ്റെ പല ഭാഗത്തും തൊലി നഷ്ടപെട്ടിരുന്നു. രണ്ടു കൂട്ടുകാർ താങ്ങി എടുത്തു കൊണ്ട് ഭവനത്തിൽ വന്നപ്പോൾ പിതാവിൻ്റെ ശിക്ഷ അതിലും വേദനാത്മകമായിരുന്നു. തെറ്റു കണ്ടാൽ ശിക്ഷിക്കാനും തിരുത്താനും അയൽക്കാരും പരിചയക്കാരും ഉണ്ടായിരുന്നതു കാരണം പല തെറ്റുകളിൽ നിന്നും ഒഴിഞ്ഞിരിക്കാൻ സാധിച്ചു.\n\nപുതിയ നിയമത്തിൽ ന്യായശാസ്ത്രിയും കർത്താവും തമ്മിലുള്ള സംഭാഷണത്തിൻ്റെ ഒടുവിൽ കർത്താവു അവനോടു പറയുന്നു \"നീ ദൈവരാജ്യത്തിൽ നിന്നും അകന്നവനല്ല.\"ദൈവരാജ്യത്തിൽ പ്രവേശിക്കണമെങ്കിൽ പ്രാര്ഥനയെന്ന താക്കോൽ ആവശ്യമാണ്. നമ്മുടെ എല്ലാവരുടേയും കൈവശമുള്ള ഈ താക്കോൽ വേണ്ട സമയത്തു ഉപയോഗിച്ചില്ലാ എങ്കിൽ അകത്തു പ്രവേശിക്കാൻ കഴിയാത്ത കന്യകമാരെ പോലെ ആയിത്തീരും.\n\nനമ്മുടെ കർത്താവു കുരിശിൽ മരിച്ചു ഉയർത്തെഴുന്നേറ്റു നമുക്ക് ഭവനം ഒരുക്കുവാൻ സ്വർഗ്ഗത്തിലേക്ക് പോയിരിക്കുകയാണ്. നമ്മളെ ചേർക്കുവാൻ വേഗം വരുന്നു. അതിൻ്റെ എല്ലാ ലക്ഷണങ്ങളും കണ്ടു കഴിഞ്ഞു. സമയം ഇനിയും അധികമില്ല. മനസാന്തരപ്പെടുവിൻ. നമ്മുടെ തെറ്റുകൾ ദൈവസന്നിധിൽ ഏറ്റു പറഞ്ഞു പാപ ക്ഷമ പ്രാപിച്ചു ദൈവത്തോടു നിരന്നു കൊൾവീൻ.\n\nനമ്മുടെ ഇടവകയുടെ അൻപതാം വാർഷീകം ആഘോഷിക്കുന്ന ഈ സമയത്തു GSM ൻ്റെ എല്ലാവിധ ആശംസകളും പ്രാർത്ഥനയും അർപ്പിക്കുന്നു.\n\nപ്രാർത്ഥനയോടുകൂടി", "sign": "John Varghese, GSM Coordinator"}]}},
-        { "placeholder": { "title": "Good Samaritan Mission", "heading": "Good Samaritan Mission — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo, visits and activities." } },
-        { "file": "src/pages/ministry-mgocsm.html", "label": "MINISTRY: MGOCSM", "toc": "MGOCSM / Youth League" },
-        { "placeholder": { "title": "MGOCSM / Youth League", "heading": "MGOCSM — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo, retreats and activities." } },
-        { "file": "src/pages/ministry-logos.html", "label": "MINISTRY: LOGOS", "toc": "Logos Ministry" },
-        { "placeholder": { "title": "Logos Ministry", "heading": "Logos — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo and activities." } },
-        { "file": "src/pages/ministry-grow.html", "label": "MINISTRY: GROW", "toc": "GROW" },
-        { "placeholder": { "title": "GROW", "heading": "GROW — In Pictures", "pages": "2 side-by-side pages", "note": "Group photo and activities." } },
-        { "file": "src/pages/ministry-choir.html", "label": "MINISTRY: CHOIR", "toc": "Choir" },
-        { "placeholder": { "title": "Acolytes", "heading": "Our Acolytes", "pages": "1 picture or collage page", "note": "Acolyte photographs to be collected." }, "toc": "Acolytes" }
-      ]
-    },
-    {
-      "name": "Church Activities",
-      "items": [
-        { "file": "src/pages/community-outreach.html", "label": "MISSION & CHARITY: COMMUNITY OUTREACH", "toc": "Mission & Charity" },
-        { "placeholder": { "title": "Mission & Charity", "heading": "Mission & Charity — continued", "pages": "Mission & Charity section: 10–15 pages in total", "note": "Mission Board community activities and charity work, with photographs." } },
-        { "placeholder": { "title": "Church Activities", "heading": "B3T, Unity 5K, Harvest Festival & Spikefest", "pages": "10–15 pages", "note": "Photographs and short write-ups for each event." }, "toc": "B3T, 5K, Harvest Festival & Spikefest" },
-        { "placeholder": { "title": "Golden Jubilee Celebrations", "heading": "Golden Jubilee Celebrations — June 13, 2026", "pages": "2–4 pages", "note": "Pages dedicated to the June 13 jubilee event. Placement within the book still to be decided." }, "toc": "Golden Jubilee Celebrations" }
+        {
+          "file": "src/pages/ministry-good-samaritan.html",
+          "label": "MINISTRY: GOOD SAMARITAN MISSION",
+          "toc": "Good Samaritan Mission"
+        },
+        {
+          "label": "MINISTRY: GOOD SAMARITAN MISSION (2 of 4)",
+          "generated": {
+            "title": "Good Samaritan Mission",
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "ദൈവ നാമത്തിനു മഹത്വം"
+              },
+              {
+                "type": "text",
+                "cols": true,
+                "lang": "ml",
+                "bare": true,
+                "text": "കഴിഞ്ഞ പത്തു വർഷമായി നമ്മുടെ ഇടവകയിൽ പ്രവർത്തിച്ചു വരുന്ന ഒരു ആത്മീക പ്രസ്ഥാനം ആണ് Good Samaritan Mission. എല്ലാ വ്യാഴാഴ്ചകളിലും രാവിലെ പത്തു മണിമുതൽ ഞങ്ങൾ പ്രാർത്ഥനകൂട്ടമായി കൂടിവരുന്നു. ചില പ്രത്യേക സാഹചര്യങ്ങളിൽ മാത്രമേ ഈ കൂട്ടായ്മക്ക് മുടക്കം ഉണ്ടായിട്ടുള്ളൂ. ഈ കൂട്ടയ്മയിൽ വേദ പുസ്തകത്തിൽ നിന്നും പുതിയ നിയമവും പഴയ നിയമവും എല്ലാവരും വായിക്കുകയും, വചനം പഠിക്കുകയും ചെയ്യും. ഞങ്ങൾ വേദപുസ്തകം മുഴുവനും ഒരു പ്രാവശ്യം വായിച്ചു കഴിഞ്ഞു. ഇനിയും തുടർന്നു കൊണ്ടിരിക്കുന്നു. സാഹചര്യം അനുസരിച്ചുള്ള വിവരണങ്ങളും പൊരുളുകളും ഷിബു അച്ചനും സീനാ മാത്യു വും വിസിറ്റ് ചെയ്യുന്ന തിരുമേനിമാരും അച്ചന്മാരും വിശദീകരിച്ചു തരും.\n\nനമ്മുടെ അറിവിലും അല്ലാതെയുമുള്ള അനേകരുടെ വിവിധങ്ങളായ ആവശ്യങ്ങൾക്കുവേണ്ടി പ്രാർത്ഥിക്കുന്നത് വളരെ അനുഗ്രഹമാണ്.\n\nഈ കൂട്ടായ്മയിൽ കൂടി പല വിധത്തിലുള്ള സഹായങ്ങൾ പലർക്കും നാട്ടിൽ ചെയ്യുവാൻ ദൈവം സഹായിച്ചു. ഈ സഹായങ്ങൾ തുടർന്നു കൊണ്ടു പോകുവാൻ ദൈവം അനുവദിക്കട്ടെ എന്ന് പ്രാർത്ഥിക്കുന്നു.\n\nഷിബു അച്ചൻ്റെ അനുവാദത്തോടുകൂടി ഞങ്ങൾ പലപ്പോഴും ഞങ്ങളുടെ അനുഭവ സാക്ഷ്യങ്ങൾ പങ്കുവെച്ചിട്ടുണ്ട്. \"ജീവിതം നമ്മളെ എന്തൊക്കെ പഠിപ്പിച്ചു; നമ്മൾ എന്തെല്ലാം പഠിച്ചു\"എന്നുള്ള ഒരു വിഷയം അച്ചൻ ഞങ്ങൾക്ക് തന്നു. എല്ലാവർക്കും ഓരോ ആഴ്ച്ച ഇതിനെക്കുറിച്ചു അവതരിപ്പിക്കാൻ അവസരം അനുവദിച്ചു. പലരും ഈ വിഷയം അവതരിപ്പിച്ചപ്പോൾ പുതിയ അറിവുകളും അനുഭവങ്ങളും വളരെ ലഭിക്കുവാൻ സാധിച്ചു.\n\nഒരു സാധാരണ കർഷക കുടുംബത്തിൽ അഞ്ചു മക്കളിൽ രണ്ടാമനായ എനിക്കുണ്ടായ അനുഭവങ്ങൾ പറയുവാൻ സാധിച്ചു. രാവിലെ അഞ്ചു മണിക്ക് പ്രാർത്ഥിക്കാൻ താമസിച്ചു പോയാൽ തണുത്ത വെള്ളം തലയിൽ ഒഴിക്കുക എന്ന ശിക്ഷ ലഭിച്ചിട്ടുണ്ട്. അന്ന് പിതാവിനോട് ദേഷ്യം മനസ്സിൽ തോന്നിയത് വളരെ തെറ്റാണെന്നു ഇപ്പോൾ തോന്നുന്നു.\n\nപ്രാർത്ഥന: എപ്പോഴും പ്രാര്ഥനയോടു കൂടി തുടക്കം കുറിക്കണം എന്നുള്ള ഉപദേശം പിതാവിൽ നിന്നും പഠിച്ചു."
+              }
+            ]
+          }
+        },
+        {
+          "label": "MINISTRY: GOOD SAMARITAN MISSION (3 of 4)",
+          "generated": {
+            "title": "Good Samaritan Mission",
+            "blocks": [
+              {
+                "type": "text",
+                "cols": true,
+                "lang": "ml",
+                "bare": true,
+                "text": "അച്ചടക്കം: ഞാൻ പഠിച്ച സ്കൂളിൽ അര മണിക്കൂർ വേദ പഠനം ക്രിസ്ത്യൻ കുട്ടികൾക്ക് നിർബന്ധമായിരുന്നു. അഞ്ചു മിനിറ്റ് എല്ലാ കുട്ടികളും പിൻ-ഡ്രോപ്പ് സൈലെൻസിൽ ആയിരിക്കണം എന്നുള്ളത് തെറ്റിയാൽ ശിക്ഷ വളരെ കഠിനമായിരുന്നു.\n\nഅനുസരണം: സ്കൂൾ പ്രധാന റോഡിൽ നിന്നും വളരെ ഉയരത്തിൽ ആയിരുന്നു, പരുപരുത്ത കാട്ടു കല്ലു കൊണ്ട് നിർമ്മിച്ച വഴിയിൽകൂടി ഓടി ഇറങ്ങരുത് എന്നുള്ള പിതാവിൻ്റെ കർശന ഉപദേശത്തെ അനുസരിക്കാതെ എപ്പോഴും ഓടി ഇറങ്ങുമായിരുന്നു. കാൽ തെറ്റി ഒരു പ്രാവശ്യം മുകളിൽ നിന്നും ശയന പ്രദക്ഷിണം നടത്തി പ്രധാന റോഡിൽ വന്നു വീണപ്പോൾ ശരീരത്തിൻ്റെ പല ഭാഗത്തും തൊലി നഷ്ടപെട്ടിരുന്നു. രണ്ടു കൂട്ടുകാർ താങ്ങി എടുത്തു കൊണ്ട് ഭവനത്തിൽ വന്നപ്പോൾ പിതാവിൻ്റെ ശിക്ഷ അതിലും വേദനാത്മകമായിരുന്നു. തെറ്റു കണ്ടാൽ ശിക്ഷിക്കാനും തിരുത്താനും അയൽക്കാരും പരിചയക്കാരും ഉണ്ടായിരുന്നതു കാരണം പല തെറ്റുകളിൽ നിന്നും ഒഴിഞ്ഞിരിക്കാൻ സാധിച്ചു.\n\nപുതിയ നിയമത്തിൽ ന്യായശാസ്ത്രിയും കർത്താവും തമ്മിലുള്ള സംഭാഷണത്തിൻ്റെ ഒടുവിൽ കർത്താവു അവനോടു പറയുന്നു \"നീ ദൈവരാജ്യത്തിൽ നിന്നും അകന്നവനല്ല.\"ദൈവരാജ്യത്തിൽ പ്രവേശിക്കണമെങ്കിൽ പ്രാര്ഥനയെന്ന താക്കോൽ ആവശ്യമാണ്. നമ്മുടെ എല്ലാവരുടേയും കൈവശമുള്ള ഈ താക്കോൽ വേണ്ട സമയത്തു ഉപയോഗിച്ചില്ലാ എങ്കിൽ അകത്തു പ്രവേശിക്കാൻ കഴിയാത്ത കന്യകമാരെ പോലെ ആയിത്തീരും.\n\nനമ്മുടെ കർത്താവു കുരിശിൽ മരിച്ചു ഉയർത്തെഴുന്നേറ്റു നമുക്ക് ഭവനം ഒരുക്കുവാൻ സ്വർഗ്ഗത്തിലേക്ക് പോയിരിക്കുകയാണ്. നമ്മളെ ചേർക്കുവാൻ വേഗം വരുന്നു. അതിൻ്റെ എല്ലാ ലക്ഷണങ്ങളും കണ്ടു കഴിഞ്ഞു. സമയം ഇനിയും അധികമില്ല. മനസാന്തരപ്പെടുവിൻ. നമ്മുടെ തെറ്റുകൾ ദൈവസന്നിധിൽ ഏറ്റു പറഞ്ഞു പാപ ക്ഷമ പ്രാപിച്ചു ദൈവത്തോടു നിരന്നു കൊൾവീൻ.\n\nനമ്മുടെ ഇടവകയുടെ അൻപതാം വാർഷീകം ആഘോഷിക്കുന്ന ഈ സമയത്തു GSM ൻ്റെ എല്ലാവിധ ആശംസകളും പ്രാർത്ഥനയും അർപ്പിക്കുന്നു.\n\nപ്രാർത്ഥനയോടുകൂടി",
+                "sign": "John Varghese, GSM Coordinator"
+              }
+            ]
+          }
+        },
+        {
+          "placeholder": {
+            "title": "Good Samaritan Mission",
+            "heading": "Good Samaritan Mission — In Pictures",
+            "pages": "2 side-by-side pages",
+            "note": "Group photo, visits and activities."
+          }
+        },
+        {
+          "file": "src/pages/ministry-logos.html",
+          "label": "MINISTRY: LOGOS",
+          "toc": "Logos Ministry"
+        },
+        {
+          "placeholder": {
+            "title": "Logos Ministry",
+            "heading": "Logos — In Pictures",
+            "pages": "2 side-by-side pages",
+            "note": "Group photo and activities."
+          }
+        },
+        {
+          "file": "src/pages/ministry-grow.html",
+          "label": "MINISTRY: GROW",
+          "toc": "GROW"
+        },
+        {
+          "placeholder": {
+            "title": "GROW",
+            "heading": "GROW — In Pictures",
+            "pages": "2 side-by-side pages",
+            "note": "Group photo and activities."
+          }
+        },
+        {
+          "file": "src/pages/ministry-mgocsm.html",
+          "label": "MINISTRY: MGOCSM",
+          "toc": "MGOCSM / Youth League"
+        },
+        {
+          "placeholder": {
+            "title": "MGOCSM / Youth League",
+            "heading": "MGOCSM — In Pictures",
+            "pages": "2 side-by-side pages",
+            "note": "Group photo, retreats and activities."
+          }
+        },
+        {
+          "file": "src/pages/ministry-choir.html",
+          "label": "MINISTRY: CHOIR",
+          "toc": "Choir"
+        },
+        {
+          "placeholder": {
+            "title": "Chenda",
+            "heading": "Our Chenda Team",
+            "note": "Chenda melam group: write-up and photographs to be collected."
+          },
+          "toc": "Chenda"
+        },
+        {
+          "placeholder": {
+            "title": "Acolytes",
+            "heading": "Our Acolytes",
+            "pages": "1 picture or collage page",
+            "note": "Acolyte photographs to be collected."
+          },
+          "toc": "Acolytes"
+        },
+        {
+          "file": "src/pages/community-outreach.html",
+          "label": "MISSION & CHARITY: COMMUNITY OUTREACH",
+          "toc": "Mission Board"
+        },
+        {
+          "placeholder": {
+            "title": "Mission Board",
+            "heading": "Mission Board — continued",
+            "pages": "Mission & Charity section: 10–15 pages in total",
+            "note": "Mission Board community activities and charity work, with photographs."
+          }
+        }
       ]
     },
     {
       "name": "Members & Memorials",
       "items": [
-        { "members": true, "toc": "Families & Memorials (A–Z)" }
+        {
+          "members": true,
+          "toc": "Families & Memorials (A–Z)"
+        },
+        {
+          "ads": true,
+          "toc": "Our Sponsors"
+        }
       ]
     },
     {
       "name": "Closing",
       "items": [
-        { "index": true },
-        { "placeholder": { "title": "Acknowledgements", "heading": "Acknowledgements & Souvenir Team", "note": "Editorial board: Manoj Chacko, Suchin Thompson, Molsey Thomas, Shiju Poovathoor, Jinu John, Mathew Joseph. Full list and thanks to be finalized." }, "toc": "Acknowledgements & Souvenir Team" },
-        { "placeholder": { "title": "Our Church Family", "heading": "Church Family Group Photo", "note": "Whole-parish group photograph (taken at the picnic) to be placed here." }, "toc": "Church Family Group Photo" },
-        { "ads": true, "toc": "Our Sponsors" },
-        { "file": "src/pages/back-cover.html", "label": "BACK COVER" }
+        {
+          "placeholder": {
+            "title": "Glossary",
+            "heading": "Glossary",
+            "note": "Orthodox and Malayalam terms used in this book (Achen, Kochamma, Holy Qurbana, Perunnal, Remban, Kalpana…), to be compiled."
+          },
+          "toc": "Glossary"
+        },
+        {
+          "placeholder": {
+            "title": "Acknowledgements",
+            "heading": "Editorial Board & Acknowledgements",
+            "note": "Editorial board: Manoj Chacko, Suchin Thompson, Molsey Thomas, Shiju Poovathoor, Jinu John, Mathew Joseph. Full list and thanks to be finalized."
+          },
+          "toc": "Editorial Board & Acknowledgements"
+        },
+        {
+          "placeholder": {
+            "title": "Our Church Family",
+            "heading": "Church Family Picnic Photo",
+            "note": "Whole-parish group photograph (taken at the picnic) to be placed here."
+          },
+          "toc": "Church Family Picnic Photo"
+        },
+        {
+          "index": true
+        },
+        {
+          "file": "src/pages/back-cover.html",
+          "label": "BACK COVER"
+        }
       ]
     }
   ]
