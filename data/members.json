@@ -2212,23 +2212,7 @@
               "sign": "Mariamma Varki"
             }
           ]
-        }
-      ],
-      "band": "",
-      "placement": "outline",
-      "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
-      "sort": "Varki Rev. Fr. Dr. Paul ",
-      "layoutNote": "Manoj, 6 Nov: memorial page has only Achen's portrait; Mariamma Varki's page has Achen and Kochamma, the tribute, then the two standing photos; \"Mariamma Varki 2\" is her children's page. Photos are the upscaled copies in the Design folder (5 Oct). 10 Nov: memorial page redone from Manoj's \"In Memoriam_ Rev. Fr. Dr. Paul Varki.png\" design."
-    },
-    {
-      "id": "mariamma-varki-family",
-      "name": "Mariamma Varki & Family",
-      "title": "Mariamma Varki & Family",
-      "band": "",
-      "sort": "Varki Mariamma ",
-      "indexName": "Mariamma Varki & Family",
-      "layoutNote": "15 Nov: second Mariamma Varki page (her children's page) moved from Past Clergy to the A–Z member pages; the tribute page stays in Past Clergy.",
-      "pages": [
+        },
         {
           "title": "Mariamma Varki & Family",
           "blocks": [
@@ -2250,7 +2234,11 @@
             }
           ]
         }
-      ]
+      ],
+      "band": "",
+      "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
+      "sort": "Varki Rev. Fr. Dr. Paul ",
+      "layoutNote": "Manoj, 6 Nov: memorial page has only Achen's portrait; Mariamma Varki's page has Achen and Kochamma, the tribute, then the two standing photos; \"Mariamma Varki 2\" is her children's page. Photos are the upscaled copies in the Design folder (5 Oct). 10 Nov: memorial page redone from Manoj's \"In Memoriam_ Rev. Fr. Dr. Paul Varki.png\" design. 15 Nov: both Mariamma Varki pages moved from Past Clergy to the A–Z member pages (only messages stay in the front)."
     },
     {
       "id": "markose-mani-memorial",

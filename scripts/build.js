@@ -512,6 +512,11 @@ const contents = []; // lines for the index: { section } | { title, pageRef }
 
 for (const section of outline.sections) {
   contents.push({ section: section.name });
+  // "startOn": "even" keeps a section's spreads together (left page first) by adding
+  // a blank framed page before it when the page count would put it on a right page.
+  if (section.startOn === 'even' && (pages.length + 1) % 2 === 1) {
+    pages.push({ html: shell({ title: '', body: '', cls: 'blank-page' }), label: `BLANK (so ${section.name} starts on a left page)` });
+  }
   for (const item of section.items) {
     let added;
     if (item.file) {

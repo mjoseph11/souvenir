@@ -51,8 +51,7 @@
         { "placeholder": { "title": "Message", "heading": "From the Governor of Pennsylvania", "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received." }, "toc": "Message — Governor of Pennsylvania" },
         { "file": "src/pages/executive-committee.html", "label": "LEADERSHIP TEAM", "toc": "Leadership Team" },
         { "file": "src/pages/clergy-kp-varghese.html", "label": "CLERGY: REV. FR. K. P. VARGHESE", "toc": "Clergy — Rev. Fr. K. P. Varghese" },
-        { "file": "src/pages/associate-minister-ceena-mathew.html", "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW", "toc": "Associate Minister — Mrs. Ceena Mathew" },
-        { "member": "paul-varki-memorial", "toc": "Past Clergy — Rev. Fr. Dr. Paul Varki" }
+        { "file": "src/pages/associate-minister-ceena-mathew.html", "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW", "toc": "Associate Minister — Mrs. Ceena Mathew" }
       ]
     },
     {
@@ -68,6 +67,7 @@
     },
     {
       "name": "In Memoriam",
+      "startOn": "even",
       "_comment": "Manoj, 11 Nov: church memorials after the church pages, before the organizations, as two spreads (Mathai Achen | Varki Achen, Mani Shemachen | church members since 1976). Must start on a left (even) page.",
       "items": [
         { "member": "mathai-memorial", "toc": "In Memoriam — V. Rev. K. Mathai Cor Episcopos" },
