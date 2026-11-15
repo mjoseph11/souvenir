@@ -53,6 +53,8 @@
         { "placeholder": { "title": "Message", "heading": "From the Mayor of Bensalem Township", "note": "Hon. Joseph DiGirolamo — message to be requested." }, "toc": "Message — Mayor of Bensalem Township" },
         { "placeholder": { "title": "Message", "heading": "From the Governor of Pennsylvania", "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received." }, "toc": "Message — Governor of Pennsylvania" },
         { "file": "src/pages/executive-committee.html", "label": "LEADERSHIP TEAM", "toc": "Leadership Team" },
+        { "file": "src/pages/clergy-alexander-kurien.html", "label": "CLERGY: REV. FR. ALEXANDER KURIEN", "toc": "Clergy — Rev. Fr. Alexander Kurien" },
+        { "file": "src/pages/clergy-alexander-kurien-2.html", "label": "CLERGY: REV. FR. ALEXANDER KURIEN (2 of 2)" },
         { "file": "src/pages/clergy-kp-varghese.html", "label": "CLERGY: REV. FR. K. P. VARGHESE", "toc": "Clergy — Rev. Fr. K. P. Varghese" },
         { "file": "src/pages/associate-minister-ceena-mathew.html", "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW", "toc": "Associate Minister — Mrs. Ceena Mathew" }
       ]
