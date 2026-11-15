@@ -4235,29 +4235,18 @@
     {
       "id": "fr-eby-paulose",
       "name": "Rev. Fr. Eby Paulose",
-      "title": "Our Clergy",
+      "title": "Rev. Fr. Eby Paulose & Family",
       "band": "",
       "placement": "outline",
       "sort": "Paulose Rev. Fr. Eby ",
       "indexName": "Rev. Fr. Eby Paulose",
-      "layoutNote": "14 Nov (Manoj): portrait (Writing/Vicar Message) and family photo (Design/Rev. Fr. Eby Paulose). Biography and message text still to come.",
+      "layoutNote": "15 Nov (Manoj): family page shows only the family photo, large. Portrait kept in images/ for the Vicar message.",
       "pages": [
         {
           "blocks": [
             {
-              "type": "heading",
-              "text": "Rev. Fr. Eby Paulose"
-            },
-            {
-              "type": "subheading",
-              "text": "Vicar • from September 28, 2026"
-            },
-            {
               "type": "photos",
               "photos": [
-                {
-                  "src": "images/members/fr-eby-paulose/portrait.jpg"
-                },
                 {
                   "src": "images/members/fr-eby-paulose/family.jpg"
                 }
