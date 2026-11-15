@@ -435,9 +435,56 @@
               "type": "closing"
             }
           ]
+        },
+        {
+          "blocks": [
+            {
+              "type": "half",
+              "grow": 1,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "[Names to come]"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/babu-varghese/memorial-1.jpg"
+                    }
+                  ]
+                }
+              ],
+              "smallName": true
+            },
+            {
+              "type": "half",
+              "grow": 1,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "[Names to come]"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/babu-varghese/memorial-2.jpg"
+                    }
+                  ]
+                }
+              ],
+              "smallName": true
+            },
+            {
+              "type": "eternal",
+              "text": "May Their Memory Be Eternal"
+            }
+          ]
         }
       ],
-      "sort": "Varghese Babu "
+      "sort": "Varghese Babu ",
+      "memorialNote": "15 Nov: Manoj added two memorial photos (couples) to Babu's Drive folder, 'it will be in memorial format'. Names and dates not given yet."
     },
     {
       "id": "biju-chacko",
@@ -4015,41 +4062,26 @@
       "title": "James Chacko & Family",
       "sort": "Chacko John 3",
       "sortNote": "Manoj asked for the Chacko pages to run John, Manoj, James.",
-      "layoutNote": "James Layout with malayalam text.png: the blessing photo across the top, two church groups and the girls below, the Malayalam line at the foot (James Text.docx).",
+      "layoutNote": "James_Chacko_Family_Four_Photos.pdf (15 Nov): new first photo (DSC_6104) across the top, the girls tall on the left, the two church groups stacked on the right, all cropped to fill; the Malayalam line at the foot (James Text.docx). He wanted the photos to use the most space.",
       "pages": [
         {
           "blocks": [
             {
-              "type": "half",
-              "grow": 1.1,
-              "blocks": [
+              "type": "photos",
+              "arrange": "mosaic",
+              "fill": true,
+              "photos": [
                 {
-                  "type": "photos",
-                  "photos": [
-                    {
-                      "src": "images/members/james-chacko/pic-1.jpg"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "half",
-              "blocks": [
+                  "src": "images/members/james-chacko/pic-1.jpg"
+                },
                 {
-                  "type": "photos",
-                  "arrange": "row",
-                  "photos": [
-                    {
-                      "src": "images/members/james-chacko/pic-2.jpg"
-                    },
-                    {
-                      "src": "images/members/james-chacko/pic-3.jpg"
-                    },
-                    {
-                      "src": "images/members/james-chacko/pic-4.jpg"
-                    }
-                  ]
+                  "src": "images/members/james-chacko/pic-4.jpg"
+                },
+                {
+                  "src": "images/members/james-chacko/pic-2.jpg"
+                },
+                {
+                  "src": "images/members/james-chacko/pic-3.jpg"
                 }
               ]
             },
@@ -4247,6 +4279,41 @@
                   "src": "images/members/fr-eby-paulose/family.jpg"
                 }
               ]
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thomas-k-abraham",
+      "name": "Thomas K Abraham",
+      "title": "Thomas K Abraham & Family",
+      "sort": "Abraham Thomas K",
+      "sourceNote": "Drive Design/Thomas K Abraham (15 Nov): photo + 'Renny Thomas message.txt'. Text as written.",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/thomas-k-abraham/family.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "“For the Lord is good and his love endures forever; his faithfulness continues through all generations.” — Psalm 100:5"
+            },
+            {
+              "type": "names",
+              "text": "Best Wishes\nThomas K Abraham • Renny Thomas\nRhea Thomas • Reuben Thomas"
             },
             {
               "type": "closing"

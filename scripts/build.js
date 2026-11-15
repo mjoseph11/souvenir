@@ -91,6 +91,11 @@ const BLOCKS = {
     // "fill": crop the photo to cover its box instead of letterboxing it.
     // Only where cropping loses nobody — see the note in members.css.
     const fill = b.fill ? ' fill' : '';
+    // "mosaic": one wide photo across the top, then a tall photo on the left
+    // with the rest stacked down the right (Manoj's James Chacko sample, 15 Nov).
+    if (b.arrange === 'mosaic' && figs.length >= 3) {
+      return `<div class="m-photos mosaic${plain}${fill}"${grow}><div class="m-hero">${figs[0]}</div><div class="m-row"><div class="m-mosaic-left">${figs[1]}</div><div class="m-mosaic-right">${figs.slice(2).join('')}</div></div></div>`;
+    }
     if (figs.length >= 3 && b.arrange !== 'row') {
       return `<div class="m-photos hero${plain}${fill}"${grow}><div class="m-hero">${figs[0]}</div><div class="m-row">${figs.slice(1).join('')}</div></div>`;
     }

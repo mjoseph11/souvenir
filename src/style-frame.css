@@ -272,6 +272,9 @@
     font-size: 12pt;
     padding: 0;
   }
+  /* A page-level "May Their Memory Be Eternal" below two memorial halves (Babu Varghese):
+     a full line box so the italic line's inline boxes stay inside the content area. */
+  .m-content > .m-eternal { line-height: 1.5; }
 
   /* Full-page memorials get the same frame round the whole page content. */
   .page.inner-page:has(.page-header[style*="2a2a2a"]) .m-content:has(.m-memorial-head) {
@@ -319,6 +322,7 @@
   .m-half.dark.big.wide:has(.m-memorial-head) .m-fig img { height: auto; width: 100%; max-height: 3.3in; object-fit: contain; }
   /* "smallName": a long memorial name set smaller. */
   .m-half.dark.small-name:has(.m-memorial-head) .m-memorial-head h2 { font-size: 15pt; line-height: 1.2; }
+  .m-half.small-name:not(.dark):has(.m-memorial-head) .m-memorial-head h2 { font-size: 16pt; }
   .m-half.dark.small-name:has(.m-memorial-head) .m-memorial-head .m-eyebrow { font-size: 8.5pt; letter-spacing: 1.5px; white-space: nowrap; }
   .m-half.dark.big.wide.small-name:has(.m-memorial-head) { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); }
 
