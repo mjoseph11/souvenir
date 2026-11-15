@@ -625,3 +625,8 @@
 .org-table td:first-child { color: var(--maroon); font-weight: bold; white-space: nowrap; width: 1.1in; }
 .org-table .role { color: #777; font-size: 8.4pt; }
 .org-el { display: flow-root; }
+/* A paragraph continued on the next page: the first part's last line stays justified. */
+.org-body.split-head { text-align-last: justify; }
+/* Full pages reach the footer: leftover space is shared out above each section start. */
+.org-page .page-content.org-fill { display: flex; flex-direction: column; box-sizing: border-box; }
+.org-page .page-content.org-fill > .org-gap { margin-top: auto; }

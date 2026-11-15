@@ -2,7 +2,8 @@
 
 CLI: orggen.py <parsed.json> <header title> <out prefix> <img dir> <splits csv | auto> [comment]
   splits = start index of each page, or "auto" to measure every block in headless
-  Chrome and pack pages greedily (headings never left at the bottom of a page).
+  Chrome and pack pages greedily (headings never left at the bottom of a page; a long
+  paragraph is split across two pages rather than leaving a gap at the foot of one).
 Each element is wrapped in <div class="org-el"> (display:flow-root) so its
 measured height is exactly what it takes on the page."""
 import html, json, re, subprocess, sys, os, pathlib
@@ -108,11 +109,20 @@ def measure(els, r, title):
     script = '''<script>addEventListener('load',function(){document.fonts.ready.then(function(){setTimeout(function(){
 var els=[].slice.call(document.querySelectorAll('[data-i]'));
 var hs=els.map(function(d){return d.getBoundingClientRect().height});
+var lines={};
+els.forEach(function(d){var p=d.querySelector(':scope > p.org-body');if(!p||d.children.length!==1)return;
+ var pt=p.getBoundingClientRect().top,out=[],off=0,w=document.createTreeWalker(p,NodeFilter.SHOW_TEXT),n;
+ while((n=w.nextNode())){var re=/\\S+/g,m;while((m=re.exec(n.data))){var r=document.createRange();r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);
+  var b=r.getClientRects()[0];if(!b)continue;var last=out[out.length-1];
+  if(!last||b.top>last.top+3)out.push({off:off+m.index,top:b.top-pt,bottom:b.bottom-pt});else last.bottom=Math.max(last.bottom,b.bottom-pt);}
+  off+=n.data.length;}
+ lines[d.getAttribute('data-i')]={text:p.textContent,lines:out};});
 var pr=document.getElementById('probe').getBoundingClientRect();
 var ft=document.querySelectorAll('.page-footer')[1].getBoundingClientRect();
 var pg=document.querySelectorAll('.page')[1].getBoundingClientRect();
+var pc=document.querySelectorAll('.page-content')[1].getBoundingClientRect();
 var o=document.createElement('pre');o.id='measure-out';
-o.textContent=JSON.stringify({hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:document.fonts.status});document.body.appendChild(o);},1500)})});</script>'''
+o.textContent=JSON.stringify({pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:document.fonts.status});document.body.appendChild(o);},1500)})});</script>'''
     tmp = ROOT / '_measure_tmp.html'
     tmp.write_text(head + body + probe + script + '</body></html>', encoding='utf-8')
     try:
@@ -124,22 +134,70 @@ o.textContent=JSON.stringify({hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:do
     m = re.search(r'<pre id="measure-out">(.*?)</pre>', dom, re.S)
     data = json.loads(html.unescape(m.group(1)))
     print('fonts:', data.get('fonts'), 'page height px:', data.get('pageH'), 'sum of blocks px: %.0f' % sum(data['hs']), file=sys.stderr)
-    return data['hs'], data['avail']
+    return data['hs'], data['avail'], {int(k): v for k, v in data['lines'].items()}, data['pcH']
 
 
-def pack(els, hs, avail, slack):
+MARGIN = 7.2  # .org-body margin-bottom (0.075in) in px
+
+
+def split_runs(runs, at):
+    """Split [text, bold, italic] runs at character offset `at` of the paragraph's textContent."""
+    a, b, pos = [], [], 0
+    for t, bo, it in runs:
+        flat = t.replace('\n', '')  # <br> adds no text
+        if pos + len(flat) <= at:
+            a.append([t, bo, it])
+        elif pos >= at:
+            b.append([t, bo, it])
+        else:
+            k, seen = 0, 0
+            while seen < at - pos:
+                if t[k] != '\n':
+                    seen += 1
+                k += 1
+            a.append([t[:k], bo, it])
+            b.append([t[k:], bo, it])
+        pos += len(flat)
+    if a:
+        a[-1][0] = a[-1][0].rstrip()
+    if b:
+        b[0][0] = b[0][0].lstrip()
+    return a, b
+
+
+def pack(els, hs, avail, slack, lines=None):
+    """Greedy page fill. Returns pages, each a list of (index, part): part is None (whole
+    element) or ('head'|'tail', runs) for a paragraph split across two pages. A paragraph of
+    4+ lines is split when at least 2 lines fit and 2 go over; headings stay with their text."""
+    lines = lines or {}
     cap = avail - slack
-    starts, used = [0], 0.0
-    for i, h in enumerate(hs):
-        need = h
-        # keep a heading with what follows it
-        j = i
+    pages, used, i = [[]], 0.0, 0
+    while i < len(els):
+        need, j = hs[i], i
         while j + 1 < len(els) and els[j]['kind'] == 'p' and els[j]['style'] in HEADINGS:
-            j += 1; need += hs[j]
+            j += 1
+            need += hs[j]
         if used > 0 and used + need > cap:
-            starts.append(i); used = 0.0
-        used += h
-    return starts
+            info = lines.get(j)
+            if info and len(info['lines']) >= 4:
+                ls, room = info['lines'], cap - used - sum(hs[i:j])
+                k = max((k for k in range(2, len(ls) - 1) if ls[k - 1]['bottom'] + MARGIN <= room), default=0)
+                if k:
+                    off = ls[k]['off']
+                    head, tail = split_runs(els[j]['runs'], off)
+                    got = ''.join(x[0] for x in tail).replace('\n', '')
+                    assert got[:30] == info['text'][off:].lstrip()[:30], (j, got[:30], info['text'][off:off + 30])
+                    pages[-1] += [(x, None) for x in range(i, j)] + [(j, ('head', head))]
+                    pages.append([(j, ('tail', tail))])
+                    used = hs[j] - ls[k]['top']
+                    i = j + 1
+                    continue
+            pages.append([])
+            used = 0.0
+        pages[-1].append((i, None))
+        used += hs[i]
+        i += 1
+    return pages
 
 
 def main():
@@ -149,22 +207,42 @@ def main():
     els, r = j['els'], R(j['media'], sys.argv[4])
     if splits.startswith('auto'):
         slack = float(splits.split(':')[1]) if ':' in splits else 10.0
-        hs, avail = measure(els, r, title)
-        starts = pack(els, hs, avail, slack)
-        print('measured avail %.0fpx; page starts %s' % (avail, starts), file=sys.stderr)
+        hs, avail, lines, pc_h = measure(els, r, title)
+        pages = pack(els, hs, avail, slack, lines)
+        print('measured avail %.0fpx; %d pages; paragraphs split at page ends: %s' % (
+            avail, len(pages), [pg[0][0] for pg in pages if pg[0][1]]), file=sys.stderr)
     else:
-        starts = [int(s) for s in splits.split(',')]
+        starts = [int(x) for x in splits.split(',')] + [len(els)]
+        pages = [[(x, None) for x in range(starts[n], starts[n + 1])] for n in range(len(starts) - 1)]
+        pc_h = None
     for old in pathlib.Path(prefix).parent.glob(pathlib.Path(prefix).name + '-*.html'):
         old.unlink()
-    bounds = starts + [len(els)]
     files = []
-    for n in range(len(starts)):
-        inner = '\n'.join(r.el(x) for x in els[bounds[n]:bounds[n + 1]])
-        inner = '\n'.join('    ' + line for line in inner.split('\n'))
-        note = (f'    <!-- {comment} Page {n + 1} of {len(starts)}; generated from the Word document, text as written. -->\n'
+    for n, page in enumerate(pages):
+        # Every page but the last fills to the footer: the space left over is shared out
+        # above each section start (a heading, or a photo/table not under a heading).
+        fill = pc_h is not None and n < len(pages) - 1
+        parts = []
+        for k, (x, part) in enumerate(page):
+            prev = els[page[k - 1][0]] if k else None
+            starts_section = (k > 0 and part is None and not (prev['kind'] == 'p' and prev['style'] in HEADINGS)
+                              and (els[x]['kind'] != 'p' or els[x]['style'] in HEADINGS or els[x]['imgs']))
+            if part is None:
+                html_el = r.el(els[x])
+                if fill and starts_section:
+                    html_el = html_el.replace('<div class="org-el">', '<div class="org-el org-gap">', 1)
+                parts.append(html_el)
+            else:
+                kind, rs = part
+                parts.append(f'<div class="org-el">\n<p class="org-body split-{kind}">{runs({"runs": rs})}</p>\n</div>')
+        inner = '\n'.join('    ' + line for line in '\n'.join(parts).split('\n'))
+        note = (f'    <!-- {comment} Page {n + 1} of {len(pages)}; generated from the Word document, text as written. -->\n'
                 if comment else '')
         f = f'{prefix}-{n + 1:02d}.html'
-        open(f, 'w', encoding='utf-8', newline='\n').write(TOP.format(title=e(title)) + note + inner + '\n' + FOOT)
+        top = TOP.format(title=e(title))
+        if fill:
+            top = top.replace('<div class="page-content">', f'<div class="page-content org-fill" style="height:{pc_h:.1f}px">')
+        open(f, 'w', encoding='utf-8', newline='\n').write(top + note + inner + '\n' + FOOT)
         files.append(f)
     print('\n'.join(files))
 
