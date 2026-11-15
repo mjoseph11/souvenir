@@ -599,3 +599,28 @@
     color: rgba(255,255,255,0.4);
     font-size: 8pt;
   }
+
+/* ── Organization articles (Sunday School, MMVS): pages generated from the
+      organizations' Word documents by scratch generator; classes are "org-…" ── */
+.org-page .page-content { padding: 0.22in 0.55in 0.3in; }
+.org-title { text-align: center; color: var(--maroon); font-size: 21pt; line-height: 1.2; margin: 0.02in 0 0.04in; }
+.org-era { text-align: center; color: var(--maroon); font-size: 16pt; line-height: 1.25; margin: 0.06in 0 0.02in; }
+.org-era .sep { color: var(--gold); padding: 0 0.08in; }
+.org-sub { text-align: center; color: #9a7a1c; font-style: italic; font-size: 10pt; letter-spacing: 0.5px; margin-bottom: 0.03in; }
+.org-rule { width: 2in; height: 2px; margin: 0.04in auto 0.1in; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+.org-motto { text-align: center; color: var(--maroon); font-style: italic; font-size: 10.5pt; line-height: 1.4; margin: 0.08in 0.3in; }
+.org-byline { text-align: center; color: #666; font-style: italic; font-size: 8.8pt; line-height: 1.4; margin: 0.02in 0.2in 0.06in; }
+.org-body { font-size: 9.6pt; line-height: 1.45; color: #333; text-align: justify; margin: 0 0 0.075in; }
+.org-h { color: var(--maroon); font-size: 11.5pt; margin: 0.12in 0 0.045in; border-bottom: 1px solid rgba(201,162,39,0.5); padding-bottom: 2px; }
+.org-h5 { color: var(--maroon); font-size: 10pt; font-style: italic; margin: 0.08in 0 0.03in; }
+.org-caption { text-align: center; color: #666; font-style: italic; font-size: 8.5pt; margin: 0.03in 0 0.08in; }
+.org-photo { display: block; margin: 0.06in auto 0; max-width: 100%; border: 2px solid var(--gold); border-radius: 3px; object-fit: cover; }
+.org-pair { display: flex; gap: 0.2in; align-items: flex-start; margin: 0.04in 0 0.08in; }
+.org-pair .org-fig { flex: 0 0 2.7in; }
+.org-pair .org-fig img { width: 100%; height: auto; max-height: 2.4in; object-fit: cover; }
+.org-pair .org-fig .org-caption { margin-bottom: 0; }
+.org-pair .org-text { flex: 1; }
+.org-table { width: 100%; border-collapse: collapse; font-size: 9.4pt; margin: 0.04in 0 0.06in; }
+.org-table td { padding: 4px 8px; border-bottom: 1px solid rgba(201,162,39,0.45); vertical-align: top; line-height: 1.35; }
+.org-table td:first-child { color: var(--maroon); font-weight: bold; white-space: nowrap; width: 1.1in; }
+.org-table .role { color: #777; font-size: 8.4pt; }
