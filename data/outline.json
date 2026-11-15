@@ -169,32 +169,32 @@
         },
         {
           "label": "TRIBUTE: FR. SHIBU — CHOSEN TO SHEPHERD",
-          "toc": "Tribute — Rev. Fr. Shibu Venad Mathai, Metropolitan-elect",
+          "toc": "Tribute — Geevarghese Remban, Metropolitan-elect",
           "generated": {
             "title": "Chosen to Shepherd",
             "band": "Draft • Titles and dates to be confirmed with the Diocese before print",
             "blocks": [
               {
                 "type": "heading",
-                "text": "Rev. Fr. Shibu Venad Mathai"
+                "text": "Geevarghese Remban"
               },
               {
                 "type": "subheading",
-                "text": "Vicar of SGMOC 2011–2026 • Metropolitan-elect"
+                "text": "Rev. Fr. Shibu Venad Mathai • Vicar 2011–2026"
               },
               {
                 "type": "photos",
                 "photos": [
                   {
                     "src": "images/vicar.jpg",
-                    "alt": "Rev. Fr. Shibu Venad Mathai"
+                    "alt": "Geevarghese Remban"
                   }
                 ]
               },
               {
                 "type": "text",
                 "center": true,
-                "text": "On August 27, 2026, the Malankara Syrian Christian Association elected our beloved Vicar, Rev. Fr. Shibu Venad Mathai, as one of four new Metropolitans of the Malankara Orthodox Syrian Church. For the parish he has shepherded for fifteen years, it is a moment of profound joy and gratitude to God — and of bittersweet farewell."
+                "text": "On August 27, 2026, the Malankara Syrian Christian Association elected our beloved Vicar, Rev. Fr. Shibu Venad Mathai — now Geevarghese Remban — as one of four new Metropolitans of the Malankara Orthodox Syrian Church. For the parish he has shepherded for fifteen years, it is a moment of profound joy and gratitude to God — and of bittersweet farewell."
               },
               {
                 "type": "list",
@@ -258,14 +258,14 @@
         {
           "placeholder": {
             "title": "A Farewell Message",
-            "heading": "From Rev. Fr. Shibu Venad Mathai",
+            "heading": "From Geevarghese Remban",
             "note": "A farewell message to the parish after fifteen years as Vicar (2011–2026), to be requested from Achen."
           }
         },
         {
           "placeholder": {
             "title": "Fifteen Years in Pictures",
-            "heading": "Shibu Achen with Our Parish",
+            "heading": "Geevarghese Remban (Shibu Achen) with Our Parish",
             "note": "Photographs from his years at SGMOC, the August 27, 2026 announcement and the parish felicitation. A high-resolution portrait is also needed — the current photo (170×241 px) is too small to print."
           }
         }
