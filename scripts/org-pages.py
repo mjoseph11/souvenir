@@ -86,6 +86,9 @@ class R:
 
     def el(self, x, i=None):
         inner = x['html'] if x['kind'] == 'raw' else self.para(x) if x['kind'] == 'p' else self.table(x)
+        if x.get('scale'):  # a photo row made smaller to fit its page (see pack)
+            inner = re.sub(r'max-width:([\d.]+)in',
+                           lambda m: f'max-width:{min(float(m.group(1)) * 96, CONTENT_W) * x["scale"]:.0f}px', inner, count=1)
         di = f' data-i="{i}"' if i is not None else ''
         return f'<div class="org-el"{di}>\n{inner}\n</div>'
 
@@ -116,7 +119,7 @@ def measure(els, r, title):
     head = src[:src.index('<body')] + '<body>\n'
     body = TOP.format(title=e(title)) + '\n'.join(r.el(x, i) for i, x in enumerate(els)) + FOOT
     probe = TOP.format(title=e(title)) + '<div class="org-el" id="probe"><p class="org-body">x</p></div>' + FOOT
-    script = '''<script>addEventListener('load',function(){document.fonts.ready.then(function(){setTimeout(function(){
+    script = '''<script>addEventListener('load',function(){Promise.all(['400 13px','italic 400 13px','600 13px','700 13px','italic 700 13px'].map(function(f){return document.fonts.load(f+' "EB Garamond"')})).then(function(){return document.fonts.ready}).then(function(){setTimeout(function(){
 var els=[].slice.call(document.querySelectorAll('[data-i]'));
 var hs=els.map(function(d){return d.getBoundingClientRect().height});
 var lines={},fl={};
@@ -128,17 +131,25 @@ els.forEach(function(d){var p=d.querySelector(':scope > p.org-body');if(!p||d.ch
  var pt=p.getBoundingClientRect().top,out=[],off=0,w=document.createTreeWalker(p,NodeFilter.SHOW_TEXT),n;
  while((n=w.nextNode())){var re=/\\S+/g,m;while((m=re.exec(n.data))){var r=document.createRange();r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);
   var b=r.getClientRects()[0];if(!b)continue;var last=out[out.length-1];
-  if(!last||b.top>last.top+3)out.push({off:off+m.index,top:b.top-pt,bottom:b.bottom-pt});else last.bottom=Math.max(last.bottom,b.bottom-pt);}
+  if(!last||b.top-pt>last.top+3)out.push({off:off+m.index,top:b.top-pt,bottom:b.bottom-pt});else last.bottom=Math.max(last.bottom,b.bottom-pt);}
   off+=n.data.length;}
  lines[d.getAttribute('data-i')]={text:p.textContent,lines:out};});
+var tb={};els.forEach(function(d){var t=d.querySelector('table.mb-table');if(!t||!t.tHead)return;var db=d.getBoundingClientRect(),b=t.getBoundingClientRect();
+ tb[d.getAttribute('data-i')]={top:b.top-db.top,head:t.tHead.getBoundingClientRect().height,bottom:db.bottom-b.bottom,
+  rows:[].map.call(t.tBodies[0].rows,function(r){return r.getBoundingClientRect().height}),
+  cols:[].map.call(t.tHead.rows[0].cells,function(c){return c.getBoundingClientRect().width})};});
 var pr=document.getElementById('probe').getBoundingClientRect();
 var ft=document.querySelectorAll('.page-footer')[1].getBoundingClientRect();
 var pg=document.querySelectorAll('.page')[1].getBoundingClientRect();
 var pc=document.querySelectorAll('.page-content')[1].getBoundingClientRect();
 var o=document.createElement('pre');o.id='measure-out';
-o.textContent=JSON.stringify({fl:fl,pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:document.fonts.status});document.body.appendChild(o);},1500)})});</script>'''
+o.textContent=JSON.stringify({tb:tb,fl:fl,pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:document.fonts.status});document.body.appendChild(o);},1500)})});</script>'''
     tmp = ROOT / '_measure_tmp.html'
-    tmp.write_text(head + body + probe + script + '</body></html>', encoding='utf-8')
+    # The whole book follows the measured pages, so the text is set exactly as in the book.
+    # In the full document Chrome renders bold wider than in a small one (16 Nov: a stale
+    # font cache it keeps for large pages), and the layout check measures the full book.
+    book = src[src.index('>', src.index('<body')) + 1:src.rindex('</body>')]
+    tmp.write_text(head + body + probe + book + script + '</body></html>', encoding='utf-8')
     try:
         dom = subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--allow-file-access-from-files',
                               '--window-size=1100,1400', '--virtual-time-budget=30000', '--dump-dom',
@@ -149,11 +160,29 @@ o.textContent=JSON.stringify({fl:fl,pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft
     data = json.loads(html.unescape(m.group(1)))
     print('fonts:', data.get('fonts'), 'page height px:', data.get('pageH'), 'sum of blocks px: %.0f' % sum(data['hs']), file=sys.stderr)
     measure.floats = {int(k): v for k, v in data['fl'].items()}
+    measure.tables = {int(k): v for k, v in data['tb'].items()}
     return data['hs'], data['avail'], {int(k): v for k, v in data['lines'].items()}, data['pcH']
 
 
 MARGIN = 7.2  # .org-body margin-bottom (0.075in) in px
+DEFER_MAX = 3  # paragraphs a block that does not fit may move below
+SHRINK_MIN = 0.6  # a photo row may be made this small (of its height) to fit a page
+SHRINK_PREV = 0.75  # ...or this small to let the block after it fit
+CONTENT_W = 708  # px: width of an article page's text
 GAP_CAP = 4.0  # most extra space added between two blocks, px
+
+
+def split_table(h, k, cols):
+    """Split a raw <table> (thead + tbody) after body row k into two tables with the same header.
+    Both keep the whole table's column widths, so their rows wrap (and measure) as they did."""
+    total = sum(cols)
+    cg = '<colgroup>' + ''.join(f'<col style="width:{100 * c / total:.2f}%">' for c in cols) + '</colgroup>'
+    h = re.sub(r'<table class="([^"]*)">', lambda m: f'<table class="{m.group(1)}" style="table-layout:fixed">' + cg, h, count=1)
+    pre, rest = h.split('<tbody>', 1)
+    body, post = rest.split('</tbody>', 1)
+    rows = re.findall(r'<tr>.*?</tr>', body, re.S)
+    return (pre + '<tbody>' + ''.join(rows[:k]) + '</tbody>' + post,
+            pre + '<tbody>' + ''.join(rows[k:]) + '</tbody>' + post)
 
 
 def split_runs(runs, at):
@@ -194,6 +223,57 @@ def pack(els, hs, avail, slack, lines=None):
         while j + 1 < len(els) and els[j]['kind'] == 'p' and els[j]['style'] in HEADINGS:
             j += 1
             need += hs[j]
+        if (used > 0 and used + need > cap and els[i]['kind'] == 'raw' and i + 1 < len(els)
+                and els[i + 1]['kind'] == 'p' and els[i + 1]['style'] not in HEADINGS
+                and not els[i + 1]['imgs'] and els[i].get('deferred', 0) < DEFER_MAX):
+            # A photo row, quote box or table that does not fit swaps places with the paragraph
+            # after it (never past a heading), so the writing fills the page and the block
+            # opens the next one, as a typesetter floats a figure (Mission Board, 16 Nov).
+            els[i], els[i + 1] = els[i + 1], dict(els[i], deferred=els[i].get('deferred', 0) + 1)
+            hs[i], hs[i + 1] = hs[i + 1], hs[i]
+            li, lj = lines.pop(i, None), lines.pop(i + 1, None)
+            if lj is not None: lines[i] = lj
+            if li is not None: lines[i + 1] = li
+            continue
+        room = cap - used
+        if (used > 0 and need > room and els[i]['kind'] == 'raw' and 'mb-row' in els[i]['html']
+                and room >= max(SHRINK_MIN * need, 150)):
+            # A photo row that still does not fit (a heading follows it) is made smaller to
+            # fit the room left, rather than leave a hole at the foot of the page. The pictures
+            # shrink with the row's width; captions keep their size, so allow them a margin.
+            s = (room - 24) / need
+            els[i] = dict(els[i], scale=s)
+            hs[i] = need = need * s + 24
+        if used > 0 and need > room and j == i and els[i]['kind'] == 'raw':
+            # A block that just misses: make a photo row already on this page a little
+            # smaller (to no less than SHRINK_PREV of its height) so the block fits.
+            short = need - room
+            for x, part in reversed(pages[-1]):
+                if part is None and els[x]['kind'] == 'raw' and 'mb-row' in els[x]['html'] and not els[x].get('scale'):
+                    h = hs[x]
+                    s_ = (h - short - 24) / h
+                    if s_ >= SHRINK_PREV:
+                        els[x] = dict(els[x], scale=s_)
+                        hs[x] = h * s_ + 24
+                        used -= h - hs[x]
+                        room = cap - used
+                    break
+        T = els[j].get('rowsH') if els[j]['kind'] == 'raw' else None
+        if used > 0 and need > room and T:
+            # A long table that does not fit breaks between rows (with any heading before it
+            # on this page); the header row is repeated at the top of the next page. At
+            # least two rows on each side.
+            acc, k = sum(hs[i:j]) + T['top'] + T['head'] + T['bottom'], 0
+            while k < len(T['rows']) and acc + T['rows'][k] <= room:
+                acc += T['rows'][k]; k += 1
+            if k >= 2 and len(T['rows']) - k >= 2:
+                a, b = split_table(els[j]['html'], k, T['cols'])
+                pages[-1] += [(x, None) for x in range(i, j)] + [(j, ('raw', a))]
+                pack.used.append(used + acc)
+                pages.append([(j, ('raw', b))])
+                used = T['top'] + T['head'] + T['bottom'] + sum(T['rows'][k:])
+                i = j + 1
+                continue
         if used > 0 and used + need > cap:
             info = lines.get(j)
             if info and len(info['lines']) >= 4:
@@ -288,6 +368,8 @@ def main():
     if splits.startswith('auto'):
         slack = float(splits.split(':')[1]) if ':' in splits else 10.0
         hu, avail, lu, _ = measure(plain, r, title)
+        for ti, tv in measure.tables.items():
+            plain[ti] = dict(plain[ti], rowsH=tv)
         hm, _, lm, _ = measure(els, r, title)
         # One or two lines of a paragraph left alone under a floated photo look stranded:
         # make the photo that much taller (cropped) so they sit beside it. The block keeps its
@@ -323,6 +405,9 @@ def main():
                 parts.append(r.el(els[x]))
             else:
                 kind, rs = part
+                if kind == 'raw':  # part of a table split across pages
+                    parts.append(f'<div class="org-el">\n{rs}\n</div>')
+                    continue
                 parts.append(f'<div class="org-el">\n<p class="org-body split-{kind}">{runs({"runs": rs})}</p>\n</div>')
         inner = '\n'.join('    ' + line for line in '\n'.join(parts).split('\n'))
         note = (f'    <!-- {comment} Page {n + 1} of {len(pages)}; generated from the Word document, text as written. -->\n'

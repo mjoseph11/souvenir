@@ -2627,8 +2627,12 @@
                     },
                     {
                       "src": "images/members/thomas-o-abraham/pic-3.jpg"
+                    },
+                    {
+                      "src": "images/members/thomas-o-abraham/pic-5.jpg"
                     }
-                  ]
+                  ],
+                  "arrange": "row"
                 }
               ]
             },
@@ -2639,7 +2643,7 @@
         }
       ],
       "sort": "Abraham Thomas O. ",
-      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms."
+      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms. 16 Nov: third couple photo (pic-5, Drive folder Thomas O. Abraham, from Molsey in the group 3:13 PM: \"3 couple pics for the memorial section for Achenkunju uncle\", after or before the other two); placed after; Manoj: \"we can try\"."
     },
     {
       "id": "thomas-m-george",
@@ -3394,6 +3398,43 @@
       "layoutNote": " 11 Nov: Mikhaila's staggered 2x2 layout (sent via Manoj), verse under the bottom-left photo.",
       "layout": "stagger",
       "staggerScale": 1.08
+    },
+    {
+      "id": "shajan-mathew",
+      "name": "Shajan Mathew",
+      "title": "Shajan Mathew & Family",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/shajan-mathew/pic-1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "italic": true,
+              "text": "Best wishes from Shajan, Anija & Shawn Mathew"
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "The Lord bless you and keep you; the Lord make His face shine upon you, and be gracious to you.",
+              "ref": "Numbers 6:24–25"
+            },
+            {
+              "type": "closing"
+            }
+          ]
+        }
+      ],
+      "sort": "Mathew Shajan ",
+      "layoutNote": "16 Nov (Manoj): Drive Design/Shajan Mathew, IMG_5148.jpeg and 'Shajan MAthew Message.txt' (the greeting, as written). Verse is ours."
     },
     {
       "id": "jimmy-george",

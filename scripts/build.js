@@ -599,7 +599,14 @@ const bodyHtml = pages
 
 const layoutCheck = `<script>
 /* Layout self-check, only when opened as index.html#layout-check (used by scripts/check-layout.js). */
+// Waits for the web fonts first (regular, italic, semibold, bold): measured with fallback
+// fonts, text wraps differently from the printed PDF (found 16 Nov, Mission Board pages).
 if (location.hash === '#layout-check') addEventListener('load', function () {
+  Promise.all(['400 13px', 'italic 400 13px', '600 13px', '700 13px', 'italic 700 13px'].map(function (f) {
+    return document.fonts.load(f + ' "EB Garamond"');
+  })).then(function () { return document.fonts.ready; }).then(function () { setTimeout(layoutScan, 500); });
+});
+function layoutScan() {
   var IN = 96, out = [];
   document.querySelectorAll('.page').forEach(function (pg, i) {
     var issues = [];
@@ -637,6 +644,15 @@ if (location.hash === '#layout-check') addEventListener('load', function () {
         });
       });
     });
+    // 1b. Photo captions in a row must not run into each other (16 Nov: three memorial
+    //     couples side by side; long one-line dates overlapped the next caption).
+    var caps = Array.prototype.map.call(pg.querySelectorAll('.m-fig figcaption'), function (c) {
+      var r = document.createRange(); r.selectNodeContents(c); return r.getBoundingClientRect();
+    });
+    for (var ci = 0; ci < caps.length; ci++) for (var cj = ci + 1; cj < caps.length; cj++) {
+      var A = caps[ci], B = caps[cj];
+      if (A.width && B.width && A.left < B.right - 1 && B.left < A.right - 1 && A.top < B.bottom - 1 && B.top < A.bottom - 1) issues.push('photo captions overlap');
+    }
     // 2-6. Article pages generated from Word documents (Sunday School, MMVS…)
     if (pg.classList.contains('org-page')) {
       var blocks = pg.querySelectorAll('.page-content > .org-el');
@@ -688,7 +704,7 @@ if (location.hash === '#layout-check') addEventListener('load', function () {
   pre.id = 'layout-report';
   pre.textContent = JSON.stringify({ pages: document.querySelectorAll('.page').length, problems: out });
   document.body.appendChild(pre);
-});
+}
 </script>
 `;
 
