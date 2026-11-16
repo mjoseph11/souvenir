@@ -355,6 +355,10 @@
   .m-half.dark.lilies .m-fig figcaption { white-space: normal; font-style: normal; margin-top: 0.16in; line-height: 1.3; }
   .m-half.dark.lilies .cap-name { display: block; color: var(--maroon); font-weight: 600; font-size: 12.5pt; }
   .m-half.dark.lilies .cap-dates { display: block; color: #333; font-style: italic; font-size: 9.5pt; white-space: nowrap; }
+  /* Two memorial couples side by side (Babu Varghese): "Parents of …" over each person's name and dates. */
+  .m-half.dark:not(.lilies) .m-fig figcaption:has(.cap-dates) { font-style: normal; }
+  .m-half.dark:not(.lilies) .m-fig .cap-name { display: block; color: var(--maroon); font-weight: 600; font-size: 10.5pt; margin-bottom: 0.03in; }
+  .m-half.dark:not(.lilies) .m-fig .cap-dates { display: block; color: #333; font-weight: normal; font-style: italic; font-size: 8.3pt; line-height: 1.45; white-space: nowrap; }
   .m-half.dark.lilies.small-name .m-memorial-head h2 { font-size: 18pt; }
   /* "oneLineName": each line of the name stays on one line (Manoj, Grace Kuriakose) */
   .m-half.dark.one-line-name .m-memorial-head h2 { white-space: nowrap; font-size: 20pt; }
