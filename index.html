@@ -1399,8 +1399,7 @@
   /* ── Text: Garamond on the paper, ragged right ── */
   .m-text, .m-text.bare {
     /* a soft-edged wash of paper, so text stays clear where it crosses the leaves */
-    background: rgba(250, 241, 225, 0.82);
-    box-shadow: 0 0 16px 12px rgba(250, 241, 225, 0.82);
+    background: none;
     border: none;
     border-radius: 0;
   }
@@ -1603,11 +1602,24 @@
      soft paper wash the member text has, so writing never sits on the leaves
      (Community Outreach, 12 Nov). */
   .inner-page .page-content { padding-left: 0.56in; padding-right: 0.56in; }
-  .inner-page .page-content p,
-  .inner-page .page-content li,
-  .inner-page .page-content .section-heading {
+  /* The washes are drawn on a layer UNDER all the text of the page (z-index -1 inside an
+     isolated .page-content / .m-content), so one paragraph's soft edge never covers the
+     heading or footer next to it. iPhone's PDF viewer draws soft shadows as hard boxes, and
+     painted on top they faded "Dr. Sherin Kurian" and the GSM heading (16 Nov). */
+  .inner-page .page-content, .m-content { isolation: isolate; }
+  :where(.inner-page .page-content) :where(p, li, .section-heading), :where(.m-text, .m-article p, .m-article .m-sign) { position: relative; }
+  .inner-page .page-content p::before,
+  .inner-page .page-content li::before,
+  .inner-page .page-content .section-heading::before,
+  .m-article p::before, .m-article .m-sign::before {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
     background: rgba(250, 241, 225, 0.82);
     box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
+  }
+  .m-text::before {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: rgba(250, 241, 225, 0.82);
+    box-shadow: 0 0 16px 12px rgba(250, 241, 225, 0.82);
   }
 
 
@@ -1615,10 +1627,7 @@
   .m-content .m-text.lang-ml.poem.center p { font-size: 12.5pt; line-height: 1.55; text-align: center; }
 
   /* Article text gets the paper wash too (Mathewkutty Kurian, 12 Nov: letters on the leaves). */
-  .m-article p, .m-article .m-sign {
-    background: rgba(250, 241, 225, 0.82);
-    box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
-  }
+  /* (.m-article p / .m-sign: the wash layer is set with the hand-built pages' above) */
 
 /* "xl": a short memorial list that has the whole page to itself (V. C. Thomas) */
 .m-content .m-text.size-xl p { font-size: 20pt; line-height: 1.4; }
