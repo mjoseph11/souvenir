@@ -71,6 +71,12 @@ class R:
         imgs, cap, body = (ia, ta, tb) if ia else (ib, tb, ta)
         fig = ('<div class="org-fig">' + ''.join(self.img(r) for r in imgs)
                + ''.join(f'<p class="org-caption">{runs(p)}</p>' for p in cap) + '</div>')
+        if t.get('after'):
+            # magazine layout: the photo floats at the side and the writing after it (the
+            # pair's own text, then the next paragraphs and headings) wraps round and under it
+            side = 'left' if ia else 'right'
+            return (f'<div class="org-float {side}">' + fig + ''.join(self.para(p) for p in body)
+                    + ''.join(self.para(p) for p in t['after']) + '</div>')
         txt = '<div class="org-text">' + ''.join(self.para(p) for p in body) + '</div>'
         return '<div class="org-pair">' + (fig + txt if ia else txt + fig) + '</div>'
 
@@ -205,15 +211,76 @@ def pack(els, hs, avail, slack, lines=None):
     return pages
 
 
+FLOAT_CHARS = 900  # about as much writing as fits beside a floated photo
+FLOAT_GAP = 60  # px: a floated block leaving more than this at the foot of a page goes plain
+NO_WRAP = ('MinistryTitle', 'EraTitle', 'EraSubtitle', 'Byline')
+
+
+def merge_floats(els):
+    """A photo beside a short text leaves a gap under the text. Give each photo pair the
+    paragraphs (and small headings) that follow it, so they wrap round the photo, until
+    there is about FLOAT_CHARS of writing; never end on a heading."""
+    out, i = [], 0
+    while i < len(els):
+        x = els[i]
+        if x['kind'] == 'table' and len(x['rows']) == 1:
+            n = sum(len(p.get('text') or '') for c in x['rows'][0] for p in c)
+            after, k = [], i + 1
+            while (k < len(els) and n < FLOAT_CHARS and els[k]['kind'] == 'p' and not els[k]['imgs']
+                   and els[k]['style'] not in NO_WRAP):
+                after.append(els[k]); n += len(els[k].get('text') or ''); k += 1
+            while after and after[-1]['style'] in HEADINGS:
+                after.pop()
+            if after:
+                x = dict(x, after=after)
+            out.append(dict(x, span=(i, i + 1 + len(after))))
+            i += 1 + len(after)
+            continue
+        out.append(dict(x, span=(i, i + 1)))
+        i += 1
+    return out
+
+
+def pack_floats(plain, merged, hu, lu, hm, lm, avail, slack):
+    """Pack with the photos floated, except a floated block that would leave a gap of more
+    than FLOAT_GAP px at the foot of the page before it: that one goes back to the plain
+    layout (photo beside its own text, the paragraphs after it on their own), which can
+    break across the page. Returns (els, pages)."""
+    plain_ix = set()
+    while True:
+        els, hs, lines = [], [], {}
+        for mi, x in enumerate(merged):
+            if x.get('after') and mi not in plain_ix:
+                if mi in lm:
+                    lines[len(els)] = lm[mi]
+                els.append(x); hs.append(hm[mi])
+            else:
+                for k in range(*x['span']):
+                    if k in lu:
+                        lines[len(els)] = lu[k]
+                    els.append(dict(plain[k], mi=mi)); hs.append(hu[k])
+        pages = pack(els, hs, avail, slack, lines)
+        used = pack.used
+        bad = {merged.index(els[pg[0][0]]) for n, pg in enumerate(pages)
+               if n and els[pg[0][0]].get('after') and avail - slack - used[n - 1] > FLOAT_GAP}
+        if not bad:
+            return els, pages
+        plain_ix |= bad
+
+
 def main():
     j = json.load(open(sys.argv[1], encoding='utf-8'))
     title, prefix, imgdir, splits = sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
     comment = sys.argv[6] if len(sys.argv) > 6 else ''
-    els, r = j['els'], R(j['media'], sys.argv[4])
+    plain, r = j['els'], R(j['media'], sys.argv[4])
+    els = merge_floats(plain)
     if splits.startswith('auto'):
         slack = float(splits.split(':')[1]) if ':' in splits else 10.0
-        hs, avail, lines, _ = measure(els, r, title)
-        pages = pack(els, hs, avail, slack, lines)
+        hu, avail, lu, _ = measure(plain, r, title)
+        hm, _, lm, _ = measure(els, r, title)
+        els, pages = pack_floats(plain, els, hu, lu, hm, lm, avail, slack)
+        print('floated photos: %d of %d' % (sum(1 for x in els if x.get('after')),
+                                             sum(1 for x in merge_floats(plain) if x.get('after'))), file=sys.stderr)
         print('measured avail %.0fpx; %d pages; paragraphs split at page ends: %s' % (
             avail, len(pages), [pg[0][0] for pg in pages if pg[0][1]]), file=sys.stderr)
     else:

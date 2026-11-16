@@ -626,9 +626,17 @@
 .org-pair { display: flex; gap: 0.2in; align-items: stretch; margin: 0.04in 0 0.08in; }
 /* the photo fills the height of the writing beside it (no empty space under either; 16 Nov) */
 .org-pair .org-fig { flex: 0 0 2.45in; display: flex; flex-direction: column; }
-.org-pair .org-fig img { flex: 1 1 auto; width: 100%; height: 0; min-height: 1.35in; max-height: 2.7in; object-fit: cover; object-position: 50% 22%; }
+.org-pair .org-fig img { flex: 1 1 auto; width: 100%; height: 0; min-height: 1.1in; max-height: 2.7in; object-fit: cover; object-position: 50% 22%; }
 .org-pair .org-fig .org-caption { margin-bottom: 0; }
-.org-pair .org-text { flex: 1; }
+/* photo floated with the writing wrapping round it (merge_floats in org-pages.py, 16 Nov) */
+.org-float { display: flow-root; margin: 0.04in 0 0.04in; }
+.org-float > .org-fig { width: 2.45in; margin: 0.02in 0 0.06in; }
+.org-float.left > .org-fig { float: left; margin-right: 0.2in; }
+.org-float.right > .org-fig { float: right; margin-left: 0.2in; }
+.org-float > .org-fig img { width: 100%; height: auto; max-height: 2.4in; object-fit: cover; object-position: 50% 22%; }
+.org-float > .org-fig .org-caption { margin-bottom: 0; }
+.org-float > .org-h, .org-float > .org-h5 { display: flow-root; }
+.org-pair .org-text { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .org-table { width: 100%; border-collapse: collapse; font-size: 9.4pt; margin: 0.04in 0 0.06in; }
 .org-table td { padding: 4px 8px; border-bottom: 1px solid rgba(201,162,39,0.45); vertical-align: top; line-height: 1.35; }
 .org-table td:first-child { color: var(--maroon); font-weight: bold; white-space: nowrap; width: 1.1in; }
@@ -3303,22 +3311,13 @@
     </div>
   </div>
 
-  <div class="page-content" style="--g:0.6px">
+  <div class="page-content" style="--g:2.1px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 5 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h4 class="org-h">Building Fellowship</h4>
     </div>
     <div class="org-el">
-    <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-04.jpg" alt=""><p class="org-caption">Sonday Funday — family fellowship.</p></div><div class="org-text"><p class="org-body">Our theme, Faith, Fun, and Fellowship, came alive through Family Nights, apple picking, pumpkin carving, Ice Cream Socials, and especially Sonday Funday. These events strengthened friendships among children, parents, teachers, and volunteers while reinforcing that the Church is one family.</p></div></div>
-    </div>
-    <div class="org-el">
-    <h4 class="org-h">Looking Back with Gratitude</h4>
-    </div>
-    <div class="org-el">
-    <p class="org-body">Looking back, I treasure not only the programs we introduced but the relationships that were formed. I remain deeply grateful to Rev. Fr. Shibu Mathai, our leadership team, teachers, volunteers, parents, and students. My prayer is that our efforts helped create a Sunday School where every child felt welcomed and experienced Faith, Fun, and Fellowship while growing closer to Christ.</p>
-    </div>
-    <div class="org-el">
-    <p class="org-motto">“Train up a child in the way he should go...” — Proverbs 22:6</p>
+    <div class="org-float left"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-04.jpg" alt=""><p class="org-caption">Sonday Funday — family fellowship.</p></div><p class="org-body">Our theme, Faith, Fun, and Fellowship, came alive through Family Nights, apple picking, pumpkin carving, Ice Cream Socials, and especially Sonday Funday. These events strengthened friendships among children, parents, teachers, and volunteers while reinforcing that the Church is one family.</p><h4 class="org-h">Looking Back with Gratitude</h4><p class="org-body">Looking back, I treasure not only the programs we introduced but the relationships that were formed. I remain deeply grateful to Rev. Fr. Shibu Mathai, our leadership team, teachers, volunteers, parents, and students. My prayer is that our efforts helped create a Sunday School where every child felt welcomed and experienced Faith, Fun, and Fellowship while growing closer to Christ.</p><p class="org-motto">“Train up a child in the way he should go...” — Proverbs 22:6</p></div>
     </div>
     <div class="org-el">
     <h2 class="org-era">2016–2020<span class="sep">|</span>Reny Biju</h2>
@@ -3349,7 +3348,7 @@
     <p class="org-byline">“Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God."  1 Corinthians 10:31</p>
     </div>
     <div class="org-el">
-    <p class="org-body split-head">The Sunday School marked a historic milestone with its first-ever Nuhro Retreat, "The Orthodox Way of Life" (based on John 4:23), from August 18–20, 2017 at Sandy Cove Ministries in Maryland — our first offsite retreat experience, drawing 90 participants including parents, teachers, and children. The weekend featured teachings from Rev. Fr. Abey George, Rev. Fr. Alexander Kurien, Rev. Dn. Bobby Varghese, Rev. Dn. Saju Varghese, and Rev. Fr. Shibu Mathai, and combined worship (Evening and Morning Prayers, Confession, and Holy Liturgy) with themed workshops for separate</p>
+    <p class="org-body split-head">The Sunday School marked a historic milestone with its first-ever Nuhro Retreat, "The Orthodox Way of Life" (based on John 4:23), from August 18–20, 2017 at Sandy Cove Ministries in Maryland — our first offsite retreat experience, drawing 90 participants including parents, teachers, and children. The weekend featured teachings from Rev. Fr. Abey George, Rev. Fr. Alexander Kurien, Rev. Dn. Bobby Varghese, Rev. Dn. Saju Varghese, and Rev. Fr. Shibu Mathai, and combined worship (Evening and Morning Prayers, Confession, and Holy Liturgy) with themed workshops for separate parent, youth, and children's groups, plus outdoor activities like ziplining, swimming, fishing, and a riverside bonfire. A particular highlight was Evening Prayer held under a lakeside gazebo with a stunning sunset backdrop, whose beauty and</p>
     </div>
   </div>
   <div class="page-footer">
@@ -3371,7 +3370,7 @@
   <div class="page-content" style="--g:1.4px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 6 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
-    <p class="org-body split-tail">parent, youth, and children's groups, plus outdoor activities like ziplining, swimming, fishing, and a riverside bonfire. A particular highlight was Evening Prayer held under a lakeside gazebo with a stunning sunset backdrop, whose beauty and serenity left everyone deeply inspired and  spiritually uplifted.  Offering students a time of fellowship, reflection, and spiritual renewal, the retreat set the tone for similar retreats going forward.</p>
+    <p class="org-body split-tail">serenity left everyone deeply inspired and  spiritually uplifted.  Offering students a time of fellowship, reflection, and spiritual renewal, the retreat set the tone for similar retreats going forward.</p>
     </div>
     <div class="org-el">
     <h4 class="org-h">A New Sunday School Mission Team Takes Root</h4>
@@ -3416,7 +3415,7 @@
     <p class="org-byline">"Every good gift and every perfect gift is from above, coming down from the Father of lights" (James 1:17).</p>
     </div>
     <div class="org-el">
-    <p class="org-body split-head">The Philadelphia Area Talent Competition brings together Sunday Schools from across the region each year, giving</p>
+    <p class="org-body split-head">The Philadelphia Area Talent Competition brings together Sunday Schools from across the region each year, giving students a platform to showcase their God-given gifts while building confidence and camaraderie with sister parishes. SGMOC's students turned in a remarkable performance, claiming the title of Area Champions in both 2018 and 2019 —</p>
     </div>
   </div>
   <div class="page-footer">
@@ -3438,7 +3437,7 @@
   <div class="page-content" style="--g:1.1px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 7 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
-    <p class="org-body split-tail">students a platform to showcase their God-given gifts while building confidence and camaraderie with sister parishes. SGMOC's students turned in a remarkable performance, claiming the title of Area Champions in both 2018 and 2019 — a back-to-back achievement reflecting the depth of talent nurtured within our program. This achievement was a fruit of quiet faithfulness: teachers who prayed over their students, mentors and parents who saw and nurtured potential, and children who were taught that their gifts belonged first to God. Honors came in singing, storytelling, elocution, group song, and Bible Quiz. Rounding out this remarkable stretch, the Sunday School was proud to be  Diocese Bible Quiz Champions in 2019, reflecting the students' deep engagement with Scripture. Looking back, what remains is the deeper truth: every gift discovered and every talent nurtured is a testimony of God's faithfulness — planted in these children, now growing into a lifelong offering of praise.</p>
+    <p class="org-body split-tail">a back-to-back achievement reflecting the depth of talent nurtured within our program. This achievement was a fruit of quiet faithfulness: teachers who prayed over their students, mentors and parents who saw and nurtured potential, and children who were taught that their gifts belonged first to God. Honors came in singing, storytelling, elocution, group song, and Bible Quiz. Rounding out this remarkable stretch, the Sunday School was proud to be  Diocese Bible Quiz Champions in 2019, reflecting the students' deep engagement with Scripture. Looking back, what remains is the deeper truth: every gift discovered and every talent nurtured is a testimony of God's faithfulness — planted in these children, now growing into a lifelong offering of praise.</p>
     </div>
     <div class="org-el">
     <h4 class="org-h">Faith in the Face of a Pandemic</h4>
@@ -3475,7 +3474,7 @@
     <p class="org-body">Recognizing the changing needs of today's learners, our Sunday School ministry continues to embrace innovative teaching methodologies and curriculum development while remaining firmly grounded in the traditions, liturgy and teachings of the Malankara Orthodox Syrian Church.</p>
     </div>
     <div class="org-el">
-    <p class="org-body split-head">During my leadership in the ministry, we introduced Bloom’s Taxonomy as an educational framework that encouraged a</p>
+    <p class="org-body split-head">During my leadership in the ministry, we introduced Bloom’s Taxonomy as an educational framework that encouraged a more comprehensive approach to learning, moving beyond memorization and helping students understand, apply, analyze, evaluate and creatively engage with biblical teachings and Orthodox Christian traditions. Additionally, the</p>
     </div>
   </div>
   <div class="page-footer">
@@ -3494,10 +3493,10 @@
     </div>
   </div>
 
-  <div class="page-content">
+  <div class="page-content" style="--g:2.4px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 8 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
-    <p class="org-body split-tail">more comprehensive approach to learning, moving beyond memorization and helping students understand, apply, analyze, evaluate and creatively engage with biblical teachings and Orthodox Christian traditions. Additionally, the introduction of the Talmido curriculum has provided new opportunities to enrich faith-based learning through structured lessons, engaging activities and age-appropriate resources.</p>
+    <p class="org-body split-tail">introduction of the Talmido curriculum has provided new opportunities to enrich faith-based learning through structured lessons, engaging activities and age-appropriate resources.</p>
     </div>
     <div class="org-el">
     <p class="org-body">These initiatives reflect our commitment to making Sunday School meaningful, interactive and relevant to the lives of today's children, while strengthening their understanding and appreciation of our Orthodox faith.</p>
@@ -3586,19 +3585,19 @@
     <h5 class="org-h5">Candle-Making Class: Sharing God-Given Talents</h5>
     </div>
     <div class="org-el">
-    <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-06.jpg" alt=""><p class="org-caption">Candle-making session.</p></div><div class="org-text"><p class="org-body">One of our first activities was a candle-making class graciously led by our very own Elsa Abraham and her family. Our students enjoyed learning a new skill through this creative and engaging experience. What a beautiful example of sharing a God-given talent with others! We are grateful to Elsa and her family for generously giving their time and talents to make this activity memorable for our students.</p></div></div>
-    </div>
-    <div class="org-el">
-    <h5 class="org-h5">Apple Picking: Harvesting Joy and Fellowship</h5>
-    </div>
-    <div class="org-el">
-    <p class="org-body">We continued the year with a wonderful apple-picking outing that brought together our Sunday School students and their families. The event was well attended, and everyone enjoyed picking apples, sharing laughter, and savoring delicious apple cider. It was a wonderful opportunity for our families to connect outside the classroom and create lasting memories together.</p>
+    <div class="org-float left"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-06.jpg" alt=""><p class="org-caption">Candle-making session.</p></div><p class="org-body">One of our first activities was a candle-making class graciously led by our very own Elsa Abraham and her family. Our students enjoyed learning a new skill through this creative and engaging experience. What a beautiful example of sharing a God-given talent with others! We are grateful to Elsa and her family for generously giving their time and talents to make this activity memorable for our students.</p><h5 class="org-h5">Apple Picking: Harvesting Joy and Fellowship</h5><p class="org-body">We continued the year with a wonderful apple-picking outing that brought together our Sunday School students and their families. The event was well attended, and everyone enjoyed picking apples, sharing laughter, and savoring delicious apple cider. It was a wonderful opportunity for our families to connect outside the classroom and create lasting memories together.</p></div>
     </div>
     <div class="org-el">
     <h5 class="org-h5">Our First-Ever Sunday School Thanksgiving Dinner</h5>
     </div>
     <div class="org-el">
     <div class="org-pair"><div class="org-text"><p class="org-body">Continuing our spirit of togetherness, we hosted our first-ever Sunday School Thanksgiving Dinner. The evening was filled with prayer, fun games, and joyful fellowship. It also provided a meaningful opportunity to pause and reflect on the many blessings in our lives. We were reminded of the importance of gratitude, faith, and the gift of belonging to a loving church community.</p></div><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-07.jpg" alt=""><p class="org-caption">Thanksgiving fellowship.</p></div></div>
+    </div>
+    <div class="org-el">
+    <h4 class="org-h">Orthodox Vacation Bible School: United in Faith</h4>
+    </div>
+    <div class="org-el">
+    <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-08.jpg" alt=""><p class="org-caption">Sunday School children in faith and fellowship.</p></div><div class="org-text"><p class="org-body">One of the significant highlights of our ministry was hosting Orthodox Vacation Bible School (OVBS) at our church for the first time in many years. We were delighted to welcome children from both our parish and St. George Orthodox Church in Fairless Hills for this special spiritual experience.</p></div></div>
     </div>
   </div>
   <div class="page-footer">
@@ -3617,14 +3616,8 @@
     </div>
   </div>
 
-  <div class="page-content" style="--g:2.9px">
+  <div class="page-content" style="--g:2.3px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 10 of 11; generated from the Word document, text as written. -->
-    <div class="org-el">
-    <h4 class="org-h">Orthodox Vacation Bible School: United in Faith</h4>
-    </div>
-    <div class="org-el">
-    <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-08.jpg" alt=""><p class="org-caption">Sunday School children in faith and fellowship.</p></div><div class="org-text"><p class="org-body">One of the significant highlights of our ministry was hosting Orthodox Vacation Bible School (OVBS) at our church for the first time in many years. We were delighted to welcome children from both our parish and St. George Orthodox Church in Fairless Hills for this special spiritual experience.</p></div></div>
-    </div>
     <div class="org-el">
     <div class="org-pair"><div class="org-text"><p class="org-body">Our OVBS theme, “Be Mindful and Stay Blessed” (1 Peter 5:8), encouraged children to remain watchful, mindful of their choices, and grounded in their faith. Through prayer, Bible lessons, activities, and fellowship, the children were given opportunities to deepen their understanding of God's Word and strengthen their relationship with Christ.</p></div><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-09.jpg" alt=""><p class="org-caption">Children and clergy.</p></div></div>
     </div>
@@ -3650,7 +3643,19 @@
     <p class="org-body">•  Mission Work and School Outreach: Supporting a school in need through service initiatives that allow our students to recognize the importance of giving back and helping other children in our broader community.</p>
     </div>
     <div class="org-el">
-    <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-10.jpg" alt=""><p class="org-caption">Operation Christmas Child.</p></div><div class="org-text"><p class="org-body">Operation Christmas Child: Participating in this wonderful initiative by filling shoeboxes with gifts and essential items for children in need. Each shoebox serves as a reminder that love, generosity, and the spirit of Christmas can reach children around the world.</p></div></div>
+    <div class="org-float left"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-10.jpg" alt=""><p class="org-caption">Operation Christmas Child.</p></div><p class="org-body">Operation Christmas Child: Participating in this wonderful initiative by filling shoeboxes with gifts and essential items for children in need. Each shoebox serves as a reminder that love, generosity, and the spirit of Christmas can reach children around the world.</p><p class="org-body">•  Food Drives: Encouraging students and families to come together to collect food for those experiencing hardship and food insecurity.</p><p class="org-body">These opportunities help our children see that being a Christian means looking beyond ourselves and recognizing the needs of others. We want our students to grow into individuals who not only know the teachings of Christ but also live them through their actions.</p><p class="org-body">As we often remind our students, we are called not only to receive God's love but to share that love with the world. Our hope is to cultivate a lifelong spirit of service, generosity, and compassion in every child we teach.</p></div>
+    </div>
+    <div class="org-el">
+    <h4 class="org-h">Looking Ahead: Same Faith, Brighter Hearts, Bigger Purpose</h4>
+    </div>
+    <div class="org-el">
+    <p class="org-body">As we look toward the 2026–2027 Sunday School year, we are excited to embrace our new theme:</p>
+    </div>
+    <div class="org-el">
+    <p class="org-motto">“Same Faith, Brighter Hearts, Bigger Purpose.”</p>
+    </div>
+    <div class="org-el">
+    <p class="org-body">This theme reflects our desire to remain firmly rooted in the unchanging truth of our Orthodox faith while nurturing hearts filled with Christ's love and inspiring our students to live with greater purpose. We hope to encourage our children to carry their faith beyond the classroom and into their homes, schools, friendships, and communities.</p>
     </div>
   </div>
   <div class="page-footer">
@@ -3671,27 +3676,6 @@
 
   <div class="page-content">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 11 of 11; generated from the Word document, text as written. -->
-    <div class="org-el">
-    <p class="org-body">•  Food Drives: Encouraging students and families to come together to collect food for those experiencing hardship and food insecurity.</p>
-    </div>
-    <div class="org-el">
-    <p class="org-body">These opportunities help our children see that being a Christian means looking beyond ourselves and recognizing the needs of others. We want our students to grow into individuals who not only know the teachings of Christ but also live them through their actions.</p>
-    </div>
-    <div class="org-el">
-    <p class="org-body">As we often remind our students, we are called not only to receive God's love but to share that love with the world. Our hope is to cultivate a lifelong spirit of service, generosity, and compassion in every child we teach.</p>
-    </div>
-    <div class="org-el">
-    <h4 class="org-h">Looking Ahead: Same Faith, Brighter Hearts, Bigger Purpose</h4>
-    </div>
-    <div class="org-el">
-    <p class="org-body">As we look toward the 2026–2027 Sunday School year, we are excited to embrace our new theme:</p>
-    </div>
-    <div class="org-el">
-    <p class="org-motto">“Same Faith, Brighter Hearts, Bigger Purpose.”</p>
-    </div>
-    <div class="org-el">
-    <p class="org-body">This theme reflects our desire to remain firmly rooted in the unchanging truth of our Orthodox faith while nurturing hearts filled with Christ's love and inspiring our students to live with greater purpose. We hope to encourage our children to carry their faith beyond the classroom and into their homes, schools, friendships, and communities.</p>
-    </div>
     <div class="org-el">
     <p class="org-body">Our mission remains the same: to nurture a generation of children who know Christ, love Christ, and reflect Christ in all they do. Through the dedication of our teachers, the support of our families, and the grace of God, we look forward to another year of spiritual growth, meaningful fellowship, and service to others.</p>
     </div>
