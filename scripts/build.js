@@ -622,6 +622,66 @@ if (location.hash === '#layout-check') addEventListener('load', function () {
       var h = im.getBoundingClientRect().height;
       if (im.naturalWidth && h < 1.2 * IN) issues.push('photo squeezed to ' + (h / IN).toFixed(2) + 'in ' + im.getAttribute('src'));
     });
+    // ── Checks for the fixes of 16 Nov (Mathew Joseph, from iPhone proofs) ──
+    // 1. No soft (blurred) shadows anywhere. iPhone's PDF viewer draws them as hard pale
+    //    or dark boxes: they faded headings, ran over footers and looked like a second
+    //    page laid on top. The paper wash behind text is baked into page-sample-text.jpg.
+    pg.querySelectorAll('*').forEach(function (e) {
+      var cs = getComputedStyle(e);
+      [cs.boxShadow, cs.textShadow].forEach(function (s) {
+        if (!s || s === 'none') return;
+        s.replace(/rgba?[(][^)]*[)]/g, '').split(',').forEach(function (one) {
+          if (one.indexOf('inset') >= 0) return;
+          var n = (one.match(/-?[0-9.]+px/g) || []).map(parseFloat);
+          if (n.length >= 3 && n[2] > 0) issues.push('soft shadow (iPhone draws it as a box) on ' + e.tagName.toLowerCase() + (e.className ? '.' + String(e.className).split(' ')[0] : ''));
+        });
+      });
+    });
+    // 2-6. Article pages generated from Word documents (Sunday School, MMVS…)
+    if (pg.classList.contains('org-page')) {
+      var blocks = pg.querySelectorAll('.page-content > .org-el');
+      // 2. even paragraph spacing: no big gap between blocks
+      for (var b = 1; b < blocks.length; b++) {
+        var gap = blocks[b].getBoundingClientRect().top - blocks[b - 1].getBoundingClientRect().bottom;
+        if (gap > 0.2 * IN) issues.push('gap of ' + (gap / IN).toFixed(2) + 'in between paragraphs');
+      }
+      // 3. no big empty space at the foot of a page when the article carries on overleaf
+      var nx = pg.nextElementSibling;
+      while (nx && !nx.classList.contains('page')) nx = nx.nextElementSibling;
+      var h1 = (pg.querySelector('h1') || {}).textContent;
+      if (nx && nx.classList.contains('org-page') && (nx.querySelector('h1') || {}).textContent === h1 && f && blocks.length) {
+        var foot = f.getBoundingClientRect().top - blocks[blocks.length - 1].getBoundingClientRect().bottom;
+        if (foot > 0.75 * IN) issues.push((foot / IN).toFixed(2) + 'in empty at the foot of the page');
+      }
+      // 4. a photo beside text is about as tall as the text
+      pg.querySelectorAll('.org-pair').forEach(function (q) {
+        var fh = q.querySelector('.org-fig').getBoundingClientRect().height, t = q.querySelector('.org-text'), tt = t.getBoundingClientRect().top, th = 0;
+        [].forEach.call(t.children, function (c) { th = Math.max(th, c.getBoundingClientRect().bottom - tt); });
+        if (Math.abs(fh - th) > 0.45 * IN) issues.push('photo and the text beside it differ by ' + (Math.abs(fh - th) / IN).toFixed(2) + 'in');
+      });
+      // 5. no line or two of a paragraph stranded under a photo the text wraps round
+      pg.querySelectorAll('.org-float').forEach(function (q) {
+        var gb = q.querySelector('.org-fig').getBoundingClientRect().bottom;
+        [].forEach.call(q.children, function (c) {
+          if (c.classList.contains('org-fig')) return;
+          var r = c.getBoundingClientRect();
+          if (r.top >= gb - 2) return;  // starts below the photo: not wrapping round it
+          var rg = document.createRange(), tops = {};
+          rg.selectNodeContents(c);
+          [].forEach.call(rg.getClientRects(), function (lr) { if (lr.width > 2 && lr.top >= gb) tops[Math.round(lr.top)] = 1; });
+          var under = Object.keys(tops).length;
+          if (under >= 1 && under <= 2) issues.push(under + ' line(s) stranded under a photo: "' + c.textContent.trim().slice(-30) + '"');
+        });
+      });
+      // 6. side photos squeezed to the text's height keep their top (heads were cut off on p. 47)
+      pg.querySelectorAll('.org-pair .org-photo, .org-float .org-photo').forEach(function (im) {
+        var cs = getComputedStyle(im), r = im.getBoundingClientRect();
+        if (cs.objectFit !== 'cover' || !im.naturalWidth) return;
+        var shown = r.width / r.height, nat = im.naturalWidth / im.naturalHeight;
+        var y = parseFloat((cs.objectPosition.split(' ')[1]) || '50');
+        if (shown > nat * 1.08 && y > 10) issues.push('photo cropped from the middle, heads may be cut (' + im.getAttribute('src') + ')');
+      });
+    }
     if (issues.length) out.push({ page: i + 1, title: (pg.querySelector('h1') || {}).textContent, issues: issues });
   });
   var pre = document.createElement('pre');

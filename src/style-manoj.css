@@ -38,7 +38,7 @@
     background: #fff;
     padding: 0.05in;
     border: 1.5px solid #C9A227;
-    box-shadow: 0 4px 14px rgba(60, 35, 10, 0.35);
+    box-shadow: none;
     box-sizing: content-box;
   }
 
