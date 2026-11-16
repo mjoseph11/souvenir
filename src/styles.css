@@ -618,14 +618,14 @@
 .org-pair { display: flex; gap: 0.2in; align-items: stretch; margin: 0.04in 0 0.08in; }
 /* the photo fills the height of the writing beside it (no empty space under either; 16 Nov) */
 .org-pair .org-fig { flex: 0 0 2.45in; display: flex; flex-direction: column; }
-.org-pair .org-fig img { flex: 1 1 auto; width: 100%; height: 0; min-height: 1.1in; max-height: 2.7in; object-fit: cover; object-position: 50% 22%; }
+.org-pair .org-fig img { flex: 1 1 auto; width: 100%; height: 0; min-height: 1.1in; max-height: 2.7in; object-fit: cover; object-position: 50% 6%; }
 .org-pair .org-fig .org-caption { margin-bottom: 0; }
 /* photo floated with the writing wrapping round it (merge_floats in org-pages.py, 16 Nov) */
 .org-float { display: flow-root; margin: 0.04in 0 0.04in; }
 .org-float > .org-fig { width: 2.45in; margin: 0.02in 0 0.06in; }
 .org-float.left > .org-fig { float: left; margin-right: 0.2in; }
 .org-float.right > .org-fig { float: right; margin-left: 0.2in; }
-.org-float > .org-fig img { width: 100%; height: auto; max-height: 2.4in; object-fit: cover; object-position: 50% 22%; }
+.org-float > .org-fig img { width: 100%; height: auto; max-height: 2.4in; object-fit: cover; object-position: 50% 6%; }
 .org-float > .org-fig .org-caption { margin-bottom: 0; }
 .org-float > .org-h, .org-float > .org-h5 { display: flow-root; }
 .org-pair .org-text { flex: 1; display: flex; flex-direction: column; justify-content: center; }
