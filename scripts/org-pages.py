@@ -75,6 +75,9 @@ class R:
             # magazine layout: the photo floats at the side and the writing after it (the
             # pair's own text, then the next paragraphs and headings) wraps round and under it
             side = 'left' if ia else 'right'
+            if t.get('imgH'):
+                fig = ('<div class="org-fig">' + ''.join(self.img(r, f' style="height:{t["imgH"]:.0f}px"') for r in imgs)
+                       + ''.join(f'<p class="org-caption">{runs(p)}</p>' for p in cap) + '</div>')
             return (f'<div class="org-float {side}">' + fig + ''.join(self.para(p) for p in body)
                     + ''.join(self.para(p) for p in t['after']) + '</div>')
         txt = '<div class="org-text">' + ''.join(self.para(p) for p in body) + '</div>'
@@ -115,6 +118,10 @@ def measure(els, r, title):
     script = '''<script>addEventListener('load',function(){document.fonts.ready.then(function(){setTimeout(function(){
 var els=[].slice.call(document.querySelectorAll('[data-i]'));
 var hs=els.map(function(d){return d.getBoundingClientRect().height});
+var lines={},fl={};
+els.forEach(function(d){var f=d.querySelector(':scope > .org-float');if(!f)return;var g=f.querySelector('.org-fig'),im=g.querySelector('img');
+ var gb=g.getBoundingClientRect().bottom,sp=0;[].slice.call(f.children).forEach(function(c){if(c===g)return;var b=c.getBoundingClientRect();if(b.top<gb-2&&b.bottom>gb)sp=b.bottom-gb;});
+ fl[d.getAttribute('data-i')]={spill:sp,img:im.getBoundingClientRect().height};});
 var lines={};
 els.forEach(function(d){var p=d.querySelector(':scope > p.org-body');if(!p||d.children.length!==1)return;
  var pt=p.getBoundingClientRect().top,out=[],off=0,w=document.createTreeWalker(p,NodeFilter.SHOW_TEXT),n;
@@ -128,7 +135,7 @@ var ft=document.querySelectorAll('.page-footer')[1].getBoundingClientRect();
 var pg=document.querySelectorAll('.page')[1].getBoundingClientRect();
 var pc=document.querySelectorAll('.page-content')[1].getBoundingClientRect();
 var o=document.createElement('pre');o.id='measure-out';
-o.textContent=JSON.stringify({pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:document.fonts.status});document.body.appendChild(o);},1500)})});</script>'''
+o.textContent=JSON.stringify({fl:fl,pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-pr.top,pageH:pg.height,fonts:document.fonts.status});document.body.appendChild(o);},1500)})});</script>'''
     tmp = ROOT / '_measure_tmp.html'
     tmp.write_text(head + body + probe + script + '</body></html>', encoding='utf-8')
     try:
@@ -140,6 +147,7 @@ o.textContent=JSON.stringify({pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-p
     m = re.search(r'<pre id="measure-out">(.*?)</pre>', dom, re.S)
     data = json.loads(html.unescape(m.group(1)))
     print('fonts:', data.get('fonts'), 'page height px:', data.get('pageH'), 'sum of blocks px: %.0f' % sum(data['hs']), file=sys.stderr)
+    measure.floats = {int(k): v for k, v in data['fl'].items()}
     return data['hs'], data['avail'], {int(k): v for k, v in data['lines'].items()}, data['pcH']
 
 
@@ -212,6 +220,8 @@ def pack(els, hs, avail, slack, lines=None):
 
 
 FLOAT_CHARS = 900  # about as much writing as fits beside a floated photo
+RUNT = 42  # px: up to two lines (18.5px each) under a floated photo
+MAX_IMG = 230  # px (2.4in): tallest a floated photo is made
 FLOAT_GAP = 60  # px: a floated block leaving more than this at the foot of a page goes plain
 NO_WRAP = ('MinistryTitle', 'EraTitle', 'EraSubtitle', 'Byline')
 
@@ -278,6 +288,15 @@ def main():
         slack = float(splits.split(':')[1]) if ':' in splits else 10.0
         hu, avail, lu, _ = measure(plain, r, title)
         hm, _, lm, _ = measure(els, r, title)
+        # One or two lines of a paragraph left alone under a floated photo look stranded:
+        # make the photo that much taller (cropped) so they sit beside it. The block keeps its
+        # height, since those lines only move up beside the photo.
+        for mi, f in measure.floats.items():
+            spill = f['spill']  # the part of a paragraph that runs on below the photo
+            if 1 < spill <= RUNT and f['img'] + spill + 2 <= MAX_IMG:
+                els[mi] = dict(els[mi], imgH=f['img'] + spill + 2)
+        if any(x.get('imgH') for x in els):
+            hm, _, lm, _ = measure(els, r, title)  # heights with the taller photos
         els, pages = pack_floats(plain, els, hu, lu, hm, lm, avail, slack)
         print('floated photos: %d of %d' % (sum(1 for x in els if x.get('after')),
                                              sum(1 for x in merge_floats(plain) if x.get('after'))), file=sys.stderr)
