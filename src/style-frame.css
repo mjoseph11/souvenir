@@ -380,24 +380,11 @@
      soft paper wash the member text has, so writing never sits on the leaves
      (Community Outreach, 12 Nov). */
   .inner-page .page-content { padding-left: 0.56in; padding-right: 0.56in; }
-  /* The washes are drawn on a layer UNDER all the text of the page (z-index -1 inside an
-     isolated .page-content / .m-content), so one paragraph's soft edge never covers the
-     heading or footer next to it. iPhone's PDF viewer draws soft shadows as hard boxes, and
-     painted on top they faded "Dr. Sherin Kurian" and the GSM heading (16 Nov). */
-  .inner-page .page-content, .m-content { isolation: isolate; }
-  :where(.inner-page .page-content) :where(p, li, .section-heading), :where(.m-text, .m-article p, .m-article .m-sign) { position: relative; }
-  .inner-page .page-content p::before,
-  .inner-page .page-content li::before,
-  .inner-page .page-content .section-heading::before,
-  .m-article p::before, .m-article .m-sign::before {
-    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-    background: rgba(250, 241, 225, 0.82);
-    box-shadow: 0 0 14px 10px rgba(250, 241, 225, 0.82);
-  }
-  .m-text::before {
-    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-    background: rgba(250, 241, 225, 0.82);
-    box-shadow: 0 0 16px 12px rgba(250, 241, 225, 0.82);
+  /* The paper wash behind the text is baked into the page background (page-sample-text.jpg,
+     a soft cream panel over the text column). It used to be a blurred box-shadow per
+     paragraph, which iPhone's PDF viewer drew as hard pale boxes over headings and footers (16 Nov). */
+  .page.inner-page:not(.m-ad):not(:has(.page-header[style*="2a2a2a"])):has(.page-content p, .page-content li, .m-text, .m-article)::before {
+    background-image: url('images/backgrounds/page-sample-text.jpg') !important;
   }
 
 

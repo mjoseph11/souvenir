@@ -390,6 +390,3 @@
 /* Compact Malayalam (GSM on one page, 15 Nov) */
 .m-content .m-text.lang-ml.size-xs p { font-size: 8.7pt; line-height: 1.45; }
 .m-content .m-text.lang-ml.size-xs p + p { margin-top: 0.4em; }
-/* GSM page: keep the text's paper wash clear of the heading and the footer — iPhone's PDF viewer
-   draws the soft wash as a hard box, which ran over both (Manoj, 16 Nov) */
-.m-content > .m-text.cols.lang-ml.size-xs { margin-top: 0.16in; margin-bottom: 0.34in; }
