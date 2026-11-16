@@ -19,3 +19,10 @@ jobs:
           node-version: '20'
       - name: Check verified facts
         run: node scripts/check-verified.js
+      # Rebuild from src/ + data/ and run the headless-Chrome layout check: overflow,
+      # text under the footer, squeezed photos, and the iPhone-proof fixes of 16 Nov
+      # (no soft shadows, even spacing and no stranded lines on article pages).
+      - name: Rebuild and check layout
+        run: |
+          node scripts/build.js
+          node scripts/check-layout.js
