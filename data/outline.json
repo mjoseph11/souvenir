@@ -436,7 +436,7 @@
                 "size": "sm",
                 "center": true,
                 "title": "Executive Committee 2024–2026",
-                "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Shibu V. Mathai (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese"
+                "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Eby Paulose (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese"
               },
               {
                 "type": "text",
@@ -460,9 +460,11 @@
                 "photos": [
                   {
                     "src": "images/ministries/good-samaritan/group.jpg",
-                    "alt": "Good Samaritan Mission"
+                    "alt": "Good Samaritan Mission",
+                    "pos": "50% 50%"
                   }
-                ]
+                ],
+                "fill": true
               },
               {
                 "type": "heading",
@@ -478,14 +480,6 @@
                 "size": "xs"
               }
             ]
-          }
-        },
-        {
-          "placeholder": {
-            "title": "Good Samaritan Mission",
-            "heading": "Good Samaritan Mission — In Pictures",
-            "pages": "2 side-by-side pages",
-            "note": "Group photo, visits and activities."
           }
         },
         {

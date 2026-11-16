@@ -617,12 +617,12 @@
 .org-photo { display: block; margin: 0.06in auto 0; max-width: 100%; border: 2px solid var(--gold); border-radius: 3px; object-fit: cover; }
 .org-pair { display: flex; gap: 0.2in; align-items: stretch; margin: 0.04in 0 0.08in; }
 /* the photo fills the height of the writing beside it (no empty space under either; 16 Nov) */
-.org-pair .org-fig { flex: 0 0 2.45in; display: flex; flex-direction: column; }
+.org-pair .org-fig { flex: 0 0 3in; display: flex; flex-direction: column; }
 .org-pair .org-fig img { flex: 1 1 auto; width: 100%; height: 0; min-height: 1.1in; max-height: 2.7in; object-fit: cover; object-position: 50% 6%; }
 .org-pair .org-fig .org-caption { margin-bottom: 0; }
 /* photo floated with the writing wrapping round it (merge_floats in org-pages.py, 16 Nov) */
 .org-float { display: flow-root; margin: 0.04in 0 0.04in; }
-.org-float > .org-fig { width: 2.45in; margin: 0.02in 0 0.06in; }
+.org-float > .org-fig { width: 3in; margin: 0.02in 0 0.06in; }
 .org-float.left > .org-fig { float: left; margin-right: 0.2in; }
 .org-float.right > .org-fig { float: right; margin-left: 0.2in; }
 .org-float > .org-fig img { width: 100%; height: auto; max-height: 2.4in; object-fit: cover; object-position: 50% 6%; }
@@ -634,16 +634,15 @@
 .org-table td:first-child { color: var(--maroon); font-weight: bold; white-space: nowrap; width: 1.1in; }
 .org-table .role { color: #777; font-size: 8.4pt; }
 .org-el { display: flow-root; }
-/* MMVS leadership box at the top of the story (Manoj, 15 Nov) */
-.org-lead { display: flex; gap: 0.2in; align-items: flex-start; margin: 0 0 0.1in; }
+/* MMVS leadership team: names on the left, the two team photos stacked on the right (Manoj, 16 Nov) */
+.org-lead { display: flex; gap: 0.25in; align-items: center; margin: 0.02in 0 0.12in; }
 .org-lead-list { flex: 1 1 0; }
-.org-lead-list .org-h { margin-top: 0; }
-.org-lead-table { width: 100%; border-collapse: collapse; font-size: 9pt; }
-.org-lead-table td { padding: 3px 2px; border-bottom: 1px solid rgba(201,162,39,0.3); }
-.org-lead-table td:first-child { font-weight: bold; color: var(--maroon); }
-.org-lead-table td:last-child { color: #666; text-align: right; }
-.org-lead-pics { flex: 0 0 3.7in; display: flex; gap: 0.15in; }
-.org-lead-pics figure { flex: 1 1 0; margin: 0; }
+.org-lead-table { width: 100%; border-collapse: collapse; font-size: 9.6pt; line-height: 1.35; }
+.org-lead-table td { padding: 3px 4px; border-bottom: 1px solid rgba(201,162,39,0.3); vertical-align: top; }
+.org-lead-table td:first-child { font-weight: bold; color: var(--maroon); white-space: nowrap; width: 1.45in; }
+.org-lead-table td:last-child { color: #333; }
+.org-lead-pics { flex: 0 0 3.1in; display: flex; flex-direction: column; gap: 0.1in; }
+.org-lead-pics figure { margin: 0; }
 .org-lead-pics .org-photo { width: 100%; margin-top: 0; }
 .org-lead-pics .org-caption { margin-bottom: 0; }
 /* A paragraph continued on the next page: the first part's last line stays justified. */

@@ -42,7 +42,8 @@ class R:
     def para(self, p):
         s, t = p['style'], runs(p)
         if p['imgs']:
-            return '\n'.join(self.img(r, ' style="width:100%;max-height:3.1in;"') for r in p['imgs'])
+            mh = p.get('imgMax', '3.1in')  # a taller cap can be set per photo in the parsed JSON
+            return '\n'.join(self.img(r, f' style="width:100%;max-height:{mh};"') for r in p['imgs'])
         if s == 'MinistryTitle': return f'<h2 class="org-title">{t}</h2>'
         if s == 'EraTitle': return f'<h2 class="org-era">{self.era(p["text"])}</h2>'
         if s == 'EraSubtitle': return f'<p class="org-sub">{t}</p>\n<div class="org-rule"></div>'
