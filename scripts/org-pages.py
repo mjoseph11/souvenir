@@ -138,6 +138,7 @@ o.textContent=JSON.stringify({pcH:ft.top-pc.top,lines:lines,hs:hs,avail:ft.top-p
 
 
 MARGIN = 7.2  # .org-body margin-bottom (0.075in) in px
+GAP_CAP = 4.0  # most extra space added between two blocks, px
 
 
 def split_runs(runs, at):
@@ -172,6 +173,7 @@ def pack(els, hs, avail, slack, lines=None):
     lines = lines or {}
     cap = avail - slack
     pages, used, i = [[]], 0.0, 0
+    pack.used = []  # height of what is on each page, px
     while i < len(els):
         need, j = hs[i], i
         while j + 1 < len(els) and els[j]['kind'] == 'p' and els[j]['style'] in HEADINGS:
@@ -188,15 +190,18 @@ def pack(els, hs, avail, slack, lines=None):
                     got = ''.join(x[0] for x in tail).replace('\n', '')
                     assert got[:30] == info['text'][off:].lstrip()[:30], (j, got[:30], info['text'][off:off + 30])
                     pages[-1] += [(x, None) for x in range(i, j)] + [(j, ('head', head))]
+                    pack.used.append(used + sum(hs[i:j]) + ls[k - 1]['bottom'] + MARGIN)
                     pages.append([(j, ('tail', tail))])
                     used = hs[j] - ls[k]['top']
                     i = j + 1
                     continue
             pages.append([])
+            pack.used.append(used)
             used = 0.0
         pages[-1].append((i, None))
         used += hs[i]
         i += 1
+    pack.used.append(used)
     return pages
 
 
@@ -207,31 +212,28 @@ def main():
     els, r = j['els'], R(j['media'], sys.argv[4])
     if splits.startswith('auto'):
         slack = float(splits.split(':')[1]) if ':' in splits else 10.0
-        hs, avail, lines, pc_h = measure(els, r, title)
+        hs, avail, lines, _ = measure(els, r, title)
         pages = pack(els, hs, avail, slack, lines)
         print('measured avail %.0fpx; %d pages; paragraphs split at page ends: %s' % (
             avail, len(pages), [pg[0][0] for pg in pages if pg[0][1]]), file=sys.stderr)
     else:
         starts = [int(x) for x in splits.split(',')] + [len(els)]
         pages = [[(x, None) for x in range(starts[n], starts[n + 1])] for n in range(len(starts) - 1)]
-        pc_h = None
+        avail = None
     for old in pathlib.Path(prefix).parent.glob(pathlib.Path(prefix).name + '-*.html'):
         old.unlink()
     files = []
     for n, page in enumerate(pages):
-        # Every page but the last fills to the footer: the space left over is shared out
-        # above each section start (a heading, or a photo/table not under a heading).
-        fill = pc_h is not None and n < len(pages) - 1
+        # Pages but the last share a little of their leftover space between blocks, at most
+        # GAP_CAP px a break, so the foot of the page is evener; the rest stays at the bottom.
+        # (Spreading all of it, as on 15 Nov, opened gaps that looked unprofessional - 16 Nov.)
+        gap = 0.0
+        if avail is not None and n < len(pages) - 1 and len(page) > 1:
+            gap = max(0.0, min((avail - 4 - pack.used[n]) / (len(page) - 1), GAP_CAP))
         parts = []
         for k, (x, part) in enumerate(page):
-            prev = els[page[k - 1][0]] if k else None
-            starts_section = (k > 0 and part is None and not (prev['kind'] == 'p' and prev['style'] in HEADINGS)
-                              and (els[x]['kind'] != 'p' or els[x]['style'] in HEADINGS or els[x]['imgs']))
             if part is None:
-                html_el = r.el(els[x])
-                if fill and starts_section:
-                    html_el = html_el.replace('<div class="org-el">', '<div class="org-el org-gap">', 1)
-                parts.append(html_el)
+                parts.append(r.el(els[x]))
             else:
                 kind, rs = part
                 parts.append(f'<div class="org-el">\n<p class="org-body split-{kind}">{runs({"runs": rs})}</p>\n</div>')
@@ -240,8 +242,8 @@ def main():
                 if comment else '')
         f = f'{prefix}-{n + 1:02d}.html'
         top = TOP.format(title=e(title))
-        if fill:
-            top = top.replace('<div class="page-content">', f'<div class="page-content org-fill" style="height:{pc_h:.1f}px">')
+        if gap >= 0.5:
+            top = top.replace('<div class="page-content">', f'<div class="page-content" style="--g:{gap:.1f}px">')
         open(f, 'w', encoding='utf-8', newline='\n').write(top + note + inner + '\n' + FOOT)
         files.append(f)
     print('\n'.join(files))

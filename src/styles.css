@@ -639,6 +639,5 @@
 .org-lead-pics .org-caption { margin-bottom: 0; }
 /* A paragraph continued on the next page: the first part's last line stays justified. */
 .org-body.split-head { text-align-last: justify; }
-/* Full pages reach the footer: leftover space is shared out above each section start. */
-.org-page .page-content.org-fill { display: flex; flex-direction: column; box-sizing: border-box; }
-.org-page .page-content.org-fill > .org-gap { margin-top: auto; }
+/* A little of a page's leftover space between blocks (--g, set per page by org-pages.py, at most 4px). */
+.org-page .page-content > .org-el + .org-el { margin-top: var(--g, 0px); }

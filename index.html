@@ -647,9 +647,8 @@
 .org-lead-pics .org-caption { margin-bottom: 0; }
 /* A paragraph continued on the next page: the first part's last line stays justified. */
 .org-body.split-head { text-align-last: justify; }
-/* Full pages reach the footer: leftover space is shared out above each section start. */
-.org-page .page-content.org-fill { display: flex; flex-direction: column; box-sizing: border-box; }
-.org-page .page-content.org-fill > .org-gap { margin-top: auto; }
+/* A little of a page's leftover space between blocks (--g, set per page by org-pages.py, at most 4px). */
+.org-page .page-content > .org-el + .org-el { margin-top: var(--g, 0px); }
 
   /* ══════════════════════════════════════
      GENERATED PAGES (scripts/build.js)
@@ -3081,7 +3080,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:4.0px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 1 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h2 class="org-title">A Legacy of Faith, A Future of Promise</h2>
@@ -3096,13 +3095,13 @@
     <div class="org-el">
     <p class="org-body">From modest classrooms on Torresdale Avenue to a growing ministry in Bensalem, our Sunday School has continued its mission of forming young hearts in Orthodox faith, worship, fellowship and service. The reflections that follow are shared in the voices of the principals who helped guide this ministry through different seasons of parish life.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <img class="org-photo" src="images/ministries/sunday-school/ss-01.jpg" alt="" style="width:100%;max-height:3.1in;">
     </div>
     <div class="org-el">
     <p class="org-caption">Our Sunday School family — students, teachers, clergy and families.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Sunday School Leadership Through the Years</h4>
     </div>
     <div class="org-el">
@@ -3135,7 +3134,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:2.4px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 2 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h2 class="org-era">Before 1992<span class="sep">|</span>Dn. Markose Mani</h2>
@@ -3153,7 +3152,7 @@
     <div class="org-el">
     <p class="org-body">His experiences in helping establish an Orthodox church in Rourkela, Orissa (India) shaped his views on the importance of preserving the church’s history and making sure children are aware of the sacrifices of their elders.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h2 class="org-era">1992–1996<span class="sep">|</span>Lee K. George</h2>
     </div>
     <div class="org-el">
@@ -3169,7 +3168,7 @@
     <div class="org-el">
     <p class="org-body">I thank Almighty God for the opportunity to serve in this capacity and pray for the continued success of our Sunday School Mission.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h2 class="org-era">1998–2013<span class="sep">|</span>Paul J. Maret</h2>
     </div>
     <div class="org-el">
@@ -3202,7 +3201,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:2.5px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 3 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h4 class="org-h">A Period of Transition and Perseverance</h4>
@@ -3216,7 +3215,7 @@
     <div class="org-el">
     <p class="org-body">Although the circumstances were difficult, we remained committed to our responsibilities and did our best to ensure that our children continued to learn the Word of God. This period taught us the importance of faith, patience, teamwork, and perseverance in serving our church community.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Growth and Achievements in Bensalem</h4>
     </div>
     <div class="org-el">
@@ -3231,7 +3230,7 @@
     <div class="org-el">
     <p class="org-body">One of the proudest moments in our history came in 2011, when our Sunday School won the Overall Championship in the Northeast American Diocese Sunday School Talent Competitions. This remarkable achievement reflected the dedication, hard work, and talents of our students and teachers. It was a memorable milestone for our parish and a testament to what we could accomplish through faith, commitment, and teamwork.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Reflections and Acknowledgments</h4>
     </div>
     <div class="org-el">
@@ -3269,7 +3268,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:4.0px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 4 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h2 class="org-era">2013–2016<span class="sep">|</span>Sunitha Zacharia</h2>
@@ -3290,13 +3289,13 @@
     <div class="org-el">
     <p class="org-body">During my tenure, our guiding theme was Faith, Fun, and Fellowship. We wanted every child and family to experience a Sunday School that not only strengthened their faith but also created lasting friendships and joyful memories within the life of the Church.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Growing in Faith</h4>
     </div>
     <div class="org-el">
     <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-02.jpg" alt=""><p class="org-caption">Bible projects and presentations.</p></div><div class="org-text"><p class="org-body">Our primary goal was always to help our children deepen their understanding of the Orthodox faith. We introduced general sessions focused on Christian virtues and values that encouraged spiritual growth beyond the classroom, published regular Sunday School newsletters to keep families informed, created a Sunday School bulletin board to celebrate student achievements and communicate important events. Beyond weekly classroom instruction, students created interactive Bible projects and displays illustrating Jesus walk to the Calvary during the Holy Week. These exhibits encouraged creativity, teamwork, and reflection while making learning engaging and memorable.</p></div></div>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Living Our Faith Through Service</h4>
     </div>
     <div class="org-el">
@@ -3319,7 +3318,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:1.3px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 5 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h4 class="org-h">Building Fellowship</h4>
@@ -3327,7 +3326,7 @@
     <div class="org-el">
     <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-04.jpg" alt=""><p class="org-caption">Sonday Funday — family fellowship.</p></div><div class="org-text"><p class="org-body">Our theme, Faith, Fun, and Fellowship, came alive through Family Nights, apple picking, pumpkin carving, Ice Cream Socials, and especially Sonday Funday. These events strengthened friendships among children, parents, teachers, and volunteers while reinforcing that the Church is one family.</p></div></div>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Looking Back with Gratitude</h4>
     </div>
     <div class="org-el">
@@ -3336,7 +3335,7 @@
     <div class="org-el">
     <p class="org-motto">“Train up a child in the way he should go...” — Proverbs 22:6</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h2 class="org-era">2016–2020<span class="sep">|</span>Reny Biju</h2>
     </div>
     <div class="org-el">
@@ -3349,7 +3348,7 @@
     <div class="org-el">
     <p class="org-body">During this period, the Sunday School team continued to build on the well-established structure it inherited, while bringing new and innovative ideas that furthered its growth and vitality. With Rev. Fr. Shibu Mathai’s vision and guidance, and the steady leadership of Reny Biju, Jessy Mathai, James Varughese, Shainey Jacob and Jinu John, the Sunday School community grew not only in achievement but in its commitment to faith, service, and fellowship.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Strengthening the Foundation of Teaching and Learning</h4>
     </div>
     <div class="org-el">
@@ -3358,7 +3357,7 @@
     <div class="org-el">
     <p class="org-body">This period saw a renewed focus on strong, structured teaching, supported by well-established guidelines for both the general session and individual classroom sessions. In support of this effort, the Sunday School conducted Teacher Enrichment Workshops and Fellowships, equipping teachers with valuable tools and techniques for the classroom. Experienced secular and religious educators led practical, hands-on sessions designed to make classroom teaching more engaging and effective. Blending substance with fun, the workshops were met with great appreciation and left a lasting impact — teachers came away better prepared, and in turn, children became more engaged in their learning.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">A First for Our Youth</h4>
     </div>
     <div class="org-el">
@@ -3384,12 +3383,12 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:4.0px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 6 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <p class="org-body split-tail">combined worship (Evening and Morning Prayers, Confession, and Holy Liturgy) with themed workshops for separate parent, youth, and children's groups, plus outdoor activities like ziplining, swimming, fishing, and a riverside bonfire. A particular highlight was Evening Prayer held under a lakeside gazebo with a stunning sunset backdrop, whose beauty and serenity left everyone deeply inspired and  spiritually uplifted.  Offering students a time of fellowship, reflection, and spiritual renewal, the retreat set the tone for similar retreats going forward.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">A New Sunday School Mission Team Takes Root</h4>
     </div>
     <div class="org-el">
@@ -3410,7 +3409,7 @@
     <div class="org-el">
     <p class="org-body">What started as a Sunday School initiative didn't stay small. The groundwork laid by this team — the structure, the accountability, the focus — became the foundation for something bigger: the SGMOC Mission Board, now established at the parish level.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Gregorian Harmony: Voices Raised in Worship</h4>
     </div>
     <div class="org-el">
@@ -3442,7 +3441,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:4.0px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 7 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h4 class="org-h">Champions on the Stage</h4>
@@ -3453,13 +3452,13 @@
     <div class="org-el">
     <p class="org-body">The Philadelphia Area Talent Competition brings together Sunday Schools from across the region each year, giving students a platform to showcase their God-given gifts while building confidence and camaraderie with sister parishes. SGMOC's students turned in a remarkable performance, claiming the title of Area Champions in both 2018 and 2019 — a back-to-back achievement reflecting the depth of talent nurtured within our program. This achievement was a fruit of quiet faithfulness: teachers who prayed over their students, mentors and parents who saw and nurtured potential, and children who were taught that their gifts belonged first to God. Honors came in singing, storytelling, elocution, group song, and Bible Quiz. Rounding out this remarkable stretch, the Sunday School was proud to be  Diocese Bible Quiz Champions in 2019, reflecting the students' deep engagement with Scripture. Looking back, what remains is the deeper truth: every gift discovered and every talent nurtured is a testimony of God's faithfulness — planted in these children, now growing into a lifelong offering of praise.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Faith in the Face of a Pandemic</h4>
     </div>
     <div class="org-el">
     <p class="org-body">When COVID-19 struck in 2020, the Sunday School immediately transitioned to remote, online teaching to keep the mission of learning and worship alive. Teachers and children alike embraced this new approach with resilience and openness. While the warmth of in-person interaction was sorely missed, the community's commitment to loving and learning God's word together never wavered, proving that faith could adapt and endure even in the most uncertain of times</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h2 class="org-era">2020–2025<span class="sep">|</span>Shainey Jacob</h2>
     </div>
     <div class="org-el">
@@ -3469,13 +3468,13 @@
     <div class="org-el">
     <p class="org-body">As St. Gregorios Malankara Orthodox Church celebrates its Golden Jubilee, we give thanks to Almighty God for His abundant grace and guidance throughout these fifty blessed years. Sunday School is more than a classroom or a weekly gathering. It is a ministry of faith formation, where young minds are introduced to the richness of Orthodox Christian traditions, the teachings of our Holy Church, the Scriptures, the lives of the saints and the importance of living a Christ-centered life. Over the years, our Sunday School has been blessed with dedicated clergy, principals, teachers, parents and volunteers who have faithfully served this ministry.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Growing Together Through the Years</h4>
     </div>
     <div class="org-el">
     <p class="org-body">The history of our parish reflects God’s continued guidance and the collective efforts of its members. From the establishment of the parish in 1976, through the acquisition of our Bensalem property and the consecration of our church, each milestone represents a chapter of faith, perseverance and growth.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Challenges, Resilience and New Opportunities</h4>
     </div>
     <div class="org-el">
@@ -3498,7 +3497,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:0.8px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 8 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h4 class="org-h">Investing in the Next Generation</h4>
@@ -3512,13 +3511,13 @@
     <div class="org-el">
     <p class="org-body">These initiatives reflect our commitment to making Sunday School meaningful, interactive and relevant to the lives of today's children, while strengthening their understanding and appreciation of our Orthodox faith.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Faith, Fellowship and Action</h4>
     </div>
     <div class="org-el">
     <p class="org-body">Beyond classroom learning, our students have actively participated in various mission-oriented initiatives and Diocese-level activities, extending their faith into action through service, fellowship and Christian witness. Their involvement in workshops, Bible quizzes, talent shows, competitions and other Diocese-sponsored programs has provided valuable opportunities to discover and showcase their God-given talents. Through their enthusiasm, dedication and accomplishments, our students have earned numerous recognitions, accolades and words of appreciation, bringing pride to our parish. These experiences have reinforced the importance of teamwork, service, spiritual growth and representing our parish with faith and integrity.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <p class="org-byline">"Train up a child in the way he should go, and when he is old he will not depart from it." – Proverbs 22:6</p>
     </div>
     <div class="org-el">
@@ -3533,7 +3532,7 @@
     <div class="org-el">
     <p class="org-caption">Shainey Jacob  •  Sunday School Principal (2020–2025)</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h2 class="org-era">2025–2026<span class="sep">|</span>Dr. Sherin Kurian</h2>
     </div>
     <div class="org-el">
@@ -3572,7 +3571,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:4.0px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 9 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <p class="org-body">•  Faith in Christ to Faith OF Christ</p>
@@ -3586,10 +3585,10 @@
     <div class="org-el">
     <p class="org-body">This vision reminded us that our mission extends beyond teaching our children about Christ. We strive to help them develop a personal and lasting relationship with Him, embodying His faith, hope, and love in their everyday lives.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <div class="org-pair"><div class="org-text"><p class="org-body">Our Sunday School ministry is blessed with approximately 100 students and 30 dedicated teachers who faithfully support this mission. Together, we are committed to creating an environment where children can grow spiritually, develop a deeper understanding of our Orthodox faith, and build a strong foundation for a lifelong walk with Christ.</p></div><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-05.jpg" alt=""><p class="org-caption">Sunday School participation in diocesan ministry.</p></div></div>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Activities and Fellowship: Building Memories Together</h4>
     </div>
     <div class="org-el">
@@ -3598,13 +3597,13 @@
     <div class="org-el">
     <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-06.jpg" alt=""><p class="org-caption">Candle-making session.</p></div><div class="org-text"><p class="org-body">One of our first activities was a candle-making class graciously led by our very own Elsa Abraham and her family. Our students enjoyed learning a new skill through this creative and engaging experience. What a beautiful example of sharing a God-given talent with others! We are grateful to Elsa and her family for generously giving their time and talents to make this activity memorable for our students.</p></div></div>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h5 class="org-h5">Apple Picking: Harvesting Joy and Fellowship</h5>
     </div>
     <div class="org-el">
     <p class="org-body">We continued the year with a wonderful apple-picking outing that brought together our Sunday School students and their families. The event was well attended, and everyone enjoyed picking apples, sharing laughter, and savoring delicious apple cider. It was a wonderful opportunity for our families to connect outside the classroom and create lasting memories together.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h5 class="org-h5">Our First-Ever Sunday School Thanksgiving Dinner</h5>
     </div>
     <div class="org-el">
@@ -3627,7 +3626,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:1.1px">
     <!-- Sunday School, SGMOC_Sunday_School_Souvenir_Editable.docx and _Layout.pdf (Drive Organizations/Sunday School, 14 Nov). Page 10 of 11; generated from the Word document, text as written. -->
     <div class="org-el">
     <h4 class="org-h">Orthodox Vacation Bible School: United in Faith</h4>
@@ -3635,13 +3634,13 @@
     <div class="org-el">
     <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-08.jpg" alt=""><p class="org-caption">Sunday School children in faith and fellowship.</p></div><div class="org-text"><p class="org-body">One of the significant highlights of our ministry was hosting Orthodox Vacation Bible School (OVBS) at our church for the first time in many years. We were delighted to welcome children from both our parish and St. George Orthodox Church in Fairless Hills for this special spiritual experience.</p></div></div>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <div class="org-pair"><div class="org-text"><p class="org-body">Our OVBS theme, “Be Mindful and Stay Blessed” (1 Peter 5:8), encouraged children to remain watchful, mindful of their choices, and grounded in their faith. Through prayer, Bible lessons, activities, and fellowship, the children were given opportunities to deepen their understanding of God's Word and strengthen their relationship with Christ.</p></div><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-09.jpg" alt=""><p class="org-caption">Children and clergy.</p></div></div>
     </div>
     <div class="org-el">
     <p class="org-body">Bringing our two church communities together was a tremendous blessing. The experience fostered fellowship, created new friendships, and reminded us of the beauty of growing together in our Orthodox Christian faith.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Faith in Action: Serving Others and Giving Back</h4>
     </div>
     <div class="org-el">
@@ -3659,7 +3658,7 @@
     <div class="org-el">
     <p class="org-body">•  Mission Work and School Outreach: Supporting a school in need through service initiatives that allow our students to recognize the importance of giving back and helping other children in our broader community.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <div class="org-pair"><div class="org-fig"><img class="org-photo" src="images/ministries/sunday-school/ss-10.jpg" alt=""><p class="org-caption">Operation Christmas Child.</p></div><div class="org-text"><p class="org-body">Operation Christmas Child: Participating in this wonderful initiative by filling shoeboxes with gifts and essential items for children in need. Each shoebox serves as a reminder that love, generosity, and the spirit of Christmas can reach children around the world.</p></div></div>
     </div>
   </div>
@@ -3746,13 +3745,13 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:2.7px">
     <!-- MMVS article, MMVS-Womens-Ministry-Article.docx and photos (Drive Organizations/MMVS, 23 Sep / 12 Oct). Page 1 of 4; generated from the Word document, text as written. -->
     <div class="org-el">
     <!-- Leadership and photos moved here from the old MMVS page (Manoj, 15 Nov). VERIFIED (issue #16, MolseyThomas 2026-04-13): Treasurer=Sunitha Zacharia, Central Committee=Beena Koshy. -->
     <div class="org-lead"><div class="org-lead-list"><h4 class="org-h">Leadership 2026</h4><table class="org-lead-table"><tr><td>Rev. Fr. Shibu Venad Mathai</td><td>Vicar</td></tr><tr><td>Reny Biju</td><td>Secretary</td></tr><tr><td>Christeena Poovathoor</td><td>Joint Secretary</td></tr><tr><td>Sunitha Zacharia</td><td>Treasurer</td></tr><tr><td>Beena Koshy</td><td>Central Committee Member</td></tr></table></div><div class="org-lead-pics"><figure><img class="org-photo" src="images/ministries/mmvs/committee.jpg" alt="MMVS Committee"><p class="org-caption">MMVS Committee</p></figure><figure><img class="org-photo" src="images/ministries/mmvs/core-team.jpg" alt="MMVS Core Team"><p class="org-caption">MMVS Core Team</p></figure></div></div>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h2 class="org-title">The Women Who Built Our Church: The Story of Morth Mariam Vanitha Samajam (MMVS)</h2>
     </div>
     <div class="org-el">
@@ -3765,13 +3764,13 @@
     <div class="org-el">
     <p class="org-body">It was in 1982, when the North East American Diocese formally established MMVS at the diocesan level, that this quiet devotion found its official structure. The diocesan initiative gave rise to the MMVS wing within SGMOC, formalizing a ministry the women of the parish had already been living out for years.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <img class="org-photo" src="images/ministries/mmvs/inside.jpg" alt="" style="width:100%;max-height:3.1in;">
     </div>
     <div class="org-el">
     <p class="org-caption">The women of MMVS in our church.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">The Initial Years</h4>
     </div>
     <div class="org-el">
@@ -3794,7 +3793,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:0.8px">
     <!-- MMVS article, MMVS-Womens-Ministry-Article.docx and photos (Drive Organizations/MMVS, 23 Sep / 12 Oct). Page 2 of 4; generated from the Word document, text as written. -->
     <div class="org-el">
     <p class="org-body">In its earliest years, MMVS took shape through simple, faithful routines that grounded the ministry in prayer and service. Monthly prayer meetings became a cornerstone of parish life, with members encouraged to share a message drawn from the Scripture portion they had read that morning — turning each gathering into a time of both personal reflection and communal prayer.</p>
@@ -3805,19 +3804,19 @@
     <div class="org-el">
     <p class="org-body">During these formative years, MMVS members also attended an MMVS conference in New York, where their team won prizes in the quiz competition — a proud moment of fellowship alongside women from other parishes. Closer to home, MMVS helped decorate and arrange the dining room for weddings and baptisms, and some members gave their time to teaching Sunday school classes, nurturing the faith of the parish's youngest generation from the ministry's earliest days.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Faith at the Center of Everyday Life</h4>
     </div>
     <div class="org-el">
     <p class="org-body">The women of the parish were, in many cases, working multiple shifts to support their families — yet through it all, prayer, worship, and church remained at the very core of their lives. At home, they built consistent prayer routines and made it their mission to raise their children in the Orthodox faith, even while living far from their homeland. This quiet, steady discipline in the household became the foundation on which the next generation's faith was built.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Building a Lasting Structure</h4>
     </div>
     <div class="org-el">
     <p class="org-body">Over time, what began as informal gatherings of faith and service matured into a formally organized ministry. MMVS developed its own leadership structure, with a Secretary, Treasurer, and other committee members guiding its work. This newly formed committee went on to establish an annual calendar of events for the ministry, including biweekly prayer meetings held at the church and monthly prayer meetings hosted in the homes of members — carrying forward the very tradition of home-based worship and fellowship on which MMVS was first built.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Sacrifice and Support for a Growing Church</h4>
     </div>
     <div class="org-el">
@@ -3826,7 +3825,7 @@
     <div class="org-el">
     <p class="org-body">Their service was not limited to their own community. The Ministry continues to support  the education of 2 girls in India. Various other charity and mission projects provide support to many families in need both in India and in the United States— a reflection of the Orthodox call to serve beyond the walls of the church.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">MMVS 40th Year Celebration – 2022</h4>
     </div>
     <div class="org-el">
@@ -3852,7 +3851,7 @@
     </div>
   </div>
 
-  <div class="page-content org-fill" style="height:912.0px">
+  <div class="page-content" style="--g:1.0px">
     <!-- MMVS article, MMVS-Womens-Ministry-Article.docx and photos (Drive Organizations/MMVS, 23 Sep / 12 Oct). Page 3 of 4; generated from the Word document, text as written. -->
     <div class="org-el">
     <p class="org-body">These members were also recognized at the Diocesan Celebration on October 1, 2022, held at St. Thomas Indian Orthodox Church, Unruh, where they received a custom plaque and shawl.</p>
@@ -3860,13 +3859,13 @@
     <div class="org-el">
     <p class="org-body">For the Diocese's 40th-year charity initiative, our parish raised $3,160 through raffle sales. In addition, one MMVS member personally contributed $1,500 to sponsor a student, offered as an individual anonymous donation.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <img class="org-photo" src="images/ministries/mmvs/outside.jpg" alt="" style="width:100%;max-height:3.1in;">
     </div>
     <div class="org-el">
     <p class="org-caption">The women of MMVS outside our church.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">MMVS in Its Current Form</h4>
     </div>
     <div class="org-el">
@@ -3878,7 +3877,7 @@
     <div class="org-el">
     <p class="org-body">Beyond the parish, MMVS members actively participate in ecumenical programs such as the World Day of Prayer, Choir Fest, and Christmas Fest, building fellowship and connection with the broader Christian community. Our MMVS members also take part in the annual Diocese Bible Quiz, winning prizes on many occasions, as well as the Diocese Annual Conference and Talent Show, and the Diocese Retreat at HTRC. The 2026 Golden Jubilee year was especially memorable, as our Bible Quiz team brought great pride to SGMOC by winning 1st prize among 29 teams from across the Diocese.</p>
     </div>
-    <div class="org-el org-gap">
+    <div class="org-el">
     <h4 class="org-h">Women in Church and Lay Leadership Roles</h4>
     </div>
     <div class="org-el">
