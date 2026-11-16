@@ -355,61 +355,53 @@
       "items": [
         {
           "file": "src/pages/ministry-sunday-school-01.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (1 of 12)",
+          "label": "MINISTRY: SUNDAY SCHOOL (1 of 11)",
           "toc": "Sunday School"
         },
         {
           "file": "src/pages/ministry-sunday-school-02.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (2 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (2 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-03.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (3 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (3 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-04.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (4 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (4 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-05.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (5 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (5 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-06.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (6 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (6 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-07.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (7 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (7 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-08.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (8 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (8 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-09.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (9 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (9 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-10.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (10 of 12)"
+          "label": "MINISTRY: SUNDAY SCHOOL (10 of 11)"
         },
         {
           "file": "src/pages/ministry-sunday-school-11.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (11 of 12)"
-        },
-        {
-          "file": "src/pages/ministry-sunday-school-12.html",
-          "label": "MINISTRY: SUNDAY SCHOOL (12 of 12)"
-        },
-        {
-          "file": "src/pages/ministry-mmvs.html",
-          "label": "MINISTRY: MMVS",
-          "toc": "Marth Mariam Vanitha Samajam"
+          "label": "MINISTRY: SUNDAY SCHOOL (11 of 11)"
         },
         {
           "file": "src/pages/ministry-mmvs-story-01.html",
-          "label": "MINISTRY: MMVS — OUR STORY (1 of 4)"
+          "label": "MINISTRY: MMVS — OUR STORY (1 of 4)",
+          "toc": "Marth Mariam Vanitha Samajam"
         },
         {
           "file": "src/pages/ministry-mmvs-story-02.html",
@@ -424,12 +416,8 @@
           "label": "MINISTRY: MMVS — OUR STORY (4 of 4)"
         },
         {
-          "file": "src/pages/ministry-st-josephs-forum.html",
           "label": "MINISTRY: ST. JOSEPH'S FORUM",
-          "toc": "St. Joseph's Forum"
-        },
-        {
-          "label": "MINISTRY: ST. JOSEPH'S FORUM (2 of 2)",
+          "toc": "St. Joseph's Forum",
           "generated": {
             "title": "St. Joseph's Forum",
             "band": "Friendship • Fellowship • Faith",
@@ -462,15 +450,20 @@
           }
         },
         {
-          "file": "src/pages/ministry-good-samaritan.html",
           "label": "MINISTRY: GOOD SAMARITAN MISSION",
-          "toc": "Good Samaritan Mission"
-        },
-        {
-          "label": "MINISTRY: GOOD SAMARITAN MISSION (MALAYALAM)",
+          "toc": "Good Samaritan Mission",
           "generated": {
             "title": "Good Samaritan Mission",
             "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/good-samaritan/group.jpg",
+                    "alt": "Good Samaritan Mission"
+                  }
+                ]
+              },
               {
                 "type": "heading",
                 "text": "ദൈവ നാമത്തിനു മഹത്വം"

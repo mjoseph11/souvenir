@@ -75,7 +75,7 @@ class R:
         return '<div class="org-pair">' + (fig + txt if ia else txt + fig) + '</div>'
 
     def el(self, x, i=None):
-        inner = self.para(x) if x['kind'] == 'p' else self.table(x)
+        inner = x['html'] if x['kind'] == 'raw' else self.para(x) if x['kind'] == 'p' else self.table(x)
         di = f' data-i="{i}"' if i is not None else ''
         return f'<div class="org-el"{di}>\n{inner}\n</div>'
 

@@ -616,8 +616,8 @@
 .org-caption { text-align: center; color: #666; font-style: italic; font-size: 8.5pt; margin: 0.03in 0 0.08in; }
 .org-photo { display: block; margin: 0.06in auto 0; max-width: 100%; border: 2px solid var(--gold); border-radius: 3px; object-fit: cover; }
 .org-pair { display: flex; gap: 0.2in; align-items: flex-start; margin: 0.04in 0 0.08in; }
-.org-pair .org-fig { flex: 0 0 2.7in; }
-.org-pair .org-fig img { width: 100%; height: auto; max-height: 2.4in; object-fit: cover; }
+.org-pair .org-fig { flex: 0 0 2.15in; }
+.org-pair .org-fig img { width: 100%; height: auto; max-height: 1.55in; object-fit: cover; }
 .org-pair .org-fig .org-caption { margin-bottom: 0; }
 .org-pair .org-text { flex: 1; }
 .org-table { width: 100%; border-collapse: collapse; font-size: 9.4pt; margin: 0.04in 0 0.06in; }
@@ -625,6 +625,18 @@
 .org-table td:first-child { color: var(--maroon); font-weight: bold; white-space: nowrap; width: 1.1in; }
 .org-table .role { color: #777; font-size: 8.4pt; }
 .org-el { display: flow-root; }
+/* MMVS leadership box at the top of the story (Manoj, 15 Nov) */
+.org-lead { display: flex; gap: 0.2in; align-items: flex-start; margin: 0 0 0.1in; }
+.org-lead-list { flex: 1 1 0; }
+.org-lead-list .org-h { margin-top: 0; }
+.org-lead-table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+.org-lead-table td { padding: 3px 2px; border-bottom: 1px solid rgba(201,162,39,0.3); }
+.org-lead-table td:first-child { font-weight: bold; color: var(--maroon); }
+.org-lead-table td:last-child { color: #666; text-align: right; }
+.org-lead-pics { flex: 0 0 3.7in; display: flex; gap: 0.15in; }
+.org-lead-pics figure { flex: 1 1 0; margin: 0; }
+.org-lead-pics .org-photo { width: 100%; margin-top: 0; }
+.org-lead-pics .org-caption { margin-bottom: 0; }
 /* A paragraph continued on the next page: the first part's last line stays justified. */
 .org-body.split-head { text-align-last: justify; }
 /* Full pages reach the footer: leftover space is shared out above each section start. */
