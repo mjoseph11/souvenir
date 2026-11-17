@@ -343,25 +343,52 @@
     {
       "id": "arun-philip",
       "name": "Arun Philip",
-      "title": "Arun Philip & Family",
+      "title": "Aniyan & Suja Philip & Family",
       "pages": [
         {
           "blocks": [
             {
-              "type": "photos",
-              "photos": [
+              "type": "half",
+              "grow": 1.3,
+              "blocks": [
                 {
-                  "src": "images/members/arun-philip/WhatsApp-Image-2026-08-31-at-9-08-59-PM.jpg"
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/arun-philip/family.jpg"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "closing"
+              "type": "half",
+              "dark": true,
+              "grow": 1,
+              "blocks": [
+                {
+                  "type": "memorial",
+                  "name": "Aniyan Philip"
+                },
+                {
+                  "type": "photos",
+                  "photos": [
+                    {
+                      "src": "images/members/arun-philip/father.jpg"
+                    }
+                  ]
+                },
+                {
+                  "type": "eternal",
+                  "text": "May His Memory Be Eternal"
+                }
+              ]
             }
           ]
         }
       ],
-      "sort": "Philip Arun "
+      "sort": "Philip Arun ",
+      "layoutNote": "Tracker (Susan Philip / Suja row) + Suchin 17 Nov: family picture on top (Suchin's copy with the ladder removed), Arun's father on the bottom \"in loving memory\"; title asked as \"Lt. Aniyan & Suja Philip & Family\"."
     },
     {
       "id": "arun-raju",
@@ -3498,7 +3525,7 @@
             },
             {
               "type": "names",
-              "text": "Prayers and Best Wishes from the Abraham Family"
+              "text": "Prayers and Best Wishes from the Abraham Family\nSumod, Silvi, Mary & Elizabeth"
             },
             {
               "type": "verse",
