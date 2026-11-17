@@ -78,7 +78,7 @@
         {
           "file": "src/pages/message-vicar.html",
           "label": "MESSAGE: GEEVARGHESE REMBAN",
-          "toc": "Message — Geevarghese Remban"
+          "toc": "Message — Very Rev. Geevarghese Remban"
         },
         {
           "file": "src/pages/message-vicar-eby.html",
@@ -161,14 +161,14 @@
         },
         {
           "label": "TRIBUTE: FR. SHIBU — CHOSEN TO SHEPHERD",
-          "toc": "Tribute — Geevarghese Remban, Metropolitan-elect",
+          "toc": "Tribute — Very Rev. Geevarghese Remban, Metropolitan-elect",
           "generated": {
             "title": "Chosen to Shepherd",
             "band": "Draft • Titles and dates to be confirmed with the Diocese before print",
             "blocks": [
               {
                 "type": "heading",
-                "text": "Geevarghese Remban"
+                "text": "Very Rev. Geevarghese Remban"
               },
               {
                 "type": "subheading",
@@ -250,14 +250,14 @@
         {
           "placeholder": {
             "title": "A Farewell Message",
-            "heading": "From Geevarghese Remban",
+            "heading": "From Very Rev. Geevarghese Remban",
             "note": "A farewell message to the parish after fifteen years as Vicar (2011–2026), to be requested from Achen."
           }
         },
         {
           "placeholder": {
             "title": "Fifteen Years in Pictures",
-            "heading": "Geevarghese Remban (Shibu Achen) with Our Parish",
+            "heading": "Very Rev. Geevarghese Remban (Shibu Achen) with Our Parish",
             "note": "Photographs from his years at SGMOC, the August 27, 2026 announcement and the parish felicitation. A high-resolution portrait is also needed — the current photo (170×241 px) is too small to print."
           }
         }
