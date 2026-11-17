@@ -292,23 +292,12 @@
   /* ══════════════════════════════════════
      MESSAGE PAGE
   ══════════════════════════════════════ */
+  /* Messages sit on the cream text wash like the Mission Board pages, no white card
+     (Manoj, 16 Nov 7:59-8:00 PM: "Mission pages look sharper"). */
   .message-box {
-    border: 1px solid var(--gold);
-    border-radius: 4px;
-    padding: 0.3in;
+    padding: 0;
     margin-bottom: 0.2in;
     position: relative;
-    background: white;
-  }
-  .message-box::before {
-    content: '\201C';
-    font-size: 72pt;
-    color: rgba(201,162,39,0.15);
-    position: absolute;
-    top: -0.1in;
-    left: 0.1in;
-    font-family: Georgia, serif;
-    line-height: 1;
   }
   .message-from {
     display: flex;
@@ -338,11 +327,15 @@
     font-size: 9pt;
     color: #666;
   }
+  /* the same body text as the article pages (.org-body) */
   .message-body {
-    font-size: 10pt;
-    line-height: 1.75;
+    font-size: 9.6pt;
+    line-height: 1.45;
     color: #333;
+    text-align: justify;
   }
+  /* a full-page letter: same size, a touch less leading so it stays on one page */
+  .message-box.tight .message-body { line-height: 1.36; }
   .message-sign {
     margin-top: 0.15in;
     text-align: right;
@@ -1834,9 +1827,9 @@
     </div>
   </div>
 
-  <div class="page-content" style="padding:0.18in 0.45in 0.2in;">
+  <div class="page-content" style="padding:0.2in 0.55in 0.2in;">
     <!-- Fr. Eby Paulose's message, "Golden Jubilee Message.docx" (Drive Writing/Vicar Message, 14 Nov). Text as written. One page (15 Nov). -->
-    <div class="message-box" style="padding:0.2in 0.26in;">
+    <div class="message-box tight">
       <div class="message-from">
         <img src="images/members/fr-eby-paulose/portrait.jpg" alt="Rev. Fr. Eby Paulose" style="width:0.85in;height:0.85in;border-radius:50%;object-fit:cover;object-position:center 15%;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
@@ -1844,7 +1837,7 @@
           <p>Vicar &amp; President<br>St. Gregorios Malankara Orthodox Church, Bensalem</p>
         </div>
       </div>
-      <p class="message-body" style="font-size:9pt;line-height:1.3;">
+      <p class="message-body">
         <em>&ldquo;Unless the Lord builds the house, those who build it labor in vain.&rdquo; &ndash; Psalm 127:1</em>
         <span style="display:block;height:5pt;"></span>
         Dearly Beloved in Christ,
@@ -1889,7 +1882,7 @@
     </div>
   </div>
 
-  <div class="page-content" style="padding:0.16in 0.45in 0.18in;">
+  <div class="page-content" style="padding:0.2in 0.55in 0.2in;">
     <div class="section-heading" style="margin-bottom:0.1in;">
       <h2>From the Trustee&rsquo;s Desk</h2>
       <div class="gold-rule"></div>
@@ -1897,14 +1890,14 @@
     </div>
 
     <!-- Thomas Ninan's note, "Treasurers Note.pdf" (Drive Writing/Editing, 3 Nov). Text as written; the PDF has no text layer, so it was transcribed from the page. One page (15 Nov). -->
-    <div class="message-box" style="padding:0.18in 0.26in;">
+    <div class="message-box tight">
       <div class="message-from">
         <div class="message-sender">
           <h3>Mr. Thomas Ninan</h3>
           <p>Trustee / Treasurer<br>St. Gregorios Malankara Orthodox Church, Bensalem</p>
         </div>
       </div>
-      <p class="message-body" style="font-size:9pt;line-height:1.3;">
+      <p class="message-body">
         <strong><em>A church looks one way from the pew and another way from the ledger.</em></strong>
         <span style="display:block;height:5pt;"></span>
         From the pew, you see the altar, the candles, and the faces you have known for years. From the ledger, you see the columns. Twenty dollars, fifty, a little more at Christmas, a little less in January, which is how it always goes. And then there is the name that appears every month for eleven years until, one spring, the donation stops.
@@ -1917,7 +1910,7 @@
         <span style="display:block;height:5pt;"></span>
         Those early years were hard. Money was often short, and there were disagreements serious enough to have ended the Church. Instead, those families prayed, forgave one another, and stayed together. Everything that followed was built on that choice.
       </p>
-      <p class="message-body" style="font-size:9pt;line-height:1.3;margin-top:5pt;">
+      <p class="message-body" style="margin-top:5pt;">
         Slowly, the handful grew, until other parishes in the Diocese began to look to us as an example. No one would call us perfect, but we learned how to endure. We were further shaped by Rev. Fr. Shibu Mathai, now bishop-elect. Achen brought us clarity, discipline, and renewed energy, teaching us to organize, plan, and build with purpose.
         <span style="display:block;height:5pt;"></span>
         I did not learn this history from a book; I grew up watching it happen. My father, K. T. Ninan, was the first Trustee of this Church, and I watched him record those early offerings by hand, long before computers or budgets, long before anyone imagined what this place would become. He was not trying to write history. He was simply being faithful with what had been entrusted to him. From a child running through the basement hall to the Trustee writing these words, I have seen nearly every season of this Church&rsquo;s life. Some of the hands that once carried those suitcases are no longer with us. I carry their memory, as I know many of you do.
@@ -1930,7 +1923,7 @@
         <span style="display:block;height:5pt;"></span>
         From the pew, you see beauty. From the ledger, you see faithfulness. Fifty years of grace. Fifty years of struggle. Fifty years of forgiveness. Fifty years of generosity. And above all, fifty years of God shaping a Church that is not perfect, but has stayed faithful.
       </p>
-      <p class="message-body" style="font-size:9pt;line-height:1.3;text-align:center;margin-top:0.08in;">
+      <p class="message-body" style="text-align:center;margin-top:0.08in;">
         <em>Two suitcases. Fifty years. The story continues, and the next chapter is ours to write.</em><br>
         <strong style="color:var(--gold);font-size:12pt;">My Church. My Responsibility.</strong>
       </p>
@@ -1956,10 +1949,10 @@
     </div>
   </div>
 
-  <div class="page-content" style="padding:0.16in 0.45in 0.18in;">
+  <div class="page-content" style="padding:0.14in 0.55in 0.12in;">
 
     <!-- Mathew Madathil Kurian's article, "Secretarys Article for GJ Souvenir.docx" (Drive, 26 Oct). Text as written. One page (15 Nov). -->
-    <div class="message-box" style="padding:0.18in 0.26in;">
+    <div class="message-box tight">
       <div class="message-from">
         <img src="images/committee/mathew-kurian.jpg" alt="Mathew Madathil Kurian" style="width:0.8in;height:0.8in;border-radius:50%;object-fit:cover;object-position:center 30%;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
@@ -1967,33 +1960,33 @@
           <p>Parish Secretary<br>St. Gregorios Malankara Orthodox Church, Bensalem</p>
         </div>
       </div>
-      <p class="message-body" style="text-align:center;font-size:9pt;line-height:1.3;">
+      <p class="message-body" style="text-align:center;">
         <strong style="color:var(--maroon);font-size:12.5pt;">A Legacy of Faith, A Home for Generations</strong><br>
         <em>Celebrating 50 Years of Faith, Family, and Fellowship</em><br>
         <em style="font-size:9.5pt;color:#555;display:inline-block;margin-bottom:0.08in;">&ldquo;One generation shall praise Your works to another, and shall declare Your mighty acts.&rdquo; &mdash; Psalm 145:4</em>
       </p>
-      <p class="message-body" style="font-size:9pt;line-height:1.3;margin-top:5pt;">
+      <p class="message-body" style="margin-top:5pt;">
         There are places we visit, places we remember, and places that become a part of who we are. For me, St. Gregorios Malankara Orthodox Church has always been more than a place of worship. It has been my spiritual home, a foundation of my faith, and a constant presence throughout my life.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         As we celebrate the Golden Jubilee of our beloved parish, I reflect with immense gratitude on the blessing of being part of its remarkable journey.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         I was once a young child growing up within this church, surrounded by the prayers, traditions, friendships, and love of our parish family. Today, that same church is nurturing my own children. To worship alongside my parents, my wife, and my children, with three generations sharing the same faith and fellowship, is a blessing beyond words.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         My sincere hope is that decades from now, my children will look back on their childhood in this parish with the same affection and gratitude I carry today. May they remember the friendships, the celebrations, the lessons of faith, and the people who made this church feel like home. Above all, may they recognize that they belong to something far greater than themselves, a living legacy built upon the prayers, sacrifices, and devotion of generations before them.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         Our fifty-year journey is a testament to what faith, unity, and selfless service can accomplish. From the vision of our founding members to the dedication of those who serve today, each generation has helped shape the parish we proudly call home.
       </p>
-      <p class="message-body" style="font-size:9pt;line-height:1.3;margin-top:5pt;">
+      <p class="message-body" style="margin-top:5pt;">
         We owe a profound debt of gratitude to our founding Vicar, Very Rev. K. Mathai Cor-Episcopos, whose spiritual vision and unwavering dedication laid the foundation for our parish. We are equally grateful for the devoted leadership of our former Vicar and Metropolitan-designate, Rev. Fr. Shibu Venad Mathai, whose years of pastoral care have left a lasting imprint on our community. As we enter this new chapter, we warmly embrace our current Vicar, Rev. Fr. Eby Paulose, and look forward with faith and hope to the journey ahead. Their spiritual leadership, together with the contributions of all clergy who have served our parish, remains an enduring blessing.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         Through God&rsquo;s abundant grace, St. Gregorios has become a model parish within our diocese and a beacon of hope in the wider community. Our greatest strength lies in our generous, hardworking parish families and our shared desire to live our faith through compassion, service, and love. We strive not only to be faithful members of our Church, but also responsible citizens and a meaningful presence in the world around us.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         Serving as Parish Secretary during this historic Golden Jubilee has been one of the greatest honors and blessings of my life. To serve the very parish that helped raise me, at such a momentous occasion in its history, is a privilege I will cherish forever. This experience has deepened my appreciation for the countless individuals whose quiet sacrifices and tireless efforts sustain our parish.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         As we celebrate fifty years, let us remember that our Golden Jubilee is not simply a celebration of our past, but a responsibility to our future. The greatest tribute we can offer those who came before us is to ensure that the faith, unity, and love they cultivated continue to flourish for generations to come.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         To our founding families, spiritual fathers, past and present leaders, volunteers, and every parish member who has contributed to this extraordinary journey, I extend my heartfelt gratitude.
-        <span style="display:block;height:4pt;"></span>
+        <span style="display:block;height:2pt;"></span>
         May our parish continue to be a place where faith is nurtured, families are strengthened, and generations find a spiritual home.
       </p>
       <p class="message-sign">
@@ -2285,14 +2278,14 @@
 
     <!-- Fr. K. P. Varghese's message, "Souvenir Article - K. P. Varghese Achen.pdf" (Drive, 1 Oct). Text as written. Portrait cropped from the John Mathew family photo until a proper one arrives (12 Nov). -->
     <div class="message-box">
-      <div class="message-from">
-        <img src="images/clergy-kp-varghese.jpg" alt="Rev. Fr. K. P. Varghese" style="width:1.25in;height:1.25in;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--gold);flex-shrink:0;">
+      <div class="message-from" style="flex-direction:column;text-align:center;gap:0.1in;margin:0.15in 0 0.3in;">
+        <img src="images/clergy-kp-varghese.jpg" alt="Rev. Fr. K. P. Varghese" style="width:2.3in;height:2.3in;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
           <h3>Rev. Fr. K. P. Varghese</h3>
           <p>St. Gregorios Malankara Orthodox Church, Bensalem</p>
         </div>
       </div>
-      <p class="message-body" style="font-size:11.3pt;line-height:1.58;">
+      <p class="message-body" style="line-height:1.85;">
         It is with profound joy and gratitude that I write to congratulate St. Gregorios Malankara Orthodox Church of Bensalem, on the joyous occasion of its Golden Jubilee. This house of worship stands as a glorious testament to God's presence and a beautiful expression of His love for the community.
         <br><br>
         While I was the Vicar of St. Thomas Indian Orthodox Church of Baltimore, I was familiar with this Church. My connection with this parish deepened when our daughter, Ceena Mathew, began her service as Associate Minister in 2023. Following my retirement as Vicar of the Baltimore church, my visits became more frequent. Upon relocating to Pennsylvania in 2024, I was blessed to become an active participant in the life of this church. The Vicar Fr. Shibu Mathai and the parish community welcomed us with open arms—a warmth that continues to sustain us till today. I am particularly thankful to the church for lovingly honoring my own Golden Jubilee of Priestly Ordination on November 1, 2025.
@@ -2338,16 +2331,16 @@
           <p>Senior Orthodox Priest<br>Senior Executive, United States Government, Washington, DC</p>
         </div>
       </div>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">In thirty-nine years of priesthood, no parishioner has ever sat across from me and listed what they expect of me. No one hands a new priest a contract. No one reads the terms aloud at his ordination. Yet the terms are there. They are written in the eyes of the widow who waits by the door after the Holy Qurbana, in the silence of the young man who lingers in the last pew, in the voice of the mother who calls late at night and apologizes for calling at all. The faithful carry expectations of their spiritual leaders that they rarely voice but always feel, and by those expectations they quietly and honestly measure whether the shepherd can be trusted.</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">I have come to believe that most departures from a church, most cooling of faith, and most slow drifting away begin not with a quarrel over doctrine but with one of these unspoken promises being broken. Not shouted about. Noted and remembered. So let me try to say aloud what the faithful so seldom say.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">In thirty-nine years of priesthood, no parishioner has ever sat across from me and listed what they expect of me. No one hands a new priest a contract. No one reads the terms aloud at his ordination. Yet the terms are there. They are written in the eyes of the widow who waits by the door after the Holy Qurbana, in the silence of the young man who lingers in the last pew, in the voice of the mother who calls late at night and apologizes for calling at all. The faithful carry expectations of their spiritual leaders that they rarely voice but always feel, and by those expectations they quietly and honestly measure whether the shepherd can be trusted.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">I have come to believe that most departures from a church, most cooling of faith, and most slow drifting away begin not with a quarrel over doctrine but with one of these unspoken promises being broken. Not shouted about. Noted and remembered. So let me try to say aloud what the faithful so seldom say.</p>
       <h4 style="color:var(--maroon);font-size:11pt;margin:0.12in 0 0.04in;">The First Expectation: That You Will Be There</h4>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">Our Lord called Himself the Good Shepherd who knows His sheep by name and whose sheep know His voice (John 10:14). Notice the order. Knowing comes before leading. The faithful do not first ask whether their priest is eloquent, learned, or gifted in administration. They ask, without words, &ldquo;Will he come when I need him?&rdquo;</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">Every priest knows the call that comes from a hospital corridor. Every priest knows the funeral that disrupts a carefully planned week. In those hours, a sermon is not required. Presence is. I have learned that people forget most of what I preach, but they never forget who stood beside the bed when their father drew his last breath. The ministry of presence is not a small part of the priesthood. It may well be the largest. When a shepherd is too busy to come, the flock rarely complains. They conclude they were never truly known, and people do not stay long where they are not known.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">Our Lord called Himself the Good Shepherd who knows His sheep by name and whose sheep know His voice (John 10:14). Notice the order. Knowing comes before leading. The faithful do not first ask whether their priest is eloquent, learned, or gifted in administration. They ask, without words, &ldquo;Will he come when I need him?&rdquo;</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">Every priest knows the call that comes from a hospital corridor. Every priest knows the funeral that disrupts a carefully planned week. In those hours, a sermon is not required. Presence is. I have learned that people forget most of what I preach, but they never forget who stood beside the bed when their father drew his last breath. The ministry of presence is not a small part of the priesthood. It may well be the largest. When a shepherd is too busy to come, the flock rarely complains. They conclude they were never truly known, and people do not stay long where they are not known.</p>
       <h4 style="color:var(--maroon);font-size:11pt;margin:0.12in 0 0.04in;">The Second Expectation: That You Will Live What You Preach</h4>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">St. Peter, writing to the elders of the early Church, urged them to shepherd the flock not as lords over those in their charge but as examples to the flock (1 Peter 5:3). St. Paul told young Timothy to be an example to the believers in word, conduct, love, spirit, faith, and purity (1 Timothy 4:12).</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">The faithful listen to our homilies, but they watch our lives. They notice how we speak to the altar server who made a mistake. They notice whether we are generous or grasping, whether we hold grudges or forgive, and whether we kneel in prayer when no one is watching. A child in the third row may not remember the theology of the Incarnation, but he will remember whether his priest was kind.</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">St. John Chrysostom, who wrote so beautifully about the dignity of the priesthood, warned that a priest&rsquo;s faults cannot remain hidden because he stands on a height where every soul can see him. It is a frightening and holy truth. Our integrity is never a private matter. It is the soil in which the faith of others either grows or withers.</p>
-      <p class="message-body" style="text-align:right;font-size:9pt;color:#888;"><em>(continued on the next page)</em></p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">St. Peter, writing to the elders of the early Church, urged them to shepherd the flock not as lords over those in their charge but as examples to the flock (1 Peter 5:3). St. Paul told young Timothy to be an example to the believers in word, conduct, love, spirit, faith, and purity (1 Timothy 4:12).</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">The faithful listen to our homilies, but they watch our lives. They notice how we speak to the altar server who made a mistake. They notice whether we are generous or grasping, whether we hold grudges or forgive, and whether we kneel in prayer when no one is watching. A child in the third row may not remember the theology of the Incarnation, but he will remember whether his priest was kind.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">St. John Chrysostom, who wrote so beautifully about the dignity of the priesthood, warned that a priest&rsquo;s faults cannot remain hidden because he stands on a height where every soul can see him. It is a frightening and holy truth. Our integrity is never a private matter. It is the soil in which the faith of others either grows or withers.</p>
+      <p class="message-body" style="text-align:right;color:#888;"><em>(continued on the next page)</em></p>
     </div>
   </div>
   <div class="page-footer">
@@ -2375,18 +2368,18 @@
 
     <div class="message-box">
       <h4 style="color:var(--maroon);font-size:11pt;margin:0.12in 0 0.04in;">The Third Expectation: That You Will Point Beyond Yourself</h4>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">This one is subtle and perhaps the most dangerous to neglect. The faithful, often without realizing it, hope that their shepherd will lead them somewhere they could never reach alone. Not to a larger building or a busier calendar, but closer to God.</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">St. John the Baptist understood this perfectly. When his own disciples began following Jesus, he did not grieve. He said, &ldquo;He must increase, but I must decrease&rdquo; (John 3:30). A true shepherd measures success not by how many people admire him, but by how many he has handed over to Christ.</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">There is a quiet temptation in every ministry to become the center: to be needed, to be praised, to gather a following more attached to the priest than to the Lord. When that happens, the day the priest is transferred, falls ill, or disappoints, the people&rsquo;s faith collapses with him. But when a shepherd has always pointed beyond himself, the flock remains standing because they were never leaning on him in the first place.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">This one is subtle and perhaps the most dangerous to neglect. The faithful, often without realizing it, hope that their shepherd will lead them somewhere they could never reach alone. Not to a larger building or a busier calendar, but closer to God.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">St. John the Baptist understood this perfectly. When his own disciples began following Jesus, he did not grieve. He said, &ldquo;He must increase, but I must decrease&rdquo; (John 3:30). A true shepherd measures success not by how many people admire him, but by how many he has handed over to Christ.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">There is a quiet temptation in every ministry to become the center: to be needed, to be praised, to gather a following more attached to the priest than to the Lord. When that happens, the day the priest is transferred, falls ill, or disappoints, the people&rsquo;s faith collapses with him. But when a shepherd has always pointed beyond himself, the flock remains standing because they were never leaning on him in the first place.</p>
       <h4 style="color:var(--maroon);font-size:11pt;margin:0.12in 0 0.04in;">The Fourth Expectation: That You Will Tell the Truth in Love</h4>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">People do not want a shepherd who only comforts, nor one who only corrects. They want one who speaks the truth in love (Ephesians 4:15). They want the hard thing said gently and the gentle thing said honestly. A priest who flatters is soon distrusted. A priest who wounds is soon avoided. Between the two lies the narrow road of the true pastor, and it is walked only with much prayer.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">People do not want a shepherd who only comforts, nor one who only corrects. They want one who speaks the truth in love (Ephesians 4:15). They want the hard thing said gently and the gentle thing said honestly. A priest who flatters is soon distrusted. A priest who wounds is soon avoided. Between the two lies the narrow road of the true pastor, and it is walked only with much prayer.</p>
       <h4 style="color:var(--maroon);font-size:11pt;margin:0.12in 0 0.04in;">When the Shepherd Fails</h4>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">I would be dishonest if I pretended that any of us kept these promises perfectly. I certainly have not. There were calls I returned too late, words I spoke too sharply, and seasons when I was more tired than faithful.</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">Here, the Gospel holds out great mercy. Peter denied his Lord three times. Yet on the shore of Galilee, the risen Christ asked him three times, &ldquo;Do you love Me?&rdquo; and gave him the same charge three times: &ldquo;Feed My sheep&rdquo; (John 21:15&ndash;17). The commission was not withdrawn because of failure. It was renewed through repentance and love. That is the hope of every honest shepherd.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">I would be dishonest if I pretended that any of us kept these promises perfectly. I certainly have not. There were calls I returned too late, words I spoke too sharply, and seasons when I was more tired than faithful.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">Here, the Gospel holds out great mercy. Peter denied his Lord three times. Yet on the shore of Galilee, the risen Christ asked him three times, &ldquo;Do you love Me?&rdquo; and gave him the same charge three times: &ldquo;Feed My sheep&rdquo; (John 21:15&ndash;17). The commission was not withdrawn because of failure. It was renewed through repentance and love. That is the hope of every honest shepherd.</p>
       <h4 style="color:var(--maroon);font-size:11pt;margin:0.12in 0 0.04in;">The Shepherd Is Also a Sheep</h4>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">Perhaps the deepest truth I have learned over nearly four decades at the holy altar is this: I can keep none of these promises by my own strength. I cannot be everywhere. I cannot lead anyone to God unless He first leads me. The priest is a shepherd, yes, but he is also a sheep in the flock of the one Chief Shepherd (1 Peter 5:4). We can give only what we ourselves receive in prayer, in repentance, in the Holy Mysteries, and at the feet of Christ.</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">I offer a simple practice to my brother priests and to all who lead in the Church. Now and then, sit quietly with the names of those entrusted to you and ask three honest questions. Have they seen me present? Have they seen Christ in how I live? Am I leading them toward Him or toward me?</p>
-      <p class="message-body" style="font-size:9.5pt;line-height:1.4;margin-bottom:0.07in;">We will not always like the answers, but asking is itself an act of faithfulness. And the Lord, who called us knowing each of our weaknesses, will supply all that we lack.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">Perhaps the deepest truth I have learned over nearly four decades at the holy altar is this: I can keep none of these promises by my own strength. I cannot be everywhere. I cannot lead anyone to God unless He first leads me. The priest is a shepherd, yes, but he is also a sheep in the flock of the one Chief Shepherd (1 Peter 5:4). We can give only what we ourselves receive in prayer, in repentance, in the Holy Mysteries, and at the feet of Christ.</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">I offer a simple practice to my brother priests and to all who lead in the Church. Now and then, sit quietly with the names of those entrusted to you and ask three honest questions. Have they seen me present? Have they seen Christ in how I live? Am I leading them toward Him or toward me?</p>
+      <p class="message-body" style="margin-bottom:0.13in;line-height:1.55;">We will not always like the answers, but asking is itself an act of faithfulness. And the Lord, who called us knowing each of our weaknesses, will supply all that we lack.</p>
       <p class="message-sign">
         <strong>Fr. Alexander James Kurien</strong>
       </p>
@@ -2418,13 +2411,13 @@
     <!-- Ceena Mathew's article, "Ceena Mathew.docx" (Drive Writing/Editing, 31 Oct). Text as written. Portrait cropped from her family photo until a proper one arrives (12 Nov). -->
     <div class="message-box">
       <div class="message-from">
-        <img src="images/ceena-mathew.jpg" alt="Ceena Mathew" style="width:1in;height:1in;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--gold);flex-shrink:0;">
+        <img src="images/ceena-mathew.jpg" alt="Ceena Mathew" style="width:1.3in;height:1.3in;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--gold);flex-shrink:0;">
         <div class="message-sender">
           <h3>Mrs. Ceena Mathew</h3>
           <p>Associate Minister<br>St. Gregorios Malankara Orthodox Church</p>
         </div>
       </div>
-      <p class="message-body" style="font-size:9.3pt;line-height:1.38;">
+      <p class="message-body" style="line-height:1.55;">
         There are moments in the life of a church when we are invited to pause—not merely to count the years, but to remember the prayers that sustained us, the hands that labored, and the generations that carried the faith forward. A Jubilee is such a moment.
         <br><br>
         In Leviticus 25, God established the Jubilee as a sacred time of restoration, freedom, and new beginnings. At its heart was this profound reminder: “The land is Mine; for you are strangers and sojourners with Me” (Leviticus 25:23). Jubilee reminds us that everything we possess is entrusted to us by God, and every blessing ultimately comes from Him. The biblical Jubilee was more than a festival. It was a declaration of God's sovereignty, a restoration of relationships, and a reminder that His people were called to live with justice, compassion, and trust in Him.
@@ -2625,8 +2618,8 @@
 
       <!-- Left: narrative -->
       <div>
-        <h3 style="color:var(--maroon);font-size:12pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.1in;">Our Story</h3>
-        <p style="font-size:9.8pt;line-height:1.75;color:#333;text-align:justify;">
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.1in;">Our Story</h3>
+        <p style="font-size:9.6pt;line-height:1.8;color:#333;text-align:justify;">
           Our community traces its origins to <strong>1962</strong>, when Fr. K. M. Simon celebrated
           the first Malayalam service in Dr. T. V. Philip's apartment on Pine Street, Philadelphia.
           After fourteen years of ecumenical Sunday worship, the parish was officially founded in
@@ -2634,20 +2627,20 @@
           <em>St. Thomas Indian Orthodox Church</em>, with the Holy Qurbana celebrated at the
           Church of the Savior Cathedral chapel, 38th &amp; Chestnut Streets.
         </p>
-        <p style="font-size:9.8pt;line-height:1.75;color:#333;text-align:justify;margin-top:0.08in;">
+        <p style="font-size:9.6pt;line-height:1.8;color:#333;text-align:justify;margin-top:0.08in;">
           In <strong>1984</strong>, following parish reorganization, our community was reconstituted
           as <em>St. Gregorios Malankara Orthodox Church</em> &mdash; in honor of St. Geevarghese
           Gregorios of Parumala, the first Indian saint of the Orthodox Church. Fr. K. Mathai
           continued as Vicar.
         </p>
-        <p style="font-size:9.8pt;line-height:1.75;color:#333;text-align:justify;margin-top:0.08in;">
+        <p style="font-size:9.6pt;line-height:1.8;color:#333;text-align:justify;margin-top:0.08in;">
           A 1994 attempt to build on Verree Road was prevented by zoning. In <strong>1995</strong>
           the parish purchased its first permanent home at 7721 Torresdale Avenue, Philadelphia.
           Land at <strong>4136 Hulmeville Road, Bensalem</strong> was acquired in <strong>2005</strong>
           (with adjacent property added in 2006); the new church was first occupied on
           <strong>Christmas Day 2008</strong> and consecrated <strong>May 22&ndash;23, 2009</strong>.
         </p>
-        <p style="font-size:9.8pt;line-height:1.75;color:#333;text-align:justify;margin-top:0.08in;">
+        <p style="font-size:9.6pt;line-height:1.8;color:#333;text-align:justify;margin-top:0.08in;">
           In <strong>2011</strong>, our parish hosted the historic Metropolitan Enthronement of His Grace Zachariah Mar Nicholovos,
           attended by over one thousand faithful. Rev. Fr. Shibu Venad Mathai was appointed Vicar that same year, continuing to lead
           our vibrant community.
@@ -2665,7 +2658,7 @@
         <!-- vertical gold line -->
         <div style="position:absolute;left:0.18in;top:0.05in;bottom:0.05in;width:2px;background:linear-gradient(to bottom,transparent,var(--gold) 5%,var(--gold) 95%,transparent);"></div>
 
-        <h3 style="color:var(--maroon);font-size:12pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.12in;margin-left:-0.45in;padding-left:0.45in;">Milestones</h3>
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.12in;margin-left:-0.45in;padding-left:0.45in;">Milestones</h3>
 
         <!-- Timeline items -->
         <style>
@@ -2784,7 +2777,7 @@
       <p>The faithful who answered the first call</p>
     </div>
 
-    <p style="font-size:10.5pt;line-height:1.75;color:#333;text-align:center;max-width:6.2in;margin:0 auto 0.18in;">
+    <p style="font-size:9.6pt;line-height:1.9;color:#333;text-align:center;max-width:6.2in;margin:0 auto 0.18in;">
       In the earliest years of our parish, a small circle of families gathered around
       <strong>V. Rev. K. Mathai Cor Episcopos</strong> to plant the first Malankara Orthodox
       community in greater Philadelphia. We honor the charter members who joined between
@@ -2792,60 +2785,60 @@
       five decades of parish life have been built.
     </p>
 
-    <div style="columns:2;column-gap:0.3in;font-size:10.5pt;line-height:1.75;color:#333;">
+    <div style="columns:2;column-gap:0.3in;font-size:9.6pt;line-height:1.9;color:#333;">
 
       <div style="break-inside:avoid;margin-bottom:0.2in;">
-        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1976</h3>
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1976</h3>
         <ul style="list-style:none;padding-left:0;margin:0;">
-          <li style="padding:2px 0;">Mariamma Mathai Kochamma <em style="color:#777;">&mdash; w/o Late V. Rev. K. Mathai Cor Episcopa</em></li>
-          <li style="padding:2px 0;">Mariamma Varki Kochamma <em style="color:#777;">&mdash; w/o Late Fr. Paul Varki</em></li>
-          <li style="padding:2px 0;">Aleyamma Mani Kochamma <em style="color:#777;">&mdash; w/o Late Dn. Markose Mani</em></li>
-          <li style="padding:2px 0;">Late Saramma Mathai <em style="color:#777;">(Punoose Mathai, Jayamole)</em></li>
-          <li style="padding:2px 0;">Annamma Kurian <em style="color:#777;">&mdash; w/o Late Kurien Mathew</em></li>
-          <li style="padding:2px 0;">Susy Thomas <em style="color:#777;">&mdash; w/o Late V. C. Thomas</em></li>
-          <li style="padding:2px 0;">Korah T. Mani &amp; Sobha</li>
-          <li style="padding:2px 0;">Dr. Koshy Poovathoor &amp; Baby</li>
-          <li style="padding:2px 0;">Paul C. Mathai &amp; Joan</li>
-          <li style="padding:2px 0;">Raju M. Varghese &amp; Alice</li>
-          <li style="padding:2px 0;">V. S. Mathew &amp; Rachel <em style="color:#777;">(Uncle came 1977)</em></li>
-          <li style="padding:2px 0;">T. V. Philip <em style="color:#777;">(Georgee &amp; Neena)</em></li>
-          <li style="padding:2px 0;">Thomas Ninan / K. T. Ninan &amp; Saramma</li>
-          <li style="padding:2px 0;">Mathai Mammen</li>
-          <li style="padding:2px 0;">Dr. Thomas Mammen</li>
-          <li style="padding:2px 0;">Geevarughese Mathai <em style="color:#777;">(Uncle came 1977)</em></li>
+          <li style="padding:3.5px 0;">Mariamma Mathai Kochamma <em style="color:#777;">&mdash; w/o Late V. Rev. K. Mathai Cor Episcopa</em></li>
+          <li style="padding:3.5px 0;">Mariamma Varki Kochamma <em style="color:#777;">&mdash; w/o Late Fr. Paul Varki</em></li>
+          <li style="padding:3.5px 0;">Aleyamma Mani Kochamma <em style="color:#777;">&mdash; w/o Late Dn. Markose Mani</em></li>
+          <li style="padding:3.5px 0;">Late Saramma Mathai <em style="color:#777;">(Punoose Mathai, Jayamole)</em></li>
+          <li style="padding:3.5px 0;">Annamma Kurian <em style="color:#777;">&mdash; w/o Late Kurien Mathew</em></li>
+          <li style="padding:3.5px 0;">Susy Thomas <em style="color:#777;">&mdash; w/o Late V. C. Thomas</em></li>
+          <li style="padding:3.5px 0;">Korah T. Mani &amp; Sobha</li>
+          <li style="padding:3.5px 0;">Dr. Koshy Poovathoor &amp; Baby</li>
+          <li style="padding:3.5px 0;">Paul C. Mathai &amp; Joan</li>
+          <li style="padding:3.5px 0;">Raju M. Varghese &amp; Alice</li>
+          <li style="padding:3.5px 0;">V. S. Mathew &amp; Rachel <em style="color:#777;">(Uncle came 1977)</em></li>
+          <li style="padding:3.5px 0;">T. V. Philip <em style="color:#777;">(Georgee &amp; Neena)</em></li>
+          <li style="padding:3.5px 0;">Thomas Ninan / K. T. Ninan &amp; Saramma</li>
+          <li style="padding:3.5px 0;">Mathai Mammen</li>
+          <li style="padding:3.5px 0;">Dr. Thomas Mammen</li>
+          <li style="padding:3.5px 0;">Geevarughese Mathai <em style="color:#777;">(Uncle came 1977)</em></li>
         </ul>
       </div>
 
       <div style="break-inside:avoid;margin-bottom:0.2in;">
-        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1977</h3>
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1977</h3>
         <ul style="list-style:none;padding-left:0;margin:0;">
-          <li style="padding:2px 0;">Abraham O. Abraham</li>
+          <li style="padding:3.5px 0;">Abraham O. Abraham</li>
         </ul>
       </div>
 
       <div style="break-inside:avoid;margin-bottom:0.2in;">
-        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1978</h3>
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1978</h3>
         <ul style="list-style:none;padding-left:0;margin:0;">
-          <li style="padding:2px 0;">Thomas Paul &amp; Elyamma</li>
-          <li style="padding:2px 0;">Joseph Abraham <em style="color:#777;">(Aunty came 1974, CSI)</em></li>
-          <li style="padding:2px 0;">Kuruvilla Kurian &amp; Susy</li>
-          <li style="padding:2px 0;">Ninan Parel &amp; Mariamma <em style="color:#777;">(Aunty came earlier)</em></li>
-          <li style="padding:2px 0;">Santhosh Ninan</li>
+          <li style="padding:3.5px 0;">Thomas Paul &amp; Elyamma</li>
+          <li style="padding:3.5px 0;">Joseph Abraham <em style="color:#777;">(Aunty came 1974, CSI)</em></li>
+          <li style="padding:3.5px 0;">Kuruvilla Kurian &amp; Susy</li>
+          <li style="padding:3.5px 0;">Ninan Parel &amp; Mariamma <em style="color:#777;">(Aunty came earlier)</em></li>
+          <li style="padding:3.5px 0;">Santhosh Ninan</li>
         </ul>
       </div>
 
       <div style="break-inside:avoid;margin-bottom:0.2in;">
-        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1979&ndash;1980</h3>
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">1979&ndash;1980</h3>
         <ul style="list-style:none;padding-left:0;margin:0;">
-          <li style="padding:2px 0;">George M. Mathew <em style="color:#777;">(1979)</em></li>
-          <li style="padding:2px 0;">Chandy Varghese, Collegeville <em style="color:#777;">(Aunty 1979, Uncle 1980)</em></li>
+          <li style="padding:3.5px 0;">George M. Mathew <em style="color:#777;">(1979)</em></li>
+          <li style="padding:3.5px 0;">Chandy Varghese, Collegeville <em style="color:#777;">(Aunty 1979, Uncle 1980)</em></li>
         </ul>
       </div>
 
       <div style="break-inside:avoid;margin-bottom:0.2in;">
-        <h3 style="color:var(--maroon);font-size:11pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">Children of the Founding Clergy</h3>
+        <h3 style="color:var(--maroon);font-size:11.5pt;border-bottom:1px solid var(--gold);padding-bottom:3px;margin-bottom:0.08in;">Children of the Founding Clergy</h3>
         <ul style="list-style:none;padding-left:0;margin:0;">
-          <li style="padding:2px 0;">Paul C. Varki &amp; Elizabeth <em style="color:#777;">(Varki Achen's children)</em></li>
+          <li style="padding:3.5px 0;">Paul C. Varki &amp; Elizabeth <em style="color:#777;">(Varki Achen's children)</em></li>
         </ul>
       </div>
 

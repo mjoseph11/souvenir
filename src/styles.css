@@ -284,23 +284,12 @@
   /* ══════════════════════════════════════
      MESSAGE PAGE
   ══════════════════════════════════════ */
+  /* Messages sit on the cream text wash like the Mission Board pages, no white card
+     (Manoj, 16 Nov 7:59-8:00 PM: "Mission pages look sharper"). */
   .message-box {
-    border: 1px solid var(--gold);
-    border-radius: 4px;
-    padding: 0.3in;
+    padding: 0;
     margin-bottom: 0.2in;
     position: relative;
-    background: white;
-  }
-  .message-box::before {
-    content: '\201C';
-    font-size: 72pt;
-    color: rgba(201,162,39,0.15);
-    position: absolute;
-    top: -0.1in;
-    left: 0.1in;
-    font-family: Georgia, serif;
-    line-height: 1;
   }
   .message-from {
     display: flex;
@@ -330,11 +319,15 @@
     font-size: 9pt;
     color: #666;
   }
+  /* the same body text as the article pages (.org-body) */
   .message-body {
-    font-size: 10pt;
-    line-height: 1.75;
+    font-size: 9.6pt;
+    line-height: 1.45;
     color: #333;
+    text-align: justify;
   }
+  /* a full-page letter: same size, a touch less leading so it stays on one page */
+  .message-box.tight .message-body { line-height: 1.36; }
   .message-sign {
     margin-top: 0.15in;
     text-align: right;
