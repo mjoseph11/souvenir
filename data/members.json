@@ -259,7 +259,9 @@
         }
       ],
       "sort": "Abraham A. O. ",
-      "layoutNote": "Manoj, 16 Nov 6:21 PM: new picture (Drive Abraham O. Abraham/IMG-20261116-WA0007.jpg, now pic-3) replaces the top one (pic-1)."
+      "layoutNote": "Manoj, 16 Nov 6:21 PM: new picture (Drive Abraham O. Abraham/IMG-20261116-WA0007.jpg, now pic-3) replaces the top one (pic-1). Manoj 7:46 PM (\"Abi abraham can you make bottom picture little bigger\"): photoScale 0.9 on the top photo, printMax 4.0 for the bottom print.",
+      "photoScale": 0.9,
+      "printMax": 4.0
     },
     {
       "id": "ajay-peter",

@@ -333,7 +333,8 @@ function styledBody(m, pg) {
       // "scale" on a print: that one taller than the rest (e.g. 1.25)
       const sc = rs.map((p) => Number(p.scale) > 0 ? Number(p.scale) : 1);
       const smax = Math.max(...sc);
-      const h = Math.min(maxH / smax, 3.4 / smax, (rowW - gap * (as.length - 1)) / as.reduce((s, x, i) => s + x * sc[i], 0));
+      // "printMax": a taller cap than 3.4in for the prints (A. O. Abraham, Manoj 16 Nov: bottom picture bigger)
+      const h = Math.min(maxH / smax, (Number(m.printMax) || 3.4) / smax, (rowW - gap * (as.length - 1)) / as.reduce((s, x, i) => s + x * sc[i], 0));
       const widths = as.map((x, i) => h * sc[i] * x);
       const total = widths.reduce((s, x) => s + x, 0) + gap * (as.length - 1);
       let x = (W - total) / 2;
