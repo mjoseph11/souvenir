@@ -459,7 +459,7 @@ function memberPages(m) {
             m.fade === 'narrow' ? 'fade-narrow' : m.fade === false ? 'fade-none' : ''].filter(Boolean).join(' ') || undefined,
     });
     const part = m.pages.length > 1 ? ` (${i + 1} of ${m.pages.length})` : '';
-    return { html, label: `MEMBER PAGE: ${m.name}${part}`, member: i === 0 ? m : null };
+    return { html, label: `MEMBER PAGE: ${m.name}${part}`, member: i === 0 ? m : null, span: i === 0 ? m.pages.length : 0 };
   });
 }
 
@@ -579,7 +579,9 @@ function renderIndexPage(i) {
     .map((l) => {
       if (l.heading) return `<p class="m-index-heading">${esc(l.heading)}</p>`;
       if (l.section) return `<p class="m-index-section">${esc(l.section)}</p>`;
-      return `<p class="m-index-row"><span>${esc(l.title)}</span><span>${l.ref.number}</span></p>`;
+      // a family on two or more pages shows the range, e.g. 123–124 (Molsey, 17 Nov)
+      const no = l.ref.span > 1 ? `${l.ref.number}–${l.ref.number + l.ref.span - 1}` : l.ref.number;
+      return `<p class="m-index-row"><span>${esc(l.title)}</span><span>${no}</span></p>`;
     })
     .join('\n      ');
   const body = `    <div class="m-index">\n      ${rows}\n    </div>`;
