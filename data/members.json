@@ -67,6 +67,7 @@
     },
     {
       "id": "fr-alexander-kurien",
+      "clergyOrder": 2,
       "name": "Fr. Alexander Kurien",
       "partial": "src/pages/members/fr-alexander-kurien.html",
       "approved": true,
@@ -2213,6 +2214,7 @@
     },
     {
       "id": "paul-varki-memorial",
+      "clergyOrder": 5,
       "name": "Rev. Fr. Dr. Paul Varki",
       "title": "Rev. Fr. Dr. Paul Varki",
       "pages": [
@@ -2296,6 +2298,7 @@
     },
     {
       "id": "cherian-mani",
+      "clergyOrder": 6,
       "name": "Cherian Mani",
       "title": "Cherian Mani & Family",
       "sort": "Mani Cherian ",
@@ -3687,6 +3690,7 @@
     },
     {
       "id": "kaleeckal-family",
+      "clergyOrder": 4,
       "name": "Kaleeckal Family",
       "title": "The Kaleeckal Family",
       "sort": "Kaleeckal ",
@@ -4039,6 +4043,7 @@
     },
     {
       "id": "john-mathew",
+      "clergyOrder": 3,
       "name": "Dr. Mathew John",
       "title": "Dr. Mathew John & Family",
       "sort": "John Mathew Dr. ",
@@ -4301,6 +4306,7 @@
     },
     {
       "id": "fr-eby-paulose",
+      "clergyOrder": 1,
       "name": "Rev. Fr. Eby Paulose",
       "title": "Rev. Fr. Eby Paulose & Family",
       "band": "",

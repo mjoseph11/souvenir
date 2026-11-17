@@ -501,7 +501,10 @@ const outline = readJSON('data/outline.json');
 const members = readJSON('data/members.json').members;
 const ads = readJSON('data/sponsors.json').ads;
 
-members.sort((a, b) => (a.sort || a.name).localeCompare(b.sort || b.name, 'en', { sensitivity: 'base' }));
+// "clergyOrder": clergy families open the member section in this order, then A–Z
+// (Manoj, 17 Nov: "Clergy family first then rest of the members", as in past souvenirs).
+const co = (m) => (Number(m.clergyOrder) > 0 ? Number(m.clergyOrder) : Infinity);
+members.sort((a, b) => co(a) - co(b) || (a.sort || a.name).localeCompare(b.sort || b.name, 'en', { sensitivity: 'base' }));
 const ids = new Set();
 for (const m of members) {
   if (ids.has(m.id)) throw new Error(`duplicate member id ${m.id}`);
@@ -551,7 +554,11 @@ for (const section of outline.sections) {
 }
 
 // Index: contents + families A–Z. Its size is known before numbering because it's all line counts.
-const memberRefs = pages.filter((p) => p.member);
+// the index stays A–Z even though clergy families open the member section
+const skey = (m) => m.sort || m.name;
+const memberRefs = pages.filter((p) => p.member).map((p, i) => [p, i])
+  .sort(([a, i], [b, j]) => skey(a.member).localeCompare(skey(b.member), 'en', { sensitivity: 'base' }) || i - j)
+  .map(([p]) => p);
 const indexLines = [
   { heading: 'Contents' },
   ...contents,
