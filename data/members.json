@@ -238,7 +238,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/abraham-o-abraham/pic-1.jpg"
+                  "src": "images/members/abraham-o-abraham/pic-3.jpg"
                 },
                 {
                   "src": "images/members/abraham-o-abraham/pic-2.jpg"
@@ -258,7 +258,8 @@
           ]
         }
       ],
-      "sort": "Abraham A. O. "
+      "sort": "Abraham A. O. ",
+      "layoutNote": "Manoj, 16 Nov 6:21 PM: new picture (Drive Abraham O. Abraham/IMG-20261116-WA0007.jpg, now pic-3) replaces the top one (pic-1)."
     },
     {
       "id": "ajay-peter",
@@ -2613,11 +2614,12 @@
             },
             {
               "type": "half",
+              "dark": true,
               "blocks": [
                 {
-                  "type": "verse",
-                  "text": "As for me and my house, we will serve the Lord.",
-                  "ref": "Joshua 24:15"
+                  "type": "memorial",
+                  "eyebrow": "In Loving Memory of",
+                  "name": "Our Parents"
                 },
                 {
                   "type": "photos",
@@ -2633,8 +2635,19 @@
                     }
                   ],
                   "arrange": "row"
+                },
+                {
+                  "type": "eternal",
+                  "text": "May Their Memory Be Eternal"
                 }
-              ]
+              ],
+              "lilies": true
+            },
+            {
+              "type": "verse",
+              "big": true,
+              "text": "As for me and my house, we will serve the Lord.",
+              "ref": "Joshua 24:15"
             },
             {
               "type": "closing"
@@ -2643,7 +2656,7 @@
         }
       ],
       "sort": "Abraham Thomas O. ",
-      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms. 16 Nov: third couple photo (pic-5, Drive folder Thomas O. Abraham, from Molsey in the group 3:13 PM: \"3 couple pics for the memorial section for Achenkunju uncle\", after or before the other two); placed after; Manoj: \"we can try\"."
+      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms. 16 Nov: third couple photo (pic-5, Drive folder Thomas O. Abraham, from Molsey in the group 3:13 PM: \"3 couple pics for the memorial section for Achenkunju uncle\", after or before the other two); placed after; Manoj: \"we can try\". 16 Nov 5:49-5:50 PM: Molsey: \"In Loving Memory of our parents\" as a memorial; Manoj: like Biju Mani's memorial section (dark half, lilies, eternal line; the verse moves below)."
     },
     {
       "id": "thomas-m-george",
@@ -3419,7 +3432,7 @@
               "bare": true,
               "center": true,
               "italic": true,
-              "text": "Best wishes from Shajan, Anija & Shawn Mathew"
+              "text": "Best wishes from Shajan, Anija and Shawn Mathew"
             },
             {
               "type": "verse",

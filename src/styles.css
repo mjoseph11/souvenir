@@ -612,7 +612,7 @@
 .org-byline { text-align: center; color: #666; font-style: italic; font-size: 8.8pt; line-height: 1.4; margin: 0.02in 0.2in 0.06in; }
 .org-body { font-size: 9.6pt; line-height: 1.45; color: #333; text-align: justify; margin: 0 0 0.075in; }
 .org-h { color: var(--maroon); font-size: 11.5pt; margin: 0.12in 0 0.045in; border-bottom: 1px solid rgba(201,162,39,0.5); padding-bottom: 2px; }
-.org-h5 { color: var(--maroon); font-size: 10pt; font-style: italic; margin: 0.08in 0 0.03in; }
+.org-h5 { color: var(--maroon); font-size: 10pt; font-weight: 700; margin: 0.08in 0 0.03in; }
 .org-caption { text-align: center; color: #666; font-style: italic; font-size: 8.5pt; margin: 0.03in 0 0.08in; }
 .org-photo { display: block; margin: 0.06in auto 0; max-width: 100%; border: 2px solid var(--gold); border-radius: 3px; object-fit: cover; }
 .org-pair { display: flex; gap: 0.2in; align-items: stretch; margin: 0.04in 0 0.08in; }
