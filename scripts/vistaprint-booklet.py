@@ -34,6 +34,11 @@ ap.add_argument("--back", default="images/back-cover-jubilee.jpg")
 ap.add_argument("--out", required=True)
 ap.add_argument("--spine", type=float, default=0.06,
                 help="spine width in inches — take this from Vistaprint's template")
+# Title down the spine, like the 2009 Consecration souvenir (Mathew, 17 Nov).
+ap.add_argument("--spine-text",
+                default="St. Gregorios Malankara Orthodox Church  ◆  Golden Jubilee Souvenir  ◆  1976 – 2026",
+                help='text down the spine; "" for none')
+ap.add_argument("--spine-font", default="fonts/EBGaramond-SemiBold.ttf")
 a = ap.parse_args()
 
 page_w, page_h = (TRIM_W + 2 * BLEED) * PT, (TRIM_H + 2 * BLEED) * PT
@@ -65,7 +70,42 @@ s1.insert_image(fitz.Rect((TRIM_W + a.spine + BLEED) * PT, 0, spread_w, page_h),
                 stream=with_bleed(a.front, "left"), keep_proportion=False)
 # spine: carry the cover's cream across it so a misplaced fold shows no white
 s1.draw_rect(fitz.Rect((TRIM_W + BLEED) * PT, 0, (TRIM_W + a.spine + BLEED) * PT, page_h),
-             color=None, fill=(0.992, 0.973, 0.933))
+             color=None, fill=(251 / 255, 242 / 255, 226 / 255))  # the covers' own edge cream
+
+# Spine title: reads top to bottom (the US convention — legible with the book
+# lying face up). Printers keep spine text 1/16in clear of each fold, so the type
+# is sized to the spine; under 0.25in there is no room and it is left off.
+SPINE_SAFE = 0.0625
+MAROON, GOLD = (0.42, 0, 0), (0.79, 0.64, 0.15)
+if a.spine_text and a.spine < 0.25:
+    print(f"  spine {a.spine}in is under 0.25in: no spine text")
+elif a.spine_text:
+    font = fitz.Font(fontfile=a.spine_font)
+    x0, x1 = (TRIM_W + BLEED) * PT, (TRIM_W + a.spine + BLEED) * PT
+    size = min(14, (a.spine - 2 * SPINE_SAFE) * PT * 0.62)
+    gap = 0.75 * PT  # clear of the head and tail trim
+    length = page_h - 2 * (BLEED * PT + gap)
+    while font.text_length(a.spine_text, size) > length and size > 6:
+        size -= 0.25
+    parts = a.spine_text.split("◆")
+    words, marks = fitz.TextWriter(s1.rect), fitz.TextWriter(s1.rect)
+    # Lay the line out horizontally, centred on the spine's midpoint, then turn it
+    # 90 degrees clockwise about that point so it runs down the spine.
+    cx, cy = (x0 + x1) / 2, page_h / 2
+    total = font.text_length(a.spine_text, size)
+    x = cx - total / 2
+    base_y = cy + font.ascender * size * 0.36  # cap height centred across the spine
+    for i, part in enumerate(parts):
+        words.append((x, base_y), part, font=font, fontsize=size)
+        x += font.text_length(part, size)
+        if i < len(parts) - 1:
+            w = font.text_length("◆", size)
+            marks.append((x + w * 0.15, base_y - size * 0.05), "◆", font=font, fontsize=size * 0.7)
+            x += w
+    turn = (fitz.Point(cx, cy), fitz.Matrix(-90))
+    words.write_text(s1, color=MAROON, morph=turn)
+    marks.write_text(s1, color=GOLD, morph=turn)
+    print(f"  spine text {size:.1f}pt")
 
 # ── spread 2: inside cover, left blank as the instructions allow ──
 s2 = out.new_page(width=spread_w, height=page_h)
