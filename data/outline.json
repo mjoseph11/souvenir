@@ -509,6 +509,139 @@
           "file": "src/pages/ministry-mmvs-story-04.html",
           "label": "MINISTRY: MMVS — OUR STORY (4 of 4)"
         },
+{
+  "label": "MINISTRY: MMVS — IN PICTURES (1 of 2)",
+  "generated": {
+    "title": "Marth Mariam Vanitha Samajam",
+    "band": "MMVS in Pictures",
+    "blocks": [
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-01.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-02.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      },
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-04.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-05.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      },
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-07.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-11.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      },
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-14.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-16.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "Photos from Manoj's 'Mmvs Souvenir' Google Photos album (Member Pages group, 18 Nov 12:05 PM)."
+},
+{
+  "label": "MINISTRY: MMVS — IN PICTURES (2 of 2)",
+  "generated": {
+    "title": "Marth Mariam Vanitha Samajam",
+    "band": "MMVS in Pictures",
+    "blocks": [
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-18.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-20.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      },
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-21.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-24.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      },
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-27.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-28.jpg",
+            "pos": "50% 0%",
+            "alt": "MMVS"
+          }
+        ]
+      },
+      {
+        "type": "photos",
+        "fill": true,
+        "photos": [
+          {
+            "src": "images/ministries/mmvs/album/mmvs-19.jpg",
+            "alt": "MMVS"
+          },
+          {
+            "src": "images/ministries/mmvs/album/mmvs-35.jpg",
+            "alt": "MMVS"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "Photos from Manoj's 'Mmvs Souvenir' Google Photos album (Member Pages group, 18 Nov 12:05 PM)."
+},
         {
           "label": "MINISTRY: ST. JOSEPH'S FORUM",
           "toc": "St. Joseph's Forum",
