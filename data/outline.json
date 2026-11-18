@@ -101,44 +101,93 @@
           "toc": "Management Committee & Board"
         },
         {
-          "placeholder": {
-            "title": "Message",
-            "heading": "From the President of the United States",
-            "note": "Message from President Donald J. Trump, to be requested."
-          },
-          "toc": "Message — President of the United States"
+          "label": "DIGNITARIES: PRESIDENT OF THE UNITED STATES",
+          "toc": "Message — President of the United States",
+          "note": "Scan reproduced as received (Drive Non-Member Pages/Dignitaries, 17 Nov). Signed documents are not retyped or altered (editorial board, 17 Nov).",
+          "generated": {
+            "title": "From the President of the United States",
+            "band": "The White House • Washington",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/dignitaries/white-house-letter.jpg",
+                    "alt": "Letter from the President of the United States"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "placeholder": {
-            "title": "Message",
-            "heading": "From the U.S. Senator",
-            "note": "Message from our U.S. Senator, to be requested."
-          },
-          "toc": "Message — U.S. Senator"
+          "label": "DIGNITARIES: U.S. HOUSE OF REPRESENTATIVES",
+          "toc": "Recognition — U.S. House of Representatives",
+          "note": "Scan reproduced as received.",
+          "generated": {
+            "title": "From the U.S. House of Representatives",
+            "band": "Hon. Brian K. Fitzpatrick • Member of Congress",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/dignitaries/fitzpatrick-flag-certificate.jpg",
+                    "alt": "Flag certificate from Congressman Brian K. Fitzpatrick"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "placeholder": {
-            "title": "Message",
-            "heading": "From the U.S. House of Representatives",
-            "note": "Message from our Representative in Congress, to be requested."
-          },
-          "toc": "Message — U.S. House of Representatives"
+          "label": "DIGNITARIES: PENNSYLVANIA STATE SENATE",
+          "toc": "Citation — Pennsylvania State Senate",
+          "note": "Scan reproduced as received.",
+          "generated": {
+            "title": "From the Pennsylvania State Senate",
+            "band": "Senator Frank A. Farry",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/dignitaries/pa-senate-citation.jpg",
+                    "alt": "Citation from the Senate of Pennsylvania"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "placeholder": {
-            "title": "Message",
-            "heading": "From the Governor of Pennsylvania",
-            "note": "Listed as tentative (\"PA Governor??\") in the Content Outline. Keep only if a message is received."
-          },
-          "toc": "Message — Governor of Pennsylvania"
-        },
-        {
-          "placeholder": {
-            "title": "Message",
-            "heading": "From the Mayor of Bensalem Township",
-            "note": "Hon. Joseph DiGirolamo — message to be requested."
-          },
-          "toc": "Message — Mayor of Bensalem Township"
+          "label": "DIGNITARIES: PA HOUSE & BENSALEM TOWNSHIP",
+          "toc": "Recognitions — Pennsylvania House & Bensalem Township",
+          "note": "Scans reproduced as received. Manoj is asking for a written message from the Mayor (17 Nov); it would replace or follow this page.",
+          "generated": {
+            "title": "Civic Recognitions",
+            "band": "Pennsylvania House of Representatives • Bensalem Township",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/dignitaries/pa-house-certificate.jpg",
+                    "alt": "Certificate of Recognition from State Representative Kathleen C. Tomlinson"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/dignitaries/bensalem-township-certificate.jpg",
+                    "alt": "Certificate from Mayor Joseph DiGirolamo and Bensalem Township Council"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "file": "src/pages/clergy-kp-varghese.html",
