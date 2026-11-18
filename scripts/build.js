@@ -90,7 +90,9 @@ const BLOCKS = {
     const plain = b.plain ? ' plain' : '';
     // "fill": crop the photo to cover its box instead of letterboxing it.
     // Only where cropping loses nobody — see the note in members.css.
-    const fill = b.fill ? ' fill' : '';
+    // "whole": as big as the box allows but never cropped or framed - for signed
+    // documents (dignitaries' letters, Manoj 18 Nov: "maximize the size").
+    const fill = b.whole ? ' fill whole plain' : b.fill ? ' fill' : '';
     // "mosaic": one wide photo across the top, then a tall photo on the left
     // with the rest stacked down the right (Manoj's James Chacko sample, 15 Nov).
     if (b.arrange === 'mosaic' && figs.length >= 3) {

@@ -132,7 +132,8 @@
                     "src": "images/dignitaries/white-house-letter.jpg",
                     "alt": "Letter from the President of the United States"
                   }
-                ]
+                ],
+                "whole": true
               }
             ]
           }
@@ -152,7 +153,8 @@
                     "src": "images/dignitaries/fitzpatrick-flag-certificate.jpg",
                     "alt": "Flag certificate from Congressman Brian K. Fitzpatrick"
                   }
-                ]
+                ],
+                "whole": true
               }
             ]
           }
@@ -172,28 +174,20 @@
                     "src": "images/dignitaries/pa-senate-citation.jpg",
                     "alt": "Citation from the Senate of Pennsylvania"
                   }
-                ]
+                ],
+                "whole": true
               }
             ]
           }
         },
         {
-          "label": "DIGNITARIES: PA HOUSE & BENSALEM TOWNSHIP",
-          "toc": "Recognitions — Pennsylvania House & Bensalem Township",
-          "note": "Scans reproduced as received. Manoj is asking for a written message from the Mayor (17 Nov); it would replace or follow this page.",
+          "label": "DIGNITARIES: BENSALEM TOWNSHIP",
+          "toc": "Recognition — Bensalem Township",
+          "note": "Scan reproduced as received. Manoj 18 Nov 8:22 AM: State Rep. Kathleen Tomlinson's certificate removed (reads as a certificate, not a message); the Mayor's made as large as the page allows. A written message from the Mayor (asked for 17 Nov) would replace or follow this page.",
           "generated": {
-            "title": "Civic Recognitions",
-            "band": "Pennsylvania House of Representatives • Bensalem Township",
+            "title": "From Bensalem Township",
+            "band": "Mayor Joseph DiGirolamo • Township Council",
             "blocks": [
-              {
-                "type": "photos",
-                "photos": [
-                  {
-                    "src": "images/dignitaries/pa-house-certificate.jpg",
-                    "alt": "Certificate of Recognition from State Representative Kathleen C. Tomlinson"
-                  }
-                ]
-              },
               {
                 "type": "photos",
                 "photos": [
@@ -201,7 +195,8 @@
                     "src": "images/dignitaries/bensalem-township-certificate.jpg",
                     "alt": "Certificate from Mayor Joseph DiGirolamo and Bensalem Township Council"
                   }
-                ]
+                ],
+                "whole": true
               }
             ]
           }

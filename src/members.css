@@ -247,6 +247,7 @@
     max-height: none;
     object-fit: cover;
   }
+  .m-photos.fill.whole .m-fig img { object-fit: contain; }
 
   /* Inline page: photo at the top left, writing starting below it and
      running down the whole right side (his Betcy Allen example). */
