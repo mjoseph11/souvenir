@@ -118,6 +118,34 @@
           "toc": "Management Committee & Board"
         },
         {
+          "label": "MANAGEMENT COMMITTEE & BOARD — GROUP PHOTOS",
+          "note": "Drive Non-Member Pages ('Managing Commitee And Board Members.jpeg', 'Board Members.jpg', 18 Nov).",
+          "generated": {
+            "title": "Management Committee & Board",
+            "band": "2026",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/committee/committee-and-board-2026.jpg",
+                    "caption": "Managing Committee and Board Members"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/committee/board-members-2026.jpg",
+                    "caption": "Board Members"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
           "label": "DIGNITARIES: PRESIDENT OF THE UNITED STATES",
           "toc": "Message — President of the United States",
           "note": "Scan reproduced as received (Drive Non-Member Pages/Dignitaries, 17 Nov). Signed documents are not retyped or altered (editorial board, 17 Nov).",
@@ -327,18 +355,56 @@
     {
       "name": "History",
       "items": [
-        {"file": "src/pages/history-nasrani-01.html", "label": "HISTORY: NASRANI HISTORY (1 of 2)", "toc": "Nasrani History: From St. Thomas to Syrians"},
-        {"file": "src/pages/history-nasrani-02.html", "label": "HISTORY: NASRANI HISTORY (2 of 2)"},
-        {"file": "src/pages/history-pilgrimage-01.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (1 of 10)", "toc": "A Pilgrimage of Faith: Our Fifty-Year Journey"},
-        {"file": "src/pages/history-pilgrimage-02.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (2 of 10)"},
-        {"file": "src/pages/history-pilgrimage-03.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (3 of 10)"},
-        {"file": "src/pages/history-pilgrimage-04.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (4 of 10)"},
-        {"file": "src/pages/history-pilgrimage-05.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (5 of 10)"},
-        {"file": "src/pages/history-pilgrimage-06.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (6 of 10)"},
-        {"file": "src/pages/history-pilgrimage-07.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (7 of 10)"},
-        {"file": "src/pages/history-pilgrimage-08.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (8 of 10)"},
-        {"file": "src/pages/history-pilgrimage-09.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (9 of 10)"},
-        {"file": "src/pages/history-pilgrimage-10.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (10 of 10)"},
+        {
+          "file": "src/pages/history-nasrani-01.html",
+          "label": "HISTORY: NASRANI HISTORY (1 of 2)",
+          "toc": "Nasrani History: From St. Thomas to Syrians"
+        },
+        {
+          "file": "src/pages/history-nasrani-02.html",
+          "label": "HISTORY: NASRANI HISTORY (2 of 2)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-01.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (1 of 10)",
+          "toc": "A Pilgrimage of Faith: Our Fifty-Year Journey"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-02.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (2 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-03.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (3 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-04.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (4 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-05.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (5 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-06.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (6 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-07.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (7 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-08.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (8 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-09.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (9 of 10)"
+        },
+        {
+          "file": "src/pages/history-pilgrimage-10.html",
+          "label": "HISTORY: A PILGRIMAGE OF FAITH (10 of 10)"
+        },
         {
           "file": "src/pages/history-parish.html",
           "label": "OUR PARISH: HISTORY",
@@ -348,6 +414,11 @@
           "file": "src/pages/charter-families.html",
           "label": "OUR PARISH: CHARTER FAMILIES",
           "toc": "Our Parish — Charter Families 1976–1980"
+        },
+        {
+          "file": "src/pages/past-trustees.html",
+          "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
+          "toc": "Past Trustees & Secretaries"
         },
         {
           "placeholder": {
@@ -426,19 +497,6 @@
       ]
     },
     {
-      "name": "Past Trustees & Secretaries",
-      "items": [
-        {
-          "placeholder": {
-            "title": "Our Parish",
-            "heading": "Past Trustees & Secretaries",
-            "note": "Secretaries and Treasurers (Trustees) of the parish, 1976–2026. List received from Molsey (\"SGMOC Core Fifty\", 17 Nov; 1978, 1981 and 1983 blank); page to be laid out."
-          },
-          "toc": "Past Trustees & Secretaries"
-        }
-      ]
-    },
-    {
       "name": "Ministries",
       "items": [
         {
@@ -503,139 +561,139 @@
           "file": "src/pages/ministry-mmvs-story-04.html",
           "label": "MINISTRY: MMVS — OUR STORY (4 of 4)"
         },
-{
-  "label": "MINISTRY: MMVS — IN PICTURES (1 of 2)",
-  "generated": {
-    "title": "Marth Mariam Vanitha Samajam",
-    "band": "MMVS in Pictures",
-    "blocks": [
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-01.jpg",
-            "alt": "MMVS"
+        {
+          "label": "MINISTRY: MMVS — IN PICTURES (1 of 2)",
+          "generated": {
+            "title": "Marth Mariam Vanitha Samajam",
+            "band": "MMVS in Pictures",
+            "blocks": [
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-01.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-02.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-04.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-05.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-07.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-11.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-14.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-16.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              }
+            ]
           },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-02.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      },
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-04.jpg",
-            "alt": "MMVS"
+          "note": "Photos from Manoj's 'Mmvs Souvenir' Google Photos album (Member Pages group, 18 Nov 12:05 PM)."
+        },
+        {
+          "label": "MINISTRY: MMVS — IN PICTURES (2 of 2)",
+          "generated": {
+            "title": "Marth Mariam Vanitha Samajam",
+            "band": "MMVS in Pictures",
+            "blocks": [
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-18.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-20.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-21.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-24.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-27.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-28.jpg",
+                    "pos": "50% 0%",
+                    "alt": "MMVS"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-19.jpg",
+                    "alt": "MMVS"
+                  },
+                  {
+                    "src": "images/ministries/mmvs/album/mmvs-35.jpg",
+                    "alt": "MMVS"
+                  }
+                ]
+              }
+            ]
           },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-05.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      },
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-07.jpg",
-            "alt": "MMVS"
-          },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-11.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      },
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-14.jpg",
-            "alt": "MMVS"
-          },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-16.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      }
-    ]
-  },
-  "note": "Photos from Manoj's 'Mmvs Souvenir' Google Photos album (Member Pages group, 18 Nov 12:05 PM)."
-},
-{
-  "label": "MINISTRY: MMVS — IN PICTURES (2 of 2)",
-  "generated": {
-    "title": "Marth Mariam Vanitha Samajam",
-    "band": "MMVS in Pictures",
-    "blocks": [
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-18.jpg",
-            "alt": "MMVS"
-          },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-20.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      },
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-21.jpg",
-            "alt": "MMVS"
-          },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-24.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      },
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-27.jpg",
-            "alt": "MMVS"
-          },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-28.jpg",
-            "pos": "50% 0%",
-            "alt": "MMVS"
-          }
-        ]
-      },
-      {
-        "type": "photos",
-        "fill": true,
-        "photos": [
-          {
-            "src": "images/ministries/mmvs/album/mmvs-19.jpg",
-            "alt": "MMVS"
-          },
-          {
-            "src": "images/ministries/mmvs/album/mmvs-35.jpg",
-            "alt": "MMVS"
-          }
-        ]
-      }
-    ]
-  },
-  "note": "Photos from Manoj's 'Mmvs Souvenir' Google Photos album (Member Pages group, 18 Nov 12:05 PM)."
-},
+          "note": "Photos from Manoj's 'Mmvs Souvenir' Google Photos album (Member Pages group, 18 Nov 12:05 PM)."
+        },
         {
           "label": "MINISTRY: ST. JOSEPH'S FORUM",
           "toc": "St. Joseph's Forum",
@@ -717,16 +775,73 @@
           }
         },
         {
-          "file": "src/pages/ministry-logos.html",
           "label": "MINISTRY: LOGOS",
-          "toc": "Logos Ministry"
+          "toc": "Logos Ministry",
+          "note": "Drive Writing/Editing/LOGOS (Message.docx and photos, 8 Nov); added for the sample per Manoj 18 Nov 2:24 PM.",
+          "generated": {
+            "title": "Logos Ministry",
+            "band": "Living, Guarding, and Proclaiming the Word of God",
+            "blocks": [
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/logos/logos-1.jpg",
+                    "alt": "LOGOS Ministry"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "center": true,
+                "italic": true,
+                "size": "sm",
+                "text": "“The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the one and only Son, who came from the Father, full of grace and truth.” — John 1:14"
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "size": "sm",
+                "text": "The LOGOS Ministry is a dedicated community of young adult Orthodox believers (ages 18+) at St. Gregorios Malankara Orthodox Church devoted to growing together in fellowship, love, and obedience to Jesus Christ. Taking its name from the Greek word for \"Word,\" LOGOS centers its mission on Christ, the incarnate Word of God. As young adults navigating the challenges of a modern world, our desire is to fulfill our calling as an edifying force for both our parish community and the broader society.\n\nOur ministry is anchored in five foundational pillars reflected in our name: Loving each other and our surrounding community, Offering service and digital outreach, Guarding and defending our Orthodox faith, Obeying Christ's commandments in daily life, and Sanctifying our lives through spiritual disciplines to draw closer to God. We put these principles into action through bi-weekly Bible studies and small-group discussions rooted in Holy Scripture and Church Fathers. Additionally, through our social media presence, we extend Orthodox teaching beyond the church walls, offering clear and practical reflections for daily life.\n\nBeyond our internal fellowship, LOGOS is deeply committed to mentoring the next generation. We have a vision to create a structured mentorship program organized in conjunction with the Sunday School ministry in the near future. LOGOS members would pair with high school students to provide spiritual guidance, Christian discipleship, and a safe space for honest conversation during pivotal life transitions.\n\nWe invite all young adults to join us as we encourage one another to live as faithful doers of the Word."
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "center": true,
+                "size": "sm",
+                "title": "Leadership",
+                "text": "Rev. Fr. Shibu Mathai — Previous Spiritual Director\n\nRev. Fr. Eby Paulose — Current Spiritual Director\n\nCeena Mathew — Associate Spiritual Leader\n\nCore Team: Daniel Zachariah, Swetha Boaz, Alisha Maret, Josh Maret, Joel George, Reshma George"
+              }
+            ]
+          }
         },
         {
-          "placeholder": {
+          "label": "MINISTRY: LOGOS — IN PICTURES",
+          "generated": {
             "title": "Logos Ministry",
-            "heading": "Logos — In Pictures",
-            "pages": "2 side-by-side pages",
-            "note": "Group photo and activities."
+            "band": "LOGOS in Pictures",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/logos/logos-3.jpg",
+                    "alt": "LOGOS Ministry"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/logos/logos-2.jpg",
+                    "alt": "LOGOS Ministry"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -735,11 +850,43 @@
           "toc": "GROW"
         },
         {
-          "placeholder": {
+          "label": "MINISTRY: GROW SPROUTS",
+          "note": "Drive Writing/Editing/GROW ('GROW Sprouts.docx', long version, 16 Nov); added for the sample per Manoj 18 Nov 2:24 PM.",
+          "generated": {
             "title": "GROW",
-            "heading": "GROW — In Pictures",
-            "pages": "2 side-by-side pages",
-            "note": "Group photo and activities."
+            "band": "GROW Sprouts Ministry 2026",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/grow/dkne-camp.jpg",
+                    "alt": "GROW"
+                  }
+                ],
+                "whole": true
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "size": "sm",
+                "text": "GROW Sprouts is an inclusive ministry for girls ages 6–12, bringing together families from seven Orthodox churches across the Philadelphia area. Connected with GROW and Sunday School, the ministry provides a welcoming community where girls can grow in faith, fellowship, friendship, charity, and service, while strengthening their relationship with Christ and the Orthodox Church.\n\nThe ministry is blessed with the spiritual mentorship and guidance of Rev. Fr. Vijay Thomas, Rev. Fr. Timothy (Tenny) Thomas, and Most Rev. Geevarghese Ramban (Rev. Shibu V. Mathai), whose support helps nurture the spiritual foundation and mission of GROW Sprouts."
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "size": "sm",
+                "title": "Throughout 2026",
+                "text": "Daily Lenten Devotionals: encouraging prayer, reflection, and spiritual growth.\n\nMom & GROW Sprouts Zoom Fellowships connecting girls and mothers across participating churches through faith and fellowship.\n\nCaring for Friends Charity Event, where Sprouts, moms, and volunteers packed non-perishable food packages for members of the community.\n\nFeast Day Celebration of Sts. Sophia, Faith, Hope, and Love, centered on faith, fellowship, service, and prayer.\n\nIconography Workshop, where Sprouts and moms painted an icon of St. Sophia, providing a hands-on opportunity to learn about the saints and Orthodox faith.\n\nDiocesan Sunday School Talent Show, where the Sprouts shared the lives of their patron saints through dance and storytelling while developing confidence, teamwork, and friendships.\n\nYear-End Friendsgiving, bringing the community together in gratitude and fellowship to celebrate the friendships, service, faith, and memories created throughout the year."
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "size": "sm",
+                "title": "Our Mission",
+                "text": "Through its connection with GROW and Sunday School, participation from seven Philadelphia-area Orthodox churches, and the guidance of its spiritual mentors, GROW Sprouts creates an inter-parish community where girls can grow closer to Christ, develop lasting friendships, learn the joy of serving others, and build a strong foundation of Orthodox faith that they can carry with them as they grow."
+              }
+            ]
           }
         },
         {
@@ -769,13 +916,62 @@
           "toc": "Chenda"
         },
         {
-          "placeholder": {
+          "label": "MINISTRY: ACOLYTES",
+          "toc": "Acolytes",
+          "note": "Drive Writing/Editing/Acolytes (text and photos, 14 Nov); added for the sample per Manoj 18 Nov 2:24 PM.",
+          "generated": {
             "title": "Acolytes",
-            "heading": "Our Acolytes",
-            "pages": "1 picture or collage page",
-            "note": "Acolyte photographs to be collected."
-          },
-          "toc": "Acolytes"
+            "band": "Faithfully Serving at the Holy Altar",
+            "blocks": [
+              {
+                "type": "photos",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/acolytes/aco-1.jpg"
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "text": "The Acolyte Ministry of SGMOC Bensalem"
+              },
+              {
+                "type": "text",
+                "bare": true,
+                "size": "sm",
+                "text": "The Acolyte Ministry of St. Gregorios Malankara Orthodox Church (SGMOC), Bensalem, stands as a testament to faith, devotion, and the enduring legacy of service to the Holy Church. Founded by Fr. Mathai Cor-Episcopa, this ministry was established with a vision to nurture young men in the sacred traditions of the Malankara Orthodox Church and instill in them a deep reverence for the Holy Altar. Through the years, generations of acolytes have faithfully served in the divine liturgy, carrying forward a tradition rooted in prayer, discipline, humility, and unwavering devotion to Christ and His Church.\n\nThis legacy has been strengthened and enriched through the dedicated leadership of Fr. Shibu Mathai, under whose guidance the ministry continued to grow and flourish. We lovingly remember Fr. Paul Varki and Rev. Dn. Markose Mani, of blessed memory, whose lives, service, and spiritual contributions remain an enduring part of our parish’s history. Their faithful witness and dedication helped shape the spiritual foundation upon which future generations continue to build. As we celebrate the Golden Jubilee of SGMOC, we honor these servants of God and all those who have devoted their time, talents, and hearts to the sacred calling of serving at the Holy Altar.\n\nToday, under the leadership and spiritual guidance of Fr. Eby Paulose, the Acolyte Ministry looks toward a future filled with renewed purpose, deeper faith, and greater commitment. With Achen’s guidance, encouragement, and vision, we pray that this ministry will flourish even more powerfully, raising generations of faithful servants who will uphold the sacred traditions of our Church and boldly carry its spiritual legacy into the future. As we honor fifty years of God’s faithfulness, may the acolytes of SGMOC continue to stand as a living testimony to the power of faith, the beauty of service, and the enduring strength of a Church rooted in Christ. May God bless this ministry abundantly and guide it from strength to strength for generations to come."
+              }
+            ]
+          }
+        },
+        {
+          "label": "MINISTRY: ACOLYTES — IN PICTURES",
+          "generated": {
+            "title": "Acolytes",
+            "band": "Acolytes in Pictures",
+            "blocks": [
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/acolytes/aco-2.jpg"
+                  },
+                  {
+                    "src": "images/ministries/acolytes/aco-3.jpg"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/acolytes/aco-4.jpg"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "file": "src/pages/community-outreach.html",
@@ -890,12 +1086,15 @@
           "toc": "Editorial Board & Acknowledgements"
         },
         {
-          "placeholder": {
+          "label": "OUR CHURCH FAMILY",
+          "toc": "Our Church Family",
+          "note": "Picnic photo, Drive Non-Member Pages (20260711_140530.jpg, uploaded by Manoj 18 Nov); turned sideways so the photo is as large as the page allows.",
+          "fullpage": {
+            "src": "images/church-family/picnic-2026.jpg",
+            "alt": "SGMOC church family at the parish picnic",
             "title": "Our Church Family",
-            "heading": "Church Family Picnic Photo",
-            "note": "Whole-parish group photograph (taken at the picnic) to be placed here."
-          },
-          "toc": "Church Family Picnic Photo"
+            "fit": "contain"
+          }
         },
         {
           "index": true

@@ -673,3 +673,10 @@
 .hist-fig figure { margin: 0; flex: none; }
 .hist-fig img { display: block; width: 100%; height: auto; box-sizing: border-box; border: 2px solid var(--gold); border-radius: 3px; }
 .hist-fig figcaption { text-align: center; color: #666; font-style: italic; font-size: 8pt; line-height: 1.25; margin-top: 0.03in; }
+/* Past Secretaries & Treasurers (18 Nov): two side-by-side tables */
+.trustee-cols { display: flex; gap: 0.25in; margin-top: 0.1in; }
+.trustee-table { flex: 1; border-collapse: collapse; font-size: 9.6pt; }
+.trustee-table th { background: var(--maroon); color: #F1CF78; font-weight: normal; text-align: left; padding: 4px 6px; font-size: 9pt; }
+.trustee-table td { padding: 3.6px 6px; border-bottom: 1px solid rgba(201,162,39,0.35); color: #333; vertical-align: top; }
+.trustee-table td.yr { color: var(--maroon); font-weight: 600; width: 0.45in; }
+.trustee-table tbody tr:nth-child(even) td { background: rgba(255,255,255,0.45); }
