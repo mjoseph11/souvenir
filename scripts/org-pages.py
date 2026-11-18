@@ -223,9 +223,22 @@ def pack(els, hs, avail, slack, lines=None):
         while j + 1 < len(els) and els[j]['kind'] == 'p' and els[j]['style'] in HEADINGS:
             j += 1
             need += hs[j]
+        if (used > 0 and used + need > cap and j > i and els[j]['kind'] == 'raw' and j + 1 < len(els)
+                and 'org-body' not in els[j]['html'] and els[j + 1]['kind'] == 'p'
+                and els[j + 1]['style'] not in HEADINGS and not els[j + 1]['imgs']
+                and els[j].get('deferred', 0) < DEFER_MAX):
+            # A heading followed by a photo row that does not fit: the photo moves below the
+            # first paragraph, so the heading and writing can start here (History, 18 Nov).
+            els[j], els[j + 1] = els[j + 1], dict(els[j], deferred=els[j].get('deferred', 0) + 1)
+            hs[j], hs[j + 1] = hs[j + 1], hs[j]
+            li, lj = lines.pop(j, None), lines.pop(j + 1, None)
+            if lj is not None: lines[j] = lj
+            if li is not None: lines[j + 1] = li
+            continue
         if (used > 0 and used + need > cap and els[i]['kind'] == 'raw' and i + 1 < len(els)
                 and els[i + 1]['kind'] == 'p' and els[i + 1]['style'] not in HEADINGS
-                and not els[i + 1]['imgs'] and els[i].get('deferred', 0) < DEFER_MAX):
+                and not els[i + 1]['imgs'] and els[i].get('deferred', 0) < DEFER_MAX
+                and 'org-body' not in els[i]['html']):
             # A photo row, quote box or table that does not fit swaps places with the paragraph
             # after it (never past a heading), so the writing fills the page and the block
             # opens the next one, as a typesetter floats a figure (Mission Board, 16 Nov).

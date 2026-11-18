@@ -679,7 +679,10 @@ function layoutScan() {
       var h1 = (pg.querySelector('h1') || {}).textContent;
       if (nx && nx.classList.contains('org-page') && (nx.querySelector('h1') || {}).textContent === h1 && f && blocks.length) {
         var foot = f.getBoundingClientRect().top - blocks[blocks.length - 1].getBoundingClientRect().bottom;
-        if (foot > 0.75 * IN) issues.push((foot / IN).toFixed(2) + 'in empty at the foot of the page');
+        // a new section (an era heading) may start on a fresh page: allow up to 1.5in then (History, 18 Nov)
+        var nf = nx.querySelector('.page-content > .org-el');
+        var sectionNext = nf && nf.querySelector(':scope > .org-era, :scope > .org-title');
+        if (foot > (sectionNext ? 1.5 : 0.75) * IN) issues.push((foot / IN).toFixed(2) + 'in empty at the foot of the page');
       }
       // 4. a photo beside text is about as tall as the text
       pg.querySelectorAll('.org-pair').forEach(function (q) {

@@ -664,3 +664,12 @@
 .mb-table tbody tr:nth-child(even) td { background: #faf3e3; }
 .mb-table:not(.four) td:first-child { font-weight: bold; color: var(--maroon); width: 38%; }
 .mb-table.four td:first-child { font-weight: bold; color: var(--maroon); }
+/* History articles (A Pilgrimage of Faith, 18 Nov): a photo or two floated beside its paragraph */
+.hist-float { display: flow-root; margin: 0.02in 0 0.075in; }
+.hist-float > .org-body { margin-bottom: 0; }
+.hist-float.left > .hist-fig { float: left; margin: 0.04in 0.18in 0.04in 0; }
+.hist-float.right > .hist-fig { float: right; margin: 0.04in 0 0.04in 0.18in; }
+.hist-fig { display: flex; gap: 0.1in; align-items: flex-start; }
+.hist-fig figure { margin: 0; flex: none; }
+.hist-fig img { display: block; width: 100%; height: auto; box-sizing: border-box; border: 2px solid var(--gold); border-radius: 3px; }
+.hist-fig figcaption { text-align: center; color: #666; font-style: italic; font-size: 8pt; line-height: 1.25; margin-top: 0.03in; }

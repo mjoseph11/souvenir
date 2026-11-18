@@ -327,24 +327,19 @@
     {
       "name": "History",
       "items": [
-        {
-          "placeholder": {
-            "title": "History",
-            "heading": "The Orthodox Church in India",
-            "pages": "1–2 pages",
-            "note": "Origins of the Malankara Orthodox Syrian Church."
-          },
-          "toc": "The Orthodox Church in India"
-        },
-        {
-          "placeholder": {
-            "title": "History",
-            "heading": "The Orthodox Church in Philadelphia",
-            "pages": "1–2 pages",
-            "note": "From the ecumenical Malayalee congregation of the late 1960s to the first Orthodox parish in 1976."
-          },
-          "toc": "The Orthodox Church in Philadelphia"
-        },
+        {"file": "src/pages/history-nasrani-01.html", "label": "HISTORY: NASRANI HISTORY (1 of 2)", "toc": "Nasrani History: From St. Thomas to Syrians"},
+        {"file": "src/pages/history-nasrani-02.html", "label": "HISTORY: NASRANI HISTORY (2 of 2)"},
+        {"file": "src/pages/history-pilgrimage-01.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (1 of 11)", "toc": "A Pilgrimage of Faith: Our Fifty-Year Journey"},
+        {"file": "src/pages/history-pilgrimage-02.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (2 of 11)"},
+        {"file": "src/pages/history-pilgrimage-03.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (3 of 11)"},
+        {"file": "src/pages/history-pilgrimage-04.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (4 of 11)"},
+        {"file": "src/pages/history-pilgrimage-05.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (5 of 11)"},
+        {"file": "src/pages/history-pilgrimage-06.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (6 of 11)"},
+        {"file": "src/pages/history-pilgrimage-07.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (7 of 11)"},
+        {"file": "src/pages/history-pilgrimage-08.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (8 of 11)"},
+        {"file": "src/pages/history-pilgrimage-09.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (9 of 11)"},
+        {"file": "src/pages/history-pilgrimage-10.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (10 of 11)"},
+        {"file": "src/pages/history-pilgrimage-11.html", "label": "HISTORY: A PILGRIMAGE OF FAITH (11 of 11)"},
         {
           "file": "src/pages/history-parish.html",
           "label": "OUR PARISH: HISTORY",
