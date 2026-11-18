@@ -83,7 +83,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width for 244 pages — check Vistaprint's template (print file uses 0.5in)",
+      "text": "Spine width and page count for the order: 242 inner pages plus 4 cover pages (246 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -139,6 +139,24 @@
       "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
       "text": "Past Secretaries & Treasurers: 1978, 1981 and 1983 are blank in the Core Fifty list — who served those years?",
       "waiting": "Molsey"
+    },
+    {
+      "kind": "question",
+      "label": "MINISTRY: CHENDA",
+      "text": "Chenda: confirm the names and the 2015 founding year",
+      "waiting": "Biju Mani",
+      "asked": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "MINISTRY: CHENDA",
+      "text": "Chenda page: write-up in three sections and four team photos",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "text": "Print file: cover spread (back, spine, front) now full width - the earlier 18 Nov file had it squeezed to one page",
+      "done": "2026-11-18"
     }
   ]
 }
