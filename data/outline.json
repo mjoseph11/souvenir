@@ -429,7 +429,8 @@
                     "src": "images/ministries/st-josephs-forum/group.jpg",
                     "alt": "St. Joseph's Forum"
                   }
-                ]
+                 ],
+                "fill": true
               },
               {
                 "type": "heading",
@@ -438,11 +439,13 @@
               {
                 "type": "text",
                 "size": "xs",
+                "bare": true,
                 "text": "Originally established in 2024 as the SGMOC Men's Forum, the organization was formally renamed to honor St. Joseph — a timeless pillar of quiet strength, humility, and obedience. Throughout 2025 and 2026, our members have actively immersed themselves in the sacramental life and service of the church, providing volunteer support for the Jubilee Celebrations, the annual Church Picnic, Parish Day, the Volleyball Tournament, the Harvest Festival, the Parish Perunnal, and Christmas programs."
               },
               {
                 "type": "text",
                 "size": "xs",
+                "bare": true,
                 "center": true,
                 "title": "Executive Committee 2024–2026",
                 "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Eby Paulose (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese"
@@ -450,6 +453,7 @@
               {
                 "type": "text",
                 "size": "xs",
+                "bare": true,
                 "cols": true,
                 "title": "Activities & Spiritual Growth",
                 "text": "Sunday meetings and seminars. Monthly meetings follow the Holy Qurbana and fellowship lunch. Sessions have included a Family Communication Series (Rev. Fr. Shibu V. Mathai and Mrs. Ceena Mathew), Cyber Security Awareness (Reji Ninan, Sumod Abraham, Saji Thomas), an Introduction to Artificial Intelligence (Sumod Abraham, James Varghese, Alisha Maret), and Finance, Investment and Retirement Planning (Biju Mani, Reji Ninan, Saji Thomas, Joseph Abraham).\n\nHonoring our members. On November 16, 2025, the Forum celebrated Rev. Fr. K. P. Varghese on the 50th anniversary of his Holy Priesthood. On December 21, 2025, we celebrated the 90th birthday of our most senior member, Mr. Kuruvilla Kallelil. On March 22, 2026, the Forum honored Mr. Varkey Vattakkattu and Mrs. Mercy Varkey upon their relocation to Dallas, Texas.\n\nCare and Share Ministry. Coordinated by John Kappil and Paul Maret, this ministry arranges home visits to parish members unable to attend services due to illness or age.\n\nFellowship and recreation. Annual urban hiking trips to New York City in 2025 and 2026 (coordinated by Biju Chacko and Mathew Joseph), a summer social gathering of over 30 members on August 23, 2025 (Nithin Ipe and Shiju Poovathoor), and performances at the Ecumenical and SGMOC Christmas programs.",
