@@ -27,11 +27,11 @@
         {
           "label": "ICON: ST. THOMAS",
           "fullpage": {
-            "src": "images/icons/st-thomas.jpg",
+            "src": "images/icons/st-thomas-framed.jpg",
             "alt": "St. Thomas, Apostle of India",
-            "fit": "contain",
-            "bg": "#5a1a0a"
-          }
+            "title": "St. Thomas, Apostle of India"
+          },
+          "note": "Manoj 18 Nov 7:57 AM: 'Achen wants to use this for St Thomas, similar to what we used for last souvenir' (Drive 0_Icons)."
         },
         {
           "label": "ICON: ST. GREGORIOS OF PARUMALA",
