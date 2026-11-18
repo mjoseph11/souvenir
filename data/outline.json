@@ -42,6 +42,23 @@
           }
         },
         {
+          "label": "PORTRAIT: H.G. DR. THOMAS MAR MAKARIOS",
+          "note": "Manoj 18 Nov 8:04 AM: full page each after Parumala Thirumeni; title per Molsey 17 Nov ('Late Lamented H G'). Manoj's enhanced portrait, Drive 0_Icons.",
+          "fullpage": {
+            "src": "images/icons/thomas-mar-makarios-framed.jpg",
+            "alt": "Late Lamented H.G. Dr. Thomas Mar Makarios",
+            "title": "Late Lamented H.G. Dr. Thomas Mar Makarios"
+          }
+        },
+        {
+          "label": "PORTRAIT: H.G. MATHEWS MAR BARNABAS",
+          "fullpage": {
+            "src": "images/icons/mathews-mar-barnabas-framed.jpg",
+            "alt": "Late Lamented H.G. Mathews Mar Barnabas",
+            "title": "Late Lamented H.G. Mathews Mar Barnabas"
+          }
+        },
+        {
           "label": "MESSAGE: CATHOLICOS (KALPANA)",
           "fullpage": {
             "src": "images/catholicos-kalpana-2026.png",
@@ -344,11 +361,6 @@
           "toc": "Our Parish — Charter Families 1976–1980"
         },
         {
-          "file": "src/pages/our-sanctuary.html",
-          "label": "OUR PARISH: OUR SANCTUARY",
-          "toc": "Our Parish — Our Sanctuary"
-        },
-        {
           "placeholder": {
             "title": "Our Parish",
             "heading": "Our Parish in Pictures",
@@ -358,38 +370,41 @@
           "toc": "Our Parish in Pictures"
         },
         {
-          "label": "HISTORY: OUR DIOCESAN FATHERS",
-          "toc": "Remembering Our Diocesan Fathers",
-          "note": "Molsey 17 Nov (\"We forgot an important person\"); portraits from the Diocese Facebook page, chosen by Manoj 6:27-6:28 PM. Facts from pages already in the book (Paul Varki, Mathai Achen, History).",
-          "generated": {
-            "title": "Remembering Our Diocesan Fathers",
-            "band": "Northeast American Diocese",
-            "blocks": [
-              {
-                "type": "photos",
-                "photos": [
-                  {
-                    "src": "images/hierarchs/thomas-mar-makarios.jpg",
-                    "caption": "H.G. Dr. Thomas Mar Makarios"
-                  },
-                  {
-                    "src": "images/hierarchs/mathews-mar-barnabas.jpg",
-                    "caption": "H.G. Mathews Mar Barnabas"
-                  }
-                ],
-                "fill": true
-              },
-              {
-                "type": "text",
-                "center": true,
-                "bare": true,
-                "text": "With gratitude we remember the Metropolitans who shepherded our parish through its early decades.\n\nH.G. Dr. Thomas Mar Makarios, the first Metropolitan of the American Diocese, appointed V. Rev. K. Mathai Cor Episcopos as our vicar, and under his care our parish became St. Gregorios Malankara Orthodox Church in 1984.\n\nH.G. Mathews Mar Barnabas elevated Mathai Achen to Cor Episcopos and consecrated our church in Bensalem in May 2009."
-              },
-              {
-                "type": "eternal",
-                "text": "May Their Memory Be Eternal"
-              }
-            ]
+          "label": "PICTURES: GOLDEN JUBILEE (1 of 4)",
+          "fullpage": {
+            "src": "images/collage/jubilee-collage-1.jpg",
+            "alt": "Golden Jubilee celebration photographs",
+            "title": "Golden Jubilee in Pictures",
+            "fit": "contain"
+          },
+          "toc": "Golden Jubilee in Pictures",
+          "note": "Manoj's collage (WhatsApp 17 Nov 11:12 PM, 'Sovenior Collage.pdf'), placed after the History section per Manoj 18 Nov 8:04 AM."
+        },
+        {
+          "label": "PICTURES: GOLDEN JUBILEE (2 of 4)",
+          "fullpage": {
+            "src": "images/collage/jubilee-collage-2.jpg",
+            "alt": "Golden Jubilee celebration photographs",
+            "title": "Golden Jubilee in Pictures",
+            "fit": "contain"
+          }
+        },
+        {
+          "label": "PICTURES: GOLDEN JUBILEE (3 of 4)",
+          "fullpage": {
+            "src": "images/collage/jubilee-collage-3.jpg",
+            "alt": "Golden Jubilee celebration photographs",
+            "title": "Golden Jubilee in Pictures",
+            "fit": "contain"
+          }
+        },
+        {
+          "label": "PICTURES: GOLDEN JUBILEE (4 of 4)",
+          "fullpage": {
+            "src": "images/collage/jubilee-collage-4.jpg",
+            "alt": "Golden Jubilee celebration photographs",
+            "title": "Golden Jubilee in Pictures",
+            "fit": "contain"
           }
         }
       ]
@@ -513,7 +528,7 @@
                     "src": "images/ministries/st-josephs-forum/group.jpg",
                     "alt": "St. Joseph's Forum"
                   }
-                 ],
+                ],
                 "fill": true
               },
               {
