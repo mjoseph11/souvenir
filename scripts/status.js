@@ -49,7 +49,10 @@ window.addEventListener('load', function () {
     var ph = pg.querySelector('.m-placeholder');
     if (ph) {
       var h2 = ph.querySelector('h2'), plan = ph.querySelector('.m-plan');
-      rec.placeholder = { heading: h2 ? h2.textContent.trim() : '', plan: plan ? plan.textContent.replace(/^Planned length:\\s*/, '').trim() : '' };
+      var about = [].slice.call(ph.querySelectorAll('p'))
+        .filter(function (p) { return !p.classList.contains('m-eyebrow') && !p.classList.contains('m-plan'); })
+        .map(function (p) { return p.textContent.trim(); }).join(' ');
+      rec.placeholder = { heading: h2 ? h2.textContent.trim() : '', plan: plan ? plan.textContent.replace(/^Planned length:\\s*/, '').trim() : '', about: about };
     }
     pg.querySelectorAll('div').forEach(function (d) {
       if (d.children.length || d.textContent.trim() !== 'Photo') return;
@@ -94,7 +97,7 @@ if (pages.length !== labels.length + 1) console.warn(`! ${pages.length} pages la
 const num = (p) => (labels[p.i] ? labels[p.i].n : p.i + 1);
 const todo = [], lowres = [], questions = [], done = [];
 for (const p of pages) {
-  if (p.placeholder) todo.push({ n: num(p), text: p.placeholder.heading && p.placeholder.heading !== p.title ? `${p.title}: ${p.placeholder.heading}` : p.title, note: p.placeholder.plan ? `planned: ${p.placeholder.plan}` : '' });
+  if (p.placeholder) todo.push({ n: num(p), text: p.placeholder.heading && p.placeholder.heading !== p.title ? `${p.title}: ${p.placeholder.heading}` : p.title, about: p.placeholder.about, note: p.placeholder.plan ? `planned: ${p.placeholder.plan}` : '' });
   for (const name of p.missing) todo.push({ n: num(p), text: `${p.title}: photo missing — ${name || 'one portrait'}` });
   for (const l of p.lowres) {
     const what = l.what || path.basename(l.src).replace(/\.[a-z]+$/i, '');
@@ -118,7 +121,7 @@ const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').
 const when = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', dateStyle: 'medium', timeStyle: 'short' });
 const total = pages.length;
 const list = (rows) => rows.length
-  ? `<ol>${rows.map((r) => `<li><span class="pg">${r.n ? `p. ${r.n}` : ''}</span><span class="tx">${esc(r.text)}${r.note ? ` <em>${esc(r.note)}</em>` : ''}</span></li>`).join('')}</ol>`
+  ? `<ol>${rows.map((r) => `<li><span class="pg">${r.n ? `p. ${r.n}` : ''}</span><span class="tx">${esc(r.text)}${r.note ? ` <em>${esc(r.note)}</em>` : ''}${r.about ? `<span class="about">${esc(r.about)}</span>` : ''}</span></li>`).join('')}</ol>`
   : '<p class="none">Nothing open.</p>';
 const section = (title, rows, hint) => `<section><h2>${title} <span class="count">${rows.length}</span></h2>${hint ? `<p class="hint">${hint}</p>` : ''}${list(rows)}</section>`;
 
@@ -144,6 +147,7 @@ const out = `<!DOCTYPE html>
   .pg { flex: none; width: 58px; color: #8a6212; font-variant-numeric: tabular-nums; }
   .tx { min-width: 0; overflow-wrap: anywhere; }
   .tx em { color: #7a6a55; font-size: 14px; }
+  .about { display: block; margin-top: 2px; color: #5a4e42; font-size: 14px; }
   .none { color: #7a6a55; font-style: italic; }
   section.done li { color: #7a6a55; }
 </style>
@@ -154,7 +158,7 @@ const out = `<!DOCTYPE html>
   <p>Updated ${esc(when)} · ${total} pages · <a href="${SITE}">open the souvenir</a></p>
 </header>
 <main>
-${section('To be completed', todo, 'Pages and photos still to come. Page numbers are from the current book and update on their own.')}
+${section('To be completed', todo, 'Pages and photos still to come, with what each page is meant to hold. Page numbers are from the current book and update on their own.')}
 ${section('Low-quality pictures', lowres, `These print below ${MIN_DPI} dpi at their size on the page — a larger copy of the original is needed.`)}
 ${section('Questions', questions)}
 <section class="done"><h2>Recently done <span class="count">${done.length}</span></h2>${list(done)}</section>
