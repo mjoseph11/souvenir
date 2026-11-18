@@ -470,7 +470,7 @@ function fullPage(f) {
   // (8.5 x 9.5 in; Manoj sizes these at 2818 x 3060 px, i.e. 8.75 in with bleed).
   if (f.title) {
     const pos = f.pos ? `;object-position:${esc(f.pos)}` : '';
-    return shell({ title: f.title, cls: 'framed-art', body: `    <img class="framed-img" src="${esc(f.src)}" alt="${esc(f.alt || f.title)}" style="object-fit:${esc(f.fit || 'cover')}${pos}">` });
+    return shell({ title: f.title, cls: f.title.length > 38 ? 'framed-art long-title' : 'framed-art', body: `    <img class="framed-img" src="${esc(f.src)}" alt="${esc(f.alt || f.title)}" style="object-fit:${esc(f.fit || 'cover')}${pos}">` });
   }
   const pos = f.pos ? `;object-position:${esc(f.pos)}` : '';
   return `<div class="page full-page"${f.bg ? ` style="background:${esc(f.bg)}"` : ''}>

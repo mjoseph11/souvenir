@@ -71,6 +71,9 @@
     text-align: center;
     text-shadow: none;
   }
+  /* Long portrait titles ("Late Lamented H.G. Dr. Thomas Mar Makarios") on one
+     line: two lines ran into the print file's safety margin (18 Nov). */
+  .page.long-title .page-header-title h1 { font-size: 20pt; letter-spacing: 0.2px; }
   /* gold rule with a centred diamond */
   .page-header-title::after {
     content: '';

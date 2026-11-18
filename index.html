@@ -1319,6 +1319,9 @@
     text-align: center;
     text-shadow: none;
   }
+  /* Long portrait titles ("Late Lamented H.G. Dr. Thomas Mar Makarios") on one
+     line: two lines ran into the print file's safety margin (18 Nov). */
+  .page.long-title .page-header-title h1 { font-size: 20pt; letter-spacing: 0.2px; }
   /* gold rule with a centred diamond */
   .page-header-title::after {
     content: '';
@@ -1727,7 +1730,7 @@
 <!-- ════════════════════════════════════════
      PAGE 6 — PORTRAIT: H.G. DR. THOMAS MAR MAKARIOS
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page framed-art">
+<div class="page inner-page m-page framed-art long-title">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Late Lamented H.G. Dr. Thomas Mar Makarios</h1>
@@ -1745,7 +1748,7 @@
 <!-- ════════════════════════════════════════
      PAGE 7 — PORTRAIT: H.G. MATHEWS MAR BARNABAS
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page framed-art">
+<div class="page inner-page m-page framed-art long-title">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Late Lamented H.G. Mathews Mar Barnabas</h1>
