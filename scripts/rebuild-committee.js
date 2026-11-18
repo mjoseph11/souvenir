@@ -31,7 +31,7 @@ const boardCards = [
   card('lee-george.png',      'Lee K. George'),
   card('raju-varghese.png',   'Raju Varghese'),
   card('thomas-joseph.png',   'Thomas Joseph'),
-  card(null,                  'Yohannan Mathai'),
+  card('yohannan-mathai.jpg', 'Yohannan Mathai'),
 ].join('');
 
 const committeeCards = [
