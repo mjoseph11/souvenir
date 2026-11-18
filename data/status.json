@@ -1,0 +1,52 @@
+{
+  "_comment": "Open items the status page (status.html, built by scripts/status.js) cannot find by itself. Placeholder pages, 'Photo' circles and low-resolution pictures are found automatically from index.html; list here only what needs a person to answer or send. 'label' is the page's PAGE label in index.html (its number is looked up at build time). Set \"done\": \"<date>\" to move an item to Recently done instead of deleting it.",
+  "items": [
+    {
+      "kind": "missing",
+      "label": "MESSAGE: TRUSTEE",
+      "text": "Reji's picture for the Trustee's message",
+      "waiting": "Reji",
+      "asked": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "CLERGY: ASSOCIATE MINISTER CEENA MATHEW",
+      "text": "Pictures of Ceena and Achen for their page",
+      "waiting": "Ceena",
+      "asked": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "label": "OUR PARISH: CHARTER FAMILIES",
+      "text": "\"V. S. Mathew & Rachel (Uncle came 1977)\" — is this correct?",
+      "asked": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "label": "MISSION BOARD (5 of 18)",
+      "text": "\"Ivin's Outreach, 2021\" — should the picture be straightened?",
+      "asked": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "label": "MISSION BOARD (1 of 18)",
+      "text": "The Mission Board runs to 18 pages — too many; Molsey finds it long and repetitive. Manoj to go through it.",
+      "waiting": "Manoj",
+      "asked": "2026-11-17"
+    },
+    {
+      "kind": "question",
+      "label": "ICON: ST. THOMAS",
+      "text": "Which St. Thomas picture? Achen's choice (the painting used in the last souvenir) is now on the page.",
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "MANAGEMENT COMMITTEE & BOARD",
+      "text": "Thomas Paul's and Yohannan Mathai's photos — taken from their family pages",
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
+    }
+  ]
+}

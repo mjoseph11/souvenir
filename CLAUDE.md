@@ -58,7 +58,9 @@ Bensalem, PA. It is published as a single HTML file (`index.html`), **generated 
 | `scripts/check-verified.js` | Verified-facts guard (CI). Facts can be scoped to a page label |
 | `scripts/check-layout.js` | Headless-Chrome check for overflow, text under footer, broken/squeezed images |
 
-Run after any change: `node scripts/build.js && node scripts/check-verified.js && node scripts/check-layout.js`
+Run after any change: `node scripts/build.js && node scripts/check-verified.js && node scripts/check-layout.js && node scripts/status.js`
+
+`status.html` (built by `scripts/status.js`) is the editorial board's open-items page: https://mjoseph11.github.io/souvenir/status.html. Placeholder pages, "Photo" circles and pictures under 150 dpi are found automatically; questions and photos asked for live in `data/status.json` (mark them `"done": "<date>"` rather than deleting).
 
 Book structure (126 pages as of 2026-09-14): Front (messages, leadership, clergy, past clergy) → History → Ministries → Church Activities → Members & Memorials A–Z (75 families, ads between) → Index → Acknowledgements → Church family photo → Back cover. Unwritten outline items are dashed "To be completed" placeholder pages. Member content came from the Drive **Design** and **Writing/Editing** folders; see memory for folder IDs.
 
