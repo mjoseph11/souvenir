@@ -384,7 +384,14 @@
 .mk-text .mk-close { margin-top: 0.15in; text-align: center; font-weight: 700; color: #e0252b; }
 
 /* Icons and portraits between the header and footer (fullpage with "title") */
-.page.framed-art .framed-img { position: absolute; left: 0; right: 0; top: 0.81in; bottom: 0.69in; width: 100%; height: calc(100% - 1.5in); display: block; z-index: 1; }
+/* Kept just inside the bands' gold rules (and off the bleed in the print build),
+   so both rules show (Manoj, 17 Nov: "gold lines ... of icons missing"). */
+.page.framed-art .framed-img {
+  --fa-top: calc(0.84in + var(--bleed, 0in));
+  --fa-bot: calc(0.72in + var(--bleed, 0in));
+  position: absolute; left: 0; right: 0; top: var(--fa-top); bottom: var(--fa-bot);
+  width: 100%; height: calc(100% - var(--fa-top) - var(--fa-bot)); display: block; z-index: 1;
+}
 .page.framed-art .m-content { position: static; padding: 0; }
 
 /* Compact Malayalam (GSM on one page, 15 Nov) */

@@ -40,6 +40,9 @@ print(f"page size: {chk[0].rect.width/72:.3f} x {chk[0].rect.height/72:.3f} in "
 
 # Safety is measured from the trim line, which sits BLEED in from the sheet edge.
 lo = (BLEED + SAFETY) * 72
+# Measure glyph heights from the font size, not the font's declared ascender:
+# static EB Garamond declares a tall one, which flagged unmoved titles (18 Nov).
+fitz.TOOLS.set_small_glyph_heights(True)
 worst = []
 for p in chk:
     W, H = p.rect.width, p.rect.height
