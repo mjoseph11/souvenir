@@ -9,8 +9,9 @@ const path = require('path');
 
 const root = path.join(__dirname, '..');
 const out = path.resolve(root, process.argv[2] || '_site');
-// The book itself; compare.html, preview-style.html and the review pages are dev tools.
-const pages = ['index.html', 'index-print.html'].filter((f) => fs.existsSync(path.join(root, f)));
+// The book itself and the board's open-items page (status.html); compare.html,
+// preview-style.html and the review pages are dev tools.
+const pages = ['index.html', 'index-print.html', 'status.html'].filter((f) => fs.existsSync(path.join(root, f)));
 
 const decode = (s) => {
   s = s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
