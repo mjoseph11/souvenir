@@ -26,8 +26,12 @@ src = fitz.open(src_path)
 out = fitz.open()
 
 for p in src:
-    page = out.new_page(width=PAGE_W, height=PAGE_H)
-    page.show_pdf_page(fitz.Rect(0, 0, PAGE_W, PAGE_H), src, p.number)
+    # The two cover spreads (back | spine | front) are double width: keep their
+    # own width, which vistaprint-booklet.py already set exactly from the spine.
+    # Squaring them to one page squeezed the whole cover into 8.74in (18 Nov v3/v4).
+    w = p.rect.width if p.rect.width > 1.5 * PAGE_W else PAGE_W
+    page = out.new_page(width=w, height=PAGE_H)
+    page.show_pdf_page(fitz.Rect(0, 0, w, PAGE_H), src, p.number, keep_proportion=False)
 
 out.save(out_path, deflate=True, garbage=4)
 out.close()
@@ -35,8 +39,9 @@ out.close()
 # ── report ──
 chk = fitz.open(out_path)
 print(f"{chk.page_count} pages -> {out_path}")
-print(f"page size: {chk[0].rect.width/72:.3f} x {chk[0].rect.height/72:.3f} in "
-      f"(target {PAGE_W/72:.2f} x {PAGE_H/72:.2f})")
+sizes = sorted({(round(p.rect.width / 72, 3), round(p.rect.height / 72, 3)) for p in chk}, reverse=True)
+print("page sizes: " + ", ".join(f"{w:.3f} x {h:.3f} in ({sum(1 for p in chk if round(p.rect.width/72,3)==w)})" for w, h in sizes)
+      + f"   (inner target {PAGE_W/72:.2f} x {PAGE_H/72:.2f})")
 
 # Safety is measured from the trim line, which sits BLEED in from the sheet edge.
 lo = (BLEED + SAFETY) * 72
