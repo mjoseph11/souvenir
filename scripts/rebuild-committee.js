@@ -44,7 +44,7 @@ const committeeCards = [
   card('shainey-jacob.png',   'Shainey Jacob'),
   card('suchin-thompson.png', 'Suchin Thompson'),
   card('sumod-abraham.png',   'Sumod Abraham'),
-  card(null,                  'Thomas Paul'),
+  card('thomas-paul.jpg',    'Thomas Paul'),
 ].join('');
 
 const newPage = `<!-- ════════════════════════════════════════
