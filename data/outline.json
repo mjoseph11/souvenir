@@ -423,17 +423,26 @@
             "band": "Friendship • Fellowship • Faith",
             "blocks": [
               {
+                "type": "photos",
+                "photos": [
+                  {
+                    "src": "images/ministries/st-josephs-forum/group.jpg",
+                    "alt": "St. Joseph's Forum"
+                  }
+                ]
+              },
+              {
                 "type": "heading",
                 "text": "Brothers in Christ, Serving Our Parish"
               },
               {
                 "type": "text",
-                "size": "sm",
+                "size": "xs",
                 "text": "Originally established in 2024 as the SGMOC Men's Forum, the organization was formally renamed to honor St. Joseph — a timeless pillar of quiet strength, humility, and obedience. Throughout 2025 and 2026, our members have actively immersed themselves in the sacramental life and service of the church, providing volunteer support for the Jubilee Celebrations, the annual Church Picnic, Parish Day, the Volleyball Tournament, the Harvest Festival, the Parish Perunnal, and Christmas programs."
               },
               {
                 "type": "text",
-                "size": "sm",
+                "size": "xs",
                 "center": true,
                 "title": "Executive Committee 2024–2026",
                 "text": "Lead: Paul Maret  •  Secretary: Sumod Abraham  •  Treasurer: Nithin Maret  •  Mission Board Representative: Ajo Maret\n\nCommittee Members: Biju Mani, John Kappil, Saji Thomas, Biju Chacko, Reji Ninan, Santhosh Ninan, Shiju Poovathoor, Mathew Joseph\n\nSpiritual leadership: Rev. Fr. Eby Paulose (Vicar), Mrs. Ceena Mathew (Associate Minister), Rev. Fr. K. P. Varghese"
