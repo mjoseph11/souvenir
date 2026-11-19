@@ -713,6 +713,36 @@ function layoutScan() {
         if (shown > nat * 1.08 && y > 10) issues.push('photo cropped from the middle, heads may be cut (' + im.getAttribute('src') + ')');
       });
     }
+    // 7. No short line said twice on one page (Ceena, 18 Nov: "St. Gregorios Malankara Orthodox
+    //    Church, Bensalem" under Fr. K. P. Varghese's title and again under his name; the
+    //    Trustee's page had the same). Looks at titles, subtitles, names, affiliations and
+    //    captions; body paragraphs are too long to count, and tables and lists (names that
+    //    rightly recur, e.g. a treasurer serving several years) are left out, and so is the
+    //    sign-off, which repeats the writer's name by design. Flags an exact repeat anywhere,
+    //    and, between the title block and the lines under the writer's name, a line of 20+
+    //    characters contained in another.
+    var lines = [];
+    pg.querySelectorAll('.page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content p, .page-content figcaption').forEach(function (e) {
+      if (e.closest('table, ul, ol, .page-header, .page-footer, .message-sign') || e.querySelector('p, h2, h3, h4')) return;
+      var head = !!e.closest('.section-heading, .message-sender');
+      e.innerText.split(String.fromCharCode(10)).forEach(function (ln) {
+        ln = ln.trim();
+        var k = ln.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+        if (k.length >= 12 && ln.length <= 90) lines.push({ k: k, t: ln, head: head });
+      });
+    });
+    var said = {};
+    lines.forEach(function (a, ai) {
+      lines.forEach(function (b, bi) {
+        if (bi <= ai || said[a.k + '|' + b.k]) return;
+        var both = a.head && b.head;
+        var inside = a.k === b.k ? null : !both ? false : a.k.length >= 20 && (' ' + b.k + ' ').indexOf(' ' + a.k + ' ') >= 0 ? [a, b]
+          : b.k.length >= 20 && (' ' + a.k + ' ').indexOf(' ' + b.k + ' ') >= 0 ? [b, a] : false;
+        if (inside === false) return;
+        said[a.k + '|' + b.k] = 1;
+        issues.push(inside ? 'line repeated inside another: "' + inside[0].t + '" / "' + inside[1].t + '"' : 'same line twice on the page: "' + a.t + '"');
+      });
+    });
     if (issues.length) out.push({ page: i + 1, title: (pg.querySelector('h1') || {}).textContent, issues: issues });
   });
   var pre = document.createElement('pre');

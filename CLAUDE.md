@@ -56,7 +56,7 @@ Bensalem, PA. It is published as a single HTML file (`index.html`), **generated 
 | `images/members/<slug>/` | Member photos, resized to ≤2400px |
 | `scripts/build.js` | Builds index.html: page numbers, PAGE comments, A–Z members, Index pages |
 | `scripts/check-verified.js` | Verified-facts guard (CI). Facts can be scoped to a page label |
-| `scripts/check-layout.js` | Headless-Chrome check for overflow, text under footer, broken/squeezed images |
+| `scripts/check-layout.js` | Headless-Chrome check for overflow, text under footer, broken/squeezed images, and the same line twice on a page (e.g. the church name under the title and again under the writer's name) |
 
 Run after any change: `node scripts/build.js && node scripts/check-verified.js && node scripts/check-layout.js && node scripts/status.js`
 
