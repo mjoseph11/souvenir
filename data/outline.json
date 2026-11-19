@@ -770,7 +770,7 @@
         {
           "label": "MINISTRY: LOGOS",
           "toc": "Logos Ministry",
-          "note": "Drive Writing/Editing/LOGOS (Message.docx and photos, 8 Nov); added for the sample per Manoj 18 Nov 2:24 PM.",
+          "note": "Drive Writing/Editing/LOGOS (Message.docx and photos, 8 Nov); added for the sample per Manoj 18 Nov 2:24 PM. 18 Nov 8:29 PM (Manoj): one page - the big group photo only; the LOGOS in Pictures page dropped (similar photos).",
           "generated": {
             "title": "Logos Ministry",
             "band": "Living, Guarding, and Proclaiming the Word of God",
@@ -806,33 +806,6 @@
                 "size": "sm",
                 "title": "Leadership",
                 "text": "Rev. Fr. Shibu Mathai — Previous Spiritual Director\n\nRev. Fr. Eby Paulose — Current Spiritual Director\n\nCeena Mathew — Associate Spiritual Leader\n\nCore Team: Daniel Zachariah, Swetha Boaz, Alisha Maret, Josh Maret, Joel George, Reshma George"
-              }
-            ]
-          }
-        },
-        {
-          "label": "MINISTRY: LOGOS — IN PICTURES",
-          "generated": {
-            "title": "Logos Ministry",
-            "band": "LOGOS in Pictures",
-            "blocks": [
-              {
-                "type": "photos",
-                "photos": [
-                  {
-                    "src": "images/ministries/logos/logos-3.jpg",
-                    "alt": "LOGOS Ministry"
-                  }
-                ]
-              },
-              {
-                "type": "photos",
-                "photos": [
-                  {
-                    "src": "images/ministries/logos/logos-2.jpg",
-                    "alt": "LOGOS Ministry"
-                  }
-                ]
               }
             ]
           }
@@ -969,7 +942,7 @@
         {
           "label": "MINISTRY: ACOLYTES",
           "toc": "Acolytes",
-          "note": "Drive Writing/Editing/Acolytes (text and photos, 14 Nov); added for the sample per Manoj 18 Nov 2:24 PM.",
+          "note": "Drive Writing/Editing/Acolytes (text and photos, 14 Nov); added for the sample per Manoj 18 Nov 2:24 PM. 18 Nov 8:35 PM (Manoj): one page - the In Pictures photos moved under the text.",
           "generated": {
             "title": "Acolytes",
             "band": "Faithfully Serving at the Holy Altar",
@@ -992,30 +965,17 @@
                 "bare": true,
                 "size": "sm",
                 "text": "The Acolyte Ministry of St. Gregorios Malankara Orthodox Church (SGMOC), Bensalem, stands as a testament to faith, devotion, and the enduring legacy of service to the Holy Church. Founded by Very Rev. K. Mathai Cor-Episcopa, this ministry was established with a vision to nurture young men in the sacred traditions of the Malankara Orthodox Church and instill in them a deep reverence for the Holy Altar. Through the years, generations of acolytes have faithfully served in the divine liturgy, carrying forward a tradition rooted in prayer, discipline, humility, and unwavering devotion to Christ and His Church.\n\nThis legacy has been strengthened and enriched through the dedicated leadership of Rev. Fr. Shibu Mathai, under whose guidance the ministry continued to grow and flourish. We lovingly remember Rev. Fr. Paul Varki and Rev. Dn. Markose Mani, of blessed memory, whose lives, service, and spiritual contributions remain an enduring part of our parish’s history. Their faithful witness and dedication helped shape the spiritual foundation upon which future generations continue to build. As we celebrate the Golden Jubilee of SGMOC, we honor these servants of God and all those who have devoted their time, talents, and hearts to the sacred calling of serving at the Holy Altar.\n\nToday, under the leadership and spiritual guidance of Rev. Fr. Eby Paulose, the Acolyte Ministry looks toward a future filled with renewed purpose, deeper faith, and greater commitment. With Achen’s guidance, encouragement, and vision, we pray that this ministry will flourish even more powerfully, raising generations of faithful servants who will uphold the sacred traditions of our Church and boldly carry its spiritual legacy into the future. As we honor fifty years of God’s faithfulness, may the acolytes of SGMOC continue to stand as a living testimony to the power of faith, the beauty of service, and the enduring strength of a Church rooted in Christ. May God bless this ministry abundantly and guide it from strength to strength for generations to come."
-              }
-            ]
-          }
-        },
-        {
-          "label": "MINISTRY: ACOLYTES — IN PICTURES",
-          "generated": {
-            "title": "Acolytes",
-            "band": "Acolytes in Pictures",
-            "blocks": [
+              },
               {
                 "type": "photos",
+                "arrange": "row",
                 "photos": [
                   {
                     "src": "images/ministries/acolytes/aco-2.jpg"
                   },
                   {
                     "src": "images/ministries/acolytes/aco-3.jpg"
-                  }
-                ]
-              },
-              {
-                "type": "photos",
-                "photos": [
+                  },
                   {
                     "src": "images/ministries/acolytes/aco-4.jpg"
                   }
@@ -1023,11 +983,6 @@
               }
             ]
           }
-        },
-        {
-          "file": "src/pages/community-outreach.html",
-          "label": "MISSION & CHARITY: COMMUNITY OUTREACH",
-          "toc": "Community Outreach"
         },
         {
           "file": "src/pages/mission-board-01.html",

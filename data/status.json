@@ -75,10 +75,10 @@
     },
     {
       "kind": "missing",
-      "label": "MISSION & CHARITY: COMMUNITY OUTREACH",
-      "text": "Community Outreach: a photo for the empty photo box",
+      "text": "Community Outreach: a photo for the empty photo box - page removed (Manoj), so no longer needed",
       "waiting": "Silvi Chacko",
-      "asked": "2026-11-18"
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
     },
     {
       "kind": "missing",
@@ -237,22 +237,26 @@
     },
     {
       "kind": "missing",
-      "text": "Picture page(s): use the whole 8.75 x 9.5 in space between header and footer, and add more pictures (Manoj 8:27 PM) - which picture pages to confirm"
+      "text": "Picture page(s): use the whole 8.75 x 9.5 in space between header and footer, and add more pictures (Manoj 8:27 PM) - which picture pages to confirm",
+      "asked": "2026-11-18",
+      "waiting": "Manoj (asked which pages, 8:45 PM)"
     },
     {
       "kind": "missing",
       "label": "MINISTRY: LOGOS",
-      "text": "Logos: one page - use one of the big pictures, drop the second (In Pictures) page (Manoj 8:29 PM)"
+      "text": "Logos: one page - use one of the big pictures, drop the second (In Pictures) page (Manoj 8:29 PM)",
+      "done": "2026-11-18"
     },
     {
       "kind": "missing",
       "label": "MINISTRY: ACOLYTES",
-      "text": "Acolytes: one page - crop the top photo and put the other photos at the bottom (Manoj 8:35 PM)"
+      "text": "Acolytes: one page - crop the top photo and put the other photos at the bottom (Manoj 8:35 PM)",
+      "done": "2026-11-18"
     },
     {
       "kind": "missing",
-      "label": "MISSION & CHARITY: COMMUNITY OUTREACH",
-      "text": "Community Outreach page: remove for now - covered by History and the Mission Board (Manoj 8:36 and 8:40 PM)"
+      "text": "Community Outreach page: remove for now - covered by History and the Mission Board (Manoj 8:36 and 8:40 PM)",
+      "done": "2026-11-18"
     },
     {
       "kind": "missing",
