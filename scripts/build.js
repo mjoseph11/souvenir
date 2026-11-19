@@ -495,6 +495,20 @@ function placeholderPage(item) {
 function adPage(ad) {
   // An ad promised but not yet received: a "To be completed" page holding its place,
   // so the page count and the status page are right (Manoj, 18 Nov 8:39 PM).
+  // A "best compliments" ad set in type, for a sponsor with no artwork of their own
+  // (Malabar Catering, Suchin 18 Nov 9:12 PM).
+  if (!ad.src && ad.compliments) {
+    const c = ad.compliments;
+    const body = `    <div class="ad-compliments">
+      <p class="adc-with">With Best Compliments</p>
+      <div class="adc-rule"></div>
+      <h2 class="adc-name">${esc(c.name)}</h2>
+      ${c.tagline ? `<p class="adc-tag">${esc(c.tagline)}</p>` : ''}
+      <div class="adc-rule"></div>
+      ${lines(c.contact || '').map((l) => `<p class="adc-contact">${esc(l)}</p>`).join('\n      ')}
+    </div>`;
+    return { html: shell({ title: 'Golden Jubilee Sponsor', body, cls: 'm-ad' }), label: `SPONSOR AD: ${ad.name}` };
+  }
   if (!ad.src) {
     const body = `    <div class="m-placeholder">
       <p class="m-eyebrow">To be completed</p>

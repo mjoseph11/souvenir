@@ -1099,6 +1099,14 @@
 .m-content .m-text.lang-ml.size-xs p { font-size: 8.7pt; line-height: 1.45; }
 .m-content .m-text.lang-ml.size-xs p + p { margin-top: 0.4em; }
 
+/* "Best compliments" ad set in type (scripts/build.js adPage, ad.compliments) */
+.ad-compliments { margin: auto; width: 6.2in; padding: 0.7in 0.5in; text-align: center; border: 3px double var(--gold); background: rgba(255,255,255,0.55); }
+.ad-compliments .adc-with { font-size: 15pt; font-style: italic; color: var(--maroon); letter-spacing: 1px; }
+.ad-compliments .adc-rule { width: 2.4in; height: 1px; margin: 0.22in auto; background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent); }
+.ad-compliments .adc-name { font-size: 34pt; color: var(--maroon); letter-spacing: 1px; line-height: 1.1; }
+.ad-compliments .adc-tag { margin-top: 0.12in; font-size: 13pt; color: #5a4e42; }
+.ad-compliments .adc-contact { font-size: 13pt; color: #333; line-height: 1.6; }
+
   /* ══════════════════════════════════════
      MANOJ'S PAGE STYLE — preview only (STYLE=manoj node scripts/build.js)
      Main photo faded into the page, tilted prints, script phrases, and his
@@ -8970,7 +8978,7 @@ And there you will remain, until we meet again.</p></div>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 233 — SPONSOR AD: Malabar (placeholder)
+     PAGE 233 — SPONSOR AD: Malabar Catering
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page m-ad">
   <div class="page-header">
@@ -8979,10 +8987,14 @@ And there you will remain, until we meet again.</p></div>
     </div>
   </div>
   <div class="m-content">
-    <div class="m-placeholder">
-      <p class="m-eyebrow">To be completed</p>
-      <h2>Malabar</h2>
-      <p>Sponsor advertisement &mdash; coming from Suchin (will send).</p>
+    <div class="ad-compliments">
+      <p class="adc-with">With Best Compliments</p>
+      <div class="adc-rule"></div>
+      <h2 class="adc-name">Malabar Catering</h2>
+      <p class="adc-tag">Kerala and South Indian cuisine for homes and events</p>
+      <div class="adc-rule"></div>
+      <p class="adc-contact">10010 Sandmeyer Lane, Philadelphia, PA 19116</p>
+      <p class="adc-contact">(215) 677-2785</p>
     </div>
   </div>
   <div class="page-footer">
