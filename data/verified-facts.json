@@ -26,12 +26,12 @@
     {
       "id": "parish-secretary",
       "label": "Parish Secretary",
-      "expected": "Mr. Mathew Kurian",
+      "expected": "Mr. Mathew Madathil Kurian",
       "scope": "MESSAGE: SECRETARY",
       "forbidden": [
         "Secretary — Mr. Mathew Ninan"
       ],
-      "source": "Confirmed by Mathew Joseph 2026-09-20; matches the Executive Committee page, which has listed Mathew Kurian as Secretary throughout",
+      "source": "Confirmed by Mathew Joseph 2026-09-20; matches the Executive Committee page, which has listed Mathew Kurian as Secretary throughout; full name confirmed by Mathew Madathil Kurian (Lyn) himself on WhatsApp, 2026-11-18 8:35 PM",
       "note": "The Content Outline named Mr. Mathew Ninan and the placeholder carried that over unchecked. Both strings are deliberately kept long: 'Mathew Ninan' on its own is a real member (page 111) and a charter family, so a bare-name guard would fire on them."
     },
     {

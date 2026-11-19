@@ -200,11 +200,11 @@
       "asked": "2026-11-18"
     },
     {
-      "kind": "question",
+      "kind": "missing",
       "label": "MESSAGE: SECRETARY",
-      "text": "Secretary's message: how Lyn wants his name printed (Mr. Mathew Kurian vs Mathew Madathil Kurian; Kurian or Kurien), and OK to change \"Metropolitan-designate, Rev. Fr. Shibu Venad Mathai\" to \"Metropolitan-elect, Very Rev. Geevarghese Remban\"",
-      "waiting": "Lyn (Mathew Kurian)",
-      "asked": "2026-11-18"
+      "text": "Secretary's message: name printed as Mathew Madathil Kurian, and Remban titled as in the rest of the book (Lyn's answers)",
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
     },
     {
       "kind": "missing",
