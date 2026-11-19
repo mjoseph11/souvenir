@@ -18,6 +18,9 @@ RULES = [
     (r'\bV\. Rev\. ', 'Very Rev. '),
     (r'\bV\. REV\. ', 'VERY REV. '),
     (r'\bRev Fr\. ', 'Rev. Fr. '),
+    # a priest is "Rev. Fr." even where the text says just "Fr." (18 Nov). Member
+    # "sort" keys are left alone (see below) so no page moves in the A-Z order.
+    (r'(?<!Rev\. )(?<!Rev )\bFr\. ?(?=[A-Z])', 'Rev. Fr. '),
     # Remban, as in the Metropolitan's letter
     (r'\bRamban\b', 'Remban'),
 ]
@@ -28,7 +31,15 @@ for f in files:
     s = open(f, encoding='utf-8').read()
     n0 = s
     for pat, rep in RULES:
-        s, k = re.subn(pat, rep, s)
+        # member "sort" keys keep their wording so pages don't move in the A-Z order
+        lines = s.split('\n')
+        k = 0
+        for i, ln in enumerate(lines):
+            if '"sort":' in ln:
+                continue
+            lines[i], kk = re.subn(pat, rep, ln)
+            k += kk
+        s = '\n'.join(lines)
         if k:
             print(f'{f}: {k} x {pat!r}')
             total += k
