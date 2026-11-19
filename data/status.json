@@ -342,10 +342,11 @@
       "done": "2026-11-19"
     },
     {
-      "kind": "question",
-      "text": "Fluitron (hydrogen, 'Powering India's journey...') ad is also in the Drive Sponsorship folder (10 Oct, 707x1000 - too small for a full page) - is it a sponsor ad for the book?",
-      "waiting": "Manoj",
-      "asked": "2026-11-19"
+      "kind": "missing",
+      "text": "Fluitron ad is Thomas Joseph's (TJ) (Suchin 9:39 AM, Manoj 10:41 AM) - added on p. 237 in place of Manoj's placeholder ad; the file is only 707x1000 (107 dpi) - need the original, ideally a PDF",
+      "waiting": "Thomas Joseph",
+      "asked": "2026-11-19",
+      "label": "SPONSOR AD: Fluitron — Thomas Joseph"
     }
   ]
 }
