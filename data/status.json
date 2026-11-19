@@ -285,6 +285,13 @@
       "kind": "missing",
       "text": "Malabar Catering ad: a \"With Best Compliments\" page with name, address and phone (owner had no artwork)",
       "done": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "label": "SPONSOR AD: Malabar Catering",
+      "text": "Malabar Catering ad: confirm the phone number (215) 677-2785 with the owner (taken from a public listing)",
+      "waiting": "Suchin",
+      "asked": "2026-11-18"
     }
   ]
 }
