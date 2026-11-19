@@ -307,6 +307,13 @@
       "text": "Print file: inside covers now printed - page 2 (Christ the Teacher) on the inside front, page 241 (Index 3 of 3) on the inside back; this also puts even pages on the left as numbered (Manoj, 11:17 PM)",
       "asked": "2026-11-18",
       "done": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "label": "INDEX (3 of 3)",
+      "text": "Inside back cover: keep the last index page (p. 241, mostly empty), or put the Our Church Family picture there instead?",
+      "waiting": "Manoj",
+      "asked": "2026-11-18"
     }
   ]
 }
