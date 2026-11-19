@@ -4,7 +4,7 @@
     {
       "kind": "missing",
       "label": "MESSAGE: TRUSTEE",
-      "text": "Reji (Thomas) Ninan's picture - one photo covers both the Trustee's message (p. 14) and his Executive Committee spot (p. 16)",
+      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 14) - Reji is looking for one (Manoj, 18 Nov 8:19 PM)",
       "waiting": "Reji",
       "asked": "2026-11-18"
     },
@@ -33,7 +33,7 @@
       "kind": "question",
       "label": "MISSION BOARD (1 of 18)",
       "text": "The Mission Board runs to 18 pages — too many; Molsey finds it long and repetitive. Manoj to go through it.",
-      "waiting": "Manoj",
+      "waiting": "Manoj (talking to Silvi to shorten it, 18 Nov 8:11 PM)",
       "asked": "2026-11-17"
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "kind": "missing",
-      "label": "MANAGEMENT COMMITTEE & BOARD",
+      "label": "MANAGEMENT COMMITTEE & BOARD — GROUP PHOTOS",
       "text": "Thomas Paul's and Yohannan Mathai's photos — taken from their family pages",
       "asked": "2026-11-18",
       "done": "2026-11-18"
@@ -60,7 +60,7 @@
       "kind": "missing",
       "label": "PICTURES: GOLDEN JUBILEE (1 of 4)",
       "text": "Golden Jubilee afternoon pictures — public meeting with the dignitaries, Philadelphia-area members, cultural programs (Molsey: none in the collage)",
-      "waiting": "Suchin (asked Sumod and Babu Kappil, 18 Nov)",
+      "waiting": "Suchin - Sumod does not have them; maybe Jiji Koshy (18 Nov 8:22 PM)",
       "asked": "2026-11-18"
     },
     {
@@ -141,10 +141,10 @@
       "done": "2026-11-18"
     },
     {
-      "kind": "question",
+      "kind": "missing",
       "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
-      "text": "Past Secretaries & Treasurers: 1978, 1981 and 1983 are blank in the Core Fifty list — who served those years?",
-      "waiting": "Molsey"
+      "text": "Past Secretaries & Treasurers: the three years nobody could find (1978, 1981, 1983) left out, per Manoj",
+      "done": "2026-11-18"
     },
     {
       "kind": "question",
@@ -205,6 +205,28 @@
       "text": "Secretary's message: how Lyn wants his name printed (Mr. Mathew Kurian vs Mathew Madathil Kurian; Kurian or Kurien), and OK to change \"Metropolitan-designate, Rev. Fr. Shibu Venad Mathai\" to \"Metropolitan-elect, Very Rev. Geevarghese Remban\"",
       "waiting": "Lyn (Mathew Kurian)",
       "asked": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "text": "Executive Committee page with individual photos removed - everyone is in the group photos; Management Committee & Board group photos cropped and enlarged (Manoj)",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "DIGNITARIES: BENSALEM TOWNSHIP",
+      "text": "Mayor's certificate made larger (Manoj)",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "CLERGY: REV. FR. ALEXANDER KURIEN",
+      "text": "Fr. Alexander Kurien's message on one page (two columns, smaller text), per Manoj",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "text": "Message pages (Remban, Vicar, Trustee, Secretary, Fr. K. P. Varghese, Fr. Alexander Kurien, Ceena): photo, name and title the same size on all (Manoj)",
+      "done": "2026-11-18"
     }
   ]
 }

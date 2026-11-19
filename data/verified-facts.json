@@ -5,7 +5,9 @@
       "id": "mmvs-treasurer",
       "label": "MMVS Treasurer",
       "expected": "Sunitha Zacharia",
-      "forbidden": ["Mercy Varkey"],
+      "forbidden": [
+        "Mercy Varkey"
+      ],
       "scope": "MINISTRY: MMVS",
       "source": "GitHub issue #16 — confirmed by MolseyThomas 2026-04-13",
       "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation. Scoped to the MMVS page (2026-09-14) because Mrs. Mercy Varkey is correctly named elsewhere, in the St. Joseph's Forum report."
@@ -14,7 +16,9 @@
       "id": "mmvs-central-committee",
       "label": "MMVS Central Committee Member",
       "expected": "Beena Koshy",
-      "forbidden": ["Annamma Samuel"],
+      "forbidden": [
+        "Annamma Samuel"
+      ],
       "scope": "MINISTRY: MMVS",
       "source": "GitHub issue #16 — confirmed by MolseyThomas 2026-04-13",
       "note": "Regressed once by commit ecad428; restored. Do not revert without a new confirmation."
@@ -24,7 +28,9 @@
       "label": "Parish Secretary",
       "expected": "Mr. Mathew Kurian",
       "scope": "MESSAGE: SECRETARY",
-      "forbidden": ["Secretary — Mr. Mathew Ninan"],
+      "forbidden": [
+        "Secretary — Mr. Mathew Ninan"
+      ],
       "source": "Confirmed by Mathew Joseph 2026-09-20; matches the Executive Committee page, which has listed Mathew Kurian as Secretary throughout",
       "note": "The Content Outline named Mr. Mathew Ninan and the placeholder carried that over unchecked. Both strings are deliberately kept long: 'Mathew Ninan' on its own is a real member (page 111) and a charter family, so a bare-name guard would fire on them."
     },
@@ -33,18 +39,11 @@
       "label": "Trustee message page",
       "expected": "Mr. Thomas Ninan",
       "scope": "MESSAGE: TRUSTEE",
-      "forbidden": ["Reji Ninan"],
+      "forbidden": [
+        "Reji Ninan"
+      ],
       "source": "Confirmed by Mathew Joseph 2026-09-20",
-      "note": "Trustee and the committee Treasurer are one office, held by Thomas Ninan. He is also known as Reji Ninan, which is what the Leadership Team page used to print; see [committee-treasurer]."
-    },
-    {
-      "id": "committee-treasurer",
-      "label": "Treasurer on the Leadership Team page",
-      "expected": "Thomas Ninan",
-      "forbidden": ["Reji Ninan"],
-      "scope": "MANAGEMENT COMMITTEE & BOARD",
-      "source": "Confirmed by Mathew Joseph 2026-09-20",
-      "note": "Trustee and Treasurer are the same office and the name to print is Thomas Ninan, so this page matches the Trustee message page. Reji Ninan is the same man; the page carried that name until 2026-09-20 and his committee photo is still filed as reji-ninan.png. Scoped to this page because 'Reji Ninan' is left as submitted in the St. Joseph's Forum report."
+      "note": "Trustee and the committee Treasurer are one office, held by Thomas Ninan. He is also known as Reji Ninan, which is what the Leadership Team page used to print. (The Leadership Team page that also named him Treasurer was removed 18 Nov at Manoj's request; its fact [committee-treasurer] went with it.)"
     }
   ]
 }

@@ -113,13 +113,8 @@
           "toc": "Message — Mr. Mathew Madathil Kurian, Secretary"
         },
         {
-          "file": "src/pages/executive-committee.html",
-          "label": "MANAGEMENT COMMITTEE & BOARD",
-          "toc": "Management Committee & Board"
-        },
-        {
           "label": "MANAGEMENT COMMITTEE & BOARD — GROUP PHOTOS",
-          "note": "Drive Non-Member Pages ('Managing Commitee And Board Members.jpeg', 'Board Members.jpg', 18 Nov).",
+          "note": "Drive Non-Member Pages ('Managing Commitee And Board Members.jpeg', 'Board Members.jpg', 18 Nov). 18 Nov (Manoj 8:16 PM): the Executive Committee page with individual photos removed - everyone is in these group photos; photos cropped top and bottom (curtain and floor) so they print larger.",
           "generated": {
             "title": "Management Committee & Board",
             "band": "2026",
@@ -128,7 +123,7 @@
                 "type": "photos",
                 "photos": [
                   {
-                    "src": "images/committee/committee-and-board-2026.jpg",
+                    "src": "images/committee/committee-and-board-2026-crop.jpg",
                     "caption": "Managing Committee and Board Members"
                   }
                 ]
@@ -137,13 +132,14 @@
                 "type": "photos",
                 "photos": [
                   {
-                    "src": "images/committee/board-members-2026.jpg",
+                    "src": "images/committee/board-members-2026-crop.jpg",
                     "caption": "Board Members"
                   }
                 ]
               }
             ]
-          }
+          },
+          "toc": "Management Committee & Board"
         },
         {
           "label": "DIGNITARIES: PRESIDENT OF THE UNITED STATES",
@@ -211,7 +207,7 @@
         {
           "label": "DIGNITARIES: BENSALEM TOWNSHIP",
           "toc": "Recognition — Bensalem Township",
-          "note": "Scan reproduced as received. Manoj 18 Nov 8:22 AM: State Rep. Kathleen Tomlinson's certificate removed (reads as a certificate, not a message); the Mayor's made as large as the page allows. A written message from the Mayor (asked for 17 Nov) would replace or follow this page.",
+          "note": "Scan reproduced as received. Manoj 18 Nov 8:22 AM: State Rep. Kathleen Tomlinson's certificate removed (reads as a certificate, not a message); the Mayor's made as large as the page allows. A written message from the Mayor (asked for 17 Nov) would replace or follow this page. 18 Nov 8:16 PM (Manoj: a little bigger): wide page, 0.3in side margins.",
           "generated": {
             "title": "From Bensalem Township",
             "band": "Mayor Joseph DiGirolamo • Township Council",
@@ -226,7 +222,8 @@
                 ],
                 "whole": true
               }
-            ]
+            ],
+            "wide": true
           }
         },
         {
@@ -238,10 +235,6 @@
           "file": "src/pages/clergy-alexander-kurien.html",
           "label": "CLERGY: REV. FR. ALEXANDER KURIEN",
           "toc": "Clergy — Rev. Fr. Alexander Kurien"
-        },
-        {
-          "file": "src/pages/clergy-alexander-kurien-2.html",
-          "label": "CLERGY: REV. FR. ALEXANDER KURIEN (2 of 2)"
         },
         {
           "file": "src/pages/associate-minister-ceena-mathew.html",

@@ -38,6 +38,8 @@
     padding-top: 0.12in;
   }
   .m-page.has-band .m-content { top: 1.15in; }
+  /* "wide" generated pages: 0.3in side margins (still clear of the 0.2in print-safety line) */
+  .m-page.m-wide .m-content { left: 0.3in; right: 0.3in; }
   /* Text-only pages (e.g. a memorial without photos) sit in the middle of the page. */
   .m-content:not(:has(.m-photos, .m-side, .m-half, .m-index)) { justify-content: center; }
 
