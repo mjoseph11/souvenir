@@ -144,9 +144,10 @@
     {
       "kind": "question",
       "label": "MINISTRY: CHENDA",
-      "text": "Chenda: confirm the names and the 2015 founding year",
+      "text": "Chenda: names and the 2015 founding year confirmed; Biju Mani's four changes made and the page approved",
       "waiting": "Biju Mani",
-      "asked": "2026-11-18"
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
     },
     {
       "kind": "missing",
