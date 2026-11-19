@@ -730,6 +730,11 @@
   .m-page.has-band .m-content { top: 1.15in; }
   /* "wide" generated pages: 0.3in side margins (still clear of the 0.2in print-safety line) */
   .m-page.m-wide .m-content { left: 0.3in; right: 0.3in; }
+  /* "gallery" picture pages (Manoj, 18 Nov 9:04 PM: "use the full real estate for picture"):
+     photos fill the space between header and footer, thin white gaps, no band or frames */
+  .m-page.m-gallery .m-content { top: 0.92in; bottom: 0.52in; left: 0.22in; right: 0.22in; gap: 0.07in; padding-top: 0.06in; }
+  .m-page.m-gallery .m-photos, .m-page.m-gallery .m-row { gap: 0.07in; }
+  .m-page.m-gallery .m-fig img { border: 2px solid #fff; border-radius: 0; }
   /* Text-only pages (e.g. a memorial without photos) sit in the middle of the page. */
   .m-content:not(:has(.m-photos, .m-side, .m-half, .m-index)) { justify-content: center; }
 
@@ -4297,13 +4302,12 @@
 <!-- ════════════════════════════════════════
      PAGE 67 — MINISTRY: MMVS — IN PICTURES (1 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page m-gallery">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Marth Mariam Vanitha Samajam</h1>
     </div>
   </div>
-  <div class="m-band">MMVS in Pictures</div>
   <div class="m-content">
     <div class="m-photos fill"><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-01.jpg" alt="MMVS"></figure><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-02.jpg" alt="MMVS"></figure></div>
     <div class="m-photos fill"><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-04.jpg" alt="MMVS"></figure><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-05.jpg" alt="MMVS"></figure></div>
@@ -4319,13 +4323,12 @@
 <!-- ════════════════════════════════════════
      PAGE 68 — MINISTRY: MMVS — IN PICTURES (2 of 2)
 ════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band">
+<div class="page inner-page m-page m-gallery">
   <div class="page-header">
     <div class="page-header-title">
       <h1>Marth Mariam Vanitha Samajam</h1>
     </div>
   </div>
-  <div class="m-band">MMVS in Pictures</div>
   <div class="m-content">
     <div class="m-photos fill"><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-18.jpg" alt="MMVS"></figure><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-20.jpg" alt="MMVS"></figure></div>
     <div class="m-photos fill"><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-21.jpg" alt="MMVS"></figure><figure class="m-fig"><img src="images/ministries/mmvs/album/mmvs-24.jpg" alt="MMVS"></figure></div>

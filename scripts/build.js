@@ -551,9 +551,10 @@ for (const section of outline.sections) {
     else if (item.generated) {
       const g = item.generated;
       const body = renderBlocks(g.blocks, { id: g.title, alt: g.title });
+      // "gallery": a picture page, photos edge to edge between header and footer (Manoj, 18 Nov).
       // "wide": narrower side margins, for a landscape document that should print as
       // large as the page allows (the Mayor's certificate, Manoj 18 Nov 8:16 PM).
-      added = [{ html: shell({ title: g.title, band: g.band ? esc(g.band) : '', body, cls: g.wide ? 'm-wide' : '' }), label: item.label || g.title.toUpperCase() }];
+      added = [{ html: shell({ title: g.title, band: g.band && !g.gallery ? esc(g.band) : '', body, cls: g.gallery ? 'm-gallery' : g.wide ? 'm-wide' : '' }), label: item.label || g.title.toUpperCase() }];
     } else if (item.member) {
       const m = members.find((x) => x.id === item.member);
       if (!m) throw new Error(`outline names unknown member "${item.member}"`);

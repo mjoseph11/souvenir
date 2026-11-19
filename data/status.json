@@ -237,7 +237,7 @@
     },
     {
       "kind": "missing",
-      "text": "Picture pages - all of them (Golden Jubilee in Pictures, Our Parish in Pictures, MMVS in Pictures): use the full space between header and footer with more pictures per page, like Manoj's sample (18 Nov 9:04 PM)",
+      "text": "Picture pages: Golden Jubilee in Pictures (4 pages) and Our Parish in Pictures still to do in the full-space style (MMVS done) - asked Manoj whether he is sending new full-size collages",
       "asked": "2026-11-18"
     },
     {
@@ -267,6 +267,12 @@
       "kind": "missing",
       "label": "CLERGY: REV. FR. ALEXANDER KURIEN",
       "text": "Fr. Alexander Kurien's page: empty space under the left column removed and the title and photo moved up, so the text is larger (7.3pt -> 7.8pt) with both columns full (Mathew)",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "MINISTRY: MMVS — IN PICTURES (1 of 2)",
+      "text": "MMVS in Pictures (2 pages): photos fill the whole space between header and footer, thin white gaps, like Manoj's sample",
       "done": "2026-11-18"
     }
   ]
