@@ -165,6 +165,27 @@
       "label": "CLERGY: REV. FR. K. P. VARGHESE",
       "text": "Fr. K. P. Varghese: new portrait from Ceena (no longer low quality) and the page titled \"With Profound Joy and Gratitude\"",
       "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "text": "Clergy titles the same throughout the book: Very Rev. K. Mathai Cor-Episcopa, Very Rev. Geevarghese Remban, and Rev. Fr. for every priest (Remban, Cor-Episcopa spelled as in the Metropolitan's letter)",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "text": "Repeated church name under the titles removed on pp. 12, 14 and 22; every build now checks for a line said twice on a page",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "MESSAGE: GEEVARGHESE REMBAN",
+      "text": "Remban's message laid out like Fr. K. P. Varghese's page, with a temporary picture (from his WhatsApp profile) until a proper photo comes",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "MESSAGE: GEEVARGHESE REMBAN",
+      "text": "A proper photo of Very Rev. Geevarghese Remban for his message (the one on the page is temporary) and for the Chosen to Shepherd page (p. 26, 96 dpi)"
     }
   ]
 }
