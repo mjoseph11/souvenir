@@ -26,7 +26,8 @@
       "kind": "question",
       "label": "MISSION BOARD (5 of 18)",
       "text": "\"Ivin's Outreach, 2021\" — should the picture be straightened?",
-      "asked": "2026-11-18"
+      "asked": "2026-11-18",
+      "waiting": "Silvi Chacko"
     },
     {
       "kind": "question",
@@ -75,7 +76,9 @@
     {
       "kind": "missing",
       "label": "MISSION & CHARITY: COMMUNITY OUTREACH",
-      "text": "Community Outreach: a photo for the empty photo box"
+      "text": "Community Outreach: a photo for the empty photo box",
+      "waiting": "Silvi Chacko",
+      "asked": "2026-11-18"
     },
     {
       "kind": "question",
@@ -186,6 +189,13 @@
       "kind": "missing",
       "label": "MESSAGE: GEEVARGHESE REMBAN",
       "text": "A proper photo of Very Rev. Geevarghese Remban for his message (the one on the page is temporary) and for the Chosen to Shepherd page (p. 26, 96 dpi)"
+    },
+    {
+      "kind": "missing",
+      "label": "MISSION BOARD (4 of 18)",
+      "text": "Larger originals of \"Sock Drive, November 2020\" and \"Winter Coat Drive banner, 2020\" (both print below 150 dpi)",
+      "waiting": "Silvi Chacko",
+      "asked": "2026-11-18"
     }
   ]
 }
