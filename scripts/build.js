@@ -493,6 +493,16 @@ function placeholderPage(item) {
 }
 
 function adPage(ad) {
+  // An ad promised but not yet received: a "To be completed" page holding its place,
+  // so the page count and the status page are right (Manoj, 18 Nov 8:39 PM).
+  if (!ad.src) {
+    const body = `    <div class="m-placeholder">
+      <p class="m-eyebrow">To be completed</p>
+      <h2>${esc(ad.name)}</h2>
+      <p>Sponsor advertisement${ad.from ? ` &mdash; coming from ${esc(ad.from)}` : ''}.</p>
+    </div>`;
+    return { html: shell({ title: 'Golden Jubilee Sponsor', body, cls: 'm-ad' }), label: `SPONSOR AD: ${ad.name} (placeholder)` };
+  }
   const body = renderBlocks([{ type: 'photos', plain: true, photos: [{ src: ad.src, alt: ad.name }] }], { id: ad.id, alt: ad.name });
   return { html: shell({ title: 'Golden Jubilee Sponsor', body, cls: 'm-ad' }), label: `SPONSOR AD: ${ad.name}` };
 }
