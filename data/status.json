@@ -257,6 +257,18 @@
       "kind": "missing",
       "text": "Community Outreach page: remove for now - covered by History and the Mission Board (Manoj 8:36 and 8:40 PM)",
       "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "MINISTRY: CHOIR",
+      "text": "Choir page had no footer or page number - standard footer added (found checking the print file)",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "CLERGY: REV. FR. ALEXANDER KURIEN",
+      "text": "Fr. Alexander Kurien's page: empty space under the left column removed - columns balanced, text 7.5pt (Mathew)",
+      "done": "2026-11-18"
     }
   ]
 }
