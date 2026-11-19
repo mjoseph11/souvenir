@@ -410,9 +410,9 @@
 .m-content .m-text.lang-ml.size-xs p + p { margin-top: 0.4em; }
 
 /* "Best compliments" ad set in type (scripts/build.js adPage, ad.compliments) */
-.ad-compliments { margin: auto; width: 6.2in; padding: 0.7in 0.5in; text-align: center; border: 3px double var(--gold); background: rgba(255,255,255,0.55); }
-.ad-compliments .adc-with { font-size: 15pt; font-style: italic; color: var(--maroon); letter-spacing: 1px; }
-.ad-compliments .adc-rule { width: 2.4in; height: 1px; margin: 0.22in auto; background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent); }
-.ad-compliments .adc-name { font-size: 34pt; color: var(--maroon); letter-spacing: 1px; line-height: 1.1; }
-.ad-compliments .adc-tag { margin-top: 0.12in; font-size: 13pt; color: #5a4e42; }
-.ad-compliments .adc-contact { font-size: 13pt; color: #333; line-height: 1.6; }
+.ad-compliments { margin: auto; width: 7.1in; min-height: 8.4in; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; padding: 0.8in 0.5in; text-align: center; border: 3px double var(--gold); background: rgba(255,255,255,0.55); }
+.ad-compliments .adc-with { font-size: 24pt; font-style: italic; color: var(--maroon); letter-spacing: 1px; }
+.ad-compliments .adc-rule { width: 3.6in; height: 1.5px; margin: 0.4in auto; background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent); }
+.ad-compliments .adc-name { font-size: 56pt; color: var(--maroon); letter-spacing: 1px; line-height: 1.1; }
+.ad-compliments .adc-tag { margin-top: 0.2in; font-size: 16pt; color: #5a4e42; }
+.ad-compliments .adc-contact { font-size: 20pt; color: #333; line-height: 1.6; }
