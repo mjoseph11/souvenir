@@ -4,8 +4,8 @@
     {
       "kind": "missing",
       "label": "MESSAGE: TRUSTEE",
-      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 14) - Reji is looking for one (Manoj, 18 Nov 8:19 PM)",
-      "waiting": "Reji",
+      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 14) - Reji is looking for one (Manoj, 18 Nov 8:19 PM); Suchin will take his photo this Sunday (9:48 PM)",
+      "waiting": "Suchin",
       "asked": "2026-11-18"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width and page count for the order: 242 inner pages plus 4 cover pages (246 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
+      "text": "Spine width and page count for the order: 240 inner pages plus 4 cover pages (244 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -237,8 +237,9 @@
     },
     {
       "kind": "missing",
-      "text": "Picture pages: Golden Jubilee in Pictures (4 pages) and Our Parish in Pictures still to do in the full-space style (MMVS done) - asked Manoj whether he is sending new full-size collages",
-      "asked": "2026-11-18"
+      "text": "Picture pages: Golden Jubilee in Pictures (4 pages) and Our Parish in Pictures still to do in the full-space style (MMVS done) - asked Manoj whether he is sending new full-size collages - Shijicha has the selected pictures (Manoj 9:37 PM)",
+      "asked": "2026-11-18",
+      "waiting": "Shijicha"
     },
     {
       "kind": "missing",
@@ -289,8 +290,22 @@
     {
       "kind": "question",
       "label": "SPONSOR AD: Malabar Catering",
-      "text": "Malabar Catering ad: confirm the phone number (215) 677-2785 with the owner (taken from a public listing)",
+      "text": "Malabar Catering ad: confirm the phone number (215) 677-2785 with the owner (taken from a public listing) - matches their business card (Manoj 9:46 PM)",
       "waiting": "Suchin",
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "label": "SPONSOR AD: Malabar Catering",
+      "text": "Malabar Catering: Manoj made an ad from their business card (8.75 x 9.5, with cell and email) - use it as the placeholder instead of the typeset page? (Suchin 9:47 PM: keep that for now)",
+      "waiting": "Mathew",
+      "asked": "2026-11-18"
+    },
+    {
+      "kind": "question",
+      "text": "Print file: inside front and inside back covers are blank (Manoj 10:35 PM) - print on them, or redo the file in Vistaprint's stapled-booklet format he sent (single pages, 0.125in bleed, 0.5in safe margin)?",
+      "waiting": "Manoj",
       "asked": "2026-11-18"
     }
   ]
