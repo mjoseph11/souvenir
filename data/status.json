@@ -89,7 +89,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width and page count for the order: 238 inner pages plus 4 printed cover pages (242 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
+      "text": "Spine width and page count for the order: 240 inner pages plus 4 printed cover pages (244 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -311,7 +311,7 @@
     {
       "kind": "missing",
       "label": "OUR CHURCH FAMILY",
-      "text": "Inside back cover: Our Church Family picture moved after the Index to p. 241, so it prints on the inside back cover (Manoj, 11:24 PM); Index now pp. 238-240",
+      "text": "Inside back cover: Our Church Family picture moved after the Index to the last page, so it prints on the inside back cover (Manoj, 11:24 PM); ",
       "asked": "2026-11-18",
       "done": "2026-11-18"
     },
@@ -326,6 +326,26 @@
       "text": "Sample print file for an 80lb paper test: icons and Thirumenis' pages (pp. 2-11) with the covers, on Drive beside the main print file (Manoj, 11:37 PM)",
       "asked": "2026-11-18",
       "done": "2026-11-18"
+    },
+    {
+      "kind": "missing",
+      "label": "SPONSOR AD: David Samuel — State Farm",
+      "text": "State Farm ad (David Samuel) was in the Drive Sponsorship folder but missing from the book - added (Manoj, 19 Nov 8:06 AM)",
+      "asked": "2026-11-19",
+      "done": "2026-11-19"
+    },
+    {
+      "kind": "missing",
+      "label": "SPONSOR AD: Mable Philip — Every Home Realtors",
+      "text": "Mable Philip's ad was in the Drive Sponsorship folder but missing from the book - added (Manoj, 19 Nov 8:06 AM)",
+      "asked": "2026-11-19",
+      "done": "2026-11-19"
+    },
+    {
+      "kind": "question",
+      "text": "Fluitron (hydrogen, 'Powering India's journey...') ad is also in the Drive Sponsorship folder (10 Oct, 707x1000 - too small for a full page) - is it a sponsor ad for the book?",
+      "waiting": "Manoj",
+      "asked": "2026-11-19"
     }
   ]
 }
