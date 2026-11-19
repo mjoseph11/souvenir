@@ -81,10 +81,11 @@
       "asked": "2026-11-18"
     },
     {
-      "kind": "question",
-      "text": "Lyn's picture (Drive Non-Member Pages, IMG-20261118-WA0008.jpg) is for his message (Manoj, 18 Nov 8:08 PM) - it looks like the Secretary, Mathew Kurian (p. 15); confirm before it goes in",
+      "kind": "missing",
+      "text": "Lyn's (Mathew Kurian's) portrait on his Secretary's message (p. 15) and the Executive Committee (p. 16)",
       "asked": "2026-11-18",
-      "label": "MESSAGE: SECRETARY"
+      "label": "MESSAGE: SECRETARY",
+      "done": "2026-11-18"
     },
     {
       "kind": "question",
