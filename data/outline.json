@@ -1094,18 +1094,18 @@
           "toc": "Editorial Board & Acknowledgements"
         },
         {
+          "index": true
+        },
+        {
           "label": "OUR CHURCH FAMILY",
           "toc": "Our Church Family",
-          "note": "Picnic photo, Drive Non-Member Pages (20260711_140530.jpg, uploaded by Manoj 18 Nov); turned sideways so the photo is as large as the page allows.",
+          "note": "Picnic photo, Drive Non-Member Pages (20260711_140530.jpg, uploaded by Manoj 18 Nov); turned sideways so the photo is as large as the page allows. Last inner page, so it prints on the inside back cover (Manoj, 18 Nov 11:24 PM).",
           "fullpage": {
             "src": "images/church-family/picnic-2026.jpg",
             "alt": "SGMOC church family at the parish picnic",
             "title": "Our Church Family",
             "fit": "contain"
           }
-        },
-        {
-          "index": true
         },
         {
           "file": "src/pages/back-cover.html",

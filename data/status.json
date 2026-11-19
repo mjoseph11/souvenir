@@ -309,11 +309,11 @@
       "done": "2026-11-18"
     },
     {
-      "kind": "question",
-      "label": "INDEX (3 of 3)",
-      "text": "Inside back cover: keep the last index page (p. 241, mostly empty), or put the Our Church Family picture there instead?",
-      "waiting": "Manoj",
-      "asked": "2026-11-18"
+      "kind": "missing",
+      "label": "OUR CHURCH FAMILY",
+      "text": "Inside back cover: Our Church Family picture moved after the Index to p. 241, so it prints on the inside back cover (Manoj, 11:24 PM); Index now pp. 238-240",
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
     }
   ]
 }
