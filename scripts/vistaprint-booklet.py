@@ -38,6 +38,8 @@ ap.add_argument("--spine", type=float, default=0.06,
 ap.add_argument("--spine-text",
                 default="St. Gregorios Malankara Orthodox Church  ◆  Golden Jubilee Souvenir  ◆  1976 – 2026",
                 help='text down the spine; "" for none')
+ap.add_argument("--blank-inside", action="store_true",
+                help="leave the inside covers blank instead of printing the first and last inner pages there")
 ap.add_argument("--spine-font", default="fonts/EBGaramond-SemiBold.ttf")
 a = ap.parse_args()
 
@@ -107,18 +109,33 @@ elif a.spine_text:
     marks.write_text(s1, color=GOLD, morph=turn)
     print(f"  spine text {size:.1f}pt")
 
-# ── spread 2: inside cover, left blank as the instructions allow ──
+# ── spread 2: inside covers ──
+# Book page 2 goes on the inside front cover and the last inner page on the
+# inside back (Manoj, 18 Nov 11:17 PM). That also puts page 2 on a left-hand
+# page as the numbering assumes; with blank inside covers it fell on a right.
+# Seen from inside, the sheet reads inside-front | spine | inside-back. Each
+# page keeps its bleed on the three cut sides; the spine side is trimmed off.
+inner = fitz.open(a.inner)
 s2 = out.new_page(width=spread_w, height=page_h)
 s2.draw_rect(s2.rect, color=None, fill=(1, 1, 1))
+first, last = 0, inner.page_count - 1
+if not a.blank_inside:
+    half = (BLEED + TRIM_W) * PT
+    s2.show_pdf_page(fitz.Rect(0, 0, half, page_h), inner, first,
+                     clip=fitz.Rect(0, 0, half, page_h))
+    s2.show_pdf_page(fitz.Rect(spread_w - half, 0, spread_w, page_h), inner, last,
+                     clip=fitz.Rect(page_w - half, 0, page_w, page_h))
+    print("  inside covers: first and last inner pages")
 
 # ── inner pages, single, in reading order ──
-inner = fitz.open(a.inner)
 for p in inner:
+    if not a.blank_inside and p.number in (first, last):
+        continue
     pg = out.new_page(width=page_w, height=page_h)
     pg.show_pdf_page(fitz.Rect(0, 0, page_w, page_h), inner, p.number)
 
 out.save(a.out, deflate=True, garbage=4)
 print(f"{a.out}")
 print(f"  2 cover spreads  {spread_w/PT:.3f} x {page_h/PT:.3f} in   (spine {a.spine}in)")
-print(f"  {inner.page_count} inner pages    {page_w/PT:.3f} x {page_h/PT:.3f} in")
+print(f"  {out.page_count - 2} inner pages    {page_w/PT:.3f} x {page_h/PT:.3f} in")
 print(f"  {out.page_count} sheets in the file")

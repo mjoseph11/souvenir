@@ -89,7 +89,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width and page count for the order: 240 inner pages plus 4 cover pages (244 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
+      "text": "Spine width and page count for the order: 238 inner pages plus 4 printed cover pages (242 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -303,10 +303,10 @@
       "done": "2026-11-18"
     },
     {
-      "kind": "question",
-      "text": "Print file: inside front and inside back covers are blank (Manoj 10:35 PM) - print on them, or redo the file in Vistaprint's stapled-booklet format he sent (single pages, 0.125in bleed, 0.5in safe margin)?",
-      "waiting": "Manoj",
-      "asked": "2026-11-18"
+      "kind": "missing",
+      "text": "Print file: inside covers now printed - page 2 (Christ the Teacher) on the inside front, page 241 (Index 3 of 3) on the inside back; this also puts even pages on the left as numbered (Manoj, 11:17 PM)",
+      "asked": "2026-11-18",
+      "done": "2026-11-18"
     }
   ]
 }
