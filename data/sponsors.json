@@ -19,7 +19,8 @@
         "tagline": "Kerala and South Indian cuisine for homes and events",
         "contact": "10010 Sandmeyer Lane\nPhiladelphia, PA 19116\n(215) 677-2785"
       },
-      "note": "No artwork from the owner - \"best compliments\" (Suchin, 18 Nov 9:12 PM). Address and phone from public business listings (Yellow Pages), confirmed by the user 18 Nov."
+      "note": "Manoj's ad made from their business card (18 Nov 9:46 PM; Suchin 9:47 PM: keep it as placeholder; Mathew: swap). The typeset 'compliments' version below is kept in case it is wanted back - build.js uses src first. Phone (215) 677-2785 matches the card.",
+      "src": "images/members/sponsorship/malabar-catering.jpg"
     },
     {
       "id": "sajicha-cpa",
