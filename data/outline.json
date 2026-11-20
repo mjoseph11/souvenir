@@ -331,13 +331,6 @@
         },
         {
           "placeholder": {
-            "title": "A Farewell Message",
-            "heading": "From Very Rev. Geevarghese Remban",
-            "note": "A farewell message to the parish after fifteen years as Vicar (2011–2026), to be requested from Achen."
-          }
-        },
-        {
-          "placeholder": {
             "title": "Fifteen Years in Pictures",
             "heading": "Very Rev. Geevarghese Remban (Shibu Achen) with Our Parish",
             "note": "Photographs from his years at SGMOC, the August 27, 2026 announcement and the parish felicitation. A high-resolution portrait is also needed — the current photo (170×241 px) is too small to print."
@@ -468,12 +461,22 @@
             "title": "Golden Jubilee in Pictures",
             "fit": "cover"
           },
-          "note": "Composed from the photographer's set Manoj shared (Drive 167NQMHwkvM_OguSbH89MTcFrCoxOqqju, Member Pages 19 Nov 7:30 PM): each row's photos keep their own shape, at most 4% trimmed. Sized to the framed-art box, 8.75 x 9.44 in, white margins off the trim. Photos #5, 47, 46, 53, 67, 63, 4, 29."
+          "note": "Composed from the photographer's set Manoj shared (Drive 167NQMHwkvM_OguSbH89MTcFrCoxOqqju, Member Pages 19 Nov 7:30 PM): each row's photos keep their own shape, at most 4% trimmed. Sized to the framed-art box, 8.75 x 9.44 in, white margins off the trim. Photos #5, 4, 46, 29, 67, 42, 47, 17."
+        },
+        {
+          "label": "PICTURES: GOLDEN JUBILEE — ARRIVAL",
+          "fullpage": {
+            "src": "images/collage/jubilee-evening-2.jpg",
+            "alt": "Golden Jubilee: the Thirumenis arrive at the church and the hall; children with flags on the red carpet",
+            "title": "Golden Jubilee in Pictures",
+            "fit": "cover"
+          },
+          "note": "Composed from the photographer's set Manoj shared (Drive 167NQMHwkvM_OguSbH89MTcFrCoxOqqju, Member Pages 19 Nov 7:30 PM): each row's photos keep their own shape, at most 4% trimmed. Sized to the framed-art box, 8.75 x 9.44 in, white margins off the trim. Photos #53, 63, 68, 13, 66, 69, 76, 59, 79."
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE — PUBLIC MEETING",
           "fullpage": {
-            "src": "images/collage/jubilee-evening-2.jpg",
+            "src": "images/collage/jubilee-evening-3.jpg",
             "alt": "Golden Jubilee public meeting: the Thirumenis, dignitaries and the parish",
             "title": "Golden Jubilee in Pictures",
             "fit": "cover"
