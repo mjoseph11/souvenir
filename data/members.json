@@ -1021,7 +1021,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/rajan-eappen/60e081de-864b-44e1-99d9-ff9b2afb583e-RAJAN-EAPPEN.jpg"
+                  "src": "images/members/rajan-eappen/rajan-eappen-2.jpg"
                 }
               ]
             },
@@ -1032,12 +1032,13 @@
         }
       ],
       "sort": "Eappen Rajan ",
-      "indexName": "Rajan Eappen & Family"
+      "indexName": "Rajan Eappen & Family",
+      "layoutNote": "20 Nov (Molsey 2:46 PM, Manoj 3:49 PM): new photo from the Design folder (IMG-20261027-WA0000~3 - Jerrin.jpg, 833x1123)."
     },
     {
       "id": "rajan-mathew",
       "name": "Rajan Mathew",
-      "title": "Rajan Mathew & Family",
+      "title": "Dr. Rajan Mathew & Family",
       "pages": [
         {
           "blocks": [
@@ -1063,7 +1064,8 @@
       ],
       "mainPhoto": 2,
       "sort": "Mathew Rajan ",
-      "indexName": "Rajan Mathew & Family"
+      "indexName": "Dr. Rajan Mathew & Family",
+      "layoutNote": "20 Nov (Molsey 1:33 PM): Dr. added; rest is good."
     },
     {
       "id": "raju-sankarathil",
@@ -3140,7 +3142,7 @@
               "type": "article",
               "text": "Jiji Koshy was born in the early 1960s and raised in Vazhoor, Kottayam, Kerala, as the youngest of eight children. His family was active in St. Peter’s Malankara Syrian Orthodox Church in Pulikkalkavala. After earning a degree in Business and Administration and working as a Logistics Manager in Kerala, Jiji immigrated to the United States in 1991, settling in New Jersey with his eldest brother, George.\n\nBeena Abraham was born in the late 1960s and raised in North Paravur, Ernakulam, the second of three children of Areekal Abraham Tharian and Vazhappilli Sucy Abraham. After earning a master’s degree in physics, Beena married Jiji in 1992. Jiji settled in Philadelphia with his brother Thomas, where he helped establish St. Mary’s Malankara Syrian Orthodox Church; Beena and their daughter Jane joined him in 1996.\n\nIn the summer of 2000, a season of change — a new job, a new home, their eldest starting kindergarten and a third child on the way — brought them to St. Gregorios, shortly before Joanne was born. Over the years both became active in the ministries, and their daughters in the Youth League and Sunday School. In 2023 Beena made parish history as the first woman to serve as Treasurer and Trustee.\n\nJiji grew up serving at the altar in his home parish, and after immigrating faced pressure from colleagues and family to join other denominations. He stayed with the faith handed down to him, and encourages those around him to do the same. Beena set out to be a physicist and found instead a profession in computers; leaving her family in Kerala, she built a new one here, and came to find in SGMOC a second home.\n\nJiji established and runs Alma Digital Vision, his photography and videography business, and Beena works as an Enterprise Systems Programmer with the City of Philadelphia. Their daughters have gone on to science research, engineering, literature and writing. Above all the family treasures the church community that has carried and enriched their lives.",
               "photo": {
-                "src": "images/members/jiji-koshy/photo.jpg"
+                "src": "images/members/jiji-koshy/photo-2.jpg"
               },
               "photoMax": "3.2in"
             },
@@ -3169,7 +3171,7 @@
           ]
         }
       ],
-      "layoutNote": "20 Nov (Beena via Manoj 12:16 PM): three pictures added in a row at the foot of the page, black and white, the portrait cropped to the height of the others, no memorial format.",
+      "layoutNote": "20 Nov (Beena via Manoj 12:16 PM): three pictures added in a row at the foot of the page, black and white, the portrait cropped to the height of the others, no memorial format. Main photo replaced with the copy in the Design folder (image(1).png) - Manoj 20 Nov 2:56 PM: the old one cut off Joanna's hand.",
       "indexName": "Jiji Koshy & Family"
     },
     {

@@ -66,7 +66,8 @@
     {
       "kind": "missing",
       "label": "MINISTRY: GROW",
-      "text": "GROW: Secretary and Treasurer (now TBD), a write-up of GROW at SGMOC, and photos for the two empty photo boxes - Manoj asking Silvi; GROW and GROW Sprouts together should be one page (19 Nov 6:52 PM)"
+      "text": "GROW: Secretary and Treasurer (now TBD), a write-up of GROW at SGMOC, and photos for the two empty photo boxes - Manoj asking Silvi; GROW and GROW Sprouts together should be one page (19 Nov 6:52 PM) - 20 Nov: replaced by the new GROW document (Design/Organizations/Grow, Manoj 3:49 PM) on two pages, GROW and GROW Sprouts, with 11 photos; the document has no Secretary/Treasurer list, so that box is gone",
+      "done": "2026-11-20"
     },
     {
       "kind": "missing",
@@ -391,9 +392,10 @@
     },
     {
       "kind": "missing",
-      "text": "Shibu Achen (Remban) page and pictures - Lyn working on it, hopefully by 20 Nov (Manoj, 19 Nov 6:50 PM)",
+      "text": "Shibu Achen (Remban) page and pictures - Lyn working on it, hopefully by 20 Nov (Manoj, 19 Nov 6:50 PM) - 20 Nov: Lyn's article \"From Shepherd to Metropolitan\" in (pp 24-26) with two pages of his photos (pp 27-28), replacing the draft tribute pages; book now 250 pages",
       "waiting": "Lyn",
-      "asked": "2026-11-19"
+      "asked": "2026-11-19",
+      "done": "2026-11-20"
     },
     {
       "kind": "missing",
@@ -481,6 +483,27 @@
       "label": "MEMBER PAGE: Mathew Jacob (1 of 2)",
       "text": "Matt & Shainey confirmed their page is good (Molsey 20 Nov 9:28 AM) - marked approved, Proof copy tag off",
       "waiting": "Molsey",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Rajan Mathew",
+      "text": "Rajan Mathew & Family: add Dr. (Molsey 20 Nov 1:33 PM; rest is good) - now Dr. Rajan Mathew & Family, Index too",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Rajan Eappen",
+      "text": "Rajan Eappen: new photo (Molsey 20 Nov 2:46 PM, Manoj 3:49 PM) - replaced with the Design-folder copy (833x1123, prints about 190 dpi)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Jiji Koshy",
+      "text": "Jiji Koshy: main picture still the old one with Joanna's hand cut off (Manoj 20 Nov 2:56 PM) - replaced with the new copy in their Design folder",
       "asked": "2026-11-20",
       "done": "2026-11-20"
     }

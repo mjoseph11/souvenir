@@ -119,7 +119,10 @@ const BLOCKS = {
     let fig = b.photo ? figure(b.photo, ctx.alt) : '';
     if (b.photoMax) fig = fig.replace('<img ', `<img style="max-height:${esc(b.photoMax)}" `);
     const title = b.title ? `<h2 class="m-article-title">${heading(b.title)}</h2>` : '';
-    const body = paragraphs(b.text).map((p) => `<p>${esc(p)}</p>`).join('');
+    // "## Heading" paragraphs are section headings, "> text" a quoted verse
+    // (Lyn's tribute to Geevarghese Ramban, 20 Nov).
+    const body = paragraphs(b.text).map((p) => (p.startsWith('## ') ? `<h3 class="m-article-sub">${esc(p.slice(3))}</h3>`
+      : p.startsWith('> ') ? `<p class="m-article-verse">${esc(p.slice(2))}</p>` : `<p>${esc(p)}</p>`)).join('');
     const sign = b.sign ? `<p class="m-sign">&mdash; ${esc(b.sign)}</p>` : '';
     return `<div class="${cls}">${b.span ? title + fig : fig + title}${body}${sign}</div>`;
   },

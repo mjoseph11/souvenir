@@ -297,6 +297,20 @@
     margin-bottom: 0.1in;
     text-align: left;
   }
+  /* section headings and a quoted verse inside an article ("## " / "> " paragraphs) */
+  .m-article .m-article-sub {
+    color: var(--maroon);
+    font-size: 11pt;
+    line-height: 1.3;
+    margin: 0.12in 0 0.05in;
+    break-after: avoid;
+  }
+  .m-article .m-article-verse {
+    font-style: italic;
+    text-align: center !important;
+    color: var(--maroon) !important;
+    margin: 0 0.1in 0.1in;
+  }
   .m-article.span-title .m-article-title {
     column-span: all;
     text-align: center;
