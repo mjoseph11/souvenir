@@ -447,6 +447,13 @@
       "waiting": "Suchin",
       "asked": "2026-11-19",
       "done": "2026-11-20"
+    },
+    {
+      "kind": "question",
+      "text": "Are index names different from page titles, to match page numbers? (Suchin 20 Nov 8:33 AM) - answered: index lists each family by one name A-Z by surname; titles are the family's choice; page numbers automatic",
+      "waiting": "Suchin",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     }
   ]
 }
