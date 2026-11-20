@@ -1025,14 +1025,14 @@
                 "arrange": "row",
                 "photos": [
                   {
-                    "src": "images/ministries/grow/grow-2026-03.jpg",
+                    "src": "images/ministries/grow/grow-2026-03-crop.jpg",
                     "alt": "GROW",
-                    "flex": 1.499
+                    "flex": 2.156
                   },
                   {
-                    "src": "images/ministries/grow/grow-2026-04.jpg",
+                    "src": "images/ministries/grow/grow-2026-04-crop.jpg",
                     "alt": "GROW",
-                    "flex": 0.666
+                    "flex": 0.929
                   }
                 ]
               }
