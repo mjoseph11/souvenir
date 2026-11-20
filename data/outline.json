@@ -408,6 +408,22 @@
         },
         {
           "placeholder": {
+            "title": "Building Our Church",
+            "heading": "The Construction of Our Church",
+            "pages": "about 2 pages",
+            "note": "Article on the building of our church by Thomas Joseph, who will try to send it this week (Manoj, Member Pages 19 Nov 8:21 PM). Two pages held so the page count stays even."
+          },
+          "toc": "Building Our Church"
+        },
+        {
+          "placeholder": {
+            "title": "Building Our Church (continued)",
+            "heading": "The Construction of Our Church",
+            "note": "Second page of Thomas Joseph's article."
+          }
+        },
+        {
+          "placeholder": {
             "title": "Our Parish",
             "heading": "Our Parish in Pictures",
             "pages": "3–6 pages, ending with the Perunnal",

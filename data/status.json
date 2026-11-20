@@ -89,7 +89,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width and page count for the order: 242 inner pages plus 4 printed cover pages (246 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
+      "text": "Spine width and page count for the order: 244 inner pages plus 4 printed cover pages (248 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -391,6 +391,13 @@
       "kind": "missing",
       "text": "Golden Jubilee cultural programs: no pictures yet (the photographer's set has none) - Gigi uncle's video or the GJ social media team",
       "waiting": "Manoj",
+      "asked": "2026-11-19"
+    },
+    {
+      "kind": "missing",
+      "label": "PLACEHOLDER: Building Our Church",
+      "text": "Church construction article by Thomas Joseph - two placeholder pages held after Past Secretaries & Treasurers (pp. 42-43); he will try to send it this week (Manoj, 19 Nov 8:21 PM)",
+      "waiting": "Thomas Joseph",
       "asked": "2026-11-19"
     }
   ]
