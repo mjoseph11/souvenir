@@ -2561,6 +2561,7 @@
               "items": [
                 "P. V. Thomas & Sophy Thomas",
                 "George Thomas & Stephanie Thomas",
+                "Tom Philip & Susan Philip",
                 "Christen Philip & Julia Philip",
                 "Jordan Philip • Nicholas Philip • Grayson Thomas • Violet Thomas"
               ],
@@ -2568,7 +2569,7 @@
             },
             {
               "type": "text",
-              "text": "My wife and I with our two children came to the United States of America on July 10, 1983.",
+              "text": "My wife and I, with our two children, came to the United States of America on July 10, 1983.",
               "center": true,
               "italic": true,
               "bare": true,
@@ -2579,7 +2580,8 @@
       ],
       "pending": true,
       "sort": "Thomas P. V. ",
-      "indexName": "P. V. Thomas & Family"
+      "indexName": "P. V. Thomas & Family",
+      "layoutNote": "20 Nov (Molsey 4:28 PM): daughter and son-in-law Tom Philip & Susan Philip added as the 3rd row; commas added to the last sentence."
     },
     {
       "id": "thomas-mammen",
