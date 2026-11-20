@@ -454,6 +454,19 @@
       "waiting": "Suchin",
       "asked": "2026-11-20",
       "done": "2026-11-20"
+    },
+    {
+      "kind": "question",
+      "text": "Index naming - one common style or run by families? (Suchin 20 Nov 8:38 AM) - three options sent to the group with PDFs: 1 as now, 2 name only (one style, memorials marked In Memoriam), 3 page title; suggested Option 2. Waiting for the group's choice. Option 1 (current) cuts off two long entries (John Kappil, Vinit Mathew)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "INDEX (1 of 3)",
+      "text": "Contents line 'Tribute - Very Rev. Geevarghese Ramban, Metropolitan-designate' was cut off - shortened to 'Tribute - Very Rev. Geevarghese Ramban' (the page itself keeps the title)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     }
   ]
 }
