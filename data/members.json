@@ -33,7 +33,8 @@
         }
       ],
       "title": "Dr. Ashok Joseph & Family",
-      "approved": true
+      "approved": true,
+      "indexName": "Dr. Ashok Joseph & Family"
     },
     {
       "id": "dustin-paul",
@@ -63,7 +64,8 @@
         }
       ],
       "title": "Dr. Dustin Paul & Family",
-      "approved": true
+      "approved": true,
+      "indexName": "Dr. Dustin Paul & Family"
     },
     {
       "id": "fr-alexander-kurien",
@@ -106,7 +108,8 @@
           ]
         }
       ],
-      "title": "Varghese Chandy & Family"
+      "title": "Varghese Chandy & Family",
+      "indexName": "Varghese Chandy & Family"
     },
     {
       "id": "mani-p-abraham",
@@ -148,7 +151,8 @@
           ]
         }
       ],
-      "title": "In Loving Memory"
+      "title": "In Loving Memory",
+      "indexName": "In Loving Memory — P. K. Abraham & Annamma"
     },
     {
       "id": "mathewkutty-kurian",
@@ -182,7 +186,8 @@
           ]
         }
       ],
-      "title": "Mathewkutty Kurian & Family"
+      "title": "Mathewkutty Kurian & Family",
+      "indexName": "Mathewkutty Kurian & Family"
     },
     {
       "id": "thomas-paul",
@@ -226,7 +231,8 @@
         }
       ],
       "title": "Thomas Paul & Family",
-      "sortNote": "Manoj asked for Thomas Paul to come before Dustin Paul, so both Pauls carry explicit ordinals."
+      "sortNote": "Manoj asked for Thomas Paul to come before Dustin Paul, so both Pauls carry explicit ordinals.",
+      "indexName": "Thomas Paul & Family"
     },
     {
       "id": "a-o-abraham",
@@ -262,7 +268,8 @@
       "sort": "Abraham A. O. ",
       "layoutNote": "Manoj, 16 Nov 6:21 PM: new picture (Drive Abraham O. Abraham/IMG-20261116-WA0007.jpg, now pic-3) replaces the top one (pic-1). Manoj 7:46 PM (\"Abi abraham can you make bottom picture little bigger\"): photoScale 0.9 on the top photo, printMax 4.0 for the bottom print.",
       "photoScale": 0.9,
-      "printMax": 4.0
+      "printMax": 4.0,
+      "indexName": "A. O. Abraham & Family"
     },
     {
       "id": "ajay-peter",
@@ -286,7 +293,8 @@
         }
       ],
       "sort": "Peter Ajay ",
-      "approved": true
+      "approved": true,
+      "indexName": "Ajay Peter & Family"
     },
     {
       "id": "ajeesh-cherian",
@@ -314,7 +322,8 @@
         }
       ],
       "sort": "Cherian Ajeesh ",
-      "approved": true
+      "approved": true,
+      "indexName": "Ajeesh Koshy Cherian & Family"
     },
     {
       "id": "alexander-thankachen",
@@ -338,7 +347,8 @@
         }
       ],
       "sort": "Thankachen Alexander ",
-      "approved": true
+      "approved": true,
+      "indexName": "Alexander Thankachen & Family"
     },
     {
       "id": "arun-philip",
@@ -388,7 +398,8 @@
         }
       ],
       "sort": "Philip Arun ",
-      "layoutNote": "Tracker (Susan Philip / Suja row) + Suchin 17 Nov: family picture on top (Suchin's copy with the ladder removed), Arun's father on the bottom \"in loving memory\"; title \"Lt. Aniyan & Suja Philip & Family\" as the family asked (Suchin confirmed 17 Nov)."
+      "layoutNote": "Tracker (Susan Philip / Suja row) + Suchin 17 Nov: family picture on top (Suchin's copy with the ladder removed), Arun's father on the bottom \"in loving memory\"; title \"Lt. Aniyan & Suja Philip & Family\" as the family asked (Suchin confirmed 17 Nov).",
+      "indexName": "Lt. Aniyan & Suja Philip & Family"
     },
     {
       "id": "arun-raju",
@@ -415,7 +426,8 @@
         }
       ],
       "sort": "Raju Arun ",
-      "approved": true
+      "approved": true,
+      "indexName": "Arun Raju & Family"
     },
     {
       "id": "ashley-mountney",
@@ -439,7 +451,8 @@
         }
       ],
       "sort": "Mountney Patrick ",
-      "approved": true
+      "approved": true,
+      "indexName": "Patrick Mountney & Family"
     },
     {
       "id": "babu-varghese",
@@ -496,7 +509,8 @@
         }
       ],
       "sort": "Varghese Babu ",
-      "memorialNote": "15 Nov: two memorial photos (couples) from Manoj; one page, memorial at the bottom (Manoj 4:47 PM). Names and dates from Manoj 6:40 PM WhatsApp: blue-curtain photo = Babu's parents, seated photo = Omana's parents. Heading 'Our Beloved Parents' is ours. Psalm 127:1 dropped to make room."
+      "memorialNote": "15 Nov: two memorial photos (couples) from Manoj; one page, memorial at the bottom (Manoj 4:47 PM). Names and dates from Manoj 6:40 PM WhatsApp: blue-curtain photo = Babu's parents, seated photo = Omana's parents. Heading 'Our Beloved Parents' is ours. Psalm 127:1 dropped to make room.",
+      "indexName": "Babu Varghese & Family"
     },
     {
       "id": "biju-chacko",
@@ -526,7 +540,8 @@
           ]
         }
       ],
-      "sort": "Chacko Biju "
+      "sort": "Chacko Biju ",
+      "indexName": "Biju Chacko & Family"
     },
     {
       "id": "biju-mani",
@@ -593,7 +608,8 @@
         }
       ],
       "sort": "Mani Biju ",
-      "approved": true
+      "approved": true,
+      "indexName": "Biju Mani & Family"
     },
     {
       "id": "dr-joe-john",
@@ -622,7 +638,7 @@
           ]
         }
       ],
-      "indexName": "V. S. John (Dr. Joe John)",
+      "indexName": "V. S. John & Family",
       "sort": "John V. S. ",
       "approved": true
     },
@@ -654,7 +670,8 @@
         }
       ],
       "sort": "Mathew George ",
-      "approved": true
+      "approved": true,
+      "indexName": "George Mathew & Family"
     },
     {
       "id": "george-varghese",
@@ -684,7 +701,8 @@
         }
       ],
       "sort": "Varghese George ",
-      "approved": true
+      "approved": true,
+      "indexName": "George Varghese & Family"
     },
     {
       "id": "jacob-george",
@@ -716,7 +734,8 @@
           ]
         }
       ],
-      "sort": "George Jacob "
+      "sort": "George Jacob ",
+      "indexName": "Jacob George & Family"
     },
     {
       "id": "john-varghese",
@@ -746,7 +765,8 @@
         }
       ],
       "sort": "Varghese John ",
-      "approved": true
+      "approved": true,
+      "indexName": "John Varghese & Family"
     },
     {
       "id": "joseph-abraham",
@@ -792,7 +812,8 @@
       ],
       "sort": "Abraham Joseph ",
       "layoutNote": "Manoj: page 1 is Joseph and auntie; page 2 is the family, older on top and younger below. family-1 to 3 run oldest children to youngest.",
-      "approved": true
+      "approved": true,
+      "indexName": "Joseph Abraham & Family"
     },
     {
       "id": "manoj-samuel",
@@ -823,7 +844,8 @@
         }
       ],
       "sort": "Samuel Manoj ",
-      "approved": true
+      "approved": true,
+      "indexName": "Manoj Samuel & Family"
     },
     {
       "id": "mathew-ninan",
@@ -875,7 +897,8 @@
       ],
       "sort": "Ninan Mathew ",
       "layoutNote": "Manoj: \"Manoj Ninans memorial same as joys one family top memorial section on bottom\". Name and dates are from the note.txt in the Drive folder. 3 Nov: Manoj asked for the memorial photo on top.",
-      "approved": true
+      "approved": true,
+      "indexName": "Mathew Ninan & Family"
     },
     {
       "id": "mathew-thomas",
@@ -898,7 +921,8 @@
           ]
         }
       ],
-      "sort": "Thomas Mathew "
+      "sort": "Thomas Mathew ",
+      "indexName": "Mathew Thomas & Family"
     },
     {
       "id": "paul-j-maret",
@@ -928,7 +952,8 @@
         }
       ],
       "sort": "Maret Paul J. ",
-      "approved": true
+      "approved": true,
+      "indexName": "Paul J. Maret & Family"
     },
     {
       "id": "philipose-george",
@@ -951,7 +976,8 @@
           ]
         }
       ],
-      "sort": "George Philipose "
+      "sort": "George Philipose ",
+      "indexName": "Philipose George & Family"
     },
     {
       "id": "prince-mathew",
@@ -981,7 +1007,8 @@
         }
       ],
       "sort": "Mathew Prince ",
-      "approved": true
+      "approved": true,
+      "indexName": "Prince Mathew & Family"
     },
     {
       "id": "rajan-eappen",
@@ -1004,7 +1031,8 @@
           ]
         }
       ],
-      "sort": "Eappen Rajan "
+      "sort": "Eappen Rajan ",
+      "indexName": "Rajan Eappen & Family"
     },
     {
       "id": "rajan-mathew",
@@ -1034,7 +1062,8 @@
         }
       ],
       "mainPhoto": 2,
-      "sort": "Mathew Rajan "
+      "sort": "Mathew Rajan ",
+      "indexName": "Rajan Mathew & Family"
     },
     {
       "id": "raju-sankarathil",
@@ -1057,7 +1086,8 @@
           ]
         }
       ],
-      "sort": "Sankarathil Raju "
+      "sort": "Sankarathil Raju ",
+      "indexName": "Raju Sankarathil & Family"
     },
     {
       "id": "sarath-moses",
@@ -1081,7 +1111,8 @@
         }
       ],
       "sort": "Moses Sarath ",
-      "approved": true
+      "approved": true,
+      "indexName": "Sarath Moses & Family"
     },
     {
       "id": "shiju-poovathoor",
@@ -1114,7 +1145,8 @@
         }
       ],
       "sort": "Poovathoor Shiju ",
-      "approved": true
+      "approved": true,
+      "indexName": "Shiju Poovathoor & Family"
     },
     {
       "id": "suchin-thompson",
@@ -1151,7 +1183,8 @@
       "sort": "Thompson Suchin ",
       "photoScale": 0.78,
       "layoutNote": "Suchin, 9 Nov: new left and right photos (\"L Side.jpg\", \"R Side.jpg\"); main photo trimmed so \"Together\" clears it. 9 Nov 7:50pm: church photo bigger; 8:22pm: names line added.",
-      "approved": true
+      "approved": true,
+      "indexName": "Suchin Thompson & Family"
     },
     {
       "id": "sujith-varghese",
@@ -1181,7 +1214,8 @@
         }
       ],
       "sort": "Varghese Sujith ",
-      "approved": true
+      "approved": true,
+      "indexName": "Sujith Varghese & Family"
     },
     {
       "id": "thomas-joseph",
@@ -1212,7 +1246,8 @@
       ],
       "sort": "Joseph Thomas ",
       "seeAlso": "ashanth-thomas",
-      "seeAlsoLabel": "the Ashanth Thomas family"
+      "seeAlsoLabel": "the Ashanth Thomas family",
+      "indexName": "Thomas Joseph & Family"
     },
     {
       "id": "varughese-koithottu",
@@ -1236,7 +1271,8 @@
         }
       ],
       "sort": "Koithottu Varughese ",
-      "approved": true
+      "approved": true,
+      "indexName": "Varughese Koithottu & Family"
     },
     {
       "id": "varkey-vattakkattu",
@@ -1261,7 +1297,8 @@
       ],
       "sort": "Vattakkattu Varkey ",
       "phrases": false,
-      "approved": true
+      "approved": true,
+      "indexName": "Varkey Vattakkattu & Family"
     },
     {
       "id": "zach-zacharia",
@@ -1295,7 +1332,8 @@
         }
       ],
       "sort": "Zacharia Zach ",
-      "approved": true
+      "approved": true,
+      "indexName": "Dr. Zach & Sunitha Zacharia & Family"
     },
     {
       "id": "kurien-p-mathew",
@@ -1317,7 +1355,7 @@
         }
       ],
       "band": "",
-      "indexName": "Kurien P. Mathew (In Loving Memory)",
+      "indexName": "In Loving Memory — Kurien P. Mathew",
       "sort": "Mathew Vinesh 0",
       "layoutNote": "11 Nov (Manoj): grouped with The Mathew Family: memorial, family photo (Vinesh), Noah's poem (Vinit).",
       "approved": true
@@ -1357,7 +1395,8 @@
           ]
         }
       ],
-      "sort": "Ittyachen Biju "
+      "sort": "Ittyachen Biju ",
+      "indexName": "The Ittyachen Family"
     },
     {
       "id": "cherian-t-george",
@@ -1383,7 +1422,8 @@
         }
       ],
       "sort": "George Cherian T. ",
-      "layoutNote": "Molsey, 19 Nov 5:32 PM: the family's submission (Member Page Submission - CHERIAN GEORGE.pdf) has 'Best Compliments: Reji, Gem, Joel, Cerena, Crystal & Chinnu' under the icon."
+      "layoutNote": "Molsey, 19 Nov 5:32 PM: the family's submission (Member Page Submission - CHERIAN GEORGE.pdf) has 'Best Compliments: Reji, Gem, Joel, Cerena, Crystal & Chinnu' under the icon.",
+      "indexName": "Cherian T. George & Family"
     },
     {
       "id": "george-m-mathew",
@@ -1409,7 +1449,8 @@
           ]
         }
       ],
-      "sort": "Mathew George M. "
+      "sort": "Mathew George M. ",
+      "indexName": "George M. Mathew & Family"
     },
     {
       "id": "thomas-cheriyan",
@@ -1441,7 +1482,8 @@
       ],
       "sort": "Cheriyan Thomas ",
       "layoutNote": "Manoj, 5 Nov: John Chacko's page style - main photo straight, the second a tilted print. The family's message goes where the names line sits.",
-      "approved": true
+      "approved": true,
+      "indexName": "Thomas Cheriyan & Family"
     },
     {
       "id": "vinesh-mathew",
@@ -1463,7 +1505,8 @@
         }
       ],
       "sort": "Mathew Vinesh 1",
-      "layoutNote": "Design folder \"Vinesh Mathew\": \"Souvenir - Jubliee - MathewV.docx\" of 1 Oct (cream background)."
+      "layoutNote": "Design folder \"Vinesh Mathew\": \"Souvenir - Jubliee - MathewV.docx\" of 1 Oct (cream background).",
+      "indexName": "The Mathew Family (Vinit & Vinesh Mathew)"
     },
     {
       "id": "vinit-mathew",
@@ -1484,9 +1527,9 @@
           ]
         }
       ],
-      "indexName": "Vinit Mathew — \"Leading Our Path\" by Noah Mathew",
       "sort": "Mathew Vinit ",
-      "approved": true
+      "approved": true,
+      "indexSkip": true
     },
     {
       "id": "basil-milton",
@@ -1511,7 +1554,8 @@
         }
       ],
       "sort": "Milton Basil ",
-      "approved": true
+      "approved": true,
+      "indexName": "The Milton Family"
     },
     {
       "id": "betcy-allen",
@@ -1533,7 +1577,8 @@
         }
       ],
       "sort": "Kuruvila Allen ",
-      "approved": true
+      "approved": true,
+      "indexName": "Allen Kuruvila & Family"
     },
     {
       "id": "poovathoor-koshy",
@@ -1574,7 +1619,8 @@
         }
       ],
       "sort": "Koshy Dr. Poovathoor ",
-      "layoutNote": "Family, 7 Nov (via Manoj): title Dr. Poovathoor Koshy & Mrs. Baby Koshy; compliments under the family picture."
+      "layoutNote": "Family, 7 Nov (via Manoj): title Dr. Poovathoor Koshy & Mrs. Baby Koshy; compliments under the family picture.",
+      "indexName": "Dr. Poovathoor Koshy & Mrs. Baby Koshy"
     },
     {
       "id": "ejo-john",
@@ -1617,7 +1663,8 @@
           ]
         }
       ],
-      "sort": "John Ejo "
+      "sort": "John Ejo ",
+      "indexName": "Ejo John & Family"
     },
     {
       "id": "jacob-chacko",
@@ -1648,7 +1695,8 @@
           ]
         }
       ],
-      "sort": "Chacko Jacob "
+      "sort": "Chacko Jacob ",
+      "indexName": "Jacob Chacko & Family"
     },
     {
       "id": "james-varughese",
@@ -1694,7 +1742,8 @@
       ],
       "sort": "Varughese James ",
       "layoutNote": "Jimmy, 9 Nov (tracker): parents and the family photo with his sister in the larger bottom row; event photos on top.",
-      "approved": true
+      "approved": true,
+      "indexName": "James Varughese & Family"
     },
     {
       "id": "jinu-john",
@@ -1718,7 +1767,8 @@
         }
       ],
       "sort": "John Jinu ",
-      "layoutNote": "10 Nov: rewritten text \"A Faith We Received.docx\" (older version moved to Old); verse dropped as in the new version."
+      "layoutNote": "10 Nov: rewritten text \"A Faith We Received.docx\" (older version moved to Old); verse dropped as in the new version.",
+      "indexName": "Jinu John & Family"
     },
     {
       "id": "korah-mani",
@@ -1739,7 +1789,8 @@
           ]
         }
       ],
-      "sort": "Mani Korah "
+      "sort": "Mani Korah ",
+      "indexName": "Korah Mani & Family"
     },
     {
       "id": "kallelil",
@@ -1770,7 +1821,8 @@
           ]
         }
       ],
-      "sort": "Kallelil Kuruvilla (Saji) "
+      "sort": "Kallelil Kuruvilla (Saji) ",
+      "indexName": "The Kallelil Family"
     },
     {
       "id": "kuruvilla-p-kurian",
@@ -1799,7 +1851,8 @@
         }
       ],
       "sort": "Kurian Kuruvilla P. ",
-      "approved": true
+      "approved": true,
+      "indexName": "Kuruvilla P. Kurian & Family"
     },
     {
       "id": "mathew-varghese",
@@ -1832,7 +1885,8 @@
           ]
         }
       ],
-      "sort": "Varghese Mathew "
+      "sort": "Varghese Mathew ",
+      "indexName": "Mathew Varghese & Family"
     },
     {
       "id": "matt-jacob",
@@ -1874,7 +1928,9 @@
           ]
         }
       ],
-      "sort": "Jacob Mathew "
+      "sort": "Jacob Mathew ",
+      "indexName": "Mathew Jacob & Family",
+      "approved": true
     },
     {
       "id": "ninan-parel",
@@ -1907,7 +1963,8 @@
           ]
         }
       ],
-      "sort": "Parel Ninan "
+      "sort": "Parel Ninan ",
+      "indexName": "Ninan Parel & Family"
     },
     {
       "id": "saji-george",
@@ -1940,7 +1997,8 @@
           ]
         }
       ],
-      "sort": "George Saji "
+      "sort": "George Saji ",
+      "indexName": "Saji George & Family"
     },
     {
       "id": "samuel-daniel",
@@ -1970,7 +2028,8 @@
           ]
         }
       ],
-      "sort": "Daniel Samuel "
+      "sort": "Daniel Samuel ",
+      "indexName": "Samuel Daniel & Family"
     },
     {
       "id": "varughese-p-issac",
@@ -1996,7 +2055,8 @@
           ]
         }
       ],
-      "sort": "Issac Varughese P. "
+      "sort": "Issac Varughese P. ",
+      "indexName": "Varughese P. Issac & Family"
     },
     {
       "id": "jessu-joys",
@@ -2050,7 +2110,8 @@
         }
       ],
       "sort": "Joys Jessu ",
-      "approved": true
+      "approved": true,
+      "indexName": "Jessu Joys & Family"
     },
     {
       "id": "john-kappil",
@@ -2084,7 +2145,7 @@
         }
       ],
       "band": "",
-      "indexName": "John Kappil — in memory of Kunjuvarughese & Annamma Kappil",
+      "indexName": "In Loving Memory — Kappil Family",
       "sort": "Kappil John ",
       "approved": true
     },
@@ -2143,7 +2204,8 @@
       ],
       "sort": "John Thankamoni ",
       "layoutNote": "Photo grid, not the usual memorial format: Manoj — \"she requested it she wanted it in that format\". Order follows his Layout.png, which is the authority: the bottom row runs Pic 6 then Pic 5, not in number order.",
-      "band": ""
+      "band": "",
+      "indexName": "In Loving Memory — by Thankamoni John"
     },
     {
       "id": "yohannan-sankarathil",
@@ -2197,7 +2259,8 @@
           ]
         }
       ],
-      "sort": "Sankarathil Yohannan "
+      "sort": "Sankarathil Yohannan ",
+      "indexName": "Yohannan Sankarathil & Family"
     },
     {
       "id": "mathai-memorial",
@@ -2206,7 +2269,7 @@
       "band": "",
       "placement": "outline",
       "sort": "Mathai Very Rev. Kaleeckal Cor-Episcopa ",
-      "indexName": "Very Rev. Kaleeckal Mathai Cor Episcopos",
+      "indexName": "In Memoriam — Very Rev. K. Mathai Cor Episcopos",
       "layoutNote": "Manoj, 10 Nov: \"Memorial Pages\" design (ChatGPT image) and photo \"Mathai Achen - Manoj Chacko.jpg\". Replaces the hand-built src/pages/past-clergy-mathai-cor-episcopa.html.",
       "pages": [
         {
@@ -2242,7 +2305,7 @@
       ],
       "band": "",
       "placement": "outline",
-      "indexName": "Rev. Fr. Dr. Paul Varki (In Memoriam)",
+      "indexName": "In Memoriam — Rev. Fr. Dr. Paul Varki",
       "sort": "Varki Rev. Fr. Dr. Paul 0",
       "layoutNote": "Manoj, 11 Nov: church memorials are their own section before the organizations; this page split off the Paul Varki pages, which stay in Past Clergy."
     },
@@ -2303,7 +2366,6 @@
         }
       ],
       "band": "",
-      "indexName": "Rev. Fr. Dr. Paul Varki (Mariamma Varki & family)",
       "sort": "Varki Rev. Fr. Dr. Paul ",
       "layoutNote": "Manoj, 6 Nov: memorial page has only Achen's portrait; Mariamma Varki's page has Achen and Kochamma, the tribute, then the two standing photos; \"Mariamma Varki 2\" is her children's page. Photos are the upscaled copies in the Design folder (5 Oct). 10 Nov: memorial page redone from Manoj's \"In Memoriam_ Rev. Fr. Dr. Paul Varki.png\" design. 15 Nov: both Mariamma Varki pages moved from Past Clergy to the A–Z member pages (only messages stay in the front). 15 Nov: first page is headed as the tribute to Achen; Mariamma Varki & Family follows."
     },
@@ -2326,7 +2388,7 @@
       ],
       "band": "",
       "placement": "outline",
-      "indexName": "Deacon Markose Mani (Cherian Mani & family)",
+      "indexName": "In Memoriam — Deacon Markose Mani",
       "sort": "Mani Deacon Markose ",
       "layoutNote": "Manoj, 10 Nov: \"In Memoriam_ Dn. Markose Mani.png\" design; portrait \"IMG_7915 - C. Mani.jpeg\" (2002), cropped to drop the date stamp."
     },
@@ -2373,7 +2435,8 @@
         }
       ],
       "collage": true,
-      "photoScale": 0.85
+      "photoScale": 0.85,
+      "indexName": "Cherian Mani & Family"
     },
     {
       "id": "baboo-george",
@@ -2404,7 +2467,8 @@
         }
       ],
       "pending": true,
-      "sort": "George Baboo "
+      "sort": "George Baboo ",
+      "indexName": "Baboo George & Family"
     },
     {
       "id": "blossom-joy",
@@ -2432,7 +2496,8 @@
         }
       ],
       "pending": true,
-      "sort": "Joy Blossom "
+      "sort": "Joy Blossom ",
+      "indexName": "Blossom Joy & Family"
     },
     {
       "id": "v-c-thomas",
@@ -2468,7 +2533,7 @@
         }
       ],
       "band": "Golden Jubilee Memorial Tribute",
-      "indexName": "V. C. Thomas (In Loving Memory)",
+      "indexName": "In Loving Memory — V. C. Thomas",
       "sort": "Thomas V. C. ",
       "layoutNote": "14 Nov (Manoj): edited wording from his mock-up; the family's handwritten note (Writing/Editing, 'FOR SOVENIR.pdf') had been set as written. Approved by the family 14 Nov (via Manoj).",
       "approved": true
@@ -2511,7 +2576,8 @@
         }
       ],
       "pending": true,
-      "sort": "Thomas P. V. "
+      "sort": "Thomas P. V. ",
+      "indexName": "P. V. Thomas & Family"
     },
     {
       "id": "thomas-mammen",
@@ -2575,7 +2641,8 @@
         }
       ],
       "pending": true,
-      "sort": "Mammen Thomas "
+      "sort": "Mammen Thomas ",
+      "indexName": "Thomas Mammen & Family"
     },
     {
       "id": "v-s-mathew",
@@ -2600,7 +2667,8 @@
         }
       ],
       "sort": "Mathew V. S. ",
-      "layoutNote": "Text: \"Final Copy of VS Mathew Golden Jubilee Article for Souvenir.pdf\", Design folder VS Mathews (9 Nov)."
+      "layoutNote": "Text: \"Final Copy of VS Mathew Golden Jubilee Article for Souvenir.pdf\", Design folder VS Mathews (9 Nov).",
+      "indexName": "V. S. Mathew & Family"
     },
     {
       "id": "mathew-joseph",
@@ -2630,7 +2698,8 @@
       "sort": "Joseph Mathew ",
       "phrases": false,
       "photoScale": 0.92,
-      "photoNote": "mathew-joseph-family.jpg has Kiran's real eyes grafted in from the camera original (2026-09-28). The ChatGPT blossom render had pulled both irises to the outer corners so her gaze diverged. Do not replace this file with an earlier blossom export. The hand on her left arm is Neil's and stays."
+      "photoNote": "mathew-joseph-family.jpg has Kiran's real eyes grafted in from the camera original (2026-09-28). The ChatGPT blossom render had pulled both irises to the outer corners so her gaze diverged. Do not replace this file with an earlier blossom export. The hand on her left arm is Neil's and stays.",
+      "indexName": "Mathew Joseph & Family"
     },
     {
       "id": "thomas-o-abraham",
@@ -2700,7 +2769,8 @@
         }
       ],
       "sort": "Abraham Thomas O. ",
-      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms. 16 Nov: third couple photo (pic-5, Drive folder Thomas O. Abraham, from Molsey in the group 3:13 PM: \"3 couple pics for the memorial section for Achenkunju uncle\", after or before the other two); placed after; Manoj: \"we can try\". 16 Nov 5:49-5:50 PM: Molsey: \"In Loving Memory of our parents\" as a memorial; Manoj: like Biju Mani's memorial section (dark half, lilies, eternal line; the verse moves below)."
+      "layoutNote": "Manoj, 5 Nov: both grandparents' photos (pic-1, pic-3) at the bottom, the family's on top. 6 Nov: arranged after \"Golden Jubilee Family Tribute.png\" in his Design folder: family photos on top, Joshua 24:15, the grandparents below. That sample labels the grandparents \"In Loving Memory\"; left off until Manoj confirms. 16 Nov: third couple photo (pic-5, Drive folder Thomas O. Abraham, from Molsey in the group 3:13 PM: \"3 couple pics for the memorial section for Achenkunju uncle\", after or before the other two); placed after; Manoj: \"we can try\". 16 Nov 5:49-5:50 PM: Molsey: \"In Loving Memory of our parents\" as a memorial; Manoj: like Biju Mani's memorial section (dark half, lilies, eternal line; the verse moves below).",
+      "indexName": "Thomas O. Abraham & Family"
     },
     {
       "id": "thomas-m-george",
@@ -2729,7 +2799,8 @@
           ]
         }
       ],
-      "sort": "George Thomas M. "
+      "sort": "George Thomas M. ",
+      "indexName": "Thomas M. George & Family"
     },
     {
       "id": "mathew-kallelil",
@@ -2759,7 +2830,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Mathew Kallelil & Family"
     },
     {
       "id": "mathew-kandathil",
@@ -2788,7 +2860,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Mathew Kandathil & Family"
     },
     {
       "id": "punnoose-mathai",
@@ -2825,7 +2898,8 @@
           ]
         }
       ],
-      "sort": "Mathai Punnoose "
+      "sort": "Mathai Punnoose ",
+      "indexName": "Punnoose Mathai & Family"
     },
     {
       "id": "john-chacko",
@@ -2852,7 +2926,8 @@
           ]
         }
       ],
-      "sort": "Chacko John 1"
+      "sort": "Chacko John 1",
+      "indexName": "John Chacko & Family"
     },
     {
       "id": "ipe-maret",
@@ -2881,7 +2956,8 @@
           ]
         }
       ],
-      "sort": "Maret Ipe 1"
+      "sort": "Maret Ipe 1",
+      "indexName": "Ipe Maret & Family"
     },
     {
       "id": "mathew-mathew",
@@ -2913,7 +2989,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Dr. Mathew Mathew & Family"
     },
     {
       "id": "manoj-chacko",
@@ -2922,7 +2999,7 @@
       "partial": "src/pages/members/manoj-chacko.html",
       "sort": "Chacko John 2",
       "sortNote": "Manoj asked for the Chacko pages to run John, Manoj, James — not alphabetical — so these three carry explicit ordinals.",
-      "indexName": "Manoj Chacko"
+      "indexName": "Manoj Chacko & Family"
     },
     {
       "id": "ashanth-thomas",
@@ -2948,7 +3025,8 @@
       "sort": "Thomas Ashanth ",
       "seeAlso": "thomas-joseph",
       "seeAlsoLabel": "the Thomas Joseph family",
-      "approved": true
+      "approved": true,
+      "indexName": "Ashanth Thomas & Family"
     },
     {
       "id": "raju-geevarghese",
@@ -2995,7 +3073,8 @@
           ]
         }
       ],
-      "layoutNote": "Manoj's layout \"Golden Jubilee Family Tribute Page.png\" (Drive folder Raju Geevarghese); poem from \"Raju Geevarghese Poem_Final.docx\" (Molsey, 10 Nov; Raju agreed to the edits). The other two photos were of the typed sheet."
+      "layoutNote": "Manoj's layout \"Golden Jubilee Family Tribute Page.png\" (Drive folder Raju Geevarghese); poem from \"Raju Geevarghese Poem_Final.docx\" (Molsey, 10 Nov; Raju agreed to the edits). The other two photos were of the typed sheet.",
+      "indexName": "Raju Geevarghese & Family"
     },
     {
       "id": "saji-thomas",
@@ -3019,7 +3098,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Saji Thomas & Family"
     },
     {
       "id": "nibu-ipe-maret",
@@ -3045,7 +3125,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Nibu Maret & Family"
     },
     {
       "id": "jiji-koshy",
@@ -3061,14 +3142,35 @@
               "photo": {
                 "src": "images/members/jiji-koshy/photo.jpg"
               },
-              "size": "lg"
+              "photoMax": "3.2in"
+            },
+            {
+              "type": "photos",
+              "arrange": "row",
+              "grow": 0.27,
+              "photos": [
+                {
+                  "src": "images/members/jiji-koshy/old-photo-1.jpg",
+                  "flex": 1.613
+                },
+                {
+                  "src": "images/members/jiji-koshy/old-photo-2.jpg",
+                  "flex": 1.973
+                },
+                {
+                  "src": "images/members/jiji-koshy/family-church.jpg",
+                  "flex": 1.0
+                }
+              ]
             },
             {
               "type": "closing"
             }
           ]
         }
-      ]
+      ],
+      "layoutNote": "20 Nov (Beena via Manoj 12:16 PM): three pictures added in a row at the foot of the page, black and white, the portrait cropped to the height of the others, no memorial format.",
+      "indexName": "Jiji Koshy & Family"
     },
     {
       "id": "paul-c-mathai",
@@ -3111,7 +3213,8 @@
           ]
         }
       ],
-      "layoutNote": "Manoj: ignore the two screenshots, that is how the family sent it; Molsey rewrote the text. One picture and the text on the first page, the other picture on the second."
+      "layoutNote": "Manoj: ignore the two screenshots, that is how the family sent it; Molsey rewrote the text. One picture and the text on the first page, the other picture on the second.",
+      "indexName": "Paul C Mathai & Family"
     },
     {
       "id": "ajo-maret",
@@ -3148,7 +3251,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Ajo Maret & Family"
     },
     {
       "id": "alex-john",
@@ -3172,7 +3276,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Alex John & Family"
     },
     {
       "id": "binumon-yohannan",
@@ -3196,7 +3301,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Binumon Yohannan & Family"
     },
     {
       "id": "lee-k-george",
@@ -3220,7 +3326,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Lee K. George & Family"
     },
     {
       "id": "naomi-samuel",
@@ -3315,7 +3422,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Dr. T. V. Philip & Family"
     },
     {
       "id": "kt-ninan",
@@ -3337,7 +3445,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "K. T. Ninan & Saramma Ninan"
     },
     {
       "id": "john-parackal",
@@ -3361,7 +3470,8 @@
           ]
         }
       ],
-      "layoutNote": "Design folder \"Rev. Fr. Eby Paulose\": Manoj, 7 Nov — the photo is for his in-laws, John Parackal and family. Achen will send his own photo."
+      "layoutNote": "Design folder \"Rev. Fr. Eby Paulose\": Manoj, 7 Nov — the photo is for his in-laws, John Parackal and family. Achen will send his own photo.",
+      "indexName": "John Parackal & Family"
     },
     {
       "id": "cherian-koshy",
@@ -3385,7 +3495,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Cherian Koshy & Family"
     },
     {
       "id": "mathews-thomas",
@@ -3413,7 +3524,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Mathews Thomas (Bijoy) & Family"
     },
     {
       "id": "shalom-mammen",
@@ -3454,7 +3566,8 @@
       "phrases": false,
       "layoutNote": " 11 Nov: Mikhaila's staggered 2x2 layout (sent via Manoj), verse under the bottom-left photo.",
       "layout": "stagger",
-      "staggerScale": 1.08
+      "staggerScale": 1.08,
+      "indexName": "Shalom, Mikhaila & Eden Mammen"
     },
     {
       "id": "shajan-mathew",
@@ -3491,7 +3604,8 @@
         }
       ],
       "sort": "Mathew Shajan ",
-      "layoutNote": "16 Nov (Manoj): Drive Design/Shajan Mathew, IMG_5148.jpeg and 'Shajan MAthew Message.txt' (the greeting, as written). Verse is ours."
+      "layoutNote": "16 Nov (Manoj): Drive Design/Shajan Mathew, IMG_5148.jpeg and 'Shajan MAthew Message.txt' (the greeting, as written). Verse is ours.",
+      "indexName": "Shajan Mathew & Family"
     },
     {
       "id": "jimmy-george",
@@ -3515,7 +3629,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Jimmy George & Family"
     },
     {
       "id": "sumod-abraham",
@@ -3547,7 +3662,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Sumod Abraham & Family"
     },
     {
       "id": "thomas-chacko",
@@ -3575,7 +3691,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Thomas Chacko & Family"
     },
     {
       "id": "kurian-madathil",
@@ -3641,7 +3758,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Kurian Madathil & Family"
     },
     {
       "id": "mathew-kurian",
@@ -3687,7 +3805,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Mathew Madathil Kurian & Family"
     },
     {
       "id": "abey-jacob",
@@ -3724,7 +3843,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Abey Jacob & Family"
     },
     {
       "id": "kaleeckal-family",
@@ -3750,7 +3870,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "The Kaleeckal Family"
     },
     {
       "id": "joe-george",
@@ -3778,7 +3899,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Joe George & Family"
     },
     {
       "id": "vinu-varghese",
@@ -3812,7 +3934,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Vinu Varghese & Family"
     },
     {
       "id": "vivin-varghese",
@@ -3854,7 +3977,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Vivin Varghese & Family"
     },
     {
       "id": "nithin-maret",
@@ -3884,7 +4008,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Nithin Maret & Family"
     },
     {
       "id": "benson-panicker",
@@ -3935,7 +4060,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Benson Varghese Panicker & Family"
     },
     {
       "id": "shijoy-k-mathew",
@@ -3993,7 +4119,8 @@
           ]
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Shijoy Kulathoor Mathew & Family"
     },
     {
       "id": "raju-m-varghese",
@@ -4022,7 +4149,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Raju M. Varghese & Family"
     },
     {
       "id": "richie-oommen",
@@ -4045,7 +4173,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Richi Oommen & Family"
     },
     {
       "id": "jiji-philip",
@@ -4077,7 +4206,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Joseph (Jiji) Philip & Family"
     },
     {
       "id": "john-mathew",
@@ -4100,7 +4230,8 @@
           }
         }
       ],
-      "approved": true
+      "approved": true,
+      "indexName": "Dr. Mathew John & Family"
     },
     {
       "id": "rajan-m-thomas",
@@ -4135,7 +4266,8 @@
           ]
         }
       ],
-      "layoutNote": "Member Pages group, 9 Nov: original photo (the plain-background edit changed their faces), title and text as sent."
+      "layoutNote": "Member Pages group, 9 Nov: original photo (the plain-background edit changed their faces), title and text as sent.",
+      "indexName": "Dr. Rajan M. Thomas & Family"
     },
     {
       "id": "james-chacko",
@@ -4178,7 +4310,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "James Chacko & Family"
     },
     {
       "id": "grace-kuriakose",
@@ -4230,7 +4363,8 @@
           ]
         }
       ],
-      "layoutNote": "Design folder \"Grace Kuriakose\" (Mable's mom), 9 Nov: Message.txt gives the title, main picture and memorial text. Manoj, 10 Nov: Dad memorial on top; header \"The Kuriakose Family\"."
+      "layoutNote": "Design folder \"Grace Kuriakose\" (Mable's mom), 9 Nov: Message.txt gives the title, main picture and memorial text. Manoj, 10 Nov: Dad memorial on top; header \"The Kuriakose Family\".",
+      "indexName": "The Kuriakose Family"
     },
     {
       "id": "gregory-varghese",
@@ -4254,7 +4388,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Dr. Gregory Varghese & Family"
     },
     {
       "id": "mathew-abraham",
@@ -4278,7 +4413,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Mathew Abraham & Family"
     },
     {
       "id": "easo-thomas",
@@ -4302,7 +4438,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Easo & Susamma Thomas"
     },
     {
       "id": "kurian-p-varghese",
@@ -4340,7 +4477,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Kurian P. Varghese & Family"
     },
     {
       "id": "fr-eby-paulose",
@@ -4349,7 +4487,7 @@
       "title": "Rev. Fr. Eby Paulose & Family",
       "band": "",
       "sort": "Paulose Rev. Fr. Eby ",
-      "indexName": "Rev. Fr. Eby Paulose",
+      "indexName": "Rev. Fr. Eby Paulose & Family",
       "layoutNote": "15 Nov (Manoj): family page shows only the family photo, large. Portrait kept in images/ for the Vicar message.",
       "pages": [
         {
@@ -4402,7 +4540,8 @@
             }
           ]
         }
-      ]
+      ],
+      "indexName": "Thomas K Abraham & Family"
     }
   ]
 }

@@ -78,7 +78,10 @@ function figure(p, alt) {
   const cap = capLines.length > 1
     ? `<figcaption><span class="cap-name">${esc(capLines[0])}</span><span class="cap-dates">${capLines.slice(1).map(esc).join('<br>')}</span></figcaption>`
     : photo.caption ? `<figcaption>${esc(photo.caption)}</figcaption>` : '';
-  return `<figure class="m-fig"><img src="${esc(photo.src)}" alt="${esc(photo.alt || alt)}"${style}>${cap}</figure>`;
+  // "flex": share of the row's width. Set it to each photo's width/height so a
+  // row of photos comes out all the same height (Beena, 20 Nov).
+  const flex = photo.flex ? ` style="flex-grow:${Number(photo.flex)}"` : '';
+  return `<figure class="m-fig"${flex}><img src="${esc(photo.src)}" alt="${esc(photo.alt || alt)}"${style}>${cap}</figure>`;
 }
 
 const BLOCKS = {
@@ -574,7 +577,8 @@ for (const section of outline.sections) {
       if (!m) throw new Error(`outline names unknown member "${item.member}"`);
       added = memberPages(m);
     } else if (item.members) added = memberSection();
-    else if (item.ads) added = ads.map(adPage);
+    // each ad remembers its sponsor so the index can list them (Manoj, 20 Nov)
+    else if (item.ads) added = ads.map((ad) => ({ ...adPage(ad), ad }));
     else if (item.index) added = [{ index: true, label: 'INDEX' }];
     else throw new Error(`outline item not understood: ${JSON.stringify(item)}`);
     if (item.toc) contents.push({ title: item.toc, ref: added[0] });
@@ -592,8 +596,13 @@ const indexLines = [
   { heading: 'Contents' },
   ...contents,
   { heading: 'Families & Memorials' },
-  ...memberRefs.map((p) => ({ title: p.member.indexName || p.member.name, ref: p })),
+  // "indexSkip": a family already listed under another entry (the Mathew family,
+  // Manoj 20 Nov: one line, numbered at their first page)
+  ...memberRefs.filter((p) => !p.member.indexSkip).map((p) => ({ title: p.member.indexName || p.member.name, ref: p })),
 ];
+// Ad sponsors by name (Manoj, 20 Nov: "For Ad sponsors lets names individual sponsors")
+const adRefs = pages.filter((p) => p.ad);
+if (adRefs.length) indexLines.push({ heading: 'Sponsors' }, ...adRefs.map((p) => ({ title: p.ad.indexName || p.ad.name, ref: p })));
 const indexPageCount = Math.max(1, Math.ceil(indexLines.length / INDEX_LINES_PER_PAGE));
 const indexAt = pages.findIndex((p) => p.index);
 if (indexAt >= 0) {

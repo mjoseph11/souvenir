@@ -457,14 +457,30 @@
     },
     {
       "kind": "question",
-      "text": "Index naming - one common style or run by families? (Suchin 20 Nov 8:38 AM) - three options sent to the group with PDFs: 1 as now, 2 name only (one style, memorials marked In Memoriam), 3 page title; suggested Option 2. Waiting for the group's choice. Option 1 (current) cuts off two long entries (John Kappil, Vinit Mathew)",
+      "text": "Index naming - one common style or run by families? (Suchin 20 Nov 8:38 AM) - three options sent to the group with PDFs: 1 as now, 2 name only (one style, memorials marked In Memoriam), 3 page title; suggested Option 2. Waiting for the group's choice. Option 1 (current) cuts off two long entries (John Kappil, Vinit Mathew) - Manoj 20 Nov 12:12 PM: follow the page titles (Option 3); the Mathew family as one line, numbered at their first page; ad sponsors listed by name. Done: index uses page titles, \"The Mathew Family (Vinit & Vinesh Mathew)\" at p188, new Sponsors list at the end of the index",
       "waiting": "Editorial board",
-      "asked": "2026-11-20"
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     },
     {
       "kind": "missing",
       "label": "INDEX (1 of 3)",
       "text": "Contents line 'Tribute - Very Rev. Geevarghese Ramban, Metropolitan-designate' was cut off - shortened to 'Tribute - Very Rev. Geevarghese Ramban' (the page itself keeps the title)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Jiji Koshy",
+      "text": "Beena (via Manoj 20 Nov 12:16 PM): add three pictures at the foot of the page, the portrait cropped to the height of the others, no memorial format; black and white (Manoj 12:48 PM) - added in one row, black and white, from the Drive folder copies; writing set one size smaller to make room",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "question",
+      "label": "MEMBER PAGE: Mathew Jacob (1 of 2)",
+      "text": "Matt & Shainey confirmed their page is good (Molsey 20 Nov 9:28 AM) - marked approved, Proof copy tag off",
+      "waiting": "Molsey",
       "asked": "2026-11-20",
       "done": "2026-11-20"
     }
