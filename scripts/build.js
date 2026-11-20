@@ -105,6 +105,16 @@ const BLOCKS = {
       return `<div class="m-photos hero${plain}${fill}"${grow}><div class="m-hero">${figs[0]}</div><div class="m-row">${figs.slice(1).join('')}</div></div>`;
     }
     const stack = b.arrange === 'stack' ? ' stack' : '';
+    // A row whose photos all carry "flex" (their width/height): the row takes the
+    // shape of its photos side by side, so they sit together at one height with no
+    // gaps between them; rows share the height by their natural sizes (user, 20 Nov:
+    // "Lots of gaps").
+    const ps = (b.photos || []).map((p) => (typeof p === 'string' ? {} : p));
+    if (b.arrange === 'row' && ps.length && ps.every((p) => p.flex)) {
+      const S = ps.reduce((n, p) => n + Number(p.flex), 0);
+      const g = b.grow ? Number(b.grow) : 10 / S; // x10: grows adding up to under 1 leave space unused
+      return `<div class="m-photos fit${plain}${fill}" style="flex-grow:${g.toFixed(3)}">${figs.join('')}</div>`;
+    }
     return `<div class="m-photos${stack}${plain}${fill}"${grow}>${figs.join('')}</div>`;
   },
   // Photo at the top left with the writing flowing below it and down the

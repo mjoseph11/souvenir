@@ -59,6 +59,11 @@
     gap: 0.15in;
     align-items: stretch;
   }
+  /* "fit" rows (photos with "flex"): as wide as the photos need at the row's height,
+     centred, never wider than the page */
+  .m-photos.fit { justify-content: center; }
+  .m-photos.fit .m-fig { flex: 0 1 auto !important; }
+  .m-photos.fit .m-fig img { height: 100%; width: auto; }
   .m-photos.stack { flex-direction: column; }
   .m-photos.hero { flex-direction: column; }
   .m-hero { flex: 3 1 0; min-height: 0; display: flex; }

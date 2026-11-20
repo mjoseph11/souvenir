@@ -1049,7 +1049,6 @@
               {
                 "type": "text",
                 "cols": true,
-                "size": "sm",
                 "text": "G.R.O.W. Sprouts is a focused ministry for girls ages 6–12, bringing together families from Orthodox churches across the Philadelphia area. Connected with GROW and Sunday School, the ministry provides a welcoming community where girls can grow in faith, fellowship, friendship, charity, and service, while strengthening their relationship with Christ and the Orthodox Church.\n\nOur Spiritual Mentors include Rev. Fr. Vijay Thomas, Rev. Fr. Timothy (Tenny) Thomas, and Very Rev. Geevarghese Ramban (Rev. Fr. Shibu V. Mathai), and our Co-Leads are Dr. Silvi Chacko and Princy Mathai.\n\nThroughout the last couple of years, activities included daily Lenten devotionals, Mom & GROW Sprouts fellowships, a visit to Holy Protection Orthodox Monastery, charity food-packing (for Caring for Friends), the Feast Day celebration of St. Sophia, painting an icon, participation in the Diocesan Sunday School Talent Show, and a year-end Friendsgiving celebration.\n\nTogether, these activities help GROW Sprouts create a community of faith, giving young girls opportunities to deepen their relationship with Christ, build lasting friendships, learn the importance of charity and volunteer service, and grow within the Orthodox faith.",
                 "bare": true
               },
@@ -1066,6 +1065,11 @@
                     "src": "images/ministries/grow/grow-2026-06.jpg",
                     "alt": "GROW",
                     "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/grow/grow-2026-07.jpg",
+                    "alt": "GROW",
+                    "flex": 0.749
                   }
                 ]
               },
@@ -1079,25 +1083,14 @@
                     "flex": 1.335
                   },
                   {
-                    "src": "images/ministries/grow/grow-2026-09.jpg",
-                    "alt": "GROW",
-                    "flex": 1.335
-                  }
-                ]
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "photos": [
-                  {
-                    "src": "images/ministries/grow/grow-2026-07.jpg",
+                    "src": "images/ministries/grow/grow-2026-10.jpg",
                     "alt": "GROW",
                     "flex": 0.749
                   },
                   {
-                    "src": "images/ministries/grow/grow-2026-10.jpg",
+                    "src": "images/ministries/grow/grow-2026-09.jpg",
                     "alt": "GROW",
-                    "flex": 0.749
+                    "flex": 1.335
                   },
                   {
                     "src": "images/ministries/grow/grow-2026-11.jpg",
