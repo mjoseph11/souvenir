@@ -1,17 +1,18 @@
 """Make clergy titles the same across the souvenir (Mathew, 18 Nov 2026):
-Very Rev. / Rev. Fr. / Remban / Cor-Episcopa. Case-sensitive so file names
+Very Rev. / Rev. Fr. / Ramban / Cor Episcopos (Eby Achen, 19 Nov 9:23 PM:
+"V Rev Geevarghese Ramban & V Rev Mathai Cor Episcopos"). Case-sensitive so file names
 (mathai-cor-episcopa.jpg, ramban.jpg) are never touched."""
 import glob, re, sys
 
 RULES = [
-    # Cor-Episcopa, every spelling
-    (r'\bCor[- ]?[Ee]piscop(?:a|os)\b', 'Cor-Episcopa'),
-    (r'\bCorepiscop(?:a|os)\b', 'Cor-Episcopa'),
-    (r'\bCOR[- ]?EPISCOP(?:A|OS)\b', 'COR-EPISCOPA'),
-    # a Cor-Episcopa is Very Rev., without "Fr."
+    # Cor Episcopos, every spelling
+    (r'\bC(?:h)?or[- ]?[Ee]piscop(?:a|os)\b', 'Cor Episcopos'),
+    (r'\bCorepiscop(?:a|os)\b', 'Cor Episcopos'),
+    (r'\bCOR[- ]?EPISCOP(?:A|OS)\b', 'COR EPISCOPOS'),
+    # a Cor Episcopos is Very Rev., without "Fr."
     (r'\bVery Rev Fr K Mathai\b', 'Very Rev. K. Mathai'),
-    (r'(?<!Very )(?<!V\. )\bRev\. Fr\. K\. Mathai Cor-Episcopa','Very Rev. K. Mathai Cor-Episcopa'),
-    (r'(?<!Very )(?<!Rev\. )\bFr\. Mathai Cor-Episcopa', 'Very Rev. K. Mathai Cor-Episcopa'),
+    (r'(?<!Very )(?<!V\. )\bRev\. Fr\. K\. Mathai Cor Episcopos','Very Rev. K. Mathai Cor Episcopos'),
+    (r'(?<!Very )(?<!Rev\. )\bFr\. Mathai Cor Episcopos', 'Very Rev. K. Mathai Cor Episcopos'),
     (r'\bVery Reverend Fr\. ', 'Very Rev. '),
     (r'\bV\. Rev\. Fr\. ', 'Very Rev. '),
     (r'\bVery Rev\. Fr\. ', 'Very Rev. '),
@@ -21,11 +22,11 @@ RULES = [
     # a priest is "Rev. Fr." even where the text says just "Fr." (18 Nov). Member
     # "sort" keys are left alone (see below) so no page moves in the A-Z order.
     (r'(?<!Rev\. )(?<!Rev )\bFr\. ?(?=[A-Z])', 'Rev. Fr. '),
-    # Remban, as in the Metropolitan's letter
-    (r'\bRamban\b', 'Remban'),
+    # Ramban (Eby Achen, 19 Nov)
+    (r'\bRemban\b', 'Ramban'),
 ]
 
-files = sorted(set(glob.glob('src/pages/**/*.html', recursive=True)) | {'data/members.json', 'data/outline.json', 'data/status.json', 'data/sponsors.json'})
+files = sorted(set(glob.glob('src/pages/**/*.html', recursive=True)) | {'data/members.json', 'data/outline.json', 'data/sponsors.json'})
 total = 0
 for f in files:
     s = open(f, encoding='utf-8').read()

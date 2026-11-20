@@ -402,7 +402,14 @@
     },
     {
       "kind": "question",
-      "text": "Titles across the book - Remban or Ramban; Metropolitan-elect (now, 5 places) or Metropolitan-designate (diocese news); Cor-Episcopa, Cor-Episcopos or Chor-Episcopos. Diocese website and MOSC directory checked as Achen suggested; asked Eby Achen to decide (19 Nov)",
+      "text": "Titles across the book - Remban or Ramban; Cor-Episcopa, Cor-Episcopos or Chor-Episcopos. Eby Achen (19 Nov 9:23 PM): \"V Rev Geevarghese Ramban & V Rev Mathai Cor Episcopos\" - now Ramban (19 places) and Cor Episcopos (34 places) throughout",
+      "waiting": "Eby Achen",
+      "asked": "2026-11-19",
+      "done": "2026-11-19"
+    },
+    {
+      "kind": "question",
+      "text": "Metropolitan-elect (now, 5 places) or Metropolitan-designate (diocese news)? Asked Eby Achen 19 Nov; his reply covered Ramban and Cor Episcopos only",
       "waiting": "Eby Achen",
       "asked": "2026-11-19"
     }
