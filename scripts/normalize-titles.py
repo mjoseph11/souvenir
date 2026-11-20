@@ -24,6 +24,8 @@ RULES = [
     (r'(?<!Rev\. )(?<!Rev )\bFr\. ?(?=[A-Z])', 'Rev. Fr. '),
     # Ramban (Eby Achen, 19 Nov)
     (r'\bRemban\b', 'Ramban'),
+    # Metropolitan-designate (Eby Achen, 19 Nov 11:47 PM: "Designate")
+    (r'\bMetropolitan[- ][Ee]lect\b', 'Metropolitan-designate'),
 ]
 
 files = sorted(set(glob.glob('src/pages/**/*.html', recursive=True)) | {'data/members.json', 'data/outline.json', 'data/sponsors.json'})

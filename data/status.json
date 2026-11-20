@@ -423,9 +423,16 @@
     },
     {
       "kind": "question",
-      "text": "Metropolitan-elect (now, 5 places) or Metropolitan-designate (diocese news)? Asked Eby Achen 19 Nov; his reply covered Ramban and Cor Episcopos only",
+      "text": "Metropolitan-elect (now, 5 places) or Metropolitan-designate (diocese news)? Eby Achen (19 Nov 11:47 PM): \"Designate\" - now Metropolitan-designate throughout the book",
       "waiting": "Eby Achen",
-      "asked": "2026-11-19"
+      "asked": "2026-11-19",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "text": "Mathew Jacob & Family (Matt & Shainey, via Molsey 20 Nov 7:54 AM): page 2 family picture straight, not slanted; otherwise OK - straightened, proof replaced on Drive (same link)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     }
   ]
 }

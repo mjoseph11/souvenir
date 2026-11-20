@@ -1838,7 +1838,7 @@
       "id": "matt-jacob",
       "name": "Mathew Jacob",
       "title": "Mathew Jacob & Family",
-      "layoutNote": "Molsey and Manoj, 16 Nov 10:47-11:01 PM: both pages titled \"Mathew Jacob & Family\" (was \"Matt & Shainey Jacob\").",
+      "layoutNote": "Molsey and Manoj, 16 Nov 10:47-11:01 PM: both pages titled \"Mathew Jacob & Family\" (was \"Matt & Shainey Jacob\"). Matt & Shainey via Molsey, 20 Nov 7:54 AM: page 2 family picture straight, not slanted; otherwise OK.",
       "pages": [
         {
           "blocks": [
@@ -1862,7 +1862,8 @@
                   "src": "images/members/matt-jacob-2-pages/pic-2.jpg"
                 },
                 {
-                  "src": "images/members/matt-jacob-2-pages/pic-3.jpg"
+                  "src": "images/members/matt-jacob-2-pages/pic-3.jpg",
+                  "straight": true
                 }
               ],
               "arrange": "stack"
