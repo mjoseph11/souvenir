@@ -58,8 +58,8 @@
     },
     {
       "kind": "missing",
-      "label": "PICTURES: GOLDEN JUBILEE (1 of 4)",
-      "text": "Golden Jubilee afternoon pictures — public meeting with the dignitaries, Philadelphia-area members, cultural programs (Molsey: none in the collage) - evening ceremony pictures now on Drive (Manoj, 19 Nov 7:30 PM); Gigi uncle has video; GJ social media team asked",
+      "label": "PICTURES: GOLDEN JUBILEE — PROCESSION",
+      "text": "Golden Jubilee afternoon/evening pictures: two new pages from the photographer's set (procession; public meeting and pioneer honors), pp. 48-49 (Manoj 19 Nov 7:30 PM; Molsey: none in the collage). Cultural programs still have no pictures",
       "waiting": "Suchin - Sumod does not have them; maybe Jiji Koshy (18 Nov 8:22 PM)",
       "asked": "2026-11-18"
     },
@@ -89,7 +89,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width and page count for the order: 240 inner pages plus 4 printed cover pages (244 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
+      "text": "Spine width and page count for the order: 242 inner pages plus 4 printed cover pages (246 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -385,6 +385,12 @@
       "kind": "missing",
       "text": "Member proofs: 28 still to send and 60 approvals to get - aim to finish in the next couple of days; tracked in Manoj's spreadsheet (19 Nov 5:45 PM; Molsey and another member helping)",
       "waiting": "Editorial board",
+      "asked": "2026-11-19"
+    },
+    {
+      "kind": "missing",
+      "text": "Golden Jubilee cultural programs: no pictures yet (the photographer's set has none) - Gigi uncle's video or the GJ social media team",
+      "waiting": "Manoj",
       "asked": "2026-11-19"
     }
   ]
