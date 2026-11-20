@@ -231,9 +231,23 @@
     {
       "kind": "missing",
       "label": "OUR PARISH: CHARTER FAMILIES",
-      "text": "Founding members: use Manoj's Acrobat list (all names valid, even the struck-out ones); cross-check names and spelling with Ente Palli or the church list - Suchin checking against the Ente Palli list tonight (19 Nov 7:11 PM)",
+      "text": "Founding members: use Manoj's Acrobat list (all names valid, even the struck-out ones); cross-check names and spelling with Ente Palli or the church list - Suchin checking against the Ente Palli list tonight (19 Nov 7:11 PM). Suchin's list (10:09 PM) done, as Manoj confirmed: Aleyamma, Gheevarughese, Shobha, and Mathai Achen's full name (Kaleeckal)",
       "waiting": "Suchin",
-      "asked": "2026-11-18"
+      "asked": "2026-11-18",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "question",
+      "label": "OUR PARISH: CHARTER FAMILIES",
+      "text": "Kuruvilla Kurian & Susy - Ente Palli has Susannamma; Manoj: they gave no family names, maybe ask them (19 Nov 10:54 PM)",
+      "waiting": "Kuruvilla Kurian family",
+      "asked": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "text": "Proofs folder out of date for Sumod Abraham and Arun Philip (Suchin 11:10 PM) - all member proofs regenerated and replaced in place (same links); 12 had changed content, the rest only page numbers",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     },
     {
       "kind": "missing",
