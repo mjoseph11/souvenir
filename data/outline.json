@@ -615,7 +615,6 @@
     },
     {
       "name": "In Memoriam",
-      "startOn": "even",
       "_comment": "Manoj, 11 Nov: church memorials after the church pages, before the organizations, as two spreads (Mathai Achen | Varki Achen, Mani Shemachen | church members since 1976). Must start on a left (even) page.",
       "items": [
         {
@@ -1208,76 +1207,56 @@
         },
         {
           "file": "src/pages/mission-board-01.html",
-          "label": "MISSION BOARD (1 of 18)",
+          "label": "MISSION BOARD (1 of 13)",
           "toc": "Mission Board"
         },
         {
           "file": "src/pages/mission-board-02.html",
-          "label": "MISSION BOARD (2 of 18)"
+          "label": "MISSION BOARD (2 of 13)"
         },
         {
           "file": "src/pages/mission-board-03.html",
-          "label": "MISSION BOARD (3 of 18)"
+          "label": "MISSION BOARD (3 of 13)"
         },
         {
           "file": "src/pages/mission-board-04.html",
-          "label": "MISSION BOARD (4 of 18)"
+          "label": "MISSION BOARD (4 of 13)"
         },
         {
           "file": "src/pages/mission-board-05.html",
-          "label": "MISSION BOARD (5 of 18)"
+          "label": "MISSION BOARD (5 of 13)"
         },
         {
           "file": "src/pages/mission-board-06.html",
-          "label": "MISSION BOARD (6 of 18)"
+          "label": "MISSION BOARD (6 of 13)"
         },
         {
           "file": "src/pages/mission-board-07.html",
-          "label": "MISSION BOARD (7 of 18)"
+          "label": "MISSION BOARD (7 of 13)"
         },
         {
           "file": "src/pages/mission-board-08.html",
-          "label": "MISSION BOARD (8 of 18)"
+          "label": "MISSION BOARD (8 of 13)"
         },
         {
           "file": "src/pages/mission-board-09.html",
-          "label": "MISSION BOARD (9 of 18)"
+          "label": "MISSION BOARD (9 of 13)"
         },
         {
           "file": "src/pages/mission-board-10.html",
-          "label": "MISSION BOARD (10 of 18)"
+          "label": "MISSION BOARD (10 of 13)"
         },
         {
           "file": "src/pages/mission-board-11.html",
-          "label": "MISSION BOARD (11 of 18)"
+          "label": "MISSION BOARD (11 of 13)"
         },
         {
           "file": "src/pages/mission-board-12.html",
-          "label": "MISSION BOARD (12 of 18)"
+          "label": "MISSION BOARD (12 of 13)"
         },
         {
           "file": "src/pages/mission-board-13.html",
-          "label": "MISSION BOARD (13 of 18)"
-        },
-        {
-          "file": "src/pages/mission-board-14.html",
-          "label": "MISSION BOARD (14 of 18)"
-        },
-        {
-          "file": "src/pages/mission-board-15.html",
-          "label": "MISSION BOARD (15 of 18)"
-        },
-        {
-          "file": "src/pages/mission-board-16.html",
-          "label": "MISSION BOARD (16 of 18)"
-        },
-        {
-          "file": "src/pages/mission-board-17.html",
-          "label": "MISSION BOARD (17 of 18)"
-        },
-        {
-          "file": "src/pages/mission-board-18.html",
-          "label": "MISSION BOARD (18 of 18)"
+          "label": "MISSION BOARD (13 of 13)"
         }
       ]
     },
