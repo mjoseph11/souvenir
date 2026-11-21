@@ -373,6 +373,12 @@ def pack_floats(plain, merged, hu, lu, hm, lm, avail, slack):
 
 
 def main():
+    global TOP
+    # ORG_CLASS=<class>: an extra class on every page (and on the measuring page), for
+    # an article set tighter than the rest (Mission Board, 21 Nov: Manoj's 11-page version
+    # fitted to 10 pages).
+    if os.environ.get('ORG_CLASS'):
+        TOP = TOP.replace('org-page">', f'org-page {os.environ["ORG_CLASS"]}">')
     j = json.load(open(sys.argv[1], encoding='utf-8'))
     title, prefix, imgdir, splits = sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
     comment = sys.argv[6] if len(sys.argv) > 6 else ''
