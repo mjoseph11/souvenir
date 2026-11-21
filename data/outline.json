@@ -1207,56 +1207,48 @@
         },
         {
           "file": "src/pages/mission-board-01.html",
-          "label": "MISSION BOARD (1 of 13)",
+          "label": "MISSION BOARD (1 of 11)",
           "toc": "Mission Board"
         },
         {
           "file": "src/pages/mission-board-02.html",
-          "label": "MISSION BOARD (2 of 13)"
+          "label": "MISSION BOARD (2 of 11)"
         },
         {
           "file": "src/pages/mission-board-03.html",
-          "label": "MISSION BOARD (3 of 13)"
+          "label": "MISSION BOARD (3 of 11)"
         },
         {
           "file": "src/pages/mission-board-04.html",
-          "label": "MISSION BOARD (4 of 13)"
+          "label": "MISSION BOARD (4 of 11)"
         },
         {
           "file": "src/pages/mission-board-05.html",
-          "label": "MISSION BOARD (5 of 13)"
+          "label": "MISSION BOARD (5 of 11)"
         },
         {
           "file": "src/pages/mission-board-06.html",
-          "label": "MISSION BOARD (6 of 13)"
+          "label": "MISSION BOARD (6 of 11)"
         },
         {
           "file": "src/pages/mission-board-07.html",
-          "label": "MISSION BOARD (7 of 13)"
+          "label": "MISSION BOARD (7 of 11)"
         },
         {
           "file": "src/pages/mission-board-08.html",
-          "label": "MISSION BOARD (8 of 13)"
+          "label": "MISSION BOARD (8 of 11)"
         },
         {
           "file": "src/pages/mission-board-09.html",
-          "label": "MISSION BOARD (9 of 13)"
+          "label": "MISSION BOARD (9 of 11)"
         },
         {
           "file": "src/pages/mission-board-10.html",
-          "label": "MISSION BOARD (10 of 13)"
+          "label": "MISSION BOARD (10 of 11)"
         },
         {
           "file": "src/pages/mission-board-11.html",
-          "label": "MISSION BOARD (11 of 13)"
-        },
-        {
-          "file": "src/pages/mission-board-12.html",
-          "label": "MISSION BOARD (12 of 13)"
-        },
-        {
-          "file": "src/pages/mission-board-13.html",
-          "label": "MISSION BOARD (13 of 13)"
+          "label": "MISSION BOARD (11 of 11)"
         }
       ]
     },
