@@ -2850,9 +2850,15 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/mathew-kandathil/photo-1.jpg"
+                  "src": "images/members/mathew-kandathil/photo-2.jpg"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "center": true,
+              "bare": true,
+              "text": "Glad to be two Grateful Hearts of St. Gregorios Malankara Orthodox Church of Bensalem, Philadelphia, PA"
             },
             {
               "type": "verse",
@@ -2866,7 +2872,8 @@
           ]
         }
       ],
-      "indexName": "Mathew Kandathil & Family"
+      "indexName": "Mathew Kandathil & Family",
+      "layoutNote": "20 Nov (Molsey 8:23 PM): new photo ('Print-ready enhanced photo.jpg') and message (Message.txt) from the family's Drive folder."
     },
     {
       "id": "punnoose-mathai",
