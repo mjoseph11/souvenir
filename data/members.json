@@ -2269,12 +2269,12 @@
     {
       "id": "mathai-memorial",
       "name": "Very Rev. Kaleeckal Mathai Cor Episcopos",
-      "title": "In Memoriam",
+      "title": "Late Very Rev. Fr. K. Mathai Cor-Episcopa",
       "band": "",
       "placement": "outline",
       "sort": "Mathai Very Rev. Kaleeckal Cor-Episcopa ",
-      "indexName": "In Memoriam — Very Rev. K. Mathai Cor Episcopos",
-      "layoutNote": "Manoj, 10 Nov: \"Memorial Pages\" design (ChatGPT image) and photo \"Mathai Achen - Manoj Chacko.jpg\". Replaces the hand-built src/pages/past-clergy-mathai-cor-episcopa.html.",
+      "indexName": "Late Very Rev. Fr. K. Mathai Cor-Episcopa",
+      "layoutNote": "Manoj, 10 Nov: \"Memorial Pages\" design (ChatGPT image) and photo \"Mathai Achen - Manoj Chacko.jpg\". Replaces the hand-built src/pages/past-clergy-mathai-cor-episcopa.html. 21 Nov (Manoj 3:51 PM): title 'Late Very Rev. Fr. K. Mathai Cor-Episcopa' instead of 'In Memoriam'.",
       "pages": [
         {
           "dark": true,
@@ -2292,11 +2292,11 @@
     {
       "id": "paul-varki-in-memoriam",
       "name": "In Memoriam - Rev. Fr. Dr. Paul Varki",
-      "title": "In Memoriam",
+      "title": "Late Rev. Fr. Paul Varki",
       "pages": [
         {
           "dark": true,
-          "title": "In Memoriam",
+          "title": "Late Rev. Fr. Paul Varki",
           "inMemoriam": {
             "photo": "images/members/paul-varki-memorial/portrait-frame.jpg",
             "name": "Rev. Fr. Dr. Paul Varki",
@@ -2309,9 +2309,9 @@
       ],
       "band": "",
       "placement": "outline",
-      "indexName": "In Memoriam — Rev. Fr. Dr. Paul Varki",
+      "indexName": "Late Rev. Fr. Paul Varki",
       "sort": "Varki Rev. Fr. Dr. Paul 0",
-      "layoutNote": "Manoj, 11 Nov: church memorials are their own section before the organizations; this page split off the Paul Varki pages, which stay in Past Clergy."
+      "layoutNote": "Manoj, 11 Nov: church memorials are their own section before the organizations; this page split off the Paul Varki pages, which stay in Past Clergy. 21 Nov (Manoj 3:51 PM): title 'Late Rev. Fr. Paul Varki' instead of 'In Memoriam'."
     },
     {
       "id": "paul-varki-memorial",
@@ -2376,7 +2376,7 @@
     {
       "id": "markose-mani-memorial",
       "name": "Deacon Markose Mani",
-      "title": "In Memoriam",
+      "title": "Late Dn. Markose Mani",
       "pages": [
         {
           "dark": true,
@@ -2392,9 +2392,9 @@
       ],
       "band": "",
       "placement": "outline",
-      "indexName": "In Memoriam — Deacon Markose Mani",
+      "indexName": "Late Dn. Markose Mani",
       "sort": "Mani Deacon Markose ",
-      "layoutNote": "Manoj, 10 Nov: \"In Memoriam_ Dn. Markose Mani.png\" design; portrait \"IMG_7915 - C. Mani.jpeg\" (2002), cropped to drop the date stamp."
+      "layoutNote": "Manoj, 10 Nov: \"In Memoriam_ Dn. Markose Mani.png\" design; portrait \"IMG_7915 - C. Mani.jpeg\" (2002), cropped to drop the date stamp. 21 Nov (Manoj 3:51 PM): title 'Late Dn. Markose Mani' instead of 'In Memoriam'."
     },
     {
       "id": "cherian-mani",

@@ -59,6 +59,16 @@
           }
         },
         {
+          "member": "mathai-memorial",
+          "toc": "Late Very Rev. Fr. K. Mathai Cor-Episcopa",
+          "note": "Manoj 21 Nov 3:48 PM: Achen asked to move Mathai Achen's and Varki Achen's memorials to after Barnabas Thirumeni; 3:51 PM: titles 'Late Very Rev. Fr. K Mathai Cor-Episcopa' and 'Late Rev. Fr. Paul Varki' instead of 'In Memoriam'."
+        },
+        {
+          "member": "paul-varki-in-memoriam",
+          "toc": "Late Rev. Fr. Paul Varki",
+          "note": "Manoj 21 Nov 3:48 PM: Achen asked to move Mathai Achen's and Varki Achen's memorials to after Barnabas Thirumeni; 3:51 PM: titles 'Late Very Rev. Fr. K Mathai Cor-Episcopa' and 'Late Rev. Fr. Paul Varki' instead of 'In Memoriam'."
+        },
+        {
           "label": "MESSAGE: CATHOLICOS (KALPANA)",
           "fullpage": {
             "src": "images/catholicos-kalpana-2026.png",
@@ -624,19 +634,12 @@
     },
     {
       "name": "In Memoriam",
-      "_comment": "Manoj, 11 Nov: church memorials after the church pages, before the organizations, as two spreads (Mathai Achen | Varki Achen, Mani Shemachen | church members since 1976). Must start on a left (even) page.",
+      "_comment": "Manoj, 11 Nov: church memorials after the church pages, before the organizations, as two spreads (Mathai Achen | Varki Achen, Mani Shemachen | church members since 1976). Must start on a left (even) page. 21 Nov (Manoj 3:48 PM): Mathai Achen's and Varki Achen's memorials moved to the front, after Mar Barnabas Thirumeni; Dn. Markose Mani and the church members page stay here.",
       "items": [
         {
-          "member": "mathai-memorial",
-          "toc": "In Memoriam — Very Rev. K. Mathai Cor Episcopos"
-        },
-        {
-          "member": "paul-varki-in-memoriam",
-          "toc": "In Memoriam — Rev. Fr. Dr. Paul Varki"
-        },
-        {
           "member": "markose-mani-memorial",
-          "toc": "In Memoriam — Dn. Markose Mani"
+          "toc": "Late Dn. Markose Mani",
+          "note": "Manoj 21 Nov 3:51 PM: title 'Late Dn. Markose Mani'; stays here with the other memorial page."
         },
         {
           "placeholder": {
