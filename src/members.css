@@ -55,6 +55,8 @@
   .m-page.m-gallery .m-fig figcaption { flex: none; font-size: 7.5pt; line-height: 1.2; min-height: 2.4em; margin-top: 0.02in; text-align: center; font-style: italic; color: #555; }
   .m-page.m-gallery .m-heading { margin: 0; }
   .m-page.m-gallery .m-subheading { margin: 0 0 0.04in; font-size: 9pt; }
+  /* cropped gallery photos keep the top (heads) in view (Manoj 21 Nov 3:57 PM: 'shifted up') */
+  .m-page.m-gallery .m-photos.fill .m-fig img { object-position: 50% 20%; }
   /* "frame": a row of photos set apart in a gold border under its own title
      (Manoj 20 Nov 9:28 PM: the last three Ramban pictures, titled "Very Rev. Geevarghese Ramban") */
   .m-framed { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; gap: 0.05in;

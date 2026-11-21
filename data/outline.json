@@ -1219,40 +1219,44 @@
         },
         {
           "file": "src/pages/mission-board-01.html",
-          "label": "MISSION BOARD (1 of 8)",
+          "label": "MISSION BOARD (1 of 9)",
           "toc": "Mission Board"
         },
         {
           "file": "src/pages/mission-board-02.html",
-          "label": "MISSION BOARD (2 of 8)"
+          "label": "MISSION BOARD (2 of 9)"
         },
         {
           "file": "src/pages/mission-board-03.html",
-          "label": "MISSION BOARD (3 of 8)"
+          "label": "MISSION BOARD (3 of 9)"
         },
         {
           "file": "src/pages/mission-board-04.html",
-          "label": "MISSION BOARD (4 of 8)"
+          "label": "MISSION BOARD (4 of 9)"
         },
         {
           "file": "src/pages/mission-board-05.html",
-          "label": "MISSION BOARD (5 of 8)"
+          "label": "MISSION BOARD (5 of 9)"
         },
         {
           "file": "src/pages/mission-board-06.html",
-          "label": "MISSION BOARD (6 of 8)"
+          "label": "MISSION BOARD (6 of 9)"
         },
         {
           "file": "src/pages/mission-board-07.html",
-          "label": "MISSION BOARD (7 of 8)"
+          "label": "MISSION BOARD (7 of 9)"
         },
         {
           "file": "src/pages/mission-board-08.html",
-          "label": "MISSION BOARD (8 of 8)"
+          "label": "MISSION BOARD (8 of 9)"
         },
         {
-          "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (1 of 2)",
-          "note": "Manoj's 'Mission Moments in Pictures' page I (SGMOC_Mission_History_Story_and_Full_Width_Galleries.pdf, 21 Nov 10:02 AM), with four of the photos that sat beside the text added so the Mission Board fits 10 pages (Mathew 21 Nov).",
+          "file": "src/pages/mission-board-09.html",
+          "label": "MISSION BOARD (9 of 9)"
+        },
+        {
+          "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (1 of 3)",
+          "note": "Manoj's 'Mission Moments in Pictures' (SGMOC_Mission_History_Story_and_Full_Width_Galleries.pdf, 21 Nov 10:02 AM) plus the photos moved from beside the text; on three pages so the photos are bigger (Manoj 21 Nov 3:57 PM; Mathew: Mission Board 12 pages).",
           "generated": {
             "title": "SGMOC Mission Board",
             "gallery": true,
@@ -1269,6 +1273,7 @@
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
+                "grow": 0.94,
                 "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-02.jpg",
@@ -1281,21 +1286,21 @@
                     "alt": "Care packages prepared for children in Bucks County",
                     "caption": "Care packages prepared for children in Bucks County",
                     "flex": 1.655
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-06.jpg",
-                    "alt": "Sunday School youth volunteers, 2019",
-                    "caption": "Sunday School youth volunteers, 2019",
-                    "flex": 1.365
                   }
-                ],
-                "grow": 0.957
+                ]
               },
               {
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
+                "grow": 0.978,
                 "photos": [
+                  {
+                    "src": "images/ministries/mission-board/mb-06.jpg",
+                    "alt": "Sunday School youth volunteers, 2019",
+                    "caption": "Sunday School youth volunteers, 2019",
+                    "flex": 1.365
+                  },
                   {
                     "src": "images/ministries/mission-board/mb-07.jpg",
                     "alt": "Creating Project Linus blankets",
@@ -1307,7 +1312,15 @@
                     "alt": "A thank-you visit to Bensalem Police",
                     "caption": "A thank-you visit to Bensalem Police",
                     "flex": 1.379
-                  },
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "grow": 1.029,
+                "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-12.jpg",
                     "alt": "Cards shared through Ivins Outreach, 2021",
@@ -1325,21 +1338,21 @@
                     "alt": "Rise Against Hunger fundraising and meal-packing event, 2023",
                     "caption": "Rise Against Hunger fundraising and meal-packing event, 2023",
                     "flex": 0.78
-                  }
-                ],
-                "grow": 1.023
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "fill": true,
-                "photos": [
+                  },
                   {
                     "src": "images/ministries/mission-board/mb-20.jpg",
                     "alt": "Parish volunteers packing meals",
                     "caption": "Parish volunteers packing meals",
                     "flex": 1.333
-                  },
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "grow": 1.067,
+                "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-21.jpg",
                     "alt": "Rise Against Hunger volunteers in action",
@@ -1358,79 +1371,14 @@
                     "caption": "Preparing and distributing packed meals, 2023",
                     "flex": 0.75
                   }
-                ],
-                "grow": 1.054
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "fill": true,
-                "photos": [
-                  {
-                    "src": "images/ministries/mission-board/mb-25.jpg",
-                    "alt": "Back-to-School supplies, 2022",
-                    "caption": "Back-to-School supplies, 2022",
-                    "flex": 1.333
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-26.jpg",
-                    "alt": "School supplies ready for delivery, 2023",
-                    "caption": "School supplies ready for delivery, 2023",
-                    "flex": 0.75
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-28.jpg",
-                    "alt": "Supplies loaded for delivery, 2025",
-                    "caption": "Supplies loaded for delivery, 2025",
-                    "flex": 1.335
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-29.jpg",
-                    "alt": "Delivering supplies to Robert K. Shafer Middle School",
-                    "caption": "Delivering supplies to Robert K. Shafer Middle School",
-                    "flex": 1.335
-                  }
-                ],
-                "grow": 1.054
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "fill": true,
-                "photos": [
-                  {
-                    "src": "images/ministries/mission-board/mb-11.jpg",
-                    "alt": "Winter Coat Drive, 2020",
-                    "caption": "Winter Coat Drive, 2020",
-                    "flex": 2.18
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-13.jpg",
-                    "alt": "Being the Bridge across generations, 2021",
-                    "caption": "Being the Bridge across generations, 2021",
-                    "flex": 1.796
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-14.jpg",
-                    "alt": "Ukraine relief drive, 2022",
-                    "caption": "Ukraine relief drive, 2022",
-                    "flex": 0.772
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-23.jpg",
-                    "alt": "Volunteers with clergy, September 2023",
-                    "caption": "Volunteers with clergy, September 2023",
-                    "flex": 1.333
-                  }
-                ],
-                "grow": 0.932
+                ]
               }
             ]
           }
         },
         {
-          "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (2 of 2)",
-          "note": "Manoj's 'Mission Moments in Pictures' page II (SGMOC_Mission_History_Story_and_Full_Width_Galleries.pdf, 21 Nov 10:02 AM), with four of the photos that sat beside the text added so the Mission Board fits 10 pages (Mathew 21 Nov).",
+          "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (2 of 3)",
+          "note": "Manoj's 'Mission Moments in Pictures' (SGMOC_Mission_History_Story_and_Full_Width_Galleries.pdf, 21 Nov 10:02 AM) plus the photos moved from beside the text; on three pages so the photos are bigger (Manoj 21 Nov 3:57 PM; Mathew: Mission Board 12 pages).",
           "generated": {
             "title": "SGMOC Mission Board",
             "gallery": true,
@@ -1447,13 +1395,62 @@
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
+                "grow": 1.021,
                 "photos": [
+                  {
+                    "src": "images/ministries/mission-board/mb-25.jpg",
+                    "alt": "Back-to-School supplies, 2022",
+                    "caption": "Back-to-School supplies, 2022",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mission-board/mb-26.jpg",
+                    "alt": "School supplies ready for delivery, 2023",
+                    "caption": "School supplies ready for delivery, 2023",
+                    "flex": 0.75,
+                    "pos": "50% 0%"
+                  },
+                  {
+                    "src": "images/ministries/mission-board/mb-28.jpg",
+                    "alt": "Supplies loaded for delivery, 2025",
+                    "caption": "Supplies loaded for delivery, 2025",
+                    "flex": 1.335
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "grow": 1.021,
+                "photos": [
+                  {
+                    "src": "images/ministries/mission-board/mb-29.jpg",
+                    "alt": "Delivering supplies to Robert K. Shafer Middle School",
+                    "caption": "Delivering supplies to Robert K. Shafer Middle School",
+                    "flex": 1.335
+                  },
+                  {
+                    "src": "images/ministries/mission-board/mb-23.jpg",
+                    "alt": "Volunteers with clergy, September 2023",
+                    "caption": "Volunteers with clergy, September 2023",
+                    "flex": 1.333
+                  },
                   {
                     "src": "images/ministries/mission-board/mb-30.jpg",
                     "alt": "Children with clergy during the Back-to-School drive",
                     "caption": "Children with clergy during the Back-to-School drive",
-                    "flex": 0.75
-                  },
+                    "flex": 0.75,
+                    "pos": "50% 0%"
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "grow": 0.944,
+                "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-31.jpg",
                     "alt": "With Bensalem Police, 2024",
@@ -1471,21 +1468,21 @@
                     "alt": "Volunteers at the 2024 Thanksgiving dinner",
                     "caption": "Volunteers at the 2024 Thanksgiving dinner",
                     "flex": 1.333
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-35.jpg",
-                    "alt": "Thanksgiving at Snyder-Girotti, 2025",
-                    "caption": "Thanksgiving at Snyder-Girotti, 2025",
-                    "flex": 1.333
                   }
-                ],
-                "grow": 0.989
+                ]
               },
               {
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
+                "grow": 1.023,
                 "photos": [
+                  {
+                    "src": "images/ministries/mission-board/mb-35.jpg",
+                    "alt": "Thanksgiving at Snyder-Girotti, 2025",
+                    "caption": "Thanksgiving at Snyder-Girotti, 2025",
+                    "flex": 1.333
+                  },
                   {
                     "src": "images/ministries/mission-board/mb-37.jpg",
                     "alt": "Making Project Linus blankets, 2024",
@@ -1497,7 +1494,33 @@
                     "alt": "At the Audrey J. Tucker Resource Center",
                     "caption": "At the Audrey J. Tucker Resource Center",
                     "flex": 1.162
-                  },
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (3 of 3)",
+          "note": "Manoj's 'Mission Moments in Pictures' (SGMOC_Mission_History_Story_and_Full_Width_Galleries.pdf, 21 Nov 10:02 AM) plus the photos moved from beside the text; on three pages so the photos are bigger (Manoj 21 Nov 3:57 PM; Mathew: Mission Board 12 pages).",
+          "generated": {
+            "title": "SGMOC Mission Board",
+            "gallery": true,
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "Mission Moments in Pictures"
+              },
+              {
+                "type": "subheading",
+                "text": "Photographs from the Mission Board and Sunday School Mission Team · III"
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "grow": 1.056,
+                "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-40.jpg",
                     "alt": "Bibs-n-Bottles gifts, December 2024",
@@ -1516,13 +1539,13 @@
                     "caption": "Care packages for the shelter, 2025",
                     "flex": 1.335
                   }
-                ],
-                "grow": 1.02
+                ]
               },
               {
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
+                "grow": 0.995,
                 "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-44.jpg",
@@ -1541,21 +1564,21 @@
                     "alt": "Groceries packed at Arm In Arm",
                     "caption": "Groceries packed at Arm In Arm",
                     "flex": 1.776
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-48.jpg",
-                    "alt": "Sunday School children with Christmas shoeboxes",
-                    "caption": "Sunday School children with Christmas shoeboxes",
-                    "flex": 1.333
                   }
-                ],
-                "grow": 1.046
+                ]
               },
               {
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
+                "grow": 0.957,
                 "photos": [
+                  {
+                    "src": "images/ministries/mission-board/mb-48.jpg",
+                    "alt": "Sunday School children with Christmas shoeboxes",
+                    "caption": "Sunday School children with Christmas shoeboxes",
+                    "flex": 1.333
+                  },
                   {
                     "src": "images/ministries/mission-board/mb-49.jpg",
                     "alt": "Shoeboxes ready for delivery, 2025",
@@ -1563,35 +1586,18 @@
                     "flex": 1.335
                   },
                   {
-                    "src": "images/ministries/mission-board/mb-38.jpg",
-                    "alt": "Diapers and wipes gathered for YWCA Bucks County",
-                    "caption": "Diapers and wipes gathered for YWCA Bucks County",
-                    "flex": 1.333
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-41.jpg",
-                    "alt": "Health-n-Hygiene gifts, December 2024",
-                    "caption": "Health-n-Hygiene gifts, December 2024",
-                    "flex": 1.333
-                  },
-                  {
                     "src": "images/ministries/mission-board/mb-47.jpg",
                     "alt": "SGMOC volunteers at Arm In Arm, July 2025",
                     "caption": "SGMOC volunteers at Arm In Arm, July 2025",
                     "flex": 1.775
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-52.jpg",
-                    "alt": "Easter baskets for children facing cancer, 2026",
-                    "caption": "Easter baskets for children facing cancer, 2026",
-                    "flex": 0.772
                   }
-                ],
-                "grow": 0.953
+                ]
               },
               {
                 "type": "photos",
                 "arrange": "row",
+                "fill": true,
+                "grow": 1.0,
                 "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-55.jpg",
@@ -1599,9 +1605,7 @@
                     "caption": "Our SGMOC parish family",
                     "flex": 3.109
                   }
-                ],
-                "fill": true,
-                "grow": 1.08
+                ]
               }
             ]
           }

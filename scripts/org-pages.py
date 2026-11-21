@@ -70,14 +70,17 @@ class R:
         ia = [r for p in a for r in p['imgs']]; ib = [r for p in b for r in p['imgs']]
         ta = [p for p in a if p['text']]; tb = [p for p in b if p['text']]
         imgs, cap, body = (ia, ta, tb) if ia else (ib, tb, ta)
-        fig = ('<div class="org-fig">' + ''.join(self.img(r) for r in imgs)
+        # "figW": a narrower photo beside the text, for an upright photo that would
+        # otherwise be cropped (Mission Board, 21 Nov)
+        fw = f' style="width:{t["figW"]}"' if t.get('figW') else ''
+        fig = (f'<div class="org-fig"{fw}>' + ''.join(self.img(r) for r in imgs)
                + ''.join(f'<p class="org-caption">{runs(p)}</p>' for p in cap) + '</div>')
         if t.get('after'):
             # magazine layout: the photo floats at the side and the writing after it (the
             # pair's own text, then the next paragraphs and headings) wraps round and under it
             side = 'left' if ia else 'right'
             if t.get('imgH'):
-                fig = ('<div class="org-fig">' + ''.join(self.img(r, f' style="height:{t["imgH"]:.0f}px"') for r in imgs)
+                fig = (f'<div class="org-fig"{fw}>' + ''.join(self.img(r, f' style="height:{t["imgH"]:.0f}px"') for r in imgs)
                        + ''.join(f'<p class="org-caption">{runs(p)}</p>' for p in cap) + '</div>')
             return (f'<div class="org-float {side}">' + fig + ''.join(self.para(p) for p in body)
                     + ''.join(self.para(p) for p in t['after']) + '</div>')
