@@ -557,8 +557,9 @@
     {
       "kind": "question",
       "label": "MISSION BOARD (1 of 11)",
-      "text": "Mission Board: names and numbers that differ between tellings (found in the 20 Nov review) - Neethu Varghese or Varughese; Siji John or Siji Chacko (2024 diaper drive); 2024 Thanksgiving 100 or more than 100 people; Mitzvah Circle or Mitzvah Cycle (flyer caption); Philadelphia High School for Girls (2026 line says Philadelphia High School); Robert K. Shafer / William Loesche; Family Service name (three forms); 2024 approvals by 'Managing Committee and Board' though the Board formed in 2025",
-      "asked": "2026-11-20"
+      "text": "Mission Board: names and numbers that differ between tellings (found in the 20 Nov review) - Neethu Varghese or Varughese; Siji John or Siji Chacko (2024 diaper drive); 2024 Thanksgiving 100 or more than 100 people; Mitzvah Circle or Mitzvah Cycle (flyer caption); Philadelphia High School for Girls (2026 line says Philadelphia High School); Robert K. Shafer / William Loesche; Family Service name (three forms); 2024 approvals by 'Managing Committee and Board' though the Board formed in 2025 - dropped (Mathew 20 Nov: not sending), left as written",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     }
   ]
 }
