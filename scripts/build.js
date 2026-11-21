@@ -113,7 +113,15 @@ const BLOCKS = {
     if (b.arrange === 'row' && ps.length && ps.every((p) => p.flex)) {
       const S = ps.reduce((n, p) => n + Number(p.flex), 0);
       const g = b.grow ? Number(b.grow) : 10 / S; // x10: grows adding up to under 1 leave space unused
-      return `<div class="m-photos fit${plain}${fill}" style="flex-grow:${g.toFixed(3)}">${figs.join('')}</div>`;
+      // "fill" on such a row: it spans the full width and every photo is trimmed
+      // top and bottom by the same share, so the page has no side gaps (Manoj
+      // 20 Nov 9:28 PM: "crop, arrange ... maximize left and right spacing").
+      // "frame": a gold border round the row with a title above it (same message).
+      const row = b.fill
+        ? `<div class="m-photos fill${plain}"${b.frame ? '' : ` style="flex-grow:${g.toFixed(3)}"`}>${figs.join('')}</div>`
+        : `<div class="m-photos fit${plain}${fill}" style="flex-grow:${g.toFixed(3)}">${figs.join('')}</div>`;
+      if (b.frame) return `<div class="m-framed" style="flex-grow:${g.toFixed(3)}"><div class="m-framed-title">${esc(b.frame)}</div>${row}</div>`;
+      return row;
     }
     return `<div class="m-photos${stack}${plain}${fill}"${grow}>${figs.join('')}</div>`;
   },

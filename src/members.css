@@ -48,6 +48,12 @@
   /* no leaf artwork behind the photos (Manoj, 18 Nov 9:05 PM: "I don't think we need to see the background") */
   /* the header and footer bands are part of the page artwork, so the white goes on a panel behind the photos only */
   .m-page.m-gallery .m-content { background: #fff; top: 0.86in; bottom: 0.47in; left: 0.12in; right: 0.12in; padding: 0.1in; }
+  /* "frame": a row of photos set apart in a gold border under its own title
+     (Manoj 20 Nov 9:28 PM: the last three Ramban pictures, titled "Very Rev. Geevarghese Ramban") */
+  .m-framed { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; gap: 0.05in;
+              border: 2px solid #C9A227; padding: 0.06in 0.08in 0.08in; background: #fbf6e6; }
+  .m-framed-title { text-align: center; color: #6B0000; font-weight: 700; font-size: 12pt; letter-spacing: 0.03em; line-height: 1.2; }
+  .m-framed .m-photos { flex: 1 1 0; }
   /* Text-only pages (e.g. a memorial without photos) sit in the middle of the page. */
   .m-content:not(:has(.m-photos, .m-side, .m-half, .m-index)) { justify-content: center; }
 

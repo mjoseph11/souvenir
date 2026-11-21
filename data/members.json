@@ -1798,7 +1798,7 @@
     {
       "id": "kallelil",
       "name": "Kuruvilla (Saji) Kallelil",
-      "title": "The Kallelil Family",
+      "title": "Saji and Glory's Family",
       "pages": [
         {
           "blocks": [
@@ -1816,7 +1816,7 @@
             },
             {
               "type": "text",
-              "text": "Our children, Seryna and Mathew, were baptized here. They have been attending SGMOC since they were born. Mathew was an active student at the SGMOC's Sunday school, till he graduated. He, along with his team, won Bible competitions in a row for three times at the Diocesan level. He is now serving as an altar boy. We are thankful for the help and services this church provides to morally educate our children.",
+              "text": "Our children, Seryna and Mathew, were baptized here. They have been attending SGMOC since they were born and we have collectively been a part of the SGMOC family for more than 30 years. Mathew was an active student at the SGMOC's Sunday school, till he graduated. He, along with his team, won Bible competitions in a row for three times at the Diocesan level. He is now serving as an altar boy. We are thankful for the help and services this church provides to morally and spiritually educate our children.",
               "size": "sm",
               "bare": true,
               "center": true
@@ -1825,7 +1825,8 @@
         }
       ],
       "sort": "Kallelil Kuruvilla (Saji) ",
-      "indexName": "The Kallelil Family"
+      "indexName": "Saji and Glory's Family (Kallelil)",
+      "layoutNote": "20 Nov (Molsey 9:53 PM, family's review comments): title 'Saji and Glory's Family'; text now says the family has been part of SGMOC for more than 30 years, and 'morally and spiritually educate'. Index entry keeps the surname so it can be found under K."
     },
     {
       "id": "kuruvilla-p-kurian",
@@ -2850,7 +2851,7 @@
               "type": "photos",
               "photos": [
                 {
-                  "src": "images/members/mathew-kandathil/photo-2.jpg"
+                  "src": "images/members/mathew-kandathil/photo-3.jpg"
                 }
               ]
             },
@@ -2873,7 +2874,7 @@
         }
       ],
       "indexName": "Mathew Kandathil & Family",
-      "layoutNote": "20 Nov (Molsey 8:23 PM): new photo ('Print-ready enhanced photo.jpg') and message (Message.txt) from the family's Drive folder."
+      "layoutNote": "20 Nov (Molsey 8:23 PM): new photo ('Print-ready enhanced photo.jpg') and message (Message.txt) from the family's Drive folder. 20 Nov (Molsey 8:44 PM): photo swapped for 'Enhanced photo.jpg' - the earlier one had AI marks on his cheek and nose."
     },
     {
       "id": "punnoose-mathai",
@@ -2905,13 +2906,26 @@
               ]
             },
             {
+              "type": "photos",
+              "photos": [
+                {
+                  "src": "images/members/punnoose-mathai/photo-5.jpg"
+                },
+                {
+                  "src": "images/members/punnoose-mathai/photo-6.jpg"
+                }
+              ]
+            },
+            {
               "type": "closing"
             }
           ]
         }
       ],
       "sort": "Mathai Punnoose ",
-      "indexName": "Punnoose Mathai & Family"
+      "indexName": "Punnoose Mathai & Family",
+      "layoutNote": "20 Nov (Molsey 10:03 PM): the two pictures with Shibu Achen from the family's folder added as a third row.",
+      "collage": true
     },
     {
       "id": "john-chacko",
@@ -4554,6 +4568,34 @@
         }
       ],
       "indexName": "Thomas K Abraham & Family"
+    },
+    {
+      "id": "jacob-philip",
+      "name": "Jacob Philip",
+      "title": "Jacob Philip & Family",
+      "sort": "Philip Jacob ",
+      "pages": [
+        {
+          "blocks": [
+            {
+              "type": "photos",
+              "plain": true,
+              "photos": [
+                {
+                  "src": "images/icons/parumala-full.jpg",
+                  "alt": "St. Gregorios of Parumala"
+                }
+              ]
+            },
+            {
+              "type": "names",
+              "text": "Best Compliments\nJacob Philip & Family"
+            }
+          ]
+        }
+      ],
+      "indexName": "Jacob Philip & Family",
+      "layoutNote": "20 Nov (Manoj 9:18 PM): 'For now lets put a best compliments with st Mary or parumala thirumeni photo' - the family's folder has only 'Best Compliments.txt'; Suchin is still trying for a family picture (8:12 PM)."
     }
   ]
 }

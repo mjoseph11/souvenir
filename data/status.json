@@ -544,8 +544,9 @@
     },
     {
       "kind": "question",
-      "text": "Does Jacob Philip have a page? Folder exists with no picture (Molsey 20 Nov 8:11 PM) - Suchin 8:12 PM: only Best Compliments for now; still trying for a family picture for another week",
-      "asked": "2026-11-20"
+      "text": "Does Jacob Philip have a page? Folder exists with no picture (Molsey 20 Nov 8:11 PM) - Suchin 8:12 PM: only Best Compliments for now; still trying for a family picture for another week - Manoj 9:18 PM: for now a Best Compliments page with the Parumala Thirumeni icon (p198); swap in the family picture if it comes",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
     },
     {
       "kind": "missing",
@@ -558,6 +559,41 @@
       "kind": "question",
       "label": "MISSION BOARD (1 of 11)",
       "text": "Mission Board: names and numbers that differ between tellings (found in the 20 Nov review) - Neethu Varghese or Varughese; Siji John or Siji Chacko (2024 diaper drive); 2024 Thanksgiving 100 or more than 100 people; Mitzvah Circle or Mitzvah Cycle (flyer caption); Philadelphia High School for Girls (2026 line says Philadelphia High School); Robert K. Shafer / William Loesche; Family Service name (three forms); 2024 approvals by 'Managing Committee and Board' though the Board formed in 2025 - dropped (Mathew 20 Nov: not sending), left as written",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "TRIBUTE: FIFTEEN YEARS IN PICTURES (2 of 2)",
+      "text": "Ramban picture pages (pp 26-27, Manoj 20 Nov 9:28 PM): on the print file the picture panel ran into the footer - now stops above it; rows cropped to use the full width (no heads cut); the last three pictures in a gold frame titled 'Very Rev. Geevarghese Ramban'",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MESSAGE: VICAR — REV. FR. EBY PAULOSE",
+      "text": "Vicar's message p13: 'Vicar & President, St. Gregorios Malankara Orthodox Church, Bensalem' no longer repeated under the signature - it is already under his photo (Molsey 20 Nov 9:34 PM: not necessary)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Kuruvilla (Saji) Kallelil",
+      "text": "Kallelil: title now 'Saji and Glory's Family'; text adds 'and we have collectively been a part of the SGMOC family for more than 30 years' and 'morally and spiritually educate' (family's review comments, Molsey 20 Nov 9:53 PM)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Punnoose Mathai",
+      "text": "Punnoose Mathai: the two pictures with Shibu Achen from the family's folder added (Molsey 20 Nov 10:03 PM)",
+      "asked": "2026-11-20",
+      "done": "2026-11-20"
+    },
+    {
+      "kind": "missing",
+      "label": "MEMBER PAGE: Mathew Kandathil",
+      "text": "Mathew Kandathil: photo swapped for 'Enhanced photo.jpg' - the earlier one had AI marks on his cheek and nose (Molsey 20 Nov 8:44 PM)",
       "asked": "2026-11-20",
       "done": "2026-11-20"
     }

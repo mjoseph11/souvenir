@@ -55,3 +55,10 @@
      including the bleed, cropping rather than letterboxing. */
   .page.cover-pilgrimage img,
   .page.back-pilgrimage img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* Picture ("gallery") pages: the white panel sits between the header and footer
+     bands, which grow on the print file (header +0.14in, footer +0.12in inside the
+     trim), so the panel shrinks to match. Without this it ran 0.2in into the footer
+     (Manoj 20 Nov 9:28 PM: "pictures are overlapping with footer"). */
+  .m-page.m-gallery .m-content { top: calc(0.86in + var(--bleed) + 0.14in); bottom: calc(0.47in + var(--bleed) + 0.12in);
+                                 left: calc(0.12in + var(--bleed)); right: calc(0.12in + var(--bleed)); }
