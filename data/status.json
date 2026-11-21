@@ -24,17 +24,18 @@
     },
     {
       "kind": "question",
-      "label": "MISSION BOARD (5 of 18)",
-      "text": "\"Ivin's Outreach, 2021\" — should the picture be straightened?",
+      "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (1 of 2)",
+      "text": "\"Cards shared through Ivins Outreach, 2021\" (now on the picture page, p92) — should the picture be straightened?",
       "asked": "2026-11-18",
       "waiting": "Silvi Chacko"
     },
     {
       "kind": "question",
-      "label": "MISSION BOARD (1 of 18)",
-      "text": "The Mission Board runs to 18 pages — too many; Molsey finds it long and repetitive. Manoj to go through it.",
+      "label": "MISSION BOARD (1 of 8)",
+      "text": "The Mission Board runs to 18 pages — too many; Molsey finds it long and repetitive. Manoj to go through it. - Manoj sent his reworked version 21 Nov (10:02 AM); it is in, fitted to 10 pages (pp 84-93)",
       "waiting": "Manoj - Silvi's write-up stays for the sample print; Manoj will rework it after (\"very hard read, so many repetitions\", 18 Nov 8:41 PM)",
-      "asked": "2026-11-17"
+      "asked": "2026-11-17",
+      "done": "2026-11-21"
     },
     {
       "kind": "question",
@@ -90,7 +91,7 @@
     },
     {
       "kind": "question",
-      "text": "Spine width and page count for the order: 244 inner pages plus 4 printed cover pages (248 page sides) - check Vistaprint's template; print file uses a 0.5in spine",
+      "text": "Spine width and page count for the order: 240 inner pages plus 4 printed cover pages (244 page sides; book 242 pages as of 21 Nov) - check Vistaprint's template; print file uses a 0.5in spine",
       "waiting": "Manoj"
     },
     {
@@ -195,8 +196,8 @@
     },
     {
       "kind": "missing",
-      "label": "MISSION BOARD (4 of 18)",
-      "text": "Larger originals of \"Sock Drive, November 2020\" and \"Winter Coat Drive banner, 2020\" (both print below 150 dpi)",
+      "label": "MISSION BOARD: MISSION MOMENTS IN PICTURES (1 of 2)",
+      "text": "Larger original of \"Winter Coat Drive, 2020\" (p92; prints below 150 dpi). The Sock Drive picture is no longer used in Manoj's version",
       "waiting": "Silvi Chacko",
       "asked": "2026-11-18"
     },
