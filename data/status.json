@@ -871,8 +871,15 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Design: p180 memorial frame stretched taller than on the other memorial pages; p24 (Fr. Alexander Kurien) body text smaller than the other clergy messages; captions with and without full stops; ministry history sign-offs differ (p59, p64, p74); straight and curly quotes mixed on pp61-62 (suggestion from the consistency check; Member Pages group 22 Nov)",
+      "text": "Design: p180 memorial frame stretched taller than on the other memorial pages; captions with and without full stops; ministry history sign-offs differ (p59, p64, p74); straight and curly quotes mixed on pp61-62 (suggestion from the consistency check; Member Pages group 22 Nov)",
       "waiting": "Manoj",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "p24 Alexander Kurian Achen message: about 1,200 words, set at about 9.4pt to stay on one page (Manoj 18 Nov); even 8pt in the source spills over. Asked the group 22 Nov: ask Achen for a 700-800 word version, or leave as is?",
+      "waiting": "Editorial board",
       "asked": "2026-11-22"
     }
   ]
