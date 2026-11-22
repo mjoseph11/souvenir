@@ -1,0 +1,87 @@
+<div class="page inner-page eb-page">
+  <!-- Editorial Board & Acknowledgements. Laid out after Manoj's ChatGPT design (DM 22 Nov 6:51 AM, his second version),
+       set as real text in the book's own header and footer (Mathew 22 Nov). "Babu Kappil" printed as John Kappil (Mathew 22 Nov). -->
+  <style>
+    .eb-page .page-content { padding: 0.12in 0.85in 0 !important; text-align: center; color: #6B0000; }
+    .eb-verse { font-style: italic; font-size: 14pt; line-height: 1.2; margin: 0; }
+    .eb-ref { font-size: 11pt; color: #222; margin: 2pt 0 0; }
+    .eb-intro { font-size: 12.5pt; line-height: 1.25; color: #1d2340; margin: 0 0.35in; text-wrap: balance; }
+    .eb-rule { display: flex; align-items: center; gap: 6pt; margin: 0.065in auto; width: 82%; }
+    .eb-rule::before, .eb-rule::after { content: ""; flex: 1; height: 1.4px; background: linear-gradient(90deg, rgba(201,162,39,0), #C9A227 25%, #C9A227 75%, rgba(201,162,39,0)); }
+    .eb-rule svg { width: 0.4in; height: 0.16in; flex: none; }
+    .eb-pill-row { display: flex; align-items: center; justify-content: center; gap: 5pt; margin: 0 0 0.06in; }
+    .eb-pill-row svg { width: 0.42in; height: 0.2in; flex: none; }
+    .eb-pill { display: inline-block; padding: 3pt 22pt 4pt; border-radius: 999px; border: 2px solid #D9AE45;
+      box-shadow: inset 0 0 0 1px #8a1c1c; background: linear-gradient(#8E1414, #5E0000);
+      color: #F6DD95; font-size: 17pt; font-weight: 600; letter-spacing: 0.2pt; line-height: 1.15; white-space: nowrap; }
+    .eb-leads { display: flex; justify-content: center; align-items: stretch; gap: 0.22in; margin-top: 0.06in; }
+    .eb-lead { flex: 1; max-width: 3.15in; display: flex; flex-direction: column; align-items: center; }
+    .eb-lead .eb-pill { position: relative; z-index: 1; margin-bottom: -10pt; }
+    .eb-lead-name { align-self: stretch; border: 1.6px solid #D9AE45; border-radius: 9pt; background: linear-gradient(#FFFBEF, #F7E9C6);
+      padding: 13pt 8pt 7pt; font-size: 19pt; font-weight: 600; }
+    .eb-divider { width: 1.4px; background: linear-gradient(rgba(201,162,39,0), #C9A227 20%, #C9A227 80%, rgba(201,162,39,0)); }
+    .eb-cols { display: flex; justify-content: center; gap: 0.5in; font-size: 17pt; font-weight: 600; line-height: 1.22; }
+    .eb-cols > div { min-width: 2.2in; }
+    .eb-one { font-size: 18pt; font-weight: 600; margin: 0; }
+    .eb-groups { font-size: 18pt; font-weight: 600; line-height: 1; margin: 0.02in auto 0; width: 4.6in; }
+    .eb-groups div { padding: 5pt 0 6pt; }
+    .eb-groups div + div { border-top: 1.2px solid; border-image: linear-gradient(90deg, rgba(201,162,39,0), #C9A227 20%, #C9A227 80%, rgba(201,162,39,0)) 1; }
+    .eb-thanks { font-style: italic; font-size: 13pt; line-height: 1.25; color: #1d2340; margin: 0.12in 0 0; }
+  </style>
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="eb-knot" viewBox="0 0 40 16"><g fill="none" stroke="#C9A227" stroke-width="1.6"><path d="M20 8 C14 1, 4 1, 4 8 C4 15, 14 15, 20 8 C26 1, 36 1, 36 8 C36 15, 26 15, 20 8 Z"/></g></symbol>
+      <symbol id="eb-scroll" viewBox="0 0 42 20"><g fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round"><path d="M41 10 H20 C14 10, 10 6, 12 3 C14 0, 19 2, 17 6"/><path d="M20 10 C14 10, 10 14, 12 17 C14 20, 19 18, 17 14"/><path d="M9 10 C6 10, 3 8, 1 6"/></g><circle cx="5" cy="10" r="1.6" fill="#C9A227"/></symbol>
+    </defs>
+  </svg>
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Editorial Board</h1>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <p class="eb-verse">&ldquo;Commit to the Lord whatever you do, and he will establish your plans.&rdquo;</p>
+    <p class="eb-ref">&mdash; Proverbs 16:3</p>
+    <div class="eb-rule"><svg><use href="#eb-knot"/></svg></div>
+    <p class="eb-intro">Created through the shared efforts of dedicated parishioners, this Golden Jubilee Souvenir preserves our history, stories, memories, and faith for generations to come.</p>
+
+    <div class="eb-leads" style="margin-top:0.12in;">
+      <div class="eb-lead"><span class="eb-pill">Editorial Lead</span><div class="eb-lead-name">Manoj Chacko</div></div>
+      <div class="eb-divider"></div>
+      <div class="eb-lead"><span class="eb-pill">Design Lead</span><div class="eb-lead-name">Mathew Joseph</div></div>
+    </div>
+
+    <div class="eb-rule"><svg><use href="#eb-knot"/></svg></div>
+    <div class="eb-pill-row"><svg><use href="#eb-scroll"/></svg><span class="eb-pill">Editorial Core Team</span><svg style="transform:scaleX(-1)"><use href="#eb-scroll"/></svg></div>
+    <div class="eb-cols">
+      <div>Ajeesh Cherian<br>Jinu John<br>Molsey Thomas</div>
+      <div class="eb-divider" style="min-width:0"></div>
+      <div>Shainey Jacob<br>Shiju Poovathoor<br>Suchin Thompson</div>
+    </div>
+
+    <div class="eb-rule"><svg><use href="#eb-knot"/></svg></div>
+    <div class="eb-pill-row"><svg><use href="#eb-scroll"/></svg><span class="eb-pill">Cover Page Design</span><svg style="transform:scaleX(-1)"><use href="#eb-scroll"/></svg></div>
+    <p class="eb-one">Ajo Maret</p>
+
+    <div class="eb-rule"><svg><use href="#eb-knot"/></svg></div>
+    <div class="eb-pill-row"><svg><use href="#eb-scroll"/></svg><span class="eb-pill">Acknowledgements</span><svg style="transform:scaleX(-1)"><use href="#eb-scroll"/></svg></div>
+    <div class="eb-cols">
+      <div>Angela Babu<br>John Kappil<br>Korah Mani<br>V. S. Mathews</div>
+      <div>Samuel P. Daniel<br>Jiji Koshy<br>Neil Mathew<br>Daniel Zachariah</div>
+    </div>
+
+    <div class="eb-rule" style="margin-top:0.09in;"><svg viewBox="0 0 10 16" style="width:0.1in"><path d="M5 0 L10 8 L5 16 L0 8 Z" fill="#D9AE45"/></svg></div>
+    <div class="eb-groups">
+      <div>Executive Committee</div>
+      <div>Managing Committee</div>
+      <div>Board Members</div>
+    </div>
+    <p class="eb-thanks">We sincerely appreciate their contributions, guidance, coordination,<br>and support throughout the preparation of this Golden Jubilee Souvenir.</p>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>@@PAGE@@</span>
+    <span>Golden Jubilee 1976 &ndash; 2026</span>
+  </div>
+</div>

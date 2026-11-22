@@ -1557,7 +1557,7 @@
                     "src": "images/ministries/mission-board/mb-45.jpg",
                     "alt": "Carols and crafts at Woodbourne, 2024",
                     "caption": "Carols and crafts at Woodbourne, 2024",
-                    "flex": 1.0
+                    "flex": 1
                   },
                   {
                     "src": "images/ministries/mission-board/mb-46.jpg",
@@ -1597,7 +1597,7 @@
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
-                "grow": 1.0,
+                "grow": 1,
                 "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-55.jpg",
@@ -1639,12 +1639,8 @@
         {
           "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
           "toc": "Editorial Board & Acknowledgements",
-          "note": "Manoj's design (DM 22 Nov 2:08 AM, WhatsApp copy 1086x1448). His own maroon header and footer bands cropped off so the page has the book's header, footer and page number like the others (Mathew 22 Nov). Ask for the original as a Document.",
-          "fullpage": {
-            "src": "images/acknowledgements/editorial-board.jpg",
-            "alt": "Editorial Board and Acknowledgements",
-            "title": "Editorial Board"
-          }
+          "note": "Set as real text after Manoj's ChatGPT design (DM 22 Nov 6:51 AM, his second version), in the book's own header and footer (Mathew 22 Nov). Babu Kappil printed as John Kappil (Mathew 22 Nov).",
+          "file": "src/pages/editorial-board.html"
         },
         {
           "index": true
