@@ -1637,13 +1637,13 @@
           "toc": "Glossary"
         },
         {
-          "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
-          "toc": "Editorial Board & Acknowledgements",
-          "note": "Set as real text after Manoj's ChatGPT design (DM 22 Nov 6:51 AM, his second version), in the book's own header and footer (Mathew 22 Nov). Babu Kappil printed as John Kappil (Mathew 22 Nov).",
-          "file": "src/pages/editorial-board.html"
+          "index": true
         },
         {
-          "index": true
+          "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+          "toc": "Editorial Board & Acknowledgements",
+          "note": "Set as real text after Manoj's ChatGPT design (DM 22 Nov 6:51 AM, his second version), in the book's own header and footer (Mathew 22 Nov). Babu Kappil printed as John Kappil (Mathew 22 Nov). Moved after the Index to the last left page, facing 'A Journey of Faith' (Manoj DM 22 Nov 6:52 AM; Mathew 22 Nov).",
+          "file": "src/pages/editorial-board.html"
         },
         {
           "label": "OUR CHURCH FAMILY",
