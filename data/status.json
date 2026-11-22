@@ -467,7 +467,7 @@
     },
     {
       "kind": "missing",
-      "label": "INDEX (1 of 3)",
+      "label": "INDEX (1 of 2)",
       "text": "Contents line 'Tribute - Very Rev. Geevarghese Ramban, Metropolitan-designate' was cut off - shortened to 'Tribute - Very Rev. Geevarghese Ramban' (the page itself keeps the title)",
       "asked": "2026-11-20",
       "done": "2026-11-20"
@@ -757,6 +757,20 @@
       "kind": "question",
       "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
       "text": "Editorial Board moved after the Index to p242, the last left page, facing 'A Journey of Faith' on p243; Index now pp 239-241 (Manoj DM 22 Nov 6:52 AM; Mathew 22 Nov)",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "INDEX (1 of 2)",
+      "text": "Index on two facing pages, pp 238-239 (Manoj DM 22 Nov 8:07 AM), columns balanced; the empty Glossary placeholder dropped so the book stays even: 242 pages, Editorial Board p240 facing 'A Journey of Faith' p241 (Mathew 22 Nov)",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "MEMBER PAGE: Deacon Markose Mani",
+      "text": "p55 Late Dn. Markose Mani stays where it is: moving it after Varki Achen's page would break the side-by-side pages that follow (Manoj, Member Pages 22 Nov 8:01 AM)",
       "asked": "2026-11-22",
       "done": "2026-11-22"
     }

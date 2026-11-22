@@ -1629,14 +1629,6 @@
       "name": "Closing",
       "items": [
         {
-          "placeholder": {
-            "title": "Glossary",
-            "heading": "Glossary",
-            "note": "Orthodox and Malayalam terms used in this book (Achen, Kochamma, Holy Qurbana, Perunnal, Ramban, Kalpana…), to be compiled."
-          },
-          "toc": "Glossary"
-        },
-        {
           "index": true
         },
         {

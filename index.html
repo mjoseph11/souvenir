@@ -907,8 +907,9 @@
   .m-placeholder p { color: #666; font-size: 10.5pt; line-height: 1.7; }
 
   /* Index */
-  .m-index { column-count: 2; column-gap: 0.4in; column-fill: auto; height: 100%; }
+  .m-index { column-count: 2; column-gap: 0.4in; column-fill: balance; height: 100%; }  /* balance: the index on two facing pages, both columns even (22 Nov) */
   .m-index p { font-size: 9pt; line-height: 1.22; break-inside: avoid; }
+  .m-index-heading, .m-index-section { break-after: avoid; }  /* a label stays with its first entry (22 Nov) */
   .m-index-heading { color: var(--maroon); font-size: 12pt !important; font-weight: bold; margin: 0.06in 0 0.04in; border-bottom: 1px solid var(--gold); }
   .m-index-section { color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; font-size: 8pt !important; margin-top: 0.06in; }
   .m-index-row { display: flex; gap: 0.08in; color: #333; }
@@ -8883,35 +8884,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 238 — PLACEHOLDER: Glossary
-════════════════════════════════════════ -->
-<div class="page inner-page m-page m-placeholder-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Glossary</h1>
-    </div>
-  </div>
-  <div class="m-content">
-    <div class="m-placeholder">
-      <p class="m-eyebrow">To be completed</p>
-      <h2>Glossary</h2>
-      
-      <p>Orthodox and Malayalam terms used in this book (Achen, Kochamma, Holy Qurbana, Perunnal, Ramban, Kalpana…), to be compiled.</p>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>238</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 239 — INDEX (1 of 3)
+     PAGE 238 — INDEX (1 of 2)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page m-index-page">
   <div class="page-header">
     <div class="page-header-title">
-      <h1>Index (1 of 3)</h1>
+      <h1>Index (1 of 2)</h1>
     </div>
   </div>
   <div class="m-content">
@@ -8963,9 +8941,8 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>Clergy Families, then Families &amp; Memorials (A–Z)</span><span>96</span></p>
       <p class="m-index-row"><span>Our Sponsors</span><span>231</span></p>
       <p class="m-index-section">Closing</p>
-      <p class="m-index-row"><span>Glossary</span><span>238</span></p>
-      <p class="m-index-row"><span>Editorial Board &amp; Acknowledgements</span><span>242</span></p>
-      <p class="m-index-row"><span>Our Church Family</span><span>243</span></p>
+      <p class="m-index-row"><span>Editorial Board &amp; Acknowledgements</span><span>240</span></p>
+      <p class="m-index-row"><span>Our Church Family</span><span>241</span></p>
       <p class="m-index-heading">Families &amp; Memorials</p>
       <p class="m-index-row"><span>A. O. Abraham &amp; Family</span><span>103</span></p>
       <p class="m-index-row"><span>Joseph Abraham &amp; Family</span><span>104–105</span></p>
@@ -9000,25 +8977,6 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>Abey Jacob &amp; Family</span><span>134</span></p>
       <p class="m-index-row"><span>Mathew Jacob &amp; Family</span><span>135–136</span></p>
       <p class="m-index-row"><span>Alex John &amp; Family</span><span>137</span></p>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>239</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 240 — INDEX (2 of 3)
-════════════════════════════════════════ -->
-<div class="page inner-page m-page m-index-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Index (2 of 3)</h1>
-    </div>
-  </div>
-  <div class="m-content">
-    <div class="m-index">
       <p class="m-index-row"><span>Ejo John &amp; Family</span><span>138</span></p>
       <p class="m-index-row"><span>Jinu John &amp; Family</span><span>139</span></p>
       <p class="m-index-row"><span>Dr. Mathew John &amp; Family</span><span>98</span></p>
@@ -9032,6 +8990,25 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>The Kaleeckal Family</span><span>99</span></p>
       <p class="m-index-row"><span>Saji and Glory's Family (Kallelil)</span><span>147</span></p>
       <p class="m-index-row"><span>Mathew Kallelil &amp; Family</span><span>148</span></p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>238</span>
+    <span>Golden Jubilee 1976 &ndash; 2026</span>
+  </div>
+</div>
+<!-- ════════════════════════════════════════
+     PAGE 239 — INDEX (2 of 2)
+════════════════════════════════════════ -->
+<div class="page inner-page m-page m-index-page">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Index (2 of 2)</h1>
+    </div>
+  </div>
+  <div class="m-content">
+    <div class="m-index">
       <p class="m-index-row"><span>Mathew Kandathil &amp; Family</span><span>149</span></p>
       <p class="m-index-row"><span>In Loving Memory — Kappil Family</span><span>150</span></p>
       <p class="m-index-row"><span>Varughese Koithottu &amp; Family</span><span>151</span></p>
@@ -9103,25 +9080,6 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>In Loving Memory — V. C. Thomas</span><span>215</span></p>
       <p class="m-index-row"><span>Suchin Thompson &amp; Family</span><span>216</span></p>
       <p class="m-index-row"><span>Babu Varghese &amp; Family</span><span>217</span></p>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>240</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 241 — INDEX (3 of 3)
-════════════════════════════════════════ -->
-<div class="page inner-page m-page m-index-page">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Index (3 of 3)</h1>
-    </div>
-  </div>
-  <div class="m-content">
-    <div class="m-index">
       <p class="m-index-row"><span>George Varghese &amp; Family</span><span>218</span></p>
       <p class="m-index-row"><span>Dr. Gregory Varghese &amp; Family</span><span>219</span></p>
       <p class="m-index-row"><span>John Varghese &amp; Family</span><span>220</span></p>
@@ -9149,12 +9107,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>241</span>
+    <span>239</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 242 — EDITORIAL BOARD & ACKNOWLEDGEMENTS
+     PAGE 240 — EDITORIAL BOARD & ACKNOWLEDGEMENTS
 ════════════════════════════════════════ -->
 <div class="page inner-page eb-page">
   <!-- Editorial Board & Acknowledgements. Laid out after Manoj's ChatGPT design (DM 22 Nov 6:51 AM, his second version),
@@ -9241,12 +9199,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>242</span>
+    <span>240</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 243 — OUR CHURCH FAMILY
+     PAGE 241 — OUR CHURCH FAMILY
 ════════════════════════════════════════ -->
 <div class="page full-page">
   <img src="images/church-family/journey-of-faith.jpg" alt="A Journey of Faith: the SGMOC church family at the parish picnic" style="object-fit:cover">

@@ -39,7 +39,8 @@ const lines = (t) =>
 const PAGE_NO = '@@PAGE@@';
 const DARK = '#2a2a2a';
 const FOOTER_NO = /(<span>St\. Gregorios Malankara Orthodox Church<\/span>\s*<span>)(?:\d+|@@PAGE@@)(<\/span>)/;
-const INDEX_LINES_PER_PAGE = 84;
+// two facing pages (Manoj 22 Nov 8:07 AM); was 84 lines on three pages
+const INDEX_LINES_PER_PAGE = 96;
 
 /* ── Page shell shared by every generated page ── */
 
