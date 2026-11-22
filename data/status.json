@@ -780,6 +780,13 @@
       "text": "CPA ad (p236) still not received - promised by Sajicha for 19 Nov; the page is a placeholder, now named just 'CPA' in the book and Index (Mathew 22 Nov)",
       "asked": "2026-11-19",
       "waiting": "Sajicha"
+    },
+    {
+      "kind": "question",
+      "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+      "text": "Acknowledgements: 'V. S. Mathews' corrected to V. S. Mathew, as on his family page (Mathew 22 Nov)",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
     }
   ]
 }
