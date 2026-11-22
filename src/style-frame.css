@@ -214,6 +214,8 @@
   .m-sign { font-family: var(--serif); font-size: 14pt !important; }
   /* the smallest article text (the Ramban tribute) gets a sign-off in proportion (Mathew, 22 Nov) */
   .m-article.size-xxs .m-sign, .m-text.size-xxs .m-sign { font-size: 11pt !important; }
+  /* writers' names at the end of the history articles, sized like the Ramban tribute's (Manoj and Mathew, 22 Nov) */
+  .org-page .m-sign { font-size: 11pt !important; margin: 0.04in 0 0; }
 
   /* ── Memorial panels (Manoj, 3 Nov: "more natural looking", after his
      sample of the Joys page) ──
