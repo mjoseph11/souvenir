@@ -127,21 +127,11 @@ Book structure (126 pages as of 2026-09-14): Front (messages, leadership, clergy
 
 ---
 
-## Open Issues (as of 2026-04-10)
+## Open Items
 
-| # | Title | Blocker |
-|---|-------|---------|
-| #5 | Ministries: expand to 1–4 pages each | Sunday School needs 2+ pages; all ministries need photos & content |
-| #6 | Sponsorship layout | Deferred — revisit closer to print |
-| #13 | MGOCSM leadership — verify 2026 | Need confirmation from ministry |
-| #14 | Logos Ministry — VP, Secretary, Treasurer | Need names from Vicar |
-| #15 | GROW — Secretary, Treasurer | Need names |
-| #16 | MMS — verify all names | Need confirmation |
-| #17 | Good Samaritan — Coordinator name | Need name |
-| #18 | In Memoriam + History — verify accuracy | Needs someone who knew V. Rev. K. Mathai |
-| #19 | Jubilee logo — finalize ver1 vs ver2 | Manoj to decide; ver1 currently live, ver2 available |
-
-**Recently closed:** #20 (gold transparent header seal — done)
+All GitHub issues were closed on 2026-11-22: the April ones described page numbers and pages that no longer exist.
+Open content items (placeholders, missing photos, low-resolution pictures, questions for the editorial board) are now tracked on the status page:
+https://mjoseph11.github.io/souvenir/status.html (built from `data/status.json` by `scripts/status.js`).
 
 ---
 
@@ -174,7 +164,7 @@ When in doubt, leave open with a comment explaining what remains.
 
 1. Edit `data/*.json` or `src/`, then run `node scripts/build.js && node scripts/check-verified.js && node scripts/check-layout.js` (never edit `index.html` directly — it is regenerated)
 2. Commit and push → GitHub Pages auto-deploys in ~30 seconds (`.nojekyll` skips Jekyll)
-3. Track all pending content via https://github.com/mjoseph11/souvenir/issues
+3. Track all pending content on the status page (`data/status.json` → https://mjoseph11.github.io/souvenir/status.html)
 4. Use scripts in `/scripts/` for rebuilding complex sections (run from project root with `node scripts/rebuild-xxx.js`)
 
 ## Feedback Collection
