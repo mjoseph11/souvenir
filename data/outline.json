@@ -1639,11 +1639,11 @@
         {
           "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
           "toc": "Editorial Board & Acknowledgements",
-          "note": "Manoj's design (DM 22 Nov 2:08 AM, WhatsApp copy 1086x1448, widened 20 px each side to the page shape). Ask for the original as a Document.",
+          "note": "Manoj's design (DM 22 Nov 2:08 AM, WhatsApp copy 1086x1448). His own maroon header and footer bands cropped off so the page has the book's header, footer and page number like the others (Mathew 22 Nov). Ask for the original as a Document.",
           "fullpage": {
             "src": "images/acknowledgements/editorial-board.jpg",
             "alt": "Editorial Board and Acknowledgements",
-            "bg": "#6B0000"
+            "title": "Editorial Board"
           }
         },
         {

@@ -717,6 +717,13 @@
       "text": "p27: sign-off was larger than the rest of the small article text; now 11pt (Mathew 22 Nov)",
       "asked": "2026-11-22",
       "done": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+      "text": "p239: Manoj's own header and footer bands cropped off; the page now has the book's 'Editorial Board' header and the usual footer with page number (Mathew 22 Nov)",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
     }
   ]
 }
