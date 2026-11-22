@@ -807,9 +807,58 @@
     },
     {
       "kind": "question",
+      "label": "MESSAGE: TRUSTEE",
+      "text": "First Trustee: p16 (Reji's message) says K. T. Ninan; the p44 table has him as Secretary, with M. M. Koshy as Treasurer (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
       "label": "",
-      "text": "Facts that disagree between pages (consistency check 22 Nov) - for Manoj and the board: first Trustee (p16 K. T. Ninan vs p44 table: Secretary, with M. M. Koshy as Treasurer); Holy Relics source (p38 Mar Osthathios at Parumala vs p42 'Diocese of Nilackal'); backpacks (p62 300 vs p87 288); Fr. K. P. Varghese's jubilee (p23 Nov 1 vs p74 Nov 16, 2025); first Nuhro retreat (p39 Aug 17 vs p61 Aug 18-20, 2017); spellings Thankachan/Thankachen, Santosh/Santhosh, Punoose/Punnoose, Paulos/Paulose II",
-      "waiting": "Manoj",
+      "text": "Holy Relics: p38 says received at Parumala from Mar Osthathios; the p42 timeline says 'from Diocese of Nilackal' (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Backpacks: p62 says 300; p87 says 288 by December (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Fr. K. P. Varghese's priestly jubilee: p23 says Nov 1, 2025; p74 says Nov 16 (two separate events?) (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "First Nuhro retreat: p39 says weekend of Aug 17, 2017; p61 says Aug 18-20 (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Eby Achen took charge as Vicar: p41 says Oct 4, 2026; our notes say Sept 28 (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Spellings: Thankachan/Thankachen, Santosh/Santhosh Ninan, Punoose/Punnoose Mathai, Paulos/Paulose II (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
+      "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "p8 title 'Cor-Episcopa' vs 'Cor Episcopos' everywhere else; 'Achan' on p15 and p201 vs 'Achen' elsewhere (consistency check; asked in the Member Pages group 22 Nov)",
+      "waiting": "Editorial board",
       "asked": "2026-11-22"
     }
   ]
