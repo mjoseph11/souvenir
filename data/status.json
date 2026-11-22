@@ -763,7 +763,7 @@
     {
       "kind": "question",
       "label": "INDEX (1 of 2)",
-      "text": "Index on two facing pages, pp 238-239 (Manoj DM 22 Nov 8:07 AM), columns balanced; the empty Glossary placeholder dropped so the book stays even: 242 pages, Editorial Board p240 facing 'A Journey of Faith' p241 (Mathew 22 Nov)",
+      "text": "Index on two facing pages, pp 238-239 (Manoj DM 22 Nov 8:07 AM), columns balanced and type set to fill both pages (9.25pt, Mathew 22 Nov); the empty Glossary placeholder dropped so the book stays even: 242 pages, Editorial Board p240 facing 'A Journey of Faith' p241 (Mathew 22 Nov)",
       "asked": "2026-11-22",
       "done": "2026-11-22"
     },
