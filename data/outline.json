@@ -1637,12 +1637,14 @@
           "toc": "Glossary"
         },
         {
-          "placeholder": {
-            "title": "Acknowledgements",
-            "heading": "Editorial Board & Acknowledgements",
-            "note": "Editorial board: Manoj Chacko, Suchin Thompson, Molsey Thomas, Shiju Poovathoor, Jinu John, Mathew Joseph. Full list and thanks to be finalized."
-          },
-          "toc": "Editorial Board & Acknowledgements"
+          "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+          "toc": "Editorial Board & Acknowledgements",
+          "note": "Manoj's design (DM 22 Nov 2:08 AM, WhatsApp copy 1086x1448, widened 20 px each side to the page shape). Ask for the original as a Document.",
+          "fullpage": {
+            "src": "images/acknowledgements/editorial-board.jpg",
+            "alt": "Editorial Board and Acknowledgements",
+            "bg": "#6B0000"
+          }
         },
         {
           "index": true
@@ -1650,12 +1652,10 @@
         {
           "label": "OUR CHURCH FAMILY",
           "toc": "Our Church Family",
-          "note": "Picnic photo, Drive Non-Member Pages (20260711_140530.jpg, uploaded by Manoj 18 Nov); turned sideways so the photo is as large as the page allows. Last inner page, so it prints on the inside back cover (Manoj, 18 Nov 11:24 PM).",
+          "note": "Manoj's 'A Journey of Faith - 50 Years of God's Grace' design with the picnic photo (DM 22 Nov 2:09 AM, WhatsApp copy 1569x1002), turned sideways like the picnic photo before it; top and bottom extended with paper and leaves to the page shape. Last inner page, so it prints on the inside back cover.",
           "fullpage": {
-            "src": "images/church-family/picnic-2026.jpg",
-            "alt": "SGMOC church family at the parish picnic",
-            "title": "Our Church Family",
-            "fit": "contain"
+            "src": "images/church-family/journey-of-faith.jpg",
+            "alt": "A Journey of Faith: the SGMOC church family at the parish picnic"
           }
         },
         {

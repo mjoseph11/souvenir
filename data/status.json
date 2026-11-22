@@ -643,9 +643,10 @@
     {
       "kind": "missing",
       "label": "MESSAGE: VICAR — REV. FR. EBY PAULOSE",
-      "text": "Eby Achen wants his family members' names on his page too; he will give them (Manoj 21 Nov 3:59 PM)",
+      "text": "Eby Achen wants his family members' names on his page too; he will give them (Manoj 21 Nov 3:59 PM); added under his signature: Anita Ann, Elizabeth Sarah, Joshua Geevarghese and Rebekah Ann Paulose (Manoj 21 Nov 11:33 PM)",
       "asked": "2026-11-21",
-      "waiting": "Eby Achen"
+      "waiting": "Eby Achen",
+      "done": "2026-11-22"
     },
     {
       "kind": "question",
@@ -653,6 +654,27 @@
       "text": "Name spelled 'Morth Mariam Vanitha Samajam' (was 'Marth Mariam') on the ministry pages, contents and index (Mathew 21 Nov)",
       "asked": "2026-11-21",
       "done": "2026-11-21"
+    },
+    {
+      "kind": "missing",
+      "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+      "text": "Manoj's Editorial Board page in place of the placeholder (DM 22 Nov 2:08 AM)",
+      "asked": "2026-11-21",
+      "done": "2026-11-22"
+    },
+    {
+      "kind": "missing",
+      "label": "OUR CHURCH FAMILY",
+      "text": "Manoj's 'A Journey of Faith' page with the picnic photo replaces the plain photo on the inside back cover (DM 22 Nov 2:09 AM)",
+      "asked": "2026-11-21",
+      "done": "2026-11-22"
+    },
+    {
+      "kind": "photo",
+      "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+      "text": "The Editorial Board and 'A Journey of Faith' pages came as WhatsApp pictures (1086x1448 and 1569x1002, about 130 dpi printed, so the lettering will print soft). Need the original files from ChatGPT, sent as a Document or on Drive",
+      "asked": "2026-11-22",
+      "waiting": "Manoj"
     }
   ]
 }

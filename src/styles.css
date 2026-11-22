@@ -335,6 +335,7 @@
     color: var(--maroon);
     font-size: 10pt;
   }
+  .message-sign .message-family { font-size: 9pt; font-style: normal; color: #444; }
   .draft-badge {
     position: absolute;
     top: -0.12in;
