@@ -288,8 +288,11 @@ function styledBody(m, pg) {
   const p2 = PHRASES[j];
   // the small capitals under it shrink too ("UNDERSTANDING" ran into the photo, 12 Nov)
   const capsFit = (l, w) => {
-    const pt = Math.min(10, Math.floor(((w * 0.9) / (l.length * 0.0118)) * 10) / 10);
-    return pt < 10 ? ` style="font-size:${pt}pt;letter-spacing:1px"` : '';
+    // ...but never below 7.5pt, so it prints at about 7pt or more (22 Nov check found 5-6pt);
+    // a line too long for that wraps instead, with tighter spacing
+    const fit = Math.floor(((w * 0.9) / (l.length * 0.0118)) * 10) / 10;
+    const pt = Math.min(10, Math.max(7.5, fit));
+    return pt < 10 ? ` style="font-size:${pt}pt;letter-spacing:${fit < 7.5 ? 0.2 : 1}px"` : '';
   };
   // the script word shrinks to fit its column ("Community" ran off the page, 12 Nov)
   const words = (p, x, y, w, size = 30) => {

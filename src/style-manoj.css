@@ -26,7 +26,8 @@
 
   .s-stage { position: absolute; inset: 0; }
   .s-stage figure { position: absolute; margin: 0; }
-  .s-stage img { display: block; width: 100%; height: 100%; object-fit: fill; }
+  /* cover, not fill: a box a few per cent off the photo's shape trims the edge instead of squashing faces (22 Nov check). 25% keeps heads when the top and bottom are trimmed. */
+  .s-stage img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
 
   /* The main photo fades into the page over its outer edge. */
   /* No soft edge: photos print with a clean edge, so nobody standing near

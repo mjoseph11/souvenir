@@ -797,6 +797,20 @@
       "text": "Malabar Catering ad (Manoj's, from their business card) approved by the owner (Suchin, Member Pages group, 22 Nov 10:30 AM: 'Approved by uncle')",
       "asked": "2026-11-22",
       "done": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "End-to-end consistency check (Mathew, with Codex): p41 Ramban and new Vicar now past tense; p42 Shibu Achen 'leading our vibrant community until 2026'; p70 MMVS 'served as President until 2026'; p100 Torresdale 1984 corrected to 1995; p91 Madathil; p31 millennium; p37 'In August 2007'; p35 year ranges with dashes; pp171/195 'Board of Trustees'; 23 member-page photos no longer squashed (trimmed instead); small capitals under the script words now at least 7.5pt",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Facts that disagree between pages (consistency check 22 Nov) - for Manoj and the board: first Trustee (p16 K. T. Ninan vs p44 table: Secretary, with M. M. Koshy as Treasurer); Holy Relics source (p38 Mar Osthathios at Parumala vs p42 'Diocese of Nilackal'); backpacks (p62 300 vs p87 288); Fr. K. P. Varghese's jubilee (p23 Nov 1 vs p74 Nov 16, 2025); first Nuhro retreat (p39 Aug 17 vs p61 Aug 18-20, 2017); spellings Thankachan/Thankachen, Santosh/Santhosh, Punoose/Punnoose, Paulos/Paulose II",
+      "waiting": "Manoj",
+      "asked": "2026-11-22"
     }
   ]
 }
