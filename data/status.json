@@ -944,12 +944,23 @@
       "text": "p6 portrait swapped for the sharper enhanced copy Manoj sent to the group (22 Nov 11:41 PM; Mathew approved 23 Nov) - clear face and crosses. It came as a WhatsApp photo (1203x1307), so it prints at 138 dpi across the full page: ask Manoj for the original file (as a Document or on Drive) to get it over 150 dpi. Closed 23 Nov (Mathew): the picture is clearly better as it is, so no original needed; removed from the low-quality list.",
       "asked": "2026-11-23",
       "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "SPONSOR AD: Malabar Catering",
+      "text": "Malabar Catering ad (p233) prints at 141 dpi; accepted as is - the photo is crisp and the lettering large - and taken off the low-quality list (Mathew 23 Nov)",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
     }
   ],
   "acceptedLowres": [
     {
       "src": "images/icons/thomas-mar-makarios-enhanced.jpg",
       "why": "p6: 138 dpi but visibly sharper than the old 300+ dpi copy, which was enlarged from a soft photo; kept as is (Mathew 23 Nov)"
+    },
+    {
+      "src": "images/members/sponsorship/malabar-catering.jpg",
+      "why": "p233 Malabar Catering ad: 141 dpi, but the photo is crisp and the lettering large; kept as is (Mathew 23 Nov)"
     }
   ]
 }
