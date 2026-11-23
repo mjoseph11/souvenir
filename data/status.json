@@ -4,7 +4,7 @@
     {
       "kind": "missing",
       "label": "MESSAGE: TRUSTEE",
-      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 16) - Reji is looking for one (Manoj, 18 Nov 8:19 PM); Suchin will take his photo this Sunday (9:48 PM) - Mathew reminded Suchin (22 Nov)",
+      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 16) - Reji is looking for one (Manoj, 18 Nov 8:19 PM); Suchin will take his photo this Sunday (9:48 PM) - Mathew reminded Suchin (22 Nov). Suchin took the photo on 22 Nov (Manoj, group 11:36 PM); waiting for the file.",
       "waiting": "Suchin",
       "asked": "2026-11-18"
     },
@@ -681,9 +681,9 @@
     {
       "kind": "question",
       "label": "MINISTRY: MMVS — OUR STORY (1 of 4)",
-      "text": "Kept as 'Morth' for now (Achen's spelling; feminine of Mor). Manoj would rather wait: the MMVS logo, the website and the diocese site say 'Martha'/'Marth'. Manoj to talk to Achen (Member Pages 21 Nov 7:31 PM)",
+      "text": "Kept as 'Morth' for now (Achen's spelling; feminine of Mor). Manoj would rather wait: the MMVS logo, the website and the diocese site say 'Martha'/'Marth'. Manoj to talk to Achen (Member Pages 21 Nov 7:31 PM). 22 Nov 11:27 PM (Manoj DM): stick with Morth Mariam - Achen said it is fine and commonly used here.",
       "asked": "2026-11-22",
-      "waiting": "Manoj"
+      "done": "2026-11-23"
     },
     {
       "kind": "photo",
@@ -878,8 +878,8 @@
     {
       "kind": "question",
       "label": "",
-      "text": "p24 Alexander Kurian Achen message: about 1,200 words, set at about 9.4pt to stay on one page (Manoj 18 Nov); even 8pt in the source spills over. Asked the group 22 Nov: ask Achen for a 700-800 word version, or leave as is?",
-      "waiting": "Editorial board",
+      "text": "p24 Alexander Kurian Achen message: about 1,200 words, set at about 9.4pt to stay on one page (Manoj 18 Nov); even 8pt in the source spills over. Asked the group 22 Nov: ask Achen for a 700-800 word version, or leave as is?. 22 Nov 11:36 PM (Manoj): send him p24 on its own; he will show Achen and, if Achen is fine with it, it stays.",
+      "waiting": "Manoj",
       "asked": "2026-11-22"
     },
     {
@@ -916,6 +916,27 @@
       "text": "Parents' heading on p195: keep 'Our Beloved Parents' or say 'In Loving Memory'? (asked in the group 22 Nov)",
       "waiting": "Manoj",
       "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "EDITORIAL BOARD & ACKNOWLEDGEMENTS",
+      "text": "Acknowledgements: Sumod Abraham, Mathew Kurian, Reji Ninan, Santosh Ninan and Thomas Joseph added (13 names, A-Z by surname); 'Executive Committee / Managing Committee / Board Members' replaced by one line, 'Managing Committee and Board Members' (Manoj DM 22 Nov 11:27 PM)",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "MESSAGE: VICAR — REV. FR. EBY PAULOSE",
+      "text": "Message pages (pp14-17, 23-25): every writer's picture now one size (1.15in, larger than the 1in before), name and positions smaller and closer together (Manoj, group 22 Nov 11:43 PM). p24's paragraph gaps trimmed slightly so it still fits.",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "INDEX (1 of 2)",
+      "text": "Index sub-headings (Front, History, In Memoriam...) now maroon and bold instead of gold (Manoj, group 22 Nov 11:45 PM)",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
     }
   ]
 }

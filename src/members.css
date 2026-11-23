@@ -209,7 +209,7 @@
   .m-index p { font-size: 9.25pt; line-height: 1.44; break-inside: avoid; }  /* 9.25pt, more leading (was 9pt / 1.22) to fill the two index pages (22 Nov) */
   .m-index-heading, .m-index-section { break-after: avoid; }  /* a label stays with its first entry (22 Nov) */
   .m-index-heading { color: var(--maroon); font-size: 12pt !important; font-weight: bold; margin: 0.06in 0 0.04in; border-bottom: 1px solid var(--gold); }
-  .m-index-section { color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; font-size: 8pt !important; margin-top: 0.06in; }
+  .m-index-section { color: var(--maroon); font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; font-size: 8pt !important; margin-top: 0.06in; }
   .m-index-row { display: flex; gap: 0.08in; color: #333; }
   .m-index-row span:first-child { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
   .m-index-row span:first-child::after { content: ' ......................................................................'; color: #bbb; }

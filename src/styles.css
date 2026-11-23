@@ -313,12 +313,21 @@
   }
   .message-sender h3 {
     color: var(--maroon);
-    font-size: 12pt;
+    font-size: 11pt;
+    margin: 0;
   }
   .message-sender p {
-    font-size: 9pt;
+    font-size: 8.5pt;
+    line-height: 1.25;
     color: #666;
+    margin: 0;
   }
+  /* 23 Nov (Manoj): every message page shows its writer's picture at one size, larger than before */
+  .message-from > img, .message-from > .message-photo {
+    width: 1.15in !important;
+    height: 1.15in !important;
+  }
+  .message-from { margin-bottom: 0.08in; }
   /* the same body text as the article pages (.org-body) */
   .message-body {
     font-size: 9.6pt;
