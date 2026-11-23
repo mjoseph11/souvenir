@@ -74,7 +74,8 @@
     {
       "kind": "missing",
       "label": "MINISTRY: MGOCSM",
-      "text": "MGOCSM: photos for the two empty photo boxes (p79) and the 'MGOCSM — In Pictures' pages (p80). The write-up came 22 Nov (Manoj, 'YL Golden jubilee' doc, 6:21 PM) and is now on p79."
+      "text": "MGOCSM: photos for the two empty photo boxes (p79) and the 'MGOCSM — In Pictures' pages (p80). The write-up came 22 Nov (Manoj, 'YL Golden jubilee' doc, 6:21 PM) and is now on p79.. 23 Nov: the 23 photos in the Youth League doc are in - two in the p79 boxes, 21 on one page, \"MGOCSM in Pictures\" (p80), as Manoj asked (12:53 PM). No captions came with them.",
+      "done": "2026-11-23"
     },
     {
       "kind": "missing",
@@ -906,9 +907,9 @@
     {
       "kind": "question",
       "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
-      "text": "Manoj is checking a different list of past Secretaries and Treasurers; any other years that change still to come (1976-77 already fixed; asked in the group 22 Nov)",
-      "waiting": "Manoj",
-      "asked": "2026-11-22"
+      "text": "Manoj is checking a different list of past Secretaries and Treasurers; any other years that change still to come (1976-77 already fixed; asked in the group 22 Nov). 23 Nov 12:53 PM: Manoj updated the list (SGMOC Core Fifty adjusted, Non-Member Pages): 1979, 1980 and 1982 Secretary and Treasurer swapped, and a first 1984 row added (Varghese M Varghese, John P John). p44 now matches the list row for row.",
+      "asked": "2026-11-22",
+      "done": "2026-11-23"
     },
     {
       "kind": "question",
@@ -951,13 +952,16 @@
       "text": "Malabar Catering ad (p233) prints at 141 dpi; accepted as is - the photo is crisp and the lettering large - and taken off the low-quality list (Mathew 23 Nov)",
       "asked": "2026-11-23",
       "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "PORTRAIT: H.G. DR. THOMAS MAR MAKARIOS",
+      "text": "p6: Manoj uploaded the resized portrait to 0_Icons (2623x2850, 23 Nov 12:53 PM) - now used; prints above 150 dpi",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
     }
   ],
   "acceptedLowres": [
-    {
-      "src": "images/icons/thomas-mar-makarios-enhanced.jpg",
-      "why": "p6: 138 dpi but visibly sharper than the old 300+ dpi copy, which was enlarged from a soft photo; kept as is (Mathew 23 Nov)"
-    },
     {
       "src": "images/members/sponsorship/malabar-catering.jpg",
       "why": "p233 Malabar Catering ad: 141 dpi, but the photo is crisp and the lettering large; kept as is (Mathew 23 Nov)"

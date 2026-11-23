@@ -43,7 +43,7 @@
         },
         {
           "label": "PORTRAIT: H.G. DR. THOMAS MAR MAKARIOS",
-          "note": "Manoj 18 Nov 8:04 AM: full page each after Parumala Thirumeni; title per Molsey 17 Nov ('Late Lamented H G'). Manoj's enhanced portrait, Drive 0_Icons. 23 Nov: swapped for the sharper enhanced copy Manoj sent to the Member Pages group (22 Nov 11:41 PM, 1203x1307, about 160 dpi) - Mathew approved.",
+          "note": "Manoj 18 Nov 8:04 AM: full page each after Parumala Thirumeni; title per Molsey 17 Nov ('Late Lamented H G'). Manoj's enhanced portrait, Drive 0_Icons. 23 Nov: swapped for the sharper enhanced copy Manoj sent to the Member Pages group (22 Nov 11:41 PM) - Mathew approved. 23 Nov 12:53 PM: Manoj uploaded the resized copy (Makarios Thirumeni Resized.png, 2623x2850) to 0_Icons - now used.",
           "fullpage": {
             "src": "images/icons/thomas-mar-makarios-enhanced.jpg",
             "alt": "Late Lamented H.G. Dr. Thomas Mar Makarios",
@@ -1094,11 +1094,164 @@
           "toc": "MGOCSM / Youth League"
         },
         {
-          "placeholder": {
+          "label": "MINISTRY: MGOCSM — IN PICTURES",
+          "note": "23 photos from the Youth League's 'YL Golden jubilee' doc (Manoj, group 22 Nov 6:21 PM); Manoj 23 Nov 12:53 PM: combine on one page if possible. Two fill the photo boxes on p79, the other 21 are here.",
+          "generated": {
             "title": "MGOCSM / Youth League",
-            "heading": "MGOCSM — In Pictures",
-            "pages": "2 side-by-side pages",
-            "note": "Group photo, retreats and activities."
+            "gallery": true,
+            "blocks": [
+              {
+                "type": "heading",
+                "text": "MGOCSM in Pictures"
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mgocsm/yl-02.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-03.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.685
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-04.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-05.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mgocsm/yl-06.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.505
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-07.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-08.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 2.295
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mgocsm/yl-09.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 0.563
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-10.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.941
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-11.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 0.75
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-12.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.36
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mgocsm/yl-13.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.778
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-14.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.425
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-15.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.57
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mgocsm/yl-16.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.778
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-17.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.396
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-19.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
+                  {
+                    "src": "images/ministries/mgocsm/yl-20.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-21.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-22.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  },
+                  {
+                    "src": "images/ministries/mgocsm/yl-23.jpg",
+                    "alt": "MGOCSM / Youth League",
+                    "flex": 1.333
+                  }
+                ]
+              }
+            ]
           }
         },
         {
