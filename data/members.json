@@ -225,6 +225,14 @@
               "sign": "Thomas Paul"
             },
             {
+              "type": "text",
+              "bare": true,
+              "center": true,
+              "size": "sm",
+              "title": "Our Beloved Parents",
+              "text": "Paul Thomas Maliyil & Mariamma Thomas · parents of Thomas Paul\n\nP. C. Oommen & Aleyamma Oommen · parents of Aleyamma Paul"
+            },
+            {
               "type": "closing"
             }
           ]
@@ -232,7 +240,8 @@
       ],
       "title": "Thomas Paul & Family",
       "sortNote": "Manoj asked for Thomas Paul to come before Dustin Paul, so both Pauls carry explicit ordinals.",
-      "indexName": "Thomas Paul & Family"
+      "indexName": "Thomas Paul & Family",
+      "layoutNote": "22 Nov (Manoj, Member Pages group 6:14 PM): parents of Thomas Paul and of Aleyamma Paul added."
     },
     {
       "id": "a-o-abraham",
@@ -268,7 +277,7 @@
       "sort": "Abraham A. O. ",
       "layoutNote": "Manoj, 16 Nov 6:21 PM: new picture (Drive Abraham O. Abraham/IMG-20261116-WA0007.jpg, now pic-3) replaces the top one (pic-1). Manoj 7:46 PM (\"Abi abraham can you make bottom picture little bigger\"): photoScale 0.9 on the top photo, printMax 4.0 for the bottom print.",
       "photoScale": 0.9,
-      "printMax": 4.0,
+      "printMax": 4,
       "indexName": "A. O. Abraham & Family"
     },
     {
@@ -3185,7 +3194,7 @@
                 },
                 {
                   "src": "images/members/jiji-koshy/family-church.jpg",
-                  "flex": 1.0
+                  "flex": 1
                 }
               ]
             },

@@ -74,7 +74,7 @@
     {
       "kind": "missing",
       "label": "MINISTRY: MGOCSM",
-      "text": "MGOCSM: write-up of its history at SGMOC and photos for the empty photo boxes - Youth League/MGOCSM will send by Sunday (Manoj, 19 Nov 6:51 PM)"
+      "text": "MGOCSM: photos for the two empty photo boxes (p79) and the 'MGOCSM — In Pictures' pages (p80). The write-up came 22 Nov (Manoj, 'YL Golden jubilee' doc, 6:21 PM) and is now on p79."
     },
     {
       "kind": "missing",
@@ -881,6 +881,20 @@
       "text": "p24 Alexander Kurian Achen message: about 1,200 words, set at about 9.4pt to stay on one page (Manoj 18 Nov); even 8pt in the source spills over. Asked the group 22 Nov: ask Achen for a 700-800 word version, or leave as is?",
       "waiting": "Editorial board",
       "asked": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "MINISTRY: MGOCSM",
+      "text": "Youth League write-up (Manoj 22 Nov 6:21 PM) added to the About section on p79; 'St. Gregarious' and 'MGOSM' corrected to St. Gregorios and MGOCSM",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
+    },
+    {
+      "kind": "question",
+      "label": "MEMBER PAGE: Thomas Paul",
+      "text": "Parents added under 'Our Beloved Parents' (Manoj 22 Nov 6:14 PM): Paul Thomas Maliyil & Mariamma Thomas (Thomas Paul); P. C. Oommen & Aleyamma Oommen (Aleyamma Paul)",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
     }
   ]
 }
