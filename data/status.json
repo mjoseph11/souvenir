@@ -808,9 +808,9 @@
     {
       "kind": "question",
       "label": "MESSAGE: TRUSTEE",
-      "text": "First Trustee: p16 (Reji's message) says K. T. Ninan; the p44 table has him as Secretary, with M. M. Koshy as Treasurer (consistency check; asked in the Member Pages group 22 Nov)",
-      "waiting": "Editorial board",
-      "asked": "2026-11-22"
+      "text": "First Trustee: p16 (Reji's message) says K. T. Ninan; the p44 table has him as Secretary, with M. M. Koshy as Treasurer (consistency check; asked in the Member Pages group 22 Nov). Manoj 22 Nov (group): flip Secretary and Treasurer for 1976 and 1977 - K. T. Ninan was Treasurer; done on p44. He is checking another list, so the rest of the table may still change.",
+      "asked": "2026-11-22",
+      "done": "2026-11-22"
     },
     {
       "kind": "question",
