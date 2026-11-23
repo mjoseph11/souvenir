@@ -96,10 +96,13 @@ if (pages.length !== labels.length + 1) console.warn(`! ${pages.length} pages la
 /* ── collect ── */
 const num = (p) => (labels[p.i] ? labels[p.i].n : p.i + 1);
 const todo = [], lowres = [], questions = [], done = [];
+// pictures the editors chose to keep although they are under MIN_DPI (data/status.json "acceptedLowres": [{ src, why }])
+const accepted = new Set((JSON.parse(fs.readFileSync(path.join(root, 'data/status.json'), 'utf8')).acceptedLowres || []).map((a) => a.src));
 for (const p of pages) {
   if (p.placeholder) todo.push({ n: num(p), text: p.placeholder.heading && p.placeholder.heading !== p.title ? `${p.title}: ${p.placeholder.heading}` : p.title, about: p.placeholder.about, note: p.placeholder.plan ? `planned: ${p.placeholder.plan}` : '' });
   for (const name of p.missing) todo.push({ n: num(p), text: `${p.title}: photo missing — ${name || 'one portrait'}` });
   for (const l of p.lowres) {
+    if (accepted.has(l.src)) continue;
     const what = l.what || path.basename(l.src).replace(/\.[a-z]+$/i, '');
     lowres.push({ n: num(p), text: `${p.title}${what && what !== p.title ? ` — ${what}` : ''}`, note: `${l.dpi} dpi` });
   }

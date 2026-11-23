@@ -941,9 +941,15 @@
     {
       "kind": "question",
       "label": "PORTRAIT: H.G. DR. THOMAS MAR MAKARIOS",
-      "text": "p6 portrait swapped for the sharper enhanced copy Manoj sent to the group (22 Nov 11:41 PM; Mathew approved 23 Nov) - clear face and crosses. It came as a WhatsApp photo (1203x1307), so it prints at 138 dpi across the full page: ask Manoj for the original file (as a Document or on Drive) to get it over 150 dpi",
-      "waiting": "Manoj",
-      "asked": "2026-11-23"
+      "text": "p6 portrait swapped for the sharper enhanced copy Manoj sent to the group (22 Nov 11:41 PM; Mathew approved 23 Nov) - clear face and crosses. It came as a WhatsApp photo (1203x1307), so it prints at 138 dpi across the full page: ask Manoj for the original file (as a Document or on Drive) to get it over 150 dpi. Closed 23 Nov (Mathew): the picture is clearly better as it is, so no original needed; removed from the low-quality list.",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
+    }
+  ],
+  "acceptedLowres": [
+    {
+      "src": "images/icons/thomas-mar-makarios-enhanced.jpg",
+      "why": "p6: 138 dpi but visibly sharper than the old 300+ dpi copy, which was enlarged from a soft photo; kept as is (Mathew 23 Nov)"
     }
   ]
 }
