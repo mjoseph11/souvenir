@@ -307,43 +307,21 @@
                     "flex": 1.65
                   },
                   {
-                    "src": "images/tribute-ramban/ramban-07.jpg",
-                    "alt": "Very Rev. Geevarghese Ramban",
-                    "flex": 1.42
-                  }
-                ],
-                "fill": true
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "photos": [
-                  {
-                    "src": "images/tribute-ramban/ramban-08.jpg",
-                    "alt": "Very Rev. Geevarghese Ramban",
-                    "flex": 1.88
-                  },
-                  {
-                    "src": "images/tribute-ramban/ramban-24.jpg",
-                    "alt": "Very Rev. Geevarghese Ramban",
-                    "flex": 1.33
-                  }
-                ],
-                "fill": true
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "photos": [
-                  {
                     "src": "images/tribute-ramban/ramban-21.jpg",
                     "alt": "Very Rev. Geevarghese Ramban",
                     "flex": 1.33
-                  },
+                  }
+                ],
+                "fill": true
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "photos": [
                   {
-                    "src": "images/tribute-ramban/ramban-28.jpg",
+                    "src": "images/tribute-ramban/ramban-07.jpg",
                     "alt": "Very Rev. Geevarghese Ramban",
-                    "flex": 0.75
+                    "flex": 1.42
                   },
                   {
                     "src": "images/tribute-ramban/ramban-25.jpg",
@@ -358,9 +336,26 @@
                 "arrange": "row",
                 "photos": [
                   {
+                    "src": "images/tribute-ramban/ramban-08.jpg",
+                    "alt": "Very Rev. Geevarghese Ramban",
+                    "flex": 1.88
+                  },
+                  {
                     "src": "images/tribute-ramban/ramban-16.jpg",
                     "alt": "Very Rev. Geevarghese Ramban",
                     "flex": 1.33
+                  }
+                ],
+                "fill": true
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "photos": [
+                  {
+                    "src": "images/tribute-ramban/ramban-28.jpg",
+                    "alt": "Very Rev. Geevarghese Ramban",
+                    "flex": 0.75
                   },
                   {
                     "src": "images/tribute-ramban/ramban-19.jpg",
@@ -523,6 +518,11 @@
           "label": "HISTORY: A PILGRIMAGE OF FAITH (10 of 10)"
         },
         {
+          "file": "src/pages/history-timeline.html",
+          "label": "HISTORY: TIMELINE",
+          "toc": "Fifty Years at a Glance"
+        },
+        {
           "file": "src/pages/charter-families.html",
           "label": "OUR PARISH: CHARTER FAMILIES",
           "toc": "Our Parish — Charter Families 1976–1980"
@@ -556,13 +556,6 @@
             "note": "Milestone photographs and significant events (cemetery purchase, monument, ministry center, consecration 2009, and more)."
           },
           "toc": "Our Parish in Pictures"
-        },
-        {
-          "placeholder": {
-            "title": "Our Parish (continued)",
-            "heading": "Our Parish in Pictures",
-            "note": "Second picture page. Held in place of the removed Our Parish history page (Manoj, 23 Nov 10:25 PM: repetitive) so the page count stays even."
-          }
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE (1 of 4)",
@@ -1550,14 +1543,39 @@
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
-                "grow": 1.021,
                 "photos": [
                   {
-                    "src": "images/ministries/mission-board/mb-25.jpg",
-                    "alt": "Back-to-School supplies, 2022",
-                    "caption": "Back-to-School supplies, 2022",
-                    "flex": 1.333
+                    "src": "images/ministries/mission-board/mb-28.jpg",
+                    "alt": "Supplies loaded for delivery, 2025",
+                    "caption": "Supplies loaded for delivery, 2025",
+                    "flex": 1.335
                   },
+                  {
+                    "src": "images/ministries/mission-board/mb-29.jpg",
+                    "alt": "Delivering supplies to Robert K. Shafer Middle School",
+                    "caption": "Delivering supplies to Robert K. Shafer Middle School",
+                    "flex": 1.335
+                  },
+                  {
+                    "src": "images/ministries/mission-board/mb-30.jpg",
+                    "alt": "Children with clergy during the Back-to-School drive",
+                    "caption": "Children with clergy during the Back-to-School drive",
+                    "flex": 0.75,
+                    "pos": "50% 0%"
+                  },
+                  {
+                    "src": "images/ministries/mission-board/mb-37.jpg",
+                    "alt": "Making Project Linus blankets, 2024",
+                    "caption": "Making Project Linus blankets, 2024",
+                    "flex": 0.82
+                  }
+                ]
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "fill": true,
+                "photos": [
                   {
                     "src": "images/ministries/mission-board/mb-26.jpg",
                     "alt": "School supplies ready for delivery, 2023",
@@ -1566,10 +1584,10 @@
                     "pos": "50% 0%"
                   },
                   {
-                    "src": "images/ministries/mission-board/mb-28.jpg",
-                    "alt": "Supplies loaded for delivery, 2025",
-                    "caption": "Supplies loaded for delivery, 2025",
-                    "flex": 1.335
+                    "src": "images/ministries/mission-board/mb-25.jpg",
+                    "alt": "Back-to-School supplies, 2022",
+                    "caption": "Back-to-School supplies, 2022",
+                    "flex": 1.333
                   }
                 ]
               },
@@ -1577,14 +1595,7 @@
                 "type": "photos",
                 "arrange": "row",
                 "fill": true,
-                "grow": 1.021,
                 "photos": [
-                  {
-                    "src": "images/ministries/mission-board/mb-29.jpg",
-                    "alt": "Delivering supplies to Robert K. Shafer Middle School",
-                    "caption": "Delivering supplies to Robert K. Shafer Middle School",
-                    "flex": 1.335
-                  },
                   {
                     "src": "images/ministries/mission-board/mb-23.jpg",
                     "alt": "Volunteers with clergy, September 2023",
@@ -1592,30 +1603,9 @@
                     "flex": 1.333
                   },
                   {
-                    "src": "images/ministries/mission-board/mb-30.jpg",
-                    "alt": "Children with clergy during the Back-to-School drive",
-                    "caption": "Children with clergy during the Back-to-School drive",
-                    "flex": 0.75,
-                    "pos": "50% 0%"
-                  }
-                ]
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "fill": true,
-                "grow": 0.944,
-                "photos": [
-                  {
                     "src": "images/ministries/mission-board/mb-31.jpg",
                     "alt": "With Bensalem Police, 2024",
                     "caption": "With Bensalem Police, 2024",
-                    "flex": 1.333
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-33.jpg",
-                    "alt": "With members of the Bensalem Police Department, 2025",
-                    "caption": "With members of the Bensalem Police Department, 2025",
                     "flex": 1.333
                   },
                   {
@@ -1623,26 +1613,6 @@
                     "alt": "Volunteers at the 2024 Thanksgiving dinner",
                     "caption": "Volunteers at the 2024 Thanksgiving dinner",
                     "flex": 1.333
-                  }
-                ]
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "fill": true,
-                "grow": 1.023,
-                "photos": [
-                  {
-                    "src": "images/ministries/mission-board/mb-35.jpg",
-                    "alt": "Thanksgiving at Snyder-Girotti, 2025",
-                    "caption": "Thanksgiving at Snyder-Girotti, 2025",
-                    "flex": 1.333
-                  },
-                  {
-                    "src": "images/ministries/mission-board/mb-37.jpg",
-                    "alt": "Making Project Linus blankets, 2024",
-                    "caption": "Making Project Linus blankets, 2024",
-                    "flex": 0.82
                   },
                   {
                     "src": "images/ministries/mission-board/mb-39.jpg",

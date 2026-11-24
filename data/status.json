@@ -857,7 +857,7 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Spellings: Thankachan/Thankachen, Santosh/Santhosh Ninan, Punoose/Punnoose Mathai, Paulos/Paulose II (consistency check; asked in the Member Pages group 22 Nov) — Manoj 23 Nov 11:42 PM: go with Ente Palli or what the family gave: Thankachan, Santosh, Punnoose, Paulose - changed on p42 (Punnoose, Santosh), p38 (Paulose II) and the p74 St. Joseph's Forum page (Santosh). The Alexander Thankachen family page keeps the spelling the family approved",
+      "text": "Spellings: Thankachan/Thankachen, Santosh/Santhosh Ninan, Punoose/Punnoose Mathai, Paulos/Paulose II (consistency check; asked in the Member Pages group 22 Nov) — Manoj 23 Nov 11:42 PM: go with Ente Palli or what the family gave: Thankachan, Santosh, Punnoose, Paulose - changed on p42 (Punnoose, Santosh), p38 (Paulose II) and the p74 St. Joseph's Forum page (Santosh). The Alexander Thankachen family page keeps the spelling the family approved. Mathew 24 Nov: keep Thankachen for now and ask Alex which spelling he wants",
       "waiting": "Editorial board",
       "asked": "2026-11-22",
       "done": "2026-11-24"
@@ -872,9 +872,10 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Same photo used twice: p28 & p65 (Sunday School group), p29 & p94 (police), p65 & p87 (Thanksgiving group) - replace one of each? (suggestion from the consistency check; Member Pages group 22 Nov) — Manoj 23 Nov 11:42 PM: p65 bottom photo moved so no heads are cut (done 24 Nov). Duplicates: remove the copy from the pictures page and refill it, or leave them, as they are different stories",
+      "text": "Same photo used twice: p28 & p65 (Sunday School group), p29 & p94 (police), p65 & p87 (Thanksgiving group) - replace one of each? (suggestion from the consistency check; Member Pages group 22 Nov) — Manoj 23 Nov 11:42 PM: p65 bottom photo moved so no heads are cut (done 24 Nov). Duplicates: remove the copy from the pictures page and refill it, or leave them, as they are different stories — Mathew 24 Nov: remove. Done: p28 drops the Sunday School group (stays on p65); p94 drops the police photo and the near-identical Thanksgiving 2025 shot (both stay on the tribute pages); both pages rearranged to fill. The Thanksgiving photo on p65 and p87 stays, as neither is a pictures page",
       "waiting": "Manoj",
-      "asked": "2026-11-22"
+      "asked": "2026-11-22",
+      "done": "2026-11-24"
     },
     {
       "kind": "question",
@@ -991,9 +992,10 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Timeline page: Manoj (23 Nov 11:42 PM) suggests a page after the History section showing the timeline/roadmap, generated from the history article (replacing the old p42 milestones). It would take the place of the second Our Parish in Pictures page to keep the count even",
+      "text": "Timeline page: Manoj (23 Nov 11:42 PM) suggests a page after the History section showing the timeline/roadmap, generated from the history article (replacing the old p42 milestones). It would take the place of the second Our Parish in Pictures page to keep the count even — Mathew 24 Nov: yes. Done: p42 \"Fifty Years at a Glance\", 33 dated entries all taken from the History article, in place of the second Our Parish in Pictures placeholder (page count stays 242)",
       "waiting": "Mathew",
-      "asked": "2026-11-24"
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
     },
     {
       "kind": "question",
@@ -1005,8 +1007,23 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Cor-Episcopa vs Cor Episcopos: Manoj (23 Nov 11:42 PM) thinks Cor-Episcopa is right; Eby Achen asked for Cor Episcopos (19 Nov text, and 23 Nov via Mathew) - p8 now Cor Episcopos like the rest of the book",
+      "text": "Cor-Episcopa vs Cor Episcopos: Manoj (23 Nov 11:42 PM) thinks Cor-Episcopa is right; Eby Achen asked for Cor Episcopos (19 Nov text, and 23 Nov via Mathew) - p8 now Cor Episcopos like the rest of the book — Mathew 24 Nov: leave it as Cor Episcopos",
       "waiting": "Manoj",
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "MEMBER PAGE: Alexander Thankachen",
+      "text": "Thankachen (his family page) or Thankachan (committee page, trustees list, Ente Palli)? Asking Alex directly (Mathew 24 Nov)",
+      "waiting": "Alex Thankachan",
+      "asked": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Titles: after Jinu John's page was missing its title, 7 member pages with long writing and no title to check against the families' documents in Drive: Basil Milton, Poovathoor Koshy, Varughese P. Issac, Paul Varki memorial, Jiji Koshy, Paul C. Mathai, Naomi Samuel",
+      "waiting": "Mathew",
       "asked": "2026-11-24"
     }
   ],
