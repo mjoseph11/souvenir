@@ -3,7 +3,9 @@ name: Publish site
 # Publishes only the files the book pages use (scripts/pack-site.js), about
 # half the repo, instead of the whole repo. Pages deploys of the full ~385 MB
 # often failed on GitHub's side ("Deployment failed, try again later"), so a
-# failed deploy is retried once.
+# failed deploy is retried twice, after a pause: on 23 Nov the deploy step found
+# no "github-pages" artifact straight after the upload, and an immediate retry
+# failed the same way.
 on:
   push:
     branches: [main]
@@ -38,6 +40,17 @@ jobs:
         id: deploy
         uses: actions/deploy-pages@v4
         continue-on-error: true
-      - name: Deploy (retry)
+      - name: Wait before retry
         if: steps.deploy.outcome == 'failure'
+        run: sleep 60
+      - name: Deploy (retry)
+        id: retry
+        if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before last retry
+        if: steps.retry.outcome == 'failure'
+        run: sleep 120
+      - name: Deploy (last retry)
+        if: steps.retry.outcome == 'failure'
         uses: actions/deploy-pages@v4
