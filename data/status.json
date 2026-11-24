@@ -1106,9 +1106,17 @@
     },
     {
       "kind": "question",
-      "label": "PLACEHOLDER: In Memoriam",
-      "text": "Manoj 24 Nov 10:42 AM: add Thomas Paul's parents (Paul Thomas Maliyil & Mariamma Thomas) and Aleyamma Paul's parents (P. C. Oommen & Aleyamma Oommen) to the In Memoriam members page. Molsey 10:59 AM: the page is for SGMOC members who passed away - were they members? Manoj 11:15 AM: guessing they were here at some point; hard to separate since we don't know everybody. Open: who belongs on the list (members only, or members' parents too)? Page still being prepared by Santosh. Manoj 2:57 PM: that was the plan; the issue is that some names were given by families and some were taken from the previous souvenir, so it is hard to confirm who were members. Mathew suggested in the group (24 Nov): include every name families gave plus the previous souvenir's, one A-Z list, under a heading like \"Remembering Our Departed Members and Loved Ones\"; asked Manoj to pass it to Santosh. Manoj 6:15 PM: that works; 6:27 PM: shared \"Souvenir Memorial Names.pdf\" (church directory, former members, previous souvenir, memorial wall - about 80 names). Next: tidy duplicates and spellings, then build the page",
+      "label": "IN MEMORIAM: CHURCH MEMBERS",
+      "text": "Manoj 24 Nov 10:42 AM: add Thomas Paul's parents (Paul Thomas Maliyil & Mariamma Thomas) and Aleyamma Paul's parents (P. C. Oommen & Aleyamma Oommen) to the In Memoriam members page. Molsey 10:59 AM: the page is for SGMOC members who passed away - were they members? Manoj 11:15 AM: guessing they were here at some point; hard to separate since we don't know everybody. Open: who belongs on the list (members only, or members' parents too)? Page still being prepared by Santosh. Manoj 2:57 PM: that was the plan; the issue is that some names were given by families and some were taken from the previous souvenir, so it is hard to confirm who were members. Mathew suggested in the group (24 Nov): include every name families gave plus the previous souvenir's, one A-Z list, under a heading like \"Remembering Our Departed Members and Loved Ones\"; asked Manoj to pass it to Santosh. Manoj 6:15 PM: that works; 6:27 PM: shared \"Souvenir Memorial Names.pdf\" (church directory, former members, previous souvenir, memorial wall - about 80 names). Next: tidy duplicates and spellings, then build the page. Done 24 Nov: p56 built from the list - clergy first, then 61 names A-Z by surname in three columns, plus P. C. & Aleyamma Oommen; clear duplicates merged (T. V. Philip, M. V. George, Ninan Mathew); spellings as in the book (Mariamma Thomas, Cor Episcopos)",
       "waiting": "Mathew",
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "IN MEMORIAM: CHURCH MEMBERS",
+      "text": "p56 names to confirm (asked in the group 24 Nov): Jaya Shine (list says verify with Joe Maret) - left out for now; Mathai Kaleekal - the same as Mathai Achen? left out; Rachel Mathai (previous souvenir) and Mathai Chacko - same as Rachel Mathai / Chacko Mathai (Sankarathil)? Mathai Chacko kept, second Rachel left out; Saramma Mathai (Punnoose's mother), Saramma Mathai (Othera) and Mrs. Saramma Mathai (memorial wall) - two or three people? shown as two; Annamma George (Lee's mother) and Mrs. Annamma George (Jacob George's mother) - one person? shown once",
+      "waiting": "Manoj",
       "asked": "2026-11-24"
     }
   ],

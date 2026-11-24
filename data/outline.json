@@ -642,11 +642,8 @@
           "note": "Manoj 21 Nov 3:51 PM: title 'Late Dn. Markose Mani'; stays here with the other memorial page."
         },
         {
-          "placeholder": {
-            "title": "In Memoriam",
-            "heading": "Church Members Remembered Since 1976",
-            "note": "Members of our parish who have fallen asleep in the Lord since 1976. Being prepared by Santosh."
-          },
+          "file": "src/pages/in-memoriam-members.html",
+          "label": "IN MEMORIAM: CHURCH MEMBERS",
           "toc": "In Memoriam — Church Members Since 1976"
         }
       ]
