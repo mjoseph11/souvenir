@@ -925,9 +925,10 @@
     {
       "kind": "question",
       "label": "MEMBER PAGE: Thomas Paul",
-      "text": "Parents' heading on p195: keep 'Our Beloved Parents' or say 'In Loving Memory'? (asked in the group 22 Nov) — Manoj 23 Nov 11:42 PM: will confirm the heading. Done 24 Nov: photos bigger, Best Compliments smaller, no gaps between the roles",
+      "text": "Parents' heading on p195: keep 'Our Beloved Parents' or say 'In Loving Memory'? (asked in the group 22 Nov) — Manoj 23 Nov 11:42 PM: will confirm the heading. Done 24 Nov: photos bigger, Best Compliments smaller, no gaps between the roles — Manoj 24 Nov 10:41 AM: back to the earlier page; the parents go on the In Memoriam members page, not his page. Parents block removed, photos bigger, roles without gaps (p195)",
       "waiting": "Manoj",
-      "asked": "2026-11-22"
+      "asked": "2026-11-22",
+      "done": "2026-11-24"
     },
     {
       "kind": "question",
@@ -1101,6 +1102,13 @@
       "waiting": "Mathew",
       "asked": "2026-11-24",
       "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "PLACEHOLDER: In Memoriam",
+      "text": "Manoj 24 Nov 10:42 AM: add Thomas Paul's parents (Paul Thomas Maliyil & Mariamma Thomas) and Aleyamma Paul's parents (P. C. Oommen & Aleyamma Oommen) to the In Memoriam members page. Molsey 10:59 AM: the page is for SGMOC members who passed away - were they members? Manoj 11:15 AM: guessing they were here at some point; hard to separate since we don't know everybody. Open: who belongs on the list (members only, or members' parents too)? Page still being prepared by Santosh",
+      "waiting": "Editorial board",
+      "asked": "2026-11-24"
     }
   ],
   "acceptedLowres": [

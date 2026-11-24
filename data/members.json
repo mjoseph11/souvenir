@@ -208,7 +208,7 @@
                   "src": "images/members/thomas-paul/pic-2.jpg"
                 }
               ],
-              "grow": 4
+              "grow": 6
             },
             {
               "type": "text",
@@ -227,14 +227,6 @@
               "sign": "Thomas Paul"
             },
             {
-              "type": "text",
-              "bare": true,
-              "center": true,
-              "size": "sm",
-              "title": "Our Beloved Parents",
-              "text": "Paul Thomas Maliyil & Mariamma Thomas · parents of Thomas Paul\n\nP. C. Oommen & Aleyamma Oommen · parents of Aleyamma Paul"
-            },
-            {
               "type": "closing"
             }
           ]
@@ -243,7 +235,7 @@
       "title": "Thomas Paul & Family",
       "sortNote": "Manoj asked for Thomas Paul to come before Dustin Paul, so both Pauls carry explicit ordinals.",
       "indexName": "Thomas Paul & Family",
-      "layoutNote": "22 Nov (Manoj, Member Pages group 6:14 PM): parents of Thomas Paul and of Aleyamma Paul added."
+      "layoutNote": "24 Nov (Manoj, Member Pages group 10:41 AM): back to the earlier page - parents block removed (their names belong on the In Memoriam members page), roles without gaps, photos bigger. 22 Nov parents note superseded."
     },
     {
       "id": "a-o-abraham",
