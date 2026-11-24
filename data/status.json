@@ -858,7 +858,7 @@
     {
       "kind": "question",
       "label": "",
-      "text": "p8 title 'Cor-Episcopa' vs 'Cor Episcopos' everywhere else; 'Achan' on p15 and p201 vs 'Achen' elsewhere (consistency check; asked in the Member Pages group 22 Nov)",
+      "text": "'Achan' on p15 and p201 vs 'Achen' elsewhere (consistency check; asked in the Member Pages group 22 Nov). The p8 title is now Cor Episcopos, matching the rest of the book (Eby Achen, 23 Nov)",
       "waiting": "Editorial board",
       "asked": "2026-11-22"
     },
@@ -972,6 +972,13 @@
       "label": "OUR PARISH: CHARTER FAMILIES",
       "text": "Our Parish history & milestones page (old p42) removed as repetitive of the History article (Manoj, 23 Nov 10:25 PM). A second Our Parish in Pictures page holds its place so the page count stays even.",
       "asked": "2026-11-23",
+      "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "p8 memorial title changed from Cor-Episcopa to Cor Episcopos, as in the rest of the book (Eby Achen, 23 Nov)",
+      "asked": "2026-11-22",
       "done": "2026-11-23"
     }
   ],
