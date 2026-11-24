@@ -116,7 +116,7 @@
     },
     {
       "kind": "missing",
-      "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
+      "label": "OUR PARISH: PAST TRUSTEES & SECRETARIES",
       "text": "Past Secretaries & Treasurers 1976–2026 laid out (Core Fifty list; 1978, 1981, 1983 still blank)",
       "done": "2026-11-18"
     },
@@ -146,7 +146,7 @@
     },
     {
       "kind": "missing",
-      "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
+      "label": "OUR PARISH: PAST TRUSTEES & SECRETARIES",
       "text": "Past Secretaries & Treasurers: the three years nobody could find (1978, 1981, 1983) left out, per Manoj",
       "done": "2026-11-18"
     },
@@ -906,7 +906,7 @@
     },
     {
       "kind": "question",
-      "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
+      "label": "OUR PARISH: PAST TRUSTEES & SECRETARIES",
       "text": "Manoj is checking a different list of past Secretaries and Treasurers; any other years that change still to come (1976-77 already fixed; asked in the group 22 Nov). 23 Nov 12:53 PM: Manoj updated the list (SGMOC Core Fifty adjusted, Non-Member Pages): 1979, 1980 and 1982 Secretary and Treasurer swapped, and a first 1984 row added (Varghese M Varghese, John P John). p44 now matches the list row for row.",
       "asked": "2026-11-22",
       "done": "2026-11-23"
@@ -957,6 +957,20 @@
       "kind": "question",
       "label": "PORTRAIT: H.G. DR. THOMAS MAR MAKARIOS",
       "text": "p6: Manoj uploaded the resized portrait to 0_Icons (2623x2850, 23 Nov 12:53 PM) - now used; prints above 150 dpi",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "OUR PARISH: PAST TRUSTEES & SECRETARIES",
+      "text": "p43: Trustee column now first, then Secretary; page title Past Trustees & Secretaries (Manoj, 23 Nov 1:22 PM)",
+      "asked": "2026-11-23",
+      "done": "2026-11-23"
+    },
+    {
+      "kind": "question",
+      "label": "OUR PARISH: CHARTER FAMILIES",
+      "text": "Our Parish history & milestones page (old p42) removed as repetitive of the History article (Manoj, 23 Nov 10:25 PM). A second Our Parish in Pictures page holds its place so the page count stays even.",
       "asked": "2026-11-23",
       "done": "2026-11-23"
     }

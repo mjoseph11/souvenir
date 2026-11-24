@@ -523,18 +523,13 @@
           "label": "HISTORY: A PILGRIMAGE OF FAITH (10 of 10)"
         },
         {
-          "file": "src/pages/history-parish.html",
-          "label": "OUR PARISH: HISTORY",
-          "toc": "Our Parish — History & Milestones"
-        },
-        {
           "file": "src/pages/charter-families.html",
           "label": "OUR PARISH: CHARTER FAMILIES",
           "toc": "Our Parish — Charter Families 1976–1980"
         },
         {
           "file": "src/pages/past-trustees.html",
-          "label": "OUR PARISH: PAST SECRETARIES & TREASURERS",
+          "label": "OUR PARISH: PAST TRUSTEES & SECRETARIES",
           "toc": "Past Trustees & Secretaries"
         },
         {
@@ -561,6 +556,13 @@
             "note": "Milestone photographs and significant events (cemetery purchase, monument, ministry center, consecration 2009, and more)."
           },
           "toc": "Our Parish in Pictures"
+        },
+        {
+          "placeholder": {
+            "title": "Our Parish (continued)",
+            "heading": "Our Parish in Pictures",
+            "note": "Second picture page. Held in place of the removed Our Parish history page (Manoj, 23 Nov 10:25 PM: repetitive) so the page count stays even."
+          }
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE (1 of 4)",
