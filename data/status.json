@@ -4,9 +4,10 @@
     {
       "kind": "missing",
       "label": "MESSAGE: TRUSTEE",
-      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 16) - Reji is looking for one (Manoj, 18 Nov 8:19 PM); Suchin will take his photo this Sunday (9:48 PM) - Mathew reminded Suchin (22 Nov). Suchin took the photo on 22 Nov (Manoj, group 11:36 PM); waiting for the file.",
+      "text": "Reji (Thomas) Ninan's picture for the Trustee's message (p. 16) - Reji is looking for one (Manoj, 18 Nov 8:19 PM); Suchin will take his photo this Sunday (9:48 PM) - Mathew reminded Suchin (22 Nov). Suchin took the photo on 22 Nov (Manoj, group 11:36 PM); waiting for the file. — Suchin sent it 24 Nov 10:00 AM; now on p16",
       "waiting": "Suchin",
-      "asked": "2026-11-18"
+      "asked": "2026-11-18",
+      "done": "2026-11-24"
     },
     {
       "kind": "missing",
@@ -1085,6 +1086,20 @@
       "text": "Mathew Joseph & Family approved - Proof copy tag removed (Mathew 24 Nov)",
       "asked": "2026-11-24",
       "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "OUR PARISH: CHARTER FAMILIES",
+      "text": "Arrival notes removed from the charter families list - (Uncle came 1977), (Aunty came 1974, CSI), (Aunty came earlier), (Aunty 1979, Uncle 1980) (Molsey 24 Nov 9:40 AM)",
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "OUR PARISH: CHARTER FAMILIES",
+      "text": "Molsey (24 Nov 9:39 AM): Reji's parents should have Late with their names? The list says \"Thomas Ninan / K. T. Ninan & Saramma\" - need to confirm whether both have passed",
+      "waiting": "Mathew",
+      "asked": "2026-11-24"
     }
   ],
   "acceptedLowres": [
