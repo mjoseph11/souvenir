@@ -62,9 +62,10 @@
     {
       "kind": "missing",
       "label": "PICTURES: GOLDEN JUBILEE — PROCESSION",
-      "text": "Golden Jubilee afternoon pictures: three new pages from the photographer's set - procession, arrival, public meeting (pp. 52-54; Manoj 19 Nov 7:30 PM; Molsey: none in the collage). No individual honorees. Cultural programs still have no pictures",
+      "text": "Golden Jubilee afternoon pictures: three new pages from the photographer's set - procession, arrival, public meeting (pp. 52-54; Manoj 19 Nov 7:30 PM; Molsey: none in the collage). No individual honorees. Cultural program pictures are a separate item below",
       "waiting": "Suchin - Sumod does not have them; maybe Jiji Koshy (18 Nov 8:22 PM)",
-      "asked": "2026-11-18"
+      "asked": "2026-11-18",
+      "done": "2026-11-24"
     },
     {
       "kind": "missing",
@@ -404,20 +405,20 @@
     },
     {
       "kind": "missing",
-      "text": "Member proofs: 28 still to send and 60 approvals to get - aim to finish in the next couple of days; tracked in Manoj's spreadsheet (19 Nov 5:45 PM; Molsey and another member helping)",
+      "text": "Member proofs: 63 of 133 families approved in the book so far, so 70 pages still carry the \"Proof copy\" tag. Manoj's spreadsheet tracks sending and approvals (19 Nov: 28 still to send; Molsey and another member helping) - send approvals as they come in so the tag can be removed",
       "waiting": "Editorial board",
       "asked": "2026-11-19"
     },
     {
       "kind": "missing",
-      "text": "Golden Jubilee cultural programs: no pictures yet (the photographer's set has none) - Gigi's video or the GJ social media team",
+      "text": "Golden Jubilee cultural programs: no pictures yet (the photographer's set has none; Sumod does not have them) - Gigi's video, the GJ social media team, or maybe Jiji Koshy",
       "waiting": "Manoj",
       "asked": "2026-11-19"
     },
     {
       "kind": "missing",
       "label": "PLACEHOLDER: Building Our Church",
-      "text": "Church construction article by Thomas Joseph - two placeholder pages held after Past Secretaries & Treasurers (pp. 45-46); he will try to send it this week (Manoj, 19 Nov 8:21 PM)",
+      "text": "Church construction article by Thomas Joseph - two placeholder pages held after Past Trustees & Secretaries; he will try to send it this week (Manoj, 19 Nov 8:21 PM)",
       "waiting": "Thomas Joseph",
       "asked": "2026-11-19"
     },
@@ -676,7 +677,7 @@
     {
       "kind": "photo",
       "label": "OUR CHURCH FAMILY",
-      "text": "The 'A Journey of Faith' page came as a WhatsApp picture (1569x1002, about 130 dpi printed, so the lettering will print soft). Need the original file from ChatGPT, sent as a Document or on Drive. (The Editorial Board page is now set as real text, so it no longer needs one.)",
+      "text": "The 'A Journey of Faith' page came as a WhatsApp picture (1569x1002, about 130 dpi printed, so the lettering will print soft). Need the original file from ChatGPT, sent as a Document or on Drive.",
       "asked": "2026-11-22",
       "waiting": "Manoj"
     },
@@ -881,7 +882,7 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Design: p180 memorial frame stretched taller than on the other memorial pages; captions with and without full stops; ministry history sign-offs differ (p59, p64, p74); straight and curly quotes mixed on pp61-62 (suggestion from the consistency check; Member Pages group 22 Nov) — Manoj 23 Nov 11:42 PM: p180 is what the family asked for; Suchin to confirm",
+      "text": "p180 memorial frame stretched taller than on the other memorial pages - Manoj 23 Nov 11:42 PM: that is what the family asked for; Suchin to confirm",
       "waiting": "Suchin",
       "asked": "2026-11-22"
     },
@@ -1063,6 +1064,13 @@
       "text": "Molsey (24 Nov 9:29 AM): \"Im confused about the charter families page\" - asked her what is confusing",
       "waiting": "Molsey",
       "asked": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "Style points from the 22 Nov consistency check: straight quotes on pp61-62 made curly like the rest of the book (24 Nov). Captions with and without full stops and the different ministry sign-offs (p59, p64, p74) are left as the writers gave them - not open items",
+      "asked": "2026-11-22",
+      "done": "2026-11-24"
     }
   ],
   "acceptedLowres": [
