@@ -2304,11 +2304,11 @@
     {
       "id": "paul-varki-in-memoriam",
       "name": "In Memoriam - Rev. Fr. Dr. Paul Varki",
-      "title": "Late Rev. Fr. Paul Varki",
+      "title": "Late Rev. Fr. Dr. Paul Varki",
       "pages": [
         {
           "dark": true,
-          "title": "Late Rev. Fr. Paul Varki",
+          "title": "Late Rev. Fr. Dr. Paul Varki",
           "inMemoriam": {
             "photo": "images/members/paul-varki-memorial/portrait-frame.jpg",
             "name": "Rev. Fr. Dr. Paul Varki",
@@ -2321,7 +2321,7 @@
       ],
       "band": "",
       "placement": "outline",
-      "indexName": "Late Rev. Fr. Paul Varki",
+      "indexName": "Late Rev. Fr. Dr. Paul Varki",
       "sort": "Varki Rev. Fr. Dr. Paul 0",
       "layoutNote": "Manoj, 11 Nov: church memorials are their own section before the organizations; this page split off the Paul Varki pages, which stay in Past Clergy. 21 Nov (Manoj 3:51 PM): title 'Late Rev. Fr. Paul Varki' instead of 'In Memoriam'."
     },
