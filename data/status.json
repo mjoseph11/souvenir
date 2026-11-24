@@ -405,7 +405,7 @@
     },
     {
       "kind": "missing",
-      "text": "Member proofs: 63 of 133 families approved in the book so far, so 70 pages still carry the \"Proof copy\" tag. Manoj's spreadsheet tracks sending and approvals (19 Nov: 28 still to send; Molsey and another member helping) - send approvals as they come in so the tag can be removed",
+      "text": "Member proofs: 64 of 133 families approved in the book so far, so 69 pages still carry the \"Proof copy\" tag. Manoj's spreadsheet tracks sending and approvals (19 Nov: 28 still to send; Molsey and another member helping) - send approvals as they come in so the tag can be removed",
       "waiting": "Editorial board",
       "asked": "2026-11-19"
     },
@@ -1076,6 +1076,13 @@
       "kind": "question",
       "label": "",
       "text": "p95 parish family photo at 149 dpi accepted as is and taken off the low-quality list (Mathew 24 Nov)",
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "MEMBER PAGE: Mathew Joseph",
+      "text": "Mathew Joseph & Family approved - Proof copy tag removed (Mathew 24 Nov)",
       "asked": "2026-11-24",
       "done": "2026-11-24"
     }
