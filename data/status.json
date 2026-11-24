@@ -1024,9 +1024,10 @@
     {
       "kind": "question",
       "label": "",
-      "text": "Titles: after Jinu John's page was missing its title, 7 member pages with long writing and no title to check against the families' documents in Drive: Basil Milton, Poovathoor Koshy, Varughese P. Issac, Paul Varki memorial, Jiji Koshy, Paul C. Mathai, Naomi Samuel",
+      "text": "Titles: after Jinu John's page was missing its title, 7 member pages with long writing and no title to check against the families' documents in Drive: Basil Milton, Poovathoor Koshy, Varughese P. Issac, Paul Varki memorial, Jiji Koshy, Paul C. Mathai, Naomi Samuel — Checked 24 Nov against Drive: none of their documents has a title (Basil Milton and Varughese P. Issac sent plain text; Jiji Koshy's summary has none; Poovathoor Koshy's opening \"With the best compliments\" heading and the Paul Varki tribute title on p100 are already in; Paul C. Mathai's text was rewritten from screenshots; Naomi's came to Suchin by Word file). Jinu John's was the only one missing",
       "waiting": "Mathew",
-      "asked": "2026-11-24"
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
     },
     {
       "kind": "question",
