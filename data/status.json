@@ -1071,12 +1071,23 @@
       "text": "Style points from the 22 Nov consistency check: straight quotes on pp61-62 made curly like the rest of the book (24 Nov). Captions with and without full stops and the different ministry sign-offs (p59, p64, p74) are left as the writers gave them - not open items",
       "asked": "2026-11-22",
       "done": "2026-11-24"
+    },
+    {
+      "kind": "question",
+      "label": "",
+      "text": "p95 parish family photo at 149 dpi accepted as is and taken off the low-quality list (Mathew 24 Nov)",
+      "asked": "2026-11-24",
+      "done": "2026-11-24"
     }
   ],
   "acceptedLowres": [
     {
       "src": "images/members/sponsorship/malabar-catering.jpg",
       "why": "p233 Malabar Catering ad: 141 dpi, but the photo is crisp and the lettering large; kept as is (Mathew 23 Nov)"
+    },
+    {
+      "src": "images/ministries/mission-board/mb-55.jpg",
+      "why": "p95 Our SGMOC parish family: 149 dpi, 1 short of the 150 line - prints fine; kept as is (Mathew 24 Nov)"
     }
   ]
 }
