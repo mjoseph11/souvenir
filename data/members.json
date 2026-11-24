@@ -208,15 +208,17 @@
                   "src": "images/members/thomas-paul/pic-2.jpg"
                 }
               ],
-              "grow": 2.2
+              "grow": 4
             },
             {
               "type": "text",
               "bare": true,
               "center": true,
               "title": "Best Compliments from Thomas Paul and Family",
-              "text": "Members of SGMOC since 1978\n\nBoard of Trustees Member — 1994–1996\n\nSecretary — 1995–1996\n\nDiocesan Auditor — 1998–2002",
-              "bold": true
+              "text": "Members of SGMOC since 1978\nBoard of Trustees Member — 1994–1996\nSecretary — 1995–1996\nDiocesan Auditor — 1998–2002",
+              "bold": true,
+              "size": "sm",
+              "lines": true
             },
             {
               "type": "text",
@@ -1770,7 +1772,8 @@
                 "src": "images/members/jinu-john/Family-Jinu-John.jpg"
               },
               "text": "When many of us came to the United States of America from Kerala, we brought with us more than dreams and hopes for a better future. We also brought our culture, traditions, memories, and most importantly, the Orthodox faith that was passed down to us by our parents and grandparents. It is the faith we grew up with, the faith that has guided us through different stages of our lives, and the faith we now hope to pass on to our children.\n\nStarting a life in a new country came with many changes and challenges. Through it all, we are grateful that we have been able to continue living and growing in our Malankara Orthodox faith. Through SGMOC, we found more than a church. We found a spiritual home and a community where we could pray together, celebrate together, and support one another. Over the years, this parish has become an important part of our life and our journey here in America.\n\nOne of the greatest blessings for us as parents is seeing our children grow up in this same faith. It brings us joy to see them attend Sunday School, participate in Holy Qurbana and church celebrations, and spend time with their church friends. Through these experiences, they are learning about God, our faith, and the traditions that have been part of our families for generations. At the same time, they are building friendships and creating memories that we hope they will carry with them throughout their lives.\n\nAs SGMOC celebrates 50 years, we are especially grateful for those who came before us. Their faith, hard work, and sacrifices gave families like ours a place to call our spiritual home. They passed this faith on to us, and now it is our turn to pass it on to our children. Our hope and prayer is that they will carry it with them wherever life takes them and, one day, pass it on to the generations that follow.",
-              "size": "lg"
+              "size": "lg",
+              "title": "A Faith We Received"
             },
             {
               "type": "closing"
