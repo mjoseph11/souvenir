@@ -307,26 +307,9 @@
                     "flex": 1.65
                   },
                   {
-                    "src": "images/tribute-ramban/ramban-21.jpg",
-                    "alt": "Very Rev. Geevarghese Ramban",
-                    "flex": 1.33
-                  }
-                ],
-                "fill": true
-              },
-              {
-                "type": "photos",
-                "arrange": "row",
-                "photos": [
-                  {
                     "src": "images/tribute-ramban/ramban-07.jpg",
                     "alt": "Very Rev. Geevarghese Ramban",
                     "flex": 1.42
-                  },
-                  {
-                    "src": "images/tribute-ramban/ramban-25.jpg",
-                    "alt": "Very Rev. Geevarghese Ramban",
-                    "flex": 1.33
                   }
                 ],
                 "fill": true
@@ -341,7 +324,7 @@
                     "flex": 1.88
                   },
                   {
-                    "src": "images/tribute-ramban/ramban-16.jpg",
+                    "src": "images/tribute-ramban/ramban-24.jpg",
                     "alt": "Very Rev. Geevarghese Ramban",
                     "flex": 1.33
                   }
@@ -353,9 +336,31 @@
                 "arrange": "row",
                 "photos": [
                   {
+                    "src": "images/tribute-ramban/ramban-21.jpg",
+                    "alt": "Very Rev. Geevarghese Ramban",
+                    "flex": 1.33
+                  },
+                  {
                     "src": "images/tribute-ramban/ramban-28.jpg",
                     "alt": "Very Rev. Geevarghese Ramban",
                     "flex": 0.75
+                  },
+                  {
+                    "src": "images/tribute-ramban/ramban-25.jpg",
+                    "alt": "Very Rev. Geevarghese Ramban",
+                    "flex": 1.33
+                  }
+                ],
+                "fill": true
+              },
+              {
+                "type": "photos",
+                "arrange": "row",
+                "photos": [
+                  {
+                    "src": "images/tribute-ramban/ramban-16.jpg",
+                    "alt": "Very Rev. Geevarghese Ramban",
+                    "flex": 1.33
                   },
                   {
                     "src": "images/tribute-ramban/ramban-19.jpg",
