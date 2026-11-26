@@ -565,40 +565,43 @@
         {
           "label": "PICTURES: GOLDEN JUBILEE (1 of 4)",
           "fullpage": {
-            "src": "images/collage/jubilee-collage-1.jpg",
+            "src": "images/collage/jubilee-collage-1-full.jpg",
             "alt": "Golden Jubilee celebration photographs",
             "title": "Golden Jubilee in Pictures",
-            "fit": "contain"
+            "fit": "cover"
           },
           "toc": "Golden Jubilee in Pictures",
-          "note": "Manoj's collage (WhatsApp 17 Nov 11:12 PM, 'Sovenior Collage.pdf'), placed after the History section per Manoj 18 Nov 8:04 AM."
+          "note": "Manoj's collage (WhatsApp 17 Nov 11:12 PM, 'Sovenior Collage.pdf'), placed after the History section per Manoj 18 Nov 8:04 AM. 26 Nov (Manoj DM 1:59 PM): stretched to the whole page like the procession pages - the photos cut out of his collage (jubilee-collage-1.jpg) and re-laid in full-width rows, about 19% trimmed top and bottom, no heads cut."
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE (2 of 4)",
           "fullpage": {
-            "src": "images/collage/jubilee-collage-2.jpg",
+            "src": "images/collage/jubilee-collage-2-full.jpg",
             "alt": "Golden Jubilee celebration photographs",
             "title": "Golden Jubilee in Pictures",
-            "fit": "contain"
-          }
+            "fit": "cover"
+          },
+          "note": "26 Nov (Manoj DM 1:59 PM): stretched to the whole page like the procession pages - the photos cut out of his collage (jubilee-collage-2.jpg) and re-laid in full-width rows, about 19% trimmed top and bottom, no heads cut."
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE (3 of 4)",
           "fullpage": {
-            "src": "images/collage/jubilee-collage-3.jpg",
+            "src": "images/collage/jubilee-collage-3-full.jpg",
             "alt": "Golden Jubilee celebration photographs",
             "title": "Golden Jubilee in Pictures",
-            "fit": "contain"
-          }
+            "fit": "cover"
+          },
+          "note": "26 Nov (Manoj DM 1:59 PM): stretched to the whole page like the procession pages - the photos cut out of his collage (jubilee-collage-3.jpg) and re-laid in full-width rows, about 19% trimmed top and bottom, no heads cut."
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE (4 of 4)",
           "fullpage": {
-            "src": "images/collage/jubilee-collage-4.jpg",
+            "src": "images/collage/jubilee-collage-4-full.jpg",
             "alt": "Golden Jubilee celebration photographs",
             "title": "Golden Jubilee in Pictures",
-            "fit": "contain"
-          }
+            "fit": "cover"
+          },
+          "note": "26 Nov (Manoj DM 1:59 PM): stretched to the whole page like the procession pages - the photos cut out of his collage (jubilee-collage-4.jpg) and re-laid in full-width rows, about 19% trimmed top and bottom, no heads cut."
         },
         {
           "label": "PICTURES: GOLDEN JUBILEE — PROCESSION",
@@ -1730,6 +1733,7 @@
                     "src": "images/ministries/mission-board/mb-55.jpg",
                     "alt": "Our SGMOC parish family",
                     "caption": "Our SGMOC parish family",
+                    "pos": "50% 100%",
                     "flex": 3.109
                   }
                 ]

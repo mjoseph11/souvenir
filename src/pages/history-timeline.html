@@ -17,7 +17,12 @@
       .tlx-year { font-size:10.5pt; font-weight:bold; color:var(--maroon); }
       .tlx-date { font-size:8.5pt; font-style:italic; color:#8a6d1a; }
       .tlx-text { font-size:8.8pt; line-height:1.3; color:#333; }
+      /* Faint church behind the timeline (Manoj DM 26 Nov: "adding a transparent church background on the back"); the church front from the Jubilee collage, toned sepia. */
+      .org-page:has(.tlx-cols) .page-content { position:relative; }
+      .tlx-bg { position:absolute; left:0.55in; right:0.55in; bottom:0.3in; width:calc(100% - 1.1in); mix-blend-mode:multiply; z-index:0; pointer-events:none; }
+      .org-page:has(.tlx-cols) .org-el { position:relative; z-index:1; }
     </style>
+    <img class="tlx-bg" src="images/history/church-watermark.jpg" alt="">
     <div class="org-el"><h2 class="org-title">Fifty Years at a Glance</h2></div>
     <div class="org-el"><p class="org-sub">From the first service in Philadelphia to the Golden Jubilee, 1962&ndash;2026</p>
 <div class="org-rule"></div></div>

@@ -173,12 +173,12 @@
             {
               "type": "article",
               "photo": {
-                "src": "images/members/mathewkutty-kurian/photo1.jpg"
+                "src": "images/members/mathewkutty-kurian/photo1-crop.jpg"
               },
               "text": "The Mathew family has been members of this church since 1989. Our journey with the church has been profoundly meaningful, deeply rooted in the teachings of the Orthodox faith. The church community has enriched our lives through its love, guidance, and shared values, fostering a stronger connection with God and one another. We are deeply grateful for the blessings and sense of belonging we have found within this community.",
               "sign": "The Mathewkutty Kurian Family",
               "size": "lg",
-              "photoMax": "4in"
+              "photoMax": "4.4in"
             },
             {
               "type": "closing"
@@ -187,7 +187,8 @@
         }
       ],
       "title": "Mathewkutty Kurian & Family",
-      "indexName": "Mathewkutty Kurian & Family"
+      "indexName": "Mathewkutty Kurian & Family",
+      "layoutNote": "26 Nov (Manoj DM): side photo cropped below the feet (photo1-crop.jpg) and bigger; at 4.4in tall it is about 150 dpi, the most it can take."
     },
     {
       "id": "thomas-paul",
@@ -1251,8 +1252,6 @@
         }
       ],
       "sort": "Joseph Thomas ",
-      "seeAlso": "ashanth-thomas",
-      "seeAlsoLabel": "the Ashanth Thomas family",
       "indexName": "Thomas Joseph & Family"
     },
     {
@@ -1765,7 +1764,9 @@
               },
               "text": "When many of us came to the United States of America from Kerala, we brought with us more than dreams and hopes for a better future. We also brought our culture, traditions, memories, and most importantly, the Orthodox faith that was passed down to us by our parents and grandparents. It is the faith we grew up with, the faith that has guided us through different stages of our lives, and the faith we now hope to pass on to our children.\n\nStarting a life in a new country came with many changes and challenges. Through it all, we are grateful that we have been able to continue living and growing in our Malankara Orthodox faith. Through SGMOC, we found more than a church. We found a spiritual home and a community where we could pray together, celebrate together, and support one another. Over the years, this parish has become an important part of our life and our journey here in America.\n\nOne of the greatest blessings for us as parents is seeing our children grow up in this same faith. It brings us joy to see them attend Sunday School, participate in Holy Qurbana and church celebrations, and spend time with their church friends. Through these experiences, they are learning about God, our faith, and the traditions that have been part of our families for generations. At the same time, they are building friendships and creating memories that we hope they will carry with them throughout their lives.\n\nAs SGMOC celebrates 50 years, we are especially grateful for those who came before us. Their faith, hard work, and sacrifices gave families like ours a place to call our spiritual home. They passed this faith on to us, and now it is our turn to pass it on to our children. Our hope and prayer is that they will carry it with them wherever life takes them and, one day, pass it on to the generations that follow.",
               "size": "lg",
-              "title": "A Faith We Received, A Faith We Pass On"
+              "title": "A Faith We Received, A Faith We Pass On",
+              "span": true,
+              "photoMax": "4.6in"
             },
             {
               "type": "closing"
@@ -1774,7 +1775,7 @@
         }
       ],
       "sort": "John Jinu ",
-      "layoutNote": "10 Nov: rewritten text \"A Faith We Received.docx\" (older version moved to Old); verse dropped as in the new version.",
+      "layoutNote": "10 Nov: rewritten text \"A Faith We Received.docx\" (older version moved to Old); verse dropped as in the new version. 26 Nov (Manoj DM): title on one line, across the page.",
       "indexName": "Jinu John & Family"
     },
     {
@@ -2498,14 +2499,17 @@
               "photo": {
                 "src": "images/members/blossom-joy/63122.jpg"
               },
-              "text": "My Mummy is the most beautiful person in the whole world: not only her looks from outside but internally her patience and her unconditional love has made me call her, my Queen, my Angel."
+              "text": "My Mummy is the most beautiful person in the whole world: not only her looks from outside but internally her patience and her unconditional love has made me call her, my Queen, my Angel.",
+              "big": true,
+              "textWidth": "2.6in"
             }
           ]
         }
       ],
       "pending": true,
       "sort": "Joy Blossom ",
-      "indexName": "Blossom Joy & Family"
+      "indexName": "Blossom Joy & Family",
+      "layoutNote": "26 Nov (Manoj DM): writing narrower and larger to fill the space beside the photo."
     },
     {
       "id": "v-c-thomas",
@@ -3053,11 +3057,10 @@
           ]
         }
       ],
-      "sort": "Thomas Ashanth ",
-      "seeAlso": "thomas-joseph",
-      "seeAlsoLabel": "the Thomas Joseph family",
+      "sort": "Joseph Thomas 2",
       "approved": true,
-      "indexName": "Ashanth Thomas & Family"
+      "indexName": "Ashanth Thomas & Family",
+      "sortNote": "26 Nov (Manoj DM 1:59 PM): right after Thomas Joseph."
     },
     {
       "id": "raju-geevarghese",
@@ -3073,11 +3076,12 @@
                 {
                   "src": "images/members/raju-geevarghese/pic-1.jpg"
                 }
-              ]
+              ],
+              "grow": 3
             },
             {
               "type": "names",
-              "text": "Raju Geevarghese & Sosamma Raju – Valliyaparampil Family\nDaughter: Somea Samuel • Rinosh Samuel • Zoya Susanne Samuel • Zachary George Samuel\nSon: Romeo Vallias • Ria Ann Kurian • Lucks Vallias • Linneah Vallias\nSon: Sharoon Vallias • Jissa Mary Jose • Steven Vallias • Ameya Mariam Vallias"
+              "text": "Raju Geevarghese & Sosamma Raju – Valliyaparampil Family"
             },
             {
               "type": "text",
@@ -3104,7 +3108,7 @@
           ]
         }
       ],
-      "layoutNote": "Manoj's layout \"Golden Jubilee Family Tribute Page.png\" (Drive folder Raju Geevarghese); poem from \"Raju Geevarghese Poem_Final.docx\" (Molsey, 10 Nov; Raju agreed to the edits). The other two photos were of the typed sheet.",
+      "layoutNote": "Manoj's layout \"Golden Jubilee Family Tribute Page.png\" (Drive folder Raju Geevarghese); poem from \"Raju Geevarghese Poem_Final.docx\" (Molsey, 10 Nov; Raju agreed to the edits). The other two photos were of the typed sheet. 26 Nov (Manoj DM): names cut to the first line (Raju Geevarghese & Sosamma Raju – Valliyaparampil Family); photo bigger in the space.",
       "indexName": "Raju Geevarghese & Family"
     },
     {
@@ -3730,8 +3734,6 @@
       "name": "Kurian Madathil",
       "title": "Kurian Madathil & Family",
       "sort": "Madathil Kurian ",
-      "seeAlso": "mathew-kurian",
-      "seeAlsoLabel": "the Mathew Madathil Kurian family",
       "layoutNote": "Design folder (31 Oct). The memorial text file is named \"After memorial photo\", so the text runs under his photo. Family on top, memorial below, as in the Joys sample. The two text files spell the home place differently: \"Kadampara, Mannar\" and \"Kadapra, Mannar\".",
       "pages": [
         {
@@ -3796,9 +3798,7 @@
       "id": "mathew-kurian",
       "name": "Mathew Madathil Kurian",
       "title": "Mathew Madathil Kurian & Family",
-      "sort": "Kurian Mathew Madathil ",
-      "seeAlso": "kurian-madathil",
-      "seeAlsoLabel": "the Kurian Madathil family",
+      "sort": "Madathil Kurian 2",
       "pages": [
         {
           "blocks": [
@@ -3837,7 +3837,8 @@
         }
       ],
       "approved": true,
-      "indexName": "Mathew Madathil Kurian & Family"
+      "indexName": "Mathew Madathil Kurian & Family",
+      "sortNote": "26 Nov (Manoj DM 1:59 PM): right after Kurian Madathil."
     },
     {
       "id": "abey-jacob",
@@ -4401,7 +4402,7 @@
       "id": "gregory-varghese",
       "name": "Dr. Gregory Varghese",
       "title": "Dr. Gregory Varghese & Family",
-      "sort": "Varghese Gregory ",
+      "sort": "Varghese Raju M 2",
       "layoutNote": "Design folder \"Dr. Gregory Varghese\" (Manoj, 9 Nov): one photo, no text.",
       "pages": [
         {
@@ -4420,7 +4421,8 @@
           ]
         }
       ],
-      "indexName": "Dr. Gregory Varghese & Family"
+      "indexName": "Dr. Gregory Varghese & Family",
+      "sortNote": "26 Nov (Manoj DM 1:59 PM): right after Raju M. Varghese."
     },
     {
       "id": "mathew-abraham",
@@ -4519,7 +4521,7 @@
       "band": "",
       "sort": "Paulose Rev. Fr. Eby ",
       "indexName": "Rev. Fr. Eby Paulose & Family",
-      "layoutNote": "15 Nov (Manoj): family page shows only the family photo, large. Portrait kept in images/ for the Vicar message.",
+      "layoutNote": "15 Nov (Manoj): family page shows only the family photo, large. Portrait kept in images/ for the Vicar message. 26 Nov (Manoj DM): family names moved here from the Vicar message, which now carries only Achen's name.",
       "pages": [
         {
           "blocks": [
@@ -4530,6 +4532,10 @@
                   "src": "images/members/fr-eby-paulose/family.jpg"
                 }
               ]
+            },
+            {
+              "type": "names",
+              "text": "Rev. Fr. Eby Paulose • Anita Ann Paulose\nElizabeth Sarah Paulose • Joshua Geevarghese Paulose • Rebekah Ann Paulose"
             },
             {
               "type": "closing"

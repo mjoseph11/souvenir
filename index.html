@@ -833,6 +833,7 @@
   .m-side .m-photos { flex: 1 1 0; height: 100%; }
   .m-side .m-text { flex: 1 1 0; }
   .m-side .m-text p { font-size: 12pt; line-height: 1.8; color: var(--maroon); }
+  .m-side.big .m-text p { font-size: 17pt; line-height: 1.8; }
   .m-side.plain { align-items: stretch; }
   .m-side.plain .m-text p { font-size: 10.5pt; line-height: 1.65; color: #333; text-align: justify; }
   .m-side.plain .m-text p + p { margin-top: 0.1in; }
@@ -2112,7 +2113,6 @@
       <p class="message-sign" style="margin-top:0.03in;line-height:1.3;padding-right:0.55in">
         With prayers, love, and blessings,<br>
         <strong>Rev. Fr. Eby Paulose</strong><br>
-        <span class="message-family">Anita Ann Paulose &middot; Elizabeth Sarah Paulose<br>Joshua Geevarghese Paulose &middot; Rebekah Ann Paulose</span><br>
         <em>&ldquo;Jesus Christ is the same yesterday, today, and forever.&rdquo; &ndash; Hebrews 13:8</em>
       </p>
     </div>
@@ -2594,7 +2594,7 @@
 <div class="page inner-page org-page">
   <div class="page-header">
     <div class="page-header-title">
-      <h1>History</h1>
+      <h1>Christianity in India</h1>
     </div>
   </div>
 
@@ -2640,7 +2640,7 @@
 <div class="page inner-page org-page">
   <div class="page-header">
     <div class="page-header-title">
-      <h1>History</h1>
+      <h1>Christianity in India</h1>
     </div>
   </div>
 
@@ -3139,7 +3139,12 @@
       .tlx-year { font-size:10.5pt; font-weight:bold; color:var(--maroon); }
       .tlx-date { font-size:8.5pt; font-style:italic; color:#8a6d1a; }
       .tlx-text { font-size:8.8pt; line-height:1.3; color:#333; }
+      /* Faint church behind the timeline (Manoj DM 26 Nov: "adding a transparent church background on the back"); the church front from the Jubilee collage, toned sepia. */
+      .org-page:has(.tlx-cols) .page-content { position:relative; }
+      .tlx-bg { position:absolute; left:0.55in; right:0.55in; bottom:0.3in; width:calc(100% - 1.1in); mix-blend-mode:multiply; z-index:0; pointer-events:none; }
+      .org-page:has(.tlx-cols) .org-el { position:relative; z-index:1; }
     </style>
+    <img class="tlx-bg" src="images/history/church-watermark.jpg" alt="">
     <div class="org-el"><h2 class="org-title">Fifty Years at a Glance</h2></div>
     <div class="org-el"><p class="org-sub">From the first service in Philadelphia to the Golden Jubilee, 1962&ndash;2026</p>
 <div class="org-rule"></div></div>
@@ -3354,7 +3359,7 @@
     </div>
   </div>
   <div class="m-content">
-    <img class="framed-img" src="images/collage/jubilee-collage-1.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:contain">
+    <img class="framed-img" src="images/collage/jubilee-collage-1-full.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:cover">
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3372,7 +3377,7 @@
     </div>
   </div>
   <div class="m-content">
-    <img class="framed-img" src="images/collage/jubilee-collage-2.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:contain">
+    <img class="framed-img" src="images/collage/jubilee-collage-2-full.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:cover">
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3390,7 +3395,7 @@
     </div>
   </div>
   <div class="m-content">
-    <img class="framed-img" src="images/collage/jubilee-collage-3.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:contain">
+    <img class="framed-img" src="images/collage/jubilee-collage-3-full.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:cover">
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3408,7 +3413,7 @@
     </div>
   </div>
   <div class="m-content">
-    <img class="framed-img" src="images/collage/jubilee-collage-4.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:contain">
+    <img class="framed-img" src="images/collage/jubilee-collage-4-full.jpg" alt="Golden Jubilee celebration photographs" style="object-fit:cover">
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -3503,7 +3508,7 @@
      PAGE 56 — IN MEMORIAM: CHURCH MEMBERS
 ════════════════════════════════════════ -->
 <div class="page inner-page">
-  <div class="page-header">
+  <div class="page-header" style="background:#2a2a2a;">
     <div class="page-header-title">
       <h1>In Memoriam</h1>
       <p>Church Members and Loved Ones Remembered &bull; Since 1976</p>
@@ -3601,7 +3606,7 @@
 
     <p class="imm-close">May their memory be eternal.</p>
   </div>
-  <div class="page-footer">
+  <div class="page-footer" style="background:#2a2a2a;">
     <span>St. Gregorios Malankara Orthodox Church</span>
     <span>56</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
@@ -5340,7 +5345,7 @@
     <div class="m-photos fill" style="flex-grow:1.056"><figure class="m-fig" style="flex-grow:0.982"><img src="images/ministries/mission-board/mb-40.jpg" alt="Bibs-n-Bottles gifts, December 2024"><figcaption>Bibs-n-Bottles gifts, December 2024</figcaption></figure><figure class="m-fig" style="flex-grow:1.333"><img src="images/ministries/mission-board/mb-42.jpg" alt="Children helping with the 2025 diaper drive"><figcaption>Children helping with the 2025 diaper drive</figcaption></figure><figure class="m-fig" style="flex-grow:1.335"><img src="images/ministries/mission-board/mb-43.jpg" alt="Care packages for the shelter, 2025"><figcaption>Care packages for the shelter, 2025</figcaption></figure></div>
     <div class="m-photos fill" style="flex-grow:0.995"><figure class="m-fig" style="flex-grow:1.333"><img src="images/ministries/mission-board/mb-44.jpg" alt="Volunteers preparing care packages, 2025"><figcaption>Volunteers preparing care packages, 2025</figcaption></figure><figure class="m-fig" style="flex-grow:1"><img src="images/ministries/mission-board/mb-45.jpg" alt="Carols and crafts at Woodbourne, 2024"><figcaption>Carols and crafts at Woodbourne, 2024</figcaption></figure><figure class="m-fig" style="flex-grow:1.776"><img src="images/ministries/mission-board/mb-46.jpg" alt="Groceries packed at Arm In Arm"><figcaption>Groceries packed at Arm In Arm</figcaption></figure></div>
     <div class="m-photos fill" style="flex-grow:0.957"><figure class="m-fig" style="flex-grow:1.333"><img src="images/ministries/mission-board/mb-48.jpg" alt="Sunday School children with Christmas shoeboxes"><figcaption>Sunday School children with Christmas shoeboxes</figcaption></figure><figure class="m-fig" style="flex-grow:1.335"><img src="images/ministries/mission-board/mb-49.jpg" alt="Shoeboxes ready for delivery, 2025"><figcaption>Shoeboxes ready for delivery, 2025</figcaption></figure><figure class="m-fig" style="flex-grow:1.775"><img src="images/ministries/mission-board/mb-47.jpg" alt="SGMOC volunteers at Arm In Arm, July 2025"><figcaption>SGMOC volunteers at Arm In Arm, July 2025</figcaption></figure></div>
-    <div class="m-photos fill" style="flex-grow:1.000"><figure class="m-fig" style="flex-grow:3.109"><img src="images/ministries/mission-board/mb-55.jpg" alt="Our SGMOC parish family"><figcaption>Our SGMOC parish family</figcaption></figure></div>
+    <div class="m-photos fill" style="flex-grow:1.000"><figure class="m-fig" style="flex-grow:3.109"><img src="images/ministries/mission-board/mb-55.jpg" alt="Our SGMOC parish family" style="object-position:50% 100%"><figcaption>Our SGMOC parish family</figcaption></figure></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -5360,9 +5365,10 @@
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
     <div class="s-stage">
-      <figure class="s-main" style="left:1.50in;top:0.55in;width:4.50in;height:6.94in"><img src="images/members/fr-eby-paulose/family.jpg" alt="Rev. Fr. Eby Paulose &amp; Family"></figure>
-      <div class="s-words" style="left:0.00in;top:2.08in;width:1.38in"><span class="s-script" style="font-size:26pt">Trust</span><span class="s-caps" style="font-size:9.5pt;letter-spacing:1px">In the Lord</span><span class="s-caps" style="font-size:7.5pt;letter-spacing:0.2px">with all your heart</span><i class="s-rule"></i></div>
-      <div class="s-words" style="left:6.12in;top:2.08in;width:1.38in"><span class="s-script" style="font-size:25pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps" style="font-size:7.5pt;letter-spacing:0.2px">that prays together</span><i class="s-rule"></i></div>
+      <figure class="s-main" style="left:1.50in;top:0.18in;width:4.50in;height:6.94in"><img src="images/members/fr-eby-paulose/family.jpg" alt="Rev. Fr. Eby Paulose &amp; Family"></figure>
+      <div class="s-words" style="left:0.00in;top:1.71in;width:1.38in"><span class="s-script" style="font-size:26pt">Trust</span><span class="s-caps" style="font-size:9.5pt;letter-spacing:1px">In the Lord</span><span class="s-caps" style="font-size:7.5pt;letter-spacing:0.2px">with all your heart</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:1.71in;width:1.38in"><span class="s-script" style="font-size:25pt">Prayer</span><span class="s-caps">The family</span><span class="s-caps" style="font-size:7.5pt;letter-spacing:0.2px">that prays together</span><i class="s-rule"></i></div>
+      <p class="m-names s-names">Rev. Fr. Eby Paulose • Anita Ann Paulose<br>Elizabeth Sarah Paulose • Joshua Geevarghese Paulose • Rebekah Ann Paulose</p>
       <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
@@ -6112,8 +6118,8 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-photos"><figure class="m-fig"><img src="images/members/raju-geevarghese/pic-1.jpg" alt="Raju Geevarghese &amp; Family"></figure></div>
-    <p class="m-names">Raju Geevarghese &amp; Sosamma Raju – Valliyaparampil Family<br>Daughter: Somea Samuel • Rinosh Samuel • Zoya Susanne Samuel • Zachary George Samuel<br>Son: Romeo Vallias • Ria Ann Kurian • Lucks Vallias • Linneah Vallias<br>Son: Sharoon Vallias • Jissa Mary Jose • Steven Vallias • Ameya Mariam Vallias</p>
+    <div class="m-photos" style="flex-grow:3"><figure class="m-fig"><img src="images/members/raju-geevarghese/pic-1.jpg" alt="Raju Geevarghese &amp; Family"></figure></div>
+    <p class="m-names">Raju Geevarghese &amp; Sosamma Raju – Valliyaparampil Family</p>
     <div class="m-text size-xs center bare"><p>Kizhavalloor, Konni, Pathanamthitta Dist.<br>Home Parish: St. Peter’s Malankara Orthodox Church, Kizhavalloor (Thumpamon Diocese)<br>Members of SGMOC since 2002</p></div>
     <div class="m-rule"></div>
     <div class="m-text cols poem lang-ml center bare" lang="ml"><p class="m-text-title">അമേരിക്കൻ പരുമല</p><p>രചന: രാജു ഗീവർഗീസ്</p><p>പരുമല തിരുമേനി വാണരുളും<br>പരിശുദ്ധമാം ഈ ബെൻസേലം പള്ളി<br>പതിനായിരങ്ങൾക്ക് ആശ്വാസമാം<br>പരിശുദ്ധാത്മാവിൻ പരിമളത്താൽ</p><p>നിൻ തിരുനാമത്തിൽ സ്ഥാപിതമാം<br>അടിയാരുടെ ഈ കൊച്ചു പള്ളി<br>അൻപത് വർഷം പിൻചെന്നിട്ടും<br>അൻപോട് മുന്നോട്ട് വാണരുളുന്നു</p><p>പതിനായിരങ്ങൾ നിൻ തിരുശേഷിപ്പിൻ<br>കുമ്പിട്ട് കുമ്പിട്ട് നിന്നിടുമ്പോൾ<br>നിൻ തിരു തേജസ്സിൽ ജ്വലിച്ചിടുവാൻ<br>തന്നരുളീടുക കൃപാവരങ്ങൾ</p><p>എന്നാളും എന്നാളും നിൻ പാദത്തിൽ<br>മുട്ടു വണക്കാൻ കൃപ നൽകീടണേ<br>നിൻ കൃപ ഞങ്ങളെ നയിച്ചിടട്ടെ<br>അനശ്വരമാകുന്ന സ്വർഗ്ഗലോകേ</p><p>ലോകത്തിലെങ്ങും പരിമളം വീശും<br>പരുമല സിദ്ധൻ്റെ പരിശുദ്ധിയിൽ<br>ബെൻസേലം പള്ളിയെ അനുഗ്രഹിച്ച്<br>അമേരിക്കൻ പരുമല ആക്കിടണേ!</p></div>
@@ -6525,7 +6531,7 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-badge">Proof copy</div>
   <div class="m-content">
-    <div class="m-article size-lg"><figure class="m-fig"><img src="images/members/jinu-john/Family-Jinu-John.jpg" alt="Jinu John &amp; Family"></figure><h2 class="m-article-title">A Faith We Received, A Faith We Pass On</h2><p>When many of us came to the United States of America from Kerala, we brought with us more than dreams and hopes for a better future. We also brought our culture, traditions, memories, and most importantly, the Orthodox faith that was passed down to us by our parents and grandparents. It is the faith we grew up with, the faith that has guided us through different stages of our lives, and the faith we now hope to pass on to our children.</p><p>Starting a life in a new country came with many changes and challenges. Through it all, we are grateful that we have been able to continue living and growing in our Malankara Orthodox faith. Through SGMOC, we found more than a church. We found a spiritual home and a community where we could pray together, celebrate together, and support one another. Over the years, this parish has become an important part of our life and our journey here in America.</p><p>One of the greatest blessings for us as parents is seeing our children grow up in this same faith. It brings us joy to see them attend Sunday School, participate in Holy Qurbana and church celebrations, and spend time with their church friends. Through these experiences, they are learning about God, our faith, and the traditions that have been part of our families for generations. At the same time, they are building friendships and creating memories that we hope they will carry with them throughout their lives.</p><p>As SGMOC celebrates 50 years, we are especially grateful for those who came before us. Their faith, hard work, and sacrifices gave families like ours a place to call our spiritual home. They passed this faith on to us, and now it is our turn to pass it on to our children. Our hope and prayer is that they will carry it with them wherever life takes them and, one day, pass it on to the generations that follow.</p></div>
+    <div class="m-article span-title size-lg"><h2 class="m-article-title">A Faith We Received, A Faith We Pass On</h2><figure class="m-fig"><img style="max-height:4.6in" src="images/members/jinu-john/Family-Jinu-John.jpg" alt="Jinu John &amp; Family"></figure><p>When many of us came to the United States of America from Kerala, we brought with us more than dreams and hopes for a better future. We also brought our culture, traditions, memories, and most importantly, the Orthodox faith that was passed down to us by our parents and grandparents. It is the faith we grew up with, the faith that has guided us through different stages of our lives, and the faith we now hope to pass on to our children.</p><p>Starting a life in a new country came with many changes and challenges. Through it all, we are grateful that we have been able to continue living and growing in our Malankara Orthodox faith. Through SGMOC, we found more than a church. We found a spiritual home and a community where we could pray together, celebrate together, and support one another. Over the years, this parish has become an important part of our life and our journey here in America.</p><p>One of the greatest blessings for us as parents is seeing our children grow up in this same faith. It brings us joy to see them attend Sunday School, participate in Holy Qurbana and church celebrations, and spend time with their church friends. Through these experiences, they are learning about God, our faith, and the traditions that have been part of our families for generations. At the same time, they are building friendships and creating memories that we hope they will carry with them throughout their lives.</p><p>As SGMOC celebrates 50 years, we are especially grateful for those who came before us. Their faith, hard work, and sacrifices gave families like ours a place to call our spiritual home. They passed this faith on to us, and now it is our turn to pass it on to our children. Our hope and prayer is that they will carry it with them wherever life takes them and, one day, pass it on to the generations that follow.</p></div>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -6644,7 +6650,6 @@
       <p class="m-verse big s-verse">&ldquo;Every good and perfect gift is from above.&rdquo;<br><span>&mdash; James 1:17</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
-    <p class="m-seealso">See also the Ashanth Thomas family &middot; page 208</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -6653,7 +6658,32 @@
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 145 — MEMBER PAGE: Blossom Joy
+     PAGE 145 — MEMBER PAGE: Ashanth Thomas
+════════════════════════════════════════ -->
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Ashanth Thomas &amp; Family</h1>
+    </div>
+  </div>
+  <div class="m-band">Golden Jubilee Family Sponsor</div>
+  <div class="m-content">
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.50in;top:0.71in;width:4.50in;height:6.63in"><img src="images/members/ashanth-thomas/photo.jpg" alt="Ashanth Thomas &amp; Family"></figure>
+      <div class="s-words" style="left:0.00in;top:2.17in;width:1.38in"><span class="s-script" style="font-size:17pt">Community</span><span class="s-caps">One church</span><span class="s-caps">one family</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:6.12in;top:2.17in;width:1.38in"><span class="s-script" style="font-size:25pt">Legacy</span><span class="s-caps">Of love</span><span class="s-caps">and prayer</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>145</span>
+    <span>Golden Jubilee 1976 &ndash; 2026</span>
+  </div>
+</div>
+<!-- ════════════════════════════════════════
+     PAGE 146 — MEMBER PAGE: Blossom Joy
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
@@ -6665,16 +6695,16 @@
   <div class="m-badge">Pending review</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/blossom-joy/63121.jpg" alt="Blossom Joy &amp; Family"></figure></div>
-    <div class="m-side"><div class="m-photos"><figure class="m-fig"><img src="images/members/blossom-joy/63122.jpg" alt="Blossom Joy &amp; Family"></figure></div><div class="m-text center italic bare"><p>My Mummy is the most beautiful person in the whole world: not only her looks from outside but internally her patience and her unconditional love has made me call her, my Queen, my Angel.</p></div></div>
+    <div class="m-side big"><div class="m-photos"><figure class="m-fig"><img src="images/members/blossom-joy/63122.jpg" alt="Blossom Joy &amp; Family"></figure></div><div class="m-text center italic bare" style="max-width:2.6in;margin:0 auto"><p>My Mummy is the most beautiful person in the whole world: not only her looks from outside but internally her patience and her unconditional love has made me call her, my Queen, my Angel.</p></div></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>145</span>
+    <span>146</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 146 — MEMBER PAGE: Jessu Joys
+     PAGE 147 — MEMBER PAGE: Jessu Joys
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -6695,12 +6725,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>146</span>
+    <span>147</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 147 — MEMBER PAGE: Kuruvilla (Saji) Kallelil
+     PAGE 148 — MEMBER PAGE: Kuruvilla (Saji) Kallelil
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
@@ -6716,12 +6746,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>147</span>
+    <span>148</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 148 — MEMBER PAGE: Mathew Kallelil (Biji)
+     PAGE 149 — MEMBER PAGE: Mathew Kallelil (Biji)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -6741,12 +6771,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>148</span>
+    <span>149</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 149 — MEMBER PAGE: Mathew Kandathil
+     PAGE 150 — MEMBER PAGE: Mathew Kandathil
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -6764,12 +6794,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>149</span>
+    <span>150</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 150 — MEMBER PAGE: John Kappil
+     PAGE 151 — MEMBER PAGE: John Kappil
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page ornate photos-1">
   <div class="page-header" style="background:#2a2a2a;">
@@ -6785,12 +6815,12 @@
   </div>
   <div class="page-footer" style="background:#2a2a2a;">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>150</span>
+    <span>151</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 151 — MEMBER PAGE: Varughese Koithottu
+     PAGE 152 — MEMBER PAGE: Varughese Koithottu
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -6810,12 +6840,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>151</span>
+    <span>152</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 152 — MEMBER PAGE: Cherian Koshy
+     PAGE 153 — MEMBER PAGE: Cherian Koshy
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -6835,12 +6865,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>152</span>
+    <span>153</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 153 — MEMBER PAGE: Dr. Poovathoor Koshy
+     PAGE 154 — MEMBER PAGE: Dr. Poovathoor Koshy
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
@@ -6858,12 +6888,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>153</span>
+    <span>154</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 154 — MEMBER PAGE: Jiji Koshy
+     PAGE 155 — MEMBER PAGE: Jiji Koshy
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-3">
   <div class="page-header">
@@ -6880,12 +6910,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>154</span>
+    <span>155</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 155 — MEMBER PAGE: Grace Kuriakose
+     PAGE 156 — MEMBER PAGE: Grace Kuriakose
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -6907,12 +6937,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>155</span>
+    <span>156</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 156 — MEMBER PAGE: Kuruvilla P. Kurian
+     PAGE 157 — MEMBER PAGE: Kuruvilla P. Kurian
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -6924,29 +6954,6 @@
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/kuruvilla-p-kurian/85a5627e-9a99-4927-a28c-fe3be7cee144-Kuruvilla-Kurian.jpg" alt="Kuruvilla P. Kurian &amp; Family"></figure></div>
     <div class="m-text cols bare"><p class="m-text-title">Fifty years of God’s faithfulness — woven into our church family</p><p>Through changing seasons, new buildings, joyful celebrations, and tear-stained prayers, we have walked together, grown together, and carried one another. We are grateful for the generations of love, culture, and community that shaped us — for the friendships that became family, for the memories created in every building, hallway, and sanctuary, and for the grace that met us in both laughter and loss over the years.</p><p>May the story God is writing in us continue to bring Him honor, and may the legacy of this church family keep shining from one generation to the next!</p><p class="m-sign">&mdash; Kuruvilla P. Kurian and family</p></div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>156</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 157 — MEMBER PAGE: Mathew Madathil Kurian
-════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate photos-3">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Mathew Madathil Kurian &amp; Family</h1>
-    </div>
-  </div>
-  <div class="m-band">Golden Jubilee Family Sponsor</div>
-  <div class="m-content">
-    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/mathew-kurian/pic-1.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/mathew-kurian/pic-2.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure><figure class="m-fig"><img src="images/members/mathew-kurian/pic-3.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure><figure class="m-fig"><img src="images/members/mathew-kurian/pic-4.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure></div></div>
-    <div class="m-text center bare balance"><p>Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.</p><p>As we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.</p><p>May God continue to bless our parish in faith, love, and unity for generations to come.</p><p>With love, prayers, and best wishes from our family to yours!</p></div>
-    <p class="m-names">Mathew • Sherin • Allison • Andrew</p>
-    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
-    <p class="m-seealso">See also the Kurian Madathil family &middot; page 160</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -6966,7 +6973,7 @@
   <div class="m-band">Golden Jubilee Family Sponsor</div>
   <div class="m-content">
     <div class="m-photos"><figure class="m-fig"><img src="images/members/mathewkutty-kurian/photo2.jpg" alt="Mathewkutty Kurian &amp; Family"></figure></div>
-    <div class="m-article size-lg"><figure class="m-fig"><img style="max-height:4in" src="images/members/mathewkutty-kurian/photo1.jpg" alt="Mathewkutty Kurian &amp; Family"></figure><p>The Mathew family has been members of this church since 1989. Our journey with the church has been profoundly meaningful, deeply rooted in the teachings of the Orthodox faith. The church community has enriched our lives through its love, guidance, and shared values, fostering a stronger connection with God and one another. We are deeply grateful for the blessings and sense of belonging we have found within this community.</p><p class="m-sign">&mdash; The Mathewkutty Kurian Family</p></div>
+    <div class="m-article size-lg"><figure class="m-fig"><img style="max-height:4.4in" src="images/members/mathewkutty-kurian/photo1-crop.jpg" alt="Mathewkutty Kurian &amp; Family"></figure><p>The Mathew family has been members of this church since 1989. Our journey with the church has been profoundly meaningful, deeply rooted in the teachings of the Orthodox faith. The church community has enriched our lives through its love, guidance, and shared values, fostering a stronger connection with God and one another. We are deeply grateful for the blessings and sense of belonging we have found within this community.</p><p class="m-sign">&mdash; The Mathewkutty Kurian Family</p></div>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
   </div>
   <div class="page-footer">
@@ -7015,7 +7022,6 @@
     <p class="m-eternal">Lord, Have Mercy<br>Upon Us and Help Us</p>
     </section>
     <div class="m-text size-sm center bare"><p>Home Parish: Mannar Martha Mariam Church, Kadapra-Mannar, Niranam, Kerala</p></div>
-    <p class="m-seealso">See also the Mathew Madathil Kurian family &middot; page 157</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -7024,7 +7030,29 @@
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 161 — MEMBER PAGE: Shalom Mammen
+     PAGE 161 — MEMBER PAGE: Mathew Madathil Kurian
+════════════════════════════════════════ -->
+<div class="page inner-page m-page has-band ornate photos-3">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Mathew Madathil Kurian &amp; Family</h1>
+    </div>
+  </div>
+  <div class="m-band">Golden Jubilee Family Sponsor</div>
+  <div class="m-content">
+    <div class="m-photos hero"><div class="m-hero"><figure class="m-fig"><img src="images/members/mathew-kurian/pic-1.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure></div><div class="m-row"><figure class="m-fig"><img src="images/members/mathew-kurian/pic-2.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure><figure class="m-fig"><img src="images/members/mathew-kurian/pic-3.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure><figure class="m-fig"><img src="images/members/mathew-kurian/pic-4.jpg" alt="Mathew Madathil Kurian &amp; Family"></figure></div></div>
+    <div class="m-text center bare balance"><p>Our parish has been a cherished part of our family’s journey—a place where faith has grown, memories have been made, and generations have been blessed.</p><p>As we celebrate this Golden Jubilee, we give thanks for our rich heritage and look forward with faith and hope to the generations yet to come.</p><p>May God continue to bless our parish in faith, love, and unity for generations to come.</p><p>With love, prayers, and best wishes from our family to yours!</p></div>
+    <p class="m-names">Mathew • Sherin • Allison • Andrew</p>
+    <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>161</span>
+    <span>Golden Jubilee 1976 &ndash; 2026</span>
+  </div>
+</div>
+<!-- ════════════════════════════════════════
+     PAGE 162 — MEMBER PAGE: Shalom Mammen
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
@@ -7046,12 +7074,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>161</span>
+    <span>162</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 162 — MEMBER PAGE: Thomas Mammen (1 of 2)
+     PAGE 163 — MEMBER PAGE: Thomas Mammen (1 of 2)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -7067,12 +7095,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>162</span>
+    <span>163</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 163 — MEMBER PAGE: Thomas Mammen (2 of 2)
+     PAGE 164 — MEMBER PAGE: Thomas Mammen (2 of 2)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
@@ -7094,12 +7122,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>163</span>
+    <span>164</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 164 — MEMBER PAGE: Biju Mani
+     PAGE 165 — MEMBER PAGE: Biju Mani
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7121,12 +7149,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>164</span>
+    <span>165</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 165 — MEMBER PAGE: Korah Mani
+     PAGE 166 — MEMBER PAGE: Korah Mani
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7141,12 +7169,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>165</span>
+    <span>166</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 166 — MEMBER PAGE: Ipe Maret
+     PAGE 167 — MEMBER PAGE: Ipe Maret
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7167,12 +7195,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>166</span>
+    <span>167</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 167 — MEMBER PAGE: Nibu Maret
+     PAGE 168 — MEMBER PAGE: Nibu Maret
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7189,16 +7217,16 @@
       <p class="m-verse big s-verse">&ldquo;Children are a heritage from the Lord.&rdquo;<br><span>&mdash; Psalm 127:3</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
-    <p class="m-seealso">See also the Ipe Maret family &middot; page 166</p>
+    <p class="m-seealso">See also the Ipe Maret family &middot; page 167</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>167</span>
+    <span>168</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 168 — MEMBER PAGE: Nithin Maret
+     PAGE 169 — MEMBER PAGE: Nithin Maret
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
@@ -7216,16 +7244,16 @@
       <p class="m-verse big s-verse">&ldquo;Give thanks to the Lord, for he is good; his love endures forever.&rdquo;<br><span>&mdash; Psalm 107:1</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
-    <p class="m-seealso">See also the Ipe Maret family &middot; page 166</p>
+    <p class="m-seealso">See also the Ipe Maret family &middot; page 167</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>168</span>
+    <span>169</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 169 — MEMBER PAGE: Ajo Maret
+     PAGE 170 — MEMBER PAGE: Ajo Maret
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
@@ -7245,16 +7273,16 @@
       <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
-    <p class="m-seealso">See also the Ipe Maret family &middot; page 166</p>
+    <p class="m-seealso">See also the Ipe Maret family &middot; page 167</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>169</span>
+    <span>170</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 170 — MEMBER PAGE: Paul J. Maret
+     PAGE 171 — MEMBER PAGE: Paul J. Maret
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7274,12 +7302,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>170</span>
+    <span>171</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 171 — MEMBER PAGE: Paul C Mathai (1 of 2)
+     PAGE 172 — MEMBER PAGE: Paul C Mathai (1 of 2)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -7295,12 +7323,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>171</span>
+    <span>172</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 172 — MEMBER PAGE: Paul C Mathai (2 of 2)
+     PAGE 173 — MEMBER PAGE: Paul C Mathai (2 of 2)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7321,12 +7349,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>172</span>
+    <span>173</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 173 — MEMBER PAGE: Punnoose Mathai
+     PAGE 174 — MEMBER PAGE: Punnoose Mathai
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
@@ -7352,12 +7380,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>173</span>
+    <span>174</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 174 — MEMBER PAGE: Dr. Mathew Mathew
+     PAGE 175 — MEMBER PAGE: Dr. Mathew Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -7374,12 +7402,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>174</span>
+    <span>175</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 175 — MEMBER PAGE: George Mathew (Biju)
+     PAGE 176 — MEMBER PAGE: George Mathew (Biju)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7399,12 +7427,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>175</span>
+    <span>176</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 176 — MEMBER PAGE: George M. Mathew
+     PAGE 177 — MEMBER PAGE: George M. Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
@@ -7426,12 +7454,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>176</span>
+    <span>177</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 177 — MEMBER PAGE: Prince Mathew
+     PAGE 178 — MEMBER PAGE: Prince Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7451,12 +7479,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>177</span>
+    <span>178</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 178 — MEMBER PAGE: Rajan Mathew
+     PAGE 179 — MEMBER PAGE: Rajan Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
@@ -7477,12 +7505,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>178</span>
+    <span>179</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 179 — MEMBER PAGE: Shajan Mathew
+     PAGE 180 — MEMBER PAGE: Shajan Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -7500,12 +7528,12 @@
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>179</span>
+    <span>180</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 180 — MEMBER PAGE: Shijoy Kulathoor Mathew
+     PAGE 181 — MEMBER PAGE: Shijoy Kulathoor Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7530,12 +7558,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>180</span>
+    <span>181</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 181 — MEMBER PAGE: V. S. Mathew
+     PAGE 182 — MEMBER PAGE: V. S. Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7551,12 +7579,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>181</span>
+    <span>182</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 182 — MEMBER PAGE: Kurien P. Mathew
+     PAGE 183 — MEMBER PAGE: Kurien P. Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page ornate designed-page photos-1">
   <div class="page-header">
@@ -7569,12 +7597,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>182</span>
+    <span>183</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 183 — MEMBER PAGE: Vinesh Mathew
+     PAGE 184 — MEMBER PAGE: Vinesh Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
@@ -7589,12 +7617,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>183</span>
+    <span>184</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 184 — MEMBER PAGE: Vinit Mathew
+     PAGE 185 — MEMBER PAGE: Vinit Mathew
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
@@ -7608,12 +7636,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>184</span>
+    <span>185</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 185 — MEMBER PAGE: Basil Milton
+     PAGE 186 — MEMBER PAGE: Basil Milton
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7628,12 +7656,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>185</span>
+    <span>186</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 186 — MEMBER PAGE: Sarath Moses
+     PAGE 187 — MEMBER PAGE: Sarath Moses
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7653,12 +7681,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>186</span>
+    <span>187</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 187 — MEMBER PAGE: Patrick Mountney
+     PAGE 188 — MEMBER PAGE: Patrick Mountney
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7678,12 +7706,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>187</span>
+    <span>188</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 188 — MEMBER PAGE: K. T. Ninan
+     PAGE 189 — MEMBER PAGE: K. T. Ninan
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate designed-page photos-1">
   <div class="page-header">
@@ -7698,12 +7726,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>188</span>
+    <span>189</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 189 — MEMBER PAGE: Mathew Ninan
+     PAGE 190 — MEMBER PAGE: Mathew Ninan
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7724,12 +7752,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>189</span>
+    <span>190</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 190 — MEMBER PAGE: Richi Oommen
+     PAGE 191 — MEMBER PAGE: Richi Oommen
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7750,12 +7778,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>190</span>
+    <span>191</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 191 — MEMBER PAGE: David & Naomi Palmer
+     PAGE 192 — MEMBER PAGE: David & Naomi Palmer
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -7773,12 +7801,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>191</span>
+    <span>192</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 192 — MEMBER PAGE: Benson Varghese Panicker
+     PAGE 193 — MEMBER PAGE: Benson Varghese Panicker
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
@@ -7797,12 +7825,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>192</span>
+    <span>193</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 193 — MEMBER PAGE: John Parackal
+     PAGE 194 — MEMBER PAGE: John Parackal
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7823,12 +7851,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>193</span>
+    <span>194</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 194 — MEMBER PAGE: Ninan Parel
+     PAGE 195 — MEMBER PAGE: Ninan Parel
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7850,12 +7878,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>194</span>
+    <span>195</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 195 — MEMBER PAGE: Thomas Paul
+     PAGE 196 — MEMBER PAGE: Thomas Paul
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-2">
   <div class="page-header">
@@ -7872,12 +7900,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>195</span>
+    <span>196</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 196 — MEMBER PAGE: Dr. Dustin Paul
+     PAGE 197 — MEMBER PAGE: Dr. Dustin Paul
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7897,12 +7925,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>196</span>
+    <span>197</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 197 — MEMBER PAGE: Ajay Peter
+     PAGE 198 — MEMBER PAGE: Ajay Peter
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7922,12 +7950,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>197</span>
+    <span>198</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 198 — MEMBER PAGE: Arun Philip
+     PAGE 199 — MEMBER PAGE: Arun Philip
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -7948,12 +7976,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>198</span>
+    <span>199</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 199 — MEMBER PAGE: Jacob Philip
+     PAGE 200 — MEMBER PAGE: Jacob Philip
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -7975,12 +8003,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>199</span>
+    <span>200</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 200 — MEMBER PAGE: Joseph (Jiji) Philip
+     PAGE 201 — MEMBER PAGE: Joseph (Jiji) Philip
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
@@ -8002,12 +8030,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>200</span>
+    <span>201</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 201 — MEMBER PAGE: Dr. T. V. Philip
+     PAGE 202 — MEMBER PAGE: Dr. T. V. Philip
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-3">
   <div class="page-header">
@@ -8025,12 +8053,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>201</span>
+    <span>202</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 202 — MEMBER PAGE: Shiju Poovathoor
+     PAGE 203 — MEMBER PAGE: Shiju Poovathoor
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-2">
   <div class="page-header">
@@ -8051,12 +8079,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>202</span>
+    <span>203</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 203 — MEMBER PAGE: Arun Raju
+     PAGE 204 — MEMBER PAGE: Arun Raju
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate designed-page photos-3">
   <div class="page-header">
@@ -8070,12 +8098,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>203</span>
+    <span>204</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 204 — MEMBER PAGE: Manoj Samuel
+     PAGE 205 — MEMBER PAGE: Manoj Samuel
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -8095,12 +8123,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>204</span>
+    <span>205</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 205 — MEMBER PAGE: Raju Sankarathil
+     PAGE 206 — MEMBER PAGE: Raju Sankarathil
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -8121,12 +8149,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>205</span>
+    <span>206</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 206 — MEMBER PAGE: Yohannan Sankarathil
+     PAGE 207 — MEMBER PAGE: Yohannan Sankarathil
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-0">
   <div class="page-header">
@@ -8149,12 +8177,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>206</span>
+    <span>207</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 207 — MEMBER PAGE: Alexander Thankachan
+     PAGE 208 — MEMBER PAGE: Alexander Thankachan
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -8171,32 +8199,6 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
       <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
     </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>207</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 208 — MEMBER PAGE: Ashanth Thomas
-════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page photos-1">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Ashanth Thomas &amp; Family</h1>
-    </div>
-  </div>
-  <div class="m-band">Golden Jubilee Family Sponsor</div>
-  <div class="m-content">
-    <div class="s-stage">
-      <figure class="s-main" style="left:1.50in;top:0.71in;width:4.50in;height:6.63in"><img src="images/members/ashanth-thomas/photo.jpg" alt="Ashanth Thomas &amp; Family"></figure>
-      <div class="s-words" style="left:0.00in;top:2.17in;width:1.38in"><span class="s-script" style="font-size:17pt">Community</span><span class="s-caps">One church</span><span class="s-caps">one family</span><i class="s-rule"></i></div>
-      <div class="s-words" style="left:6.12in;top:2.17in;width:1.38in"><span class="s-script" style="font-size:25pt">Legacy</span><span class="s-caps">Of love</span><span class="s-caps">and prayer</span><i class="s-rule"></i></div>
-      <p class="m-verse big s-verse">&ldquo;Love one another deeply, from the heart.&rdquo;<br><span>&mdash; 1 Peter 1:22</span></p>
-      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
-    </div>
-    <p class="m-seealso">See also the Thomas Joseph family &middot; page 144</p>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -8456,33 +8458,7 @@ And there you will remain, until we meet again.</p></div>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 219 — MEMBER PAGE: Dr. Gregory Varghese
-════════════════════════════════════════ -->
-<div class="page inner-page m-page has-band ornate styled-page photos-1">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Dr. Gregory Varghese &amp; Family</h1>
-    </div>
-  </div>
-  <div class="m-band">Golden Jubilee Family Sponsor</div>
-  <div class="m-badge">Proof copy</div>
-  <div class="m-content">
-    <div class="s-stage">
-      <figure class="s-main" style="left:1.44in;top:0.10in;width:4.61in;height:6.15in"><img src="images/members/gregory-varghese/family-2026-11.jpg" alt="Dr. Gregory Varghese &amp; Family"></figure>
-      <div class="s-words" style="left:0.35in;top:6.50in;width:3.20in"><span class="s-script" style="font-size:30pt">Hope</span><span class="s-caps">An anchor</span><span class="s-caps">for the soul</span><i class="s-rule"></i></div>
-      <div class="s-words" style="left:3.95in;top:6.50in;width:3.20in"><span class="s-script" style="font-size:30pt">Blessings</span><span class="s-caps">Counted</span><span class="s-caps">one by one</span><i class="s-rule"></i></div>
-      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
-      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
-    </div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>219</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 220 — MEMBER PAGE: John Varghese
+     PAGE 219 — MEMBER PAGE: John Varghese
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-3">
   <div class="page-header">
@@ -8502,12 +8478,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>220</span>
+    <span>219</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 221 — MEMBER PAGE: Kurian P. Varghese
+     PAGE 220 — MEMBER PAGE: Kurian P. Varghese
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-3">
   <div class="page-header">
@@ -8524,12 +8500,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>221</span>
+    <span>220</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 222 — MEMBER PAGE: Mathew Varghese (Wilson)
+     PAGE 221 — MEMBER PAGE: Mathew Varghese (Wilson)
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate styled-page photos-1">
   <div class="page-header">
@@ -8551,12 +8527,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>222</span>
+    <span>221</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 223 — MEMBER PAGE: Raju M. Varghese
+     PAGE 222 — MEMBER PAGE: Raju M. Varghese
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page has-band ornate photos-1">
   <div class="page-header">
@@ -8570,6 +8546,32 @@ And there you will remain, until we meet again.</p></div>
     <div class="m-photos"><figure class="m-fig"><img src="images/members/raju-m-varghese/photo.jpg" alt="Raju M. Varghese &amp; Family"></figure></div>
     <div class="m-text bare"><p>Raju M. Varghese and Aleyamma (Alice) Raju immigrated to the United States in 1975 and settled in Philadelphia, Pennsylvania. They are blessed with three children and five grandchildren. Both were among the founding members of the first Malankara Orthodox Church in Philadelphia. Raju M. Varghese served as the Lay Trustee of the American Diocese and was a member of the Malankara Association Managing Committee for 22 years (1985–2007). He currently serves as a member of the Board of Directors of St. Gregorios Malankara Orthodox Church in Bensalem, Pennsylvania.</p></div>
     <p class="m-closing">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>222</span>
+    <span>Golden Jubilee 1976 &ndash; 2026</span>
+  </div>
+</div>
+<!-- ════════════════════════════════════════
+     PAGE 223 — MEMBER PAGE: Dr. Gregory Varghese
+════════════════════════════════════════ -->
+<div class="page inner-page m-page has-band ornate styled-page photos-1">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Dr. Gregory Varghese &amp; Family</h1>
+    </div>
+  </div>
+  <div class="m-band">Golden Jubilee Family Sponsor</div>
+  <div class="m-badge">Proof copy</div>
+  <div class="m-content">
+    <div class="s-stage">
+      <figure class="s-main" style="left:1.44in;top:0.10in;width:4.61in;height:6.15in"><img src="images/members/gregory-varghese/family-2026-11.jpg" alt="Dr. Gregory Varghese &amp; Family"></figure>
+      <div class="s-words" style="left:0.35in;top:6.50in;width:3.20in"><span class="s-script" style="font-size:30pt">Hope</span><span class="s-caps">An anchor</span><span class="s-caps">for the soul</span><i class="s-rule"></i></div>
+      <div class="s-words" style="left:3.95in;top:6.50in;width:3.20in"><span class="s-script" style="font-size:30pt">Blessings</span><span class="s-caps">Counted</span><span class="s-caps">one by one</span><i class="s-rule"></i></div>
+      <p class="m-verse big s-verse">&ldquo;The Lord has done great things for us, and we are filled with joy.&rdquo;<br><span>&mdash; Psalm 126:3</span></p>
+      <p class="m-closing s-close">Celebrating SGMOC&rsquo;s Golden Jubilee &bull; 1976&ndash;2026</p>
+    </div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -8745,7 +8747,25 @@ And there you will remain, until we meet again.</p></div>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 231 — SPONSOR AD: Alma Digital Vision
+     PAGE 231 — SPONSOR AD: Mable Philip — Every Home Realtors
+════════════════════════════════════════ -->
+<div class="page inner-page m-page m-ad">
+  <div class="page-header">
+    <div class="page-header-title">
+      <h1>Golden Jubilee Sponsor</h1>
+    </div>
+  </div>
+  <div class="m-content">
+    <div class="m-photos plain"><figure class="m-fig"><img src="images/members/sponsorship/mable-philip.png" alt="Mable Philip — Every Home Realtors"></figure></div>
+  </div>
+  <div class="page-footer">
+    <span>St. Gregorios Malankara Orthodox Church</span>
+    <span>231</span>
+    <span>Golden Jubilee 1976 &ndash; 2026</span>
+  </div>
+</div>
+<!-- ════════════════════════════════════════
+     PAGE 232 — SPONSOR AD: Alma Digital Vision
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page m-ad">
   <div class="page-header">
@@ -8758,12 +8778,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>231</span>
+    <span>232</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 232 — SPONSOR AD: Molly Mathew — Conquer Your Future
+     PAGE 233 — SPONSOR AD: Molly Mathew — Conquer Your Future
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page m-ad">
   <div class="page-header">
@@ -8776,12 +8796,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>232</span>
+    <span>233</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 233 — SPONSOR AD: Malabar Catering
+     PAGE 234 — SPONSOR AD: Malabar Catering
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page m-ad">
   <div class="page-header">
@@ -8794,12 +8814,12 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>233</span>
+    <span>234</span>
     <span>Golden Jubilee 1976 &ndash; 2026</span>
   </div>
 </div>
 <!-- ════════════════════════════════════════
-     PAGE 234 — SPONSOR AD: David Samuel — State Farm
+     PAGE 235 — SPONSOR AD: David Samuel — State Farm
 ════════════════════════════════════════ -->
 <div class="page inner-page m-page m-ad">
   <div class="page-header">
@@ -8809,24 +8829,6 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="m-content">
     <div class="m-photos plain"><figure class="m-fig"><img src="images/members/sponsorship/state-farm-david-samuel.png" alt="David Samuel — State Farm"></figure></div>
-  </div>
-  <div class="page-footer">
-    <span>St. Gregorios Malankara Orthodox Church</span>
-    <span>234</span>
-    <span>Golden Jubilee 1976 &ndash; 2026</span>
-  </div>
-</div>
-<!-- ════════════════════════════════════════
-     PAGE 235 — SPONSOR AD: Mable Philip — Every Home Realtors
-════════════════════════════════════════ -->
-<div class="page inner-page m-page m-ad">
-  <div class="page-header">
-    <div class="page-header-title">
-      <h1>Golden Jubilee Sponsor</h1>
-    </div>
-  </div>
-  <div class="m-content">
-    <div class="m-photos plain"><figure class="m-fig"><img src="images/members/sponsorship/mable-philip.png" alt="Mable Philip — Every Home Realtors"></figure></div>
   </div>
   <div class="page-footer">
     <span>St. Gregorios Malankara Orthodox Church</span>
@@ -8976,11 +8978,11 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>Dr. Ashok Joseph &amp; Family</span><span>142</span></p>
       <p class="m-index-row"><span>Mathew Joseph &amp; Family</span><span>143</span></p>
       <p class="m-index-row"><span>Thomas Joseph &amp; Family</span><span>144</span></p>
-      <p class="m-index-row"><span>Blossom Joy &amp; Family</span><span>145</span></p>
-      <p class="m-index-row"><span>Jessu Joys &amp; Family</span><span>146</span></p>
+      <p class="m-index-row"><span>Ashanth Thomas &amp; Family</span><span>145</span></p>
+      <p class="m-index-row"><span>Blossom Joy &amp; Family</span><span>146</span></p>
+      <p class="m-index-row"><span>Jessu Joys &amp; Family</span><span>147</span></p>
       <p class="m-index-row"><span>The Kaleeckal Family</span><span>99</span></p>
-      <p class="m-index-row"><span>Saji and Glory's Family (Kallelil)</span><span>147</span></p>
-      <p class="m-index-row"><span>Mathew Kallelil &amp; Family</span><span>148</span></p>
+      <p class="m-index-row"><span>Saji and Glory's Family (Kallelil)</span><span>148</span></p>
     </div>
   </div>
   <div class="page-footer">
@@ -9000,68 +9002,68 @@ And there you will remain, until we meet again.</p></div>
   </div>
   <div class="m-content">
     <div class="m-index">
-      <p class="m-index-row"><span>Dr. Mathew Kandathil &amp; Family</span><span>149</span></p>
-      <p class="m-index-row"><span>In Loving Memory — Kappil Family</span><span>150</span></p>
-      <p class="m-index-row"><span>Varughese Koithottu &amp; Family</span><span>151</span></p>
-      <p class="m-index-row"><span>Cherian Koshy &amp; Family</span><span>152</span></p>
-      <p class="m-index-row"><span>Dr. Poovathoor Koshy &amp; Mrs. Baby Koshy</span><span>153</span></p>
-      <p class="m-index-row"><span>Jiji Koshy &amp; Family</span><span>154</span></p>
-      <p class="m-index-row"><span>The Kuriakose Family</span><span>155</span></p>
-      <p class="m-index-row"><span>Kuruvilla P. Kurian &amp; Family</span><span>156</span></p>
-      <p class="m-index-row"><span>Mathew Madathil Kurian &amp; Family</span><span>157</span></p>
+      <p class="m-index-row"><span>Mathew Kallelil &amp; Family</span><span>149</span></p>
+      <p class="m-index-row"><span>Dr. Mathew Kandathil &amp; Family</span><span>150</span></p>
+      <p class="m-index-row"><span>In Loving Memory — Kappil Family</span><span>151</span></p>
+      <p class="m-index-row"><span>Varughese Koithottu &amp; Family</span><span>152</span></p>
+      <p class="m-index-row"><span>Cherian Koshy &amp; Family</span><span>153</span></p>
+      <p class="m-index-row"><span>Dr. Poovathoor Koshy &amp; Mrs. Baby Koshy</span><span>154</span></p>
+      <p class="m-index-row"><span>Jiji Koshy &amp; Family</span><span>155</span></p>
+      <p class="m-index-row"><span>The Kuriakose Family</span><span>156</span></p>
+      <p class="m-index-row"><span>Kuruvilla P. Kurian &amp; Family</span><span>157</span></p>
       <p class="m-index-row"><span>Mathewkutty Kurian &amp; Family</span><span>158</span></p>
       <p class="m-index-row"><span>Rev. Fr. Alexander Kurien</span><span>97</span></p>
       <p class="m-index-row"><span>Allen Kuruvila &amp; Family</span><span>159</span></p>
       <p class="m-index-row"><span>Kurian Madathil &amp; Family</span><span>160</span></p>
-      <p class="m-index-row"><span>Shalom, Mikhaila &amp; Eden Mammen</span><span>161</span></p>
-      <p class="m-index-row"><span>Thomas Mammen &amp; Family</span><span>162–163</span></p>
-      <p class="m-index-row"><span>Biju Mani &amp; Family</span><span>164</span></p>
+      <p class="m-index-row"><span>Mathew Madathil Kurian &amp; Family</span><span>161</span></p>
+      <p class="m-index-row"><span>Shalom, Mikhaila &amp; Eden Mammen</span><span>162</span></p>
+      <p class="m-index-row"><span>Thomas Mammen &amp; Family</span><span>163–164</span></p>
+      <p class="m-index-row"><span>Biju Mani &amp; Family</span><span>165</span></p>
       <p class="m-index-row"><span>Cherian Mani &amp; Family</span><span>102</span></p>
       <p class="m-index-row"><span>Late Dn. Markose Mani</span><span>55</span></p>
-      <p class="m-index-row"><span>Korah Mani &amp; Family</span><span>165</span></p>
-      <p class="m-index-row"><span>Ipe Maret &amp; Family</span><span>166</span></p>
-      <p class="m-index-row"><span>Nibu Maret &amp; Family</span><span>167</span></p>
-      <p class="m-index-row"><span>Nithin Maret &amp; Family</span><span>168</span></p>
-      <p class="m-index-row"><span>Ajo Maret &amp; Family</span><span>169</span></p>
-      <p class="m-index-row"><span>Paul J. Maret &amp; Family</span><span>170</span></p>
-      <p class="m-index-row"><span>Paul C Mathai &amp; Family</span><span>171–172</span></p>
-      <p class="m-index-row"><span>Punnoose Mathai &amp; Family</span><span>173</span></p>
+      <p class="m-index-row"><span>Korah Mani &amp; Family</span><span>166</span></p>
+      <p class="m-index-row"><span>Ipe Maret &amp; Family</span><span>167</span></p>
+      <p class="m-index-row"><span>Nibu Maret &amp; Family</span><span>168</span></p>
+      <p class="m-index-row"><span>Nithin Maret &amp; Family</span><span>169</span></p>
+      <p class="m-index-row"><span>Ajo Maret &amp; Family</span><span>170</span></p>
+      <p class="m-index-row"><span>Paul J. Maret &amp; Family</span><span>171</span></p>
+      <p class="m-index-row"><span>Paul C Mathai &amp; Family</span><span>172–173</span></p>
+      <p class="m-index-row"><span>Punnoose Mathai &amp; Family</span><span>174</span></p>
       <p class="m-index-row"><span>Late Very Rev. Fr. K. Mathai Cor Episcopos</span><span>8</span></p>
-      <p class="m-index-row"><span>Dr. Mathew Mathew &amp; Family</span><span>174</span></p>
-      <p class="m-index-row"><span>George Mathew &amp; Family</span><span>175</span></p>
-      <p class="m-index-row"><span>George M. Mathew &amp; Family</span><span>176</span></p>
-      <p class="m-index-row"><span>Prince Mathew &amp; Family</span><span>177</span></p>
-      <p class="m-index-row"><span>Dr. Rajan Mathew &amp; Family</span><span>178</span></p>
-      <p class="m-index-row"><span>Shajan Mathew &amp; Family</span><span>179</span></p>
-      <p class="m-index-row"><span>Shijoy Kulathoor Mathew &amp; Family</span><span>180</span></p>
-      <p class="m-index-row"><span>V. S. Mathew &amp; Family</span><span>181</span></p>
-      <p class="m-index-row"><span>In Loving Memory — Kurien P. Mathew</span><span>182</span></p>
-      <p class="m-index-row"><span>The Mathew Family (Vinit &amp; Vinesh Mathew)</span><span>183</span></p>
-      <p class="m-index-row"><span>The Milton Family</span><span>185</span></p>
-      <p class="m-index-row"><span>Sarath Moses &amp; Family</span><span>186</span></p>
-      <p class="m-index-row"><span>Patrick Mountney &amp; Family</span><span>187</span></p>
-      <p class="m-index-row"><span>K. T. Ninan &amp; Saramma Ninan</span><span>188</span></p>
-      <p class="m-index-row"><span>Mathew Ninan &amp; Family</span><span>189</span></p>
-      <p class="m-index-row"><span>Richi Oommen &amp; Family</span><span>190</span></p>
-      <p class="m-index-row"><span>David &amp; Naomi Palmer</span><span>191</span></p>
-      <p class="m-index-row"><span>Benson Varghese Panicker &amp; Family</span><span>192</span></p>
-      <p class="m-index-row"><span>John Parackal &amp; Family</span><span>193</span></p>
-      <p class="m-index-row"><span>Ninan Parel &amp; Family</span><span>194</span></p>
-      <p class="m-index-row"><span>Thomas Paul &amp; Family</span><span>195</span></p>
-      <p class="m-index-row"><span>Dr. Dustin Paul &amp; Family</span><span>196</span></p>
+      <p class="m-index-row"><span>Dr. Mathew Mathew &amp; Family</span><span>175</span></p>
+      <p class="m-index-row"><span>George Mathew &amp; Family</span><span>176</span></p>
+      <p class="m-index-row"><span>George M. Mathew &amp; Family</span><span>177</span></p>
+      <p class="m-index-row"><span>Prince Mathew &amp; Family</span><span>178</span></p>
+      <p class="m-index-row"><span>Dr. Rajan Mathew &amp; Family</span><span>179</span></p>
+      <p class="m-index-row"><span>Shajan Mathew &amp; Family</span><span>180</span></p>
+      <p class="m-index-row"><span>Shijoy Kulathoor Mathew &amp; Family</span><span>181</span></p>
+      <p class="m-index-row"><span>V. S. Mathew &amp; Family</span><span>182</span></p>
+      <p class="m-index-row"><span>In Loving Memory — Kurien P. Mathew</span><span>183</span></p>
+      <p class="m-index-row"><span>The Mathew Family (Vinit &amp; Vinesh Mathew)</span><span>184</span></p>
+      <p class="m-index-row"><span>The Milton Family</span><span>186</span></p>
+      <p class="m-index-row"><span>Sarath Moses &amp; Family</span><span>187</span></p>
+      <p class="m-index-row"><span>Patrick Mountney &amp; Family</span><span>188</span></p>
+      <p class="m-index-row"><span>K. T. Ninan &amp; Saramma Ninan</span><span>189</span></p>
+      <p class="m-index-row"><span>Mathew Ninan &amp; Family</span><span>190</span></p>
+      <p class="m-index-row"><span>Richi Oommen &amp; Family</span><span>191</span></p>
+      <p class="m-index-row"><span>David &amp; Naomi Palmer</span><span>192</span></p>
+      <p class="m-index-row"><span>Benson Varghese Panicker &amp; Family</span><span>193</span></p>
+      <p class="m-index-row"><span>John Parackal &amp; Family</span><span>194</span></p>
+      <p class="m-index-row"><span>Ninan Parel &amp; Family</span><span>195</span></p>
+      <p class="m-index-row"><span>Thomas Paul &amp; Family</span><span>196</span></p>
+      <p class="m-index-row"><span>Dr. Dustin Paul &amp; Family</span><span>197</span></p>
       <p class="m-index-row"><span>Rev. Fr. Eby Paulose &amp; Family</span><span>96</span></p>
-      <p class="m-index-row"><span>Ajay Peter &amp; Family</span><span>197</span></p>
-      <p class="m-index-row"><span>Late Aniyan &amp; Suja Philip &amp; Family</span><span>198</span></p>
-      <p class="m-index-row"><span>Jacob Philip &amp; Family</span><span>199</span></p>
-      <p class="m-index-row"><span>Joseph (Jiji) Philip &amp; Family</span><span>200</span></p>
-      <p class="m-index-row"><span>Dr. T. V. Philip &amp; Family</span><span>201</span></p>
-      <p class="m-index-row"><span>Shiju Poovathoor &amp; Family</span><span>202</span></p>
-      <p class="m-index-row"><span>Arun Raju &amp; Family</span><span>203</span></p>
-      <p class="m-index-row"><span>Manoj Samuel &amp; Family</span><span>204</span></p>
-      <p class="m-index-row"><span>Raju Sankarathil &amp; Family</span><span>205</span></p>
-      <p class="m-index-row"><span>Yohannan Sankarathil &amp; Family</span><span>206</span></p>
-      <p class="m-index-row"><span>Alexander Thankachan &amp; Family</span><span>207</span></p>
-      <p class="m-index-row"><span>Ashanth Thomas &amp; Family</span><span>208</span></p>
+      <p class="m-index-row"><span>Ajay Peter &amp; Family</span><span>198</span></p>
+      <p class="m-index-row"><span>Late Aniyan &amp; Suja Philip &amp; Family</span><span>199</span></p>
+      <p class="m-index-row"><span>Jacob Philip &amp; Family</span><span>200</span></p>
+      <p class="m-index-row"><span>Joseph (Jiji) Philip &amp; Family</span><span>201</span></p>
+      <p class="m-index-row"><span>Dr. T. V. Philip &amp; Family</span><span>202</span></p>
+      <p class="m-index-row"><span>Shiju Poovathoor &amp; Family</span><span>203</span></p>
+      <p class="m-index-row"><span>Arun Raju &amp; Family</span><span>204</span></p>
+      <p class="m-index-row"><span>Manoj Samuel &amp; Family</span><span>205</span></p>
+      <p class="m-index-row"><span>Raju Sankarathil &amp; Family</span><span>206</span></p>
+      <p class="m-index-row"><span>Yohannan Sankarathil &amp; Family</span><span>207</span></p>
+      <p class="m-index-row"><span>Alexander Thankachan &amp; Family</span><span>208</span></p>
       <p class="m-index-row"><span>Easo &amp; Susamma Thomas</span><span>209</span></p>
       <p class="m-index-row"><span>Mathew Thomas &amp; Family</span><span>210</span></p>
       <p class="m-index-row"><span>Mathews Thomas (Bijoy) &amp; Family</span><span>211</span></p>
@@ -9072,11 +9074,11 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>Suchin Thompson &amp; Family</span><span>216</span></p>
       <p class="m-index-row"><span>Babu Varghese &amp; Family</span><span>217</span></p>
       <p class="m-index-row"><span>George Varghese &amp; Family</span><span>218</span></p>
-      <p class="m-index-row"><span>Dr. Gregory Varghese &amp; Family</span><span>219</span></p>
-      <p class="m-index-row"><span>John Varghese &amp; Family</span><span>220</span></p>
-      <p class="m-index-row"><span>Kurian P. Varghese &amp; Family</span><span>221</span></p>
-      <p class="m-index-row"><span>Mathew Varghese &amp; Family</span><span>222</span></p>
-      <p class="m-index-row"><span>Raju M. Varghese &amp; Family</span><span>223</span></p>
+      <p class="m-index-row"><span>John Varghese &amp; Family</span><span>219</span></p>
+      <p class="m-index-row"><span>Kurian P. Varghese &amp; Family</span><span>220</span></p>
+      <p class="m-index-row"><span>Mathew Varghese &amp; Family</span><span>221</span></p>
+      <p class="m-index-row"><span>Raju M. Varghese &amp; Family</span><span>222</span></p>
+      <p class="m-index-row"><span>Dr. Gregory Varghese &amp; Family</span><span>223</span></p>
       <p class="m-index-row"><span>Sujith Varghese &amp; Family</span><span>224</span></p>
       <p class="m-index-row"><span>Vinu Varghese &amp; Family</span><span>225</span></p>
       <p class="m-index-row"><span>Vivin Varghese &amp; Family</span><span>226</span></p>
@@ -9087,11 +9089,11 @@ And there you will remain, until we meet again.</p></div>
       <p class="m-index-row"><span>Binumon Yohannan &amp; Family</span><span>229</span></p>
       <p class="m-index-row"><span>Dr. Zach &amp; Sunitha Zacharia &amp; Family</span><span>230</span></p>
       <p class="m-index-heading">Sponsors</p>
-      <p class="m-index-row"><span>Alma Digital Vision — Jiji Koshy</span><span>231</span></p>
-      <p class="m-index-row"><span>Molly Mathew — Conquer Your Future</span><span>232</span></p>
-      <p class="m-index-row"><span>Malabar Catering</span><span>233</span></p>
-      <p class="m-index-row"><span>David Samuel — State Farm</span><span>234</span></p>
-      <p class="m-index-row"><span>Mable Philip — Every Home Realtors</span><span>235</span></p>
+      <p class="m-index-row"><span>Mable Philip — Every Home Realtors</span><span>231</span></p>
+      <p class="m-index-row"><span>Alma Digital Vision — Jiji Koshy</span><span>232</span></p>
+      <p class="m-index-row"><span>Molly Mathew — Conquer Your Future</span><span>233</span></p>
+      <p class="m-index-row"><span>Malabar Catering</span><span>234</span></p>
+      <p class="m-index-row"><span>David Samuel — State Farm</span><span>235</span></p>
       <p class="m-index-row"><span>CPA</span><span>236</span></p>
       <p class="m-index-row"><span>Fluitron — Thomas Joseph</span><span>237</span></p>
     </div>

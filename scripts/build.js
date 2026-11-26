@@ -176,7 +176,10 @@ const BLOCKS = {
       const title = b.title ? `<p class="m-text-title">${heading(b.title)}</p>` : '';
       return `<div class="m-side plain"${grow}><div class="m-photos stack"${w}>${figs}</div><div class="m-text bare">${title}${body}</div></div>`;
     }
-    return `<div class="m-side"${grow}><div class="m-photos">${figure(b.photo, ctx.alt)}</div><div class="m-text center italic bare">${body}</div></div>`;
+    // "big": larger writing; "textWidth": narrower writing, centred in its column
+    // (Blossom Joy, Manoj 26 Nov: "reduce the text section width ... increase text size").
+    const tw = b.textWidth ? ` style="max-width:${esc(b.textWidth)};margin:0 auto"` : '';
+    return `<div class="m-side${b.big ? ' big' : ''}"${grow}><div class="m-photos">${figure(b.photo, ctx.alt)}</div><div class="m-text center italic bare"${tw}>${body}</div></div>`;
   },
   names: (b) => `<p class="m-names">${lines(b.text).map(esc).join('<br>')}</p>`,
   verse: (b) =>

@@ -2,6 +2,12 @@
   "_comment": "Sponsor advertisements, placed together at the end of the book by scripts/build.js (data/outline.json \"ads\" item; Manoj, 3 Nov 2026).",
   "ads": [
     {
+      "id": "mable-philip",
+      "name": "Mable Philip — Every Home Realtors",
+      "src": "images/members/sponsorship/mable-philip.png",
+      "note": "Drive Design/Sponsorship 'Mable_Philip_Jubilee_Sponsor_Original_Photos - Mable Philip.png' (1024x1536). Missed until Manoj, 19 Nov 8:06 AM. 26 Nov (Manoj DM 1:59 PM): first ad, as it is also a family page."
+    },
+    {
       "id": "alma-digital-vision",
       "name": "Alma Digital Vision",
       "src": "images/members/sponsorship/alma.jpg",
@@ -28,12 +34,6 @@
       "name": "David Samuel — State Farm",
       "src": "images/members/sponsorship/state-farm-david-samuel.png",
       "note": "Drive Design/Sponsorship 'Life_Ins_admt-1_10_23_2025...pdf' (vector text; photo 586px). Missed until Manoj, 19 Nov 8:06 AM."
-    },
-    {
-      "id": "mable-philip",
-      "name": "Mable Philip — Every Home Realtors",
-      "src": "images/members/sponsorship/mable-philip.png",
-      "note": "Drive Design/Sponsorship 'Mable_Philip_Jubilee_Sponsor_Original_Photos - Mable Philip.png' (1024x1536). Missed until Manoj, 19 Nov 8:06 AM."
     },
     {
       "id": "sajicha-cpa",
